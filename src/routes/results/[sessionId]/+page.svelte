@@ -99,8 +99,8 @@
 				<div>
 					<strong>A personal note:</strong>
 					<br /><br />
-					The IE ‘freetest’ is not actually ‘free’ for us to produce and deliver to you, so please take
-					the time to . use these uniquely created, tailor-made resources for your maximum benefit and
+					The IE ‘freetest’ is not actually free for us to produce and deliver to you, so please take
+					the time to use these uniquely created, tailor-made resources for your maximum benefit and
 					improvement.
 					<br /><br />
 
@@ -278,7 +278,7 @@
 		<!-- Upsell Card -->
 		<div class="mb-12">
 			<h3 class="mb-4 text-4xl font-bold text-gray-900 dark:text-white">
-				Ready to Improve Your Score with Unlimited Practice?
+				Ready to Improve Your Score?
 			</h3>
 			<UpsellCard
 				variant="default"
@@ -306,7 +306,7 @@
 					<br /><br />
 
 					<strong>Sample exercises preview:</strong> Try the sample exercise below, created using your
-					own freetest content; then sign up to the IETPP to start achieving your target IELTS Speaking
+					own freetest content, then sign up to the IETPP to start achieving your target IELTS Speaking
 					Band Score today.
 				</div>
 			</div>
@@ -475,7 +475,7 @@
 		<Card variant="teal">
 			<div class="text-center">
 				<h2 class="mb-2 text-2xl font-bold text-teal-700 dark:text-teal-300">
-					Analysis in Progress ⚡
+					Analysis in Progress
 				</h2>
 				<p class="text-lg text-teal-600 dark:text-teal-400">
 					We're preparing your detailed feedback, exercises, and band score. This takes a few
