@@ -109,7 +109,7 @@
 					<div class="flex items-center gap-2">
 						<p class="mb-4">In the Feedback Sections below you will find:</p>
 						<button
-							class="flex items-center gap-1 text-sm text-indigo-600 hover:text-indigo-800 dark:text-indigo-400 dark:hover:text-indigo-300"
+							class="flex items-center gap-1 text-l mb-4 text-indigo-600 hover:text-indigo-800 dark:text-indigo-400 dark:hover:text-indigo-300"
 							onclick={() => showPersonalNoteList = !showPersonalNoteList}
 						>
 							{#if showPersonalNoteList}
