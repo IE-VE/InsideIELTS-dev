@@ -19,6 +19,7 @@
 	let exerciseStates = $state(new Map<number, boolean>());
 	let isGeneratingExercise = $state(false);
 	let showExtraExercise = $state(false);
+	let showPersonalNoteList = $state(false);
 
 	function toggleExampleVisibility(index: number, exerciseTitle: string) {
 		const newState = !exerciseStates.get(index);
@@ -82,7 +83,7 @@
 <div class="container mx-auto max-w-4xl px-6 py-12">
 	<!-- Header -->
 	<div class="mb-12 text-center">
-		<h1 class="mb-6 text-4xl font-bold text-gray-900 md:text-5xl dark:text-white">
+		<h1 class="mb-6 text-3xl font-bold text-gray-900 md:text-5xl dark:text-white">
 			Your InsideIELTS Speaking Test Feedback
 		</h1>
 		{#if isAnalysisComplete}
@@ -97,16 +98,43 @@
 
 			<div class="mt-6 rounded-lg bg-indigo-50 p-4 dark:bg-indigo-900/30">
 				<div>
-					<strong>A personal note:</strong>
+				<p class="text-xl"><strong>A personal note:</strong></p>
 					<br /><br />
-					The IE ‘freetest’ is not actually free for us to produce and deliver to you, so please take
+					The IE 'freetest' is not actually free for us to produce and deliver to you, so please take
 					the time to use these uniquely created, tailor-made resources for your maximum benefit and
 					improvement.
 					<br /><br />
 
 					<div class="text-left">
-						In the Feedback Sections below you will find:<br />
-						<ul class="list-disc space-y-2 pl-4">
+					<div class="flex items-center gap-2">
+						<p class="mb-4">In the Feedback Sections below you will find:</p>
+						<button
+							class="flex items-center gap-1 text-sm text-indigo-600 hover:text-indigo-800 dark:text-indigo-400 dark:hover:text-indigo-300"
+							onclick={() => showPersonalNoteList = !showPersonalNoteList}
+						>
+							{#if showPersonalNoteList}
+								<svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+									<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										stroke-width="2"
+										d="M19 9l-7 7-7-7"
+									/>
+								</svg>
+							{:else}
+								<svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+									<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										stroke-width="2"
+										d="M9 5l7 7-7 7"
+									/>
+								</svg>
+							{/if}
+						</button>
+					</div>
+					{#if showPersonalNoteList}
+						<ul class="list-disc space-y-3 pl-4">
 							<li>
 								<strong>Questions and Answers review:</strong> Listen to and read your response transcripts,
 								then read the Improved Answers provided. (Visualise your goal: try re-recording yourself
@@ -125,6 +153,7 @@
 								designed to specifically target and eliminate your actual speaking errors.
 							</li>
 						</ul>
+					{/if}
 					</div>
 					<br /><br />
 					<strong>All the best with your IELTS preparations - Alex</strong>
