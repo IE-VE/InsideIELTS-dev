@@ -208,11 +208,11 @@
 						</svg>
 					</div>
 					<div class="text-gray-700 dark:text-gray-300">
-						Four easy-to-follow 40-minute Assesment Criteria lessons, designed specifically to
+						Four easy-to-follow 40-minute lessons, designed specifically to
 						target your personal areas of weakness.
 					</div>
 				</li>
-				<li class="flex">
+				<!-- <li class="flex">
 					<div
 						class="mr-3 flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-teal-100 dark:bg-teal-900/50"
 					>
@@ -231,7 +231,7 @@
 					<div class="text-gray-700 dark:text-gray-300">
 						Extra study activities and links to additional IELTS practice resources
 					</div>
-				</li>
+				</li> -->
 				<li class="flex">
 					<div
 						class="mr-3 flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-teal-100 dark:bg-teal-900/50"
