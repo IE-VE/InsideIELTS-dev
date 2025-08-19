@@ -155,7 +155,7 @@
 						</ul>
 					{/if}
 					</div>
-					<br /><br />
+				
 					<strong>All the best with your IELTS preparations - Alex</strong>
 				</div>
 			</div>
