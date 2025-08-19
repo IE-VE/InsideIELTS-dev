@@ -153,10 +153,11 @@
 								designed to specifically target and eliminate your actual speaking errors.
 							</li>
 						</ul>
+                       <br>
+                         <strong>All the best with your IELTS preparations - Alex</strong>
 					{/if}
-					</div>
-				
-					<strong>All the best with your IELTS preparations - Alex</strong>
+					</div>			
+					
 				</div>
 			</div>
 		{/if}
