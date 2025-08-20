@@ -341,9 +341,9 @@
 			</div>
 			<div class="flex justify-center">
 				<picture>
-					<source srcset="/alex-2.webp" type="image/webp" />
+					<source srcset="/alex-1.webp" type="image/webp" />
 					<img
-						src="/alex-2.jpg"
+						src="/alex-1.jpg"
 						alt="Alex - IELTS Speaking Expert"
 						class="h-64 w-64 rounded-full object-cover shadow-lg"
 						loading="lazy"
