@@ -44,9 +44,9 @@
 		},
 		{
 			id: 3,
-			title: 'What if I need more help after the free test?',
+			title: 'What if I need more help?',
 			content:
-				'The freetest is designed to give you a good idea of your starting point for improvement. For personal guidance on your IELTS journey you can sign up to the InsideIELTS Test Preparation Program: it\'s quick, efficient and focused on your personal needs.<br><br>(We can\'t be beaten on value either - check the price - you\'ll be pleasantly surprised!)<br><br>And if you are not <strong>100%</strong> satisfied with our service we will refund your payment in full at any time - no questions asked.'
+				'The InsideIELTS freetests are designed to give you a good idea of your starting point for improvement. For personal guidance on your IELTS journey you can sign up to the InsideIELTS Test Preparation Program.<br><br>No other personalised IELTS preparation service offers this much value - and if you are not <strong>100%</strong> satisfied with your progress we\'ll refund your payment in full at any time - no questions asked.'
 		}
 	];
 
@@ -95,12 +95,12 @@
 	const testimonials = [
 		{
 			quote:
-				'The feedback was spot-on! It helped me identify my weak points in pronunciation. After practising with the suggested exercises, I improved from Band 6 to 7.5!',
+				'The personalised feedback was super valuable! It helped me identify my exact weak points in fluency and pronunciation. After following the focused exercises I improved from Band 6 to Band 7 in only two weeks.',
 			author: 'Priya from India'
 		},
 		{
 			quote:
-				'Finally, a tool that gives instant, accurate feedback! The personalised tips helped me improve my fluency and grammar. I got Band 7 in speaking!',
+				'Once you really understand what the examiner\'s are looking for, preparation\'s not so hard after that, you can clearly focus on what you need to do. I got Band 7 in speaking, seriously can\'t believe that!',
 			author: 'Mahendra from Indonesia'
 		}
 	];
@@ -108,7 +108,7 @@
 
 <div class="container mx-auto px-6 py-12">
 	<h1 class="mb-8 text-center text-4xl font-bold text-teal-600 dark:text-teal-400">
-		InsideIELTS: Complete IELTS Preparation
+		InsideIELTS
 	</h1>
 
 	<p class="mb-10 text-center text-lg">
@@ -118,14 +118,14 @@
 	<div class="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
 		<!-- Speaking -->
 		<a
-			href="/freetest"
+			href="/speaking"
 			class="rounded-lg border border-gray-200 bg-white p-6 shadow-md transition hover:shadow-lg dark:border-gray-700 dark:bg-gray-800"
 		>
 			<h2 class="mb-2 text-xl font-bold text-teal-600 dark:text-teal-400">Speaking</h2>
 			<p class="text-gray-600 dark:text-gray-300">
-				Take our free 3 minute assessment and get instant feedback on your speaking skills.
+				Understand your areas of weakness and how to improve.
 			</p>
-			<div class="mt-4 text-sm font-medium text-teal-600 dark:text-teal-400">Try Free Test →</div>
+			<div class="mt-4 text-sm font-medium text-teal-600 dark:text-teal-400">START SPEAKING →</div>
 		</a>
 
 		<!-- Writing -->
@@ -137,7 +137,7 @@
 			<p class="text-gray-600 dark:text-gray-300">
 				Sharpen your essay and report writing with targeted exercises and feedback.
 			</p>
-			<div class="mt-4 text-sm font-medium text-teal-600 dark:text-teal-400">Explore Writing →</div>
+			<div class="mt-4 text-sm font-medium text-teal-600 dark:text-teal-400">START WRITING →</div>
 		</a>
 
 		<!-- Reading -->
@@ -149,7 +149,7 @@
 			<p class="text-gray-600 dark:text-gray-300">
 				Boost your comprehension with authentic IELTS texts and questions.
 			</p>
-			<div class="mt-4 text-sm font-medium text-teal-600 dark:text-teal-400">Start Reading →</div>
+			<div class="mt-4 text-sm font-medium text-teal-600 dark:text-teal-400">START READING →</div>
 		</a>
 
 		<!-- Listening -->
@@ -161,7 +161,7 @@
 			<p class="text-gray-600 dark:text-gray-300">
 				Improve your listening test technique with real IELTS materials.
 			</p>
-			<div class="mt-4 text-sm font-medium text-teal-600 dark:text-teal-400">Listen & Learn →</div>
+			<div class="mt-4 text-sm font-medium text-teal-600 dark:text-teal-400">START LISTENING →</div>
 		</a>
 	</div>
 </div>
@@ -183,22 +183,22 @@
 				<P size="xl" class="mt-4">
 					Get instant expert feedback on your speaking skills, based on official IELTS criteria.<br
 					/>
-					<strong>No registration needed!</strong>
+					<strong>No registration required</strong>
 				</P>
 
 				<List tag="ul" class="mt-6">
 					<Li icon>
 						<Check class="mr-2 h-5 w-5 text-teal-600 dark:text-teal-400" />
-						Detailed band score breakdown across all 4 criteria
+						Identify your key areas of weakness
 					</Li>
+					<Li icon>
+						<Check class="mr-2 h-5 w-5 text-teal-600 dark:text-teal-400" />
+						Detailed band score breakdown across all 4 criteria
+					</Li>				
 					<Li icon>
 						<Check class="mr-2 h-5 w-5 text-teal-600 dark:text-teal-400" />
 						Personalised improvement tips from IELTS experts
-					</Li>
-					<Li icon>
-						<Check class="mr-2 h-5 w-5 text-teal-600 dark:text-teal-400" />
-						Identify your key areas of weakness
-					</Li>
+					</Li>				
 				</List>
 
 				<div
@@ -330,13 +330,13 @@
 			<div class="space-y-4">
 				<Heading tag="h4">Meet Your IELTS Expert</Heading>
 				<P>
-					With 14 years as a qualified IELTS examiner, Alex has helped countless students achieve
+					With 14 years' experience as a teacher and qualified IELTS examiner, Alex has helped countless students achieve
 					their desired band scores. His proven strategies and personalised guidance make
-					InsideIELTS FreeTest a trusted resource for IELTS preparation.
+					InsideIELTS a valuable and proven resource for IELTS test success.
 				</P>
 				<blockquote class="border-l-4 border-teal-500 pl-4 italic">
-					"My mission is to help every test-taker understand exactly what their weaknesses are and what they
-					need to do to improve. No guesswork: just clear, actionable feedback."
+					"My mission is to help every test-taker understand exactly where their weaknesses lie and what they
+					need to do to improve. No guesswork: just clear, actionable strategies."
 				</blockquote>
 			</div>
 			<div class="flex justify-center">
