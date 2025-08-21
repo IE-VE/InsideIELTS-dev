@@ -214,8 +214,8 @@
 
 <div class="container mx-auto px-6 py-8">
 	<div class="mb-8">
-		<h1 class="text-2xl font-bold text-gray-900">Admin Dashboard</h1>
-		<p class="mt-2 text-sm text-gray-600">View all test sessions and their details</p>
+		<h1 class="text-2xl font-bold">Admin Dashboard</h1>
+		<p class="mt-2 text-sm">View all test sessions and their details</p>
 	</div>
 
 	<EmailSearch currentEmail={emailFilter} {applyEmailSearch} />
