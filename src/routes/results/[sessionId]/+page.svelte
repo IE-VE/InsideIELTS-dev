@@ -98,7 +98,7 @@
 
 			<div class="mt-6 rounded-lg bg-indigo-50 p-4 dark:bg-indigo-900/30">
 				<div>
-				<p class="text-xl"><strong>A personal note:</strong></p>
+					<p class="text-xl"><strong>A personal note:</strong></p>
 					<br /><br />
 					The IE 'freetest' is not actually free for us to produce and deliver to you, so please take
 					the time to use these uniquely created, tailor-made resources for your maximum benefit and
@@ -106,58 +106,57 @@
 					<br /><br />
 
 					<div class="text-left">
-					<div class="flex items-center gap-2">
-						<p class="mb-4">In the Feedback Sections below you will find:</p>
-						<button
-							class="flex items-center gap-1 text-l mb-4 text-indigo-600 hover:text-indigo-800 dark:text-indigo-400 dark:hover:text-indigo-300"
-							onclick={() => showPersonalNoteList = !showPersonalNoteList}
-						>
-							{#if showPersonalNoteList}
-								<svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-									<path
-										stroke-linecap="round"
-										stroke-linejoin="round"
-										stroke-width="2"
-										d="M19 9l-7 7-7-7"
-									/>
-								</svg>
-							{:else}
-								<svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-									<path
-										stroke-linecap="round"
-										stroke-linejoin="round"
-										stroke-width="2"
-										d="M9 5l7 7-7 7"
-									/>
-								</svg>
-							{/if}
-						</button>
+						<div class="flex items-center gap-2">
+							<p class="mb-4">In the Feedback Sections below you will find:</p>
+							<button
+								class="text-l mb-4 flex items-center gap-1 text-indigo-600 hover:text-indigo-800 dark:text-indigo-400 dark:hover:text-indigo-300"
+								onclick={() => (showPersonalNoteList = !showPersonalNoteList)}
+							>
+								{#if showPersonalNoteList}
+									<svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+										<path
+											stroke-linecap="round"
+											stroke-linejoin="round"
+											stroke-width="2"
+											d="M19 9l-7 7-7-7"
+										/>
+									</svg>
+								{:else}
+									<svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+										<path
+											stroke-linecap="round"
+											stroke-linejoin="round"
+											stroke-width="2"
+											d="M9 5l7 7-7 7"
+										/>
+									</svg>
+								{/if}
+							</button>
+						</div>
+						{#if showPersonalNoteList}
+							<ul class="list-disc space-y-3 pl-4">
+								<li>
+									<strong>Questions and Answers review:</strong> Listen to and read your response transcripts,
+									then read the Improved Answers provided. (Visualise your goal: try re-recording yourself
+									saying the improved answers and listen to the difference.)
+								</li>
+								<li>
+									<strong>Detailed IELTS Criteria Feedback</strong> on your specific language strengths
+									and weaknesses.
+								</li>
+								<li>
+									<strong>Your Overall IE Band Score</strong> with language feedback and suggestions
+									for areas to focus on going forward.
+								</li>
+								<li>
+									<strong>Unique Practice Exercises</strong> generated using your own freetest responses
+									designed to specifically target and eliminate your actual speaking errors.
+								</li>
+							</ul>
+							<br />
+							<strong>All the best with your IELTS preparations - Alex</strong>
+						{/if}
 					</div>
-					{#if showPersonalNoteList}
-						<ul class="list-disc space-y-3 pl-4">
-							<li>
-								<strong>Questions and Answers review:</strong> Listen to and read your response transcripts,
-								then read the Improved Answers provided. (Visualise your goal: try re-recording yourself
-								saying the improved answers and listen to the difference.)
-							</li>
-							<li>
-								<strong>Detailed IELTS Criteria Feedback</strong> on your specific language strengths
-								and weaknesses.
-							</li>
-							<li>
-								<strong>Your Overall IE Band Score</strong> with language feedback and suggestions for
-								areas to focus on going forward.
-							</li>
-							<li>
-								<strong>Unique Practice Exercises</strong> generated using your own freetest responses
-								designed to specifically target and eliminate your actual speaking errors.
-							</li>
-						</ul>
-                       <br>
-                         <strong>All the best with your IELTS preparations - Alex</strong>
-					{/if}
-					</div>			
-					
 				</div>
 			</div>
 		{/if}
@@ -306,7 +305,7 @@
 		</div>
 
 		<!-- Upsell Card -->
-		<div class="mb-12">
+		<!-- <div class="mb-12">
 			<h3 class="mb-4 text-4xl font-bold text-gray-900 dark:text-white">
 				Ready to Improve Your Score?
 			</h3>
@@ -322,7 +321,7 @@
 				sessionId={session.id}
 				email={session.email}
 			/>
-		</div>
+		</div> -->
 
 		<!-- Exercises -->
 		<div class="mb-12 space-y-6">
