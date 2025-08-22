@@ -36,7 +36,7 @@
 				Previous
 			</button>
 
-			<div class="mx-4 text-sm">
+			<div class="mx-4 text-sm"> 
 				<p>
 					Page <span class="font-medium">{currentPage}</span> of
 					<span class="font-medium">{totalPages}</span>

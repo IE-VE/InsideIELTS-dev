@@ -328,28 +328,26 @@
 	<Card class="relative max-w-4xl">
 		<div class="grid items-center gap-8 md:grid-cols-2">
 			<div class="space-y-4">
-				<Heading tag="h4">Meet Your IELTS Expert</Heading>
+				<center><Heading tag="h4">Meet Your IELTS Experts</Heading></center>
 				<P>
-					With 14 years' experience as a teacher and qualified IELTS examiner, Alex has helped countless students achieve
-					their desired band scores. His proven strategies and personalised guidance make
-					InsideIELTS a valuable and proven resource for IELTS test success.
+					At <b>InsideIELTS</b>, our team of experts – Alex, Paul, and Wendy – combine over two decades of IELTS teaching and examiner                    experience to help you achieve your goals.
+					We focus on what really matters: identifying your weaknesses, building your strengths, and giving you clear, actionable strategies              for test-day success.
 				</P>
 				<blockquote class="border-l-4 border-teal-500 pl-4 italic">
-					"My mission is to help every test-taker understand exactly where their weaknesses lie and what they
-					need to do to improve. No guesswork: just clear, actionable strategies."
+					"Our mission is simple: no guesswork - just clear, personalised strategies that make real progress happen fast."
 				</blockquote>
 			</div>
 			<div class="flex justify-center">
 				<picture>
-					<source srcset="/alex-1.webp" type="image/webp" />
+					<source srcset="/IE_Team1.webp" type="image/webp" />
 					<img
-						src="/alex-1.jpg"
-						alt="Alex - IELTS Speaking Expert"
-						class="h-64 w-64 rounded-full object-cover shadow-lg"
+						src="/IE_Team1.png"
+						alt="IE Team"
+						class="h-48 w-72 rounded-md border-1 border-white m-6"
 						loading="lazy"
-						width="256"
-						height="256"
-					/>
+						height="281"
+						width="457"
+						/>
 				</picture>
 			</div>
 		</div>
