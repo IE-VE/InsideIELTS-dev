@@ -96,18 +96,18 @@
 		{
 			quote:
 				'The personalised feedback was super valuable! It helped me identify my exact weak points in fluency and pronunciation. After following the focused exercises I improved from Band 6 to Band 7 in only two weeks.',
-			author: 'Priya from India'
+			author: 'Aliza from Pakistan'
 		},
 		{
 			quote:
-				'Once you really understand what the examiner\'s are looking for, preparation\'s not so hard after that, you can clearly focus on what you need to do. I got Band 7 in speaking, seriously can\'t believe that!',
+				'Once you really understand what the examiner\'s are looking for, preparation\'s not so hard after that, you can clearly focus on what you need to do. I got Band 8 in speaking, seriously can\'t believe that!',
 			author: 'Mahendra from Indonesia'
 		}
 	];
 </script>
 
 <div class="container mx-auto px-6 py-12">
-	<h1 class="mb-8 text-center text-4xl font-bold text-teal-600 dark:text-teal-400">
+	<h1 class="mb-8 text-center text-5xl font-bold text-teal-600 dark:text-teal-400">
 		InsideIELTS
 	</h1>
 
@@ -118,7 +118,7 @@
 	<div class="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
 		<!-- Speaking -->
 		<a
-			href="/speaking"
+			href="/record"
 			class="rounded-lg border border-gray-200 bg-white p-6 shadow-md transition hover:shadow-lg dark:border-gray-700 dark:bg-gray-800"
 		>
 			<h2 class="mb-2 text-xl font-bold text-teal-600 dark:text-teal-400">Speaking</h2>
@@ -130,7 +130,7 @@
 
 		<!-- Writing -->
 		<a
-			href="/writing"
+			href="/writing/practice"
 			class="rounded-lg border border-gray-200 bg-white p-6 shadow-md transition hover:shadow-lg dark:border-gray-700 dark:bg-gray-800"
 		>
 			<h2 class="mb-2 text-xl font-bold text-teal-600 dark:text-teal-400">Writing</h2>
@@ -142,7 +142,7 @@
 
 		<!-- Reading -->
 		<a
-			href="/reading"
+			href="/reading/practice"
 			class="rounded-lg border border-gray-200 bg-white p-6 shadow-md transition hover:shadow-lg dark:border-gray-700 dark:bg-gray-800"
 		>
 			<h2 class="mb-2 text-xl font-bold text-teal-600 dark:text-teal-400">Reading</h2>
@@ -154,7 +154,7 @@
 
 		<!-- Listening -->
 		<a
-			href="/listening"
+			href="/listening practice"
 			class="rounded-lg border border-gray-200 bg-white p-6 shadow-md transition hover:shadow-lg dark:border-gray-700 dark:bg-gray-800"
 		>
 			<h2 class="mb-2 text-xl font-bold text-teal-600 dark:text-teal-400">Listening</h2>
@@ -172,7 +172,7 @@
 >
 	<div class="absolute inset-0 bg-gradient-to-tr from-teal-200/20 to-transparent"></div>
 	<div class="relative container mx-auto px-6 py-16 md:py-24">
-		<div class="flex flex-col items-center md:flex-row">
+		<div class="flex flex-col items-center gap-8 md:flex-row md:gap-12 lg:gap-16">
 			<div class="mb-10 w-full text-center md:mb-0 md:w-3/5 md:text-left">
 				<Heading tag="h1">
 					Know your IELTS Band Score in <span class="text-teal-600 dark:text-teal-400"
