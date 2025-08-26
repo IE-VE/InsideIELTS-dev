@@ -21,7 +21,10 @@
 		MicVocal,
 		BarChart,
 		Sparkles,
-		Quote
+		Quote,
+		GraduationCap,
+		Award
+		
 	} from 'lucide-svelte';
 
 	function handleStartTest() {
@@ -65,7 +68,7 @@
 		{
 			title: 'Personalised Study',
 			description: 'Get customised practice exercises',
-			icon: Zap
+			icon: GraduationCap
 		}
 	];
 
@@ -87,7 +90,7 @@
 			emoji: '3️⃣',
 			title: 'Practise and Improve',
 			description: 'Follow personalised tips to increase your score',
-			icon: Sparkles
+			icon: Award
 		}
 	];
 
@@ -326,29 +329,33 @@
 		class="absolute inset-0 bg-gradient-to-b bg-gradient-to-tr from-gray-50 from-teal-100/20 via-blue-50/10 to-gray-100 to-transparent dark:from-gray-800 dark:from-teal-900/10 dark:via-transparent dark:to-gray-900 dark:to-transparent"
 	></div>
 	<Card class="relative max-w-4xl">
-		<div class="grid items-center gap-8 md:grid-cols-2">
-			<div class="space-y-4">
+		<div class="space-y-6 md:grid md:grid-cols-2 md:gap-12 md:space-y-0 md:items-center lg:gap-16">
+			<div class="space-y-4 md:space-y-4">
 				<center><Heading tag="h4">Meet Your IELTS Experts</Heading></center>
 				<P>
 					At <b>InsideIELTS</b>, our team of experts – Alex, Paul, and Wendy – combine over two decades of IELTS teaching and examiner                    experience to help you achieve your goals.
 					We focus on what really matters: identifying your weaknesses, building your strengths, and giving you clear, actionable strategies              for test-day success.
 				</P>
-				<blockquote class="border-l-4 border-teal-500 pl-4 italic">
-					"Our mission is simple: no guesswork - just clear, personalised strategies that make real progress happen fast."
-				</blockquote>
 			</div>
-			<div class="flex justify-center">
+	
+			<div class="flex justify-center md:row-span-2">
 				<picture>
 					<source srcset="/IE_Team1.webp" type="image/webp" />
 					<img
 						src="/IE_Team1.png"
-						alt="IE Team"
+						alt="Alex - IELTS Speaking Expert"
 						class="h-48 w-72 rounded-md border-1 border-white m-6"
 						loading="lazy"
 						height="281"
 						width="457"
 						/>
 				</picture>
+			</div>
+			
+			<div class="md:col-start-1">
+				<blockquote class="border-l-4 border-teal-500 pl-4 italic">
+					"Our mission is simple: no guesswork, no wasted time - just clear, personalised strategies that produce real progress, fast."
+				</blockquote>
 			</div>
 		</div>
 	</Card>
