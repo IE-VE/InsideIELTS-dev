@@ -412,6 +412,14 @@
 				<section class="section">
 					<h2 class="text-2xl font-bold mb-6 text-teal-600 dark:text-teal-400">SECTION 3: Questions 21–30</h2>
 
+					<div class="p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg mb-6">
+						<p class="font-semibold text-blue-900 dark:text-blue-100 mb-2">Example</p>
+						<p>Melanie could not borrow any books from the library because<br>
+						A. the librarian was out<br>
+						B. she didn't have time to look<br>
+						<strong>C. the books had already been borrowed</strong></p>
+					</div>
+
 					<div class="mb-8">
 						<p class="font-semibold mb-2">Questions 21 and 22</p>
 						<p class="mb-4">Choose the correct letter, A, B or C.</p>
@@ -459,13 +467,30 @@
 						<p class="mb-4">What recommendations does Dr Johnson make about the journal articles?<br>
 						Choose your answers from the box and write the letters A–G next to the names.</p>
 
+						<div class="p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg mb-4">
+							<p class="font-semibold text-blue-900 dark:text-blue-100 mb-2">Example Answer</p>
+							<p>Anderson and Hawker: <strong>A</strong></p>
+						</div>
+
+						<div class="p-4 bg-gray-50 dark:bg-gray-800 rounded-lg mb-4">
+							<p class="font-semibold mb-2">Options:</p>
+							<div class="grid md:grid-cols-2 gap-2 text-sm">
+								<div>A. must read</div>
+								<div>B. useful</div>
+								<div>C. limited value</div>
+								<div>D. read first section</div>
+								<div>E. read research methods</div>
+								<div>F. read conclusion</div>
+								<div>G. don't read</div>
+							</div>
+						</div>
 
 						<ul class="space-y-3 ml-4">
 							<li><strong>23.</strong> Jackson: <input type="text" name="q23" class="border-b border-gray-400 px-2 py-1 w-16 focus:border-blue-500 focus:outline-none" oninput={handleInputChange}></li>
 							<li><strong>24.</strong> Roberts: <input type="text" name="q24" class="border-b border-gray-400 px-2 py-1 w-16 focus:border-blue-500 focus:outline-none" oninput={handleInputChange}></li>
-							<li><strong>25.</strong> Morris:&nbsp &nbsp <input type="text" name="q25" class="border-b border-gray-400 px-2 py-1 w-16 focus:border-blue-500 focus:outline-none" oninput={handleInputChange}></li>
-							<li><strong>26.</strong> Cooper:&nbsp <input type="text" name="q26" class="border-b border-gray-400 px-2 py-1 w-16 focus:border-blue-500 focus:outline-none" oninput={handleInputChange}></li>
-							<li><strong>27.</strong> Forster:&nbsp <input type="text" name="q27" class="border-b border-gray-400 px-2 py-1 w-16 focus:border-blue-500 focus:outline-none" oninput={handleInputChange}></li>
+							<li><strong>25.</strong> Morris: <input type="text" name="q25" class="border-b border-gray-400 px-2 py-1 w-16 focus:border-blue-500 focus:outline-none" oninput={handleInputChange}></li>
+							<li><strong>26.</strong> Cooper: <input type="text" name="q26" class="border-b border-gray-400 px-2 py-1 w-16 focus:border-blue-500 focus:outline-none" oninput={handleInputChange}></li>
+							<li><strong>27.</strong> Forster: <input type="text" name="q27" class="border-b border-gray-400 px-2 py-1 w-16 focus:border-blue-500 focus:outline-none" oninput={handleInputChange}></li>
 						</ul>
 					</div>
 
@@ -480,6 +505,20 @@
 								alt="Population studies chart showing reasons for changing accommodation with bars labeled C, E, G and numbers 28, 29, 30" 
 								className="max-w-full h-auto border border-gray-300 mx-auto"
 							/>
+						</div>
+
+						<div class="p-4 bg-gray-50 dark:bg-gray-800 rounded-lg mb-4">
+							<p class="font-semibold mb-2">Options:</p>
+							<div class="grid md:grid-cols-2 gap-2 text-sm">
+								<div>A. uncooperative landlord</div>
+								<div>B. environment</div>
+								<div>C. space</div>
+								<div>D. noisy neighbours</div>
+								<div>E. near city</div>
+								<div>F. work location</div>
+								<div>G. transport</div>
+								<div>H. rent</div>
+							</div>
 						</div>
 
 						<ul class="space-y-3 ml-4">
