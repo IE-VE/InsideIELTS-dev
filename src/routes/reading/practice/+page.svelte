@@ -443,7 +443,7 @@
 							<ul class="space-y-2">
 								<li>• Time allowed: <strong>60 minutes</strong></li>
 								<li>• Number of questions: <strong>40</strong></li>
-								<li>• There are 3 reading passages with a variety of questions</li>
+								<li>• There are 3 reading passages with a variety of question types</li>
 								<li>• Answer all questions - there is no penalty for incorrect answers</li>
 								<li>• You can navigate between sections during the test</li>
 								<li>• Your progress will be saved automatically</li>
@@ -451,22 +451,22 @@
 						</div>
 
 						<div class="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-lg">
-							<h3 class="text-lg font-semibold text-blue-700 dark:text-blue-300 mb-3">Reading Passages</h3>
+							<center><h3 class="text-lg font-semibold text-blue-700 dark:text-blue-300 mb-3">Reading Passages</h3></center>
 							<div class="grid md:grid-cols-3 gap-4">
 								<div class="text-center">
-									<div class="font-semibold">Passage 1</div>
-									<div class="text-sm">Questions 1-14</div>
-									<div class="text-sm text-gray-600 dark:text-gray-400">20 minutes recommended</div>
+									<div class="font-semibold mb-3">Passage 1</div>
+									<div class="text-sm mb-4">Questions 1 - 14</div>
+									<div class="text-xs text-teal-200">[ 20 mins recommended ]</div>
 								</div>
 								<div class="text-center">
-									<div class="font-semibold">Passage 2</div>
-									<div class="text-sm">Questions 15-26</div>
-									<div class="text-sm text-gray-600 dark:text-gray-400">20 minutes recommended</div>
+									<div class="font-semibold mb-3">Passage 2</div>
+									<div class="text-sm mb-4">Questions 15 - 26</div>
+									<div class="text-xs text-teal-200">[ 20 mins recommended ]</div>
 								</div>
 								<div class="text-center">
-									<div class="font-semibold">Passage 3</div>
-									<div class="text-sm">Questions 27-40</div>
-									<div class="text-sm text-gray-600 dark:text-gray-400">20 minutes recommended</div>
+									<div class="font-semibold mb-3">Passage 3</div>
+									<div class="text-sm mb-4">Questions 27 - 40</div>
+									<div class="text-xs text-teal-200">[ 20 mins recommended ]</div>
 								</div>
 							</div>
 						</div>
@@ -603,11 +603,12 @@
 								<p>In answer to the final question about the importance of rainforest conservation, the	majority of children simply said that we need rainforests to survive. Only a few of the	pupils (6%) mentioned that rainforest destruction may contribute to global warming. This is surprising considering the high level of media coverage on this issue. Some	children expressed the idea that the conservation of rainforests is not important.</p>
 						<p>The results of this study suggest that certain ideas predominate in the thinking of	children about rainforests. Pupils’ responses indicate some misconceptions in basic	scientific knowledge of rainforests’ ecosystems such as their ideas about rainforests as					habitats for animals, plants and humans and the relationship between climatic change	and destruction of rainforests.</p>
 
-							<p>Pupils did not volunteer ideas that suggested that they appreciated the complexity of	causes of rainforest destruction. In other words, they gave no indication of an appreciation of either the range of ways in which rainforests are important or the complex social, economic and political factors which drive the activities which are destroying			the rainforests. One encouragement is that the results of similar studies about other	environmental issues suggest that older children seem to acquire the ability to appreciate, value and evaluate conflicting views. Environmental education offers an arena in	which these skills can be developed, which is essential for these children as future decision-makers.</p>							
+							<p>Pupils did not volunteer ideas that suggested that they appreciated the complexity of	causes of rainforest destruction. In other words, they gave no indication of an appreciation of either the range of ways in which rainforests are important or the complex social, economic and political factors which drive the activities which are destroying			the rainforests. One encouragement is that the results of similar studies about other	environmental issues suggest that older children seem to acquire the ability to appreciate, value and evaluate conflicting views. Environmental education offers an arena in	which these skills can be developed, which is essential for these children as future decision-makers.</p>
 							</div>
 
-							<div class="space-y-6">
-								<h3 class="text-xl font-semibold text-gray-900 dark:text-white">Questions 1-8</h3>
+							<!-- Questions 1-8 Block -->
+							<div class="question-block space-y-6">
+								<h3 class="text-xl font-semibold text-gray-900 dark:text-white">Questions 1-8</h3> 
 								<p class="text-gray-700 dark:text-gray-300">Do the following statements agree with the information given in Reading Passage 1?</p>
 								<p class="text-gray-700 dark:text-gray-300">In boxes 1–8 on your answer sheet write</p>
 								<div class="ml-4 text-gray-700 dark:text-gray-300">
@@ -645,7 +646,10 @@
 										{/if}
 									</div>
 								{/each}
+							</div>
 
+							<!-- Questions 9-13 Block -->
+							<div class="question-block space-y-6">
 								<h3 class="text-xl font-semibold text-gray-900 dark:text-white mt-8">Questions 9-13</h3>
 								<p class="text-gray-700 dark:text-gray-300">The box below gives a list of responses <strong>A–P</strong> to the questionnaire discussed in Reading Passage 1.</p>
 								<p class="text-gray-700 dark:text-gray-300">Answer the following questions by choosing the correct responses <strong>A–P</strong>.</p>
@@ -689,7 +693,10 @@
 										{/if}
 									</div>
 								{/each}
+							</div>
 
+							<!-- Question 14 Block -->
+							<div class="question-block space-y-6">
 								<h3 class="text-xl font-semibold text-gray-900 dark:text-white mt-8">Question 14</h3>
 								<p class="text-gray-700 dark:text-gray-300">Choose the correct letter, <strong>A-E</strong>.</p>
 
@@ -745,7 +752,7 @@
 							<p><strong>Part 1</strong></p>
 							<div class="mb-6">
 								<img src="/reading-images/whale-feelings.png" alt="Whale senses and sensory adaptations" class="w-full max-w-md mx-auto rounded-lg shadow-lg" />
-										</div>
+							</div>
 
 							<p>Some of the senses that we and other terrestrial mammals take for granted are either	reduced or absent in cetaceans or fail to function well in water. For example, it appears	from their brain structure that toothed species are unable to smell. Baleen species,	on the other hand, appear to have some related brain structures but it is not known		whether these are functional. It has been speculated that, as the blowholes evolved	and migrated to the top of the head, the neural pathways serving sense of smell may have been nearly all sacrificed. Similarly, although at least some cetaceans have taste buds, the nerves serving these have degenerated or are rudimentary.</p>
 
@@ -762,7 +769,8 @@
 							<p><i>1. echolocation: the perception of objects by means of sound wave echoes</i></p>
 						</div>
 
-						<div class="space-y-6">
+						<!-- Questions 15-21 Block -->
+						<div class="question-block space-y-6">
 							<h3 class="text-xl font-semibold text-gray-900 dark:text-white">Questions 15-21</h3>
 							<p class="text-gray-700 dark:text-gray-300">Complete the table below.</p>
 							<p class="text-gray-700 dark:text-gray-300">Choose <strong>NO MORE THAN THREE WORDS</strong> from Reading Passage 2 for each answer.</p>
@@ -973,35 +981,38 @@
 								{/each}
 							{/if}
 
-							<h3 class="text-xl font-semibold text-gray-900 dark:text-white mt-8">Questions 22-26</h3>
-							<p class="text-gray-700 dark:text-gray-300">Answer the questions below using <strong>NO MORE THAN THREE WORDS</strong> from the passage for each answer.</p>
+							<!-- Questions 22-26 Block -->
+							<div class="question-block space-y-6">
+								<h3 class="text-xl font-semibold text-gray-900 dark:text-white mt-8">Questions 22-26</h3>
+								<p class="text-gray-700 dark:text-gray-300">Answer the questions below using <strong>NO MORE THAN THREE WORDS</strong> from the passage for each answer.</p>
 
-							{#each passage2Questions.shortAnswer as question}
-								<div class="question mb-4">
-									<label class="mb-2 block font-medium text-gray-900 dark:text-white">
-										{question.num}. {question.text}
-									</label>
-									<input
-										type="text"
-										bind:value={answers[question.num]}
-										disabled={showAnswers}
-										placeholder="Your answer..."
-										class="w-full rounded-lg border p-0.5 text-black {showAnswers && results ? (results.questions[question.num]?.isCorrect ? 'border-green-500 bg-green-50 dark:bg-green-900/20' : 'border-red-500 bg-red-50 dark:bg-red-900/20') : 'border-gray-300 dark:border-gray-600 dark:bg-gray-700'}"
-									/>
-									{#if showAnswers && results?.questions[question.num]}
-										<div class="mt-2 text-sm">
-											{#if results.questions[question.num].isCorrect}
-												<span class="text-green-600 dark:text-green-400">✓ Correct!</span>
-											{:else}
-												<span class="text-red-600 dark:text-red-400">✗ Incorrect.</span>
-												<span class="text-gray-600 dark:text-gray-300">
-													Correct answer: {results.questions[question.num].correctAnswers.join(' or ')}
-												</span>
-											{/if}
-										</div>
-									{/if}
-								</div>
-							{/each}
+								{#each passage2Questions.shortAnswer as question}
+									<div class="question mb-4">
+										<label class="mb-2 block font-medium text-gray-900 dark:text-white">
+											{question.num}. {question.text}
+										</label>
+										<input
+											type="text"
+											bind:value={answers[question.num]}
+											disabled={showAnswers}
+											placeholder="Your answer..."
+											class="w-full rounded-lg border p-0.5 text-black {showAnswers && results ? (results.questions[question.num]?.isCorrect ? 'border-green-500 bg-green-50 dark:bg-green-900/20' : 'border-red-500 bg-red-50 dark:bg-red-900/20') : 'border-gray-300 dark:border-gray-600 dark:bg-gray-700'}"
+										/>
+										{#if showAnswers && results?.questions[question.num]}
+											<div class="mt-2 text-sm">
+												{#if results.questions[question.num].isCorrect}
+													<span class="text-green-600 dark:text-green-400">✓ Correct!</span>
+												{:else}
+													<span class="text-red-600 dark:text-red-400">✗ Incorrect.</span>
+													<span class="text-gray-600 dark:text-gray-300">
+														Correct answer: {results.questions[question.num].correctAnswers.join(' or ')}
+													</span>
+												{/if}
+											</div>
+										{/if}
+									</div>
+								{/each}
+							</div>
 						</div>
 					</div>
 
@@ -1049,7 +1060,8 @@ I decided to test whether various lines of motion were apt ways of showing movem
 							</div>
 						</div>			
 
-						<div class="space-y-6">
+						<!-- Questions 27-29 Block -->
+						<div class="question-block space-y-6">
 							<h3 class="text-xl font-semibold text-gray-900 dark:text-white">Questions 27-29</h3>
 							<p class="text-gray-700 dark:text-gray-300">Choose the correct letter, <strong>A</strong>, <strong>B</strong>, <strong>C</strong> or <strong>D</strong>.</p>
 							<p class="text-gray-700 dark:text-gray-300">Write your answers in boxes 27–29 on your answer sheet.</p>
@@ -1088,7 +1100,10 @@ I decided to test whether various lines of motion were apt ways of showing movem
 									{/if}
 								</div>
 							{/each}
+						</div>
 
+						<!-- Questions 30-32 Block -->
+						<div class="question-block space-y-6">
 							<h3 class="text-xl font-semibold text-gray-900 dark:text-white mt-8">Questions 30-32</h3>
 							<p class="text-gray-700 dark:text-gray-300">Look at the following diagrams (Questions 30–32), and the list of types of movement below.</p>
 							<p class="text-gray-700 dark:text-gray-300">Match each diagram to the type of movement <strong>A–E</strong> generally assigned to it in the experiment.</p>
@@ -1138,7 +1153,10 @@ I decided to test whether various lines of motion were apt ways of showing movem
 									{/if}
 								</div>
 							{/each}
+						</div>
 
+						<!-- Questions 33-39 Block -->
+						<div class="question-block space-y-6">
 							<h3 class="text-xl font-semibold text-gray-900 dark:text-white mt-8">Questions 33-39</h3>
 							<p class="text-gray-700 dark:text-gray-300">Complete the summary below using words from the box.</p>
 							<p class="text-gray-700 dark:text-gray-300">Write your answers in boxes 33–39 on your answer sheet.</p>
@@ -1248,41 +1266,44 @@ I decided to test whether various lines of motion were apt ways of showing movem
 								{/each}
 							{/if}
 
-							<h3 class="text-xl font-semibold text-gray-900 dark:text-white mt-8">Question 40</h3>
-							<p class="text-gray-700 dark:text-gray-300">Choose the correct letter, <strong>A</strong>, <strong>B</strong>, <strong>C</strong> or <strong>D</strong>.</p>
-							<p class="text-gray-700 dark:text-gray-300">Write your answer in box 40 on your answer sheet.</p>
+							<!-- Question 40 Block -->
+							<div class="question-block space-y-6">
+								<h3 class="text-xl font-semibold text-gray-900 dark:text-white mt-8">Question 40</h3>
+								<p class="text-gray-700 dark:text-gray-300">Choose the correct letter, <strong>A</strong>, <strong>B</strong>, <strong>C</strong> or <strong>D</strong>.</p>
+								<p class="text-gray-700 dark:text-gray-300">Write your answer in box 40 on your answer sheet.</p>
 
-							<div class="question mb-6">
-								<label class="mb-3 block font-medium text-gray-900 dark:text-white">
-									{passage3Questions.finalMultipleChoice.num}. {passage3Questions.finalMultipleChoice.text}
-								</label>
-								<div class="space-y-2">
-									{#each passage3Questions.finalMultipleChoice.options as option}
-										<label class="flex items-start">
-											<input
-												type="radio"
-												name="q{passage3Questions.finalMultipleChoice.num}"
-												value={option.charAt(0)}
-												onchange={(e) => updateAnswer(passage3Questions.finalMultipleChoice.num, e.target.value)}
-												disabled={showAnswers}
-												class="mr-2 mt-1 {showAnswers && results ? (results.questions[passage3Questions.finalMultipleChoice.num]?.userAnswer === option.charAt(0) ? (results.questions[passage3Questions.finalMultipleChoice.num]?.isCorrect ? 'accent-green-500' : 'accent-red-500') : '') : ''}"
-											/>
-											<span class="text-gray-700 dark:text-gray-300">{option}</span>
-										</label>
-									{/each}
-								</div>
-								{#if showAnswers && results?.questions[passage3Questions.finalMultipleChoice.num]}
-									<div class="mt-2 text-sm">
-										{#if results.questions[passage3Questions.finalMultipleChoice.num].isCorrect}
-											<span class="text-green-600 dark:text-green-400">✓ Correct!</span>
-										{:else}
-											<span class="text-red-600 dark:text-red-400">✗ Incorrect.</span>
-											<span class="text-gray-600 dark:text-gray-300">
-												Correct answer: {results.questions[passage3Questions.finalMultipleChoice.num].correctAnswers.join(' or ')}
-											</span>
-										{/if}
+								<div class="question mb-6">
+									<label class="mb-3 block font-medium text-gray-900 dark:text-white">
+										{passage3Questions.finalMultipleChoice.num}. {passage3Questions.finalMultipleChoice.text}
+									</label>
+									<div class="space-y-2">
+										{#each passage3Questions.finalMultipleChoice.options as option}
+											<label class="flex items-start">
+												<input
+													type="radio"
+													name="q{passage3Questions.finalMultipleChoice.num}"
+													value={option.charAt(0)}
+													onchange={(e) => updateAnswer(passage3Questions.finalMultipleChoice.num, e.target.value)}
+													disabled={showAnswers}
+													class="mr-2 mt-1 {showAnswers && results ? (results.questions[passage3Questions.finalMultipleChoice.num]?.userAnswer === option.charAt(0) ? (results.questions[passage3Questions.finalMultipleChoice.num]?.isCorrect ? 'accent-green-500' : 'accent-red-500') : '') : ''}"
+												/>
+												<span class="text-gray-700 dark:text-gray-300">{option}</span>
+											</label>
+										{/each}
 									</div>
-								{/if}
+									{#if showAnswers && results?.questions[passage3Questions.finalMultipleChoice.num]}
+										<div class="mt-2 text-sm">
+											{#if results.questions[passage3Questions.finalMultipleChoice.num].isCorrect}
+												<span class="text-green-600 dark:text-green-400">✓ Correct!</span>
+											{:else}
+												<span class="text-red-600 dark:text-red-400">✗ Incorrect.</span>
+												<span class="text-gray-600 dark:text-gray-300">
+													Correct answer: {results.questions[passage3Questions.finalMultipleChoice.num].correctAnswers.join(' or ')}
+												</span>
+											{/if}
+										</div>
+									{/if}
+								</div>
 							</div>
 
 							<!-- End of Test Section - only show when not viewing answers -->

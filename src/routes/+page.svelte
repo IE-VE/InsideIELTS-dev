@@ -88,7 +88,7 @@
 		},
 		{
 			emoji: '3️⃣',
-			title: 'Practise and Improve',
+			title: 'Practise & Improve',
 			description: 'Follow personalised tips to increase your score',
 			icon: Award
 		}

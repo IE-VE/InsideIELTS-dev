@@ -81,19 +81,19 @@
 		{
 			section: 'Passage 1',
 			description: 'General interest topic with everyday language',
-			questions: '13-14 questions',
+			questions: '13 or 14 questions',
 			difficulty: 'Easier'
 		},
 		{
 			section: 'Passage 2',
 			description: 'Work-related or general academic topic',
-			questions: '13-14 questions',
+			questions: '13 or 14 questions',
 			difficulty: 'Medium'
 		},
 		{
 			section: 'Passage 3',
 			description: 'Academic topic with complex language',
-			questions: '13-14 questions',
+			questions: '13 or 14 questions',
 			difficulty: 'Harder'
 		}
 	];
@@ -113,7 +113,7 @@
 			</h1>
 			<div class="max-w-6xl mx-auto px-6">
 				<p class="text-xl text-gray-600 dark:text-gray-300 text-center py-4 mb-8">
-					The Reading Test consists of three passages of increasing difficulty with a total of 14 question types.
+					The Reading Test consists of 3 passages of increasing difficulty with a total of 14 possible different question types.
 				</p>
 			</div>
 		</div>
@@ -149,16 +149,16 @@
 				<h2 class="text-2xl font-semibold text-gray-900 dark:text-white mb-6 text-center">
 					Test Structure
 				</h2>
-				<p class="text-left mb-4 text-xl">The Reading Test has <b>three passages</b> of increasing difficulty. Each passage is followed by <b>13-14 questions</b> testing different reading skills.
+				<p class="text-left mb-4 text-xl">The Reading Test has <b>3 passages</b> of increasing difficulty. Each passage is followed by <b>13 - 14 questions</b> testing different reading skills.
 				</p>
 				<div class="grid md:grid-cols-3 gap-6">
 					{#each testSections as section}
-						<div class="text-center p-4 bg-gray-50 dark:bg-gray-700 rounded-lg">
-							<h3 class="font-semibold text-gray-900 dark:text-white mb-2">{section.section}</h3>
-							<p class="text-sm text-gray-600 dark:text-gray-300 mb-2">{section.description}</p>
-							<div class="text-xs text-gray-500 dark:text-gray-400">
+						<div class="text-center p-4 bg-gray-50 dark:bg-gray-800 rounded-lg">
+							<h3 class="font-semibold text-gray-900 dark:text-white mb-3">{section.section}</h3>
+							<p class="text-m text-gray-600 dark:text-gray-300 mb-3">{section.description}</p>
+							<div class="text-s text-gray-500 dark:text-gray-400">
 								<div>{section.questions}</div>
-								<div class="font-medium text-primary-600 dark:text-primary-400">{section.difficulty}</div>
+								<div class="font-medium text-primary-600 dark:text-primary-400 mt-3">{section.difficulty}</div>
 							</div>
 						</div>
 					{/each}
