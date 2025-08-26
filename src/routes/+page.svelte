@@ -330,11 +330,11 @@
 			<div class="space-y-4">
 				<center><Heading tag="h4">Meet Your IELTS Experts</Heading></center>
 				<P>
-					At <b>InsideIELTS</b>, our team of experts – Alex, Paul, and Wendy – combine over two decades of IELTS teaching and examiner                    experience to help you achieve your goals.
-					We focus on what really matters: identifying your weaknesses, building your strengths, and giving you clear, actionable strategies              for test-day success.
+					At <b>InsideIELTS</b>, our team of experts – Alex, Paul, and Wendy – combine over two decades of IELTS teaching and examiner experience to help you achieve your goals.
+					We focus on what really matters: identifying your weaknesses, building your strengths, and giving you clear, actionable strategies for test-day success.
 				</P>
 				<blockquote class="border-l-4 border-teal-500 pl-4 italic">
-					"Our mission is simple: no guesswork - just clear, personalised strategies that make real progress happen fast."
+					"Our mission is simple: no guesswork, no time wasted - just clear, personalised strategies that produce real progress, fast."
 				</blockquote>
 			</div>
 			<div class="flex justify-center">
