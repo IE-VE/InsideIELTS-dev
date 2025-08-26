@@ -100,7 +100,7 @@
 		},
 		{
 			quote:
-				'Once you really understand what the examiner\'s are looking for, preparation\'s not so hard after that, you can clearly focus on what you need to do. I got Band 8 in speaking, seriously can\'t believe that!',
+				'Once you really understand what the examiner\'s are looking for, preparation\'s not so hard after that, you can clearly focus on what you need to do. I got Band 8 in speaking, Band 7.5 overall. - seriously can\'t believe that!',
 			author: 'Mahendra from Indonesia'
 		}
 	];
@@ -121,7 +121,7 @@
 			href="/record"
 			class="rounded-lg border border-gray-200 bg-white p-6 shadow-md transition hover:shadow-lg dark:border-gray-700 dark:bg-gray-800"
 		>
-			<h2 class="mb-2 text-xl font-bold text-teal-600 dark:text-teal-400">Speaking</h2>
+			<h2 class="mb-2 text-xl font-bold text-teal-600 dark:text-teal-400">Speaking Freetest</h2>
 			<p class="text-gray-600 dark:text-gray-300">
 				Understand your areas of weakness and how to improve.
 			</p>
@@ -133,7 +133,7 @@
 			href="/writing/practice"
 			class="rounded-lg border border-gray-200 bg-white p-6 shadow-md transition hover:shadow-lg dark:border-gray-700 dark:bg-gray-800"
 		>
-			<h2 class="mb-2 text-xl font-bold text-teal-600 dark:text-teal-400">Writing</h2>
+			<h2 class="mb-2 text-xl font-bold text-teal-600 dark:text-teal-400">Writing Freetest</h2>
 			<p class="text-gray-600 dark:text-gray-300">
 				Sharpen your essay and report writing with targeted exercises and feedback.
 			</p>
@@ -145,7 +145,7 @@
 			href="/reading/practice"
 			class="rounded-lg border border-gray-200 bg-white p-6 shadow-md transition hover:shadow-lg dark:border-gray-700 dark:bg-gray-800"
 		>
-			<h2 class="mb-2 text-xl font-bold text-teal-600 dark:text-teal-400">Reading</h2>
+			<h2 class="mb-2 text-xl font-bold text-teal-600 dark:text-teal-400">Reading Freetest</h2>
 			<p class="text-gray-600 dark:text-gray-300">
 				Boost your comprehension with authentic IELTS texts and questions.
 			</p>
@@ -157,7 +157,7 @@
 			href="/listening practice"
 			class="rounded-lg border border-gray-200 bg-white p-6 shadow-md transition hover:shadow-lg dark:border-gray-700 dark:bg-gray-800"
 		>
-			<h2 class="mb-2 text-xl font-bold text-teal-600 dark:text-teal-400">Listening</h2>
+			<h2 class="mb-2 text-xl font-bold text-teal-600 dark:text-teal-400">Listening Freetest</h2>
 			<p class="text-gray-600 dark:text-gray-300">
 				Improve your listening test technique with real IELTS materials.
 			</p>
@@ -370,7 +370,7 @@
 						<div class="flex items-start">
 							<Quote class="mr-2 h-8 w-8 flex-shrink-0 text-teal-600" />
 							<div>
-								<P class="mb-4 text-lg">"{testimonial.quote}"</P>
+								<P class="mb-4 text-m">"{testimonial.quote}"</P>
 								<P class="text-sm font-medium text-teal-600 dark:text-teal-400">
 									— {testimonial.author}
 								</P>
