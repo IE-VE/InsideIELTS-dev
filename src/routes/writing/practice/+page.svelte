@@ -1,6 +1,6 @@
-
 <script lang="ts">
 	import { onMount } from 'svelte';
+	import Lightbox from '$lib/components/Lightbox.svelte';
 
 	let currentTest = $state('academic'); // 'academic' or 'general'
 	let currentTask = $state(1);
@@ -153,7 +153,7 @@
 			<div class="max-w-4xl mx-auto">
 				<div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8">
 					<h1 class="text-4xl font-bold text-center text-gray-900 dark:text-white mb-8">
-						IELTS Writing Test
+						IELTS Writing Practice Test 1
 					</h1>
 
 					<div class="space-y-6 text-gray-700 dark:text-gray-300">
@@ -272,7 +272,7 @@
 					{#if isActive}
 						<button
 							onclick={pauseTimer}
-							class="px-3 py-1 bg-orange-600 hover:bg-orange-700 text-white font-medium rounded text-sm"
+							class="px-3 py-1 bg-indigo-600 hover:bg-indigo-700 text-white font-medium rounded text-sm"
 						>
 							PAUSE TIMER
 						</button>
@@ -340,28 +340,46 @@
 							</div>
 
 							<div class="space-y-6">
-								<div class="border border-white/20 rounded-lg p-6 bg-gray-50/50 dark:bg-gray-700/50">
-									<p class="text-lg text-gray-800 dark:text-gray-200 mb-4">{academicQuestions.task1.instruction}</p>
-									<p class="font-semibold text-gray-900 dark:text-white mb-4">{academicQuestions.task1.task}</p>
-									
-									<div class="flex justify-center mb-6">
-										<img 
+								<!-- Desktop layout: image and textarea side by side -->
+								<div class="hidden md:flex gap-6 mb-6">
+									<div class="flex-1">
+										<Lightbox 
 											src={academicQuestions.task1.image} 
 											alt={academicQuestions.task1.imageAlt}
-											class="max-w-full h-auto rounded-lg border border-gray-200 dark:border-gray-700"
+											className="w-full h-auto rounded-lg border border-gray-200 dark:border-gray-700"
 										/>
+									</div>
+									<div class="flex-1">
+										<label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+											Your Answer:
+										</label>
+										<textarea
+											bind:value={answers['academic-task1']}
+											placeholder="Write your Task 1 response here..."
+											class="w-full h-96 p-4 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-teal-500 focus:border-teal-500 dark:bg-gray-700 dark:text-white resize-none"
+										></textarea>
 									</div>
 								</div>
 
-								<div class="flex flex-col items-center">
-									<label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-										Your Answer:
-									</label>
-									<textarea
-										bind:value={answers['academic-task1']}
-										placeholder="Write your Task 1 response here..."
-										class="w-full max-w-[700px] h-96 p-4 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-teal-500 focus:border-teal-500 dark:bg-gray-700 dark:text-white resize-none"
-									></textarea>
+								<!-- Mobile layout: stacked vertically -->
+								<div class="md:hidden">
+									<div class="flex justify-center mb-6">
+										<Lightbox 
+											src={academicQuestions.task1.image} 
+											alt={academicQuestions.task1.imageAlt}
+											className="max-w-full h-auto rounded-lg border border-gray-200 dark:border-gray-700"
+										/>
+									</div>
+									<div class="flex flex-col items-center">
+										<label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+											Your Answer:
+										</label>
+										<textarea
+											bind:value={answers['academic-task1']}
+											placeholder="Write your Task 1 response here..."
+											class="w-full max-w-[700px] h-96 p-4 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-teal-500 focus:border-teal-500 dark:bg-gray-700 dark:text-white resize-none"
+										></textarea>
+									</div>
 								</div>
 							</div>
 						</div>
