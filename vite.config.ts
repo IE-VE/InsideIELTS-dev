@@ -10,5 +10,9 @@ export default defineConfig({
       autoInstall: true,
       scale: 1.2
     })
-  ]
+  ],
+  server: {
+    host: '0.0.0.0',
+    port: 5000
+  }
 })
