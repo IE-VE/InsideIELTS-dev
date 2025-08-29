@@ -10,20 +10,5 @@ export default defineConfig({
       autoInstall: true,
       scale: 1.2
     })
-  ],
-  server: {
-    host: true,
-    port: 5000,
-    strictPort: true,
-    hmr: {
-      port: 5001
-    },
-    cors: true
-  },
-  preview: {
-    host: true,
-    port: 5000,
-    strictPort: true,
-    cors: true
-  }
+  ]
 })

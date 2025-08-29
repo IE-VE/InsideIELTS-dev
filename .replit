@@ -12,10 +12,6 @@ localPort = 5000
 externalPort = 80
 
 [[ports]]
-localPort = 5001
-externalPort = 3000
-
-[[ports]]
 localPort = 5008
 externalPort = 6800
 
@@ -54,10 +50,10 @@ author = "agent"
 
 [[workflows.workflow.tasks]]
 task = "workflow.run"
-args = "Server"
+args = "InsideIELTS"
 
 [[workflows.workflow]]
-name = "Server"
+name = "InsideIELTS"
 author = "agent"
 
 [[workflows.workflow.tasks]]
