@@ -12,8 +12,18 @@ export default defineConfig({
     })
   ],
   server: {
-    host: '0.0.0.0',
+    host: true,
     port: 5000,
-    strictPort: false
+    strictPort: true,
+    hmr: {
+      port: 5001
+    },
+    cors: true
+  },
+  preview: {
+    host: true,
+    port: 5000,
+    strictPort: true,
+    cors: true
   }
 })
