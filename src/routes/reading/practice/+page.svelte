@@ -2262,26 +2262,26 @@
         
         .dark .bg-yellow-200 {
                 background-color: rgb(161 98 7);
-                color: rgb(254 240 138);
+                color: rgb(0 0 0);
         }
         
         .dark .bg-green-200 {
                 background-color: rgb(22 101 52);
-                color: rgb(187 247 208);
+                color: rgb(0 0 0);
         }
         
         .dark .bg-blue-200 {
                 background-color: rgb(30 64 175);
-                color: rgb(191 219 254);
+                color: rgb(0 0 0);
         }
         
         .dark .bg-pink-200 {
                 background-color: rgb(157 23 77);
-                color: rgb(251 207 232);
+                color: rgb(0 0 0);
         }
         
         .dark .bg-purple-200 {
                 background-color: rgb(107 33 168);
-                color: rgb(233 213 255);
+                color: rgb(0 0 0);
         }
 </style>
