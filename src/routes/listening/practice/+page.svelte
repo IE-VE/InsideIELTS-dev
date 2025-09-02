@@ -957,7 +957,7 @@
                                                         </div>
                                                 </div>
                                                 <div class="mt-4 text-center">
-                                                        <p class="text-sm text-gray-600 dark:text-gray-300 mb-3">Address your areas of weakness with personalised strategies</p>
+                                                        <p class="text-m text-gray-600 dark:text-gray-300 mb-3 mt-3"><b>Address your areas of weakness with personalised strategies</b></p>
                                                         <button
                                                                 type="button"
                                                                 class="px-6 py-3 bg-teal-600 text-white font-medium rounded-lg hover:bg-teal-700 transition-colors"
