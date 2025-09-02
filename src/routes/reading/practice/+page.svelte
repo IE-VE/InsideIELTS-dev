@@ -81,6 +81,12 @@
         let hasMarked = $state(false);
         let isMarking = $state(false);
         let showMarkingModal = $state(false);
+        
+        // Highlighting state
+        let highlightingEnabled = $state(false);
+        let highlightedRanges = $state([]);
+        let highlightColors = ['bg-yellow-200', 'bg-green-200', 'bg-blue-200', 'bg-pink-200', 'bg-purple-200'];
+        let currentColorIndex = $state(0);
 
         // Modal state for answers
         let showAnswersModal = $state(false);
@@ -415,6 +421,91 @@
                         });
                 }
         }
+        
+        // Highlighting functions
+        function toggleHighlighting() {
+                highlightingEnabled = !highlightingEnabled;
+                if (!highlightingEnabled) {
+                        // Clear any active selection when disabling
+                        window.getSelection()?.removeAllRanges();
+                }
+        }
+        
+        function handleTextSelection() {
+                if (!highlightingEnabled) return;
+                
+                const selection = window.getSelection();
+                if (selection && selection.toString().trim() && !selection.isCollapsed) {
+                        const range = selection.getRangeAt(0);
+                        
+                        // Check if selection is within a passage container
+                        const passageContainer = range.commonAncestorContainer.nodeType === Node.TEXT_NODE 
+                                ? range.commonAncestorContainer.parentElement?.closest('.passage-text')
+                                : range.commonAncestorContainer.closest?.('.passage-text');
+                        
+                        if (passageContainer) {
+                                highlightSelectedText(range);
+                        }
+                        
+                        selection.removeAllRanges();
+                }
+        }
+        
+        function highlightSelectedText(range) {
+                const span = document.createElement('span');
+                span.className = `highlight-text ${highlightColors[currentColorIndex]} dark:opacity-80 cursor-pointer`;
+                span.setAttribute('data-highlight-id', Date.now().toString());
+                
+                try {
+                        range.surroundContents(span);
+                        
+                        // Store highlight info
+                        highlightedRanges = [...highlightedRanges, {
+                                id: span.getAttribute('data-highlight-id'),
+                                text: span.textContent,
+                                color: highlightColors[currentColorIndex]
+                        }];
+                        
+                        // Cycle to next color
+                        currentColorIndex = (currentColorIndex + 1) % highlightColors.length;
+                        
+                        // Add click listener to remove highlight
+                        span.addEventListener('click', (e) => {
+                                e.stopPropagation();
+                                removeHighlight(span);
+                        });
+                } catch (error) {
+                        // If surroundContents fails, try a different approach
+                        console.warn('Could not highlight complex selection:', error);
+                }
+        }
+        
+        function removeHighlight(span) {
+                const highlightId = span.getAttribute('data-highlight-id');
+                
+                // Remove from state
+                highlightedRanges = highlightedRanges.filter(h => h.id !== highlightId);
+                
+                // Replace span with its text content
+                const parent = span.parentNode;
+                const textNode = document.createTextNode(span.textContent);
+                parent?.replaceChild(textNode, span);
+                
+                // Normalize to merge adjacent text nodes
+                parent?.normalize();
+        }
+        
+        function clearAllHighlights() {
+                document.querySelectorAll('.highlight-text').forEach(span => {
+                        const parent = span.parentNode;
+                        const textNode = document.createTextNode(span.textContent);
+                        parent?.replaceChild(textNode, span);
+                        parent?.normalize();
+                });
+                
+                highlightedRanges = [];
+                currentColorIndex = 0;
+        }
 
         // Marking functions
         async function markTest() {
@@ -567,6 +658,13 @@
                 
                 answers[questionNumber] = value;
         }
+        
+        // Add global mouseup event listener for text selection
+        function handleGlobalMouseUp() {
+                setTimeout(() => {
+                        handleTextSelection();
+                }, 10);
+        }
 
         onMount(() => {
                 startTestTimer();
@@ -586,11 +684,15 @@
 
                 // Add event listener for Escape key when answer modal is open
                 document.addEventListener('keydown', handleAnswersKeydown);
+                
+                // Add global mouseup listener for text highlighting
+                document.addEventListener('mouseup', handleGlobalMouseUp);
 
                 return () => {
                         if (timer) clearInterval(timer);
                         clearInterval(timeCheckInterval);
                         document.removeEventListener('keydown', handleAnswersKeydown);
+                        document.removeEventListener('mouseup', handleGlobalMouseUp);
                         document.body.style.overflow = 'auto';
                 };
         });
@@ -721,8 +823,8 @@
                                         </div>
                                 {/if}
 
-                                <!-- Navigation Buttons -->
-                                <div class="flex flex-wrap justify-center gap-2">
+                                <!-- Navigation and Highlighting Controls -->
+                                <div class="flex flex-wrap justify-center gap-2 mb-4">
                                         {#each [1, 2, 3] as section}
                                                 <button
                                                         onclick={() => goToSection(section)}
@@ -731,6 +833,31 @@
                                                         Passage {section}
                                                 </button>
                                         {/each}
+                                </div>
+                                
+                                <!-- Highlighting Controls -->
+                                <div class="flex flex-wrap justify-center gap-2 mb-6">
+                                        <button
+                                                onclick={toggleHighlighting}
+                                                class="px-4 py-2 rounded-md font-medium transition-colors {highlightingEnabled ? 'bg-yellow-500 text-white' : 'bg-gray-200 text-gray-700 hover:bg-gray-300 dark:bg-gray-600 dark:text-gray-300 dark:hover:bg-gray-500'}"
+                                        >
+                                                {highlightingEnabled ? '🖍️ Highlighting ON' : '🖍️ Enable Highlighting'}
+                                        </button>
+                                        
+                                        {#if highlightedRanges.length > 0}
+                                                <button
+                                                        onclick={clearAllHighlights}
+                                                        class="px-4 py-2 rounded-md font-medium transition-colors bg-red-500 text-white hover:bg-red-600"
+                                                >
+                                                        Clear All Highlights
+                                                </button>
+                                        {/if}
+                                        
+                                        {#if highlightingEnabled}
+                                                <div class="flex items-center gap-2 px-3 py-2 bg-blue-50 dark:bg-blue-900/20 rounded-md text-sm text-blue-700 dark:text-blue-300">
+                                                        <span>💡 Select text to highlight. Click highlighted text to remove.</span>
+                                                </div>
+                                        {/if}
                                 </div>
                         </div>
 
@@ -748,7 +875,7 @@
                                                                 </p>
                                                         </div>
 
-                                                        <div class="prose dark:prose-invert max-w-none mb-8">
+                                                        <div class="passage-text prose dark:prose-invert max-w-none mb-8">
                                                                 <h3 class="text-xl font-semibold mb-4">Children's Ideas About Rainforests</h3>
 
                                                                 <div class="mb-6">
@@ -985,7 +1112,7 @@
                                                                 </p>
                                                         </div>
 
-                                                        <div class="prose dark:prose-invert max-w-none mb-8">
+                                                        <div class="passage-text prose dark:prose-invert max-w-none mb-8">
                                                                 <h3 class="text-xl font-semibold mb-4">Whale Senses</h3>
 
                                                                 <p><strong>Part 1</strong></p>
@@ -1337,7 +1464,7 @@
                                                                 </p>
                                                         </div>
 
-                                                        <div class="prose dark:prose-invert max-w-none mb-8">
+                                                        <div class="passage-text prose dark:prose-invert max-w-none mb-8">
                                                                 <h3 class="text-xl font-semibold mb-4">Visual Symbols and the Blind</h3>
 
                                                                 <p><strong>Part 1</strong></p>
@@ -2083,5 +2210,73 @@
                 .overflow-y-auto {
                         overflow-y: auto;
                 }
+        }
+        
+        /* Highlighting styles */
+        .highlight-text {
+                padding: 2px 4px;
+                border-radius: 3px;
+                cursor: pointer;
+                transition: all 0.2s ease;
+                user-select: text;
+                -webkit-user-select: text;
+                -moz-user-select: text;
+                -ms-user-select: text;
+        }
+        
+        .highlight-text:hover {
+                opacity: 0.8;
+                box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+        }
+        
+        /* Highlight color classes */
+        .bg-yellow-200 {
+                background-color: rgb(254 240 138);
+        }
+        
+        .bg-green-200 {
+                background-color: rgb(187 247 208);
+        }
+        
+        .bg-blue-200 {
+                background-color: rgb(191 219 254);
+        }
+        
+        .bg-pink-200 {
+                background-color: rgb(251 207 232);
+        }
+        
+        .bg-purple-200 {
+                background-color: rgb(233 213 255);
+        }
+        
+        /* Dark mode highlighting */
+        .dark .highlight-text {
+                opacity: 0.8;
+        }
+        
+        .dark .bg-yellow-200 {
+                background-color: rgb(161 98 7);
+                color: rgb(254 240 138);
+        }
+        
+        .dark .bg-green-200 {
+                background-color: rgb(22 101 52);
+                color: rgb(187 247 208);
+        }
+        
+        .dark .bg-blue-200 {
+                background-color: rgb(30 64 175);
+                color: rgb(191 219 254);
+        }
+        
+        .dark .bg-pink-200 {
+                background-color: rgb(157 23 77);
+                color: rgb(251 207 232);
+        }
+        
+        .dark .bg-purple-200 {
+                background-color: rgb(107 33 168);
+                color: rgb(233 213 255);
         }
 </style>
