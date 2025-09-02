@@ -2222,6 +2222,7 @@
                 -webkit-user-select: text;
                 -moz-user-select: text;
                 -ms-user-select: text;
+                color: rgb(0 0 0) !important;
         }
         
         .highlight-text:hover {
