@@ -556,6 +556,11 @@
                                 correctAnswers: correctAnswers,
                                 isCorrect: isCorrect
                         };
+                        
+                        // Increment correct counter if answer is correct
+                        if (isCorrect) {
+                                correct++;
+                        }
                 }
 
                 // Special handling for Q21 if it was not covered in the loop
