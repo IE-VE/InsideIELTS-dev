@@ -527,9 +527,7 @@
 
                 hasMarked = true;
                 showAnswers = true;
-                showMarkingModal = true;
                 isMarking = false;
-                document.body.style.overflow = 'hidden';
         }
 
         function viewAnswers() {
@@ -959,10 +957,10 @@
                                                                         <!-- Bottom buttons -->
                                                                         <div class="flex justify-between items-center gap-1">
                                                                                 <button
-                                                                                        onclick={openAnswersModal}
+                                                                                        onclick={() => { showMarkingModal = true; document.body.style.overflow = 'hidden'; }}
                                                                                         class="px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition-colors text-sm font-medium"
                                                                                 >
-                                                                                        View Answer Key
+                                                                                        View Detailed Analysis
                                                                                 </button>
                                                                                 <button
                                                                                         onclick={() => window.location.href = '/'}
@@ -1310,10 +1308,10 @@
                                                                         <!-- Bottom buttons -->
                                                                         <div class="flex justify-between items-center gap-1">
                                                                                 <button
-                                                                                        onclick={openAnswersModal}
+                                                                                        onclick={() => { showMarkingModal = true; document.body.style.overflow = 'hidden'; }}
                                                                                         class="px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition-colors text-sm font-medium"
                                                                                 >
-                                                                                        View Answer Key
+                                                                                        View Detailed Analysis
                                                                                 </button>
                                                                                 <button
                                                                                         onclick={() => window.location.href = '/'}
@@ -1666,10 +1664,10 @@
                                                                         <!-- Bottom buttons -->
                                                                         <div class="flex justify-between items-center gap-1">
                                                                                 <button
-                                                                                        onclick={openAnswersModal}
+                                                                                        onclick={() => { showMarkingModal = true; document.body.style.overflow = 'hidden'; }}
                                                                                         class="px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition-colors text-sm font-medium"
                                                                                 >
-                                                                                        View Answer Key
+                                                                                        View Detailed Analysis
                                                                                 </button>
                                                                                 <button
                                                                                         onclick={() => window.location.href = '/'}
