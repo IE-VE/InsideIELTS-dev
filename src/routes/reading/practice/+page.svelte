@@ -1082,7 +1082,9 @@
                                                                                                 {:else if results.score >= 11}4.0
                                                                                                 {:else if results.score >= 8}3.5
                                                                                                 {:else if results.score >= 5}3.0
-                                                                                                {:else}2.5-3.5{/if}
+                                                                                                {:else if results.score >= 3}2.5
+                                                                                                {:else if results.score >= 1}2.0
+                                                                                                {:else}1.0{/if}
                                                                                         </span>
                                                                                 </div>
                                                                         </div>
@@ -1433,7 +1435,9 @@
                                                                                                 {:else if results.score >= 11}4.0
                                                                                                 {:else if results.score >= 8}3.5
                                                                                                 {:else if results.score >= 5}3.0
-                                                                                                {:else}2.5-3.5{/if}
+                                                                                                {:else if results.score >= 3}2.5
+                                                                                                {:else if results.score >= 1}2.0
+                                                                                                {:else}1.0{/if}
                                                                                         </span>
                                                                                 </div>
                                                                         </div>
@@ -1789,7 +1793,9 @@
                                                                                                 {:else if results.score >= 11}4.0
                                                                                                 {:else if results.score >= 8}3.5
                                                                                                 {:else if results.score >= 5}3.0
-                                                                                                {:else}2.5-3.5{/if}
+                                                                                                {:else if results.score >= 3}2.5
+                                                                                                {:else if results.score >= 1}2.0
+                                                                                                {:else}1.0{/if}
                                                                                         </span>
                                                                                 </div>
                                                                         </div>
@@ -1945,7 +1951,9 @@
                                                         {:else if results.score >= 11}4.0
                                                         {:else if results.score >= 8}3.5
                                                         {:else if results.score >= 5}3.0
-                                                        {:else}2.5-3.5{/if}
+                                                        {:else if results.score >= 3}2.5
+                                                        {:else if results.score >= 1}2.0
+                                                        {:else}1.0{/if}
                                                 </span>
                                         </p>
                                 </div>
