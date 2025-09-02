@@ -2232,22 +2232,27 @@
         /* Highlight color classes */
         .bg-yellow-200 {
                 background-color: rgb(254 240 138);
+                color: rgb(0 0 0);
         }
         
         .bg-green-200 {
                 background-color: rgb(187 247 208);
+                color: rgb(0 0 0);
         }
         
         .bg-blue-200 {
                 background-color: rgb(191 219 254);
+                color: rgb(0 0 0);
         }
         
         .bg-pink-200 {
                 background-color: rgb(251 207 232);
+                color: rgb(0 0 0);
         }
         
         .bg-purple-200 {
                 background-color: rgb(233 213 255);
+                color: rgb(0 0 0);
         }
         
         /* Dark mode highlighting */
