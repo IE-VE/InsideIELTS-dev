@@ -455,6 +455,7 @@
                 const span = document.createElement('span');
                 span.className = `highlight-text ${highlightColors[currentColorIndex]} dark:opacity-80 cursor-pointer`;
                 span.setAttribute('data-highlight-id', Date.now().toString());
+                span.style.color = '#000000';
                 
                 try {
                         range.surroundContents(span);
