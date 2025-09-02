@@ -106,8 +106,7 @@
         function closeMarkingModal() {
                 showMarkingModal = false;
                 document.body.style.overflow = 'auto';
-                // Navigate to home page
-                window.location.href = '/';
+                // Stay on the test page instead of redirecting
         }
 
         function handleMarkingBackdropClick(event) {
@@ -2121,7 +2120,7 @@
                                                 class="px-6 py-2 bg-gray-500 text-white rounded-lg hover:bg-gray-600 transition-colors"
                                                 onclick={closeMarkingModal}
                                         >
-                                                Close & Return to Test
+                                                Return to Test
                                         </button>
                                 </div>
                         </div>
