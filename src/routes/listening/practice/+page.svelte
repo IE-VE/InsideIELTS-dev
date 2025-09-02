@@ -956,6 +956,15 @@
                                                                 </ul>
                                                         </div>
                                                 </div>
+                                                <div class="mt-4 text-center">
+                                                        <button
+                                                                type="button"
+                                                                class="px-6 py-3 bg-teal-600 text-white font-medium rounded-lg hover:bg-teal-700 transition-colors"
+                                                                onclick={() => window.location.href = '/listening/practice'}
+                                                        >
+                                                                📈 Improve my Score
+                                                        </button>
+                                                </div>
                                         </div>
                                 {/if}
                                 
