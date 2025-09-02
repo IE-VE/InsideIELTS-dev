@@ -1878,7 +1878,7 @@
                                                         </div>
                                                 </div>
                                                 <div class="mt-4 text-center">
-                                                        <p class="text-sm text-gray-600 dark:text-gray-300 mb-3">Address your areas of weakness with personalised strategies</p>
+                                                         <p class="text-sm text-gray-500 dark:text-gray-300 mb-3">Address your areas of weakness with personalised strategies</p>
                                                         <button
                                                                 type="button"
                                                                 class="px-6 py-3 bg-teal-600 text-white font-medium rounded-lg hover:bg-teal-700 transition-colors"
@@ -1980,7 +1980,7 @@
                                                 class="px-6 py-2 bg-gray-500 text-white rounded-lg hover:bg-gray-600 transition-colors"
                                                 onclick={closeMarkingModal}
                                         >
-                                                Close & Return Home
+                                                Close & Return to Test
                                         </button>
                                 </div>
                         </div>
