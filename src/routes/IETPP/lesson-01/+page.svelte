@@ -339,7 +339,7 @@
                                                         src="/LESSONS/les01/01_L2-prac.png"
                                                         alt="Listening diagram completion practice"
                                                         class="w-full rounded border border-gray-500 mb-4 cursor-pointer"
-                                                        onclick={() => openLightbox('/LESSONS/les01/01_L2-prac.png'))
+                                                        onclick={() => openLightbox('/LESSONS/les01/01_L2-prac.png')}
                                                 />
 
                                                 <div class="text-center mb-4">
@@ -399,7 +399,7 @@
                                                         src="/LESSONS/les01/01_L3-prac.png"
                                                         alt="Listening matching information practice"
                                                         class="w-full rounded border border-gray-500 mb-4 cursor-pointer"
-                                                        onclick={() => openLightbox('/LESSONS/les01/01_L3-prac.png'))
+                                                        onclick={() => openLightbox('/LESSONS/les01/01_L3-prac.png')}
                                                 />
 
                                                 <div class="text-center mb-4">

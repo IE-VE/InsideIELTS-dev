@@ -1,0 +1,108 @@
+ Test Overview
+01
+LISTENING
+Introduction to the Listening Test
+Listening Skills
+
+(i)
+Multiple choice
+(ii)
+Short answer
+(iii)
+Sentence completion
+02
+READING
+Introduction to the Reading Test
+Reading Skills
+
+(i)
+Matching information
+(ii)
+True/False/Not given
+(iii)
+Summary completion
+03
+WRITING
+Introduction to the Writing Test
+- Task 1 (Ac)
+- Task 1 (GT)
+- Task 2
+Writing Skills
+
+(i)
+Task Achievement / Task Response
+(ii)
+Coherence & Cohesion
+(iii)
+Lexical Resource
+(iv)
+Grammatical Range & Accuracy
+04
+SPEAKING
+Introduction to the Speaking Test
+- Part 1
+- Part 2
+- Part 3
+Speaking Skills
+
+(i)
+Fluency & Coherence
+(ii)
+Lexical Resource
+(iii)
+Grammatical Range & Accuracy
+(iv)
+Pronunciation
+05
+ASSESSMENT
+Final Full Test
+
+(i)
+Listening Test
+(ii)
+Reading Test
+(iii)
+Writing Test
+Academic
+General Training
+(iv)
+Speaking Test
+EXIT IETPP
+
+InsideIELTS Logo
+SPEAKING
+WRITING
+READING
+LISTENING
+Privacy Policy | Terms of Service | Contact Us
+© 2025 InsideIELTS.com. All rights reserved.
+
+IETPP - InsideIELTS Test Preparation Program
+[plugin:vite-plugin-svelte] src/routes/IETPP/lesson-01/+page.svelte:342:116 Expected token }
+https://svelte.dev/e/expected_token
+
+- Did you forget to add a lang attribute to your style tag?
+- Did you forget to add a lang attribute to your style tag?
+- Did you forget to add a lang attribute to your style tag?
+- Did you forget to add a lang attribute to your style tag?
+- Did you forget to add a lang attribute to your style tag?
+- Did you forget to add a lang attribute to your style tag?
+- Did you forget to add a lang attribute to your style tag?
+- Did you forget to add a lang attribute to your style tag?
+- Did you forget to add a lang attribute to your style tag?
+- Did you forget to add a lang attribute to your style tag?
+- Did you forget to add a lang attribute to your style tag?
+- Did you forget to add a lang attribute to your style tag?
+- Did you forget to add a lang attribute to your style tag?
+- Did you forget to add a lang attribute to your style tag?
+- Did you forget to add a lang attribute to your style tag?
+- Did you forget to add a lang attribute to your style tag?
+- Did you forget to add a lang attribute to your style tag?
+- Did you forget to add a lang attribute to your style tag?
+- Did you forget to add a lang attribute to your style tag?
+src/routes/IETPP/lesson-01/+page.svelte:342:116
+340 |                                                          alt="Listening diagram completion practice"
+ 341 |                                                          class="w-full rounded border border-gray-500 mb-4 cursor-pointer"
+ 342 |                                                          onclick={() => openLightbox('/LESSONS/les01/01_L2-prac.png'))
+                                                                                                                            ^
+ 343 |                                                  />
