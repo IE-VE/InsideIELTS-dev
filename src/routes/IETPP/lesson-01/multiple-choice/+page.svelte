@@ -39,11 +39,11 @@
         <div class="container mx-auto px-6 py-8">
                 <div class="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 mb-8">
                         <div class="text-center">
-                                <div class="text-xs text-left font-bold text-teal-600 dark:text-teal-400 mb-2">
+                                <div class="text-xs md:text-[10px] text-left font-bold text-teal-600 dark:text-teal-400 mb-2">
                                         LESSON CODE: IE2401_01.1
                                 </div>
-                                <h1 class="text-3xl font-bold text-white mb-2">
-                                        01 (i) - Skills Practice
+                                <h1 class="text-2xl font-bold text-white mb-2">
+                                        Skills Practice
                                 </h1>
                                 <p class="text-white italic">(60 mins)</p>
                         </div>
