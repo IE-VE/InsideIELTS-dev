@@ -9,9 +9,13 @@
         let q16 = '', q17_diagram = '', q18_diagram = '', q19_diagram = '', q20_diagram = '';
         let q27 = '', q28 = '', q29 = '', q30 = '';
         
-        // Results
-        let showResults = false;
-        let markingResults = {};
+        // Results for each question type
+        let showResultsMissing = false;
+        let showResultsDiagram = false;
+        let showResultsMatching = false;
+        let markingResultsMissing = {};
+        let markingResultsDiagram = {};
+        let markingResultsMatching = {};
 
         function openLightbox(imageSrc: string) {
                 lightboxImage = imageSrc;
@@ -23,32 +27,15 @@
                 lightboxImage = '';
         }
 
-        function checkAnswers() {
+        function checkMissingAnswers() {
                 const correctAnswers = {
-                        // Missing information
-                        q17: ['october 19th', 'october 19', '19th october', '19 october'],
-                        q18: ['7pm', '7 pm', '19:00', 'seven pm'],
-                        q19: ['monday thursday', 'thursday monday', 'monday and thursday'],
-                        q20: ['18', 'eighteen'],
-                        // Diagram completion
-                        q16: ['h'],
-                        q17_diagram: ['d'],
-                        q18_diagram: ['f'],
-                        q19_diagram: ['a'],
-                        q20_diagram: ['e'],
-                        // Matching information
-                        q27: ['d'],
-                        q28: ['b'],
-                        q29: ['e'],
-                        q30: ['f']
+                        q17: ['October 19th', 'October 19'],
+                        q18: ['7pm', '7 pm'],
+                        q19: ['Monday Thursday', 'Thursday Monday'],
+                        q20: ['18']
                 };
 
-                const userAnswers = {
-                        q17, q18, q19, q20,
-                        q16, q17_diagram, q18_diagram, q19_diagram, q20_diagram,
-                        q27, q28, q29, q30
-                };
-
+                const userAnswers = { q17, q18, q19, q20 };
                 const results = {};
                 let totalCorrect = 0;
 
@@ -68,9 +55,76 @@
                 });
 
                 results.totalCorrect = totalCorrect;
-                results.totalQuestions = 14;
-                markingResults = results;
-                showResults = true;
+                results.totalQuestions = 4;
+                markingResultsMissing = results;
+                showResultsMissing = true;
+        }
+
+        function checkDiagramAnswers() {
+                const correctAnswers = {
+                        q16: ['h'],
+                        q17_diagram: ['d'],
+                        q18_diagram: ['f'],
+                        q19_diagram: ['a'],
+                        q20_diagram: ['e']
+                };
+
+                const userAnswers = { q16, q17_diagram, q18_diagram, q19_diagram, q20_diagram };
+                const results = {};
+                let totalCorrect = 0;
+
+                Object.entries(userAnswers).forEach(([key, answer]) => {
+                        const userAnswer = answer.toLowerCase().trim();
+                        const correct = correctAnswers[key].some(correctAnswer => 
+                                userAnswer === correctAnswer
+                        );
+                        
+                        results[key] = {
+                                userAnswer: answer,
+                                isCorrect: correct,
+                                correctAnswers: correctAnswers[key]
+                        };
+                        
+                        if (correct) totalCorrect++;
+                });
+
+                results.totalCorrect = totalCorrect;
+                results.totalQuestions = 5;
+                markingResultsDiagram = results;
+                showResultsDiagram = true;
+        }
+
+        function checkMatchingAnswers() {
+                const correctAnswers = {
+                        q27: ['d'],
+                        q28: ['b'],
+                        q29: ['e'],
+                        q30: ['f']
+                };
+
+                const userAnswers = { q27, q28, q29, q30 };
+                const results = {};
+                let totalCorrect = 0;
+
+                Object.entries(userAnswers).forEach(([key, answer]) => {
+                        const userAnswer = answer.toLowerCase().trim();
+                        const correct = correctAnswers[key].some(correctAnswer => 
+                                userAnswer === correctAnswer
+                        );
+                        
+                        results[key] = {
+                                userAnswer: answer,
+                                isCorrect: correct,
+                                correctAnswers: correctAnswers[key]
+                        };
+                        
+                        if (correct) totalCorrect++;
+                });
+
+                results.totalCorrect = totalCorrect;
+                results.totalQuestions = 4;
+                markingResultsMatching = results;
+                showResultsMatching = true;
         }
 
         onMount(() => {
@@ -329,6 +383,57 @@
                                                                         class="w-full px-3 py-2 bg-gray-700 border border-gray-500 rounded text-white placeholder-gray-400 text-sm"
                                                                 />
                                                         </div>
+                                                        
+                                                        <!-- Check Button -->
+                                                        <div class="text-center mt-4 mb-4">
+                                                                <button
+                                                                        type="button"
+                                                                        onclick={checkMissingAnswers}
+                                                                        class="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded text-sm transition-colors"
+                                                                >
+                                                                        Check My Answers
+                                                                </button>
+                                                        </div>
+                                                        
+                                                        <!-- Results Display -->
+                                                        {#if showResultsMissing}
+                                                                <div class="bg-gray-700 rounded-lg p-4 mt-4 border border-gray-600">
+                                                                        <h4 class="text-lg font-semibold text-white mb-3 text-center">Results</h4>
+                                                                        
+                                                                        <!-- Score Summary -->
+                                                                        <div class="text-center mb-4">
+                                                                                <div class="text-2xl font-bold text-white mb-1">
+                                                                                        {markingResultsMissing.totalCorrect}/{markingResultsMissing.totalQuestions}
+                                                                                </div>
+                                                                                <div class="text-sm text-gray-300">
+                                                                                        {Math.round((markingResultsMissing.totalCorrect / markingResultsMissing.totalQuestions) * 100)}% Correct
+                                                                                </div>
+                                                                        </div>
+
+                                                                        <!-- Detailed Results -->
+                                                                        <div class="space-y-2 text-sm">
+                                                                                {#each ['q17', 'q18', 'q19', 'q20'] as questionKey}
+                                                                                        <div class="flex items-center justify-between p-2 rounded border {markingResultsMissing[questionKey]?.isCorrect ? 'bg-green-900/20 border-green-800' : 'bg-red-900/20 border-red-800'}">
+                                                                                                <div class="flex-1">
+                                                                                                        <div class="font-medium text-white text-xs">
+                                                                                                                {questionKey.toUpperCase()}: "{markingResultsMissing[questionKey]?.userAnswer || '(blank)'}"
+                                                                                                        </div>
+                                                                                                        <div class="text-xs text-gray-400 mt-1">
+                                                                                                                Correct: {markingResultsMissing[questionKey]?.correctAnswers?.join(' / ')}
+                                                                                                        </div>
+                                                                                                </div>
+                                                                                                <div class="ml-2">
+                                                                                                        {#if markingResultsMissing[questionKey]?.isCorrect}
+                                                                                                                <span class="text-green-400 text-lg">✓</span>
+                                                                                                        {:else}
+                                                                                                                <span class="text-red-400 text-lg">✗</span>
+                                                                                                        {/if}
+                                                                                                </div>
+                                                                                        </div>
+                                                                                {/each}
+                                                                        </div>
+                                                                </div>
+                                                        {/if}
                                                 </div>
                                         </div>
 
@@ -387,6 +492,57 @@
                                                                         class="w-full px-3 py-2 bg-gray-700 border border-gray-500 rounded text-white placeholder-gray-400 text-sm"
                                                                 />
                                                         </div>
+                                                        
+                                                        <!-- Check Button -->
+                                                        <div class="text-center mt-4 mb-4">
+                                                                <button
+                                                                        type="button"
+                                                                        onclick={checkDiagramAnswers}
+                                                                        class="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded text-sm transition-colors"
+                                                                >
+                                                                        Check My Answers
+                                                                </button>
+                                                        </div>
+                                                        
+                                                        <!-- Results Display -->
+                                                        {#if showResultsDiagram}
+                                                                <div class="bg-gray-700 rounded-lg p-4 mt-4 border border-gray-600">
+                                                                        <h4 class="text-lg font-semibold text-white mb-3 text-center">Results</h4>
+                                                                        
+                                                                        <!-- Score Summary -->
+                                                                        <div class="text-center mb-4">
+                                                                                <div class="text-2xl font-bold text-white mb-1">
+                                                                                        {markingResultsDiagram.totalCorrect}/{markingResultsDiagram.totalQuestions}
+                                                                                </div>
+                                                                                <div class="text-sm text-gray-300">
+                                                                                        {Math.round((markingResultsDiagram.totalCorrect / markingResultsDiagram.totalQuestions) * 100)}% Correct
+                                                                                </div>
+                                                                        </div>
+
+                                                                        <!-- Detailed Results -->
+                                                                        <div class="space-y-2 text-sm">
+                                                                                {#each ['q16', 'q17_diagram', 'q18_diagram', 'q19_diagram', 'q20_diagram'] as questionKey}
+                                                                                        <div class="flex items-center justify-between p-2 rounded border {markingResultsDiagram[questionKey]?.isCorrect ? 'bg-green-900/20 border-green-800' : 'bg-red-900/20 border-red-800'}">
+                                                                                                <div class="flex-1">
+                                                                                                        <div class="font-medium text-white text-xs">
+                                                                                                                {questionKey.replace('_diagram', '').toUpperCase()}: "{markingResultsDiagram[questionKey]?.userAnswer || '(blank)'}"
+                                                                                                        </div>
+                                                                                                        <div class="text-xs text-gray-400 mt-1">
+                                                                                                                Correct: {markingResultsDiagram[questionKey]?.correctAnswers?.join(' / ')}
+                                                                                                        </div>
+                                                                                                </div>
+                                                                                                <div class="ml-2">
+                                                                                                        {#if markingResultsDiagram[questionKey]?.isCorrect}
+                                                                                                                <span class="text-green-400 text-lg">✓</span>
+                                                                                                        {:else}
+                                                                                                                <span class="text-red-400 text-lg">✗</span>
+                                                                                                        {/if}
+                                                                                                </div>
+                                                                                        </div>
+                                                                                {/each}
+                                                                        </div>
+                                                                </div>
+                                                        {/if}
                                                 </div>
                                         </div>
 
@@ -441,118 +597,60 @@
                                                                         class="w-full px-3 py-2 bg-gray-700 border border-gray-500 rounded text-white placeholder-gray-400 text-sm"
                                                                 />
                                                         </div>
+                                                        
+                                                        <!-- Check Button -->
+                                                        <div class="text-center mt-4 mb-4">
+                                                                <button
+                                                                        type="button"
+                                                                        onclick={checkMatchingAnswers}
+                                                                        class="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded text-sm transition-colors"
+                                                                >
+                                                                        Check My Answers
+                                                                </button>
+                                                        </div>
+                                                        
+                                                        <!-- Results Display -->
+                                                        {#if showResultsMatching}
+                                                                <div class="bg-gray-700 rounded-lg p-4 mt-4 border border-gray-600">
+                                                                        <h4 class="text-lg font-semibold text-white mb-3 text-center">Results</h4>
+                                                                        
+                                                                        <!-- Score Summary -->
+                                                                        <div class="text-center mb-4">
+                                                                                <div class="text-2xl font-bold text-white mb-1">
+                                                                                        {markingResultsMatching.totalCorrect}/{markingResultsMatching.totalQuestions}
+                                                                                </div>
+                                                                                <div class="text-sm text-gray-300">
+                                                                                        {Math.round((markingResultsMatching.totalCorrect / markingResultsMatching.totalQuestions) * 100)}% Correct
+                                                                                </div>
+                                                                        </div>
+
+                                                                        <!-- Detailed Results -->
+                                                                        <div class="space-y-2 text-sm">
+                                                                                {#each ['q27', 'q28', 'q29', 'q30'] as questionKey}
+                                                                                        <div class="flex items-center justify-between p-2 rounded border {markingResultsMatching[questionKey]?.isCorrect ? 'bg-green-900/20 border-green-800' : 'bg-red-900/20 border-red-800'}">
+                                                                                                <div class="flex-1">
+                                                                                                        <div class="font-medium text-white text-xs">
+                                                                                                                {questionKey.toUpperCase()}: "{markingResultsMatching[questionKey]?.userAnswer || '(blank)'}"
+                                                                                                        </div>
+                                                                                                        <div class="text-xs text-gray-400 mt-1">
+                                                                                                                Correct: {markingResultsMatching[questionKey]?.correctAnswers?.join(' / ')}
+                                                                                                        </div>
+                                                                                                </div>
+                                                                                                <div class="ml-2">
+                                                                                                        {#if markingResultsMatching[questionKey]?.isCorrect}
+                                                                                                                <span class="text-green-400 text-lg">✓</span>
+                                                                                                        {:else}
+                                                                                                                <span class="text-red-400 text-lg">✗</span>
+                                                                                                        {/if}
+                                                                                                </div>
+                                                                                        </div>
+                                                                                {/each}
+                                                                        </div>
+                                                                </div>
+                                                        {/if}
                                                 </div>
                                         </div>
                                 </div>
-
-                                <!-- Check My Answers Button -->
-                                <div class="text-center mb-8">
-                                        <button
-                                                type="button"
-                                                onclick={checkAnswers}
-                                                class="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-lg text-lg transition-colors"
-                                        >
-                                                Check My Answers
-                                        </button>
-                                </div>
-
-                                <!-- Results Display -->
-                                {#if showResults}
-                                        <div class="bg-gray-800 rounded-lg p-6 mb-8 border border-gray-600">
-                                                <h3 class="text-xl font-semibold text-white mb-6 text-center">Your Results</h3>
-                                                
-                                                <!-- Score Summary -->
-                                                <div class="text-center mb-6">
-                                                        <div class="text-3xl font-bold text-white mb-2">
-                                                                {markingResults.totalCorrect}/{markingResults.totalQuestions}
-                                                        </div>
-                                                        <div class="text-lg text-gray-300">
-                                                                {Math.round((markingResults.totalCorrect / markingResults.totalQuestions) * 100)}% Correct
-                                                        </div>
-                                                </div>
-
-                                                <!-- Detailed Results -->
-                                                <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
-                                                        <!-- Missing Information Results -->
-                                                        <div>
-                                                                <h4 class="text-lg font-semibold text-white mb-3 border-b border-gray-600 pb-2">Missing Information (Q17-Q20)</h4>
-                                                                <div class="space-y-2 text-sm">
-                                                                        {#each ['q17', 'q18', 'q19', 'q20'] as questionKey}
-                                                                                <div class="flex items-center justify-between p-2 rounded border {markingResults[questionKey]?.isCorrect ? 'bg-green-900/20 border-green-800' : 'bg-red-900/20 border-red-800'}">
-                                                                                        <div class="flex-1">
-                                                                                                <div class="font-medium text-white">
-                                                                                                        {questionKey.toUpperCase()}: "{markingResults[questionKey]?.userAnswer || '(blank)'}"
-                                                                                                </div>
-                                                                                                <div class="text-xs text-gray-400 mt-1">
-                                                                                                        Correct: {markingResults[questionKey]?.correctAnswers?.join(' / ')}
-                                                                                                </div>
-                                                                                        </div>
-                                                                                        <div class="ml-3">
-                                                                                                {#if markingResults[questionKey]?.isCorrect}
-                                                                                                        <span class="text-green-400 text-xl">✓</span>
-                                                                                                {:else}
-                                                                                                        <span class="text-red-400 text-xl">✗</span>
-                                                                                                {/if}
-                                                                                        </div>
-                                                                                </div>
-                                                                        {/each}
-                                                                </div>
-                                                        </div>
-
-                                                        <!-- Diagram Completion Results -->
-                                                        <div>
-                                                                <h4 class="text-lg font-semibold text-white mb-3 border-b border-gray-600 pb-2">Diagram Completion (Q16-Q20)</h4>
-                                                                <div class="space-y-2 text-sm">
-                                                                        {#each ['q16', 'q17_diagram', 'q18_diagram', 'q19_diagram', 'q20_diagram'] as questionKey, index}
-                                                                                <div class="flex items-center justify-between p-2 rounded border {markingResults[questionKey]?.isCorrect ? 'bg-green-900/20 border-green-800' : 'bg-red-900/20 border-red-800'}">
-                                                                                        <div class="flex-1">
-                                                                                                <div class="font-medium text-white">
-                                                                                                        Q{16 + index}: "{markingResults[questionKey]?.userAnswer || '(blank)'}"
-                                                                                                </div>
-                                                                                                <div class="text-xs text-gray-400 mt-1">
-                                                                                                        Correct: {markingResults[questionKey]?.correctAnswers?.join(' / ')}
-                                                                                                </div>
-                                                                                        </div>
-                                                                                        <div class="ml-3">
-                                                                                                {#if markingResults[questionKey]?.isCorrect}
-                                                                                                        <span class="text-green-400 text-xl">✓</span>
-                                                                                                {:else}
-                                                                                                        <span class="text-red-400 text-xl">✗</span>
-                                                                                                {/if}
-                                                                                        </div>
-                                                                                </div>
-                                                                        {/each}
-                                                                </div>
-                                                        </div>
-
-                                                        <!-- Matching Information Results -->
-                                                        <div>
-                                                                <h4 class="text-lg font-semibold text-white mb-3 border-b border-gray-600 pb-2">Matching Information (Q27-Q30)</h4>
-                                                                <div class="space-y-2 text-sm">
-                                                                        {#each ['q27', 'q28', 'q29', 'q30'] as questionKey}
-                                                                                <div class="flex items-center justify-between p-2 rounded border {markingResults[questionKey]?.isCorrect ? 'bg-green-900/20 border-green-800' : 'bg-red-900/20 border-red-800'}">
-                                                                                        <div class="flex-1">
-                                                                                                <div class="font-medium text-white">
-                                                                                                        {questionKey.toUpperCase()}: "{markingResults[questionKey]?.userAnswer || '(blank)'}"
-                                                                                                </div>
-                                                                                                <div class="text-xs text-gray-400 mt-1">
-                                                                                                        Correct: {markingResults[questionKey]?.correctAnswers?.join(' / ')}
-                                                                                                </div>
-                                                                                        </div>
-                                                                                        <div class="ml-3">
-                                                                                                {#if markingResults[questionKey]?.isCorrect}
-                                                                                                        <span class="text-green-400 text-xl">✓</span>
-                                                                                                {:else}
-                                                                                                        <span class="text-red-400 text-xl">✗</span>
-                                                                                                {/if}
-                                                                                        </div>
-                                                                                </div>
-                                                                        {/each}
-                                                                </div>
-                                                        </div>
-                                                </div>
-                                        </div>
-                                {/if}
 
                                 <!-- Answer Video -->
                                 <div class="text-center">
