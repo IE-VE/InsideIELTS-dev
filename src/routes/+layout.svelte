@@ -1,8 +1,18 @@
 <script lang="ts">
         import '../app.css';
         import DarkModeToggle from '$lib/components/DarkModeToggle.svelte';
+        import { page } from '$app/stores';
 
         let isMenuOpen = $state(false);
+
+        // Check if we're on IETPP pages  
+        let isIETTPActive = $state(false);
+        
+        $effect(() => {
+                if (typeof window !== 'undefined') {
+                        isIETTPActive = $page.url?.pathname?.startsWith('/IETPP') || false;
+                }
+        });
 
         // Force dark mode always
         if (typeof document !== 'undefined') {
@@ -130,12 +140,18 @@
 
                         <!-- Center IETPP Link - Absolutely centered on page -->
                         <div class="absolute left-1/2 transform -translate-x-1/2 hidden md:flex">
-                                <a
-                                        href="/IETPP"
-                                        class="text-gray-600 hover:text-teal-600 dark:text-gray-300 dark:hover:text-teal-400 font-bold text-l"
-                                >
-                                        IETPP
-                                </a>
+                                {#if isIETTPActive}
+                                        <span class="text-teal-600 dark:text-teal-400 font-bold text-l cursor-default">
+                                                IETPP
+                                        </span>
+                                {:else}
+                                        <a
+                                                href="/IETPP"
+                                                class="text-gray-600 hover:text-teal-600 dark:text-gray-300 dark:hover:text-teal-400 font-bold text-l"
+                                        >
+                                                IETPP
+                                        </a>
+                                {/if}
                         </div>
 
                         <!-- Desktop Navigation -->
@@ -174,9 +190,15 @@
                 <!-- Mobile Menu -->
                 {#if isMenuOpen}
                         <div class="mt-4 space-y-4 text-sm md:hidden">
-                                <a href="/IETPP" class="block text-gray-600 dark:text-gray-300 font-bold">
-                                        IETPP
-                                </a>
+                                {#if isIETTPActive}
+                                        <span class="block text-teal-600 dark:text-teal-400 font-bold cursor-default">
+                                                IETPP
+                                        </span>
+                                {:else}
+                                        <a href="/IETPP" class="block text-gray-600 dark:text-gray-300 font-bold">
+                                                IETPP
+                                        </a>
+                                {/if}
                                 {#each navLinks as link}
                                         <a href={link.href} class="block text-gray-600 dark:text-gray-300">
                                                 {link.text}
