@@ -257,19 +257,36 @@
                                 <div class="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-sm border border-gray-200 dark:border-gray-700">
                                         <p class="text-gray-700 dark:text-gray-300 mb-6">
                                                 The <strong>Listening Test and Reading Test</strong> are marked by qualified
-                                                <strong>IELTS</strong> administrators who manually score your answer sheet. The
-                                                <strong>Writing Test and Speaking Test</strong> are assessed by certified examiners
-                                                using detailed assessment criteria and band descriptors.
+                                                <strong>IELTS</strong> administrators who manually score your answer sheet out of
+                                                <strong>40</strong> (<strong>1 mark</strong> for each correct answer). Your score is then converted to a band
+                                                on the <strong>IELTS 9-band scale</strong>. You can be awarded a full or half-band score, just as 
+                                                in the speaking and writing tests.
+                                        </p>
+                                        <p class="text-gray-700 dark:text-gray-300 mb-6">
+                                                The scoring system varies to a small degree with each <strong>IELTS</strong> test, but
+                                                broadly speaking, you need to score at least <strong>23/40</strong> for a
+                                                <strong>Band 6</strong> in the <strong>Listening and Reading Test</strong>, and
+                                                at least <strong>30/40</strong> for a <strong>Band 7</strong> award.
+                                        </p>
+                                        <p class="text-gray-700 dark:text-gray-300">
+                                                The <strong>Speaking and Writing</strong> elements of the <strong>IELTS</strong> test are
+                                                graded by qualified <strong>IELTS</strong> examiners using the official
+                                                <strong>IELTS Speaking and Writing Assessment Rubrics</strong>. The
+                                                assessment rubrics allow the examiner to numerically rate your
+                                                language competency according to a fixed, pre-specified list of 
+                                                descriptors.
                                         </p>
                                 </div>
 
                                 <!-- Band Scale -->
                                 <div class="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-sm border border-gray-200 dark:border-gray-700">
-                                        <h3 class="text-xl font-semibold text-gray-800 dark:text-gray-200 mb-4 text-center">
-                                                IELTS Band Scale
-                                        </h3>
+                                        <p class="text-gray-700 dark:text-gray-300 mb-4 text-center">
+                                                The descriptive statements summarising a candidate's language ability for <strong>IELTS</strong> Band scores 
+                                                4 - 9 are shown in the table below.
+                                        </p>
                                         <div class="text-center">
                                                 <img src="/BANDS.png" alt="IELTS Band Scale" class="mx-auto mb-4 max-w-[700px] rounded border lightbox-image cursor-pointer"/>
+                                                <p class="text-sm text-gray-600 dark:text-gray-400 mb-4"><strong>Band score descriptive statements</strong></p>
                                                 <p class="text-sm text-gray-600 dark:text-gray-400">Click to view full size</p>
                                         </div>
                                 </div>
@@ -294,6 +311,23 @@
                                                 <img src="/Writing_T2_rubic.png" alt="Writing Task 2 Assessment Criteria" class="mx-auto mb-4 max-w-[700px] rounded border lightbox-image cursor-pointer"/>
                                                 <p class="text-sm text-gray-600 dark:text-gray-400">Click to view full size</p>
                                         </div>
+                                </div>
+
+                                <!-- Course Introduction -->
+                                <div class="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-sm border border-gray-200 dark:border-gray-700">
+                                        <p class="text-gray-700 dark:text-gray-300 mb-6">
+                                                If you are going to achieve your target band score, it is
+                                                essential that you are familiar with the specific descriptors which constitute the
+                                                <strong>assessment criteria</strong> for each part of the <strong>IELTS</strong> test.
+                                                You can then focus on and improve each skill until you are
+                                                confident and ready to sit the test.
+                                        </p>
+                                        <p class="text-gray-700 dark:text-gray-300">
+                                                Over the course of the following <strong>12 lessons</strong> you will be introduced to the content 
+                                                and assessment descriptors for the four parts of the <strong>IELTS</strong> test, and complete practice exercises
+                                                to demonstrate and reinforce the skills you need on your journey
+                                                to <strong>IELTS</strong> success.
+                                        </p>
                                 </div>
                         </div>
                 </section>
