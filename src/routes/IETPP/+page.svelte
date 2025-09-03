@@ -101,15 +101,15 @@
                                                         <div class="space-y-2 ml-8">
                                                                 <div class="flex gap-2">
                                                                         <span class="text-gray-600 dark:text-gray-400">(i)</span>
-                                                                        <a href="/IETPP/lesson-01-i" class="text-teal-600 dark:text-teal-400 hover:underline">Multiple choice</a>
+                                                                        <a href="/IETPP/lesson-01/multiple-choice" class="text-teal-600 dark:text-teal-400 hover:underline">Multiple choice</a>
                                                                 </div>
                                                                 <div class="flex gap-2">
                                                                         <span class="text-gray-600 dark:text-gray-400">(ii)</span>
-                                                                        <a href="/IETPP/lesson-01-ii" class="text-teal-600 dark:text-teal-400 hover:underline">Short answer</a>
+                                                                        <a href="/IETPP/lesson-01/short-answer" class="text-teal-600 dark:text-teal-400 hover:underline">Short answer</a>
                                                                 </div>
                                                                 <div class="flex gap-2">
                                                                         <span class="text-gray-600 dark:text-gray-400">(iii)</span>
-                                                                        <a href="/IETPP/lesson-01-iii" class="text-teal-600 dark:text-teal-400 hover:underline">Sentence completion</a>
+                                                                        <a href="/IETPP/lesson-01/sentence-completion" class="text-teal-600 dark:text-teal-400 hover:underline">Sentence completion</a>
                                                                 </div>
                                                         </div>
                                                 </div>
