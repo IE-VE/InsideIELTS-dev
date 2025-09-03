@@ -132,7 +132,7 @@
                         <div class="absolute left-1/2 transform -translate-x-1/2 hidden md:flex">
                                 <a
                                         href="/ietpp"
-                                        class="text-gray-600 hover:text-teal-600 dark:text-gray-300 dark:hover:text-teal-400 font-bold text-sm"
+                                        class="text-gray-600 hover:text-teal-600 dark:text-gray-300 dark:hover:text-teal-400 font-bold text-l"
                                 >
                                         IETPP
                                 </a>
