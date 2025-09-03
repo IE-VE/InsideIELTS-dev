@@ -13,22 +13,24 @@
 <div class="min-h-screen bg-white dark:bg-gray-900">
 	<!-- Header Section -->
 	<div class="container mx-auto px-6 py-8">
-		<div class="text-center mb-8">
-			<div class="mb-4">
+		<div class="mb-8">
+			<!-- <div class="mb-4">
 				<p class="text-4xl mb-4">👉</p>
 				<p class="text-lg font-semibold italic text-gray-700 dark:text-gray-300">
 					<b>Select your preferred language</b>
 				</p>
-			</div>
+			</div> -->
 
 			<div class="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 mb-8">
-				<div class="text-sm font-bold text-teal-600 dark:text-teal-400 mb-4">
+				<div class="text-xs text-left font-bold text-teal-600 dark:text-teal-400 mb-4">
 					COURSE CODE: IE2401
 				</div>
-
+				<h1 class="text-4xl text-center font-bold text-gray-900 dark:text-white mb-12">
+					InsideIELTS Test Preparation Program
+				</h1>
 				<div class="text-gray-700 dark:text-gray-300 mb-6">
 					<p class="mb-4">
-						The <b>InsideIELTS Introduction to the IELTS Test</b> course is a <b>30 lesson</b>
+						The <b>IETPP</b> course is a <b>30 lesson</b>
 						introductory program designed to give test candidates a full insight into the make-up,
 						skill requirements and assessment procedures of the <b>IELTS</b> test.
 					</p>
@@ -42,7 +44,7 @@
 						the <b>IELTS</b> test.
 					</p>
 
-					<div class="mb-6">
+					<!-- <div class="mb-6">
 						<a
 							href="https://freetest.insideielts.com/"
 							target="_blank"
@@ -51,7 +53,7 @@
 						>
 							Start Free Test
 						</a>
-					</div>
+					</div> -->
 
 					<p class="border-b-2 border-gray-800 dark:border-gray-200 pb-8">
 						Personal feedback is given on all <b>Skill Check</b> exercises through the
@@ -271,13 +273,13 @@
 					title="Back to HOME"
 					class="inline-flex flex-col items-center text-gray-600 dark:text-gray-400 hover:text-teal-600 dark:hover:text-teal-400 transition-colors"
 				>
-					<img
+					<!-- <img
 						src="/IE_logo.png"
 						alt="InsideIELTS.com"
 						class="w-15 h-15 mb-2"
 						width="60"
 						height="60"
-					/>
+					/> -->
 					<p class="text-sm font-bold">EXIT IETPP</p>
 				</a>
 			</div>
