@@ -287,7 +287,7 @@
                                                         src="/LESSONS/les01/01_L1-prac.png"
                                                         alt="Listening missing information practice"
                                                         class="w-full rounded border border-gray-500 mb-4 cursor-pointer"
-                                                        onclick={() => openLightbox('/LESSONS/les01/01_L1-prac.png'))
+                                                        onclick={() => openLightbox('/LESSONS/les01/01_L1-prac.png')}
                                                 />
 
                                                 <div class="text-center mb-4">
