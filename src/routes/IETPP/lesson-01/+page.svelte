@@ -410,7 +410,7 @@
                                 </a>
                                 <a
                                         href="/IETPP/lesson-01/sentence-completion"
-                                        class="block bg-slate-600 hover:bg-slate-700 text-white font-bold py-4 px-6 rounded text-center transition-colors"
+                                        class="block bg-cyan-600 hover:bg-cyan-700 text-white font-bold py-4 px-6 rounded text-center transition-colors"
                                 >
                                         <div class="text-sm mb-1">01 (iii)</div>
                                         <div>Sentence Completion</div>
