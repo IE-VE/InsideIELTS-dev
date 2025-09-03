@@ -25,6 +25,7 @@
 
         // Updated navigation links for main menu (no "Practice" repetition)
         const navLinks = [
+                { href: '#', text: 'IETPP', extraSpacing: true },
                 { href: '/speaking', text: 'SPEAKING' },
                 { href: '/writing', text: 'WRITING' },
                 { href: '/reading', text: 'READING' },
@@ -133,7 +134,7 @@
                                 {#each navLinks as link}
                                         <a
                                                 href={link.href}
-                                                class="text-gray-600 hover:text-teal-600 dark:text-gray-300 dark:hover:text-teal-400"
+                                                class="text-gray-600 hover:text-teal-600 dark:text-gray-300 dark:hover:text-teal-400 {link.extraSpacing ? 'mr-8' : ''}"
                                         >
                                                 {link.text}
                                         </a>
