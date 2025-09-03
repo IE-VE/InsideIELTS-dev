@@ -394,7 +394,7 @@
                         <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
                                 <a
                                         href="/IETPP/lesson-01/multiple-choice"
-                                        class="block bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-6 rounded text-center transition-colors"
+                                        class="block bg-teal-500 hover:bg-teal-600 text-white font-bold py-4 px-6 rounded text-center transition-colors"
                                 >
                                         <div class="text-sm mb-1">01 (i)</div>
                                         <div>Multiple Choice</div>
@@ -410,7 +410,7 @@
                                 </a>
                                 <a
                                         href="/IETPP/lesson-01/sentence-completion"
-                                        class="block bg-purple-600 hover:bg-purple-700 text-white font-bold py-4 px-6 rounded text-center transition-colors"
+                                        class="block bg-slate-600 hover:bg-slate-700 text-white font-bold py-4 px-6 rounded text-center transition-colors"
                                 >
                                         <div class="text-sm mb-1">01 (iii)</div>
                                         <div>Sentence Completion</div>
