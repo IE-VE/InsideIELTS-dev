@@ -27,7 +27,6 @@
         const navLinks = [
                 { href: '/speaking', text: 'SPEAKING' },
                 { href: '/writing', text: 'WRITING' },
-                { href: '#', text: 'IETPP', extraSpacing: true, bold: true },
                 { href: '/reading', text: 'READING' },
                 { href: '/listening', text: 'LISTENING' }
         ];
@@ -129,12 +128,22 @@
                                 <span>InsideIELTS</span>
                         </a>
 
+                        <!-- Center IETPP Link -->
+                        <div class="hidden md:flex">
+                                <a
+                                        href="#"
+                                        class="text-gray-600 hover:text-teal-600 dark:text-gray-300 dark:hover:text-teal-400 font-bold text-sm"
+                                >
+                                        IETPP
+                                </a>
+                        </div>
+
                         <!-- Desktop Navigation -->
                         <div class="hidden items-center space-x-6 text-sm md:flex">
                                 {#each navLinks as link}
                                         <a
                                                 href={link.href}
-                                                class="text-gray-600 hover:text-teal-600 dark:text-gray-300 dark:hover:text-teal-400 {link.extraSpacing ? 'mr-8' : ''} {link.bold ? 'font-bold' : ''}"
+                                                class="text-gray-600 hover:text-teal-600 dark:text-gray-300 dark:hover:text-teal-400"
                                         >
                                                 {link.text}
                                         </a>
@@ -165,6 +174,9 @@
                 <!-- Mobile Menu -->
                 {#if isMenuOpen}
                         <div class="mt-4 space-y-4 text-sm md:hidden">
+                                <a href="#" class="block text-gray-600 dark:text-gray-300 font-bold">
+                                        IETPP
+                                </a>
                                 {#each navLinks as link}
                                         <a href={link.href} class="block text-gray-600 dark:text-gray-300">
                                                 {link.text}
