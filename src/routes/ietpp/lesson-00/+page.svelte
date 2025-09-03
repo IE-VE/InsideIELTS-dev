@@ -15,7 +15,7 @@
                 <!-- Lesson Header -->
                 <div class="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 mb-8">
                         <div class="text-center">
-                                <div class="text-sm font-bold text-teal-600 dark:text-teal-400 mb-2">
+                                <div class="text-xs text-left font-bold text-teal-600 dark:text-teal-400 mb-2">
                                         LESSON CODE: IE2401_00
                                 </div>
                                 <h1 class="text-3xl font-bold text-gray-800 dark:text-gray-200 mb-2">
