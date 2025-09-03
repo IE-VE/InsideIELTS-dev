@@ -101,15 +101,15 @@
                                                         <div class="space-y-2 ml-8">
                                                                 <div class="flex gap-2">
                                                                         <span class="text-gray-600 dark:text-gray-400">(i)</span>
-                                                                        <a href="/ietpp/lesson-01-i" class="text-teal-600 dark:text-teal-400 hover:underline">Multiple choice</a>
+                                                                        <a href="/IETPP/lesson-01-i" class="text-teal-600 dark:text-teal-400 hover:underline">Multiple choice</a>
                                                                 </div>
                                                                 <div class="flex gap-2">
                                                                         <span class="text-gray-600 dark:text-gray-400">(ii)</span>
-                                                                        <a href="/ietpp/lesson-01-ii" class="text-teal-600 dark:text-teal-400 hover:underline">Short answer</a>
+                                                                        <a href="/IETPP/lesson-01-ii" class="text-teal-600 dark:text-teal-400 hover:underline">Short answer</a>
                                                                 </div>
                                                                 <div class="flex gap-2">
                                                                         <span class="text-gray-600 dark:text-gray-400">(iii)</span>
-                                                                        <a href="/ietpp/lesson-01-iii" class="text-teal-600 dark:text-teal-400 hover:underline">Sentence completion</a>
+                                                                        <a href="/IETPP/lesson-01-iii" class="text-teal-600 dark:text-teal-400 hover:underline">Sentence completion</a>
                                                                 </div>
                                                         </div>
                                                 </div>
@@ -124,7 +124,7 @@
                                                         <span class="text-xl font-bold text-gray-800 dark:text-gray-200 underline">READING</span>
                                                 </div>
                                                 <div class="ml-12 mb-4">
-                                                        <a href="/ietpp/lesson-02" class="text-teal-600 dark:text-teal-400 hover:underline">
+                                                        <a href="/IETPP/lesson-02" class="text-teal-600 dark:text-teal-400 hover:underline">
                                                                 Introduction to the Reading Test
                                                         </a>
                                                 </div>

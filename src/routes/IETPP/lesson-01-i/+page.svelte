@@ -115,7 +115,7 @@
                                 </p>
                                 <div class="text-center">
                                         <a
-                                                href="/ietpp/lesson-01-i-sc"
+                                                href="/IETPP/lesson-01-i-sc"
                                                 class="inline-block bg-yellow-600 hover:bg-yellow-700 text-white font-bold py-3 px-6 rounded-lg transition-colors"
                                         >
                                                 Start Skill Check Exercise
@@ -127,13 +127,13 @@
                 <!-- Navigation -->
                 <div class="flex justify-between items-center mt-12">
                         <a
-                                href="/ietpp/lesson-01"
+                                href="/IETPP/lesson-01"
                                 class="text-teal-600 dark:text-teal-400 hover:underline font-semibold"
                         >
                                 ← Back to Lesson 01
                         </a>
                         <a
-                                href="/ietpp/lesson-01-ii"
+                                href="/IETPP/lesson-01-ii"
                                 class="text-teal-600 dark:text-teal-400 hover:underline font-semibold"
                         >
                                 Next: Short Answer →

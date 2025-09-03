@@ -115,7 +115,7 @@
                                                                 </ul>
                                                         </div>
                                                         <div class="mt-4">
-                                                                <a href="/ietpp/lesson-04-p1" class="text-red-600 dark:text-red-400 hover:underline font-semibold">
+                                                                <a href="/IETPP/lesson-04-p1" class="text-red-600 dark:text-red-400 hover:underline font-semibold">
                                                                         → Learn more about Part 1 strategies
                                                                 </a>
                                                         </div>
@@ -145,7 +145,7 @@
                                                                 </ul>
                                                         </div>
                                                         <div class="mt-4">
-                                                                <a href="/ietpp/lesson-04-p2" class="text-yellow-600 dark:text-yellow-400 hover:underline font-semibold">
+                                                                <a href="/IETPP/lesson-04-p2" class="text-yellow-600 dark:text-yellow-400 hover:underline font-semibold">
                                                                         → Learn more about Part 2 strategies
                                                                 </a>
                                                         </div>
@@ -175,7 +175,7 @@
                                                                 </ul>
                                                         </div>
                                                         <div class="mt-4">
-                                                                <a href="/ietpp/lesson-04-p3" class="text-green-600 dark:text-green-400 hover:underline font-semibold">
+                                                                <a href="/IETPP/lesson-04-p3" class="text-green-600 dark:text-green-400 hover:underline font-semibold">
                                                                         → Learn more about Part 3 strategies
                                                                 </a>
                                                         </div>
@@ -192,7 +192,7 @@
                         </h2>
                         
                         <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                                <a href="/ietpp/lesson-04-i" class="block bg-white dark:bg-gray-800 rounded-lg p-6 shadow-sm border border-gray-200 dark:border-gray-700 hover:shadow-md transition-shadow">
+                                <a href="/IETPP/lesson-04-i" class="block bg-white dark:bg-gray-800 rounded-lg p-6 shadow-sm border border-gray-200 dark:border-gray-700 hover:shadow-md transition-shadow">
                                         <div class="text-center">
                                                 <div class="text-4xl mb-3">🌊</div>
                                                 <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-2">Fluency & Coherence</h3>
@@ -200,7 +200,7 @@
                                         </div>
                                 </a>
 
-                                <a href="/ietpp/lesson-04-ii" class="block bg-white dark:bg-gray-800 rounded-lg p-6 shadow-sm border border-gray-200 dark:border-gray-700 hover:shadow-md transition-shadow">
+                                <a href="/IETPP/lesson-04-ii" class="block bg-white dark:bg-gray-800 rounded-lg p-6 shadow-sm border border-gray-200 dark:border-gray-700 hover:shadow-md transition-shadow">
                                         <div class="text-center">
                                                 <div class="text-4xl mb-3">📚</div>
                                                 <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-2">Lexical Resource</h3>
@@ -208,7 +208,7 @@
                                         </div>
                                 </a>
 
-                                <a href="/ietpp/lesson-04-iii" class="block bg-white dark:bg-gray-800 rounded-lg p-6 shadow-sm border border-gray-200 dark:border-gray-700 hover:shadow-md transition-shadow">
+                                <a href="/IETPP/lesson-04-iii" class="block bg-white dark:bg-gray-800 rounded-lg p-6 shadow-sm border border-gray-200 dark:border-gray-700 hover:shadow-md transition-shadow">
                                         <div class="text-center">
                                                 <div class="text-4xl mb-3">🏗️</div>
                                                 <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-2">Grammar</h3>
@@ -216,7 +216,7 @@
                                         </div>
                                 </a>
 
-                                <a href="/ietpp/lesson-04-iv" class="block bg-white dark:bg-gray-800 rounded-lg p-6 shadow-sm border border-gray-200 dark:border-gray-700 hover:shadow-md transition-shadow">
+                                <a href="/IETPP/lesson-04-iv" class="block bg-white dark:bg-gray-800 rounded-lg p-6 shadow-sm border border-gray-200 dark:border-gray-700 hover:shadow-md transition-shadow">
                                         <div class="text-center">
                                                 <div class="text-4xl mb-3">🗣️</div>
                                                 <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-2">Pronunciation</h3>

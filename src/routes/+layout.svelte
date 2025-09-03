@@ -174,7 +174,7 @@
                 <!-- Mobile Menu -->
                 {#if isMenuOpen}
                         <div class="mt-4 space-y-4 text-sm md:hidden">
-                                <a href="/ietpp" class="block text-gray-600 dark:text-gray-300 font-bold">
+                                <a href="/IETPP" class="block text-gray-600 dark:text-gray-300 font-bold">
                                         IETPP
                                 </a>
                                 {#each navLinks as link}

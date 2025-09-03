@@ -102,7 +102,7 @@
                                         </div>
 
                                         <div class="mt-4">
-                                                <a href="/ietpp/lesson-03-t1-ac" class="text-blue-600 dark:text-blue-400 hover:underline font-semibold">
+                                                <a href="/IETPP/lesson-03-t1-ac" class="text-blue-600 dark:text-blue-400 hover:underline font-semibold">
                                                         → Learn more about Academic Task 1
                                                 </a>
                                         </div>
@@ -143,7 +143,7 @@
                                         </div>
 
                                         <div class="mt-4">
-                                                <a href="/ietpp/lesson-03-t1-gt" class="text-green-600 dark:text-green-400 hover:underline font-semibold">
+                                                <a href="/IETPP/lesson-03-t1-gt" class="text-green-600 dark:text-green-400 hover:underline font-semibold">
                                                         → Learn more about General Training Task 1
                                                 </a>
                                         </div>
@@ -152,7 +152,7 @@
 
                         <!-- Task 2 Link -->
                         <div class="text-center mt-8">
-                                <a href="/ietpp/lesson-03-t2" class="inline-block bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-6 rounded-lg transition-colors">
+                                <a href="/IETPP/lesson-03-t2" class="inline-block bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-6 rounded-lg transition-colors">
                                         Learn about Task 2 (Both Academic & General Training)
                                 </a>
                         </div>
@@ -165,7 +165,7 @@
                         </h2>
                         
                         <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                                <a href="/ietpp/lesson-03-i" class="block bg-white dark:bg-gray-800 rounded-lg p-6 shadow-sm border border-gray-200 dark:border-gray-700 hover:shadow-md transition-shadow">
+                                <a href="/IETPP/lesson-03-i" class="block bg-white dark:bg-gray-800 rounded-lg p-6 shadow-sm border border-gray-200 dark:border-gray-700 hover:shadow-md transition-shadow">
                                         <div class="text-center">
                                                 <div class="text-4xl mb-3">🎯</div>
                                                 <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-2">Task Achievement</h3>
@@ -173,7 +173,7 @@
                                         </div>
                                 </a>
 
-                                <a href="/ietpp/lesson-03-ii" class="block bg-white dark:bg-gray-800 rounded-lg p-6 shadow-sm border border-gray-200 dark:border-gray-700 hover:shadow-md transition-shadow">
+                                <a href="/IETPP/lesson-03-ii" class="block bg-white dark:bg-gray-800 rounded-lg p-6 shadow-sm border border-gray-200 dark:border-gray-700 hover:shadow-md transition-shadow">
                                         <div class="text-center">
                                                 <div class="text-4xl mb-3">🔗</div>
                                                 <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-2">Coherence & Cohesion</h3>
@@ -181,7 +181,7 @@
                                         </div>
                                 </a>
 
-                                <a href="/ietpp/lesson-03-iii" class="block bg-white dark:bg-gray-800 rounded-lg p-6 shadow-sm border border-gray-200 dark:border-gray-700 hover:shadow-md transition-shadow">
+                                <a href="/IETPP/lesson-03-iii" class="block bg-white dark:bg-gray-800 rounded-lg p-6 shadow-sm border border-gray-200 dark:border-gray-700 hover:shadow-md transition-shadow">
                                         <div class="text-center">
                                                 <div class="text-4xl mb-3">📚</div>
                                                 <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-2">Lexical Resource</h3>
@@ -189,7 +189,7 @@
                                         </div>
                                 </a>
 
-                                <a href="/ietpp/lesson-03-iv" class="block bg-white dark:bg-gray-800 rounded-lg p-6 shadow-sm border border-gray-200 dark:border-gray-700 hover:shadow-md transition-shadow">
+                                <a href="/IETPP/lesson-03-iv" class="block bg-white dark:bg-gray-800 rounded-lg p-6 shadow-sm border border-gray-200 dark:border-gray-700 hover:shadow-md transition-shadow">
                                         <div class="text-center">
                                                 <div class="text-4xl mb-3">📝</div>
                                                 <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-2">Grammar</h3>

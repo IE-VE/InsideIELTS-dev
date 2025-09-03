@@ -86,7 +86,7 @@
                         </h2>
                         
                         <div class="grid md:grid-cols-3 gap-6">
-                                <a href="/ietpp/lesson-01-i" class="block bg-white dark:bg-gray-800 rounded-lg p-6 shadow-sm border border-gray-200 dark:border-gray-700 hover:shadow-md transition-shadow">
+                                <a href="/IETPP/lesson-01-i" class="block bg-white dark:bg-gray-800 rounded-lg p-6 shadow-sm border border-gray-200 dark:border-gray-700 hover:shadow-md transition-shadow">
                                         <div class="text-center">
                                                 <div class="text-4xl mb-3">🔤</div>
                                                 <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-2">Multiple Choice</h3>
@@ -94,7 +94,7 @@
                                         </div>
                                 </a>
 
-                                <a href="/ietpp/lesson-01-ii" class="block bg-white dark:bg-gray-800 rounded-lg p-6 shadow-sm border border-gray-200 dark:border-gray-700 hover:shadow-md transition-shadow">
+                                <a href="/IETPP/lesson-01-ii" class="block bg-white dark:bg-gray-800 rounded-lg p-6 shadow-sm border border-gray-200 dark:border-gray-700 hover:shadow-md transition-shadow">
                                         <div class="text-center">
                                                 <div class="text-4xl mb-3">✏️</div>
                                                 <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-2">Short Answer</h3>
@@ -102,7 +102,7 @@
                                         </div>
                                 </a>
 
-                                <a href="/ietpp/lesson-01-iii" class="block bg-white dark:bg-gray-800 rounded-lg p-6 shadow-sm border border-gray-200 dark:border-gray-700 hover:shadow-md transition-shadow">
+                                <a href="/IETPP/lesson-01-iii" class="block bg-white dark:bg-gray-800 rounded-lg p-6 shadow-sm border border-gray-200 dark:border-gray-700 hover:shadow-md transition-shadow">
                                         <div class="text-center">
                                                 <div class="text-4xl mb-3">📝</div>
                                                 <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-2">Sentence Completion</h3>
