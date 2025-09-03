@@ -96,7 +96,7 @@
                                                         href="https://insideielts.oppyo.com/video/embed/4ldnuex1ef"
                                                         target="_blank"
                                                         title="InsideIELTS virtual examiner test preparation video"
-                                                        class="inline-block bg-teal-600 hover:bg-teal-700 text-white font-bold py-3 px-6 rounded-lg transition-colors"
+                                                        class="inline-block bg-teal-600 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded border-2 border-red-500 text-sm transition-colors"
                                                 >
                                                         Virtual Examiner Video
                                                 </a>
@@ -255,27 +255,41 @@
 
                         <div class="space-y-8">
                                 <div class="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-sm border border-gray-200 dark:border-gray-700">
-                                        <p class="text-gray-700 dark:text-gray-300 mb-6">
-                                                The <strong>Listening Test and Reading Test</strong> are marked by qualified
-                                                <strong>IELTS</strong> administrators who manually score your answer sheet out of
-                                                <strong>40</strong> (<strong>1 mark</strong> for each correct answer). Your score is then converted to a band
-                                                on the <strong>IELTS 9-band scale</strong>. You can be awarded a full or half-band score, just as 
-                                                in the speaking and writing tests.
-                                        </p>
-                                        <p class="text-gray-700 dark:text-gray-300 mb-6">
-                                                The scoring system varies to a small degree with each <strong>IELTS</strong> test, but
-                                                broadly speaking, you need to score at least <strong>23/40</strong> for a
-                                                <strong>Band 6</strong> in the <strong>Listening and Reading Test</strong>, and
-                                                at least <strong>30/40</strong> for a <strong>Band 7</strong> award.
-                                        </p>
-                                        <p class="text-gray-700 dark:text-gray-300">
-                                                The <strong>Speaking and Writing</strong> elements of the <strong>IELTS</strong> test are
-                                                graded by qualified <strong>IELTS</strong> examiners using the official
-                                                <strong>IELTS Speaking and Writing Assessment Rubrics</strong>. The
-                                                assessment rubrics allow the examiner to numerically rate your
-                                                language competency according to a fixed, pre-specified list of 
-                                                descriptors.
-                                        </p>
+                                        <div class="flex flex-col md:flex-row items-start gap-6">
+                                                <div class="flex-1">
+                                                        <p class="text-gray-700 dark:text-gray-300 mb-6">
+                                                                The <strong>Listening Test and Reading Test</strong> are marked by qualified
+                                                                <strong>IELTS</strong> administrators who manually score your answer sheet out of
+                                                                <strong>40</strong> (<strong>1 mark</strong> for each correct answer). Your score is then converted to a band
+                                                                on the <strong>IELTS 9-band scale</strong>. You can be awarded a full or half-band score, just as 
+                                                                in the speaking and writing tests.
+                                                        </p>
+                                                        <p class="text-gray-700 dark:text-gray-300 mb-6">
+                                                                The scoring system varies to a small degree with each <strong>IELTS</strong> test, but
+                                                                broadly speaking, you need to score at least <strong>23/40</strong> for a
+                                                                <strong>Band 6</strong> in the <strong>Listening and Reading Test</strong>, and
+                                                                at least <strong>30/40</strong> for a <strong>Band 7</strong> award.
+                                                        </p>
+                                                        <p class="text-gray-700 dark:text-gray-300">
+                                                                The <strong>Speaking and Writing</strong> elements of the <strong>IELTS</strong> test are
+                                                                graded by qualified <strong>IELTS</strong> examiners using the official
+                                                                <strong>IELTS Speaking and Writing Assessment Rubrics</strong>. The
+                                                                assessment rubrics allow the examiner to numerically rate your
+                                                                language competency according to a fixed, pre-specified list of 
+                                                                descriptors.
+                                                        </p>
+                                                </div>
+                                                <div class="flex-shrink-0">
+                                                        <a
+                                                                href="https://insideielts.oppyo.com/video/embed/1xg9n4onzg"
+                                                                target="_blank"
+                                                                title="InsideIELTS virtual examiner test assessment video"
+                                                                class="inline-block bg-teal-600 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded border-2 border-red-500 text-sm transition-colors"
+                                                        >
+                                                                Virtual Examiner Video
+                                                        </a>
+                                                </div>
+                                        </div>
                                 </div>
 
                                 <!-- Band Scale -->
