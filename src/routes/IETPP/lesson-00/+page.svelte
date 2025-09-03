@@ -253,15 +253,47 @@
                                 IELTS Test Assessment
                         </h2>
 
-                        <div class="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-sm border border-gray-200 dark:border-gray-700">
-                                <p class="text-gray-700 dark:text-gray-300 mb-6">
-                                        The <strong>Listening Test and Reading Test</strong> are marked by qualified
-                                        <strong>IELTS</strong> administrators who manually score your answer sheet...
-                                </p>
-                                <div class="text-center">
-                                        <p class="text-gray-600 dark:text-gray-400 italic">
-                                                [Assessment details would continue here based on the full HTML content]
+                        <div class="space-y-8">
+                                <div class="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-sm border border-gray-200 dark:border-gray-700">
+                                        <p class="text-gray-700 dark:text-gray-300 mb-6">
+                                                The <strong>Listening Test and Reading Test</strong> are marked by qualified
+                                                <strong>IELTS</strong> administrators who manually score your answer sheet. The
+                                                <strong>Writing Test and Speaking Test</strong> are assessed by certified examiners
+                                                using detailed assessment criteria and band descriptors.
                                         </p>
+                                </div>
+
+                                <!-- Band Scale -->
+                                <div class="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-sm border border-gray-200 dark:border-gray-700">
+                                        <h3 class="text-xl font-semibold text-gray-800 dark:text-gray-200 mb-4 text-center">
+                                                IELTS Band Scale
+                                        </h3>
+                                        <div class="text-center">
+                                                <img src="/BANDS.png" alt="IELTS Band Scale" class="mx-auto mb-4 max-w-full rounded border lightbox-image cursor-pointer"/>
+                                                <p class="text-sm text-gray-600 dark:text-gray-400">Click to view full size</p>
+                                        </div>
+                                </div>
+
+                                <!-- Speaking Assessment -->
+                                <div class="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-sm border border-gray-200 dark:border-gray-700">
+                                        <h3 class="text-xl font-semibold text-gray-800 dark:text-gray-200 mb-4 text-center">
+                                                Speaking Test Assessment Criteria
+                                        </h3>
+                                        <div class="text-center">
+                                                <img src="/Speaking_rubric.png" alt="Speaking Test Assessment Criteria" class="mx-auto mb-4 max-w-full rounded border lightbox-image cursor-pointer"/>
+                                                <p class="text-sm text-gray-600 dark:text-gray-400">Click to view full size</p>
+                                        </div>
+                                </div>
+
+                                <!-- Writing Assessment -->
+                                <div class="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-sm border border-gray-200 dark:border-gray-700">
+                                        <h3 class="text-xl font-semibold text-gray-800 dark:text-gray-200 mb-4 text-center">
+                                                Writing Task 2 Assessment Criteria
+                                        </h3>
+                                        <div class="text-center">
+                                                <img src="/Writing_T2_rubic.png" alt="Writing Task 2 Assessment Criteria" class="mx-auto mb-4 max-w-full rounded border lightbox-image cursor-pointer"/>
+                                                <p class="text-sm text-gray-600 dark:text-gray-400">Click to view full size</p>
+                                        </div>
                                 </div>
                         </div>
                 </section>
