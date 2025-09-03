@@ -141,13 +141,13 @@
                         <!-- Center IETPP Link - Absolutely centered on page -->
                         <div class="absolute left-1/2 transform -translate-x-1/2 hidden md:flex">
                                 {#if isIETTPActive}
-                                        <span class="text-teal-600 dark:text-teal-400 font-bold text-l cursor-default">
+                                        <span class="text-teal-600 dark:text-teal-400 font-bold text-sm md:text-base lg:text-lg cursor-default">
                                                 IETPP
                                         </span>
                                 {:else}
                                         <a
                                                 href="/IETPP"
-                                                class="text-gray-600 hover:text-teal-600 dark:text-gray-300 dark:hover:text-teal-400 font-bold text-l"
+                                                class="text-gray-600 hover:text-teal-600 dark:text-gray-300 dark:hover:text-teal-400 font-bold text-sm md:text-base lg:text-lg"
                                         >
                                                 IETPP
                                         </a>

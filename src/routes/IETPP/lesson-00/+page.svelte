@@ -299,7 +299,7 @@
                                                 4 - 9 are shown in the table below.
                                         </p>
                                         <div class="text-center">
-                                                <img src="/BANDS.png" alt="IELTS Band Scale" class="mx-auto mb-4 max-w-[700px] rounded border lightbox-image cursor-pointer"/>
+                                                <img src="/BANDS.png" alt="IELTS Band Scale" class="mx-auto mb-4 w-full max-w-[700px] rounded border lightbox-image cursor-pointer"/>
                                                 <p class="text-sm text-white mb-4"><strong>Band score descriptive statements</strong></p>
                                                 <p class="text-sm text-white">Click to view full size</p>
                                         </div>
@@ -311,7 +311,7 @@
                                                 Speaking Test Assessment Criteria
                                         </h3>
                                         <div class="text-center">
-                                                <img src="/Speaking_rubric.png" alt="Speaking Test Assessment Criteria" class="mx-auto mb-4 max-w-[700px] rounded border lightbox-image cursor-pointer"/>
+                                                <img src="/Speaking_rubric.png" alt="Speaking Test Assessment Criteria" class="mx-auto mb-4 w-full max-w-[700px] rounded border lightbox-image cursor-pointer"/>
                                                 <p class="text-sm text-white">Click to view full size</p>
                                         </div>
                                 </div>
@@ -322,7 +322,7 @@
                                                 Writing Task 2 Assessment Criteria
                                         </h3>
                                         <div class="text-center">
-                                                <img src="/Writing_T2_rubic.png" alt="Writing Task 2 Assessment Criteria" class="mx-auto mb-4 max-w-[700px] rounded border lightbox-image cursor-pointer"/>
+                                                <img src="/Writing_T2_rubic.png" alt="Writing Task 2 Assessment Criteria" class="mx-auto mb-4 w-full max-w-[700px] rounded border lightbox-image cursor-pointer"/>
                                                 <p class="text-sm text-white">Click to view full size</p>
                                         </div>
                                 </div>
