@@ -81,20 +81,25 @@
                                 <div class="grid md:grid-cols-2 gap-6 mb-6">
                                         <div class="text-center">
                                                 <div class="bg-gray-100 dark:bg-gray-700 rounded-lg p-4">
-                                                        <div class="text-gray-500 dark:text-gray-400 text-6xl mb-4">📄</div>
+                                                        <img src="/00_L.png" alt="Listening Test questions" class="mx-auto mb-4 max-h-32 rounded border"/>
                                                         <p class="text-sm font-semibold">Listening Test questions</p>
                                                 </div>
                                         </div>
                                         <div class="text-center">
                                                 <div class="bg-gray-100 dark:bg-gray-700 rounded-lg p-4">
-                                                        <div class="text-gray-500 dark:text-gray-400 text-6xl mb-4">📝</div>
+                                                        <img src="/ielts-listening-answer-sheet.jpg" alt="Listening Test answer sheet" class="mx-auto mb-4 max-h-32 rounded border"/>
                                                         <p class="text-sm font-semibold">Listening Test answer sheet</p>
                                                 </div>
                                         </div>
                                 </div>
                                 <div class="text-center mb-8">
                                         <div class="bg-gray-100 dark:bg-gray-700 rounded-lg p-4 inline-block">
-                                                <div class="text-gray-500 dark:text-gray-400 text-4xl mb-2">🎵</div>
+                                                <div class="mb-4">
+                                                        <audio controls class="w-full max-w-md">
+                                                                <source src="/00_L.mp3" type="audio/mpeg">
+                                                                Your browser does not support the audio element.
+                                                        </audio>
+                                                </div>
                                                 <p class="text-sm font-semibold">Listening test audio</p>
                                         </div>
                                 </div>
@@ -108,19 +113,19 @@
                                 <div class="grid md:grid-cols-3 gap-6">
                                         <div class="text-center">
                                                 <div class="bg-gray-100 dark:bg-gray-700 rounded-lg p-4">
-                                                        <div class="text-gray-500 dark:text-gray-400 text-6xl mb-4">📖</div>
+                                                        <img src="/00_R1.png" alt="Reading Test passage" class="mx-auto mb-4 max-h-32 rounded border"/>
                                                         <p class="text-sm font-semibold">Reading Test passage</p>
                                                 </div>
                                         </div>
                                         <div class="text-center">
                                                 <div class="bg-gray-100 dark:bg-gray-700 rounded-lg p-4">
-                                                        <div class="text-gray-500 dark:text-gray-400 text-6xl mb-4">❓</div>
+                                                        <img src="/00_R2.png" alt="Reading Test questions" class="mx-auto mb-4 max-h-32 rounded border"/>
                                                         <p class="text-sm font-semibold">Reading Test questions</p>
                                                 </div>
                                         </div>
                                         <div class="text-center">
                                                 <div class="bg-gray-100 dark:bg-gray-700 rounded-lg p-4">
-                                                        <div class="text-gray-500 dark:text-gray-400 text-6xl mb-4">📝</div>
+                                                        <img src="/ielts-reading-answer-sheet.jpg" alt="Reading Test answer sheet" class="mx-auto mb-4 max-h-32 rounded border"/>
                                                         <p class="text-sm font-semibold">Reading Test answer sheet</p>
                                                 </div>
                                         </div>
@@ -135,19 +140,19 @@
                                 <div class="grid md:grid-cols-3 gap-6">
                                         <div class="text-center">
                                                 <div class="bg-gray-100 dark:bg-gray-700 rounded-lg p-4">
-                                                        <div class="text-gray-500 dark:text-gray-400 text-6xl mb-4">📊</div>
+                                                        <img src="/00_W1.png" alt="Writing Task 1 Academic" class="mx-auto mb-4 max-h-32 rounded border"/>
                                                         <p class="text-sm font-semibold">Writing Task 1 (Ac)</p>
                                                 </div>
                                         </div>
                                         <div class="text-center">
                                                 <div class="bg-gray-100 dark:bg-gray-700 rounded-lg p-4">
-                                                        <div class="text-gray-500 dark:text-gray-400 text-6xl mb-4">✉️</div>
+                                                        <img src="/00_W1b.png" alt="Writing Task 1 General Training" class="mx-auto mb-4 max-h-32 rounded border"/>
                                                         <p class="text-sm font-semibold">Writing Task 1 (GT)</p>
                                                 </div>
                                         </div>
                                         <div class="text-center">
                                                 <div class="bg-gray-100 dark:bg-gray-700 rounded-lg p-4">
-                                                        <div class="text-gray-500 dark:text-gray-400 text-6xl mb-4">📝</div>
+                                                        <img src="/00_W2.png" alt="Writing Task 2" class="mx-auto mb-4 max-h-32 rounded border"/>
                                                         <p class="text-sm font-semibold">Writing Task 2</p>
                                                 </div>
                                         </div>
@@ -162,26 +167,31 @@
                                 <div class="grid md:grid-cols-3 gap-6 mb-6">
                                         <div class="text-center">
                                                 <div class="bg-gray-100 dark:bg-gray-700 rounded-lg p-4">
-                                                        <div class="text-gray-500 dark:text-gray-400 text-6xl mb-4">👋</div>
+                                                        <img src="/00_S1.png" alt="Speaking Test Part 1" class="mx-auto mb-4 max-h-32 rounded border"/>
                                                         <p class="text-sm font-semibold">Speaking Test Part 1</p>
                                                 </div>
                                         </div>
                                         <div class="text-center">
                                                 <div class="bg-gray-100 dark:bg-gray-700 rounded-lg p-4">
-                                                        <div class="text-gray-500 dark:text-gray-400 text-6xl mb-4">🗣️</div>
+                                                        <img src="/00_S2.png" alt="Speaking Test Part 2" class="mx-auto mb-4 max-h-32 rounded border"/>
                                                         <p class="text-sm font-semibold">Speaking Test Part 2</p>
                                                 </div>
                                         </div>
                                         <div class="text-center">
                                                 <div class="bg-gray-100 dark:bg-gray-700 rounded-lg p-4">
-                                                        <div class="text-gray-500 dark:text-gray-400 text-6xl mb-4">💭</div>
+                                                        <img src="/00_S3.png" alt="Speaking Test Part 3" class="mx-auto mb-4 max-h-32 rounded border"/>
                                                         <p class="text-sm font-semibold">Speaking Test Part 3</p>
                                                 </div>
                                         </div>
                                 </div>
                                 <div class="text-center mb-8">
                                         <div class="bg-gray-100 dark:bg-gray-700 rounded-lg p-4 inline-block">
-                                                <div class="text-gray-500 dark:text-gray-400 text-4xl mb-2">🎵</div>
+                                                <div class="mb-4">
+                                                        <audio controls class="w-full max-w-md">
+                                                                <source src="/00_S.mp3" type="audio/mpeg">
+                                                                Your browser does not support the audio element.
+                                                        </audio>
+                                                </div>
                                                 <p class="text-sm font-semibold">Speaking test sample Q</p>
                                         </div>
                                 </div>
