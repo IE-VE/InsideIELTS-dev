@@ -26,7 +26,7 @@
 
                         <div class="text-center mt-6">
                                 <a
-                                        href="/ietpp"
+                                        href="/IETPP"
                                         class="text-teal-600 dark:text-teal-400 hover:underline font-semibold"
                                 >
                                         &lt; -- Back to Contents --&gt;
@@ -138,7 +138,7 @@
                 <!-- Navigation -->
                 <div class="text-center mt-12">
                         <a
-                                href="/ietpp"
+                                href="/IETPP"
                                 class="inline-flex items-center text-teal-600 dark:text-teal-400 hover:underline font-semibold"
                         >
                                 ← Back to Course Contents

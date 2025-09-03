@@ -78,7 +78,7 @@
                                 <div class="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-sm border border-gray-200 dark:border-gray-700">
                                         <div class="flex items-start gap-4">
                                                 <span class="text-xl font-bold text-teal-600 dark:text-teal-400 min-w-[3rem]">00</span>
-                                                <a href="/ietpp/lesson-00" class="text-teal-600 dark:text-teal-400 hover:underline font-semibold">
+                                                <a href="/IETPP/lesson-00" class="text-teal-600 dark:text-teal-400 hover:underline font-semibold">
                                                         IELTS Test Overview
                                                 </a>
                                         </div>
@@ -92,7 +92,7 @@
                                                         <span class="text-xl font-bold text-gray-800 dark:text-gray-200 underline">LISTENING</span>
                                                 </div>
                                                 <div class="ml-12 mb-4">
-                                                        <a href="/ietpp/lesson-01" class="text-teal-600 dark:text-teal-400 hover:underline">
+                                                        <a href="/IETPP/lesson-01" class="text-teal-600 dark:text-teal-400 hover:underline">
                                                                 Introduction to the Listening Test
                                                         </a>
                                                 </div>

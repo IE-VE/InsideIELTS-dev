@@ -26,13 +26,13 @@
 
                         <div class="text-center mt-6">
                                 <a
-                                        href="/ietpp/lesson-01"
+                                        href="/IETPP/lesson-01"
                                         class="text-teal-600 dark:text-teal-400 hover:underline font-semibold mr-4"
                                 >
                                         ← Back to Lesson 01
                                 </a>
                                 <a
-                                        href="/ietpp"
+                                        href="/IETPP"
                                         class="text-teal-600 dark:text-teal-400 hover:underline font-semibold"
                                 >
                                         ← Back to Contents
