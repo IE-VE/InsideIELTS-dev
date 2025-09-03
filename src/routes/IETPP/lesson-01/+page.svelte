@@ -16,6 +16,11 @@
         let markingResultsMissing = {};
         let markingResultsDiagram = {};
         let markingResultsMatching = {};
+        
+        // Loading states
+        let loadingMissing = false;
+        let loadingDiagram = false;
+        let loadingMatching = false;
 
         function openLightbox(imageSrc: string) {
                 lightboxImage = imageSrc;
@@ -28,103 +33,121 @@
         }
 
         function checkMissingAnswers() {
-                const correctAnswers = {
-                        q17: ['October 19th', 'October 19'],
-                        q18: ['7pm', '7 pm'],
-                        q19: ['Monday Thursday', 'Thursday Monday'],
-                        q20: ['18']
-                };
-
-                const userAnswers = { q17, q18, q19, q20 };
-                const results = {};
-                let totalCorrect = 0;
-
-                Object.entries(userAnswers).forEach(([key, answer]) => {
-                        const userAnswer = answer.toLowerCase().trim();
-                        const correct = correctAnswers[key].some(correctAnswer => 
-                                userAnswer === correctAnswer
-                        );
-                        
-                        results[key] = {
-                                userAnswer: answer,
-                                isCorrect: correct,
-                                correctAnswers: correctAnswers[key]
+                loadingMissing = true;
+                showResultsMissing = false;
+                
+                setTimeout(() => {
+                        const correctAnswers = {
+                                q17: ['October 19th', 'October 19'],
+                                q18: ['7pm', '7 pm'],
+                                q19: ['Monday Thursday', 'Thursday Monday'],
+                                q20: ['18']
                         };
-                        
-                        if (correct) totalCorrect++;
-                });
 
-                results.totalCorrect = totalCorrect;
-                results.totalQuestions = 4;
-                markingResultsMissing = results;
-                showResultsMissing = true;
+                        const userAnswers = { q17, q18, q19, q20 };
+                        const results = {};
+                        let totalCorrect = 0;
+
+                        Object.entries(userAnswers).forEach(([key, answer]) => {
+                                const userAnswer = answer.toLowerCase().trim();
+                                const correct = correctAnswers[key].some(correctAnswer => 
+                                        userAnswer === correctAnswer
+                                );
+                                
+                                results[key] = {
+                                        userAnswer: answer,
+                                        isCorrect: correct,
+                                        correctAnswers: correctAnswers[key]
+                                };
+                                
+                                if (correct) totalCorrect++;
+                        });
+
+                        results.totalCorrect = totalCorrect;
+                        results.totalQuestions = 4;
+                        markingResultsMissing = results;
+                        showResultsMissing = true;
+                        loadingMissing = false;
+                }, 3000);
         }
 
         function checkDiagramAnswers() {
-                const correctAnswers = {
-                        q16: ['h'],
-                        q17_diagram: ['d'],
-                        q18_diagram: ['f'],
-                        q19_diagram: ['a'],
-                        q20_diagram: ['e']
-                };
-
-                const userAnswers = { q16, q17_diagram, q18_diagram, q19_diagram, q20_diagram };
-                const results = {};
-                let totalCorrect = 0;
-
-                Object.entries(userAnswers).forEach(([key, answer]) => {
-                        const userAnswer = answer.toLowerCase().trim();
-                        const correct = correctAnswers[key].some(correctAnswer => 
-                                userAnswer === correctAnswer
-                        );
-                        
-                        results[key] = {
-                                userAnswer: answer,
-                                isCorrect: correct,
-                                correctAnswers: correctAnswers[key]
+                loadingDiagram = true;
+                showResultsDiagram = false;
+                
+                setTimeout(() => {
+                        const correctAnswers = {
+                                q16: ['h'],
+                                q17_diagram: ['d'],
+                                q18_diagram: ['f'],
+                                q19_diagram: ['a'],
+                                q20_diagram: ['e']
                         };
-                        
-                        if (correct) totalCorrect++;
-                });
 
-                results.totalCorrect = totalCorrect;
-                results.totalQuestions = 5;
-                markingResultsDiagram = results;
-                showResultsDiagram = true;
+                        const userAnswers = { q16, q17_diagram, q18_diagram, q19_diagram, q20_diagram };
+                        const results = {};
+                        let totalCorrect = 0;
+
+                        Object.entries(userAnswers).forEach(([key, answer]) => {
+                                const userAnswer = answer.toLowerCase().trim();
+                                const correct = correctAnswers[key].some(correctAnswer => 
+                                        userAnswer === correctAnswer
+                                );
+                                
+                                results[key] = {
+                                        userAnswer: answer,
+                                        isCorrect: correct,
+                                        correctAnswers: correctAnswers[key]
+                                };
+                                
+                                if (correct) totalCorrect++;
+                        });
+
+                        results.totalCorrect = totalCorrect;
+                        results.totalQuestions = 5;
+                        markingResultsDiagram = results;
+                        showResultsDiagram = true;
+                        loadingDiagram = false;
+                }, 3000);
         }
 
         function checkMatchingAnswers() {
-                const correctAnswers = {
-                        q27: ['d'],
-                        q28: ['b'],
-                        q29: ['e'],
-                        q30: ['f']
-                };
-
-                const userAnswers = { q27, q28, q29, q30 };
-                const results = {};
-                let totalCorrect = 0;
-
-                Object.entries(userAnswers).forEach(([key, answer]) => {
-                        const userAnswer = answer.toLowerCase().trim();
-                        const correct = correctAnswers[key].some(correctAnswer => 
-                                userAnswer === correctAnswer
-                        );
-                        
-                        results[key] = {
-                                userAnswer: answer,
-                                isCorrect: correct,
-                                correctAnswers: correctAnswers[key]
+                loadingMatching = true;
+                showResultsMatching = false;
+                
+                setTimeout(() => {
+                        const correctAnswers = {
+                                q27: ['d'],
+                                q28: ['b'],
+                                q29: ['e'],
+                                q30: ['f']
                         };
-                        
-                        if (correct) totalCorrect++;
-                });
 
-                results.totalCorrect = totalCorrect;
-                results.totalQuestions = 4;
-                markingResultsMatching = results;
-                showResultsMatching = true;
+                        const userAnswers = { q27, q28, q29, q30 };
+                        const results = {};
+                        let totalCorrect = 0;
+
+                        Object.entries(userAnswers).forEach(([key, answer]) => {
+                                const userAnswer = answer.toLowerCase().trim();
+                                const correct = correctAnswers[key].some(correctAnswer => 
+                                        userAnswer === correctAnswer
+                                );
+                                
+                                results[key] = {
+                                        userAnswer: answer,
+                                        isCorrect: correct,
+                                        correctAnswers: correctAnswers[key]
+                                };
+                                
+                                if (correct) totalCorrect++;
+                        });
+
+                        results.totalCorrect = totalCorrect;
+                        results.totalQuestions = 4;
+                        markingResultsMatching = results;
+                        showResultsMatching = true;
+                        loadingMatching = false;
+                }, 3000);
         }
 
         onMount(() => {
@@ -389,9 +412,18 @@
                                                                 <button
                                                                         type="button"
                                                                         onclick={checkMissingAnswers}
-                                                                        class="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded text-sm transition-colors"
+                                                                        disabled={loadingMissing}
+                                                                        class="bg-green-600 hover:bg-green-700 disabled:bg-green-400 disabled:cursor-not-allowed text-white font-bold py-2 px-4 rounded text-sm transition-colors flex items-center justify-center mx-auto"
                                                                 >
-                                                                        Check My Answers
+                                                                        {#if loadingMissing}
+                                                                                <svg class="animate-spin -ml-1 mr-2 h-4 w-4 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                                                                                        <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                                                                                        <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                                                                                </svg>
+                                                                                Processing...
+                                                                        {:else}
+                                                                                Check My Answers
+                                                                        {/if}
                                                                 </button>
                                                         </div>
                                                         
@@ -498,9 +530,18 @@
                                                                 <button
                                                                         type="button"
                                                                         onclick={checkDiagramAnswers}
-                                                                        class="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded text-sm transition-colors"
+                                                                        disabled={loadingDiagram}
+                                                                        class="bg-green-600 hover:bg-green-700 disabled:bg-green-400 disabled:cursor-not-allowed text-white font-bold py-2 px-4 rounded text-sm transition-colors flex items-center justify-center mx-auto"
                                                                 >
-                                                                        Check My Answers
+                                                                        {#if loadingDiagram}
+                                                                                <svg class="animate-spin -ml-1 mr-2 h-4 w-4 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                                                                                        <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                                                                                        <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                                                                                </svg>
+                                                                                Processing...
+                                                                        {:else}
+                                                                                Check My Answers
+                                                                        {/if}
                                                                 </button>
                                                         </div>
                                                         
@@ -603,9 +644,18 @@
                                                                 <button
                                                                         type="button"
                                                                         onclick={checkMatchingAnswers}
-                                                                        class="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded text-sm transition-colors"
+                                                                        disabled={loadingMatching}
+                                                                        class="bg-green-600 hover:bg-green-700 disabled:bg-green-400 disabled:cursor-not-allowed text-white font-bold py-2 px-4 rounded text-sm transition-colors flex items-center justify-center mx-auto"
                                                                 >
-                                                                        Check My Answers
+                                                                        {#if loadingMatching}
+                                                                                <svg class="animate-spin -ml-1 mr-2 h-4 w-4 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                                                                                        <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                                                                                        <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                                                                                </svg>
+                                                                                Processing...
+                                                                        {:else}
+                                                                                Check My Answers
+                                                                        {/if}
                                                                 </button>
                                                         </div>
                                                         
