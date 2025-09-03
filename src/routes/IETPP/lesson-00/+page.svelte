@@ -53,15 +53,15 @@
                                 <div class="text-xs text-left font-bold text-teal-600 dark:text-teal-400 mb-2">
                                         LESSON CODE: IE2401_00
                                 </div>
-                                <h1 class="text-3xl font-bold text-gray-800 dark:text-gray-200 mb-2">
+                                <h1 class="text-3xl font-bold text-white mb-2">
                                         IELTS Test Overview
                                 </h1>
-                                <p class="text-gray-600 dark:text-gray-400 italic">(20 mins)</p>
+                                <p class="text-white italic">(20 mins)</p>
                         </div>
 
                         <div class="mt-6">
-                                <h2 class="text-lg font-semibold mb-4 text-gray-700 dark:text-gray-300">Lesson Content:</h2>
-                                <ul class="list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300">
+                                <h2 class="text-lg font-semibold mb-4 text-white">Lesson Content:</h2>
+                                <ul class="list-disc list-inside space-y-2 text-white">
                                         <li>IELTS Test make-up</li>
                                         <li>IELTS Test Assessment</li>
                                 </ul>
@@ -79,14 +79,14 @@
 
                 <!-- Section 1: IELTS Test Make-up -->
                 <section class="mb-12">
-                        <h2 class="text-2xl font-bold text-center text-gray-800 dark:text-gray-200 mb-8">
+                        <h2 class="text-2xl font-bold text-center text-white mb-8">
                                 IELTS Test make-up
                         </h2>
 
                         <div class="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-sm border border-gray-200 dark:border-gray-700 mb-8">
                                 <div class="flex flex-col md:flex-row items-center gap-6">
                                         <div class="flex-1">
-                                                <p class="text-gray-700 dark:text-gray-300 mb-4">
+                                                <p class="text-white mb-4">
                                                         The <strong>IELTS</strong> examination is a language proficiency test designed to assess your
                                                         Listening, Reading, Writing and Speaking skills in English.
                                                 </p>
@@ -104,13 +104,13 @@
                                 </div>
                         </div>
 
-                        <p class="text-gray-700 dark:text-gray-300 mb-8">
+                        <p class="text-white mb-8">
                                 The full <strong>IELTS</strong> test is made up of:
                         </p>
 
                         <!-- Listening Test -->
                         <div class="mb-8">
-                                <h3 class="text-xl font-semibold text-gray-800 dark:text-gray-200 mb-4">
+                                <h3 class="text-xl font-semibold text-white mb-4">
                                         • A 40 minute Listening Test consisting of 40 questions in four sections.
                                 </h3>
                                 <div class="grid md:grid-cols-2 gap-6 mb-6">
@@ -142,7 +142,7 @@
 
                         <!-- Reading Test -->
                         <div class="mb-8">
-                                <h3 class="text-xl font-semibold text-gray-800 dark:text-gray-200 mb-4">
+                                <h3 class="text-xl font-semibold text-white mb-4">
                                         • A 60 minute Reading Test with three passages and 40 questions.
                                 </h3>
                                 <div class="grid md:grid-cols-3 gap-6">
@@ -169,7 +169,7 @@
 
                         <!-- Writing Test -->
                         <div class="mb-8">
-                                <h3 class="text-xl font-semibold text-gray-800 dark:text-gray-200 mb-4">
+                                <h3 class="text-xl font-semibold text-white mb-4">
                                         • A 60 minute Writing Test consisting of two tasks.
                                 </h3>
                                 <div class="grid md:grid-cols-3 gap-6">
@@ -196,7 +196,7 @@
 
                         <!-- Speaking Test -->
                         <div class="mb-8">
-                                <h3 class="text-xl font-semibold text-gray-800 dark:text-gray-200 mb-4">
+                                <h3 class="text-xl font-semibold text-white mb-4">
                                         • And a 14 minute Speaking Test interview made up of three parts.
                                 </h3>
                                 <div class="grid md:grid-cols-3 gap-6 mb-6">
@@ -233,14 +233,14 @@
                         </div>
 
                         <div class="bg-blue-50 dark:bg-blue-900/20 border-l-4 border-blue-500 p-6 rounded-r-lg">
-                                <p class="text-gray-700 dark:text-gray-300 mb-4">
+                                <p class="text-white mb-4">
                                         The content covered in the Reading Test and Writing Test of the
                                         <strong>IELTS General Training (GT)</strong> and <strong>IELTS Academic (Ac)</strong> 
                                         test is different: the General Training test materials are focused 
                                         on topics of general interest, whereas the topics covered in the 
                                         Academic test are more oriented towards professional work and study.
                                 </p>
-                                <p class="text-gray-700 dark:text-gray-300">
+                                <p class="text-white">
                                         The content of the Listening Test and Speaking Test is the same
                                         for both tests.
                                 </p>
@@ -249,7 +249,7 @@
 
                 <!-- Section 2: IELTS Test Assessment -->
                 <section class="mb-12">
-                        <h2 class="text-2xl font-bold text-center text-gray-800 dark:text-gray-200 mb-8">
+                        <h2 class="text-2xl font-bold text-center text-white mb-8">
                                 IELTS Test Assessment
                         </h2>
 
@@ -257,20 +257,20 @@
                                 <div class="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-sm border border-gray-200 dark:border-gray-700">
                                         <div class="flex flex-col md:flex-row items-start gap-6">
                                                 <div class="flex-1">
-                                                        <p class="text-gray-700 dark:text-gray-300 mb-6">
+                                                        <p class="text-white mb-6">
                                                                 The <strong>Listening Test and Reading Test</strong> are marked by qualified
                                                                 <strong>IELTS</strong> administrators who manually score your answer sheet out of
                                                                 <strong>40</strong> (<strong>1 mark</strong> for each correct answer). Your score is then converted to a band
                                                                 on the <strong>IELTS 9-band scale</strong>. You can be awarded a full or half-band score, just as 
                                                                 in the speaking and writing tests.
                                                         </p>
-                                                        <p class="text-gray-700 dark:text-gray-300 mb-6">
+                                                        <p class="text-white mb-6">
                                                                 The scoring system varies to a small degree with each <strong>IELTS</strong> test, but
                                                                 broadly speaking, you need to score at least <strong>23/40</strong> for a
                                                                 <strong>Band 6</strong> in the <strong>Listening and Reading Test</strong>, and
                                                                 at least <strong>30/40</strong> for a <strong>Band 7</strong> award.
                                                         </p>
-                                                        <p class="text-gray-700 dark:text-gray-300">
+                                                        <p class="text-white">
                                                                 The <strong>Speaking and Writing</strong> elements of the <strong>IELTS</strong> test are
                                                                 graded by qualified <strong>IELTS</strong> examiners using the official
                                                                 <strong>IELTS Speaking and Writing Assessment Rubrics</strong>. The
@@ -294,49 +294,49 @@
 
                                 <!-- Band Scale -->
                                 <div class="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-sm border border-gray-200 dark:border-gray-700">
-                                        <p class="text-gray-700 dark:text-gray-300 mb-4 text-center">
+                                        <p class="text-white mb-4 text-center">
                                                 The descriptive statements summarising a candidate's language ability for <strong>IELTS</strong> Band scores 
                                                 4 - 9 are shown in the table below.
                                         </p>
                                         <div class="text-center">
                                                 <img src="/BANDS.png" alt="IELTS Band Scale" class="mx-auto mb-4 max-w-[700px] rounded border lightbox-image cursor-pointer"/>
-                                                <p class="text-sm text-gray-600 dark:text-gray-400 mb-4"><strong>Band score descriptive statements</strong></p>
-                                                <p class="text-sm text-gray-600 dark:text-gray-400">Click to view full size</p>
+                                                <p class="text-sm text-white mb-4"><strong>Band score descriptive statements</strong></p>
+                                                <p class="text-sm text-white">Click to view full size</p>
                                         </div>
                                 </div>
 
                                 <!-- Speaking Assessment -->
                                 <div class="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-sm border border-gray-200 dark:border-gray-700">
-                                        <h3 class="text-xl font-semibold text-gray-800 dark:text-gray-200 mb-4 text-center">
+                                        <h3 class="text-xl font-semibold text-white mb-4 text-center">
                                                 Speaking Test Assessment Criteria
                                         </h3>
                                         <div class="text-center">
                                                 <img src="/Speaking_rubric.png" alt="Speaking Test Assessment Criteria" class="mx-auto mb-4 max-w-[700px] rounded border lightbox-image cursor-pointer"/>
-                                                <p class="text-sm text-gray-600 dark:text-gray-400">Click to view full size</p>
+                                                <p class="text-sm text-white">Click to view full size</p>
                                         </div>
                                 </div>
 
                                 <!-- Writing Assessment -->
                                 <div class="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-sm border border-gray-200 dark:border-gray-700">
-                                        <h3 class="text-xl font-semibold text-gray-800 dark:text-gray-200 mb-4 text-center">
+                                        <h3 class="text-xl font-semibold text-white mb-4 text-center">
                                                 Writing Task 2 Assessment Criteria
                                         </h3>
                                         <div class="text-center">
                                                 <img src="/Writing_T2_rubic.png" alt="Writing Task 2 Assessment Criteria" class="mx-auto mb-4 max-w-[700px] rounded border lightbox-image cursor-pointer"/>
-                                                <p class="text-sm text-gray-600 dark:text-gray-400">Click to view full size</p>
+                                                <p class="text-sm text-white">Click to view full size</p>
                                         </div>
                                 </div>
 
                                 <!-- Course Introduction -->
                                 <div class="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-sm border border-gray-200 dark:border-gray-700">
-                                        <p class="text-gray-700 dark:text-gray-300 mb-6">
+                                        <p class="text-white mb-6">
                                                 If you are going to achieve your target band score, it is
                                                 essential that you are familiar with the specific descriptors which constitute the
                                                 <strong>assessment criteria</strong> for each part of the <strong>IELTS</strong> test.
                                                 You can then focus on and improve each skill until you are
                                                 confident and ready to sit the test.
                                         </p>
-                                        <p class="text-gray-700 dark:text-gray-300">
+                                        <p class="text-white">
                                                 Over the course of the following <strong>12 lessons</strong> you will be introduced to the content 
                                                 and assessment descriptors for the four parts of the <strong>IELTS</strong> test, and complete practice exercises
                                                 to demonstrate and reinforce the skills you need on your journey
