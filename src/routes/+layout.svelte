@@ -155,7 +155,7 @@
                         </div>
 
                         <!-- Desktop Navigation -->
-                        <div class="hidden items-center space-x-6 text-sm md:flex">
+                        <div class="hidden items-center space-x-6 text-sm md:space-x-4 md:text-xs lg:space-x-6 lg:text-sm md:flex">
                                 {#each navLinks as link}
                                         <a
                                                 href={link.href}
