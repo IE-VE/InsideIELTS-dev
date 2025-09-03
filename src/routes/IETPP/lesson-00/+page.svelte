@@ -1,5 +1,40 @@
 <script lang="ts">
         // LESSON 00: IELTS Test Overview
+        import { onMount } from 'svelte';
+        
+        let lightboxModal: HTMLDivElement;
+        let lightboxImage: HTMLImageElement;
+        let lightboxCaption: HTMLParagraphElement;
+
+        onMount(() => {
+                // Add click listeners to all images
+                const images = document.querySelectorAll('.lightbox-image');
+                images.forEach((img: HTMLImageElement) => {
+                        img.addEventListener('click', () => openLightbox(img.src, img.alt));
+                });
+        });
+
+        function openLightbox(src: string, caption: string) {
+                if (lightboxModal && lightboxImage && lightboxCaption) {
+                        lightboxImage.src = src;
+                        lightboxCaption.textContent = caption;
+                        lightboxModal.style.display = 'flex';
+                        document.body.style.overflow = 'hidden';
+                }
+        }
+
+        function closeLightbox() {
+                if (lightboxModal) {
+                        lightboxModal.style.display = 'none';
+                        document.body.style.overflow = 'auto';
+                }
+        }
+
+        function handleKeydown(event: KeyboardEvent) {
+                if (event.key === 'Escape') {
+                        closeLightbox();
+                }
+        }
 </script>
 
 <svelte:head>
@@ -81,13 +116,13 @@
                                 <div class="grid md:grid-cols-2 gap-6 mb-6">
                                         <div class="text-center">
                                                 <div class="bg-gray-100 dark:bg-gray-700 rounded-lg p-4">
-                                                        <img src="/00_L.png" alt="Listening Test questions" class="mx-auto mb-4 max-h-32 rounded border"/>
+                                                        <img src="/00_L.png" alt="Listening Test questions" class="mx-auto mb-4 max-h-32 rounded border lightbox-image cursor-pointer"/>
                                                         <p class="text-sm font-semibold">Listening Test questions</p>
                                                 </div>
                                         </div>
                                         <div class="text-center">
                                                 <div class="bg-gray-100 dark:bg-gray-700 rounded-lg p-4">
-                                                        <img src="/ielts-listening-answer-sheet.jpg" alt="Listening Test answer sheet" class="mx-auto mb-4 max-h-32 rounded border"/>
+                                                        <img src="/ielts-listening-answer-sheet.jpg" alt="Listening Test answer sheet" class="mx-auto mb-4 max-h-32 rounded border lightbox-image cursor-pointer"/>
                                                         <p class="text-sm font-semibold">Listening Test answer sheet</p>
                                                 </div>
                                         </div>
@@ -113,19 +148,19 @@
                                 <div class="grid md:grid-cols-3 gap-6">
                                         <div class="text-center">
                                                 <div class="bg-gray-100 dark:bg-gray-700 rounded-lg p-4">
-                                                        <img src="/00_R1.png" alt="Reading Test passage" class="mx-auto mb-4 max-h-32 rounded border"/>
+                                                        <img src="/00_R1.png" alt="Reading Test passage" class="mx-auto mb-4 max-h-32 rounded border lightbox-image cursor-pointer"/>
                                                         <p class="text-sm font-semibold">Reading Test passage</p>
                                                 </div>
                                         </div>
                                         <div class="text-center">
                                                 <div class="bg-gray-100 dark:bg-gray-700 rounded-lg p-4">
-                                                        <img src="/00_R2.png" alt="Reading Test questions" class="mx-auto mb-4 max-h-32 rounded border"/>
+                                                        <img src="/00_R2.png" alt="Reading Test questions" class="mx-auto mb-4 max-h-32 rounded border lightbox-image cursor-pointer"/>
                                                         <p class="text-sm font-semibold">Reading Test questions</p>
                                                 </div>
                                         </div>
                                         <div class="text-center">
                                                 <div class="bg-gray-100 dark:bg-gray-700 rounded-lg p-4">
-                                                        <img src="/ielts-reading-answer-sheet.jpg" alt="Reading Test answer sheet" class="mx-auto mb-4 max-h-32 rounded border"/>
+                                                        <img src="/ielts-reading-answer-sheet.jpg" alt="Reading Test answer sheet" class="mx-auto mb-4 max-h-32 rounded border lightbox-image cursor-pointer"/>
                                                         <p class="text-sm font-semibold">Reading Test answer sheet</p>
                                                 </div>
                                         </div>
@@ -140,19 +175,19 @@
                                 <div class="grid md:grid-cols-3 gap-6">
                                         <div class="text-center">
                                                 <div class="bg-gray-100 dark:bg-gray-700 rounded-lg p-4">
-                                                        <img src="/00_W1.png" alt="Writing Task 1 Academic" class="mx-auto mb-4 max-h-32 rounded border"/>
+                                                        <img src="/00_W1.png" alt="Writing Task 1 Academic" class="mx-auto mb-4 max-h-32 rounded border lightbox-image cursor-pointer"/>
                                                         <p class="text-sm font-semibold">Writing Task 1 (Ac)</p>
                                                 </div>
                                         </div>
                                         <div class="text-center">
                                                 <div class="bg-gray-100 dark:bg-gray-700 rounded-lg p-4">
-                                                        <img src="/00_W1b.png" alt="Writing Task 1 General Training" class="mx-auto mb-4 max-h-32 rounded border"/>
+                                                        <img src="/00_W1b.png" alt="Writing Task 1 General Training" class="mx-auto mb-4 max-h-32 rounded border lightbox-image cursor-pointer"/>
                                                         <p class="text-sm font-semibold">Writing Task 1 (GT)</p>
                                                 </div>
                                         </div>
                                         <div class="text-center">
                                                 <div class="bg-gray-100 dark:bg-gray-700 rounded-lg p-4">
-                                                        <img src="/00_W2.png" alt="Writing Task 2" class="mx-auto mb-4 max-h-32 rounded border"/>
+                                                        <img src="/00_W2.png" alt="Writing Task 2" class="mx-auto mb-4 max-h-32 rounded border lightbox-image cursor-pointer"/>
                                                         <p class="text-sm font-semibold">Writing Task 2</p>
                                                 </div>
                                         </div>
@@ -167,19 +202,19 @@
                                 <div class="grid md:grid-cols-3 gap-6 mb-6">
                                         <div class="text-center">
                                                 <div class="bg-gray-100 dark:bg-gray-700 rounded-lg p-4">
-                                                        <img src="/00_S1.png" alt="Speaking Test Part 1" class="mx-auto mb-4 max-h-32 rounded border"/>
+                                                        <img src="/00_S1.png" alt="Speaking Test Part 1" class="mx-auto mb-4 max-h-32 rounded border lightbox-image cursor-pointer"/>
                                                         <p class="text-sm font-semibold">Speaking Test Part 1</p>
                                                 </div>
                                         </div>
                                         <div class="text-center">
                                                 <div class="bg-gray-100 dark:bg-gray-700 rounded-lg p-4">
-                                                        <img src="/00_S2.png" alt="Speaking Test Part 2" class="mx-auto mb-4 max-h-32 rounded border"/>
+                                                        <img src="/00_S2.png" alt="Speaking Test Part 2" class="mx-auto mb-4 max-h-32 rounded border lightbox-image cursor-pointer"/>
                                                         <p class="text-sm font-semibold">Speaking Test Part 2</p>
                                                 </div>
                                         </div>
                                         <div class="text-center">
                                                 <div class="bg-gray-100 dark:bg-gray-700 rounded-lg p-4">
-                                                        <img src="/00_S3.png" alt="Speaking Test Part 3" class="mx-auto mb-4 max-h-32 rounded border"/>
+                                                        <img src="/00_S3.png" alt="Speaking Test Part 3" class="mx-auto mb-4 max-h-32 rounded border lightbox-image cursor-pointer"/>
                                                         <p class="text-sm font-semibold">Speaking Test Part 3</p>
                                                 </div>
                                         </div>
@@ -241,4 +276,74 @@
                         </a>
                 </div>
         </div>
+        
+        <!-- Lightbox Modal -->
+        <div bind:this={lightboxModal} class="lightbox-overlay" style="display: none;" on:click={closeLightbox} on:keydown={handleKeydown}>
+                <div class="lightbox-content" on:click|stopPropagation>
+                        <button class="lightbox-close" on:click={closeLightbox}>&times;</button>
+                        <img bind:this={lightboxImage} alt="" class="lightbox-img" />
+                        <p bind:this={lightboxCaption} class="lightbox-caption"></p>
+                </div>
+        </div>
 </div>
+
+<style>
+        .lightbox-image {
+                cursor: pointer;
+                transition: transform 0.2s ease;
+        }
+        
+        .lightbox-image:hover {
+                transform: scale(1.05);
+        }
+        
+        .lightbox-overlay {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 0, 0, 0.8);
+                backdrop-filter: blur(5px);
+                justify-content: center;
+                align-items: center;
+                z-index: 1000;
+        }
+        
+        .lightbox-content {
+                position: relative;
+                max-width: 90%;
+                max-height: 90%;
+                text-align: center;
+        }
+        
+        .lightbox-img {
+                max-width: 100%;
+                max-height: 80vh;
+                object-fit: contain;
+                border-radius: 8px;
+        }
+        
+        .lightbox-close {
+                position: absolute;
+                top: -40px;
+                right: 0;
+                background: none;
+                border: none;
+                color: white;
+                font-size: 2rem;
+                cursor: pointer;
+                width: 40px;
+                height: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+        }
+        
+        .lightbox-caption {
+                color: white;
+                margin-top: 1rem;
+                font-size: 1rem;
+                font-weight: 500;
+        }
+</style>
