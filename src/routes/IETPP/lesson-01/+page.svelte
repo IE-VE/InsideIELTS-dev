@@ -4,6 +4,15 @@
         let lightboxOpen = false;
         let lightboxImage = '';
 
+        // Answer input variables
+        let q17 = '', q18 = '', q19 = '', q20 = '';
+        let q16 = '', q17_diagram = '', q18_diagram = '', q19_diagram = '', q20_diagram = '';
+        let q27 = '', q28 = '', q29 = '', q30 = '';
+        
+        // Results
+        let showResults = false;
+        let markingResults = {};
+
         function openLightbox(imageSrc: string) {
                 lightboxImage = imageSrc;
                 lightboxOpen = true;
@@ -12,6 +21,56 @@
         function closeLightbox() {
                 lightboxOpen = false;
                 lightboxImage = '';
+        }
+
+        function checkAnswers() {
+                const correctAnswers = {
+                        // Missing information
+                        q17: ['october 19th', 'october 19', '19th october', '19 october'],
+                        q18: ['7pm', '7 pm', '19:00', 'seven pm'],
+                        q19: ['monday thursday', 'thursday monday', 'monday and thursday'],
+                        q20: ['18', 'eighteen'],
+                        // Diagram completion
+                        q16: ['h'],
+                        q17_diagram: ['d'],
+                        q18_diagram: ['f'],
+                        q19_diagram: ['a'],
+                        q20_diagram: ['e'],
+                        // Matching information
+                        q27: ['d'],
+                        q28: ['b'],
+                        q29: ['e'],
+                        q30: ['f']
+                };
+
+                const userAnswers = {
+                        q17, q18, q19, q20,
+                        q16, q17_diagram, q18_diagram, q19_diagram, q20_diagram,
+                        q27, q28, q29, q30
+                };
+
+                const results = {};
+                let totalCorrect = 0;
+
+                Object.entries(userAnswers).forEach(([key, answer]) => {
+                        const userAnswer = answer.toLowerCase().trim();
+                        const correct = correctAnswers[key].some(correctAnswer => 
+                                userAnswer === correctAnswer
+                        );
+                        
+                        results[key] = {
+                                userAnswer: answer,
+                                isCorrect: correct,
+                                correctAnswers: correctAnswers[key]
+                        };
+                        
+                        if (correct) totalCorrect++;
+                });
+
+                results.totalCorrect = totalCorrect;
+                results.totalQuestions = 14;
+                markingResults = results;
+                showResults = true;
         }
 
         onMount(() => {
@@ -248,21 +307,25 @@
                                                                 <input
                                                                         type="text"
                                                                         placeholder="Q17 - enter your answer"
+                                                                        bind:value={q17}
                                                                         class="w-full px-3 py-2 bg-gray-700 border border-gray-500 rounded text-white placeholder-gray-400 text-sm"
                                                                 />
                                                                 <input
                                                                         type="text"
                                                                         placeholder="Q18"
+                                                                        bind:value={q18}
                                                                         class="w-full px-3 py-2 bg-gray-700 border border-gray-500 rounded text-white placeholder-gray-400 text-sm"
                                                                 />
                                                                 <input
                                                                         type="text"
                                                                         placeholder="Q19"
+                                                                        bind:value={q19}
                                                                         class="w-full px-3 py-2 bg-gray-700 border border-gray-500 rounded text-white placeholder-gray-400 text-sm"
                                                                 />
                                                                 <input
                                                                         type="text"
                                                                         placeholder="Q20"
+                                                                        bind:value={q20}
                                                                         class="w-full px-3 py-2 bg-gray-700 border border-gray-500 rounded text-white placeholder-gray-400 text-sm"
                                                                 />
                                                         </div>
@@ -296,26 +359,31 @@
                                                                 <input
                                                                         type="text"
                                                                         placeholder="Q16 - enter your answer"
+                                                                        bind:value={q16}
                                                                         class="w-full px-3 py-2 bg-gray-700 border border-gray-500 rounded text-white placeholder-gray-400 text-sm"
                                                                 />
                                                                 <input
                                                                         type="text"
                                                                         placeholder="Q17"
+                                                                        bind:value={q17_diagram}
                                                                         class="w-full px-3 py-2 bg-gray-700 border border-gray-500 rounded text-white placeholder-gray-400 text-sm"
                                                                 />
                                                                 <input
                                                                         type="text"
                                                                         placeholder="Q18"
+                                                                        bind:value={q18_diagram}
                                                                         class="w-full px-3 py-2 bg-gray-700 border border-gray-500 rounded text-white placeholder-gray-400 text-sm"
                                                                 />
                                                                 <input
                                                                         type="text"
                                                                         placeholder="Q19"
+                                                                        bind:value={q19_diagram}
                                                                         class="w-full px-3 py-2 bg-gray-700 border border-gray-500 rounded text-white placeholder-gray-400 text-sm"
                                                                 />
                                                                 <input
                                                                         type="text"
                                                                         placeholder="Q20"
+                                                                        bind:value={q20_diagram}
                                                                         class="w-full px-3 py-2 bg-gray-700 border border-gray-500 rounded text-white placeholder-gray-400 text-sm"
                                                                 />
                                                         </div>
@@ -351,27 +419,140 @@
                                                                 <input
                                                                         type="text"
                                                                         placeholder="Q27 - enter your answer"
+                                                                        bind:value={q27}
                                                                         class="w-full px-3 py-2 bg-gray-700 border border-gray-500 rounded text-white placeholder-gray-400 text-sm"
                                                                 />
                                                                 <input
                                                                         type="text"
                                                                         placeholder="Q28"
+                                                                        bind:value={q28}
                                                                         class="w-full px-3 py-2 bg-gray-700 border border-gray-500 rounded text-white placeholder-gray-400 text-sm"
                                                                 />
                                                                 <input
                                                                         type="text"
                                                                         placeholder="Q29"
+                                                                        bind:value={q29}
                                                                         class="w-full px-3 py-2 bg-gray-700 border border-gray-500 rounded text-white placeholder-gray-400 text-sm"
                                                                 />
                                                                 <input
                                                                         type="text"
                                                                         placeholder="Q30"
+                                                                        bind:value={q30}
                                                                         class="w-full px-3 py-2 bg-gray-700 border border-gray-500 rounded text-white placeholder-gray-400 text-sm"
                                                                 />
                                                         </div>
                                                 </div>
                                         </div>
                                 </div>
+
+                                <!-- Check My Answers Button -->
+                                <div class="text-center mb-8">
+                                        <button
+                                                type="button"
+                                                onclick={checkAnswers}
+                                                class="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-lg text-lg transition-colors"
+                                        >
+                                                Check My Answers
+                                        </button>
+                                </div>
+
+                                <!-- Results Display -->
+                                {#if showResults}
+                                        <div class="bg-gray-800 rounded-lg p-6 mb-8 border border-gray-600">
+                                                <h3 class="text-xl font-semibold text-white mb-6 text-center">Your Results</h3>
+                                                
+                                                <!-- Score Summary -->
+                                                <div class="text-center mb-6">
+                                                        <div class="text-3xl font-bold text-white mb-2">
+                                                                {markingResults.totalCorrect}/{markingResults.totalQuestions}
+                                                        </div>
+                                                        <div class="text-lg text-gray-300">
+                                                                {Math.round((markingResults.totalCorrect / markingResults.totalQuestions) * 100)}% Correct
+                                                        </div>
+                                                </div>
+
+                                                <!-- Detailed Results -->
+                                                <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                                                        <!-- Missing Information Results -->
+                                                        <div>
+                                                                <h4 class="text-lg font-semibold text-white mb-3 border-b border-gray-600 pb-2">Missing Information (Q17-Q20)</h4>
+                                                                <div class="space-y-2 text-sm">
+                                                                        {#each ['q17', 'q18', 'q19', 'q20'] as questionKey}
+                                                                                <div class="flex items-center justify-between p-2 rounded border {markingResults[questionKey]?.isCorrect ? 'bg-green-900/20 border-green-800' : 'bg-red-900/20 border-red-800'}">
+                                                                                        <div class="flex-1">
+                                                                                                <div class="font-medium text-white">
+                                                                                                        {questionKey.toUpperCase()}: "{markingResults[questionKey]?.userAnswer || '(blank)'}"
+                                                                                                </div>
+                                                                                                <div class="text-xs text-gray-400 mt-1">
+                                                                                                        Correct: {markingResults[questionKey]?.correctAnswers?.join(' / ')}
+                                                                                                </div>
+                                                                                        </div>
+                                                                                        <div class="ml-3">
+                                                                                                {#if markingResults[questionKey]?.isCorrect}
+                                                                                                        <span class="text-green-400 text-xl">✓</span>
+                                                                                                {:else}
+                                                                                                        <span class="text-red-400 text-xl">✗</span>
+                                                                                                {/if}
+                                                                                        </div>
+                                                                                </div>
+                                                                        {/each}
+                                                                </div>
+                                                        </div>
+
+                                                        <!-- Diagram Completion Results -->
+                                                        <div>
+                                                                <h4 class="text-lg font-semibold text-white mb-3 border-b border-gray-600 pb-2">Diagram Completion (Q16-Q20)</h4>
+                                                                <div class="space-y-2 text-sm">
+                                                                        {#each ['q16', 'q17_diagram', 'q18_diagram', 'q19_diagram', 'q20_diagram'] as questionKey, index}
+                                                                                <div class="flex items-center justify-between p-2 rounded border {markingResults[questionKey]?.isCorrect ? 'bg-green-900/20 border-green-800' : 'bg-red-900/20 border-red-800'}">
+                                                                                        <div class="flex-1">
+                                                                                                <div class="font-medium text-white">
+                                                                                                        Q{16 + index}: "{markingResults[questionKey]?.userAnswer || '(blank)'}"
+                                                                                                </div>
+                                                                                                <div class="text-xs text-gray-400 mt-1">
+                                                                                                        Correct: {markingResults[questionKey]?.correctAnswers?.join(' / ')}
+                                                                                                </div>
+                                                                                        </div>
+                                                                                        <div class="ml-3">
+                                                                                                {#if markingResults[questionKey]?.isCorrect}
+                                                                                                        <span class="text-green-400 text-xl">✓</span>
+                                                                                                {:else}
+                                                                                                        <span class="text-red-400 text-xl">✗</span>
+                                                                                                {/if}
+                                                                                        </div>
+                                                                                </div>
+                                                                        {/each}
+                                                                </div>
+                                                        </div>
+
+                                                        <!-- Matching Information Results -->
+                                                        <div>
+                                                                <h4 class="text-lg font-semibold text-white mb-3 border-b border-gray-600 pb-2">Matching Information (Q27-Q30)</h4>
+                                                                <div class="space-y-2 text-sm">
+                                                                        {#each ['q27', 'q28', 'q29', 'q30'] as questionKey}
+                                                                                <div class="flex items-center justify-between p-2 rounded border {markingResults[questionKey]?.isCorrect ? 'bg-green-900/20 border-green-800' : 'bg-red-900/20 border-red-800'}">
+                                                                                        <div class="flex-1">
+                                                                                                <div class="font-medium text-white">
+                                                                                                        {questionKey.toUpperCase()}: "{markingResults[questionKey]?.userAnswer || '(blank)'}"
+                                                                                                </div>
+                                                                                                <div class="text-xs text-gray-400 mt-1">
+                                                                                                        Correct: {markingResults[questionKey]?.correctAnswers?.join(' / ')}
+                                                                                                </div>
+                                                                                        </div>
+                                                                                        <div class="ml-3">
+                                                                                                {#if markingResults[questionKey]?.isCorrect}
+                                                                                                        <span class="text-green-400 text-xl">✓</span>
+                                                                                                {:else}
+                                                                                                        <span class="text-red-400 text-xl">✗</span>
+                                                                                                {/if}
+                                                                                        </div>
+                                                                                </div>
+                                                                        {/each}
+                                                                </div>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                {/if}
 
                                 <!-- Answer Video -->
                                 <div class="text-center">
