@@ -212,7 +212,7 @@
                                                         src="/LESSONS/les01/01_L1-dem.png"
                                                         alt="IELTS Listening Missing Information"
                                                         class="w-full rounded border border-gray-600 cursor-pointer hover:opacity-80 transition-opacity mb-4"
-                                                        on:click={() => openLightbox('/LESSONS/les01/01_L1-dem.png')}
+                                                        onclick={() => openLightbox('/LESSONS/les01/01_L1-dem.png')}
                                                 />
                                                 <a
                                                         href="https://insideielts.oppyo.com/video/embed/bbukky49j3"
@@ -230,7 +230,7 @@
                                                         src="/LESSONS/les01/01_L2-dem.png"
                                                         alt="IELTS Listening Diagram Completion"
                                                         class="w-full rounded border border-gray-600 cursor-pointer hover:opacity-80 transition-opacity mb-4"
-                                                        on:click={() => openLightbox('/LESSONS/les01/01_L2-dem.png')}
+                                                        onclick={() => openLightbox('/LESSONS/les01/01_L2-dem.png')}
                                                 />
                                                 <a
                                                         href="https://insideielts.oppyo.com/video/embed/tletdevf8z"
@@ -248,7 +248,7 @@
                                                         src="/LESSONS/les01/01_L3-dem.png"
                                                         alt="IELTS Listening Matching Information"
                                                         class="w-full rounded border border-gray-600 cursor-pointer hover:opacity-80 transition-opacity mb-4"
-                                                        on:click={() => openLightbox('/LESSONS/les01/01_L3-dem.png')}
+                                                        onclick={() => openLightbox('/LESSONS/les01/01_L3-dem.png')}
                                                 />
                                                 <a
                                                         href="https://insideielts.oppyo.com/video/embed/yapqthfd33"
@@ -287,7 +287,7 @@
                                                         src="/LESSONS/les01/01_L1-prac.png"
                                                         alt="Listening missing information practice"
                                                         class="w-full rounded border border-gray-500 mb-4 cursor-pointer"
-                                                        on:click={() => openLightbox('/LESSONS/les01/01_L1-prac.png')}
+                                                        onclick={() => openLightbox('/LESSONS/les01/01_L1-prac.png'))
                                                 />
 
                                                 <div class="text-center mb-4">
@@ -339,7 +339,7 @@
                                                         src="/LESSONS/les01/01_L2-prac.png"
                                                         alt="Listening diagram completion practice"
                                                         class="w-full rounded border border-gray-500 mb-4 cursor-pointer"
-                                                        on:click={() => openLightbox('/LESSONS/les01/01_L2-prac.png')}
+                                                        onclick={() => openLightbox('/LESSONS/les01/01_L2-prac.png'))
                                                 />
 
                                                 <div class="text-center mb-4">
@@ -399,7 +399,7 @@
                                                         src="/LESSONS/les01/01_L3-prac.png"
                                                         alt="Listening matching information practice"
                                                         class="w-full rounded border border-gray-500 mb-4 cursor-pointer"
-                                                        on:click={() => openLightbox('/LESSONS/les01/01_L3-prac.png')}
+                                                        onclick={() => openLightbox('/LESSONS/les01/01_L3-prac.png'))
                                                 />
 
                                                 <div class="text-center mb-4">
@@ -617,12 +617,12 @@
 {#if lightboxOpen}
         <div
                 class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 p-4"
-                on:click={closeLightbox}
+                onclick={closeLightbox}
         >
                 <div class="relative max-w-4xl max-h-full">
                         <button
                                 class="absolute top-4 right-4 text-white text-2xl font-bold bg-black bg-opacity-50 rounded-full w-10 h-10 flex items-center justify-center hover:bg-opacity-75 transition-all z-10"
-                                on:click={closeLightbox}
+                                onclick={closeLightbox}
                         >
                                 ×
                         </button>
@@ -630,7 +630,7 @@
                                 src={lightboxImage}
                                 alt="Enlarged view"
                                 class="max-w-full max-h-full object-contain rounded"
-                                on:click|stopPropagation
+                                onclick={(e) => e.stopPropagation()}
                         />
                 </div>
         </div>
