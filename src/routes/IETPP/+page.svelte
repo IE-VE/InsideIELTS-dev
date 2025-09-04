@@ -21,14 +21,15 @@
                                 </p>
                         </div> -->
 
-                        <div class="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 mb-8">
-                                <div class="text-xs text-left font-bold text-teal-600 dark:text-teal-400 mb-4">
+                        <div class="bg-gray-50 dark:bg-gray-800 rounded-lg pb-12 mb-8">
+                                <div class="text-xs text-left font-bold text-teal-600 dark:text-teal-400 pt-4 ml-4 mb-4">
                                         COURSE CODE: IE2401
                                 </div>
-                                <h1 class="text-4xl text-center font-bold text-gray-900 dark:text-white mb-12">
-                                        InsideIELTS Test Preparation Program
-                                </h1>
-                                <div class="text-gray-700 dark:text-gray-300 mb-6">
+                            
+                                <div class="text-gray-700 dark:text-gray-300 px-4 md:px-20 mb-6">
+                                        <h1 class="text-4xl text-center font-bold text-gray-900 dark:text-white pt-8 mb-12">
+                                                InsideIELTS Test Preparation Program
+                                        </h1>
                                         <p class="mb-4">
                                                 The <b>IETPP</b> course is a <b>30 lesson</b>
                                                 introductory program designed to give test candidates a full insight into the make-up,
@@ -250,7 +251,7 @@
                                                                 </div>
                                                                 <div class="flex gap-2">
                                                                         <span class="text-gray-600 dark:text-gray-400">(iii)</span>
-                                                                        <span class="text-blue-600 dark:text-blue-400">Writing Test</span>
+                                                                        <span class="text-teal-600 dark:text-teal-400">Writing Test</span>
                                                                 </div>
                                                                 <div class="ml-16 space-y-1">
                                                                         <div><a href="#" class="text-teal-600 dark:text-teal-400 hover:underline">Academic</a></div>
