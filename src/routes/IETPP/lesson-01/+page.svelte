@@ -722,7 +722,7 @@
                         <h2 class="text-xl font-semibold text-white mb-6 text-center">Skills Practice</h2>
                         <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
                                 <a
-                                        href="/IETPP/lesson-01/multiple-choice"
+                                        href="/IETPP/lesson-01/lesson01-i"
                                         class="block bg-teal-500 hover:bg-teal-600 text-white font-bold py-4 px-6 rounded text-center transition-colors"
                                 >
                                         <div class="text-sm mb-1">01 (i)</div>
@@ -730,7 +730,7 @@
                                         <div class="text-xs mt-1">(60 mins)</div>
                                 </a>
                                 <a
-                                        href="/IETPP/lesson-01/short-answer"
+                                        href="/IETPP/lesson-01/lesson01-ii"
                                         class="block bg-green-600 hover:bg-green-700 text-white font-bold py-4 px-6 rounded text-center transition-colors"
                                 >
                                         <div class="text-sm mb-1">01 (ii)</div>
@@ -738,7 +738,7 @@
                                         <div class="text-xs mt-1">(60 mins)</div>
                                 </a>
                                 <a
-                                        href="/IETPP/lesson-01/sentence-completion"
+                                        href="/IETPP/lesson-01/lesson01-iii"
                                         class="block bg-cyan-600 hover:bg-cyan-700 text-white font-bold py-4 px-6 rounded text-center transition-colors"
                                 >
                                         <div class="text-sm mb-1">01 (iii)</div>

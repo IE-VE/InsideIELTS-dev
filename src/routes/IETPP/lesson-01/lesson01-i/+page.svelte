@@ -45,7 +45,7 @@
                                 <h1 class="text-2xl font-bold text-white mb-2">
                                         Skills Practice
                                 </h1>
-                                <p class="text-white italic">(60 mins)</p>
+                                <p class="text-white italic mb-10">(60 mins)</p>
                         </div>
 
                         <div class="text-center mt-6">
@@ -62,10 +62,69 @@
                 <section class="bg-blue-600/20 rounded-lg p-8 shadow-sm border border-blue-600/50 mb-8">
                         <div class="flex items-center justify-center gap-4 mb-6">
                                 <div class="text-4xl">👂</div>
-                                <h2 class="text-2xl font-bold text-center text-white">LISTENING - Multiple choice</h2>
+                                <h2 class="text-2xl font-bold text-center text-white">LISTENING</h2>
                                 <div class="text-4xl">👂</div>
                         </div>
+                        <div class="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-sm border border-gray-200 dark:border-gray-700 mb-8">
+                                <h2 class="text-2xl text-center font-bold text-gray-800 dark:text-gray-200 mb-6">
+                                        Multiple Choice Questions
+                                </h2>
 
+                                <div class="space-y-6">
+                                        <div>
+                                                <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-3">What to Expect</h3>
+                                                <p class="text-gray-700 dark:text-gray-300 mb-4">
+                                                        Multiple choice questions in the IELTS Listening test require you to choose the correct answer from three to five options (A, B, C...). These questions test your ability to understand specific information, main ideas, and speaker attitudes.
+                                                </p>
+                                        </div>
+
+                                        <div>
+                                                <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-3">Key Strategies</h3>
+                                                <div class="bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-lg p-4">
+                                                        <ul class="space-y-2 text-gray-700 dark:text-gray-300">
+                                                                <li class="flex items-start">
+                                                                        <span class="text-blue-600 dark:text-blue-400 mr-2">1.</span>
+                                                                        <span><strong>Read ahead:</strong> Use the preparation time to read the questions and options</span>
+                                                                </li>
+                                                                <li class="flex items-start">
+                                                                        <span class="text-blue-600 dark:text-blue-400 mr-2">2.</span>
+                                                                        <span><strong>Highlight keywords:</strong> Underline key topic words in the questions</span>
+                                                                </li>
+                                                                <li class="flex items-start">
+                                                                        <span class="text-blue-600 dark:text-blue-400 mr-2">2.</span>
+                                                                        <span><strong>Predict answers:</strong> Think about the 'type' of answer you might hear</span>
+                                                                </li>
+                                                                <li class="flex items-start">
+                                                                        <span class="text-blue-600 dark:text-blue-400 mr-2">3.</span>
+                                                                        <span><strong>Listen for keywords:</strong> Focus on key words that match the options</span>
+                                                                </li>
+                                                             
+                                                        </ul>
+                                                </div>
+                                        </div>
+
+                                        <div>
+                                                <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-3">Common Pitfalls</h3>
+                                                <div class="bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-lg p-4">
+                                                        <ul class="space-y-2 text-gray-700 dark:text-gray-300">
+                                                                <li class="flex items-start">
+                                                                        <span class="text-red-600 dark:text-red-400 mr-2">⚠️</span>
+                                                                        <span>Choosing the first answer you hear - the correct answer may come later</span>
+                                                                </li>
+                                                                <li class="flex items-start">
+                                                                        <span class="text-red-600 dark:text-red-400 mr-2">⚠️</span>
+                                                                        <span>Being distracted by familiar words that don't match the correct meaning</span>
+                                                                </li>
+                                                                <li class="flex items-start">
+                                                                        <span class="text-red-600 dark:text-red-400 mr-2">⚠️</span>
+                                                                        <span>Not reading all options before making a choice</span>
+                                                                </li>
+                                                        </ul>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+                 
                         <div class="max-w-4xl mx-auto">
                                 <p class="text-white mb-6">
                                         There will usually be at least one set of multiple choice answer questions in each
