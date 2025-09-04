@@ -157,7 +157,7 @@
                                                         <span class="text-xl font-bold text-gray-800 dark:text-gray-200 underline">WRITING</span>
                                                 </div>
                                                 <div class="ml-12 mb-4 space-y-2">
-                                                        <a href="#" class="block text-teal-600 dark:text-teal-400 hover:underline">
+                                                        <a href="/IETPP/lesson-03" class="block text-teal-600 dark:text-teal-400 hover:underline">
                                                                 Introduction to the Writing Test
                                                         </a>
                                                         <div class="space-y-1 ml-4">
@@ -198,7 +198,7 @@
                                                         <span class="text-xl font-bold text-gray-800 dark:text-gray-200 underline">SPEAKING</span>
                                                 </div>
                                                 <div class="ml-12 mb-4 space-y-2">
-                                                        <a href="#" class="block text-teal-600 dark:text-teal-400 hover:underline">
+                                                        <a href="/IETPP/lesson-04" class="block text-teal-600 dark:text-teal-400 hover:underline">
                                                                 Introduction to the Speaking Test
                                                         </a>
                                                         <div class="space-y-1 ml-4">
