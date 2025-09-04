@@ -12,7 +12,7 @@
 
 <div class="min-h-screen bg-white dark:bg-gray-900">
         <!-- Header Section -->
-        <div class="container mx-auto px-6 py-8">
+        <div class=" max-w-5xl container mx-auto px-6 py-8">
                 <div class="mb-8">
                         <!-- <div class="mb-4">
                                 <p class="text-4xl mb-4">👉</p>
@@ -31,7 +31,7 @@
                                                 InsideIELTS Test Preparation Program
                                         </h1>
                                         <p class="mb-4">
-                                                The <b>IETPP</b> course is a <b>30 lesson</b>
+                                                The <b>IETPP</b> course is a <b>28 lesson</b>
                                                 introductory program designed to give test candidates a full insight into the make-up,
                                                 skill requirements and assessment procedures of the <b>IELTS</b> test.
                                         </p>
@@ -281,7 +281,7 @@
                                                 width="60"
                                                 height="60"
                                         /> -->
-                                        <p class="text-sm font-bold">EXIT IETPP</p>
+                                        <p class="text-m font-bold">EXIT IETPP</p>
                                 </a>
                         </div>
                 </div>

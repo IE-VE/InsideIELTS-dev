@@ -86,7 +86,7 @@
                         <div class="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-sm border border-gray-200 dark:border-gray-700 mb-8">
                                 <div class="flex flex-col md:flex-row items-center gap-6">
                                         <div class="flex-1">
-                                                <p class="text-white mb-4">
+                                                <p class="text-white text-l mb-4">
                                                         The <strong>IELTS</strong> examination is a language proficiency test designed to assess your
                                                         Listening, Reading, Writing and Speaking skills in English.
                                                 </p>
@@ -337,7 +337,7 @@
                                                 confident and ready to sit the test.
                                         </p>
                                         <p class="text-white">
-                                                Over the course of the following <strong>12 lessons</strong> you will be introduced to the content 
+                                                Over the course of the following <strong>28 lessons</strong> you will be introduced to the content 
                                                 and assessment descriptors for the four parts of the <strong>IELTS</strong> test, and complete practice exercises
                                                 to demonstrate and reinforce the skills you need on your journey
                                                 to <strong>IELTS</strong> success.

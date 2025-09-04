@@ -123,9 +123,9 @@
 			href="/record"
 			class="rounded-lg border border-gray-200 bg-white p-6 shadow-md transition hover:shadow-lg dark:border-gray-700 dark:bg-gray-800"
 		>
-			<h2 class="mb-2 text-xl font-bold text-teal-600 dark:text-teal-400">Speaking Freetest</h2>
+			<h2 class="mb-2 text-xl text-center font-bold text-teal-600 dark:text-teal-400">Free Speaking Evaluation</h2>
 			<p class="text-gray-600 dark:text-gray-300">
-				Understand your areas of weakness and how to improve.
+				<b>3 minute</b> Speaking interview with Official Assessment Criteria Feedback & Band Score estimate.
 			</p>
 			<div class="mt-4 text-sm font-medium text-teal-600 dark:text-teal-400">START SPEAKING →</div>
 		</a>
@@ -135,9 +135,9 @@
 			href="/writing/practice"
 			class="rounded-lg border border-gray-200 bg-white p-6 shadow-md transition hover:shadow-lg dark:border-gray-700 dark:bg-gray-800"
 		>
-			<h2 class="mb-2 text-xl font-bold text-teal-600 dark:text-teal-400">Writing Freetest</h2>
+			<h2 class="mb-2 text-xl text-center font-bold text-teal-600 dark:text-teal-400">Free Writing Evaluation</h2>
 			<p class="text-gray-600 dark:text-gray-300">
-				Sharpen your essay and report writing with targeted exercises and feedback.
+				<b>10 minute</b> Writing exercise with Official Assessment Criteria Feedback & Band Score estimate.
 			</p>
 			<div class="mt-4 text-sm font-medium text-teal-600 dark:text-teal-400">START WRITING →</div>
 		</a>
@@ -147,9 +147,9 @@
 			href="/reading/practice"
 			class="rounded-lg border border-gray-200 bg-white p-6 shadow-md transition hover:shadow-lg dark:border-gray-700 dark:bg-gray-800"
 		>
-			<h2 class="mb-2 text-xl font-bold text-teal-600 dark:text-teal-400">Reading Freetest</h2>
+			<h2 class="mb-2 text-xl text-center font-bold text-teal-600 dark:text-teal-400">Free Reading Evaluation</h2>
 			<p class="text-gray-600 dark:text-gray-300">
-				Boost your comprehension with authentic IELTS texts and questions.
+				<b>20 minute</b> Official Materials Reading Test with analysis, scoring and feedback.
 			</p>
 			<div class="mt-4 text-sm font-medium text-teal-600 dark:text-teal-400">START READING →</div>
 		</a>
@@ -159,9 +159,9 @@
 			href="/listening/practice"
 			class="rounded-lg border border-gray-200 bg-white p-6 shadow-md transition hover:shadow-lg dark:border-gray-700 dark:bg-gray-800"
 		>
-			<h2 class="mb-2 text-xl font-bold text-teal-600 dark:text-teal-400">Listening Freetest</h2>
+			<h2 class="mb-2 text-xl text-center font-bold text-teal-600 dark:text-teal-400">Free Listening Evaluation</h2>
 			<p class="text-gray-600 dark:text-gray-300">
-				Improve your listening test technique with real IELTS materials.
+				<b>7 minute</b> Official Materials Listening Test with analysis, scoring and feedback.
 			</p>
 			<div class="mt-4 text-sm font-medium text-teal-600 dark:text-teal-400">START LISTENING →</div>
 		</a>

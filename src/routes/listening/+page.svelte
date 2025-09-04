@@ -258,10 +258,10 @@
 		<div class="text-center">
 			<div class="bg-gray-900 border-2 border-teal-600 border-t-12 border-t-teal-300 rounded-lg p-8 shadow-lg">
 				<h2 class="text-2xl font-semibold text-white mb-6 text-center">
-					Ready to Start Practicing?
+					Free Evaluation Test
 				</h2>
 				<p class="text-gray-300 mb-6 text-xl">
-					Take our complete IELTS Listening practice test with authentic questions and audio.
+					Try our quick single section Listening sample test with authentic questions and audio.
 				</p>
 				<a 
 					href="/listening/practice"
