@@ -257,31 +257,8 @@
 
                         <div class="space-y-8">
                                 <div class="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-sm border border-gray-200 dark:border-gray-700">
-                                        <div class="flex flex-col md:flex-row items-start gap-6">
-                                                <div class="flex-1">
-                                                        <p class="text-white mb-6">
-                                                                The <strong>Listening Test and Reading Test</strong> are marked by qualified
-                                                                <strong>IELTS</strong> administrators who manually score your answer sheet out of
-                                                                <strong>40</strong> (<strong>1 mark</strong> for each correct answer). Your score is then converted to a band
-                                                                on the <strong>IELTS 9-band scale</strong>. You can be awarded a full or half-band score, just as 
-                                                                in the speaking and writing tests.
-                                                        </p>
-                                                        <p class="text-white mb-6">
-                                                                The scoring system varies to a small degree with each <strong>IELTS</strong> test, but
-                                                                broadly speaking, you need to score at least <strong>23/40</strong> for a
-                                                                <strong>Band 6</strong> in the <strong>Listening and Reading Test</strong>, and
-                                                                at least <strong>30/40</strong> for a <strong>Band 7</strong> award.
-                                                        </p>
-                                                        <p class="text-white">
-                                                                The <strong>Speaking and Writing</strong> elements of the <strong>IELTS</strong> test are
-                                                                graded by qualified <strong>IELTS</strong> examiners using the official
-                                                                <strong>IELTS Speaking and Writing Assessment Rubrics</strong>. The
-                                                                assessment rubrics allow the examiner to numerically rate your
-                                                                language competency according to a fixed, pre-specified list of 
-                                                                descriptors.
-                                                        </p>
-                                                </div>
-                                                <div class="flex-shrink-0 mt-4">
+                                        <div class="text-wrap-container">
+                                                <div class="floating-video-button">
                                                         <a
                                                                 href="https://insideielts.oppyo.com/video/embed/1xg9n4onzg"
                                                                 target="_blank"
@@ -291,6 +268,27 @@
                                                                 Virtual Examiner Video
                                                         </a>
                                                 </div>
+                                                <p class="text-white mb-6">
+                                                        The <strong>Listening Test and Reading Test</strong> are marked by qualified
+                                                        <strong>IELTS</strong> administrators who manually score your answer sheet out of
+                                                        <strong>40</strong> (<strong>1 mark</strong> for each correct answer). Your score is then converted to a band
+                                                        on the <strong>IELTS 9-band scale</strong>. You can be awarded a full or half-band score, just as 
+                                                        in the speaking and writing tests.
+                                                </p>
+                                                <p class="text-white mb-6">
+                                                        The scoring system varies to a small degree with each <strong>IELTS</strong> test, but
+                                                        broadly speaking, you need to score at least <strong>23/40</strong> for a
+                                                        <strong>Band 6</strong> in the <strong>Listening and Reading Test</strong>, and
+                                                        at least <strong>30/40</strong> for a <strong>Band 7</strong> award.
+                                                </p>
+                                                <p class="text-white">
+                                                        The <strong>Speaking and Writing</strong> elements of the <strong>IELTS</strong> test are
+                                                        graded by qualified <strong>IELTS</strong> examiners using the official
+                                                        <strong>IELTS Speaking and Writing Assessment Rubrics</strong>. The
+                                                        assessment rubrics allow the examiner to numerically rate your
+                                                        language competency according to a fixed, pre-specified list of 
+                                                        descriptors.
+                                                </p>
                                         </div>
                                 </div>
 
@@ -427,5 +425,16 @@
                 margin-top: 1rem;
                 font-size: 1rem;
                 font-weight: 500;
+        }
+        
+        /* Custom CSS for persistent text wrapping */
+        .text-wrap-container {
+                position: relative;
+        }
+        
+        .floating-video-button {
+                float: right;
+                margin-left: 1rem;
+                margin-bottom: 1rem;
         }
 </style>
