@@ -358,7 +358,6 @@
                                 ← Back to Course Contents
                         </a>
                 </div>
-        </div>
 </div>
         
         <!-- Lightbox Modal -->
