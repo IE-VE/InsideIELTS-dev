@@ -441,6 +441,7 @@
                 .floating-video-button {
                         float: none;
                         margin-left: 0;
+                        margin-top: 1.5rem;
                         margin-bottom: 1rem;
                         text-align: center;
                         clear: both;
