@@ -46,8 +46,8 @@
 </svelte:head>
 
 <div class="min-h-screen bg-white dark:bg-gray-900">
-        <div class="container mx-auto px-6 py-8">
-                <!-- Lesson Header -->
+        <!-- Lesson Header -->
+        <div class="max-w-5xl container mx-auto px-6 py-8">
                 <div class="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 mb-8">
                         <div class="text-center">
                                 <div class="text-xs text-left font-bold text-teal-600 dark:text-teal-400 mb-2">
@@ -76,7 +76,10 @@
                                 </a>
                         </div>
                 </div>
+        </div>
 
+        <!-- Page Content -->
+        <div style="max-width: 1200px;" class="mx-auto px-6 py-8">
                 <!-- Section 1: IELTS Test Make-up -->
                 <section class="mb-12">
                         <h2 class="text-2xl font-bold text-center text-white mb-8">
@@ -356,6 +359,7 @@
                         </a>
                 </div>
         </div>
+</div>
         
         <!-- Lightbox Modal -->
         <div bind:this={lightboxModal} class="lightbox-overlay" style="display: none;" on:click={closeLightbox} on:keydown={handleKeydown}>
