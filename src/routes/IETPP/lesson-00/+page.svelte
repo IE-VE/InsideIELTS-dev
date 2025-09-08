@@ -256,7 +256,7 @@
                         <div class="space-y-8">
                                 <div class="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-sm border border-gray-200 dark:border-gray-700">
                                         <div class="text-wrap-container">
-                                                <div class="floating-video-button mt-4">
+                                                <div class="floating-video-button">
                                                         <a
                                                                 href="https://insideielts.oppyo.com/video/embed/1xg9n4onzg"
                                                                 target="_blank"
