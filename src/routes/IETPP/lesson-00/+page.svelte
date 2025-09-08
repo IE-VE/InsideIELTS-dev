@@ -60,8 +60,8 @@
                         </div>
 
                         <div class="mt-6">
-                                <h2 class="text-lg font-semibold mb-4 text-white">Lesson Content:</h2>
-                                <ul class="list-disc list-inside space-y-2 text-white">
+                                <h2 class="text-xl font-semibold mb-4 text-white">Lesson Content:</h2>
+                                <ul class="list-disc text-xl list-inside space-y-2 text-white">
                                         <li>IELTS Test make-up</li>
                                         <li>IELTS Test Assessment</li>
                                 </ul>
@@ -89,9 +89,8 @@
                         <div class="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-sm border border-gray-200 dark:border-gray-700 mb-8">
                                 <div class="flex flex-col md:flex-row items-center gap-6">
                                         <div class="flex-1">
-                                                <p class="text-white text-l mb-4">
-                                                        The <strong>IELTS</strong> examination is a language proficiency test designed to assess your
-                                                        Listening, Reading, Writing and Speaking skills in English.
+                                                <p class="text-white text-xl mb-4">
+                                                        The <strong>IELTS</strong> examination is a language proficiency test designed to                                                                assess your Listening, Reading, Writing and Speaking skills in English.
                                                 </p>
                                         </div>
                                         <div>
@@ -236,7 +235,7 @@
                         </div>
 
                         <div class="bg-blue-50 dark:bg-blue-900/20 border-l-4 border-blue-500 p-6 rounded-r-lg">
-                                <p class="text-white mb-4">
+                                <p class="text-white text-l mb-4">
                                         The content covered in the Reading Test and Writing Test of the
                                         <strong>IELTS General Training (GT)</strong> and <strong>IELTS Academic (Ac)</strong> 
                                         test is different: the General Training test materials are focused 
@@ -258,40 +257,36 @@
 
                         <div class="space-y-8">
                                 <div class="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-sm border border-gray-200 dark:border-gray-700">
-                                        <div class="flex flex-col md:flex-row items-start gap-6">
-                                                <div class="flex-1">
-                                                        <p class="text-white mb-6">
-                                                                The <strong>Listening Test and Reading Test</strong> are marked by qualified
-                                                                <strong>IELTS</strong> administrators who manually score your answer sheet out of
-                                                                <strong>40</strong> (<strong>1 mark</strong> for each correct answer). Your score is then converted to a band
-                                                                on the <strong>IELTS 9-band scale</strong>. You can be awarded a full or half-band score, just as 
-                                                                in the speaking and writing tests.
-                                                        </p>
-                                                        <p class="text-white mb-6">
-                                                                The scoring system varies to a small degree with each <strong>IELTS</strong> test, but
-                                                                broadly speaking, you need to score at least <strong>23/40</strong> for a
-                                                                <strong>Band 6</strong> in the <strong>Listening and Reading Test</strong>, and
-                                                                at least <strong>30/40</strong> for a <strong>Band 7</strong> award.
-                                                        </p>
-                                                        <p class="text-white">
-                                                                The <strong>Speaking and Writing</strong> elements of the <strong>IELTS</strong> test are
-                                                                graded by qualified <strong>IELTS</strong> examiners using the official
-                                                                <strong>IELTS Speaking and Writing Assessment Rubrics</strong>. The
-                                                                assessment rubrics allow the examiner to numerically rate your
-                                                                language competency according to a fixed, pre-specified list of 
-                                                                descriptors.
-                                                        </p>
-                                                </div>
-                                                <div class="flex-shrink-0">
-                                                        <a
-                                                                href="https://insideielts.oppyo.com/video/embed/1xg9n4onzg"
-                                                                target="_blank"
-                                                                title="InsideIELTS virtual examiner test assessment video"
-                                                                class="inline-block bg-teal-600 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded border-2 border-red-500 text-sm transition-colors"
-                                                        >
-                                                                Virtual Examiner Video
-                                                        </a>
-                                                </div>
+                                        <div class="relative">
+                                                <a
+                                                        href="https://insideielts.oppyo.com/video/embed/1xg9n4onzg"
+                                                        target="_blank"
+                                                        title="InsideIELTS virtual examiner test assessment video"
+                                                        class="float-right ml-4 mb-4 bg-teal-600 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded border-2 border-red-500 text-sm transition-colors"
+                                                >
+                                                        Virtual Examiner Video
+                                                </a>
+                                                <p class="text-white mb-6">
+                                                        The <strong>Listening Test and Reading Test</strong> are marked by qualified
+                                                        <strong>IELTS</strong> administrators who manually score your answer sheet out of
+                                                        <strong>40</strong> (<strong>1 mark</strong> for each correct answer). Your score is then converted to a band
+                                                        on the <strong>IELTS 9-band scale</strong>. You can be awarded a full or half-band score, just as 
+                                                        in the speaking and writing tests.
+                                                </p>
+                                                <p class="text-white mb-6">
+                                                        The scoring system varies to a small degree with each <strong>IELTS</strong> test, but
+                                                        broadly speaking, you need to score at least <strong>23/40</strong> for a
+                                                        <strong>Band 6</strong> in the <strong>Listening and Reading Test</strong>, and
+                                                        at least <strong>30/40</strong> for a <strong>Band 7</strong> award.
+                                                </p>
+                                                <p class="text-white">
+                                                        The <strong>Speaking and Writing</strong> elements of the <strong>IELTS</strong> test are
+                                                        graded by qualified <strong>IELTS</strong> examiners using the official
+                                                        <strong>IELTS Speaking and Writing Assessment Rubrics</strong>. The
+                                                        assessment rubrics allow the examiner to numerically rate your
+                                                        language competency according to a fixed, pre-specified list of 
+                                                        descriptors.
+                                                </p>
                                         </div>
                                 </div>
 
@@ -332,14 +327,14 @@
 
                                 <!-- Course Introduction -->
                                 <div class="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-sm border border-gray-200 dark:border-gray-700">
-                                        <p class="text-white mb-6">
+                                        <p class="text-white text-xl mb-6">
                                                 If you are going to achieve your target band score, it is
                                                 essential that you are familiar with the specific descriptors which constitute the
                                                 <strong>assessment criteria</strong> for each part of the <strong>IELTS</strong> test.
                                                 You can then focus on and improve each skill until you are
                                                 confident and ready to sit the test.
                                         </p>
-                                        <p class="text-white">
+                                        <p class="text-white text-xl">
                                                 Over the course of the following <strong>28 lessons</strong> you will be introduced to the content 
                                                 and assessment descriptors for the four parts of the <strong>IELTS</strong> test, and complete practice exercises
                                                 to demonstrate and reinforce the skills you need on your journey
