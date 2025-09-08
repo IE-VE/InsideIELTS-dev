@@ -476,7 +476,6 @@
                                         class="rounded-lg shadow-sm"
                                         style="max-width: 150px;"
                                         controls
-                                        muted
                                 >
                                         <source src="/QQ2.mp4" type="video/mp4" />
                                         Your browser does not support the video tag.
