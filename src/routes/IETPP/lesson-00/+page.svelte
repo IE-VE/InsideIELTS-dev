@@ -87,7 +87,7 @@
                         </h2>
 
                         <div class="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-sm border border-gray-200 dark:border-gray-700 mb-8">
-                                <div class="flex flex-col md:flex-row items-center gap-6">
+                                <div class="first-video-button-container flex flex-col md:flex-row items-center gap-6">
                                         <div class="flex-1">
                                                 <p class="text-white text-xl mb-4">
                                                         The <strong>IELTS</strong> examination is a language proficiency test designed to                                                                assess your Listening, Reading, Writing and Speaking skills in English.
@@ -455,6 +455,11 @@
                 
                 .floating-video-button {
                         order: 2;
+                }
+                
+                /* Fix top button spacing on mobile to match second button */
+                .first-video-button-container {
+                        gap: 1rem;
                 }
         }
 </style>
