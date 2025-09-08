@@ -257,8 +257,20 @@
 
                         <div class="space-y-8">
                                 <div class="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-sm border border-gray-200 dark:border-gray-700">
-                                        <div class="flex flex-col md:flex-row items-start gap-6">
-                                                <div class="flex-1">
+                                        <div class="relative">
+                                                <!-- Floating button on the right -->
+                                                <div class="float-right ml-4 mb-4">
+                                                        <a
+                                                                href="https://insideielts.oppyo.com/video/embed/1xg9n4onzg"
+                                                                target="_blank"
+                                                                title="InsideIELTS virtual examiner test assessment video"
+                                                                class="inline-block bg-teal-600 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded border-2 border-red-500 text-sm transition-colors"
+                                                        >
+                                                                Virtual Examiner Video
+                                                        </a>
+                                                </div>
+                                                <!-- Text content that wraps around the button -->
+                                                <div class="text-content">
                                                         <p class="text-white mb-6">
                                                                 The <strong>Listening Test and Reading Test</strong> are marked by qualified
                                                                 <strong>IELTS</strong> administrators who manually score your answer sheet out of
@@ -281,16 +293,8 @@
                                                                 descriptors.
                                                         </p>
                                                 </div>
-                                                <div class="flex-shrink-0 mt-4">
-                                                        <a
-                                                                href="https://insideielts.oppyo.com/video/embed/1xg9n4onzg"
-                                                                target="_blank"
-                                                                title="InsideIELTS virtual examiner test assessment video"
-                                                                class="inline-block bg-teal-600 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded border-2 border-red-500 text-sm transition-colors"
-                                                        >
-                                                                Virtual Examiner Video
-                                                        </a>
-                                                </div>
+                                                <!-- Clear float after content -->
+                                                <div class="clear-both"></div>
                                         </div>
                                 </div>
 
