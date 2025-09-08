@@ -455,7 +455,7 @@
                         {#if session?.status === 'completed'}
                                 Review your answers and get your detailed analysis.
                         {:else}
-                                Answer the three "Part 1" questions. Try to talk for at least 30 seconds for each answer.
+                                Answer the three Part 1 questions. Try to talk for at least 30 seconds for each answer.
                         {/if}
                 </P>
         </div>
