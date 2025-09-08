@@ -13,7 +13,7 @@
 <div class="min-h-screen bg-white dark:bg-gray-900">
         <!-- Header Section -->
         <div class=" max-w-5xl container mx-auto px-6 py-8">
-                <div class="mb-8">
+                <div class="mb-12">
                         <!-- <div class="mb-4">
                                 <p class="text-4xl mb-4">👉</p>
                                 <p class="text-lg font-semibold italic text-gray-700 dark:text-gray-300">
@@ -30,7 +30,7 @@
                                         <h1 class="text-4xl text-center font-bold text-gray-900 dark:text-white pt-8 mb-12">
                                                 InsideIELTS Test Preparation Program
                                         </h1>
-                                        <p class="mb-4">
+                                        <p class="mb-8 text-xl">
                                                 The <b>IETPP</b> course is a <b>28 lesson</b>
                                                 introductory program designed to give test candidates a full insight into the make-up,
                                                 skill requirements and assessment procedures of the <b>IELTS</b> test.
@@ -56,14 +56,14 @@
                                                 </a>
                                         </div> -->
 
-                                        <p class="border-b-2 border-gray-800 dark:border-gray-200 pb-8">
+                                        <p>
                                                 Personal feedback is given on all <b>Skill Check</b> exercises through the
                                                 <a href="#" class="text-teal-600 dark:text-teal-400 hover:underline font-bold"
                                                         >IE Member's Feedback</a
                                                 > page.
                                         </p>
-                                        <p class="border-b-2 border-gray-800 dark:border-gray-200 pb-8">
-                                               For extra in-depth 
+                                        <p class="border-b-2 border-gray-800 dark:border-gray-200 pb-10 mt-6">
+                                               For additional in-depth explanation click on the <b>Virtual Examiner Video</b> buttons where available.
                                         </p>
                                 </div>
                         </div>

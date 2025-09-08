@@ -109,9 +109,9 @@
                         </p>
 
                         <!-- Listening Test -->
-                        <div class="mb-8">
+                        <div class="mb-12">
                                 <h3 class="text-xl font-semibold text-white mb-4">
-                                        • A 40 minute Listening Test consisting of 40 questions in four sections.
+                                        • A 40 minute Listening Test consisting of 40 questions in four sections
                                 </h3>
                                 <div class="grid md:grid-cols-2 gap-6 mb-6">
                                         <div class="text-center">
@@ -141,9 +141,9 @@
                         </div>
 
                         <!-- Reading Test -->
-                        <div class="mb-8">
+                        <div class="mb-12">
                                 <h3 class="text-xl font-semibold text-white mb-4">
-                                        • A 60 minute Reading Test with three passages and 40 questions.
+                                        • A 60 minute Reading Test with three passages and 40 questions
                                 </h3>
                                 <div class="grid md:grid-cols-3 gap-6">
                                         <div class="text-center">
@@ -168,9 +168,9 @@
                         </div>
 
                         <!-- Writing Test -->
-                        <div class="mb-8">
+                        <div class="mb-12">
                                 <h3 class="text-xl font-semibold text-white mb-4">
-                                        • A 60 minute Writing Test consisting of two tasks.
+                                        • A 60 minute Writing Test consisting of two tasks
                                 </h3>
                                 <div class="grid md:grid-cols-3 gap-6">
                                         <div class="text-center">
@@ -195,9 +195,9 @@
                         </div>
 
                         <!-- Speaking Test -->
-                        <div class="mb-8">
+                        <div class="mb-12">
                                 <h3 class="text-xl font-semibold text-white mb-4">
-                                        • And a 14 minute Speaking Test interview made up of three parts.
+                                        • And a 14 minute Speaking Test interview made up of three parts
                                 </h3>
                                 <div class="grid md:grid-cols-3 gap-6 mb-6">
                                         <div class="text-center">
@@ -290,20 +290,7 @@
                                         </div>
                                 </div>
 
-                                <!-- Band Scale -->
-                                <div class="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-sm border border-gray-200 dark:border-gray-700">
-                                        <p class="text-white mb-4 text-center">
-                                                The descriptive statements summarising a candidate's language ability for <strong>IELTS</strong> Band scores 
-                                                4 - 9 are shown in the table below.
-                                        </p>
-                                        <div class="text-center">
-                                                <img src="/BANDS.png" alt="IELTS Band Scale" class="mx-auto mb-4 w-full max-w-[700px] rounded border lightbox-image cursor-pointer"/>
-                                                <p class="text-sm text-white mb-4"><strong>Band score descriptive statements</strong></p>
-                                                <p class="text-sm text-white">Click to view full size</p>
-                                        </div>
-                                </div>
-
-                                <!-- Speaking Assessment -->
+                             <!-- Speaking Assessment -->
                                 <div class="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-sm border border-gray-200 dark:border-gray-700">
                                         <h3 class="text-xl font-semibold text-white mb-4 text-center">
                                                 Speaking Test Assessment Criteria
@@ -325,6 +312,19 @@
                                         </div>
                                 </div>
 
+                                <!-- Band Scale -->
+                                <div class="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-sm border border-gray-200 dark:border-gray-700">
+                                        <p class="text-white mb-4 text-center text-lg">
+                                                The descriptive statements summarising a candidate's language ability for <strong>IELTS</strong> Band scores 
+                                                4 - 9 are shown in the table below.
+                                        </p>
+                                        <div class="text-center">
+                                                <img src="/BANDS.png" alt="IELTS Band Scale" class="mx-auto mb-4 w-full max-w-[700px] rounded border lightbox-image cursor-pointer"/>
+                                                <p class="text-sm text-white mb-4"><strong>Band score descriptive statements</strong></p>
+                                                <p class="text-sm text-white">Click to view full size</p>
+                                        </div>
+                                </div>
+
                                 <!-- Course Introduction -->
                                 <div class="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-sm border border-gray-200 dark:border-gray-700">
                                         <p class="text-white text-xl mb-6">
@@ -336,7 +336,7 @@
                                         </p>
                                         <p class="text-white text-xl">
                                                 Over the course of the following <strong>28 lessons</strong> you will be introduced to the content 
-                                                and assessment descriptors for the four parts of the <strong>IELTS</strong> test, and complete practice exercises
+                                                and assessment descriptors for the four parts of the <strong>IELTS</strong> test, and will complete practice exercises
                                                 to demonstrate and reinforce the skills you need on your journey
                                                 to <strong>IELTS</strong> success.
                                         </p>
