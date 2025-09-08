@@ -437,4 +437,24 @@
                 margin-left: 1rem;
                 margin-bottom: 1rem;
         }
+        
+        /* Responsive design: On mobile (<768px), position button below text */
+        @media (max-width: 767px) {
+                .floating-video-button {
+                        float: none;
+                        margin-left: 0;
+                        margin-bottom: 1rem;
+                        text-align: center;
+                        clear: both;
+                }
+                
+                .text-wrap-container {
+                        display: flex;
+                        flex-direction: column;
+                }
+                
+                .floating-video-button {
+                        order: 2;
+                }
+        }
 </style>
