@@ -42,8 +42,8 @@
                                 <div class="text-xs text-left text-teal-600 dark:text-teal-400 mb-4">
                                         LESSON CODE: IE2401_01.1
                                 </div>
-                                <h1 class="text-2xl font-bold text-white mb-2">
-                                        Skills Practice
+                                <h1 class="text-3xl font-bold text-white mb-2">
+                                        LISTENING - Multiple Choice
                                 </h1>
                                 <p class="text-white italic mb-10">(60 mins)</p>
                         </div>
@@ -65,7 +65,7 @@
                 <section class="bg-blue-600/20 rounded-lg p-8 shadow-sm border border-blue-600/50 mb-8">
                         <div class="flex items-center justify-center gap-4 mb-6">
                                 <div class="text-4xl">👂</div>
-                                <h2 class="text-2xl font-bold text-center text-white">LISTENING</h2>
+                                <h2 class="text-2xl font-bold text-center text-white">Skills Practice</h2>
                                 <div class="text-4xl">👂</div>
                         </div>
                         <div class="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-sm border border-gray-200 dark:border-gray-700 mb-8">
@@ -207,7 +207,7 @@
 
                                         <a
                                                 href="/IETPP/lesson-01/lesson01-i/skill-check"
-                                                class="inline-flex items-center gap-3 bg-green-600 hover:bg-green-700 text-white font-bold py-4 px-8 rounded-lg transition-colors text-lg"
+                                                class="inline-flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-lg transition-colors text-base border-2 border-white"
                                         >
                                                 <span class="text-2xl">✓</span>
                                                 <span>SKILL CHECK</span>

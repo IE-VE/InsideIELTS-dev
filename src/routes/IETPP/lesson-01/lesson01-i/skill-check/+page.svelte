@@ -139,7 +139,7 @@
                                 <h1 class="text-3xl font-bold text-white mb-2">
                                         LISTENING - Multiple Choice
                                 </h1>
-                                <p class="text-white italic">Skill Check</p>
+                
                         </div>
 
                         <div class="text-right mt-6">
@@ -240,7 +240,7 @@
                                                 </div>
                                                 
                                                 <!-- Check Button -->
-                                                <div class="text-center mb-4">
+                                                <div class="text-center mt-12 mb-4">
                                                         <button
                                                                 type="button"
                                                                 on:click={checkExercise1Answers}
@@ -366,7 +366,7 @@
                                                 </div>
 
                                                 <!-- Check Button -->
-                                                <div class="text-center mb-4">
+                                                <div class="text-center mt-12 mb-4">
                                                         <button
                                                                 type="button"
                                                                 on:click={checkExercise2Answers}
@@ -431,12 +431,12 @@
 
                 <!-- End of Lesson -->
                 <section class="text-center py-8">
-                        <p class="text-white mb-4">End of Skill Check 01 (i)</p>
+                        <p class="text-white mb-12">End of Skill Check 01 (i)</p>
                         <a
                                 href="/IETPP"
-                                class="inline-block bg-teal-600 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded transition-colors"
+                                class="inline-flex items-center text-teal-600 dark:text-teal-400 hover:underline font-semibold"
                         >
-                                ← Back to Contents
+                                ← Back to Course Contents
                         </a>
                 </section>
         </div>
