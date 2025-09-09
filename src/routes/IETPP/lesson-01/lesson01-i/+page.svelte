@@ -144,7 +144,7 @@
                                         />
                                 </div>
 
-                                <p class="text-white mb-6">
+                                <p class="text-white mb-12">
                                         The instructions at the beginning of the section will tell you to circle the appropriate
                                         letter from the choices given. (At the end of the test you will be given time to transfer
                                         your answers from the question paper to the answer sheet.)
