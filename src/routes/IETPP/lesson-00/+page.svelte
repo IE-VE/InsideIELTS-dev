@@ -56,7 +56,7 @@
                                 <h1 class="text-3xl font-bold text-white mb-2">
                                         IELTS Test Overview
                                 </h1>
-                                <p class="text-white italic">(20 mins)</p>
+                                <p class="text-white italic">(15 mins)</p>
                         </div>
 
                         <div class="mt-6">
@@ -67,12 +67,12 @@
                                 </ul>
                         </div>
 
-                        <div class="text-center mt-6">
+                        <div class="text-right mt-6">
                                 <a
                                         href="/IETPP"
                                         class="text-teal-600 dark:text-teal-400 hover:underline font-semibold"
                                 >
-                                        &lt; -- Back to Contents --&gt;
+                                        ← Back to Contents
                                 </a>
                         </div>
                 </div>

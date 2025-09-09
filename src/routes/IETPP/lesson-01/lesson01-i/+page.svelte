@@ -36,10 +36,10 @@
 
 <div class="min-h-screen bg-gray-900 text-white">
         <!-- Lesson Header -->
-        <div class="container mx-auto px-6 py-8">
+        <div class="max-w-5xl container mx-auto px-6 py-8">
                 <div class="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 mb-8">
                         <div class="text-center">
-                                <div class="text-[8px] md:text-[10px] text-left text-teal-600 dark:text-teal-400 mb-4">
+                                <div class="text-xs text-left text-teal-600 dark:text-teal-400 mb-4">
                                         LESSON CODE: IE2401_01.1
                                 </div>
                                 <h1 class="text-2xl font-bold text-white mb-2">
@@ -48,16 +48,18 @@
                                 <p class="text-white italic mb-10">(60 mins)</p>
                         </div>
 
-                        <div class="text-center mt-6">
-                                <a
-                                        href="/IETPP"
-                                        class="text-teal-600 dark:text-teal-400 hover:underline font-semibold"
-                                >
-                                        &lt; -- Back to Contents --&gt;
-                                </a>
+                                <div class="text-right mt-6">
+                                        <a
+                                                href="/IETPP"
+                                                class="text-teal-600 dark:text-teal-400 hover:underline font-semibold"
+                                        >
+                                                ← Back to Contents
+                                        </a>
                         </div>
                 </div>
 
+        <!-- Page Content -->
+        <div style="max-width: 1200px;" class="mx-auto px-6 py-8">
                 <!-- Lesson Title Section -->
                 <section class="bg-blue-600/20 rounded-lg p-8 shadow-sm border border-blue-600/50 mb-8">
                         <div class="flex items-center justify-center gap-4 mb-6">

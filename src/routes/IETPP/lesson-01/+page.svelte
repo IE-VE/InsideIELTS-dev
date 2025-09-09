@@ -172,10 +172,10 @@
 
 <div class="min-h-screen bg-gray-900 text-white">
         <!-- Lesson Header -->
-        <div class="container mx-auto px-6 py-8">
+        <div class="max-w-5xl container mx-auto px-6 py-8">
                 <div class="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 mb-8">
                         <div class="text-center">
-                                <div class="text-[8px] md:text-[10px] text-left font-bold text-teal-600 dark:text-teal-400 mb-2">
+                                <div class="text-xs text-left text-teal-600 dark:text-teal-400 mb-4">
                                         LESSON CODE: IE2401_01
                                 </div>
                                 <h1 class="text-3xl font-bold text-white mb-2">
@@ -184,16 +184,18 @@
                                 <p class="text-white italic">(30 mins)</p>
                         </div>
 
-                        <div class="text-center mt-6">
+                        <div class="text-right mt-6">
                                 <a
                                         href="/IETPP"
                                         class="text-teal-600 dark:text-teal-400 hover:underline font-semibold"
                                 >
-                                        &lt; -- Back to Contents --&gt;
+                                        ← Back to Contents
                                 </a>
                         </div>
                 </div>
 
+        <!-- Page Content -->
+        <div style="max-width: 1200px;" class="mx-auto px-6 py-8">
                 <!-- Lesson Content Overview -->
                 <section class="bg-gray-800 rounded-lg p-6 shadow-sm border border-gray-700 mb-8">
                         <h2 class="text-lg font-semibold mb-4 text-white">Lesson Content:</h2>
