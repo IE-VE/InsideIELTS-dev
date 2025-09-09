@@ -178,7 +178,7 @@
                                                                 <input 
                                                                         type="text" 
                                                                         bind:value={q26}
-                                                                        class="flex-1 px-3 py-2 bg-gray-700 border border-gray-500 rounded text-white text-sm text-right"
+                                                                        class="flex-1 px-3 py-2 bg-gray-700 border border-gray-500 rounded text-white text-sm text-left"
                                                                 />
                                                         </div>
                                                         <div class="flex items-center gap-3">
@@ -186,7 +186,7 @@
                                                                 <input 
                                                                         type="text" 
                                                                         bind:value={q27}
-                                                                        class="flex-1 px-3 py-2 bg-gray-700 border border-gray-500 rounded text-white text-sm text-right"
+                                                                        class="flex-1 px-3 py-2 bg-gray-700 border border-gray-500 rounded text-white text-sm text-left"
                                                                 />
                                                         </div>
                                                         <div class="flex items-center gap-3">
@@ -194,7 +194,7 @@
                                                                 <input 
                                                                         type="text" 
                                                                         bind:value={q28}
-                                                                        class="flex-1 px-3 py-2 bg-gray-700 border border-gray-500 rounded text-white text-sm text-right"
+                                                                        class="flex-1 px-3 py-2 bg-gray-700 border border-gray-500 rounded text-white text-sm text-left"
                                                                 />
                                                         </div>
                                                         <div class="flex items-center gap-3">
@@ -202,7 +202,7 @@
                                                                 <input 
                                                                         type="text" 
                                                                         bind:value={q29}
-                                                                        class="flex-1 px-3 py-2 bg-gray-700 border border-gray-500 rounded text-white text-sm text-right"
+                                                                        class="flex-1 px-3 py-2 bg-gray-700 border border-gray-500 rounded text-white text-sm text-left"
                                                                 />
                                                         </div>
                                                         <div class="flex items-center gap-3">
@@ -256,7 +256,7 @@
                                                                 <input 
                                                                         type="text" 
                                                                         bind:value={q31}
-                                                                        class="flex-1 px-3 py-2 bg-gray-700 border border-gray-500 rounded text-white text-sm text-right"
+                                                                        class="flex-1 px-3 py-2 bg-gray-700 border border-gray-500 rounded text-white text-sm text-left"
                                                                 />
                                                         </div>
                                                         <div class="flex items-center gap-3">
@@ -264,7 +264,7 @@
                                                                 <input 
                                                                         type="text" 
                                                                         bind:value={q32}
-                                                                        class="flex-1 px-3 py-2 bg-gray-700 border border-gray-500 rounded text-white text-sm text-right"
+                                                                        class="flex-1 px-3 py-2 bg-gray-700 border border-gray-500 rounded text-white text-sm text-left"
                                                                 />
                                                         </div>
                                                         <div class="flex items-center gap-3">
@@ -272,7 +272,7 @@
                                                                 <input 
                                                                         type="text" 
                                                                         bind:value={q33}
-                                                                        class="flex-1 px-3 py-2 bg-gray-700 border border-gray-500 rounded text-white text-sm text-right"
+                                                                        class="flex-1 px-3 py-2 bg-gray-700 border border-gray-500 rounded text-white text-sm text-left"
                                                                 />
                                                         </div>
                                                         <div class="flex items-center gap-3">
@@ -280,7 +280,7 @@
                                                                 <input 
                                                                         type="text" 
                                                                         bind:value={q34}
-                                                                        class="flex-1 px-3 py-2 bg-gray-700 border border-gray-500 rounded text-white text-sm text-right"
+                                                                        class="flex-1 px-3 py-2 bg-gray-700 border border-gray-500 rounded text-white text-sm text-left"
                                                                 />
                                                         </div>
                                                         <div class="flex items-center gap-3">
