@@ -295,82 +295,68 @@
                                         </div>
                                 </div>
 
-                                <!-- Check Answers Button -->
-                                <div class="text-center mt-8">
+                        </div>
+                </section>
+
+                <!-- Check Answers Section -->
+                <section class="bg-gray-800 rounded-lg p-4 md:p-8 shadow-sm border border-gray-700 mb-8">
+                        <div class="text-center">
+                                <h3 class="text-2xl font-bold text-white mb-6">Submit Your Answers</h3>
+                                
+                                <!-- Check Button -->
+                                <div class="text-center mb-6">
                                         <button
+                                                type="button"
                                                 on:click={checkAllAnswers}
                                                 disabled={loadingAnswers}
-                                                class="inline-flex items-center gap-2 bg-green-600 hover:bg-green-700 disabled:bg-gray-500 text-white font-bold py-3 px-8 rounded-lg transition-colors border-2 border-white disabled:cursor-not-allowed"
+                                                class="bg-green-600 hover:bg-green-700 disabled:bg-green-400 disabled:cursor-not-allowed text-white font-bold py-3 px-6 rounded-lg text-lg transition-colors flex items-center justify-center mx-auto"
                                         >
                                                 {#if loadingAnswers}
-                                                        <div class="animate-spin rounded-full h-5 w-5 border-b-2 border-white"></div>
+                                                        <svg class="animate-spin -ml-1 mr-2 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                                                                <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                                                                <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                                                        </svg>
                                                         Processing...
                                                 {:else}
-                                                        <span class="text-xl">✓</span>
                                                         Check My Answers
-                                                        <span class="text-xl">✓</span>
                                                 {/if}
                                         </button>
                                 </div>
-
-                                <!-- Results Section -->
+                                
+                                <!-- Results Display -->
                                 {#if showResults}
-                                        <div class="mt-8 bg-white dark:bg-gray-800 rounded-lg p-6 border border-gray-300 dark:border-gray-600">
-                                                <h3 class="text-2xl font-bold text-center text-gray-800 dark:text-gray-200 mb-6">
-                                                        📊 Your Results
-                                                </h3>
+                                        <div class="bg-gray-700 rounded-lg p-4 md:p-6 mt-6 border border-gray-600">
+                                                <h4 class="text-2xl font-semibold text-white mb-4 text-center">Your Results</h4>
                                                 
+                                                <!-- Score Summary -->
                                                 <div class="text-center mb-6">
-                                                        <div class="inline-flex items-center gap-2 bg-blue-100 dark:bg-blue-900/30 px-6 py-3 rounded-lg">
-                                                                <span class="text-2xl">🎯</span>
-                                                                <span class="text-xl font-bold text-gray-800 dark:text-gray-200">
-                                                                        Score: {markingResults.totalCorrect}/{markingResults.totalQuestions}
-                                                                </span>
-                                                                <span class="text-lg text-gray-600 dark:text-gray-400">
-                                                                        ({Math.round((markingResults.totalCorrect / markingResults.totalQuestions) * 100)}%)
-                                                                </span>
+                                                        <div class="text-3xl font-bold text-white mb-2">
+                                                                {markingResults.totalCorrect}/{markingResults.totalQuestions}
+                                                        </div>
+                                                        <div class="text-lg text-gray-300">
+                                                                {Math.round((markingResults.totalCorrect / markingResults.totalQuestions) * 100)}% Correct
                                                         </div>
                                                 </div>
 
-                                                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                                                        <!-- Exercise 1 Results -->
-                                                        <div class="space-y-3">
-                                                                <h4 class="font-bold text-gray-800 dark:text-gray-200 border-b pb-2">Exercise 1 (Q26-30)</h4>
-                                                                {#each ['q26', 'q27', 'q28', 'q29', 'q30'] as qkey}
-                                                                        <div class="flex items-center gap-3 p-3 rounded-lg {markingResults[qkey]?.isCorrect ? 'bg-green-100 dark:bg-green-900/30' : 'bg-red-100 dark:bg-red-900/30'}">
-                                                                                <span class="text-xl">
-                                                                                        {markingResults[qkey]?.isCorrect ? '✅' : '❌'}
-                                                                                </span>
+                                                <!-- Exercise 1 Results -->
+                                                <div class="mb-6">
+                                                        <h5 class="text-lg font-bold text-white mb-3">Exercise 1 (Q26-Q30)</h5>
+                                                        <div class="space-y-2 text-sm">
+                                                                {#each ['q26', 'q27', 'q28', 'q29', 'q30'] as questionKey}
+                                                                        <div class="flex items-center justify-between p-3 rounded border {markingResults[questionKey]?.isCorrect ? 'bg-green-900/20 border-green-800' : 'bg-red-900/20 border-red-800'}">
                                                                                 <div class="flex-1">
-                                                                                        <div class="font-medium text-gray-800 dark:text-gray-200">
-                                                                                                {qkey.toUpperCase()}: <span class="font-normal">{markingResults[qkey]?.userAnswer || '(not answered)'}</span>
+                                                                                        <div class="font-medium text-white">
+                                                                                                {questionKey.toUpperCase()}: "{markingResults[questionKey]?.userAnswer || '(blank)'}"
                                                                                         </div>
-                                                                                        {#if !markingResults[qkey]?.isCorrect}
-                                                                                                <div class="text-sm text-gray-600 dark:text-gray-400">
-                                                                                                        Correct: {markingResults[qkey]?.correctAnswers?.join(' / ')}
-                                                                                                </div>
-                                                                                        {/if}
+                                                                                        <div class="text-xs text-gray-400 mt-1">
+                                                                                                Correct: {markingResults[questionKey]?.correctAnswers?.join(' / ')}
+                                                                                        </div>
                                                                                 </div>
-                                                                        </div>
-                                                                {/each}
-                                                        </div>
-
-                                                        <!-- Exercise 2 Results -->
-                                                        <div class="space-y-3">
-                                                                <h4 class="font-bold text-gray-800 dark:text-gray-200 border-b pb-2">Exercise 2 (Q31-35)</h4>
-                                                                {#each ['q31', 'q32', 'q33', 'q34', 'q35'] as qkey}
-                                                                        <div class="flex items-center gap-3 p-3 rounded-lg {markingResults[qkey]?.isCorrect ? 'bg-green-100 dark:bg-green-900/30' : 'bg-red-100 dark:bg-red-900/30'}">
-                                                                                <span class="text-xl">
-                                                                                        {markingResults[qkey]?.isCorrect ? '✅' : '❌'}
-                                                                                </span>
-                                                                                <div class="flex-1">
-                                                                                        <div class="font-medium text-gray-800 dark:text-gray-200">
-                                                                                                {qkey.toUpperCase()}: <span class="font-normal">{markingResults[qkey]?.userAnswer || '(not answered)'}</span>
-                                                                                        </div>
-                                                                                        {#if !markingResults[qkey]?.isCorrect}
-                                                                                                <div class="text-sm text-gray-600 dark:text-gray-400">
-                                                                                                        Correct: {markingResults[qkey]?.correctAnswers?.join(' / ')}
-                                                                                                </div>
+                                                                                <div class="ml-3">
+                                                                                        {#if markingResults[questionKey]?.isCorrect}
+                                                                                                <span class="text-green-400 text-xl">✓</span>
+                                                                                        {:else}
+                                                                                                <span class="text-red-400 text-xl">✗</span>
                                                                                         {/if}
                                                                                 </div>
                                                                         </div>
@@ -378,30 +364,30 @@
                                                         </div>
                                                 </div>
 
-                                                <!-- Performance Message -->
-                                                <div class="mt-6 text-center">
-                                                        {#if markingResults.totalCorrect >= 8}
-                                                                <div class="bg-green-100 dark:bg-green-900/30 border border-green-400 rounded-lg p-4">
-                                                                        <span class="text-2xl">🎉</span>
-                                                                        <p class="text-green-800 dark:text-green-200 font-semibold">
-                                                                                Excellent work! You have a strong understanding of short answer questions.
-                                                                        </p>
-                                                                </div>
-                                                        {:else if markingResults.totalCorrect >= 6}
-                                                                <div class="bg-yellow-100 dark:bg-yellow-900/30 border border-yellow-400 rounded-lg p-4">
-                                                                        <span class="text-2xl">👍</span>
-                                                                        <p class="text-yellow-800 dark:text-yellow-200 font-semibold">
-                                                                                Good job! Review the incorrect answers and practice more to improve.
-                                                                        </p>
-                                                                </div>
-                                                        {:else}
-                                                                <div class="bg-red-100 dark:bg-red-900/30 border border-red-400 rounded-lg p-4">
-                                                                        <span class="text-2xl">📚</span>
-                                                                        <p class="text-red-800 dark:text-red-200 font-semibold">
-                                                                                Keep practicing! Review the lesson content and try the exercises again.
-                                                                        </p>
-                                                                </div>
-                                                        {/if}
+                                                <!-- Exercise 2 Results -->
+                                                <div>
+                                                        <h5 class="text-lg font-bold text-white mb-3">Exercise 2 (Q31-Q35)</h5>
+                                                        <div class="space-y-2 text-sm">
+                                                                {#each ['q31', 'q32', 'q33', 'q34', 'q35'] as questionKey}
+                                                                        <div class="flex items-center justify-between p-3 rounded border {markingResults[questionKey]?.isCorrect ? 'bg-green-900/20 border-green-800' : 'bg-red-900/20 border-red-800'}">
+                                                                                <div class="flex-1">
+                                                                                        <div class="font-medium text-white">
+                                                                                                {questionKey.toUpperCase()}: "{markingResults[questionKey]?.userAnswer || '(blank)'}"
+                                                                                        </div>
+                                                                                        <div class="text-xs text-gray-400 mt-1">
+                                                                                                Correct: {markingResults[questionKey]?.correctAnswers?.join(' / ')}
+                                                                                        </div>
+                                                                                </div>
+                                                                                <div class="ml-3">
+                                                                                        {#if markingResults[questionKey]?.isCorrect}
+                                                                                                <span class="text-green-400 text-xl">✓</span>
+                                                                                        {:else}
+                                                                                                <span class="text-red-400 text-xl">✗</span>
+                                                                                        {/if}
+                                                                                </div>
+                                                                        </div>
+                                                                {/each}
+                                                        </div>
                                                 </div>
                                         </div>
                                 {/if}
