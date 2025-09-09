@@ -201,13 +201,13 @@
                                 </div>
 
                                 <div class="text-center">
-                                        <p class="text-white text-xl font-bold mb-6">
+                                        <p class="text-white text-xl font-bold mb-12">
                                                 Test your understanding of LISTENING - Multiple choice
                                         </p>
 
                                         <a
                                                 href="/IETPP/lesson-01/lesson01-i/skill-check"
-                                                class="inline-flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-lg transition-colors text-base border-2 border-white"
+                                                class="inline-flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-lg transition-colors border-2 border-white"
                                         >
                                                 <span class="text-2xl">✓</span>
                                                 <span>SKILL CHECK</span>
