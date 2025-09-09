@@ -170,62 +170,39 @@
                                                 />
                                         </div>
 
-                                        <!-- Exercise 1 Answers -->
-                                        <div class="bg-white dark:bg-gray-700 rounded-lg p-6">
-                                                <h5 class="text-center font-bold text-gray-800 dark:text-gray-200 mb-4">
-                                                        <u>ANSWERS</u>
-                                                </h5>
-                                                <div class="grid grid-cols-1 gap-4">
-                                                        <div>
-                                                                <label for="q26" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Q26</label>
-                                                                <input
-                                                                        type="text"
-                                                                        id="q26"
-                                                                        bind:value={q26}
-                                                                        placeholder="Enter your answer"
-                                                                        class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm text-gray-900 bg-white focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-teal-500"
-                                                                />
-                                                        </div>
-                                                        <div>
-                                                                <label for="q27" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Q27</label>
-                                                                <input
-                                                                        type="text"
-                                                                        id="q27"
-                                                                        bind:value={q27}
-                                                                        placeholder="Enter your answer"
-                                                                        class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm text-gray-900 bg-white focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-teal-500"
-                                                                />
-                                                        </div>
-                                                        <div>
-                                                                <label for="q28" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Q28</label>
-                                                                <input
-                                                                        type="text"
-                                                                        id="q28"
-                                                                        bind:value={q28}
-                                                                        placeholder="Enter your answer"
-                                                                        class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm text-gray-900 bg-white focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-teal-500"
-                                                                />
-                                                        </div>
-                                                        <div>
-                                                                <label for="q29" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Q29</label>
-                                                                <input
-                                                                        type="text"
-                                                                        id="q29"
-                                                                        bind:value={q29}
-                                                                        placeholder="Enter your answer"
-                                                                        class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm text-gray-900 bg-white focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-teal-500"
-                                                                />
-                                                        </div>
-                                                        <div>
-                                                                <label for="q30" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Q30</label>
-                                                                <input
-                                                                        type="text"
-                                                                        id="q30"
-                                                                        bind:value={q30}
-                                                                        placeholder="Enter your answer"
-                                                                        class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm text-gray-900 bg-white focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-teal-500"
-                                                                />
-                                                        </div>
+                                        <!-- Answer Inputs -->
+                                        <div class="text-center">
+                                                <div class="flex flex-col gap-3 max-w-xs mx-auto mb-4">
+                                                        <input 
+                                                                type="text" 
+                                                                bind:value={q26}
+                                                                placeholder="Q26"
+                                                                class="w-full px-3 py-2 bg-gray-700 border border-gray-500 rounded text-white placeholder-gray-400 text-sm text-center"
+                                                        />
+                                                        <input 
+                                                                type="text" 
+                                                                bind:value={q27}
+                                                                placeholder="Q27"
+                                                                class="w-full px-3 py-2 bg-gray-700 border border-gray-500 rounded text-white placeholder-gray-400 text-sm text-center"
+                                                        />
+                                                        <input 
+                                                                type="text" 
+                                                                bind:value={q28}
+                                                                placeholder="Q28"
+                                                                class="w-full px-3 py-2 bg-gray-700 border border-gray-500 rounded text-white placeholder-gray-400 text-sm text-center"
+                                                        />
+                                                        <input 
+                                                                type="text" 
+                                                                bind:value={q29}
+                                                                placeholder="Q29"
+                                                                class="w-full px-3 py-2 bg-gray-700 border border-gray-500 rounded text-white placeholder-gray-400 text-sm text-center"
+                                                        />
+                                                        <input 
+                                                                type="text" 
+                                                                bind:value={q30}
+                                                                placeholder="Q30"
+                                                                class="w-full px-3 py-2 bg-gray-700 border border-gray-500 rounded text-white placeholder-gray-400 text-sm text-center border-b-2 border-black"
+                                                        />
                                                 </div>
                                         </div>
                                 </div>
@@ -261,62 +238,39 @@
                                                 />
                                         </div>
 
-                                        <!-- Exercise 2 Answers -->
-                                        <div class="bg-white dark:bg-gray-700 rounded-lg p-6">
-                                                <h5 class="text-center font-bold text-gray-800 dark:text-gray-200 mb-4">
-                                                        <u>ANSWERS</u>
-                                                </h5>
-                                                <div class="grid grid-cols-1 gap-4">
-                                                        <div>
-                                                                <label for="q31" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Q31</label>
-                                                                <input
-                                                                        type="text"
-                                                                        id="q31"
-                                                                        bind:value={q31}
-                                                                        placeholder="Enter your answer"
-                                                                        class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm text-gray-900 bg-white focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-teal-500"
-                                                                />
-                                                        </div>
-                                                        <div>
-                                                                <label for="q32" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Q32</label>
-                                                                <input
-                                                                        type="text"
-                                                                        id="q32"
-                                                                        bind:value={q32}
-                                                                        placeholder="Enter your answer"
-                                                                        class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm text-gray-900 bg-white focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-teal-500"
-                                                                />
-                                                        </div>
-                                                        <div>
-                                                                <label for="q33" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Q33</label>
-                                                                <input
-                                                                        type="text"
-                                                                        id="q33"
-                                                                        bind:value={q33}
-                                                                        placeholder="Enter your answer"
-                                                                        class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm text-gray-900 bg-white focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-teal-500"
-                                                                />
-                                                        </div>
-                                                        <div>
-                                                                <label for="q34" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Q34</label>
-                                                                <input
-                                                                        type="text"
-                                                                        id="q34"
-                                                                        bind:value={q34}
-                                                                        placeholder="Enter your answer"
-                                                                        class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm text-gray-900 bg-white focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-teal-500"
-                                                                />
-                                                        </div>
-                                                        <div>
-                                                                <label for="q35" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Q35</label>
-                                                                <input
-                                                                        type="text"
-                                                                        id="q35"
-                                                                        bind:value={q35}
-                                                                        placeholder="Enter your answer"
-                                                                        class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm text-gray-900 bg-white focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-teal-500 border-b-2 border-b-black"
-                                                                />
-                                                        </div>
+                                        <!-- Answer Inputs -->
+                                        <div class="text-center">
+                                                <div class="flex flex-col gap-3 max-w-xs mx-auto mb-4">
+                                                        <input 
+                                                                type="text" 
+                                                                bind:value={q31}
+                                                                placeholder="Q31"
+                                                                class="w-full px-3 py-2 bg-gray-700 border border-gray-500 rounded text-white placeholder-gray-400 text-sm text-center"
+                                                        />
+                                                        <input 
+                                                                type="text" 
+                                                                bind:value={q32}
+                                                                placeholder="Q32"
+                                                                class="w-full px-3 py-2 bg-gray-700 border border-gray-500 rounded text-white placeholder-gray-400 text-sm text-center"
+                                                        />
+                                                        <input 
+                                                                type="text" 
+                                                                bind:value={q33}
+                                                                placeholder="Q33"
+                                                                class="w-full px-3 py-2 bg-gray-700 border border-gray-500 rounded text-white placeholder-gray-400 text-sm text-center"
+                                                        />
+                                                        <input 
+                                                                type="text" 
+                                                                bind:value={q34}
+                                                                placeholder="Q34"
+                                                                class="w-full px-3 py-2 bg-gray-700 border border-gray-500 rounded text-white placeholder-gray-400 text-sm text-center"
+                                                        />
+                                                        <input 
+                                                                type="text" 
+                                                                bind:value={q35}
+                                                                placeholder="Q35"
+                                                                class="w-full px-3 py-2 bg-gray-700 border border-gray-500 rounded text-white placeholder-gray-400 text-sm text-center border-b-2 border-black"
+                                                        />
                                                 </div>
                                         </div>
                                 </div>
