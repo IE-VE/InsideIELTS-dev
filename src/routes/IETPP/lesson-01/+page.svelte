@@ -199,8 +199,8 @@
         <div style="max-width: 1200px;" class="mx-auto px-6 py-8">
                 <!-- Lesson Content Overview -->
                 <section class="bg-gray-800 rounded-lg p-6 shadow-sm border border-gray-700 mb-8">
-                        <h2 class="text-lg font-semibold mb-4 text-white">Lesson Content:</h2>
-                        <ul class="list-disc list-inside space-y-2 text-white">
+                        <h2 class="text-xl font-semibold mb-4 text-white">Lesson Content:</h2>
+                        <ul class="list-disc text-lg list-inside space-y-2 text-white">
                                 <li>Listening Test Format and Question types</li>
                                 <li>Example Listening Test questions</li>
                                 <li>Listening Test question practice</li>
@@ -720,45 +720,15 @@
                         </div>
                 </section>
 
-                <!-- Skills Practice Links -->
-                <section class="bg-gray-800 rounded-lg p-6 shadow-sm border border-gray-700 mb-8">
-                        <h2 class="text-xl font-semibold text-white mb-6 text-center">Skills Practice</h2>
-                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-                                <a
-                                        href="/IETPP/lesson-01/lesson01-i"
-                                        class="block bg-teal-500 hover:bg-teal-600 text-white font-bold py-4 px-6 rounded text-center transition-colors"
-                                >
-                                        <div class="text-sm mb-1">01 (i)</div>
-                                        <div>Multiple Choice</div>
-                                        <div class="text-xs mt-1">(60 mins)</div>
-                                </a>
-                                <a
-                                        href="/IETPP/lesson-01/lesson01-ii"
-                                        class="block bg-green-600 hover:bg-green-700 text-white font-bold py-4 px-6 rounded text-center transition-colors"
-                                >
-                                        <div class="text-sm mb-1">01 (ii)</div>
-                                        <div>Short Answer</div>
-                                        <div class="text-xs mt-1">(60 mins)</div>
-                                </a>
-                                <a
-                                        href="/IETPP/lesson-01/lesson01-iii"
-                                        class="block bg-cyan-600 hover:bg-cyan-700 text-white font-bold py-4 px-6 rounded text-center transition-colors"
-                                >
-                                        <div class="text-sm mb-1">01 (iii)</div>
-                                        <div>Sentence Completion</div>
-                                        <div class="text-xs mt-1">(40 mins)</div>
-                                </a>
-                        </div>
-                </section>
 
                 <!-- End of Lesson -->
                 <section class="text-center py-8">
-                        <p class="text-white mb-4">End of Intro Lesson 01</p>
+                        <p class="text-white mb-12">End of Intro Lesson 01</p>
                         <a
                                 href="/IETPP"
-                                class="inline-block bg-teal-600 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded transition-colors"
+                                class="inline-flex items-center text-teal-600 dark:text-teal-400 hover:underline font-semibold"
                         >
-                                ← Back to Contents
+                                ← Back to Course Contents
                         </a>
                 </section>
         </div>

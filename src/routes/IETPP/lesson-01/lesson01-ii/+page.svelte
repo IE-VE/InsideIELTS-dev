@@ -159,12 +159,12 @@
 
                 <!-- End of Lesson -->
                 <section class="text-center py-8">
-                        <p class="text-white mb-4">End of Lesson 01 (ii)</p>
+                        <p class="text-white mb-12">End of Lesson 01 (ii)</p>
                         <a
                                 href="/IETPP"
-                                class="inline-block bg-teal-600 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded transition-colors"
+                                class="inline-flex items-center text-teal-600 dark:text-teal-400 hover:underline font-semibold"
                         >
-                                ← Back to Contents
+                                ← Back to Course Contents
                         </a>
                 </section>
         </div>
