@@ -206,7 +206,7 @@
                                         <!-- Answer Inputs -->
                                         <div class="text-center">
                                                 <h5 class="text-lg font-bold text-gray-800 dark:text-gray-200 mb-4 underline">ANSWERS</h5>
-                                                <div class="grid grid-cols-5 gap-4 max-w-lg mx-auto mb-4">
+                                                <div class="flex flex-col gap-3 max-w-xs mx-auto mb-4">
                                                         <input 
                                                                 type="text" 
                                                                 bind:value={q11}
@@ -332,7 +332,7 @@
 
                                         <!-- Answer Inputs -->
                                         <div class="text-center">
-                                                <div class="grid grid-cols-5 gap-4 max-w-lg mx-auto mb-4">
+                                                <div class="flex flex-col gap-3 max-w-xs mx-auto mb-4">
                                                         <input 
                                                                 type="text" 
                                                                 bind:value={q21}
