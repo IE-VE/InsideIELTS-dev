@@ -172,7 +172,7 @@
 
 <div class="min-h-screen bg-gray-900 text-white">
         <!-- Lesson Header -->
-        <div class="max-w-5xl container mx-auto px-6 py-8">
+        <div class="max-w-5xl container mx-auto px-3 md:px-6 py-8">
                 <div class="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 mb-8">
                         <div class="text-center">
                                 <div class="text-xs text-left text-teal-600 dark:text-teal-400 mb-4">
@@ -181,7 +181,7 @@
                                 <h1 class="text-3xl font-bold text-white mb-2">
                                         Introduction to the Listening Test
                                 </h1>
-                                <p class="text-white italic">(30 mins)</p>
+                                <!-- <p class="text-white italic">(30 mins)</p> -->
                         </div>
 
                         <div class="text-right mt-6">
@@ -196,7 +196,7 @@
         </div>
 
         <!-- Page Content -->
-        <div style="max-width: 1200px;" class="mx-auto px-6 py-8">
+        <div style="max-width: 1200px;" class="mx-auto px-3 md:px-6 py-8">
                 <!-- Lesson Content Overview -->
                 <section class="bg-gray-800 rounded-lg p-6 shadow-sm border border-gray-700 mb-8">
                         <h2 class="text-xl font-semibold mb-4 text-white">Lesson Content:</h2>
@@ -208,7 +208,7 @@
                 </section>
 
                 <!-- Section 1: Listening Test Format and Question Types -->
-                <section class="bg-teal-900/30 rounded-lg p-8 shadow-sm border border-teal-700 mb-8">
+                <section class="bg-teal-900/30 rounded-lg p-4 md:p-8 shadow-sm border border-teal-700 mb-8">
                         <h2 class="text-2xl font-bold text-center text-white mb-8">
                                 Listening Test Format and Question types
                         </h2>
@@ -279,7 +279,7 @@
                 </section>
 
                 <!-- Section 2: Example Listening Questions -->
-                <section class="bg-gray-700/50 rounded-lg p-8 shadow-sm border border-gray-600 mb-8">
+                <section class="bg-gray-700/50 rounded-lg p-4 md:p-8 shadow-sm border border-gray-600 mb-8">
                         <h2 class="text-2xl font-bold text-center text-white mb-8">Example Listening Questions</h2>
 
                         <div class="max-w-4xl mx-auto">
@@ -344,7 +344,7 @@
                 </section>
 
                 <!-- Section 3: Listening Question Practice -->
-                <section class="bg-teal-900/30 rounded-lg p-8 shadow-sm border border-teal-700 mb-8">
+                <section class="bg-teal-900/30 rounded-lg p-4 md:p-8 shadow-sm border border-teal-700 mb-8">
                         <h2 class="text-2xl font-bold text-center text-white mb-8">Listening question practice</h2>
 
                         <div class="max-w-6xl mx-auto">

@@ -47,7 +47,7 @@
 
 <div class="min-h-screen bg-white dark:bg-gray-900">
         <!-- Lesson Header -->
-        <div class="max-w-5xl container mx-auto px-6 py-8">
+        <div class="max-w-5xl container mx-auto px-3 md:px-6 py-8">
                 <div class="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 mb-8">
                         <div class="text-center">
                                 <div class="text-xs text-left font-bold text-teal-600 dark:text-teal-400 mb-2">
