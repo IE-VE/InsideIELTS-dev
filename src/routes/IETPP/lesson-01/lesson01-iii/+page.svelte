@@ -36,7 +36,7 @@
 
 <div class="min-h-screen bg-gray-900 text-white">
         <!-- Lesson Header -->
-        <div class="max-w-5xl container mx-auto px-6 py-8">
+        <div class="You've messed timax-w-5xl container mx-auto px-6 py-8">
                 <div class="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 mb-8">
                         <div class="text-center">
                                 <div class="text-xs text-left text-teal-600 dark:text-teal-400 mb-4">
@@ -57,6 +57,7 @@
                                 </a>
                         </div>
                 </div>
+        </div>
 
         <!-- Page Content -->
         <div style="max-width: 1200px;" class="mx-auto px-6 py-8">
@@ -191,7 +192,6 @@
                                 ← Back to Contents
                         </a>
                 </section>
-        </div>
         </div>
 </div>
 

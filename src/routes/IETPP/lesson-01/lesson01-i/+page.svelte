@@ -57,6 +57,7 @@
                                         </a>
                         </div>
                 </div>
+        </div>
 
         <!-- Page Content -->
         <div style="max-width: 1200px;" class="mx-auto px-6 py-8">
@@ -226,7 +227,6 @@
                                 ← Back to Contents
                         </a>
                 </section>
-        </div>
         </div>
 </div>
 
