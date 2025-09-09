@@ -173,36 +173,46 @@
                                         <!-- Answer Inputs -->
                                         <div class="text-center">
                                                 <div class="flex flex-col gap-3 max-w-xs mx-auto mb-4">
-                                                        <input 
-                                                                type="text" 
-                                                                bind:value={q26}
-                                                                placeholder="Q26"
-                                                                class="w-full px-3 py-2 bg-gray-700 border border-gray-500 rounded text-white placeholder-gray-400 text-sm text-center"
-                                                        />
-                                                        <input 
-                                                                type="text" 
-                                                                bind:value={q27}
-                                                                placeholder="Q27"
-                                                                class="w-full px-3 py-2 bg-gray-700 border border-gray-500 rounded text-white placeholder-gray-400 text-sm text-center"
-                                                        />
-                                                        <input 
-                                                                type="text" 
-                                                                bind:value={q28}
-                                                                placeholder="Q28"
-                                                                class="w-full px-3 py-2 bg-gray-700 border border-gray-500 rounded text-white placeholder-gray-400 text-sm text-center"
-                                                        />
-                                                        <input 
-                                                                type="text" 
-                                                                bind:value={q29}
-                                                                placeholder="Q29"
-                                                                class="w-full px-3 py-2 bg-gray-700 border border-gray-500 rounded text-white placeholder-gray-400 text-sm text-center"
-                                                        />
-                                                        <input 
-                                                                type="text" 
-                                                                bind:value={q30}
-                                                                placeholder="Q30"
-                                                                class="w-full px-3 py-2 bg-gray-700 border border-gray-500 rounded text-white placeholder-gray-400 text-sm text-center border-b-2 border-black"
-                                                        />
+                                                        <div class="flex items-center gap-3">
+                                                                <input 
+                                                                        type="text" 
+                                                                        bind:value={q26}
+                                                                        class="flex-1 px-3 py-2 bg-gray-700 border border-gray-500 rounded text-white text-sm text-right"
+                                                                />
+                                                                <span class="text-white text-sm font-medium w-8">Q26</span>
+                                                        </div>
+                                                        <div class="flex items-center gap-3">
+                                                                <input 
+                                                                        type="text" 
+                                                                        bind:value={q27}
+                                                                        class="flex-1 px-3 py-2 bg-gray-700 border border-gray-500 rounded text-white text-sm text-right"
+                                                                />
+                                                                <span class="text-white text-sm font-medium w-8">Q27</span>
+                                                        </div>
+                                                        <div class="flex items-center gap-3">
+                                                                <input 
+                                                                        type="text" 
+                                                                        bind:value={q28}
+                                                                        class="flex-1 px-3 py-2 bg-gray-700 border border-gray-500 rounded text-white text-sm text-right"
+                                                                />
+                                                                <span class="text-white text-sm font-medium w-8">Q28</span>
+                                                        </div>
+                                                        <div class="flex items-center gap-3">
+                                                                <input 
+                                                                        type="text" 
+                                                                        bind:value={q29}
+                                                                        class="flex-1 px-3 py-2 bg-gray-700 border border-gray-500 rounded text-white text-sm text-right"
+                                                                />
+                                                                <span class="text-white text-sm font-medium w-8">Q29</span>
+                                                        </div>
+                                                        <div class="flex items-center gap-3">
+                                                                <input 
+                                                                        type="text" 
+                                                                        bind:value={q30}
+                                                                        class="flex-1 px-3 py-2 bg-gray-700 border border-gray-500 rounded text-white text-sm text-right border-b-2 border-black"
+                                                                />
+                                                                <span class="text-white text-sm font-medium w-8">Q30</span>
+                                                        </div>
                                                 </div>
                                         </div>
                                 </div>
@@ -241,36 +251,46 @@
                                         <!-- Answer Inputs -->
                                         <div class="text-center">
                                                 <div class="flex flex-col gap-3 max-w-xs mx-auto mb-4">
-                                                        <input 
-                                                                type="text" 
-                                                                bind:value={q31}
-                                                                placeholder="Q31"
-                                                                class="w-full px-3 py-2 bg-gray-700 border border-gray-500 rounded text-white placeholder-gray-400 text-sm text-center"
-                                                        />
-                                                        <input 
-                                                                type="text" 
-                                                                bind:value={q32}
-                                                                placeholder="Q32"
-                                                                class="w-full px-3 py-2 bg-gray-700 border border-gray-500 rounded text-white placeholder-gray-400 text-sm text-center"
-                                                        />
-                                                        <input 
-                                                                type="text" 
-                                                                bind:value={q33}
-                                                                placeholder="Q33"
-                                                                class="w-full px-3 py-2 bg-gray-700 border border-gray-500 rounded text-white placeholder-gray-400 text-sm text-center"
-                                                        />
-                                                        <input 
-                                                                type="text" 
-                                                                bind:value={q34}
-                                                                placeholder="Q34"
-                                                                class="w-full px-3 py-2 bg-gray-700 border border-gray-500 rounded text-white placeholder-gray-400 text-sm text-center"
-                                                        />
-                                                        <input 
-                                                                type="text" 
-                                                                bind:value={q35}
-                                                                placeholder="Q35"
-                                                                class="w-full px-3 py-2 bg-gray-700 border border-gray-500 rounded text-white placeholder-gray-400 text-sm text-center border-b-2 border-black"
-                                                        />
+                                                        <div class="flex items-center gap-3">
+                                                                <input 
+                                                                        type="text" 
+                                                                        bind:value={q31}
+                                                                        class="flex-1 px-3 py-2 bg-gray-700 border border-gray-500 rounded text-white text-sm text-right"
+                                                                />
+                                                                <span class="text-white text-sm font-medium w-8">Q31</span>
+                                                        </div>
+                                                        <div class="flex items-center gap-3">
+                                                                <input 
+                                                                        type="text" 
+                                                                        bind:value={q32}
+                                                                        class="flex-1 px-3 py-2 bg-gray-700 border border-gray-500 rounded text-white text-sm text-right"
+                                                                />
+                                                                <span class="text-white text-sm font-medium w-8">Q32</span>
+                                                        </div>
+                                                        <div class="flex items-center gap-3">
+                                                                <input 
+                                                                        type="text" 
+                                                                        bind:value={q33}
+                                                                        class="flex-1 px-3 py-2 bg-gray-700 border border-gray-500 rounded text-white text-sm text-right"
+                                                                />
+                                                                <span class="text-white text-sm font-medium w-8">Q33</span>
+                                                        </div>
+                                                        <div class="flex items-center gap-3">
+                                                                <input 
+                                                                        type="text" 
+                                                                        bind:value={q34}
+                                                                        class="flex-1 px-3 py-2 bg-gray-700 border border-gray-500 rounded text-white text-sm text-right"
+                                                                />
+                                                                <span class="text-white text-sm font-medium w-8">Q34</span>
+                                                        </div>
+                                                        <div class="flex items-center gap-3">
+                                                                <input 
+                                                                        type="text" 
+                                                                        bind:value={q35}
+                                                                        class="flex-1 px-3 py-2 bg-gray-700 border border-gray-500 rounded text-white text-sm text-right border-b-2 border-black"
+                                                                />
+                                                                <span class="text-white text-sm font-medium w-8">Q35</span>
+                                                        </div>
                                                 </div>
                                         </div>
                                 </div>
@@ -390,13 +410,13 @@
 
                 <!-- End of Skill Check -->
                 <section class="text-center py-8">
-                        <p class="text-white mb-4">End of Skill Check 01 (ii)</p>
-                        <a
-                                href="/IETPP"
-                                class="inline-block bg-teal-600 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded transition-colors"
-                        >
-                                ← Back to Contents
-                        </a>
+                        <p class="text-white mb-12">End of Skill Check 01 (ii)</p>
+                                                                        <a
+                                                                                href="/IETPP"
+                                                                                class="inline-flex items-center text-teal-600 dark:text-teal-400 hover:underline font-semibold"
+                                                                        >
+                                                                                ← Back to Course Contents
+                                                                        </a>
                 </section>
         </div>
 </div>
