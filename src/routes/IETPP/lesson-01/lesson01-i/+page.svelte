@@ -227,6 +227,7 @@
                         </a>
                 </section>
         </div>
+        </div>
 </div>
 
 <!-- Lightbox Modal -->
