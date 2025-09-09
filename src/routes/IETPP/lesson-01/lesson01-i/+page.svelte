@@ -36,7 +36,7 @@
 
 <div class="min-h-screen bg-gray-900 text-white">
         <!-- Lesson Header -->
-        <div class="max-w-5xl container mx-auto px-3 md:px-6 py-8">
+        <div class="max-w-5xl container mx-auto px-6 py-8">
                 <div class="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 mb-8">
                         <div class="text-center">
                                 <div class="text-xs text-left text-teal-600 dark:text-teal-400 mb-4">
@@ -60,9 +60,9 @@
         </div>
 
         <!-- Page Content -->
-        <div style="max-width: 1200px;" class="mx-auto px-3 md:px-6 py-8">
+        <div style="max-width: 1200px;" class="mx-auto px-6 py-8">
                 <!-- Lesson Title Section -->
-                <section class="bg-blue-600/20 rounded-lg p-4 md:p-8 shadow-sm border border-blue-600/50 mb-8">
+                <section class="bg-blue-600/20 rounded-lg p-8 shadow-sm border border-blue-600/50 mb-8">
                         <div class="flex items-center justify-center gap-4 mb-6">
                                 <div class="text-4xl">👂</div>
                                 <h2 class="text-3xl font-bold text-center text-white">Skills Practice</h2>

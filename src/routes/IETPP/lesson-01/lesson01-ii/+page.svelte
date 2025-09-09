@@ -68,9 +68,7 @@
 				<h2 class="text-2xl font-bold text-center text-white">LISTENING - Short answer Q</h2>
 				<div class="text-4xl">👂</div>
 			</div>
-			
-			<!-- Educational Section -->
-			<div class="bg-white dark:bg-gray-800 rounded-lg p-4 md:p-6 shadow-sm border border-gray-200 dark:border-gray-700 mb-8">
+			<div class="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-sm border border-gray-200 dark:border-gray-700 mb-8">
 				<h2 class="text-2xl text-center font-bold text-gray-800 dark:text-gray-200 mb-6">
 					Short Answer Questions
 				</h2>
