@@ -210,7 +210,7 @@
                                                                 <input 
                                                                         type="text" 
                                                                         bind:value={q30}
-                                                                        class="flex-1 px-3 py-2 bg-gray-700 border border-gray-500 rounded text-white text-sm text-right border-b-2 border-black"
+                                                                        class="flex-1 px-3 py-2 bg-gray-700 border border-gray-500 rounded text-white text-sm text-left border-b-2 border-black"
                                                                 />
                                                         </div>
                                                 </div>
@@ -288,7 +288,7 @@
                                                                 <input 
                                                                         type="text" 
                                                                         bind:value={q35}
-                                                                        class="flex-1 px-3 py-2 bg-gray-700 border border-gray-500 rounded text-white text-sm text-right border-b-2 border-black"
+                                                                        class="flex-1 px-3 py-2 bg-gray-700 border border-gray-500 rounded text-white text-sm text-left border-b-2 border-black"
                                                                 />
                                                         </div>
                                                 </div>
