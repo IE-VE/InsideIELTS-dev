@@ -214,14 +214,14 @@
                         </h2>
 
                         <div class="max-w-4xl mx-auto">
-                                <p class="text-white mb-6">
+                                <p class="text-white text-lg mb-8">
                                         The Listening Test is the first test that you will complete on test day. The test lasts
                                         for <strong>40 minutes</strong>. You have 30 minutes to listen to the recording and write
                                         your answers directly on the test booklet, and then a further 10 minutes at the end of the
                                         test to transfer your answers onto the answer sheet provided.
                                 </p>
 
-                                <div class="flex justify-center mb-6">
+                                <div class="flex justify-center mb-12">
                                         <a
                                                 href="https://insideielts.oppyo.com/video/embed/ur9tr7bgfl"
                                                 target="_blank"
@@ -291,7 +291,7 @@
                                                 <img
                                                         src="/LESSONS/les01/01_L1-dem.png"
                                                         alt="IELTS Listening Missing Information"
-                                                        class="w-full rounded border border-gray-600 cursor-pointer hover:opacity-80 transition-opacity mb-4"
+                                                        class="w-full rounded border border-gray-600 cursor-pointer hover:opacity-80 transition-opacity mb-8"
                                                         onclick={() => openLightbox('/LESSONS/les01/01_L1-dem.png')}
                                                 />
                                                 <a
@@ -309,7 +309,7 @@
                                                 <img
                                                         src="/LESSONS/les01/01_L2-dem.png"
                                                         alt="IELTS Listening Diagram Completion"
-                                                        class="w-full rounded border border-gray-600 cursor-pointer hover:opacity-80 transition-opacity mb-4"
+                                                        class="w-full rounded border border-gray-600 cursor-pointer hover:opacity-80 transition-opacity mb-8"
                                                         onclick={() => openLightbox('/LESSONS/les01/01_L2-dem.png')}
                                                 />
                                                 <a
@@ -327,7 +327,7 @@
                                                 <img
                                                         src="/LESSONS/les01/01_L3-dem.png"
                                                         alt="IELTS Listening Matching Information"
-                                                        class="w-full rounded border border-gray-600 cursor-pointer hover:opacity-80 transition-opacity mb-4"
+                                                        class="w-full rounded border border-gray-600 cursor-pointer hover:opacity-80 transition-opacity mb-8"
                                                         onclick={() => openLightbox('/LESSONS/les01/01_L3-dem.png')}
                                                 />
                                                 <a
