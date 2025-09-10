@@ -163,7 +163,7 @@
                                         </div>
                                 </div>
 
-                                <p class="text-white mb-6">
+                                <p class="text-white mb-12">
                                         Like the short answer questions, the instructions will specify the maximum number of
                                         words/numbers that you can write, for example, "<strong
                                                 >no more than <em>2 words and/or a number</em></strong
@@ -229,7 +229,7 @@
                                 </div>
 
                                 <div class="text-center">
-                                        <p class="text-white text-xl font-bold mb-6">
+                                        <p class="text-white text-xl font-bold mb-12">
                                                 Test your understanding of LISTENING - Sentence completion
                                         </p>
 
