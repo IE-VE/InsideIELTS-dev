@@ -317,7 +317,7 @@
 
                                                 <div class="text-center mb-8">
                                                         <div class="mb-4">
-                                                                <p class="text-white text-lg font-bold mb-2">
+                                                                <p class="text-teal-600 dark:text-teal-400  text-lg font-bold mb-2">
                                                                         Beat the clock - {formatTime(timerDiagram)}
                                                                 </p>
                                                                 <div class="flex gap-2 justify-center">
@@ -453,7 +453,7 @@
 
                                                 <div class="text-center mb-8">
                                                         <div class="mb-4">
-                                                                <p class="text-white text-lg font-bold mb-2">
+                                                                <p class="text-teal-600 dark:text-teal-400  text-lg font-bold mb-2">
                                                                         Beat the clock - {formatTime(timerFlowchart)}
                                                                 </p>
                                                                 <div class="flex gap-2 justify-center">
