@@ -203,6 +203,7 @@
                 <div class="text-center mt-12">
                         <a
                                 href="/IETPP#lesson-03"
+                                data-sveltekit-reload
                                 class="inline-flex items-center text-teal-600 dark:text-teal-400 hover:underline font-semibold"
                         >
                                 ← Back to Course Contents
