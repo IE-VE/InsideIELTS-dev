@@ -12,6 +12,14 @@
         let showAnswersDiagram = false;
         let showAnswersFlowchart = false;
 
+        // Timer state for both exercises (9 minutes = 540 seconds)
+        let timerDiagram = 540;
+        let timerFlowchart = 540;
+        let isRunningDiagram = false;
+        let isRunningFlowchart = false;
+        let intervalDiagram: number | null = null;
+        let intervalFlowchart: number | null = null;
+
         function openLightbox(imageSrc: string) {
                 lightboxImage = imageSrc;
                 lightboxOpen = true;
@@ -30,6 +38,65 @@
                 showAnswersFlowchart = !showAnswersFlowchart;
         }
 
+        // Timer formatting function
+        function formatTime(seconds: number): string {
+                const mins = Math.floor(seconds / 60);
+                const secs = seconds % 60;
+                return `${mins.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`;
+        }
+
+        // Diagram timer functions
+        function startDiagramTimer() {
+                if (!isRunningDiagram && timerDiagram > 0) {
+                        isRunningDiagram = true;
+                        intervalDiagram = window.setInterval(() => {
+                                timerDiagram--;
+                                if (timerDiagram <= 0) {
+                                        stopDiagramTimer();
+                                }
+                        }, 1000);
+                }
+        }
+
+        function stopDiagramTimer() {
+                isRunningDiagram = false;
+                if (intervalDiagram) {
+                        clearInterval(intervalDiagram);
+                        intervalDiagram = null;
+                }
+        }
+
+        function resetDiagramTimer() {
+                stopDiagramTimer();
+                timerDiagram = 540; // Reset to 9 minutes
+        }
+
+        // Flowchart timer functions
+        function startFlowchartTimer() {
+                if (!isRunningFlowchart && timerFlowchart > 0) {
+                        isRunningFlowchart = true;
+                        intervalFlowchart = window.setInterval(() => {
+                                timerFlowchart--;
+                                if (timerFlowchart <= 0) {
+                                        stopFlowchartTimer();
+                                }
+                        }, 1000);
+                }
+        }
+
+        function stopFlowchartTimer() {
+                isRunningFlowchart = false;
+                if (intervalFlowchart) {
+                        clearInterval(intervalFlowchart);
+                        intervalFlowchart = null;
+                }
+        }
+
+        function resetFlowchartTimer() {
+                stopFlowchartTimer();
+                timerFlowchart = 540; // Reset to 9 minutes
+        }
+
         onMount(() => {
                 function handleKeydown(event: KeyboardEvent) {
                         if (event.key === 'Escape' && lightboxOpen) {
@@ -38,7 +105,14 @@
                 }
 
                 document.addEventListener('keydown', handleKeydown);
-                return () => document.removeEventListener('keydown', handleKeydown);
+                
+                // Cleanup function
+                return () => {
+                        document.removeEventListener('keydown', handleKeydown);
+                        // Clean up timers
+                        if (intervalDiagram) clearInterval(intervalDiagram);
+                        if (intervalFlowchart) clearInterval(intervalFlowchart);
+                };
         });
 </script>
 
