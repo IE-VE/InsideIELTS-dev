@@ -136,7 +136,7 @@
                                                         <div class="space-y-2 ml-8">
                                                                 <div class="flex gap-2">
                                                                         <span class="text-gray-600 dark:text-gray-400">(i)</span>
-                                                                        <a href="#" class="text-teal-600 dark:text-teal-400 hover:underline">Matching information</a>
+                                                                        <a href="/IETPP/lesson-02/lesson02-i" class="text-teal-600 dark:text-teal-400 hover:underline">Matching information</a>
                                                                 </div>
                                                                 <div class="flex gap-2">
                                                                         <span class="text-gray-600 dark:text-gray-400">(ii)</span>

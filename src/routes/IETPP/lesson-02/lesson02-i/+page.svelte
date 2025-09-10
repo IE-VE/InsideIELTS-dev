@@ -45,7 +45,6 @@
                                 <h1 class="text-3xl font-bold text-white mb-2">
                                         READING - Matching Information
                                 </h1>
-                                <p class="text-white italic mb-10">(60 mins)</p>
                         </div>
 
                         <div class="text-right mt-6">
@@ -84,10 +83,10 @@
 
                                         <div class="flex justify-center mb-6">
                                                 <img
-                                                        src="/LESSONS/les02/02(i)/Matching_info-exQ.png"
+                                                        src="/reading-images/ielts-reading-matching.png"
                                                         alt="IELTS Reading - Matching information"
                                                         class="w-full max-w-lg rounded border border-gray-600 cursor-pointer"
-                                                        on:click={() => openLightbox('/LESSONS/les02/02(i)/Matching_info-exQ.png')}
+                                                        on:click={() => openLightbox('/reading-images/ielts-reading-matching.png')}
                                                 />
                                         </div>
 
@@ -110,10 +109,10 @@
 
                                                 <div class="flex justify-center mb-6">
                                                         <img
-                                                                src="/LESSONS/les02/02(i)/Matching_info-techQ.png"
-                                                                alt="IELTS Reading - diagram completion"
+                                                                src="/reading-images/ielts-reading-headings.png"
+                                                                alt="IELTS Reading - technique questions"
                                                                 class="w-full max-w-2xl rounded border-2 border-black cursor-pointer"
-                                                                on:click={() => openLightbox('/LESSONS/les02/02(i)/Matching_info-techQ.png')}
+                                                                on:click={() => openLightbox('/reading-images/ielts-reading-headings.png')}
                                                         />
                                                 </div>
                                         </div>
@@ -126,16 +125,16 @@
                                                 <div class="flex justify-center mb-6">
                                                         <div class="flex flex-col items-center">
                                                                 <img
-                                                                        src="/LESSONS/les02/02(i)/Matching_info-tech1.png"
-                                                                        alt="IELTS Reading - diagram completion"
+                                                                        src="/reading-images/ielts-reading-features.png"
+                                                                        alt="IELTS Reading - scanning technique"
                                                                         class="w-full max-w-2xl rounded-t border-2 border-black cursor-pointer mb-1"
-                                                                        on:click={() => openLightbox('/LESSONS/les02/02(i)/Matching_info-tech1.png')}
+                                                                        on:click={() => openLightbox('/reading-images/ielts-reading-features.png')}
                                                                 />
                                                                 <img
-                                                                        src="/LESSONS/les02/02(i)/Matching_info-tech2.png"
-                                                                        alt="IELTS Reading - diagram completion"
+                                                                        src="/reading-images/ielts-reading-completion.png"
+                                                                        alt="IELTS Reading - completion technique"
                                                                         class="w-full max-w-2xl rounded-b border-2 border-black cursor-pointer"
-                                                                        on:click={() => openLightbox('/LESSONS/les02/02(i)/Matching_info-tech2.png')}
+                                                                        on:click={() => openLightbox('/reading-images/ielts-reading-completion.png')}
                                                                 />
                                                         </div>
                                                 </div>
@@ -166,10 +165,10 @@
 
                                                 <div class="flex justify-center mb-6">
                                                         <img
-                                                                src="/LESSONS/les02/02(i)/Matching_info-techans.png"
-                                                                alt="IELTS Reading - answers"
+                                                                src="/reading-images/ielts-reading-answer-sheet.jpg"
+                                                                alt="IELTS Reading - answer sheet"
                                                                 class="w-full max-w-lg rounded border border-gray-600 cursor-pointer"
-                                                                on:click={() => openLightbox('/LESSONS/les02/02(i)/Matching_info-techans.png')}
+                                                                on:click={() => openLightbox('/reading-images/ielts-reading-answer-sheet.jpg')}
                                                         />
                                                 </div>
                                         </div>
@@ -183,7 +182,7 @@
                                         <video
                                                 controls
                                                 class="w-full max-w-2xl rounded border border-gray-600"
-                                                src="/LESSONS/les01/02(i)/Reading_demoQ-matchinginfo.mp4"
+                                                src="/LESSONS/les02/R02_answervid1.mp4"
                                         >
                                                 Your browser does not support this video format.
                                         </video>
