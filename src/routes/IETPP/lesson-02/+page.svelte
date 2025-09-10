@@ -316,7 +316,26 @@
                                                 />
 
                                                 <div class="text-center mb-8">
-                                                        <p class="text-white mb-2">Beat the clock - 09:00</p>
+                                                        <div class="mb-4">
+                                                                <p class="text-white text-lg font-bold mb-2">
+                                                                        Beat the clock - {formatTime(timerDiagram)}
+                                                                </p>
+                                                                <div class="flex gap-2 justify-center">
+                                                                        <button
+                                                                                onclick={isRunningDiagram ? stopDiagramTimer : startDiagramTimer}
+                                                                                class="bg-green-600 hover:bg-green-700 text-white font-bold py-1 px-3 rounded text-sm transition-colors"
+                                                                                disabled={timerDiagram <= 0}
+                                                                        >
+                                                                                {isRunningDiagram ? 'Stop' : 'Start'}
+                                                                        </button>
+                                                                        <button
+                                                                                onclick={resetDiagramTimer}
+                                                                                class="bg-red-600 hover:bg-red-700 text-white font-bold py-1 px-3 rounded text-sm transition-colors"
+                                                                        >
+                                                                                Reset
+                                                                        </button>
+                                                                </div>
+                                                        </div>
                                                 </div>
 
                                                 <div class="text-center">
@@ -433,7 +452,26 @@
                                                 />
 
                                                 <div class="text-center mb-8">
-                                                        <p class="text-white mb-2">Beat the clock - 09:00</p>
+                                                        <div class="mb-4">
+                                                                <p class="text-white text-lg font-bold mb-2">
+                                                                        Beat the clock - {formatTime(timerFlowchart)}
+                                                                </p>
+                                                                <div class="flex gap-2 justify-center">
+                                                                        <button
+                                                                                onclick={isRunningFlowchart ? stopFlowchartTimer : startFlowchartTimer}
+                                                                                class="bg-green-600 hover:bg-green-700 text-white font-bold py-1 px-3 rounded text-sm transition-colors"
+                                                                                disabled={timerFlowchart <= 0}
+                                                                        >
+                                                                                {isRunningFlowchart ? 'Stop' : 'Start'}
+                                                                        </button>
+                                                                        <button
+                                                                                onclick={resetFlowchartTimer}
+                                                                                class="bg-red-600 hover:bg-red-700 text-white font-bold py-1 px-3 rounded text-sm transition-colors"
+                                                                        >
+                                                                                Reset
+                                                                        </button>
+                                                                </div>
+                                                        </div>
                                                 </div>
 
                                                 <div class="text-center">
