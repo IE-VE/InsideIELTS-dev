@@ -40,12 +40,12 @@
                 <div class="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 mb-8">
                         <div class="text-center">
                                 <div class="text-xs text-left text-teal-600 dark:text-teal-400 mb-4">
-                                        LESSON CODE: IE2401_01.3
+                                        IE2401_01.3
                                 </div>
                                 <h1 class="text-3xl font-bold text-white mb-2">
-                                        Skills Practice
+                                        LISTENING - Sentence Completion
                                 </h1>
-                                <p class="text-white italic">(40 mins)</p>
+                        
                         </div>
 
                         <div class="text-right mt-6">
@@ -65,8 +65,71 @@
                 <section class="bg-blue-600/20 rounded-lg p-4 md:p-8 shadow-sm border border-blue-600/50 mb-8">
                         <div class="flex items-center justify-center gap-4 mb-6">
                                 <div class="text-4xl">👂</div>
-                                <h2 class="text-2xl font-bold text-center text-white">LISTENING - Sentence completion</h2>
+                                <h2 class="text-3xl font-bold text-center text-white">Skills Practice</h2>
                                 <div class="text-4xl">👂</div>
+                        </div>
+
+                        <div class="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-sm border border-gray-200 dark:border-gray-700 mb-8">
+                                <h2 class="text-2xl text-center font-bold text-gray-800 dark:text-gray-200 mb-6">
+                                        Sentence Completion Questions
+                                </h2>
+
+                                <div class="space-y-6">
+                                        <div>
+                                                <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-3">What to Expect</h3>
+                                                <p class="text-gray-700 dark:text-gray-300 mb-4">
+                                                        Sentence completion questions require you to fill in missing information in sentences or notes. You'll hear specific details in the audio that complete the gaps. Instructions will specify the maximum number of words allowed (e.g., "ONE WORD ONLY" or "NO MORE THAN TWO WORDS").
+                                                </p>
+                                        </div>
+
+                                        <div>
+                                                <h3 class="text-lg font-semibold text-teal-600 dark:text-teal-400 mb-3">Key Strategies</h3>
+                                                <div class="bg-teal-50 dark:bg-teal-900/20 border border-teal-200 dark:border-teal-800 rounded-lg p-4">
+                                                        <ul class="space-y-2 text-gray-700 dark:text-gray-300">
+                                                                <li class="flex items-start">
+                                                                        <span class="text-teal-600 dark:text-teal-400 mr-2">1.</span>
+                                                                        <span><strong>Read the context:</strong> Understand what type of information is missing from each gap</span>
+                                                                </li>
+                                                                <li class="flex items-start">
+                                                                        <span class="text-teal-600 dark:text-teal-400 mr-2">2.</span>
+                                                                        <span><strong>Predict answers:</strong> Think about what grammar and word type could fit each gap</span>
+                                                                </li>
+                                                                <li class="flex items-start">
+                                                                        <span class="text-teal-600 dark:text-teal-400 mr-2">3.</span>
+                                                                        <span><strong>Follow word limits:</strong> Stick exactly to the maximum word count specified</span>
+                                                                </li>
+                                                                <li class="flex items-start">
+                                                                        <span class="text-teal-600 dark:text-teal-400 mr-2">4.</span>
+                                                                        <span><strong>Listen for exact words:</strong> Write exactly what you hear - don't change grammar</span>
+                                                                </li>
+                                                        </ul>
+                                                </div>
+                                        </div>
+
+                                        <div>
+                                                <h3 class="text-lg font-semibold text-red-600 dark:text-red-400 mb-3">Common Pitfalls</h3>
+                                                <div class="bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-lg p-4">
+                                                        <ul class="space-y-2 text-gray-700 dark:text-gray-300">
+                                                                <li class="flex items-start">
+                                                                        <span class="text-red-600 dark:text-red-400 mr-2">⚠️</span>
+                                                                        <span>Using more words than allowed in the instructions</span>
+                                                                </li>
+                                                                <li class="flex items-start">
+                                                                        <span class="text-red-600 dark:text-red-400 mr-2">⚠️</span>
+                                                                        <span>Changing the word form you hear (e.g., changing singular to plural)</span>
+                                                                </li>
+                                                                <li class="flex items-start">
+                                                                        <span class="text-red-600 dark:text-red-400 mr-2">⚠️</span>
+                                                                        <span>Missing answers because you focus too much on one difficult gap</span>
+                                                                </li>
+                                                                <li class="flex items-start">
+                                                                        <span class="text-red-600 dark:text-red-400 mr-2">⚠️</span>
+                                                                        <span>Not considering synonyms or paraphrasing in the audio</span>
+                                                                </li>
+                                                        </ul>
+                                                </div>
+                                        </div>
+                                </div>
                         </div>
 
                         <div class="max-w-4xl mx-auto">
