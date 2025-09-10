@@ -178,7 +178,7 @@
                                                 <img
                                                         src="/LESSONS/les02/02_R1-dem500.png"
                                                         alt="IELTS Reading Diagram Labeling"
-                                                        class="w-full rounded border border-gray-600 cursor-pointer hover:opacity-80 transition-opacity mb-8"
+                                                        class="w-full rounded border border-gray-600 cursor-pointer hover:opacity-80 transition-opacity mb-12"
                                                         onclick={() => openLightbox('/LESSONS/les02/02_R1-dem500.png')}
                                                 />
                                                 <a
@@ -196,7 +196,7 @@
                                                 <img
                                                         src="/LESSONS/les02/02_R2-dem500.png"
                                                         alt="IELTS Reading Flow Chart Completion"
-                                                        class="w-full rounded border border-gray-600 cursor-pointer hover:opacity-80 transition-opacity mb-8"
+                                                        class="w-full rounded border border-gray-600 cursor-pointer hover:opacity-80 transition-opacity mb-12"
                                                         onclick={() => openLightbox('/LESSONS/les02/02_R2-dem500.png')}
                                                 />
                                                 <a
@@ -237,16 +237,16 @@
                                                 <img
                                                         src="/LESSONS/les02/Reading_Diagcompletion-prac.png"
                                                         alt="Reading diagram labeling practice"
-                                                        class="w-full rounded border border-gray-500 mb-4 cursor-pointer"
+                                                        class="w-full rounded border border-gray-500 mb-8 cursor-pointer"
                                                         onclick={() => openLightbox('/LESSONS/les02/Reading_Diagcompletion-prac.png')}
                                                 />
 
-                                                <div class="text-center mb-4">
+                                                <div class="text-center mb-8">
                                                         <p class="text-white mb-2">Beat the clock - 09:00</p>
                                                 </div>
 
                                                 <div class="text-center">
-                                                        <p class="text-white mb-3 font-semibold">Answer Sheet</p>
+                                                        <p class="text-white mb-4 font-semibold">Answer Sheet</p>
                                                         <div class="flex flex-col gap-3 max-w-xs mx-auto">
                                                                 <div class="flex items-center gap-3">
                                                                         <span class="text-white text-sm font-medium w-8">Q1</span>
@@ -303,7 +303,7 @@
                                                                 <button
                                                                         type="button"
                                                                         onclick={toggleDiagramAnswers}
-                                                                        class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded text-sm transition-colors"
+                                                                        class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded text-sm transition-colors mt-6 mb-8"
                                                                 >
                                                                         {showAnswersDiagram ? 'Hide Answers' : 'Show Answers'}
                                                                 </button>
@@ -354,11 +354,11 @@
                                                 <img
                                                         src="/LESSONS/les02/Reading_Flowchart-prac.png"
                                                         alt="Reading flow chart completion practice"
-                                                        class="w-full rounded border border-gray-500 mb-4 cursor-pointer"
+                                                        class="w-full rounded border border-gray-500 mb-8 cursor-pointer"
                                                         onclick={() => openLightbox('/LESSONS/les02/Reading_Flowchart-prac.png')}
                                                 />
 
-                                                <div class="text-center mb-4">
+                                                <div class="text-center mb-8">
                                                         <p class="text-white mb-2">Beat the clock - 09:00</p>
                                                 </div>
 
@@ -420,7 +420,7 @@
                                                                 <button
                                                                         type="button"
                                                                         onclick={toggleFlowchartAnswers}
-                                                                        class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded text-sm transition-colors"
+                                                                        class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded text-sm transition-colors mt-6 mb-8"
                                                                 >
                                                                         {showAnswersFlowchart ? 'Hide Answers' : 'Show Answers'}
                                                                 </button>
