@@ -26,11 +26,11 @@
                                         COURSE CODE: IE2401
                                 </div>
                             
-                                <div class="text-gray-700 dark:text-gray-300 px-20 mb-6">
+                                <div class="text-gray-700 dark:text-gray-300 px-3 md:px-20 mb-6">
                                         <h1 class="text-4xl text-center font-bold text-gray-900 dark:text-white pt-8 mb-12">
                                                 InsideIELTS Test Preparation Program
                                         </h1>
-                                        <p class="mb-8 text-xl">
+                                        <p class="mb-8 text-lg">
                                                 The <b>IETPP</b> course is a <b>28 lesson</b>
                                                 introductory program designed to give test candidates a full insight into the make-up,
                                                 skill requirements and assessment procedures of the <b>IELTS</b> test.
@@ -45,27 +45,28 @@
                                                 the <b>IELTS</b> test.
                                         </p>
 
-                                        <!-- <div class="mb-6">
-                                                <a
-                                                        href="https://freetest.insideielts.com/"
-                                                        target="_blank"
-                                                        title="Welcome to the InsideIELTS Test Preparation Program"
-                                                        class="inline-block bg-teal-600 hover:bg-teal-700 text-white font-bold py-3 px-6 rounded-lg transition-colors"
-                                                >
-                                                        Start Free Test
-                                                </a>
-                                        </div> -->
-
+                            
                                         <p>
                                                 Personal feedback is given on all <b>Skill Check</b> exercises through the
                                                 <a href="#" class="text-teal-600 dark:text-teal-400 hover:underline font-bold"
                                                         >IE Member's Feedback</a
                                                 > page.
                                         </p>
-                                        <p class="border-b-2 border-gray-800 dark:border-gray-200 pb-10 mt-6">
-                                               For additional in-depth explanation click on the <b>Virtual Examiner Video</b> buttons where available.
+                                        <div class="border-b-2 border-gray-800 dark:border-gray-200 pb-10 mt-6">
+                                             <p>  For additional in-depth explanation click on the <b>Virtual Examiner Video</b> buttons in each section.
                                         </p>
+                                        <div class="text-center mt-10">
+                                                <a
+                                                        href="https://freetest.insideielts.com/"
+                                                        target="_blank"
+                                                        title="Welcome to the InsideIELTS Test Preparation Program"
+                                                        class="inline-block bg-teal-600 hover:bg-teal-700 text-white font-bold py-3 px-6 rounded-lg transition-colors"
+                                                >
+                                                        Start Now
+                                                </a>
+                                        </div>
                                 </div>
+                            </div>
                         </div>
                 </div>
 
