@@ -171,7 +171,7 @@
                                         </p>
 
                                         <a
-                                                href="/IETPP/lesson-01/sentence-completion/skill-check"
+                                                href="/IETPP/lesson-01/lesson01-iii/skill-check"
                                                 class="inline-flex items-center gap-3 bg-green-600 hover:bg-green-700 text-white font-bold py-4 px-8 rounded-lg transition-colors text-lg"
                                         >
                                                 <span class="text-2xl">✓</span>
