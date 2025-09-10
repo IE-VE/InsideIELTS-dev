@@ -4,7 +4,7 @@
 	let lightboxOpen = false;
 	let lightboxImage = '';
 
-	// Form data for sentence completion questions (15-20 and 25-30)
+	// Form data for sentence completion questions
 	let q15 = '', q16 = '', q17 = '', q18 = '', q19 = '', q20 = '';
 	let q25 = '', q26 = '', q27 = '', q28 = '', q29 = '', q30 = '';
 
@@ -81,340 +81,330 @@
 		}
 
 		document.addEventListener('keydown', handleKeydown);
-
-		return () => {
-			document.removeEventListener('keydown', handleKeydown);
-		};
+		return () => document.removeEventListener('keydown', handleKeydown);
 	});
 </script>
 
 <svelte:head>
-	<title>Skill Check 01 (iii) - Sentence Completion | InsideIELTS</title>
-	<meta name="description" content="Practice IELTS Listening sentence completion questions with InsideIELTS Test Preparation Program" />
+	<title>IETPP - Lesson 01(iii): Listening Sentence Completion Skill Check | InsideIELTS</title>
+	<meta
+		name="description"
+		content="Complete IELTS Listening sentence completion skill check exercises with audio practice and instant feedback."
+	/>
 </svelte:head>
 
-<div class="min-h-screen" style="background: linear-gradient(135deg, #0f4c75 0%, #3282b8 50%, #bbe1fa 100%);">
-	<div class="container mx-auto px-6 md:px-20 py-12">
-		<!-- Header Section -->
-		<section class="text-center mb-12 max-w-5xl mx-auto">
-			<div class="bg-white/10 backdrop-blur-sm rounded-lg p-8 shadow-xl border border-white/20">
-				<div class="text-right mb-6">
-					<a
-						href="/IETPP#lesson-01"
-						class="text-teal-600 dark:text-teal-400 hover:underline font-semibold"
-					>
-						← Back to Contents
-					</a>
+<div class="min-h-screen bg-gray-900 text-white">
+	<!-- Lesson Header -->
+	<div class="max-w-5xl container mx-auto px-3 md:px-6 py-8">
+		<div class="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 mb-8">
+			<div class="text-center">
+				<div class="text-xs text-left text-teal-600 dark:text-teal-400 mb-4">
+					SKILL CHECK: SC1(iii)
 				</div>
-
-				<div class="flex items-center justify-center gap-4 mb-6">
-					<span class="text-4xl text-green-400">✓</span>
-					<h1 class="text-4xl md:text-5xl font-bold text-white">Skill Check</h1>
-					<span class="text-4xl text-green-400">✓</span>
-				</div>
-
-				<p class="text-xl text-white mb-8">
-					<strong>Complete these Listening skill-check exercises then check your answers for feedback.</strong>
-				</p>
-
-				<div class="bg-blue-600/30 rounded-lg p-6 border border-blue-400/30">
-					<p class="text-lg font-bold text-white mb-2">SC1(iii)</p>
-					<h2 class="text-2xl font-bold text-white">LISTENING - Sentence completion</h2>
-				</div>
+				<h1 class="text-3xl font-bold text-white mb-2">
+					LISTENING - Sentence completion
+				</h1>
 			</div>
-		</section>
 
-		<!-- Exercise 1: Questions 15-20 -->
-		<section class="max-w-5xl mx-auto mb-12">
-			<div class="bg-white/10 backdrop-blur-sm rounded-lg p-8 shadow-xl border border-white/20">
-				<h3 class="text-2xl font-bold text-white mb-6 underline">Sentence completion ex.1</h3>
-
-				<!-- Audio Player -->
-				<div class="text-center mb-8">
-					<audio
-						controls
-						class="mx-auto bg-gray-600 rounded-lg p-4"
-						style="background-color: #666;"
-						src="/LESSONS/les01/01(iii)/15.1.2cut.mp3"
-					>
-						Your browser does not support the audio element.
-					</audio>
-					<p class="text-sm text-white mt-2"><strong>Q15 - 20 audio</strong></p>
-				</div>
-
-				<!-- Question Image -->
-				<div class="text-center mb-8">
-					<img
-						src="/LESSONS/les01/01(iii)/SC_L-sentencecompletion1.png"
-						alt="Listening sentence completion Q15-20"
-						title="Click to enlarge"
-						class="mx-auto max-w-full cursor-pointer rounded border border-gray-600 hover:border-white transition-all"
-						on:click={() => openLightbox('/LESSONS/les01/01(iii)/SC_L-sentencecompletion1.png')}
-					/>
-				</div>
+			<div class="text-right mt-6">
+				<a
+					href="/IETPP/lesson-01/lesson01-iii"
+					class="text-teal-600 dark:text-teal-400 hover:underline font-semibold"
+				>
+					← Back to Lesson
+				</a>
 			</div>
-		</section>
+		</div>
+	</div>
 
-		<!-- Exercise 2: Questions 25-30 -->
-		<section class="max-w-5xl mx-auto mb-12">
-			<div class="bg-teal-600/30 backdrop-blur-sm rounded-lg p-8 shadow-xl border border-teal-400/30">
-				<h3 class="text-2xl font-bold text-white mb-6 underline">Sentence completion ex.2</h3>
-
-				<!-- Audio Player -->
-				<div class="text-center mb-8">
-					<audio
-						controls
-						class="mx-auto bg-gray-600 rounded-lg p-4"
-						style="background-color: #666;"
-						src="/LESSONS/les01/01(iii)/9.2.3cut.mp3"
-					>
-						Your browser does not support the audio element.
-					</audio>
-					<p class="text-sm text-white mt-2"><strong>Q25 - 30 audio</strong></p>
-				</div>
-
-				<!-- Question Image -->
-				<div class="text-center mb-8">
-					<img
-						src="/LESSONS/les01/01(iii)/SC_L-sentencecompletion2.png"
-						alt="Listening sentence completion Q25-30"
-						title="Click to enlarge"
-						class="mx-auto max-w-full cursor-pointer rounded border border-gray-600 hover:border-white transition-all"
-						on:click={() => openLightbox('/LESSONS/les01/01(iii)/SC_L-sentencecompletion2.png')}
-					/>
-				</div>
+	<!-- Page Content -->
+	<div style="max-width: 1200px;" class="mx-auto px-3 md:px-6 py-8">
+		<!-- Skill Check Title -->
+		<section class="bg-teal-600/20 rounded-lg p-4 md:p-8 shadow-sm border border-teal-600/50 mb-8">
+			<div class="flex items-center justify-center gap-4 mb-8">
+				<div class="text-4xl text-green-500">✓</div>
+				<h2 class="text-3xl font-bold text-center text-white">SKILL CHECK</h2>
+				<div class="text-4xl text-green-500">✓</div>
 			</div>
-		</section>
 
-		<!-- Answer Section -->
-		<section class="max-w-5xl mx-auto mb-12">
-			<div class="bg-white/10 backdrop-blur-sm rounded-lg p-8 shadow-xl border border-white/20">
-				<h3 class="text-2xl font-bold text-white text-center mb-8 underline">ANSWERS</h3>
+			<p class="text-white text-center mb-8 text-lg">
+				<strong>Complete these Listening skill-check exercises then upload your answers for checking and feedback.</strong>
+			</p>
 
-				<div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-					<!-- Questions 15-20 -->
-					<div class="space-y-4">
-						<h4 class="text-lg font-semibold text-white text-center mb-4">Questions 15-20</h4>
-						
-						<div class="space-y-3">
+			<!-- Exercise 1 -->
+			<div class="bg-gray-100 dark:bg-gray-800 rounded-lg p-6 mb-8 border border-gray-300 dark:border-gray-600">
+				<div class="text-center mb-6">
+					<div class="bg-blue-600 text-white px-4 py-2 rounded-lg text-center font-bold mb-6">
+						SC1(iii)
+					</div>
+					<h3 class="text-2xl font-bold text-gray-800 dark:text-gray-200 mb-4">
+						LISTENING - Sentence completion
+					</h3>
+				</div>
+
+				<div class="bg-teal-50 dark:bg-teal-900/20 rounded-lg p-6 mb-6">
+					<h4 class="text-lg font-bold text-gray-800 dark:text-gray-200 mb-4">
+						<u>Sentence completion ex.1</u>
+					</h4>
+
+					<!-- Audio Player for Exercise 1 -->
+					<div class="flex justify-center mb-4">
+						<audio
+							controls
+							class="w-full max-w-md bg-gray-600 rounded"
+							src="/LESSONS/les01/01(iii)/15.1.2cut.mp3"
+							title="Q15-20 audio"
+						>
+							Your browser does not support the audio element.
+						</audio>
+					</div>
+					<div class="text-center mb-6">
+						<small class="text-gray-600 dark:text-gray-400"><strong>Q15 - 20 audio</strong></small>
+					</div>
+
+					<!-- Exercise 1 Image -->
+					<div class="flex justify-center mb-6">
+						<img
+							src="/LESSONS/les01/01(iii)/SC_L-sentencecompletion1.png"
+							alt="Listening Sentence Completion Exercise 1"
+							class="w-full max-w-2xl rounded border-2 border-black cursor-pointer"
+							on:click={() => openLightbox('/LESSONS/les01/01(iii)/SC_L-sentencecompletion1.png')}
+						/>
+					</div>
+
+					<!-- Answer Inputs -->
+					<div class="text-center">
+						<div class="flex flex-col gap-3 max-w-xs mx-auto mb-4">
 							<div class="flex items-center gap-3">
-								<label for="q15" class="text-white font-medium w-8">15.</label>
-								<input
-									type="text"
-									id="q15"
+								<span class="text-white text-sm font-medium w-8">Q15</span>
+								<input 
+									type="text" 
 									bind:value={q15}
-									placeholder="Enter your answer"
-									class="flex-1 px-4 py-2 bg-gray-700 text-white rounded border border-gray-600 focus:border-teal-400 focus:outline-none"
+									class="flex-1 px-3 py-2 bg-gray-700 border border-gray-500 rounded text-white text-sm text-left"
 								/>
 							</div>
-							
 							<div class="flex items-center gap-3">
-								<label for="q16" class="text-white font-medium w-8">16.</label>
-								<input
-									type="text"
-									id="q16"
+								<span class="text-white text-sm font-medium w-8">Q16</span>
+								<input 
+									type="text" 
 									bind:value={q16}
-									placeholder="Enter your answer"
-									class="flex-1 px-4 py-2 bg-gray-700 text-white rounded border border-gray-600 focus:border-teal-400 focus:outline-none"
+									class="flex-1 px-3 py-2 bg-gray-700 border border-gray-500 rounded text-white text-sm text-left"
 								/>
 							</div>
-							
 							<div class="flex items-center gap-3">
-								<label for="q17" class="text-white font-medium w-8">17.</label>
-								<input
-									type="text"
-									id="q17"
+								<span class="text-white text-sm font-medium w-8">Q17</span>
+								<input 
+									type="text" 
 									bind:value={q17}
-									placeholder="Enter your answer"
-									class="flex-1 px-4 py-2 bg-gray-700 text-white rounded border border-gray-600 focus:border-teal-400 focus:outline-none"
+									class="flex-1 px-3 py-2 bg-gray-700 border border-gray-500 rounded text-white text-sm text-left"
 								/>
 							</div>
-							
 							<div class="flex items-center gap-3">
-								<label for="q18" class="text-white font-medium w-8">18.</label>
-								<input
-									type="text"
-									id="q18"
+								<span class="text-white text-sm font-medium w-8">Q18</span>
+								<input 
+									type="text" 
 									bind:value={q18}
-									placeholder="Enter your answer"
-									class="flex-1 px-4 py-2 bg-gray-700 text-white rounded border border-gray-600 focus:border-teal-400 focus:outline-none"
+									class="flex-1 px-3 py-2 bg-gray-700 border border-gray-500 rounded text-white text-sm text-left"
 								/>
 							</div>
-							
 							<div class="flex items-center gap-3">
-								<label for="q19" class="text-white font-medium w-8">19.</label>
-								<input
-									type="text"
-									id="q19"
+								<span class="text-white text-sm font-medium w-8">Q19</span>
+								<input 
+									type="text" 
 									bind:value={q19}
-									placeholder="Enter your answer"
-									class="flex-1 px-4 py-2 bg-gray-700 text-white rounded border border-gray-600 focus:border-teal-400 focus:outline-none"
+									class="flex-1 px-3 py-2 bg-gray-700 border border-gray-500 rounded text-white text-sm text-left"
 								/>
 							</div>
-							
 							<div class="flex items-center gap-3">
-								<label for="q20" class="text-white font-medium w-8">20.</label>
-								<input
-									type="text"
-									id="q20"
+								<span class="text-white text-sm font-medium w-8">Q20</span>
+								<input 
+									type="text" 
 									bind:value={q20}
-									placeholder="Enter your answer"
-									class="flex-1 px-4 py-2 bg-gray-700 text-white rounded border border-gray-600 focus:border-teal-400 focus:outline-none border-b-2 border-b-black"
-								/>
-							</div>
-						</div>
-					</div>
-
-					<!-- Questions 25-30 -->
-					<div class="space-y-4">
-						<h4 class="text-lg font-semibold text-white text-center mb-4">Questions 25-30</h4>
-						
-						<div class="space-y-3">
-							<div class="flex items-center gap-3">
-								<label for="q25" class="text-white font-medium w-8">25.</label>
-								<input
-									type="text"
-									id="q25"
-									bind:value={q25}
-									placeholder="Enter your answer"
-									class="flex-1 px-4 py-2 bg-gray-700 text-white rounded border border-gray-600 focus:border-teal-400 focus:outline-none"
-								/>
-							</div>
-							
-							<div class="flex items-center gap-3">
-								<label for="q26" class="text-white font-medium w-8">26.</label>
-								<input
-									type="text"
-									id="q26"
-									bind:value={q26}
-									placeholder="Enter your answer"
-									class="flex-1 px-4 py-2 bg-gray-700 text-white rounded border border-gray-600 focus:border-teal-400 focus:outline-none"
-								/>
-							</div>
-							
-							<div class="flex items-center gap-3">
-								<label for="q27" class="text-white font-medium w-8">27.</label>
-								<input
-									type="text"
-									id="q27"
-									bind:value={q27}
-									placeholder="Enter your answer"
-									class="flex-1 px-4 py-2 bg-gray-700 text-white rounded border border-gray-600 focus:border-teal-400 focus:outline-none"
-								/>
-							</div>
-							
-							<div class="flex items-center gap-3">
-								<label for="q28" class="text-white font-medium w-8">28.</label>
-								<input
-									type="text"
-									id="q28"
-									bind:value={q28}
-									placeholder="Enter your answer"
-									class="flex-1 px-4 py-2 bg-gray-700 text-white rounded border border-gray-600 focus:border-teal-400 focus:outline-none"
-								/>
-							</div>
-							
-							<div class="flex items-center gap-3">
-								<label for="q29" class="text-white font-medium w-8">29.</label>
-								<input
-									type="text"
-									id="q29"
-									bind:value={q29}
-									placeholder="Enter your answer"
-									class="flex-1 px-4 py-2 bg-gray-700 text-white rounded border border-gray-600 focus:border-teal-400 focus:outline-none"
-								/>
-							</div>
-							
-							<div class="flex items-center gap-3">
-								<label for="q30" class="text-white font-medium w-8">30.</label>
-								<input
-									type="text"
-									id="q30"
-									bind:value={q30}
-									placeholder="Enter your answer"
-									class="flex-1 px-4 py-2 bg-gray-700 text-white rounded border border-gray-600 focus:border-teal-400 focus:outline-none border-b-2 border-b-black"
+									class="flex-1 px-3 py-2 bg-gray-700 border border-gray-500 rounded text-white text-sm text-left border-b-2 border-black"
 								/>
 							</div>
 						</div>
 					</div>
 				</div>
 
-				<!-- Check Answers Button -->
-				<div class="text-center mt-8">
+				<!-- Exercise 2 -->
+				<div class="bg-teal-100 dark:bg-teal-900/30 rounded-lg p-6 mb-6">
+					<h4 class="text-lg font-bold text-gray-800 dark:text-gray-200 mb-4">
+						<u>Sentence completion ex.2</u>
+					</h4>
+
+					<!-- Audio Player for Exercise 2 -->
+					<div class="flex justify-center mb-4">
+						<audio
+							controls
+							class="w-full max-w-md bg-gray-600 rounded"
+							src="/LESSONS/les01/01(iii)/9.2.3cut.mp3"
+							title="Q25-30 audio"
+						>
+							Your browser does not support the audio element.
+						</audio>
+					</div>
+					<div class="text-center mb-6">
+						<small class="text-gray-600 dark:text-gray-400"><strong>Q25 - 30 audio</strong></small>
+					</div>
+
+					<!-- Exercise 2 Image -->
+					<div class="flex justify-center mb-6">
+						<img
+							src="/LESSONS/les01/01(iii)/SC_L-sentencecompletion2.png"
+							alt="Listening Sentence Completion Exercise 2"
+							class="w-full max-w-2xl rounded border-2 border-black cursor-pointer"
+							on:click={() => openLightbox('/LESSONS/les01/01(iii)/SC_L-sentencecompletion2.png')}
+						/>
+					</div>
+
+					<!-- Answer Inputs -->
+					<div class="text-center">
+						<div class="flex flex-col gap-3 max-w-xs mx-auto mb-4">
+							<div class="flex items-center gap-3">
+								<span class="text-white text-sm font-medium w-8">Q25</span>
+								<input 
+									type="text" 
+									bind:value={q25}
+									class="flex-1 px-3 py-2 bg-gray-700 border border-gray-500 rounded text-white text-sm text-left"
+								/>
+							</div>
+							<div class="flex items-center gap-3">
+								<span class="text-white text-sm font-medium w-8">Q26</span>
+								<input 
+									type="text" 
+									bind:value={q26}
+									class="flex-1 px-3 py-2 bg-gray-700 border border-gray-500 rounded text-white text-sm text-left"
+								/>
+							</div>
+							<div class="flex items-center gap-3">
+								<span class="text-white text-sm font-medium w-8">Q27</span>
+								<input 
+									type="text" 
+									bind:value={q27}
+									class="flex-1 px-3 py-2 bg-gray-700 border border-gray-500 rounded text-white text-sm text-left"
+								/>
+							</div>
+							<div class="flex items-center gap-3">
+								<span class="text-white text-sm font-medium w-8">Q28</span>
+								<input 
+									type="text" 
+									bind:value={q28}
+									class="flex-1 px-3 py-2 bg-gray-700 border border-gray-500 rounded text-white text-sm text-left"
+								/>
+							</div>
+							<div class="flex items-center gap-3">
+								<span class="text-white text-sm font-medium w-8">Q29</span>
+								<input 
+									type="text" 
+									bind:value={q29}
+									class="flex-1 px-3 py-2 bg-gray-700 border border-gray-500 rounded text-white text-sm text-left"
+								/>
+							</div>
+							<div class="flex items-center gap-3">
+								<span class="text-white text-sm font-medium w-8">Q30</span>
+								<input 
+									type="text" 
+									bind:value={q30}
+									class="flex-1 px-3 py-2 bg-gray-700 border border-gray-500 rounded text-white text-sm text-left border-b-2 border-black"
+								/>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+		<!-- Check Answers Section -->
+		<section class="bg-gray-800 rounded-lg p-4 md:p-8 shadow-sm border border-gray-700 mb-8">
+			<div class="text-center">
+				<h3 class="text-2xl font-bold text-white mb-8">Submit Your Answers</h3>
+				
+				<!-- Check Button -->
+				<div class="text-center mb-6">
 					<button
+						type="button"
 						on:click={checkAllAnswers}
 						disabled={loadingAnswers}
-						class="bg-green-600 hover:bg-green-700 disabled:bg-gray-600 text-white font-bold py-3 px-8 rounded-lg transition-colors border-2 border-white"
+						class="bg-green-600 hover:bg-green-700 disabled:bg-green-400 disabled:cursor-not-allowed text-white font-bold py-3 px-6 rounded-lg text-lg transition-colors flex items-center justify-center mx-auto border-white border-2"
 					>
 						{#if loadingAnswers}
-							<span class="flex items-center gap-2">
-								<span class="animate-spin">⏳</span>
-								Checking Answers...
-							</span>
+							<svg class="animate-spin -ml-1 mr-2 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+								<circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+								<path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+							</svg>
+							Processing...
 						{:else}
-							CHECK ANSWERS
+							Check My Answers
 						{/if}
 					</button>
 				</div>
-
-				<!-- Results Section -->
+				
+				<!-- Results Display -->
 				{#if showResults}
-					<div class="mt-8 bg-gray-800/50 rounded-lg p-6 border border-gray-600">
-						<h4 class="text-xl font-bold text-white text-center mb-4">
-							Your Results: {markingResults.totalCorrect}/{markingResults.totalQuestions}
-						</h4>
+					<div class="bg-gray-700 rounded-lg p-4 md:p-6 mt-6 border border-gray-600">
+						<h4 class="text-2xl font-semibold text-white mb-4 text-center">Your Results</h4>
 						
-						<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-							<!-- Results for Questions 15-20 -->
-							<div>
-								<h5 class="font-semibold text-white mb-3 text-center">Questions 15-20</h5>
-								<div class="space-y-2">
-									{#each ['q15', 'q16', 'q17', 'q18', 'q19', 'q20'] as questionKey}
-										<div class="flex items-center justify-between bg-gray-700/50 rounded p-3">
-											<div class="flex-1">
-												<div class="font-medium text-white">
-													{questionKey.toUpperCase()}: "{markingResults[questionKey]?.userAnswer || '(blank)'}"
-												</div>
-												<div class="text-xs text-gray-400 mt-1">
-													Correct: {markingResults[questionKey]?.correctAnswers?.join(' / ')}
-												</div>
-											</div>
-											<div class="ml-3">
-												{#if markingResults[questionKey]?.isCorrect}
-													<span class="text-green-400 text-xl">✓</span>
-												{:else}
-													<span class="text-red-400 text-xl">✗</span>
-												{/if}
-											</div>
-										</div>
-									{/each}
-								</div>
+						<!-- Score Summary -->
+						<div class="text-center mb-6">
+							<div class="text-3xl font-bold text-white mb-2">
+								{markingResults.totalCorrect}/{markingResults.totalQuestions}
 							</div>
+							<div class="text-lg text-gray-300">
+								{Math.round((markingResults.totalCorrect / markingResults.totalQuestions) * 100)}% Correct
+							</div>
+						</div>
 
-							<!-- Results for Questions 25-30 -->
-							<div>
-								<h5 class="font-semibold text-white mb-3 text-center">Questions 25-30</h5>
-								<div class="space-y-2">
-									{#each ['q25', 'q26', 'q27', 'q28', 'q29', 'q30'] as questionKey}
-										<div class="flex items-center justify-between bg-gray-700/50 rounded p-3">
-											<div class="flex-1">
-												<div class="font-medium text-white">
-													{questionKey.toUpperCase()}: "{markingResults[questionKey]?.userAnswer || '(blank)'}"
-												</div>
-												<div class="text-xs text-gray-400 mt-1">
-													Correct: {markingResults[questionKey]?.correctAnswers?.join(' / ')}
-												</div>
+						<!-- Exercise 1 Results -->
+						<div class="mb-6">
+							<h5 class="text-lg font-bold text-white mb-3">Exercise 1 (Q15-Q20)</h5>
+							<div class="space-y-2 text-sm">
+								{#each ['q15', 'q16', 'q17', 'q18', 'q19', 'q20'] as questionKey}
+									<div class="flex items-center justify-between p-3 rounded border {markingResults[questionKey]?.isCorrect ? 'bg-green-900/20 border-green-800' : 'bg-red-900/20 border-red-800'}">
+										<div class="flex-1">
+											<div class="font-medium text-white">
+												{questionKey.toUpperCase()}: "{markingResults[questionKey]?.userAnswer || '(blank)'}"
 											</div>
-											<div class="ml-3">
-												{#if markingResults[questionKey]?.isCorrect}
-													<span class="text-green-400 text-xl">✓</span>
-												{:else}
-													<span class="text-red-400 text-xl">✗</span>
-												{/if}
+											<div class="text-xs text-gray-400 mt-1">
+												Correct: {markingResults[questionKey]?.correctAnswers?.join(' / ')}
 											</div>
 										</div>
-									{/each}
-								</div>
+										<div class="ml-3">
+											{#if markingResults[questionKey]?.isCorrect}
+												<span class="text-green-400 text-xl">✓</span>
+											{:else}
+												<span class="text-red-400 text-xl">✗</span>
+											{/if}
+										</div>
+									</div>
+								{/each}
+							</div>
+						</div>
+
+						<!-- Exercise 2 Results -->
+						<div>
+							<h5 class="text-lg font-bold text-white mb-3">Exercise 2 (Q25-Q30)</h5>
+							<div class="space-y-2 text-sm">
+								{#each ['q25', 'q26', 'q27', 'q28', 'q29', 'q30'] as questionKey}
+									<div class="flex items-center justify-between p-3 rounded border {markingResults[questionKey]?.isCorrect ? 'bg-green-900/20 border-green-800' : 'bg-red-900/20 border-red-800'}">
+										<div class="flex-1">
+											<div class="font-medium text-white">
+												{questionKey.toUpperCase()}: "{markingResults[questionKey]?.userAnswer || '(blank)'}"
+											</div>
+											<div class="text-xs text-gray-400 mt-1">
+												Correct: {markingResults[questionKey]?.correctAnswers?.join(' / ')}
+											</div>
+										</div>
+										<div class="ml-3">
+											{#if markingResults[questionKey]?.isCorrect}
+												<span class="text-green-400 text-xl">✓</span>
+											{:else}
+												<span class="text-red-400 text-xl">✗</span>
+											{/if}
+										</div>
+									</div>
+								{/each}
 							</div>
 						</div>
 					</div>
