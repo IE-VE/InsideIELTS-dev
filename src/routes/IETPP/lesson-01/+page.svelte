@@ -9,18 +9,10 @@
         let q16 = '', q17_diagram = '', q18_diagram = '', q19_diagram = '', q20_diagram = '';
         let q27 = '', q28 = '', q29 = '', q30 = '';
         
-        // Results for each question type
-        let showResultsMissing = false;
-        let showResultsDiagram = false;
-        let showResultsMatching = false;
-        let markingResultsMissing = {};
-        let markingResultsDiagram = {};
-        let markingResultsMatching = {};
-        
-        // Loading states
-        let loadingMissing = false;
-        let loadingDiagram = false;
-        let loadingMatching = false;
+        // Show answers states
+        let showAnswersMissing = false;
+        let showAnswersDiagram = false;
+        let showAnswersMatching = false;
 
         function openLightbox(imageSrc: string) {
                 lightboxImage = imageSrc;
@@ -32,122 +24,16 @@
                 lightboxImage = '';
         }
 
-        function checkMissingAnswers() {
-                loadingMissing = true;
-                showResultsMissing = false;
-                
-                setTimeout(() => {
-                        const correctAnswers = {
-                                q17: ['October 19th', 'October 19'],
-                                q18: ['7pm', '7 pm'],
-                                q19: ['Monday Thursday', 'Thursday Monday'],
-                                q20: ['18']
-                        };
-
-                        const userAnswers = { q17, q18, q19, q20 };
-                        const results = {};
-                        let totalCorrect = 0;
-
-                        Object.entries(userAnswers).forEach(([key, answer]) => {
-                                const userAnswer = answer.toLowerCase().trim();
-                                const correct = correctAnswers[key].some(correctAnswer => 
-                                        userAnswer === correctAnswer
-                                );
-                                
-                                results[key] = {
-                                        userAnswer: answer,
-                                        isCorrect: correct,
-                                        correctAnswers: correctAnswers[key]
-                                };
-                                
-                                if (correct) totalCorrect++;
-                        });
-
-                        results.totalCorrect = totalCorrect;
-                        results.totalQuestions = 4;
-                        markingResultsMissing = results;
-                        showResultsMissing = true;
-                        loadingMissing = false;
-                }, 3000);
+        function toggleMissingAnswers() {
+                showAnswersMissing = !showAnswersMissing;
         }
 
-        function checkDiagramAnswers() {
-                loadingDiagram = true;
-                showResultsDiagram = false;
-                
-                setTimeout(() => {
-                        const correctAnswers = {
-                                q16: ['h'],
-                                q17_diagram: ['d'],
-                                q18_diagram: ['f'],
-                                q19_diagram: ['a'],
-                                q20_diagram: ['e']
-                        };
-
-                        const userAnswers = { q16, q17_diagram, q18_diagram, q19_diagram, q20_diagram };
-                        const results = {};
-                        let totalCorrect = 0;
-
-                        Object.entries(userAnswers).forEach(([key, answer]) => {
-                                const userAnswer = answer.toLowerCase().trim();
-                                const correct = correctAnswers[key].some(correctAnswer => 
-                                        userAnswer === correctAnswer
-                                );
-                                
-                                results[key] = {
-                                        userAnswer: answer,
-                                        isCorrect: correct,
-                                        correctAnswers: correctAnswers[key]
-                                };
-                                
-                                if (correct) totalCorrect++;
-                        });
-
-                        results.totalCorrect = totalCorrect;
-                        results.totalQuestions = 5;
-                        markingResultsDiagram = results;
-                        showResultsDiagram = true;
-                        loadingDiagram = false;
-                }, 3000);
+        function toggleDiagramAnswers() {
+                showAnswersDiagram = !showAnswersDiagram;
         }
 
-        function checkMatchingAnswers() {
-                loadingMatching = true;
-                showResultsMatching = false;
-                
-                setTimeout(() => {
-                        const correctAnswers = {
-                                q27: ['d'],
-                                q28: ['b'],
-                                q29: ['e'],
-                                q30: ['f']
-                        };
-
-                        const userAnswers = { q27, q28, q29, q30 };
-                        const results = {};
-                        let totalCorrect = 0;
-
-                        Object.entries(userAnswers).forEach(([key, answer]) => {
-                                const userAnswer = answer.toLowerCase().trim();
-                                const correct = correctAnswers[key].some(correctAnswer => 
-                                        userAnswer === correctAnswer
-                                );
-                                
-                                results[key] = {
-                                        userAnswer: answer,
-                                        isCorrect: correct,
-                                        correctAnswers: correctAnswers[key]
-                                };
-                                
-                                if (correct) totalCorrect++;
-                        });
-
-                        results.totalCorrect = totalCorrect;
-                        results.totalQuestions = 4;
-                        markingResultsMatching = results;
-                        showResultsMatching = true;
-                        loadingMatching = false;
-                }, 3000);
+        function toggleMatchingAnswers() {
+                showAnswersMatching = !showAnswersMatching;
         }
 
         onMount(() => {
@@ -345,11 +231,13 @@
 
                 <!-- Section 3: Listening Question Practice -->
                 <section class="bg-teal-900/30 rounded-lg p-4 md:p-8 shadow-sm border border-teal-700 mb-8">
-                        <h2 class="text-2xl font-bold text-center text-white mb-8">Listening question practice</h2>
+                        <h2 class="text-2xl font-bold text-center text-white mb-8">Listening Question Practice</h2>
 
                         <div class="max-w-6xl mx-auto">
                                 <p class="text-white mb-4">
-                                        <strong>TASK</strong>: Complete these three Listening question practice exercises. Enter
+                                        <span class="inline-block bg-red-500 text-white font-bold px-2 py-1 rounded-md border-2 border-yellow-600 shadow-lg mr-2">
+                                                TASK >
+                                        </span> Complete these three Listening question practice exercises. Enter
                                         your answers on the answer sheets provided before checking your answers in the video
                                         beneath.
                                 </p>
@@ -410,62 +298,34 @@
                                                                 />
                                                         </div>
                                                         
-                                                        <!-- Check Button -->
+                                                        <!-- Show Answers Button -->
                                                         <div class="text-center mt-4 mb-4">
                                                                 <button
                                                                         type="button"
-                                                                        onclick={checkMissingAnswers}
-                                                                        disabled={loadingMissing}
-                                                                        class="bg-green-600 hover:bg-green-700 disabled:bg-green-400 disabled:cursor-not-allowed text-white font-bold py-2 px-4 rounded text-sm transition-colors flex items-center justify-center mx-auto"
+                                                                        onclick={toggleMissingAnswers}
+                                                                        class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded text-sm transition-colors"
                                                                 >
-                                                                        {#if loadingMissing}
-                                                                                <svg class="animate-spin -ml-1 mr-2 h-4 w-4 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-                                                                                        <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
-                                                                                        <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
-                                                                                </svg>
-                                                                                Processing...
-                                                                        {:else}
-                                                                                Check My Answers
-                                                                        {/if}
+                                                                        {showAnswersMissing ? 'Hide Answers' : 'Show Answers'}
                                                                 </button>
                                                         </div>
                                                         
-                                                        <!-- Results Display -->
-                                                        {#if showResultsMissing}
+                                                        <!-- Answers Display -->
+                                                        {#if showAnswersMissing}
                                                                 <div class="bg-gray-700 rounded-lg p-4 mt-4 border border-gray-600">
-                                                                        <h4 class="text-lg font-semibold text-white mb-3 text-center">Results</h4>
-                                                                        
-                                                                        <!-- Score Summary -->
-                                                                        <div class="text-center mb-4">
-                                                                                <div class="text-2xl font-bold text-white mb-1">
-                                                                                        {markingResultsMissing.totalCorrect}/{markingResultsMissing.totalQuestions}
-                                                                                </div>
-                                                                                <div class="text-sm text-gray-300">
-                                                                                        {Math.round((markingResultsMissing.totalCorrect / markingResultsMissing.totalQuestions) * 100)}% Correct
-                                                                                </div>
-                                                                        </div>
-
-                                                                        <!-- Detailed Results -->
+                                                                        <h4 class="text-lg font-semibold text-white mb-3 text-center">Answers</h4>
                                                                         <div class="space-y-2 text-sm">
-                                                                                {#each ['q17', 'q18', 'q19', 'q20'] as questionKey}
-                                                                                        <div class="flex items-center justify-between p-2 rounded border {markingResultsMissing[questionKey]?.isCorrect ? 'bg-green-900/20 border-green-800' : 'bg-red-900/20 border-red-800'}">
-                                                                                                <div class="flex-1">
-                                                                                                        <div class="font-medium text-white text-xs">
-                                                                                                                {questionKey.toUpperCase()}: "{markingResultsMissing[questionKey]?.userAnswer || '(blank)'}"
-                                                                                                        </div>
-                                                                                                        <div class="text-xs text-gray-400 mt-1">
-                                                                                                                Correct: {markingResultsMissing[questionKey]?.correctAnswers?.join(' / ')}
-                                                                                                        </div>
-                                                                                                </div>
-                                                                                                <div class="ml-2">
-                                                                                                        {#if markingResultsMissing[questionKey]?.isCorrect}
-                                                                                                                <span class="text-green-400 text-lg">✓</span>
-                                                                                                        {:else}
-                                                                                                                <span class="text-red-400 text-lg">✗</span>
-                                                                                                        {/if}
-                                                                                                </div>
-                                                                                        </div>
-                                                                                {/each}
+                                                                                <div class="p-2 rounded border border-gray-600">
+                                                                                        <div class="font-medium text-white">Q17: October 19th</div>
+                                                                                </div>
+                                                                                <div class="p-2 rounded border border-gray-600">
+                                                                                        <div class="font-medium text-white">Q18: 7pm</div>
+                                                                                </div>
+                                                                                <div class="p-2 rounded border border-gray-600">
+                                                                                        <div class="font-medium text-white">Q19: Monday Thursday</div>
+                                                                                </div>
+                                                                                <div class="p-2 rounded border border-gray-600">
+                                                                                        <div class="font-medium text-white">Q20: 18</div>
+                                                                                </div>
                                                                         </div>
                                                                 </div>
                                                         {/if}
@@ -528,62 +388,37 @@
                                                                 />
                                                         </div>
                                                         
-                                                        <!-- Check Button -->
+                                                        <!-- Show Answers Button -->
                                                         <div class="text-center mt-4 mb-4">
                                                                 <button
                                                                         type="button"
-                                                                        onclick={checkDiagramAnswers}
-                                                                        disabled={loadingDiagram}
-                                                                        class="bg-green-600 hover:bg-green-700 disabled:bg-green-400 disabled:cursor-not-allowed text-white font-bold py-2 px-4 rounded text-sm transition-colors flex items-center justify-center mx-auto"
+                                                                        onclick={toggleDiagramAnswers}
+                                                                        class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded text-sm transition-colors"
                                                                 >
-                                                                        {#if loadingDiagram}
-                                                                                <svg class="animate-spin -ml-1 mr-2 h-4 w-4 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-                                                                                        <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
-                                                                                        <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
-                                                                                </svg>
-                                                                                Processing...
-                                                                        {:else}
-                                                                                Check My Answers
-                                                                        {/if}
+                                                                        {showAnswersDiagram ? 'Hide Answers' : 'Show Answers'}
                                                                 </button>
                                                         </div>
                                                         
-                                                        <!-- Results Display -->
-                                                        {#if showResultsDiagram}
+                                                        <!-- Answers Display -->
+                                                        {#if showAnswersDiagram}
                                                                 <div class="bg-gray-700 rounded-lg p-4 mt-4 border border-gray-600">
-                                                                        <h4 class="text-lg font-semibold text-white mb-3 text-center">Results</h4>
-                                                                        
-                                                                        <!-- Score Summary -->
-                                                                        <div class="text-center mb-4">
-                                                                                <div class="text-2xl font-bold text-white mb-1">
-                                                                                        {markingResultsDiagram.totalCorrect}/{markingResultsDiagram.totalQuestions}
-                                                                                </div>
-                                                                                <div class="text-sm text-gray-300">
-                                                                                        {Math.round((markingResultsDiagram.totalCorrect / markingResultsDiagram.totalQuestions) * 100)}% Correct
-                                                                                </div>
-                                                                        </div>
-
-                                                                        <!-- Detailed Results -->
+                                                                        <h4 class="text-lg font-semibold text-white mb-3 text-center">Answers</h4>
                                                                         <div class="space-y-2 text-sm">
-                                                                                {#each ['q16', 'q17_diagram', 'q18_diagram', 'q19_diagram', 'q20_diagram'] as questionKey}
-                                                                                        <div class="flex items-center justify-between p-2 rounded border {markingResultsDiagram[questionKey]?.isCorrect ? 'bg-green-900/20 border-green-800' : 'bg-red-900/20 border-red-800'}">
-                                                                                                <div class="flex-1">
-                                                                                                        <div class="font-medium text-white text-xs">
-                                                                                                                {questionKey.replace('_diagram', '').toUpperCase()}: "{markingResultsDiagram[questionKey]?.userAnswer || '(blank)'}"
-                                                                                                        </div>
-                                                                                                        <div class="text-xs text-gray-400 mt-1">
-                                                                                                                Correct: {markingResultsDiagram[questionKey]?.correctAnswers?.join(' / ')}
-                                                                                                        </div>
-                                                                                                </div>
-                                                                                                <div class="ml-2">
-                                                                                                        {#if markingResultsDiagram[questionKey]?.isCorrect}
-                                                                                                                <span class="text-green-400 text-lg">✓</span>
-                                                                                                        {:else}
-                                                                                                                <span class="text-red-400 text-lg">✗</span>
-                                                                                                        {/if}
-                                                                                                </div>
-                                                                                        </div>
-                                                                                {/each}
+                                                                                <div class="p-2 rounded border border-gray-600">
+                                                                                        <div class="font-medium text-white">Q16: h</div>
+                                                                                </div>
+                                                                                <div class="p-2 rounded border border-gray-600">
+                                                                                        <div class="font-medium text-white">Q17: d</div>
+                                                                                </div>
+                                                                                <div class="p-2 rounded border border-gray-600">
+                                                                                        <div class="font-medium text-white">Q18: f</div>
+                                                                                </div>
+                                                                                <div class="p-2 rounded border border-gray-600">
+                                                                                        <div class="font-medium text-white">Q19: a</div>
+                                                                                </div>
+                                                                                <div class="p-2 rounded border border-gray-600">
+                                                                                        <div class="font-medium text-white">Q20: e</div>
+                                                                                </div>
                                                                         </div>
                                                                 </div>
                                                         {/if}
@@ -642,62 +477,34 @@
                                                                 />
                                                         </div>
                                                         
-                                                        <!-- Check Button -->
+                                                        <!-- Show Answers Button -->
                                                         <div class="text-center mt-4 mb-4">
                                                                 <button
                                                                         type="button"
-                                                                        onclick={checkMatchingAnswers}
-                                                                        disabled={loadingMatching}
-                                                                        class="bg-green-600 hover:bg-green-700 disabled:bg-green-400 disabled:cursor-not-allowed text-white font-bold py-2 px-4 rounded text-sm transition-colors flex items-center justify-center mx-auto"
+                                                                        onclick={toggleMatchingAnswers}
+                                                                        class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded text-sm transition-colors"
                                                                 >
-                                                                        {#if loadingMatching}
-                                                                                <svg class="animate-spin -ml-1 mr-2 h-4 w-4 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-                                                                                        <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
-                                                                                        <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
-                                                                                </svg>
-                                                                                Processing...
-                                                                        {:else}
-                                                                                Check My Answers
-                                                                        {/if}
+                                                                        {showAnswersMatching ? 'Hide Answers' : 'Show Answers'}
                                                                 </button>
                                                         </div>
                                                         
-                                                        <!-- Results Display -->
-                                                        {#if showResultsMatching}
+                                                        <!-- Answers Display -->
+                                                        {#if showAnswersMatching}
                                                                 <div class="bg-gray-700 rounded-lg p-4 mt-4 border border-gray-600">
-                                                                        <h4 class="text-lg font-semibold text-white mb-3 text-center">Results</h4>
-                                                                        
-                                                                        <!-- Score Summary -->
-                                                                        <div class="text-center mb-4">
-                                                                                <div class="text-2xl font-bold text-white mb-1">
-                                                                                        {markingResultsMatching.totalCorrect}/{markingResultsMatching.totalQuestions}
-                                                                                </div>
-                                                                                <div class="text-sm text-gray-300">
-                                                                                        {Math.round((markingResultsMatching.totalCorrect / markingResultsMatching.totalQuestions) * 100)}% Correct
-                                                                                </div>
-                                                                        </div>
-
-                                                                        <!-- Detailed Results -->
+                                                                        <h4 class="text-lg font-semibold text-white mb-3 text-center">Answers</h4>
                                                                         <div class="space-y-2 text-sm">
-                                                                                {#each ['q27', 'q28', 'q29', 'q30'] as questionKey}
-                                                                                        <div class="flex items-center justify-between p-2 rounded border {markingResultsMatching[questionKey]?.isCorrect ? 'bg-green-900/20 border-green-800' : 'bg-red-900/20 border-red-800'}">
-                                                                                                <div class="flex-1">
-                                                                                                        <div class="font-medium text-white text-xs">
-                                                                                                                {questionKey.toUpperCase()}: "{markingResultsMatching[questionKey]?.userAnswer || '(blank)'}"
-                                                                                                        </div>
-                                                                                                        <div class="text-xs text-gray-400 mt-1">
-                                                                                                                Correct: {markingResultsMatching[questionKey]?.correctAnswers?.join(' / ')}
-                                                                                                        </div>
-                                                                                                </div>
-                                                                                                <div class="ml-2">
-                                                                                                        {#if markingResultsMatching[questionKey]?.isCorrect}
-                                                                                                                <span class="text-green-400 text-lg">✓</span>
-                                                                                                        {:else}
-                                                                                                                <span class="text-red-400 text-lg">✗</span>
-                                                                                                        {/if}
-                                                                                                </div>
-                                                                                        </div>
-                                                                                {/each}
+                                                                                <div class="p-2 rounded border border-gray-600">
+                                                                                        <div class="font-medium text-white">Q27: d</div>
+                                                                                </div>
+                                                                                <div class="p-2 rounded border border-gray-600">
+                                                                                        <div class="font-medium text-white">Q28: b</div>
+                                                                                </div>
+                                                                                <div class="p-2 rounded border border-gray-600">
+                                                                                        <div class="font-medium text-white">Q29: e</div>
+                                                                                </div>
+                                                                                <div class="p-2 rounded border border-gray-600">
+                                                                                        <div class="font-medium text-white">Q30: f</div>
+                                                                                </div>
                                                                         </div>
                                                                 </div>
                                                         {/if}

@@ -298,8 +298,8 @@
 
                         <div class="max-w-6xl mx-auto">
                                 <p class="text-white mb-4">
-                                        <span class="inline-block bg-red-400 text-white font-bold px-3 py-1 rounded-md border-2 border-yellow-600 shadow-lg mr-2">
-                                                TASK
+                                        <span class="inline-block bg-red-500 text-white font-bold px-2 py-1 rounded-md border-2 border-yellow-600 shadow-lg mr-2">
+                                                TASK >
                                         </span>Complete these two Reading question practice exercises. Enter
                                         your answers on the answer sheets provided before checking your answers in the video
                                         beneath.
