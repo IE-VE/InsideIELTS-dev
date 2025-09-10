@@ -244,7 +244,7 @@
                         <h2 class="text-2xl font-bold text-center text-white mb-8">Example Reading Questions</h2>
 
                         <div class="max-w-4xl mx-auto">
-                                <p class="text-white mb-8">Watch the 2 Reading question tutorial videos below:</p>
+                                <p class="text-white text-lg mb-8">Watch the 2 Reading question tutorial videos below:</p>
 
                                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                                         <div class="text-center">
@@ -291,7 +291,7 @@
                         <h2 class="text-2xl font-bold text-center text-white mb-8">Reading Question Practice</h2>
 
                         <div class="max-w-6xl mx-auto">
-                                <p class="text-white mb-4">
+                                <p class="text-white text-lg mb-4">
                                         <span class="inline-block bg-red-500 text-white font-bold px-2 py-1 rounded-md border-2 border-yellow-600 shadow-lg mr-2">
                                                 TASK >
                                         </span>Complete these two Reading question practice exercises. Enter

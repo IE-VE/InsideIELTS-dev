@@ -78,7 +78,7 @@
                                 <div class="space-y-6">
                                         <div>
                                                 <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-3">What to Expect</h3>
-                                                <p class="text-gray-700 dark:text-gray-300 mb-4">
+                                                <p class="text-gray-700 dark:text-gray-300 text-lg mb-4">
                                                         Short answer questions in the IELTS Listening test require you to write brief answers using words directly from the audio. These questions test your ability to identify specific factual information such as names, dates, times, numbers, and locations.
                                                 </p>
                                         </div>
@@ -137,7 +137,7 @@
                                 </div>
                         </div>
 
-                        <div class="max-w-4xl mx-auto">
+                        <div class="max-w-4xl mx-auto text-lg">
                                 <p class="text-white mb-6">
                                         Short answer questions test your comprehension of the audio passage. They are in the form
                                         of direct '<strong>wh</strong>' type questions as in the examples below.

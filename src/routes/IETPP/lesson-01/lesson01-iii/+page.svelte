@@ -77,7 +77,7 @@
                                 <div class="space-y-6">
                                         <div>
                                                 <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-3">What to Expect</h3>
-                                                <p class="text-gray-700 dark:text-gray-300 mb-4">
+                                                <p class="text-gray-700 dark:text-gray-300 text-lg mb-4">
                                                         Sentence completion questions require you to fill in missing information in sentences or notes. You'll hear specific details in the audio that complete the gaps. Instructions will specify the maximum number of words allowed (e.g., "ONE WORD ONLY" or "NO MORE THAN TWO WORDS").
                                                 </p>
                                         </div>
@@ -132,7 +132,7 @@
                                 </div>
                         </div>
 
-                        <div class="max-w-4xl mx-auto">
+                        <div class="max-w-4xl mx-auto text-lg">
                                 <p class="text-white mb-6">
                                         Sentence completion type questions, and variations such as gap fill and missing word
                                         exercises are the most common question type in the <strong>IELTS</strong> Listening Test.

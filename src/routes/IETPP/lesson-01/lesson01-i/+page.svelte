@@ -76,7 +76,7 @@
                                 <div class="space-y-6">
                                         <div>
                                                 <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-3">What to Expect</h3>
-                                                <p class="text-gray-700 dark:text-gray-300 mb-4">
+                                                <p class="text-gray-700 dark:text-gray-300 text-lg mb-4">
                                                         Multiple choice questions in the IELTS Listening test require you to choose the correct answer from three to five options (A, B, C...). These questions test your ability to understand specific information, main ideas, and speaker attitudes.
                                                 </p>
                                         </div>
@@ -128,7 +128,7 @@
                                 </div>
                         </div>
                  
-                        <div class="max-w-4xl mx-auto">
+                        <div class="max-w-4xl mx-auto text-lg">
                                 <p class="text-white mb-6">
                                         There will usually be at least one set of multiple choice answer questions in each
                                         <strong>IELTS</strong> Listening Test. The question format is a question or statement
