@@ -26,7 +26,7 @@
                                         COURSE CODE: IE2401
                                 </div>
                             
-                                <div class="text-gray-700 dark:text-gray-300 px-3 md:px-20 mb-6">
+                                <div class="text-gray-700 dark:text-gray-300 px-6 md:px-20 mb-6">
                                         <h1 class="text-4xl text-center font-bold text-gray-900 dark:text-white pt-8 mb-12">
                                                 InsideIELTS Test Preparation Program
                                         </h1>
