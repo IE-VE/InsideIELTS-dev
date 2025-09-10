@@ -8,15 +8,9 @@
         let q1 = '', q2 = '', q3 = '', q4 = '', q5 = '', q6 = '';
         let q22 = '', q23 = '', q24 = '', q25 = '', q26 = '', q27 = '';
         
-        // Results for each exercise
-        let showResultsDiagram = false;
-        let showResultsFlowchart = false;
-        let markingResultsDiagram = {};
-        let markingResultsFlowchart = {};
-        
-        // Loading states
-        let loadingDiagram = false;
-        let loadingFlowchart = false;
+        // Show/hide answers for each exercise
+        let showAnswersDiagram = false;
+        let showAnswersFlowchart = false;
 
         function openLightbox(imageSrc: string) {
                 lightboxImage = imageSrc;
@@ -28,86 +22,12 @@
                 lightboxImage = '';
         }
 
-        function checkDiagramAnswers() {
-                loadingDiagram = true;
-                showResultsDiagram = false;
-                
-                setTimeout(() => {
-                        const correctAnswers = {
-                                q1: ['coal', 'Coal'],
-                                q2: ['furnace', 'Furnace'],
-                                q3: ['gas', 'Gas'],
-                                q4: ['pipes', 'Pipes'],
-                                q5: ['turbine', 'Turbine'],
-                                q6: ['electricity', 'Electricity']
-                        };
-
-                        const userAnswers = { q1, q2, q3, q4, q5, q6 };
-                        const results = {};
-                        let totalCorrect = 0;
-
-                        Object.entries(userAnswers).forEach(([key, answer]) => {
-                                const userAnswer = answer.trim();
-                                const correct = correctAnswers[key].some(correctAnswer => 
-                                        userAnswer === correctAnswer
-                                );
-                                
-                                results[key] = {
-                                        userAnswer: answer,
-                                        isCorrect: correct,
-                                        correctAnswers: correctAnswers[key]
-                                };
-                                
-                                if (correct) totalCorrect++;
-                        });
-
-                        results.totalCorrect = totalCorrect;
-                        results.totalQuestions = 6;
-                        markingResultsDiagram = results;
-                        showResultsDiagram = true;
-                        loadingDiagram = false;
-                }, 3000);
+        function toggleDiagramAnswers() {
+                showAnswersDiagram = !showAnswersDiagram;
         }
 
-        function checkFlowchartAnswers() {
-                loadingFlowchart = true;
-                showResultsFlowchart = false;
-                
-                setTimeout(() => {
-                        const correctAnswers = {
-                                q22: ['planning', 'Planning'],
-                                q23: ['research', 'Research'],
-                                q24: ['design', 'Design'],
-                                q25: ['testing', 'Testing'],
-                                q26: ['production', 'Production'],
-                                q27: ['marketing', 'Marketing']
-                        };
-
-                        const userAnswers = { q22, q23, q24, q25, q26, q27 };
-                        const results = {};
-                        let totalCorrect = 0;
-
-                        Object.entries(userAnswers).forEach(([key, answer]) => {
-                                const userAnswer = answer.trim();
-                                const correct = correctAnswers[key].some(correctAnswer => 
-                                        userAnswer === correctAnswer
-                                );
-                                
-                                results[key] = {
-                                        userAnswer: answer,
-                                        isCorrect: correct,
-                                        correctAnswers: correctAnswers[key]
-                                };
-                                
-                                if (correct) totalCorrect++;
-                        });
-
-                        results.totalCorrect = totalCorrect;
-                        results.totalQuestions = 6;
-                        markingResultsFlowchart = results;
-                        showResultsFlowchart = true;
-                        loadingFlowchart = false;
-                }, 3000);
+        function toggleFlowchartAnswers() {
+                showAnswersFlowchart = !showAnswersFlowchart;
         }
 
         onMount(() => {
@@ -294,7 +214,7 @@
 
                 <!-- Section 3: Reading Question Practice -->
                 <section class="bg-teal-900/30 rounded-lg p-4 md:p-8 shadow-sm border border-teal-700 mb-8">
-                        <h2 class="text-2xl font-bold text-center text-white mb-8">Reading question practice</h2>
+                        <h2 class="text-2xl font-bold text-center text-white mb-8">Reading Question Practice</h2>
 
                         <div class="max-w-6xl mx-auto">
                                 <p class="text-white mb-4">
@@ -327,73 +247,91 @@
 
                                                 <div class="text-center">
                                                         <p class="text-white mb-3 font-semibold">Answer Sheet</p>
-                                                        <div class="space-y-2">
-                                                                <input
-                                                                        type="text"
-                                                                        placeholder="Q1 - enter your answer"
-                                                                        bind:value={q1}
-                                                                        class="w-full px-3 py-2 bg-gray-700 border border-gray-500 rounded text-white placeholder-gray-400 text-sm"
-                                                                />
-                                                                <input
-                                                                        type="text"
-                                                                        placeholder="Q2"
-                                                                        bind:value={q2}
-                                                                        class="w-full px-3 py-2 bg-gray-700 border border-gray-500 rounded text-white placeholder-gray-400 text-sm"
-                                                                />
-                                                                <input
-                                                                        type="text"
-                                                                        placeholder="Q3"
-                                                                        bind:value={q3}
-                                                                        class="w-full px-3 py-2 bg-gray-700 border border-gray-500 rounded text-white placeholder-gray-400 text-sm"
-                                                                />
-                                                                <input
-                                                                        type="text"
-                                                                        placeholder="Q4"
-                                                                        bind:value={q4}
-                                                                        class="w-full px-3 py-2 bg-gray-700 border border-gray-500 rounded text-white placeholder-gray-400 text-sm"
-                                                                />
-                                                                <input
-                                                                        type="text"
-                                                                        placeholder="Q5"
-                                                                        bind:value={q5}
-                                                                        class="w-full px-3 py-2 bg-gray-700 border border-gray-500 rounded text-white placeholder-gray-400 text-sm"
-                                                                />
-                                                                <input
-                                                                        type="text"
-                                                                        placeholder="Q6"
-                                                                        bind:value={q6}
-                                                                        class="w-full px-3 py-2 bg-gray-700 border border-gray-500 rounded text-white placeholder-gray-400 text-sm"
-                                                                />
+                                                        <div class="flex flex-col gap-3 max-w-xs mx-auto">
+                                                                <div class="flex items-center gap-3">
+                                                                        <span class="text-white text-sm font-medium w-8">Q1</span>
+                                                                        <input 
+                                                                                type="text" 
+                                                                                bind:value={q1}
+                                                                                class="flex-1 px-3 py-2 bg-gray-700 border border-gray-500 rounded text-white text-sm text-left"
+                                                                        />
+                                                                </div>
+                                                                <div class="flex items-center gap-3">
+                                                                        <span class="text-white text-sm font-medium w-8">Q2</span>
+                                                                        <input 
+                                                                                type="text" 
+                                                                                bind:value={q2}
+                                                                                class="flex-1 px-3 py-2 bg-gray-700 border border-gray-500 rounded text-white text-sm text-left"
+                                                                        />
+                                                                </div>
+                                                                <div class="flex items-center gap-3">
+                                                                        <span class="text-white text-sm font-medium w-8">Q3</span>
+                                                                        <input 
+                                                                                type="text" 
+                                                                                bind:value={q3}
+                                                                                class="flex-1 px-3 py-2 bg-gray-700 border border-gray-500 rounded text-white text-sm text-left"
+                                                                        />
+                                                                </div>
+                                                                <div class="flex items-center gap-3">
+                                                                        <span class="text-white text-sm font-medium w-8">Q4</span>
+                                                                        <input 
+                                                                                type="text" 
+                                                                                bind:value={q4}
+                                                                                class="flex-1 px-3 py-2 bg-gray-700 border border-gray-500 rounded text-white text-sm text-left"
+                                                                        />
+                                                                </div>
+                                                                <div class="flex items-center gap-3">
+                                                                        <span class="text-white text-sm font-medium w-8">Q5</span>
+                                                                        <input 
+                                                                                type="text" 
+                                                                                bind:value={q5}
+                                                                                class="flex-1 px-3 py-2 bg-gray-700 border border-gray-500 rounded text-white text-sm text-left"
+                                                                        />
+                                                                </div>
+                                                                <div class="flex items-center gap-3">
+                                                                        <span class="text-white text-sm font-medium w-8">Q6</span>
+                                                                        <input 
+                                                                                type="text" 
+                                                                                bind:value={q6}
+                                                                                class="flex-1 px-3 py-2 bg-gray-700 border border-gray-500 rounded text-white text-sm text-left"
+                                                                        />
+                                                                </div>
                                                         </div>
 
-                                                        <button
-                                                                onclick={() => checkDiagramAnswers()}
-                                                                disabled={loadingDiagram}
-                                                                class="w-full mt-4 bg-teal-600 hover:bg-teal-700 disabled:bg-gray-600 text-white font-bold py-2 px-4 rounded transition-colors"
-                                                        >
-                                                                {#if loadingDiagram}
-                                                                        <div class="flex items-center justify-center">
-                                                                                <div class="animate-spin rounded-full h-5 w-5 border-b-2 border-white mr-2"></div>
-                                                                                Checking answers...
-                                                                        </div>
-                                                                {:else}
-                                                                        Check Answers
-                                                                {/if}
-                                                        </button>
+                                                        <!-- Show Answers Button -->
+                                                        <div class="text-center mt-4 mb-4">
+                                                                <button
+                                                                        type="button"
+                                                                        onclick={toggleDiagramAnswers}
+                                                                        class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded text-sm transition-colors"
+                                                                >
+                                                                        {showAnswersDiagram ? 'Hide Answers' : 'Show Answers'}
+                                                                </button>
+                                                        </div>
 
-                                                        {#if showResultsDiagram}
-                                                                <div class="mt-4 p-4 bg-gray-700 rounded border">
-                                                                        <h5 class="font-bold text-white mb-2">Results:</h5>
-                                                                        <p class="text-white mb-2">
-                                                                                Score: {markingResultsDiagram.totalCorrect}/{markingResultsDiagram.totalQuestions}
-                                                                        </p>
-                                                                        <div class="text-left space-y-1">
-                                                                                {#each Object.entries(markingResultsDiagram).filter(([key]) => key.startsWith('q')) as [key, result]}
-                                                                                        <div class={result.isCorrect ? 'text-green-400' : 'text-red-400'}>
-                                                                                                {key.toUpperCase()}: {result.userAnswer || '(blank)'} 
-                                                                                                {result.isCorrect ? '✓' : `✗ (${result.correctAnswers.join(' or ')})`}
-                                                                                        </div>
-                                                                                {/each}
+                                                        <!-- Answers Display -->
+                                                        {#if showAnswersDiagram}
+                                                                <div class="bg-gray-700 rounded-lg p-4 mt-4 border border-gray-600">
+                                                                        <h4 class="text-lg font-semibold text-white mb-3 text-center">Answers</h4>
+                                                                        <div class="space-y-2 text-sm">
+                                                                                <div class="p-2 rounded border border-gray-600">
+                                                                                        <div class="font-medium text-white">Q1: coal</div>
+                                                                                </div>
+                                                                                <div class="p-2 rounded border border-gray-600">
+                                                                                        <div class="font-medium text-white">Q2: furnace</div>
+                                                                                </div>
+                                                                                <div class="p-2 rounded border border-gray-600">
+                                                                                        <div class="font-medium text-white">Q3: gas</div>
+                                                                                </div>
+                                                                                <div class="p-2 rounded border border-gray-600">
+                                                                                        <div class="font-medium text-white">Q4: pipes</div>
+                                                                                </div>
+                                                                                <div class="p-2 rounded border border-gray-600">
+                                                                                        <div class="font-medium text-white">Q5: turbine</div>
+                                                                                </div>
+                                                                                <div class="p-2 rounded border border-gray-600">
+                                                                                        <div class="font-medium text-white">Q6: electricity</div>
+                                                                                </div>
                                                                         </div>
                                                                 </div>
                                                         {/if}
@@ -426,73 +364,91 @@
 
                                                 <div class="text-center">
                                                         <p class="text-white mb-3 font-semibold">Answer Sheet</p>
-                                                        <div class="space-y-2">
-                                                                <input
-                                                                        type="text"
-                                                                        placeholder="Q22 - enter your answer"
-                                                                        bind:value={q22}
-                                                                        class="w-full px-3 py-2 bg-gray-700 border border-gray-500 rounded text-white placeholder-gray-400 text-sm"
-                                                                />
-                                                                <input
-                                                                        type="text"
-                                                                        placeholder="Q23"
-                                                                        bind:value={q23}
-                                                                        class="w-full px-3 py-2 bg-gray-700 border border-gray-500 rounded text-white placeholder-gray-400 text-sm"
-                                                                />
-                                                                <input
-                                                                        type="text"
-                                                                        placeholder="Q24"
-                                                                        bind:value={q24}
-                                                                        class="w-full px-3 py-2 bg-gray-700 border border-gray-500 rounded text-white placeholder-gray-400 text-sm"
-                                                                />
-                                                                <input
-                                                                        type="text"
-                                                                        placeholder="Q25"
-                                                                        bind:value={q25}
-                                                                        class="w-full px-3 py-2 bg-gray-700 border border-gray-500 rounded text-white placeholder-gray-400 text-sm"
-                                                                />
-                                                                <input
-                                                                        type="text"
-                                                                        placeholder="Q26"
-                                                                        bind:value={q26}
-                                                                        class="w-full px-3 py-2 bg-gray-700 border border-gray-500 rounded text-white placeholder-gray-400 text-sm"
-                                                                />
-                                                                <input
-                                                                        type="text"
-                                                                        placeholder="Q27"
-                                                                        bind:value={q27}
-                                                                        class="w-full px-3 py-2 bg-gray-700 border border-gray-500 rounded text-white placeholder-gray-400 text-sm"
-                                                                />
+                                                        <div class="flex flex-col gap-3 max-w-xs mx-auto">
+                                                                <div class="flex items-center gap-3">
+                                                                        <span class="text-white text-sm font-medium w-8">Q22</span>
+                                                                        <input 
+                                                                                type="text" 
+                                                                                bind:value={q22}
+                                                                                class="flex-1 px-3 py-2 bg-gray-700 border border-gray-500 rounded text-white text-sm text-left"
+                                                                        />
+                                                                </div>
+                                                                <div class="flex items-center gap-3">
+                                                                        <span class="text-white text-sm font-medium w-8">Q23</span>
+                                                                        <input 
+                                                                                type="text" 
+                                                                                bind:value={q23}
+                                                                                class="flex-1 px-3 py-2 bg-gray-700 border border-gray-500 rounded text-white text-sm text-left"
+                                                                        />
+                                                                </div>
+                                                                <div class="flex items-center gap-3">
+                                                                        <span class="text-white text-sm font-medium w-8">Q24</span>
+                                                                        <input 
+                                                                                type="text" 
+                                                                                bind:value={q24}
+                                                                                class="flex-1 px-3 py-2 bg-gray-700 border border-gray-500 rounded text-white text-sm text-left"
+                                                                        />
+                                                                </div>
+                                                                <div class="flex items-center gap-3">
+                                                                        <span class="text-white text-sm font-medium w-8">Q25</span>
+                                                                        <input 
+                                                                                type="text" 
+                                                                                bind:value={q25}
+                                                                                class="flex-1 px-3 py-2 bg-gray-700 border border-gray-500 rounded text-white text-sm text-left"
+                                                                        />
+                                                                </div>
+                                                                <div class="flex items-center gap-3">
+                                                                        <span class="text-white text-sm font-medium w-8">Q26</span>
+                                                                        <input 
+                                                                                type="text" 
+                                                                                bind:value={q26}
+                                                                                class="flex-1 px-3 py-2 bg-gray-700 border border-gray-500 rounded text-white text-sm text-left"
+                                                                        />
+                                                                </div>
+                                                                <div class="flex items-center gap-3">
+                                                                        <span class="text-white text-sm font-medium w-8">Q27</span>
+                                                                        <input 
+                                                                                type="text" 
+                                                                                bind:value={q27}
+                                                                                class="flex-1 px-3 py-2 bg-gray-700 border border-gray-500 rounded text-white text-sm text-left"
+                                                                        />
+                                                                </div>
                                                         </div>
 
-                                                        <button
-                                                                onclick={() => checkFlowchartAnswers()}
-                                                                disabled={loadingFlowchart}
-                                                                class="w-full mt-4 bg-teal-600 hover:bg-teal-700 disabled:bg-gray-600 text-white font-bold py-2 px-4 rounded transition-colors"
-                                                        >
-                                                                {#if loadingFlowchart}
-                                                                        <div class="flex items-center justify-center">
-                                                                                <div class="animate-spin rounded-full h-5 w-5 border-b-2 border-white mr-2"></div>
-                                                                                Checking answers...
-                                                                        </div>
-                                                                {:else}
-                                                                        Check Answers
-                                                                {/if}
-                                                        </button>
+                                                        <!-- Show Answers Button -->
+                                                        <div class="text-center mt-4 mb-4">
+                                                                <button
+                                                                        type="button"
+                                                                        onclick={toggleFlowchartAnswers}
+                                                                        class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded text-sm transition-colors"
+                                                                >
+                                                                        {showAnswersFlowchart ? 'Hide Answers' : 'Show Answers'}
+                                                                </button>
+                                                        </div>
 
-                                                        {#if showResultsFlowchart}
-                                                                <div class="mt-4 p-4 bg-gray-700 rounded border">
-                                                                        <h5 class="font-bold text-white mb-2">Results:</h5>
-                                                                        <p class="text-white mb-2">
-                                                                                Score: {markingResultsFlowchart.totalCorrect}/{markingResultsFlowchart.totalQuestions}
-                                                                        </p>
-                                                                        <div class="text-left space-y-1">
-                                                                                {#each Object.entries(markingResultsFlowchart).filter(([key]) => key.startsWith('q')) as [key, result]}
-                                                                                        <div class={result.isCorrect ? 'text-green-400' : 'text-red-400'}>
-                                                                                                {key.toUpperCase()}: {result.userAnswer || '(blank)'} 
-                                                                                                {result.isCorrect ? '✓' : `✗ (${result.correctAnswers.join(' or ')})`}
-                                                                                        </div>
-                                                                                {/each}
+                                                        <!-- Answers Display -->
+                                                        {#if showAnswersFlowchart}
+                                                                <div class="bg-gray-700 rounded-lg p-4 mt-4 border border-gray-600">
+                                                                        <h4 class="text-lg font-semibold text-white mb-3 text-center">Answers</h4>
+                                                                        <div class="space-y-2 text-sm">
+                                                                                <div class="p-2 rounded border border-gray-600">
+                                                                                        <div class="font-medium text-white">Q22: planning</div>
+                                                                                </div>
+                                                                                <div class="p-2 rounded border border-gray-600">
+                                                                                        <div class="font-medium text-white">Q23: research</div>
+                                                                                </div>
+                                                                                <div class="p-2 rounded border border-gray-600">
+                                                                                        <div class="font-medium text-white">Q24: design</div>
+                                                                                </div>
+                                                                                <div class="p-2 rounded border border-gray-600">
+                                                                                        <div class="font-medium text-white">Q25: testing</div>
+                                                                                </div>
+                                                                                <div class="p-2 rounded border border-gray-600">
+                                                                                        <div class="font-medium text-white">Q26: production</div>
+                                                                                </div>
+                                                                                <div class="p-2 rounded border border-gray-600">
+                                                                                        <div class="font-medium text-white">Q27: marketing</div>
+                                                                                </div>
                                                                         </div>
                                                                 </div>
                                                         {/if}
