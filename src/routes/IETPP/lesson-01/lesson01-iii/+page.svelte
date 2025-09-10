@@ -62,7 +62,7 @@
         <!-- Page Content -->
         <div style="max-width: 1200px;" class="mx-auto px-3 md:px-6 py-8">
                 <!-- Lesson Title Section -->
-                <section class="bg-blue-600/20 rounded-lg p-4 md:p-8 shadow-sm border border-blue-600/50 mb-8">
+                <section class="bg-emerald-600/20 rounded-lg p-4 md:p-8 shadow-sm border border-emerald-600/50 mb-8">
                         <div class="flex items-center justify-center gap-4 mb-6">
                                 <div class="text-4xl">👂</div>
                                 <h2 class="text-3xl font-bold text-center text-white">Skills Practice</h2>

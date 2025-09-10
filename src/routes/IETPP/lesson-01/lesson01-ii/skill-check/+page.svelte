@@ -97,7 +97,7 @@
                 <div class="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 mb-8">
                         <div class="text-center">
                                 <div class="text-xs text-left text-teal-600 dark:text-teal-400 mb-4">
-                                        SKILL CHECK: SC1(ii)
+                                        SC1(ii)
                                 </div>
                                 <h1 class="text-3xl font-bold text-white mb-2">
                                         LISTENING - Short Answer
