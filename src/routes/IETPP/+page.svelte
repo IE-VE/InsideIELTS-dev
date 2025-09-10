@@ -26,7 +26,7 @@
                                         COURSE CODE: IE2401
                                 </div>
                             
-                                <div class="text-gray-700 dark:text-gray-300 px-6 md:px-20 mb-6">
+                                <div class="text-gray-700 dark:text-gray-300 px-7 md:px-20 mb-6">
                                         <h1 class="text-4xl text-center font-bold text-gray-900 dark:text-white pt-8 mb-12">
                                                 InsideIELTS Test Preparation Program
                                         </h1>
@@ -57,9 +57,7 @@
                                         </p>
                                         <div class="text-center mt-10">
                                                 <a
-                                                        href="https://freetest.insideielts.com/"
-                                                        target="_blank"
-                                                        title="Welcome to the InsideIELTS Test Preparation Program"
+                                                        href="#"                                                                                       title="Welcome to the InsideIELTS Test Preparation Program"
                                                         class="inline-block bg-teal-600 hover:bg-teal-700 text-white font-bold py-3 px-6 rounded-lg transition-colors"
                                                 >
                                                         Start Now
@@ -80,7 +78,7 @@
 
                         <div class="space-y-6">
                                 <!-- Overview -->
-                                <div class="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-sm border border-gray-200 dark:border-gray-700">
+                                <div id="lesson-00" class="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-sm border border-gray-200 dark:border-gray-700">
                                         <div class="flex items-start gap-4">
                                                 <span class="text-xl font-bold text-teal-600 dark:text-teal-400 min-w-[3rem]">00</span>
                                                 <a href="/IETPP/lesson-00" class="text-teal-600 dark:text-teal-400 hover:underline font-semibold">
@@ -90,7 +88,7 @@
                                 </div>
 
                                 <!-- Listening Section -->
-                                <div class="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-sm border border-gray-200 dark:border-gray-700">
+                                <div id="lesson-01" class="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-sm border border-gray-200 dark:border-gray-700">
                                         <div class="mb-4">
                                                 <div class="flex items-start gap-4 mb-4">
                                                         <span class="text-xl font-bold text-teal-600 dark:text-teal-400 min-w-[3rem]">01</span>
@@ -122,7 +120,7 @@
                                 </div>
 
                                 <!-- Reading Section -->
-                                <div class="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-sm border border-gray-200 dark:border-gray-700">
+                                <div id="lesson-02" class="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-sm border border-gray-200 dark:border-gray-700">
                                         <div class="mb-4">
                                                 <div class="flex items-start gap-4 mb-4">
                                                         <span class="text-xl font-bold text-teal-600 dark:text-teal-400 min-w-[3rem]">02</span>
@@ -154,7 +152,7 @@
                                 </div>
 
                                 <!-- Writing Section -->
-                                <div class="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-sm border border-gray-200 dark:border-gray-700">
+                                <div id="lesson-03" class="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-sm border border-gray-200 dark:border-gray-700">
                                         <div class="mb-4">
                                                 <div class="flex items-start gap-4 mb-4">
                                                         <span class="text-xl font-bold text-teal-600 dark:text-teal-400 min-w-[3rem]">03</span>
@@ -195,7 +193,7 @@
                                 </div>
 
                                 <!-- Speaking Section -->
-                                <div class="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-sm border border-gray-200 dark:border-gray-700">
+                                <div id="lesson-04" class="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-sm border border-gray-200 dark:border-gray-700">
                                         <div class="mb-4">
                                                 <div class="flex items-start gap-4 mb-4">
                                                         <span class="text-xl font-bold text-teal-600 dark:text-teal-400 min-w-[3rem]">04</span>
@@ -236,7 +234,7 @@
                                 </div>
 
                                 <!-- Assessment Section -->
-                                <div class="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-sm border border-gray-200 dark:border-gray-700">
+                                <div id="lesson-05" class="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-sm border border-gray-200 dark:border-gray-700">
                                         <div class="mb-4">
                                                 <div class="flex items-start gap-4 mb-4">
                                                         <span class="text-xl font-bold text-teal-600 dark:text-teal-400 min-w-[3rem]">05</span>

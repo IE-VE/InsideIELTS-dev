@@ -186,7 +186,7 @@
 
                         <div class="text-right mt-6">
                                 <a
-                                        href="/IETPP"
+                                        href="/IETPP#lesson-01"
                                         class="text-teal-600 dark:text-teal-400 hover:underline font-semibold"
                                 >
                                         ← Back to Contents
@@ -725,7 +725,7 @@
                 <section class="text-center py-8">
                         <p class="text-white mb-12">End of Intro Lesson 01</p>
                         <a
-                                href="/IETPP"
+                                href="/IETPP#lesson-01"
                                 class="inline-flex items-center text-teal-600 dark:text-teal-400 hover:underline font-semibold"
                         >
                                 ← Back to Course Contents

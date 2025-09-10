@@ -398,7 +398,7 @@
                 <section class="text-center py-8">
                         <p class="text-white mb-12">End of Skill Check 01 (ii)</p>
                                                                         <a
-                                                                                href="/IETPP"
+                                                                                href="/IETPP#lesson-01"
                                                                                 class="inline-flex items-center text-teal-600 dark:text-teal-400 hover:underline font-semibold"
                                                                         >
                                                                                 ← Back to Course Contents
