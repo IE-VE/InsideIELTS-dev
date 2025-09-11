@@ -302,44 +302,52 @@
                                         [Don't watch the answer video until you have completed the practice exercises!]
                                 </p>
 
-                                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+                                <div class="space-y-12 mb-8">
                                         <!-- Exercise 1: Diagram Labeling -->
                                         <div class="bg-gray-800 rounded-lg p-6 border border-gray-600">
-                                                <h4 class="text-lg font-semibold text-white mb-4 text-center">
+                                                <h4 class="text-lg font-semibold text-white mb-6 text-center">
                                                         1) Diagram labeling
                                                 </h4>
-                                                <img
-                                                        src="/LESSONS/les02/Reading_Diagcompletion-prac.png"
-                                                        alt="Reading diagram labeling practice"
-                                                        class="w-full rounded border border-gray-500 mb-8 cursor-pointer"
-                                                        onclick={() => openLightbox('/LESSONS/les02/Reading_Diagcompletion-prac.png')}
-                                                />
-
-                                                <div class="text-center mb-8">
-                                                        <div class="mb-4">
-                                                                <p class="text-teal-600 dark:text-teal-400  text-lg font-bold mb-2">
-                                                                        Beat the clock - {formatTime(timerDiagram)}
-                                                                </p>
-                                                                <div class="flex gap-2 justify-center">
-                                                                        <button
-                                                                                onclick={isRunningDiagram ? stopDiagramTimer : startDiagramTimer}
-                                                                                class="bg-green-600 hover:bg-green-700 text-white font-bold py-1 px-3 rounded text-sm transition-colors"
-                                                                                disabled={timerDiagram <= 0}
-                                                                        >
-                                                                                {isRunningDiagram ? 'Stop' : 'Start'}
-                                                                        </button>
-                                                                        <button
-                                                                                onclick={resetDiagramTimer}
-                                                                                class="bg-red-600 hover:bg-red-700 text-white font-bold py-1 px-3 rounded text-sm transition-colors"
-                                                                        >
-                                                                                Reset
-                                                                        </button>
+                                                
+                                                <!-- Desktop side-by-side layout, mobile stacked -->
+                                                <div class="flex flex-col lg:flex-row gap-8 items-start">
+                                                        <!-- Left side: Image and Timer -->
+                                                        <div class="w-full lg:w-1/2">
+                                                                <img
+                                                                        src="/LESSONS/les02/Reading_Diagcompletion-prac.png"
+                                                                        alt="Reading diagram labeling practice"
+                                                                        class="w-full rounded border border-gray-500 mb-6 cursor-pointer"
+                                                                        onclick={() => openLightbox('/LESSONS/les02/Reading_Diagcompletion-prac.png')}
+                                                                />
+                                                                
+                                                                <!-- Timer below image -->
+                                                                <div class="text-center">
+                                                                        <p class="text-teal-600 dark:text-teal-400 text-lg font-bold mb-3">
+                                                                                Beat the clock - {formatTime(timerDiagram)}
+                                                                        </p>
+                                                                        <div class="flex gap-2 justify-center">
+                                                                                <button
+                                                                                        onclick={isRunningDiagram ? stopDiagramTimer : startDiagramTimer}
+                                                                                        class="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded text-sm transition-colors"
+                                                                                        disabled={timerDiagram <= 0}
+                                                                                >
+                                                                                        {isRunningDiagram ? 'Stop' : 'Start'}
+                                                                                </button>
+                                                                                <button
+                                                                                        onclick={resetDiagramTimer}
+                                                                                        class="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded text-sm transition-colors"
+                                                                                >
+                                                                                        Reset
+                                                                                </button>
+                                                                        </div>
                                                                 </div>
                                                         </div>
-                                                </div>
+                                                        
+                                                        <!-- Right side: Questions, Answers Button, and Video -->
+                                                        <div class="w-full lg:w-1/2">
 
-                                                <div class="text-center">
-                                                        <p class="text-white mb-4 font-semibold">Answer Sheet</p>
+                                                                <div class="text-center mb-6">
+                                                                        <p class="text-white mb-4 font-semibold">Answer Sheet</p>
                                                         <div class="flex flex-col gap-3 max-w-xs mx-auto">
                                                                 <div class="flex items-center gap-3">
                                                                         <span class="text-white text-sm font-medium w-8">Q1</span>
@@ -389,22 +397,23 @@
                                                                                 class="flex-1 px-3 py-2 bg-gray-700 border border-gray-500 rounded text-white text-sm text-left"
                                                                         />
                                                                 </div>
-                                                        </div>
+                                                                        </div>
+                                                                </div>
 
-                                                        <!-- Show Answers Button -->
-                                                        <div class="text-center mt-4 mb-4">
-                                                                <button
-                                                                        type="button"
-                                                                        onclick={toggleDiagramAnswers}
-                                                                        class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded text-sm transition-colors mt-6 mb-8"
-                                                                >
-                                                                        {showAnswersDiagram ? 'Hide Answers' : 'Show Answers'}
-                                                                </button>
-                                                        </div>
+                                                                <!-- Show Answers Button in middle of right column -->
+                                                                <div class="text-center mb-6">
+                                                                        <button
+                                                                                type="button"
+                                                                                onclick={toggleDiagramAnswers}
+                                                                                class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded text-sm transition-colors"
+                                                                        >
+                                                                                {showAnswersDiagram ? 'Hide Answers' : 'Show Answers'}
+                                                                        </button>
+                                                                </div>
 
-                                                        <!-- Answers Display -->
-                                                        {#if showAnswersDiagram}
-                                                                <div class="bg-gray-700 rounded-lg p-4 mt-4 border border-gray-600">
+                                                                <!-- Answers Display -->
+                                                                {#if showAnswersDiagram}
+                                                                        <div class="bg-gray-700 rounded-lg p-4 mb-6 border border-gray-600">
                                                                         <h4 class="text-lg font-semibold text-white mb-3 text-center">Answers</h4>
                                                                         <div class="space-y-2 text-sm">
                                                                                 <div class="p-2 rounded border border-gray-600">
@@ -427,55 +436,65 @@
                                                                                 </div>
                                                                         </div>
                                                                 </div>
-                                                        {/if}
-                                                </div>
+                                                                {/if}
 
-                                                <div class="mt-6 text-center">
-                                                        <p class="text-white mb-2">Answer video</p>
-                                                        <video controls class="w-full rounded border border-gray-500">
-                                                                <source src="/LESSONS/les02/R02_answervid1.mp4" type="video/mp4" />
-                                                                Your browser does not support the video tag.
-                                                        </video>
+                                                                <!-- Answer video at bottom of right column -->
+                                                                <div class="text-center">
+                                                                        <p class="text-white mb-2 font-semibold">Answer video</p>
+                                                                        <video controls class="w-full rounded border border-gray-500">
+                                                                                <source src="/LESSONS/les02/R02_answervid1.mp4" type="video/mp4" />
+                                                                                Your browser does not support the video tag.
+                                                                        </video>
+                                                                </div>
+                                                        </div>
                                                 </div>
                                         </div>
 
                                         <!-- Exercise 2: Flow Chart Completion -->
                                         <div class="bg-gray-800 rounded-lg p-6 border border-gray-600">
-                                                <h4 class="text-lg font-semibold text-white mb-4 text-center">
+                                                <h4 class="text-lg font-semibold text-white mb-6 text-center">
                                                         2) Flow chart completion
                                                 </h4>
-                                                <img
-                                                        src="/LESSONS/les02/Reading_Flowchart-prac.png"
-                                                        alt="Reading flow chart completion practice"
-                                                        class="w-full rounded border border-gray-500 mb-8 cursor-pointer"
-                                                        onclick={() => openLightbox('/LESSONS/les02/Reading_Flowchart-prac.png')}
-                                                />
-
-                                                <div class="text-center mb-8">
-                                                        <div class="mb-4">
-                                                                <p class="text-teal-600 dark:text-teal-400  text-lg font-bold mb-2">
-                                                                        Beat the clock - {formatTime(timerFlowchart)}
-                                                                </p>
-                                                                <div class="flex gap-2 justify-center">
-                                                                        <button
-                                                                                onclick={isRunningFlowchart ? stopFlowchartTimer : startFlowchartTimer}
-                                                                                class="bg-green-600 hover:bg-green-700 text-white font-bold py-1 px-3 rounded text-sm transition-colors"
-                                                                                disabled={timerFlowchart <= 0}
-                                                                        >
-                                                                                {isRunningFlowchart ? 'Stop' : 'Start'}
-                                                                        </button>
-                                                                        <button
-                                                                                onclick={resetFlowchartTimer}
-                                                                                class="bg-red-600 hover:bg-red-700 text-white font-bold py-1 px-3 rounded text-sm transition-colors"
-                                                                        >
-                                                                                Reset
-                                                                        </button>
+                                                
+                                                <!-- Desktop side-by-side layout, mobile stacked -->
+                                                <div class="flex flex-col lg:flex-row gap-8 items-start">
+                                                        <!-- Left side: Image and Timer -->
+                                                        <div class="w-full lg:w-1/2">
+                                                                <img
+                                                                        src="/LESSONS/les02/Reading_Flowchart-prac.png"
+                                                                        alt="Reading flow chart completion practice"
+                                                                        class="w-full rounded border border-gray-500 mb-6 cursor-pointer"
+                                                                        onclick={() => openLightbox('/LESSONS/les02/Reading_Flowchart-prac.png')}
+                                                                />
+                                                                
+                                                                <!-- Timer below image -->
+                                                                <div class="text-center">
+                                                                        <p class="text-teal-600 dark:text-teal-400 text-lg font-bold mb-3">
+                                                                                Beat the clock - {formatTime(timerFlowchart)}
+                                                                        </p>
+                                                                        <div class="flex gap-2 justify-center">
+                                                                                <button
+                                                                                        onclick={isRunningFlowchart ? stopFlowchartTimer : startFlowchartTimer}
+                                                                                        class="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded text-sm transition-colors"
+                                                                                        disabled={timerFlowchart <= 0}
+                                                                                >
+                                                                                        {isRunningFlowchart ? 'Stop' : 'Start'}
+                                                                                </button>
+                                                                                <button
+                                                                                        onclick={resetFlowchartTimer}
+                                                                                        class="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded text-sm transition-colors"
+                                                                                >
+                                                                                        Reset
+                                                                                </button>
+                                                                        </div>
                                                                 </div>
                                                         </div>
-                                                </div>
+                                                        
+                                                        <!-- Right side: Questions, Answers Button, and Video -->
+                                                        <div class="w-full lg:w-1/2">
 
-                                                <div class="text-center">
-                                                        <p class="text-white mb-3 font-semibold">Answer Sheet</p>
+                                                                <div class="text-center mb-6">
+                                                                        <p class="text-white mb-4 font-semibold">Answer Sheet</p>
                                                         <div class="flex flex-col gap-3 max-w-xs mx-auto">
                                                                 <div class="flex items-center gap-3">
                                                                         <span class="text-white text-sm font-medium w-8">Q22</span>
@@ -525,22 +544,23 @@
                                                                                 class="flex-1 px-3 py-2 bg-gray-700 border border-gray-500 rounded text-white text-sm text-left"
                                                                         />
                                                                 </div>
-                                                        </div>
+                                                                        </div>
+                                                                </div>
 
-                                                        <!-- Show Answers Button -->
-                                                        <div class="text-center mt-4 mb-4">
-                                                                <button
-                                                                        type="button"
-                                                                        onclick={toggleFlowchartAnswers}
-                                                                        class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded text-sm transition-colors mt-6 mb-8"
-                                                                >
-                                                                        {showAnswersFlowchart ? 'Hide Answers' : 'Show Answers'}
-                                                                </button>
-                                                        </div>
+                                                                <!-- Show Answers Button in middle of right column -->
+                                                                <div class="text-center mb-6">
+                                                                        <button
+                                                                                type="button"
+                                                                                onclick={toggleFlowchartAnswers}
+                                                                                class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded text-sm transition-colors"
+                                                                        >
+                                                                                {showAnswersFlowchart ? 'Hide Answers' : 'Show Answers'}
+                                                                        </button>
+                                                                </div>
 
-                                                        <!-- Answers Display -->
-                                                        {#if showAnswersFlowchart}
-                                                                <div class="bg-gray-700 rounded-lg p-4 mt-4 border border-gray-600">
+                                                                <!-- Answers Display -->
+                                                                {#if showAnswersFlowchart}
+                                                                        <div class="bg-gray-700 rounded-lg p-4 mb-6 border border-gray-600">
                                                                         <h4 class="text-lg font-semibold text-white mb-3 text-center">Answers</h4>
                                                                         <div class="space-y-2 text-sm">
                                                                                 <div class="p-2 rounded border border-gray-600">
@@ -563,15 +583,17 @@
                                                                                 </div>
                                                                         </div>
                                                                 </div>
-                                                        {/if}
-                                                </div>
+                                                                {/if}
 
-                                                <div class="mt-6 text-center">
-                                                        <p class="text-white mb-2">Answer video</p>
-                                                        <video controls class="w-full rounded border border-gray-500">
-                                                                <source src="/LESSONS/les02/R02_answervid2.mp4" type="video/mp4" />
-                                                                Your browser does not support the video tag.
-                                                        </video>
+                                                                <!-- Answer video at bottom of right column -->
+                                                                <div class="text-center">
+                                                                        <p class="text-white mb-2 font-semibold">Answer video</p>
+                                                                        <video controls class="w-full rounded border border-gray-500">
+                                                                                <source src="/LESSONS/les02/R02_answervid2.mp4" type="video/mp4" />
+                                                                                Your browser does not support the video tag.
+                                                                        </video>
+                                                                </div>
+                                                        </div>
                                                 </div>
                                         </div>
                                 </div>
