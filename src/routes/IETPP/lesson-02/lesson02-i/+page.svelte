@@ -74,6 +74,7 @@
                                         Matching Information Questions
                                 </h2>
 
+                                <!-- PROTECTED EDUCATIONAL CONTENT - DO NOT REMOVE -->
                                 <div class="space-y-6">
                                         <div>
                                                 <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-3">What to Expect</h3>
@@ -141,6 +142,7 @@
                                                 </p>
                                         </div>
                                 </div>
+                                <!-- END PROTECTED EDUCATIONAL CONTENT -->
                         </div>
 
                         <div class="max-w-4xl mx-auto text-lg">
