@@ -39,7 +39,7 @@
         <div class="max-w-5xl container mx-auto px-6 py-8">
                 <div class="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 mb-8">
                         <div class="text-center">
-                                <div class="text-xs text-left text-teal-600 dark:text-teal-400 mb-4">
+                                <div class="text-xs text-left text-blue-600 dark:text-blue-400 mb-4">
                                         IE2401_02.1
                                 </div>
                                 <h1 class="text-3xl font-bold text-white mb-2">
@@ -50,7 +50,7 @@
                         <div class="text-right mt-6">
                                 <a
                                         href="/IETPP#lesson-02"
-                                        class="text-teal-600 dark:text-teal-400 hover:underline font-semibold"
+                                        class="text-blue-600 dark:text-blue-400 hover:underline font-semibold"
                                         data-sveltekit-reload
                                 >
                                         ← Back to Contents
@@ -62,7 +62,7 @@
         <!-- Page Content -->
         <div style="max-width: 1200px;" class="mx-auto px-6 py-8">
                 <!-- Lesson Title Section -->
-                <section class="bg-teal-600/20 rounded-lg p-8 shadow-sm border border-teal-600/50 mb-8">
+                <section class="bg-blue-600/20 rounded-lg p-8 shadow-sm border border-blue-600/50 mb-8">
                         <div class="flex items-center justify-center gap-4 mb-6">
                                 <div class="text-4xl">📖</div>
                                 <h2 class="text-3xl font-bold text-center text-white">Skills Practice</h2>
@@ -84,22 +84,22 @@
 
                                         <div>
                                                 <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-3">Key Strategies</h3>
-                                                <div class="bg-teal-50 dark:bg-teal-900/20 border border-teal-200 dark:border-teal-800 rounded-lg p-4">
+                                                <div class="bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-lg p-4">
                                                         <ul class="space-y-2 text-gray-700 dark:text-gray-300">
                                                                 <li class="flex items-start">
-                                                                        <span class="text-teal-600 dark:text-teal-400 mr-2">1.</span>
+                                                                        <span class="text-blue-600 dark:text-blue-400 mr-2">1.</span>
                                                                         <span><strong>Skim first:</strong> Read the passage quickly to understand the main idea of each paragraph</span>
                                                                 </li>
                                                                 <li class="flex items-start">
-                                                                        <span class="text-teal-600 dark:text-teal-400 mr-2">2.</span>
+                                                                        <span class="text-blue-600 dark:text-blue-400 mr-2">2.</span>
                                                                         <span><strong>Identify keywords:</strong> Underline key words and phrases in the questions</span>
                                                                 </li>
                                                                 <li class="flex items-start">
-                                                                        <span class="text-teal-600 dark:text-teal-400 mr-2">3.</span>
+                                                                        <span class="text-blue-600 dark:text-blue-400 mr-2">3.</span>
                                                                         <span><strong>Scan for synonyms:</strong> Look for synonyms and paraphrases, not just exact matches</span>
                                                                 </li>
                                                                 <li class="flex items-start">
-                                                                        <span class="text-teal-600 dark:text-teal-400 mr-2">4.</span>
+                                                                        <span class="text-blue-600 dark:text-blue-400 mr-2">4.</span>
                                                                         <span><strong>Work systematically:</strong> Focus on one question at a time to avoid confusion</span>
                                                                 </li>
                                                         </ul>
@@ -126,24 +126,28 @@
                                                 </div>
                                         </div>
 
-                                        <div class="flex justify-center mb-6">
-                                                <img
-                                                        src="/LESSONS/les02/02(i)/Matching_info-techQ.png"
-                                                        alt="IELTS Reading - Matching information"
-                                                        class="w-full max-w-lg rounded border border-gray-600 cursor-pointer"
-                                                        on:click={() => openLightbox('/reading-images/ielts-reading-matching.png')}
-                                                />
-                                        </div>
-
-                                        <div>
-                                                <p class="text-gray-700 dark:text-gray-300 text-lg mb-4">
-                                                        The instructions at the beginning of the question set will tell you to write the letter which corresponds to the answer paragraph, (<strong><i>e.g. A, B, C, ..G</i></strong>) on your answer sheet.
-                                                </p>
-                                        </div>
+                                
                                 </div>
                         </div>
 
                         <div class="max-w-4xl mx-auto text-lg">
+
+
+                                <div>
+                                        <p class="text-gray-700 dark:text-gray-300 text-lg mb-4">
+                                                The instructions at the beginning of the question set will tell you to write the letter which corresponds to the answer paragraph, (<strong><i>e.g. A, B, C, ..G</i></strong>) on your answer sheet.
+                                        </p>
+                                </div>
+                                <div class="flex justify-center mb-6">
+                                        
+                                        <img
+                                                src="/LESSONS/les02/02(i)/Matching_info-exQ.png"
+                                                alt="IELTS Reading - Matching information"
+                                                class="w-full max-w-lg rounded border border-gray-600 cursor-pointer"
+                                                on:click={() => openLightbox('/LESSONS/les02/02(i)/Matching_info-exQ.png')}
+                                        />
+                                </div>
+
                                 <h3 class="text-xl font-bold text-white mb-4 underline">Question technique</h3>
 
                                 <div class="space-y-6">
@@ -256,7 +260,7 @@
                         <a
                                 href="/IETPP#lesson-02"
                                 data-sveltekit-reload
-                                class="inline-flex items-center text-teal-600 dark:text-teal-400 hover:underline font-semibold"
+                                class="inline-flex items-center text-blue-600 dark:text-blue-400 hover:underline font-semibold"
                         >
                                 ← Back to Course Contents
                         </a>
