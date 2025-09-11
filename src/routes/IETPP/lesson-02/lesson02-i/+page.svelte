@@ -128,7 +128,7 @@
 
                                         <div class="flex justify-center mb-6">
                                                 <img
-                                                        src="/reading-images/ielts-reading-matching.png"
+                                                        src="/LESSONS/les02/02(i)/Matching_info-techQ.png"
                                                         alt="IELTS Reading - Matching information"
                                                         class="w-full max-w-lg rounded border border-gray-600 cursor-pointer"
                                                         on:click={() => openLightbox('/reading-images/ielts-reading-matching.png')}
