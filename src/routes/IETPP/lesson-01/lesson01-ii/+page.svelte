@@ -36,7 +36,7 @@
 
 <div class="min-h-screen bg-gray-900 text-white">
         <!-- Lesson Header -->
-        <div class="max-w-5xl container mx-auto px-3 md:px-6 py-8">
+        <div class="max-w-5xl container mx-auto px-3 md:px-6 py-12">
                 <div class="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 mb-8">
                         <div class="text-center">
                                 <div class="text-xs text-left text-teal-600 dark:text-teal-400 mb-4">
@@ -60,31 +60,31 @@
         </div>
 
         <!-- Page Content -->
-        <div style="max-width: 1200px;" class="mx-auto px-3 md:px-6 py-8">
+        <div style="max-width: 1200px;" class="mx-auto px-3 md:px-6 py-12">
                 <!-- Lesson Title Section -->
-                <section class="bg-teal-600/20 rounded-lg p-4 md:p-8 shadow-sm border border-teal-600/50 mb-8">
-                        <div class="flex items-center justify-center gap-4 mb-6">
+                <section class="bg-teal-600/20 rounded-lg p-6 md:p-10 shadow-sm border border-teal-600/50 mb-12">
+                        <div class="flex items-center justify-center gap-4 mb-10">
                                 <div class="text-4xl">👂</div>
                                 <h2 class="text-3xl font-bold text-center text-white">Skills Practice</h2>
                                 <div class="text-4xl">👂</div>
                         </div>
                         
                         <!-- Educational Section -->
-                        <div class="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-sm border border-gray-200 dark:border-gray-700 mb-8">
-                                <h2 class="text-2xl text-center font-bold text-gray-800 dark:text-gray-200 mb-6">
+                        <div class="bg-white dark:bg-gray-800 rounded-lg p-8 shadow-sm border border-gray-200 dark:border-gray-700 mb-12">
+                                <h2 class="text-2xl text-center font-bold text-gray-800 dark:text-gray-200 mb-10">
                                         Short Answer Questions
                                 </h2>
 
-                                <div class="space-y-6">
+                                <div class="space-y-10">
                                         <div>
-                                                <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-3">What to Expect</h3>
-                                                <p class="text-gray-700 dark:text-gray-300 text-lg mb-4">
+                                                <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-6">What to Expect</h3>
+                                                <p class="text-gray-700 dark:text-gray-300 text-lg mb-8">
                                                         Short answer questions in the IELTS Listening test require you to write brief answers using words directly from the audio. These questions test your ability to identify specific factual information such as names, dates, times, numbers, and locations.
                                                 </p>
                                         </div>
 
                                         <div>
-                                                <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-3">Key Strategies</h3>
+                                                <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-6">Key Strategies</h3>
                                                 <div class="bg-teal-50 dark:bg-teal-900/20 border border-teal-200 dark:border-teal-800 rounded-lg p-4">
                                                         <ul class="space-y-2 text-gray-700 dark:text-gray-300">
                                                                 <li class="flex items-start">
@@ -112,7 +112,7 @@
                                         </div>
 
                                         <div>
-                                                <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-3">Common Pitfalls</h3>
+                                                <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-6">Common Pitfalls</h3>
                                                 <div class="bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-lg p-4">
                                                         <ul class="space-y-2 text-gray-700 dark:text-gray-300">
                                                                 <li class="flex items-start">
@@ -138,12 +138,12 @@
                         </div>
 
                         <div class="max-w-4xl mx-auto text-lg">
-                                <p class="text-white mb-6">
+                                <p class="text-white mb-10">
                                         Short answer questions test your comprehension of the audio passage. They are in the form
                                         of direct '<strong>wh</strong>' type questions as in the examples below.
                                 </p>
 
-                                <div class="flex justify-center mb-6">
+                                <div class="flex justify-center mb-10">
                                         <img
                                                 src="/LESSONS/les01/01(ii)/short_answer-ex.png"
                                                 alt="IELTS Listening Short Answer Example"
@@ -152,7 +152,7 @@
                                         />
                                 </div>
 
-                                <p class="text-white mb-12">
+                                <p class="text-white mb-16">
                                         Follow the instructions for each specific short answer section carefully. The instructions
                                         will specify the maximum number of words/numbers that you can write, for example,
                                         "<strong>no more than <em>3 words and/or a number</em></strong>". Write your answers
@@ -160,7 +160,7 @@
                                         your answers from the question paper to the Listening Test answer sheet.
                                 </p>
 
-                                <div class="flex justify-center mb-8">
+                                <div class="flex justify-center mb-12">
                                         <a
                                                 href="https://insideielts.oppyo.com/video/embed/lz5oaewav6"
                                                 target="_blank"
@@ -171,15 +171,15 @@
                                         </a>
                                 </div>
 
-                                <h3 class="text-xl font-bold text-white mb-4 underline">Question technique</h3>
+                                <h3 class="text-xl font-bold text-white mb-8 underline">Question technique</h3>
 
-                                <p class="text-white mb-6">
+                                <p class="text-white mb-10">
                                         Use the time given at the beginning of each section before the audio begins (about
                                         <strong>40-50 seconds</strong> in total) to take note of the 'wh' question word, e.g.
                                         who, what, why, where, which or how, and to underline key topic words in the questions.
                                 </p>
 
-                                <div class="flex justify-center mb-6">
+                                <div class="flex justify-center mb-10">
                                         <img
                                                 src="/LESSONS/les01/01(ii)/short_answer-tech.png"
                                                 alt="IELTS Listening Short Answer Technique"
@@ -198,7 +198,7 @@
                                         understanding of this question format.
                                 </p>
 
-                                <div class="flex justify-center mb-8">
+                                <div class="flex justify-center mb-12">
                                         <video
                                                 controls
                                                 class="w-full max-w-2xl bg-black rounded border border-gray-600"
@@ -209,7 +209,7 @@
                                 </div>
 
                                 <div class="text-center">
-                                        <p class="text-white text-xl font-bold mb-12">
+                                        <p class="text-white text-xl font-bold mb-16">
                                                 Test your understanding of LISTENING - Short answer Qs
                                         </p>
 
@@ -226,8 +226,8 @@
                 </section>
 
                 <!-- End of Lesson -->
-                <section class="text-center py-8">
-                        <p class="text-white mb-12">End of Lesson 01 (ii)</p>
+                <section class="text-center py-12">
+                        <p class="text-white mb-16">End of Lesson 01 (ii)</p>
                         <a
                                 href="/IETPP#lesson-01"
                                 data-sveltekit-reload
