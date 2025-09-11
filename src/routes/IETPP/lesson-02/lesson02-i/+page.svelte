@@ -76,17 +76,62 @@
 
                                 <div class="space-y-6">
                                         <div>
+                                                <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-3">What to Expect</h3>
                                                 <p class="text-gray-700 dark:text-gray-300 text-lg mb-4">
                                                         <strong>Matching information</strong> question sets usually appear at the beginning of a section. Each paragraph in the text will be assigned an alphabetical letter and the questions will ask you to locate the paragraph containing specific information. The skill is to be able to skim the whole passage quickly for gist, to get a rough understanding of what each paragraph is about, before scanning for specific key-word terms to allow you to confirm your answer.
                                                 </p>
                                         </div>
 
+                                        <div>
+                                                <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-3">Key Strategies</h3>
+                                                <div class="bg-teal-50 dark:bg-teal-900/20 border border-teal-200 dark:border-teal-800 rounded-lg p-4">
+                                                        <ul class="space-y-2 text-gray-700 dark:text-gray-300">
+                                                                <li class="flex items-start">
+                                                                        <span class="text-teal-600 dark:text-teal-400 mr-2">1.</span>
+                                                                        <span><strong>Skim first:</strong> Read the passage quickly to understand the main idea of each paragraph</span>
+                                                                </li>
+                                                                <li class="flex items-start">
+                                                                        <span class="text-teal-600 dark:text-teal-400 mr-2">2.</span>
+                                                                        <span><strong>Identify keywords:</strong> Underline key words and phrases in the questions</span>
+                                                                </li>
+                                                                <li class="flex items-start">
+                                                                        <span class="text-teal-600 dark:text-teal-400 mr-2">3.</span>
+                                                                        <span><strong>Scan for synonyms:</strong> Look for synonyms and paraphrases, not just exact matches</span>
+                                                                </li>
+                                                                <li class="flex items-start">
+                                                                        <span class="text-teal-600 dark:text-teal-400 mr-2">4.</span>
+                                                                        <span><strong>Work systematically:</strong> Focus on one question at a time to avoid confusion</span>
+                                                                </li>
+                                                        </ul>
+                                                </div>
+                                        </div>
+
+                                        <div>
+                                                <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-3">Common Pitfalls</h3>
+                                                <div class="bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-lg p-4">
+                                                        <ul class="space-y-2 text-gray-700 dark:text-gray-300">
+                                                                <li class="flex items-start">
+                                                                        <span class="text-red-600 dark:text-red-400 mr-2">⚠️</span>
+                                                                        <span>Looking for exact word matches instead of synonyms and paraphrases</span>
+                                                                </li>
+                                                                <li class="flex items-start">
+                                                                        <span class="text-red-600 dark:text-red-400 mr-2">⚠️</span>
+                                                                        <span>Using the same paragraph letter more than once when not allowed</span>
+                                                                </li>
+                                                                <li class="flex items-start">
+                                                                        <span class="text-red-600 dark:text-red-400 mr-2">⚠️</span>
+                                                                        <span>Spending too much time on difficult questions and running out of time</span>
+                                                                </li>
+                                                        </ul>
+                                                </div>
+                                        </div>
+
                                         <div class="flex justify-center mb-6">
                                                 <img
-                                                        src="/LESSONS/les02/02(i)/Matching_info-exQ.png"
+                                                        src="/reading-images/ielts-reading-matching.png"
                                                         alt="IELTS Reading - Matching information"
                                                         class="w-full max-w-lg rounded border border-gray-600 cursor-pointer"
-                                                        on:click={() => openLightbox('/LESSONS/les02/02(i)/Matching_info-exQ.png')}
+                                                        on:click={() => openLightbox('/reading-images/ielts-reading-matching.png')}
                                                 />
                                         </div>
 
@@ -109,10 +154,10 @@
 
                                                 <div class="flex justify-center mb-6">
                                                         <img
-                                                                src="/reading-images/ielts-reading-headings.png"
+                                                                src="/LESSONS/les02/02(i)/Matching_info-techQ.png"
                                                                 alt="IELTS Reading - technique questions"
                                                                 class="w-full max-w-2xl rounded border-2 border-black cursor-pointer"
-                                                                on:click={() => openLightbox('/reading-images/ielts-reading-headings.png')}
+                                                                on:click={() => openLightbox('/LESSONS/les02/02(i)/Matching_info-techQ.png')}
                                                         />
                                                 </div>
                                         </div>
@@ -125,16 +170,16 @@
                                                 <div class="flex justify-center mb-6">
                                                         <div class="flex flex-col items-center">
                                                                 <img
-                                                                        src="/reading-images/ielts-reading-features.png"
+                                                                        src="/LESSONS/les02/02(i)/Matching_info-tech1.png"
                                                                         alt="IELTS Reading - scanning technique"
                                                                         class="w-full max-w-2xl rounded-t border-2 border-black cursor-pointer mb-1"
-                                                                        on:click={() => openLightbox('/reading-images/ielts-reading-features.png')}
+                                                                        on:click={() => openLightbox('/LESSONS/les02/02(i)/Matching_info-tech1.png')}
                                                                 />
                                                                 <img
-                                                                        src="/reading-images/ielts-reading-completion.png"
+                                                                        src="/LESSONS/les02/02(i)/Matching_info-tech2.png"
                                                                         alt="IELTS Reading - completion technique"
                                                                         class="w-full max-w-2xl rounded-b border-2 border-black cursor-pointer"
-                                                                        on:click={() => openLightbox('/reading-images/ielts-reading-completion.png')}
+                                                                        on:click={() => openLightbox('/LESSONS/les02/02(i)/Matching_info-tech2.png')}
                                                                 />
                                                         </div>
                                                 </div>
@@ -165,10 +210,10 @@
 
                                                 <div class="flex justify-center mb-6">
                                                         <img
-                                                                src="/reading-images/ielts-reading-answer-sheet.jpg"
+                                                                src="/LESSONS/les02/02(i)/Matching_info-techans.png"
                                                                 alt="IELTS Reading - answer sheet"
-                                                                class="w-full max-w-lg rounded border border-gray-600 cursor-pointer"
-                                                                on:click={() => openLightbox('/reading-images/ielts-reading-answer-sheet.jpg')}
+                                                                class="w-full max-w-xs rounded border border-gray-600 cursor-pointer"
+                                                                on:click={() => openLightbox('/LESSONS/les02/02(i)/Matching_info-techans.png')}
                                                         />
                                                 </div>
                                         </div>
