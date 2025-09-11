@@ -311,8 +311,8 @@
                                                 
                                                 <!-- Desktop side-by-side layout, mobile stacked -->
                                                 <div class="flex flex-col lg:flex-row gap-8 items-start">
-                                                        <!-- Left side: Image and Timer -->
-                                                        <div class="w-full lg:w-1/2">
+                                                        <!-- Left side: Image and Timer (3/4 width) -->
+                                                        <div class="w-full lg:w-3/4">
                                                                 <img
                                                                         src="/LESSONS/les02/Reading_Diagcompletion-prac.png"
                                                                         alt="Reading diagram labeling practice"
@@ -343,8 +343,8 @@
                                                                 </div>
                                                         </div>
                                                         
-                                                        <!-- Right side: Questions, Answers Button, and Video -->
-                                                        <div class="w-full lg:w-1/2">
+                                                        <!-- Right side: Questions and Answers Button (1/4 width) -->
+                                                        <div class="w-full lg:w-1/4">
 
                                                                 <div class="text-center mb-6">
                                                                         <p class="text-white mb-4 font-semibold">Answer Sheet</p>
@@ -437,15 +437,17 @@
                                                                         </div>
                                                                 </div>
                                                                 {/if}
-
-                                                                <!-- Answer video at bottom of right column -->
-                                                                <div class="text-center">
-                                                                        <p class="text-white mb-2 font-semibold">Answer video</p>
-                                                                        <video controls class="w-full rounded border border-gray-500">
-                                                                                <source src="/LESSONS/les02/R02_answervid1.mp4" type="video/mp4" />
-                                                                                Your browser does not support the video tag.
-                                                                        </video>
-                                                                </div>
+                                                        </div>
+                                                </div>
+                                                
+                                                <!-- Answer video centered in container -->
+                                                <div class="text-center mt-8">
+                                                        <p class="text-white mb-2 font-semibold">Answer video</p>
+                                                        <div class="max-w-2xl mx-auto">
+                                                                <video controls class="w-full rounded border border-gray-500">
+                                                                        <source src="/LESSONS/les02/R02_answervid1.mp4" type="video/mp4" />
+                                                                        Your browser does not support the video tag.
+                                                                </video>
                                                         </div>
                                                 </div>
                                         </div>
@@ -458,8 +460,8 @@
                                                 
                                                 <!-- Desktop side-by-side layout, mobile stacked -->
                                                 <div class="flex flex-col lg:flex-row gap-8 items-start">
-                                                        <!-- Left side: Image and Timer -->
-                                                        <div class="w-full lg:w-1/2">
+                                                        <!-- Left side: Image and Timer (3/4 width) -->
+                                                        <div class="w-full lg:w-3/4">
                                                                 <img
                                                                         src="/LESSONS/les02/Reading_Flowchart-prac.png"
                                                                         alt="Reading flow chart completion practice"
@@ -490,8 +492,8 @@
                                                                 </div>
                                                         </div>
                                                         
-                                                        <!-- Right side: Questions, Answers Button, and Video -->
-                                                        <div class="w-full lg:w-1/2">
+                                                        <!-- Right side: Questions and Answers Button (1/4 width) -->
+                                                        <div class="w-full lg:w-1/4">
 
                                                                 <div class="text-center mb-6">
                                                                         <p class="text-white mb-4 font-semibold">Answer Sheet</p>
@@ -584,15 +586,17 @@
                                                                         </div>
                                                                 </div>
                                                                 {/if}
-
-                                                                <!-- Answer video at bottom of right column -->
-                                                                <div class="text-center">
-                                                                        <p class="text-white mb-2 font-semibold">Answer video</p>
-                                                                        <video controls class="w-full rounded border border-gray-500">
-                                                                                <source src="/LESSONS/les02/R02_answervid2.mp4" type="video/mp4" />
-                                                                                Your browser does not support the video tag.
-                                                                        </video>
-                                                                </div>
+                                                        </div>
+                                                </div>
+                                                
+                                                <!-- Answer video centered in container -->
+                                                <div class="text-center mt-8">
+                                                        <p class="text-white mb-2 font-semibold">Answer video</p>
+                                                        <div class="max-w-2xl mx-auto">
+                                                                <video controls class="w-full rounded border border-gray-500">
+                                                                        <source src="/LESSONS/les02/R02_answervid2.mp4" type="video/mp4" />
+                                                                        Your browser does not support the video tag.
+                                                                </video>
                                                         </div>
                                                 </div>
                                         </div>
