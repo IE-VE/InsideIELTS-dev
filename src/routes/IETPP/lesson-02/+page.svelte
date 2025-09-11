@@ -311,21 +311,24 @@
                                                 
                                                 <!-- Desktop side-by-side layout, mobile stacked -->
                                                 <div class="flex flex-col lg:flex-row gap-8 items-start">
-                                                        <!-- Left side: Image and Timer (3/4 width) -->
+                                                        <!-- Left side: Image (3/4 width) -->
                                                         <div class="w-full lg:w-3/4">
                                                                 <img
                                                                         src="/LESSONS/les02/Reading_Diagcompletion-prac.png"
                                                                         alt="Reading diagram labeling practice"
-                                                                        class="w-full rounded border border-gray-500 mb-6 cursor-pointer"
+                                                                        class="w-full rounded border border-gray-500 cursor-pointer"
                                                                         onclick={() => openLightbox('/LESSONS/les02/Reading_Diagcompletion-prac.png')}
                                                                 />
-                                                                
-                                                                <!-- Timer below image -->
-                                                                <div class="text-center">
+                                                        </div>
+                                                        
+                                                        <!-- Right side: Timer, Questions and Answers Button (1/4 width) -->
+                                                        <div class="w-full lg:w-1/4">
+                                                                <!-- Timer above answer sheet -->
+                                                                <div class="text-center mb-6">
                                                                         <p class="text-teal-600 dark:text-teal-400 text-lg font-bold mb-3">
                                                                                 Beat the clock - {formatTime(timerDiagram)}
                                                                         </p>
-                                                                        <div class="flex gap-2 justify-center">
+                                                                        <div class="flex gap-2 justify-center mb-6">
                                                                                 <button
                                                                                         onclick={isRunningDiagram ? stopDiagramTimer : startDiagramTimer}
                                                                                         class="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded text-sm transition-colors"
@@ -341,10 +344,6 @@
                                                                                 </button>
                                                                         </div>
                                                                 </div>
-                                                        </div>
-                                                        
-                                                        <!-- Right side: Questions and Answers Button (1/4 width) -->
-                                                        <div class="w-full lg:w-1/4">
 
                                                                 <div class="text-center mb-6">
                                                                         <p class="text-white mb-4 font-semibold">Answer Sheet</p>
@@ -460,21 +459,24 @@
                                                 
                                                 <!-- Desktop side-by-side layout, mobile stacked -->
                                                 <div class="flex flex-col lg:flex-row gap-8 items-start">
-                                                        <!-- Left side: Image and Timer (3/4 width) -->
+                                                        <!-- Left side: Image (3/4 width) -->
                                                         <div class="w-full lg:w-3/4">
                                                                 <img
                                                                         src="/LESSONS/les02/Reading_Flowchart-prac.png"
                                                                         alt="Reading flow chart completion practice"
-                                                                        class="w-full rounded border border-gray-500 mb-6 cursor-pointer"
+                                                                        class="w-full rounded border border-gray-500 cursor-pointer"
                                                                         onclick={() => openLightbox('/LESSONS/les02/Reading_Flowchart-prac.png')}
                                                                 />
-                                                                
-                                                                <!-- Timer below image -->
-                                                                <div class="text-center">
+                                                        </div>
+                                                        
+                                                        <!-- Right side: Timer, Questions and Answers Button (1/4 width) -->
+                                                        <div class="w-full lg:w-1/4">
+                                                                <!-- Timer above answer sheet -->
+                                                                <div class="text-center mb-6">
                                                                         <p class="text-teal-600 dark:text-teal-400 text-lg font-bold mb-3">
                                                                                 Beat the clock - {formatTime(timerFlowchart)}
                                                                         </p>
-                                                                        <div class="flex gap-2 justify-center">
+                                                                        <div class="flex gap-2 justify-center mb-6">
                                                                                 <button
                                                                                         onclick={isRunningFlowchart ? stopFlowchartTimer : startFlowchartTimer}
                                                                                         class="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded text-sm transition-colors"
@@ -490,10 +492,6 @@
                                                                                 </button>
                                                                         </div>
                                                                 </div>
-                                                        </div>
-                                                        
-                                                        <!-- Right side: Questions and Answers Button (1/4 width) -->
-                                                        <div class="w-full lg:w-1/4">
 
                                                                 <div class="text-center mb-6">
                                                                         <p class="text-white mb-4 font-semibold">Answer Sheet</p>
