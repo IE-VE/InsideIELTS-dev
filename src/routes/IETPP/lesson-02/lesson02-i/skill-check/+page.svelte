@@ -133,10 +133,9 @@
                         <h3 class="text-2xl font-bold text-center text-white mb-8">READING - Matching information</h3>
                         
                         <!-- Desktop: Side-by-side layout (768px+), Mobile: Stacked -->
-                        <div class="flex flex-col md:flex-row md:gap-8 md:items-start">
+                        <div class="flex flex-col md:flex-row gap-6 items-start mb-6">
                                 <!-- Reading Passage -->
-                                <div class="md:flex-1 mb-8 md:mb-0">
-                                        <div class="bg-white dark:bg-gray-800 rounded-lg p-6 md:p-8 shadow-sm border border-gray-200 dark:border-gray-700 text-gray-900 dark:text-gray-100">
+                                <div class="md:w-2/3 bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8 max-h-[70vh] overflow-y-auto">
                                                 <h4 class="text-xl font-bold mb-6 text-center">Could Urban Engineers Learn from Dance?</h4>
                                                 <div class="space-y-4 text-m leading-relaxed">
                                                         <p class="relative pl-5"><span class="font-bold absolute -left-3">A.</span>The way we travel around cities has a major impact on whether they are sustainable. Transportation is climate change's fastest growing contributor, so to reduce emissions, more residents need to be persuaded to use public transport, walk, bike, or travel by some other form of transport, rather than drive cars. Various city councils have invested heavily in public transport networks and bike lanes, but the take-up has been disappointing. Psychology and practicality are other considerations: people's perceptions of route options can be flawed, and it can be hard to work out the logistics of a journey between multiple locations using several modes of transport. Surveying what works and what doesn't, a new guide is being drawn up for city officials on how to provide higher-quality, easier-to-navigate systems that boost traveling efficiency and reduce carbon emissions. The research looks both to the psychology of travel decisions and to the mechanics of "wayfinding", that is, how people navigate through spaces. City officials often "have a feeling" about why a transport system works or doesn't, the researchers say, but rarely "a way to design it better". It is here that dance may hold some of the answers.</p>
@@ -153,12 +152,10 @@
 
                                                         <p class="relative pl-5"><span class="font-bold absolute -left-3">G.</span>Observing the choreographer Wayne McGregor, the author discusses how choreographers develop their understanding of movement by developing an intimate knowledge of dance from the body outward, becoming movement researchers in the process. The choreographer is a "close observer of bodies in movement" and the nature of the relationship between the body and the space it occupies. This involves understanding not just the aesthetics of movement but also the ways in which movement creates emotional impacts: how we move affects how we feel. An arm raised to shoulder height has a different emotional connotation from an arm raised above the head; a sudden direction change in movement communicates something different from a gradual change in direction. Choreographers who understand these connections between movement, emotion, and meaning can make their art more effective at achieving its goals – not only to look good, but also to provoke a desired reaction in an audience. Such knowledge could inform designers seeking to create built environments and transportation systems that are not only functional, but are also emotionally satisfying: places that make people feel good about living there and, in turn, will motivate them to want to stay there. The goal is not to abandon the analytical processes and the rules we have developed to design our cities, but to reinvigorate them with a more felt sense of experience. Cities should not only function efficiently, but they should also be places where people enjoy their daily lives.</p>
                                                 </div>
-                                        </div>
                                 </div>
-
+                                
                                 <!-- Questions Section -->
-                                <div class="md:w-96 md:flex-shrink-0">
-                                        <div class="bg-white dark:bg-gray-800 rounded-lg p-6 md:p-8 shadow-sm border border-gray-200 dark:border-gray-700 mb-12 md:mb-0 text-gray-900 dark:text-gray-100">
+                                <div class="md:w-1/3 bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8 max-h-[70vh] overflow-y-auto">
                                                 <h4 class="text-lg font-bold mb-4">Questions 1–6</h4>
                                                 <p class="mb-4 text-sm">Reading Passage 1 has seven paragraphs, A–G. Which paragraph contains the following information?</p>
                                                 <p class="mb-4 text-sm font-medium">Write the correct letter, A–G, in boxes 1–6 on your answer sheet.</p>
@@ -218,7 +215,6 @@
                                                                 </div>
                                                         </div>
                                                 </div>
-                                        </div>
                                 </div>
                         </div>
                         <!-- SC2I_PASSAGE_END -->
