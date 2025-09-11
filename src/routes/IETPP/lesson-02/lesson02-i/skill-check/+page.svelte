@@ -159,7 +159,7 @@
                         <h3 class="text-2xl font-bold text-center text-white mb-8">READING - Matching information</h3>
                         
                         <!-- Desktop: Side-by-side layout (768px+), Mobile: Stacked -->
-                        <div class="flex flex-col md:flex-row gap-6 items-stretch mb-6 min-h-0">
+                        <div class="flex flex-col md:flex-row gap-6 items-start mb-6 min-h-0">
                                 <!-- Reading Passage -->
                                 <div class="md:w-2/3 bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8 overflow-y-auto" bind:this={passageScrollEl}>
                                                 <h4 class="text-xl font-bold mb-6 text-center">Could Urban Engineers Learn from Dance?</h4>
