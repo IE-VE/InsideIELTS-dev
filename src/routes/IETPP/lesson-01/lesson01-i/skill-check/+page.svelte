@@ -31,16 +31,16 @@
                 
                 setTimeout(() => {
                         const correctAnswers = {
-                                q11: ['c'],
-                                q12: ['a'],
-                                q13: ['b'],
-                                q14: ['c'],
-                                q15: ['a'],
-                                q21: ['b'],
-                                q22: ['c'],
-                                q23: ['a'],
-                                q24: ['b'],
-                                q25: ['c']
+                                q11: ['C', 'c'],
+                                q12: ['A', 'a'],
+                                q13: ['B', 'b'],
+                                q14: ['C', 'c'],
+                                q15: ['A', 'a'],
+                                q21: ['B', 'b'],
+                                q22: ['C', 'c'],
+                                q23: ['A', 'a'],
+                                q24: ['B', 'b'],
+                                q25: ['C', 'c']
                         };
 
                         const userAnswers = { q11, q12, q13, q14, q15, q21, q22, q23, q24, q25 };
@@ -48,7 +48,7 @@
                         let totalCorrect = 0;
 
                         Object.entries(userAnswers).forEach(([key, answer]) => {
-                                const userAnswer = answer.toLowerCase().trim();
+                                const userAnswer = answer.trim();
                                 const correct = correctAnswers[key].some(correctAnswer => 
                                         userAnswer === correctAnswer
                                 );
@@ -170,43 +170,63 @@
                                                 <div class="flex flex-col gap-3 max-w-xs mx-auto mb-4">
                                                         <div class="flex items-center gap-3">
                                                                 <span class="text-white text-sm font-medium w-8">Q11</span>
-                                                                <input 
-                                                                        type="text" 
+                                                                <select 
                                                                         bind:value={q11}
-                                                                        class="flex-1 px-3 py-2 bg-gray-700 border border-gray-500 rounded text-white text-sm text-left"
-                                                                />
+                                                                        class="flex-1 px-3 py-2 bg-gray-700 border border-gray-500 rounded text-white text-sm"
+                                                                >
+                                                                        <option value="">Select...</option>
+                                                                        <option value="A">A</option>
+                                                                        <option value="B">B</option>
+                                                                        <option value="C">C</option>
+                                                                </select>
                                                         </div>
                                                         <div class="flex items-center gap-3">
                                                                 <span class="text-white text-sm font-medium w-8">Q12</span>
-                                                                <input 
-                                                                        type="text" 
+                                                                <select 
                                                                         bind:value={q12}
-                                                                        class="flex-1 px-3 py-2 bg-gray-700 border border-gray-500 rounded text-white text-sm text-left"
-                                                                />
+                                                                        class="flex-1 px-3 py-2 bg-gray-700 border border-gray-500 rounded text-white text-sm"
+                                                                >
+                                                                        <option value="">Select...</option>
+                                                                        <option value="A">A</option>
+                                                                        <option value="B">B</option>
+                                                                        <option value="C">C</option>
+                                                                </select>
                                                         </div>
                                                         <div class="flex items-center gap-3">
                                                                 <span class="text-white text-sm font-medium w-8">Q13</span>
-                                                                <input 
-                                                                        type="text" 
+                                                                <select 
                                                                         bind:value={q13}
-                                                                        class="flex-1 px-3 py-2 bg-gray-700 border border-gray-500 rounded text-white text-sm text-left"
-                                                                />
+                                                                        class="flex-1 px-3 py-2 bg-gray-700 border border-gray-500 rounded text-white text-sm"
+                                                                >
+                                                                        <option value="">Select...</option>
+                                                                        <option value="A">A</option>
+                                                                        <option value="B">B</option>
+                                                                        <option value="C">C</option>
+                                                                </select>
                                                         </div>
                                                         <div class="flex items-center gap-3">
                                                                 <span class="text-white text-sm font-medium w-8">Q14</span>
-                                                                <input 
-                                                                        type="text" 
+                                                                <select 
                                                                         bind:value={q14}
-                                                                        class="flex-1 px-3 py-2 bg-gray-700 border border-gray-500 rounded text-white text-sm text-left"
-                                                                />
+                                                                        class="flex-1 px-3 py-2 bg-gray-700 border border-gray-500 rounded text-white text-sm"
+                                                                >
+                                                                        <option value="">Select...</option>
+                                                                        <option value="A">A</option>
+                                                                        <option value="B">B</option>
+                                                                        <option value="C">C</option>
+                                                                </select>
                                                         </div>
                                                         <div class="flex items-center gap-3">
                                                                 <span class="text-white text-sm font-medium w-8">Q15</span>
-                                                                <input 
-                                                                        type="text" 
+                                                                <select 
                                                                         bind:value={q15}
-                                                                        class="flex-1 px-3 py-2 bg-gray-700 border border-gray-500 rounded text-white text-sm text-left"
-                                                                />
+                                                                        class="flex-1 px-3 py-2 bg-gray-700 border border-gray-500 rounded text-white text-sm"
+                                                                >
+                                                                        <option value="">Select...</option>
+                                                                        <option value="A">A</option>
+                                                                        <option value="B">B</option>
+                                                                        <option value="C">C</option>
+                                                                </select>
                                                         </div>
                                                 </div>
                                         </div>
@@ -246,43 +266,63 @@
                                                 <div class="flex flex-col gap-3 max-w-xs mx-auto mb-4">
                                                         <div class="flex items-center gap-3">
                                                                 <span class="text-white text-sm font-medium w-8">Q21</span>
-                                                                <input 
-                                                                        type="text" 
+                                                                <select 
                                                                         bind:value={q21}
-                                                                        class="flex-1 px-3 py-2 bg-gray-700 border border-gray-500 rounded text-white text-sm text-left"
-                                                                />
+                                                                        class="flex-1 px-3 py-2 bg-gray-700 border border-gray-500 rounded text-white text-sm"
+                                                                >
+                                                                        <option value="">Select...</option>
+                                                                        <option value="A">A</option>
+                                                                        <option value="B">B</option>
+                                                                        <option value="C">C</option>
+                                                                </select>
                                                         </div>
                                                         <div class="flex items-center gap-3">
                                                                 <span class="text-white text-sm font-medium w-8">Q22</span>
-                                                                <input 
-                                                                        type="text" 
+                                                                <select 
                                                                         bind:value={q22}
-                                                                        class="flex-1 px-3 py-2 bg-gray-700 border border-gray-500 rounded text-white text-sm text-left"
-                                                                />
+                                                                        class="flex-1 px-3 py-2 bg-gray-700 border border-gray-500 rounded text-white text-sm"
+                                                                >
+                                                                        <option value="">Select...</option>
+                                                                        <option value="A">A</option>
+                                                                        <option value="B">B</option>
+                                                                        <option value="C">C</option>
+                                                                </select>
                                                         </div>
                                                         <div class="flex items-center gap-3">
                                                                 <span class="text-white text-sm font-medium w-8">Q23</span>
-                                                                <input 
-                                                                        type="text" 
+                                                                <select 
                                                                         bind:value={q23}
-                                                                        class="flex-1 px-3 py-2 bg-gray-700 border border-gray-500 rounded text-white text-sm text-left"
-                                                                />
+                                                                        class="flex-1 px-3 py-2 bg-gray-700 border border-gray-500 rounded text-white text-sm"
+                                                                >
+                                                                        <option value="">Select...</option>
+                                                                        <option value="A">A</option>
+                                                                        <option value="B">B</option>
+                                                                        <option value="C">C</option>
+                                                                </select>
                                                         </div>
                                                         <div class="flex items-center gap-3">
                                                                 <span class="text-white text-sm font-medium w-8">Q24</span>
-                                                                <input 
-                                                                        type="text" 
+                                                                <select 
                                                                         bind:value={q24}
-                                                                        class="flex-1 px-3 py-2 bg-gray-700 border border-gray-500 rounded text-white text-sm text-left"
-                                                                />
+                                                                        class="flex-1 px-3 py-2 bg-gray-700 border border-gray-500 rounded text-white text-sm"
+                                                                >
+                                                                        <option value="">Select...</option>
+                                                                        <option value="A">A</option>
+                                                                        <option value="B">B</option>
+                                                                        <option value="C">C</option>
+                                                                </select>
                                                         </div>
                                                         <div class="flex items-center gap-3">
                                                                 <span class="text-white text-sm font-medium w-8">Q25</span>
-                                                                <input 
-                                                                        type="text" 
+                                                                <select 
                                                                         bind:value={q25}
-                                                                        class="flex-1 px-3 py-2 bg-gray-700 border border-gray-500 rounded text-white text-sm text-left border-b-2 border-black"
-                                                                />
+                                                                        class="flex-1 px-3 py-2 bg-gray-700 border border-gray-500 rounded text-white text-sm border-b-2 border-black"
+                                                                >
+                                                                        <option value="">Select...</option>
+                                                                        <option value="A">A</option>
+                                                                        <option value="B">B</option>
+                                                                        <option value="C">C</option>
+                                                                </select>
                                                         </div>
                                                 </div>
                                         </div>
