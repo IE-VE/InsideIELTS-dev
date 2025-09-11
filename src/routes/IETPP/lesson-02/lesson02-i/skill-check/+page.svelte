@@ -30,10 +30,10 @@
                 
                 setTimeout(() => {
                         const correctAnswers = {
-                                q1: ['A', 'a'],
-                                q2: ['D', 'd'],
-                                q3: ['B', 'b'],
-                                q4: ['C', 'c'],
+                                q1: ['B', 'b'],
+                                q2: ['C', 'c'],
+                                q3: ['F', 'f'],
+                                q4: ['D', 'd'],
                                 q5: ['E', 'e'],
                                 q6: ['A', 'a']
                         };
@@ -125,116 +125,79 @@
                         </p>
 
                         <!-- Exercise -->
-                        <div class="bg-blue-600/20 rounded-lg p-6 md:p-10 border border-blue-600/50 mb-12">
-                                <div class="bg-blue-600 text-white px-4 py-2 rounded-lg text-center font-bold mb-10">
-                                        SC2(i)
-                                </div>
-                                
-                                <h3 class="text-2xl font-bold text-center text-white mb-12">READING - Matching information</h3>
+                        <!-- SC2I_PASSAGE_START -->
+                        <div class="bg-blue-600 text-white px-4 py-2 rounded-lg text-center font-bold mb-10">
+                                SC2(i)
+                        </div>
+                        
+                        <h3 class="text-2xl font-bold text-center text-white mb-8">READING - Matching information</h3>
+                        
+                        <div class="bg-white dark:bg-gray-800 rounded-lg p-6 md:p-8 shadow-sm border border-gray-200 dark:border-gray-700 mb-12 text-gray-900 dark:text-gray-100">
+                                <h4 class="text-xl font-bold mb-6 text-center">Could urban engineers learn from dance?</h4>
+                                <div class="space-y-4 text-sm leading-relaxed">
+                                        <p><span class="font-bold">A.</span> The way we travel around cities has a major impact on whether they are sustainable. Transportation is climate change's fastest growing contributor, so to reduce emissions, more residents need to be persuaded to use public transport, walk, bike, or travel by some other form of transport, rather than drive cars. Various city councils have invested heavily in public transport networks and bike lanes, but the take-up has been disappointing. Psychology and practicality are other considerations: people's perceptions of route options can be flawed, and it can be hard to work out the logistics of a journey between multiple locations using several modes of transport. Surveying what works and what doesn't, a new guide is being drawn up for city officials on how to provide higher-quality, easier-to-navigate systems that boost traveling efficiency and reduce carbon emissions. The research looks both to the psychology of travel decisions and to the mechanics of "wayfinding", that is, how people navigate through spaces. City officials often "have a feeling" about why a transport system works or doesn't, the researchers say, but rarely "a way to design it better". It is here that dance may hold some of the answers.</p>
 
-                                <div class="bg-white dark:bg-gray-800 rounded-lg p-6 md:p-8 shadow-sm border border-gray-200 dark:border-gray-700 mb-12">
-                                        
-                                        <!-- Reading Text Images -->
-                                        <div class="text-center mb-12">
-                                                <img
-                                                        src="/LESSONS/les02/02(i)/Matching_info-SCtext1.png"
-                                                        alt="Reading matching information text part 1"
-                                                        class="mx-auto rounded border-t-2 border-black cursor-pointer max-w-full mb-4"
-                                                        style="margin-top: 4rem;"
-                                                        on:click={() => openLightbox('/LESSONS/les02/02(i)/Matching_info-SCtext1.png')}
-                                                />
-                                                
-                                                <img
-                                                        src="/LESSONS/les02/02(i)/Matching_info-SCtext2.png"
-                                                        alt="Reading matching information text part 2"
-                                                        class="mx-auto rounded cursor-pointer max-w-full mb-4"
-                                                        on:click={() => openLightbox('/LESSONS/les02/02(i)/Matching_info-SCtext2.png')}
-                                                />
-                                                
-                                                <img
-                                                        src="/LESSONS/les02/02(i)/Matching_info-SCtext3b.png"
-                                                        alt="Reading matching information text part 3"
-                                                        class="mx-auto rounded border-b-2 border-black cursor-pointer max-w-full"
-                                                        style="margin-bottom: 6rem;"
-                                                        on:click={() => openLightbox('/LESSONS/les02/02(i)/Matching_info-SCtext3b.png')}
-                                                />
-                                                
-                                                <p class="text-sm text-gray-600 dark:text-gray-400 mt-4">Click to enlarge</p>
-                                        </div>
+                                        <p><span class="font-bold">B.</span> Dance might hold some of the answers. That sounds ridiculous, I know, but it is not as odd as it first appears. Both dance and the flow of people through a city involve bodies moving through space in both planned and unpredictable ways. "There is already something choreographic about the way traffic flows through a well-designed city," notes Jennie Syson, director of the World Cities Culture Forum. The question is whether the latest discoveries in choreography a field that is continually experimenting with how the human body moves through space, both alone and in groups might help us find more efficient ways for people to move through cities. The world's most eminent choreographer, Twyla Tharp, has deliberately used scientific research and analytical tools to create performance pieces, as well as using her work to better understand such research. Scientists, meanwhile, are increasingly using this analogy to describe their work: scientists studying the flocking behaviour of birds, for example, often use choreographic terms like "coordination", "sudden direction change" and "collective movement" when describing their research.</p>
 
-                                        <!-- Questions Section -->
-                                        <div class="text-center mb-10">
-                                                <small class="text-gray-600 dark:text-gray-400 font-bold text-lg">Q1 - 6</small>
-                                        </div>
-                                        
-                                        <div class="text-center mb-12">
-                                                <img
-                                                        src="/LESSONS/les02/02(i)/Matching_info-SCQ.png"
-                                                        alt="Reading matching information questions 1-6"
-                                                        class="mx-auto rounded border border-gray-600 cursor-pointer max-w-full"
-                                                        style="margin-bottom: 6rem;"
-                                                        on:click={() => openLightbox('/LESSONS/les02/02(i)/Matching_info-SCQ.png')}
-                                                />
-                                                <p class="text-sm text-gray-600 dark:text-gray-400 mt-2">Click to enlarge</p>
-                                        </div>
+                                        <p><span class="font-bold">C.</span> Whereas medieval builders improvised and adapted construction through the intimacy of their relationship with materials and environment, building designs are now conceived and stored in media separated from the physical and social realities they are building for, often someone else's reality. The products of design from building to infrastructure to articles like bridges often bear the marks of their detachment: generic, efficient, but somehow lacking in fit to their specific contexts. This is partly an inevitable result of increased scale, but a design practice that is rooted in experience (embodied knowledge) provides a useful complement to the abstracted processes necessary to realize large and complex designs. Unthinking use of design software then prevents conceptual creativity. A lot of design software is predicated on the idea that design is a problem to be solved through the accelerated comparison of options, and the design options are generally an inheritance from the way we've already been designing. Compare this to dance, where choreographers have a deep connection to the body, and have developed a sophisticated understanding of how materials and spaces interconnect. The choreographer Wayne McGregor uses mathematical models and algorithmic processes in his work, but the way he describes his relationship with technology is instructive: "The computer is not the brain; the body is the brain." In other words, digital tools should be used to support and augment bodily knowledge, not to replace it.</p>
 
-                                        <!-- Answer Inputs -->
-                                        <div class="text-center">
-                                                <h4 class="text-xl font-bold text-gray-800 dark:text-gray-200 mb-8 underline">ANSWERS</h4>
-                                                <div class="flex flex-col gap-3 max-w-xs mx-auto mb-8">
-                                                        <div class="flex items-center gap-3">
-                                                                <span class="text-white text-sm font-medium w-8">Q1</span>
-                                                                <input 
-                                                                        type="text" 
-                                                                        bind:value={q1}
-                                                                        placeholder="enter your answers"
-                                                                        class="flex-1 px-3 py-2 bg-gray-700 border border-gray-500 rounded text-white text-sm text-left"
-                                                                />
-                                                        </div>
-                                                        <div class="flex items-center gap-3">
-                                                                <span class="text-white text-sm font-medium w-8">Q2</span>
-                                                                <input 
-                                                                        type="text" 
-                                                                        bind:value={q2}
-                                                                        class="flex-1 px-3 py-2 bg-gray-700 border border-gray-500 rounded text-white text-sm text-left"
-                                                                />
-                                                        </div>
-                                                        <div class="flex items-center gap-3">
-                                                                <span class="text-white text-sm font-medium w-8">Q3</span>
-                                                                <input 
-                                                                        type="text" 
-                                                                        bind:value={q3}
-                                                                        class="flex-1 px-3 py-2 bg-gray-700 border border-gray-500 rounded text-white text-sm text-left"
-                                                                />
-                                                        </div>
-                                                        <div class="flex items-center gap-3">
-                                                                <span class="text-white text-sm font-medium w-8">Q4</span>
-                                                                <input 
-                                                                        type="text" 
-                                                                        bind:value={q4}
-                                                                        class="flex-1 px-3 py-2 bg-gray-700 border border-gray-500 rounded text-white text-sm text-left"
-                                                                />
-                                                        </div>
-                                                        <div class="flex items-center gap-3">
-                                                                <span class="text-white text-sm font-medium w-8">Q5</span>
-                                                                <input 
-                                                                        type="text" 
-                                                                        bind:value={q5}
-                                                                        class="flex-1 px-3 py-2 bg-gray-700 border border-gray-500 rounded text-white text-sm text-left"
-                                                                />
-                                                        </div>
-                                                        <div class="flex items-center gap-3">
-                                                                <span class="text-white text-sm font-medium w-8">Q6</span>
-                                                                <input 
-                                                                        type="text" 
-                                                                        bind:value={q6}
-                                                                        class="flex-1 px-3 py-2 bg-gray-700 border border-gray-500 rounded text-white text-sm text-left border-b-2 border-black"
-                                                                />
-                                                        </div>
-                                                </div>
-                                        </div>
+                                        <p><span class="font-bold">D.</span> To illustrate, Sennett discusses the Peachtree Center in Atlanta, USA, a development typical of the "fast-track" style of urban development. The hostile link between the multileveled shopping mall and car park ensures a stream of people who use their cars and avoid the street level. The engineers did not design for how bodies would occupy, affect and reshape these spaces over time – they failed to take into account basic considerations about how we move. The same lack of attention to embodied considerations in the design of the MARTA mass transit system has resulted in physical barriers that reduce the efficiency of movement through the transit system. The problems with the Peachtree Center continue with patterns of development through Atlanta that have led to a reliance on car transport. When the urban development was being planned, some of these problems might not have been apparent, but the design professionals, had they considered the bodily experience of people moving through these spaces, might have anticipated how the development would play out when translated into reality.</p>
+
+                                        <p><span class="font-bold">E.</span> The same is true in transport engineering. The guard rails that were installed to shield cyclists in Holland, and which were subsequently copied across Europe, are now being removed. Why? Because the experience of cyclists – the knowledge they have developed of how to navigate traffic through their evolving relationship with cars – has changed over time. The designers of the guard rails assumed that the biggest safety risk was contact between cars and bikes, so they built a shield. But a rash of bike-bike collisions caused by the rails and their restricted space resulted in calls to remove them. This is precisely the type of problem that might be foreseen and avoided by thinking with the body: the designers might have spent time cycling in areas where guard rails were being proposed, or at least thinking through this kind of interface. The result: guard rails are disappearing cities across Europe, causing disruption, cost, and waste.</p>
+
+                                        <p><span class="font-bold">F.</span> If their designers had had the tools to think with their bodies – to experience what it might be like to hear, see, feel, and move through the spaces they were creating – they might have been able to design a transport system that was better adapted to the realities of the human body. This is what choreographers do: they think through the body. They understand how we see (visual perception), how we hear (auditory perception), how we feel (haptic perception), and how we move (proprioception). They have an understanding of how to work with these perceptions to create coherent, compelling experiences. I believe this kind of knowledge could help with tackling problems in the built environment. Being attentive to the lived embodied experience – especially to the multisensory, motor aspects of the experience – might help us design more humane and more environmentally responsible living environments.</p>
+
+                                        <p><span class="font-bold">G.</span> Observing the choreographer Wayne McGregor, the author discusses how choreographers develop their understanding of movement by developing an intimate knowledge of dance from the body outward, becoming movement researchers in the process. The choreographer is a "close observer of bodies in movement" and the nature of the relationship between the body and the space it occupies. This involves understanding not just the aesthetics of movement but also the ways in which movement creates emotional impacts: how we move affects how we feel. An arm raised to shoulder height has a different emotional connotation from an arm raised above the head; a sudden direction change in movement communicates something different from a gradual change in direction. Choreographers who understand these connections between movement, emotion, and meaning can make their art more effective at achieving its goals – not only to look good, but also to provoke a desired reaction in an audience. Such knowledge could inform designers seeking to create built environments and transportation systems that are not only functional, but are also emotionally satisfying: places that make people feel good about living there and, in turn, will motivate them to want to stay there. The goal is not to abandon the analytical processes and the rules we have developed to design our cities, but to reinvigorate them with a more felt sense of experience. Cities should not only function efficiently, but they should also be places where people enjoy their daily lives.</p>
                                 </div>
                         </div>
+
+                        <div class="bg-white dark:bg-gray-800 rounded-lg p-6 md:p-8 shadow-sm border border-gray-200 dark:border-gray-700 mb-12 text-gray-900 dark:text-gray-100">
+                                <h4 class="text-lg font-bold mb-4">Questions 1–6</h4>
+                                <p class="mb-4 text-sm">Reading Passage 1 has seven paragraphs, A–G. Which paragraph contains the following information?</p>
+                                <p class="mb-4 text-sm font-medium">Write the correct letter, A–G, in boxes 1–6 on your answer sheet.</p>
+                                <ol class="list-decimal pl-6 space-y-2 text-sm">
+                                        <li>reference to an appealing way of using dance that the writer is not proposing</li>
+                                        <li>an example of a contrast between past and present approaches to building</li>
+                                        <li>mention of an objective of both dance and engineering</li>
+                                        <li>reference to an unforeseen problem arising from ignoring the climate</li>
+                                        <li>why some measures intended to help people are being reversed</li>
+                                        <li>reference to how transport has an impact on human lives</li>
+                                </ol>
+                        </div>
+                        <!-- SC2I_PASSAGE_END -->
+
+                        <!-- SC2I_ANSWERS_START -->
+                        <h4 class="text-xl font-bold text-center text-white mb-6">ANSWERS</h4>
+                        <div class="bg-gray-800/50 rounded-lg p-6 md:p-8 border border-gray-700">
+                                <div class="flex flex-col gap-3 max-w-xs mx-auto mb-8">
+                                        <div class="flex items-center gap-3">
+                                                <span class="text-white text-sm font-medium w-8">Q1</span>
+                                                <input type="text" bind:value={q1} placeholder="A–G" maxlength="1" class="flex-1 px-3 py-2 bg-gray-700 border border-gray-500 rounded text-white text-sm" />
+                                        </div>
+                                        <div class="flex items-center gap-3">
+                                                <span class="text-white text-sm font-medium w-8">Q2</span>
+                                                <input type="text" bind:value={q2} placeholder="A–G" maxlength="1" class="flex-1 px-3 py-2 bg-gray-700 border border-gray-500 rounded text-white text-sm" />
+                                        </div>
+                                        <div class="flex items-center gap-3">
+                                                <span class="text-white text-sm font-medium w-8">Q3</span>
+                                                <input type="text" bind:value={q3} placeholder="A–G" maxlength="1" class="flex-1 px-3 py-2 bg-gray-700 border border-gray-500 rounded text-white text-sm" />
+                                        </div>
+                                        <div class="flex items-center gap-3">
+                                                <span class="text-white text-sm font-medium w-8">Q4</span>
+                                                <input type="text" bind:value={q4} placeholder="A–G" maxlength="1" class="flex-1 px-3 py-2 bg-gray-700 border border-gray-500 rounded text-white text-sm" />
+                                        </div>
+                                        <div class="flex items-center gap-3">
+                                                <span class="text-white text-sm font-medium w-8">Q5</span>
+                                                <input type="text" bind:value={q5} placeholder="A–G" maxlength="1" class="flex-1 px-3 py-2 bg-gray-700 border border-gray-500 rounded text-white text-sm" />
+                                        </div>
+                                        <div class="flex items-center gap-3">
+                                                <span class="text-white text-sm font-medium w-8">Q6</span>
+                                                <input type="text" bind:value={q6} placeholder="A–G" maxlength="1" class="flex-1 px-3 py-2 bg-gray-700 border border-gray-500 rounded text-white text-sm" />
+                                        </div>
+                                </div>
+                                <p class="text-xs text-gray-300 text-center">Enter letters A–G only</p>
+                        </div>
+                        <!-- SC2I_ANSWERS_END -->
                 </section>
 
                 <!-- Check Answers Section -->
