@@ -135,7 +135,7 @@
                         <!-- Desktop: Side-by-side layout (768px+), Mobile: Stacked -->
                         <div class="flex flex-col md:flex-row gap-6 items-start mb-6">
                                 <!-- Reading Passage -->
-                                <div class="md:w-2/3 bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8 max-h-[70vh] overflow-y-auto">
+                                <div class="md:w-2/3 bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8">
                                                 <h4 class="text-xl font-bold mb-6 text-center">Could Urban Engineers Learn from Dance?</h4>
                                                 <div class="space-y-4 text-m leading-relaxed">
                                                         <p class="relative pl-5"><span class="font-bold absolute -left-3">A.</span>The way we travel around cities has a major impact on whether they are sustainable. Transportation is climate change's fastest growing contributor, so to reduce emissions, more residents need to be persuaded to use public transport, walk, bike, or travel by some other form of transport, rather than drive cars. Various city councils have invested heavily in public transport networks and bike lanes, but the take-up has been disappointing. Psychology and practicality are other considerations: people's perceptions of route options can be flawed, and it can be hard to work out the logistics of a journey between multiple locations using several modes of transport. Surveying what works and what doesn't, a new guide is being drawn up for city officials on how to provide higher-quality, easier-to-navigate systems that boost traveling efficiency and reduce carbon emissions. The research looks both to the psychology of travel decisions and to the mechanics of "wayfinding", that is, how people navigate through spaces. City officials often "have a feeling" about why a transport system works or doesn't, the researchers say, but rarely "a way to design it better". It is here that dance may hold some of the answers.</p>
@@ -155,7 +155,7 @@
                                 </div>
                                 
                                 <!-- Questions Section -->
-                                <div class="md:w-1/3 bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8 max-h-[70vh] overflow-y-auto">
+                                <div class="md:w-1/3 bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8">
                                                 <h4 class="text-lg font-bold mb-4">Questions 1–6</h4>
                                                 <p class="mb-4 text-sm">Reading Passage 1 has seven paragraphs, A–G. Which paragraph contains the following information?</p>
                                                 <p class="mb-4 text-sm font-medium">Write the correct letter, A–G, in boxes 1–6 on your answer sheet.</p>
@@ -220,7 +220,7 @@
                         <!-- SC2I_PASSAGE_END -->
 
                         <!-- SC2I_ANSWERS_START -->
-                        <h4 class="text-xl font-bold text-center text-white mb-6">ANSWERS</h4>
+                        <!-- <h4 class="text-xl font-bold text-center text-white mb-6">ANSWERS</h4>
                         <div class="bg-gray-800/50 rounded-lg p-6 md:p-8 border border-gray-700">
                                 <div class="flex flex-col gap-3 max-w-xs mx-auto mb-8">
                                         <div class="flex items-center gap-3">
@@ -249,7 +249,7 @@
                                         </div>
                                 </div>
                                 <p class="text-xs text-gray-300 text-center">Enter letters A–G only</p>
-                        </div>
+                        </div> -->
                         <!-- SC2I_ANSWERS_END -->
                 </section>
 
