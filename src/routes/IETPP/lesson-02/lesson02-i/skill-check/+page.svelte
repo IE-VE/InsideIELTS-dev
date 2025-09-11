@@ -14,6 +14,10 @@
         // Loading state
         let loadingAnswers = false;
         
+        // Highlighting state
+        let highlightingEnabled = $state(false);
+        let highlightedRanges = $state([]);
+        
         // Height sync elements
         let questionsContainerEl: HTMLElement;
         let passageScrollEl: HTMLElement;
@@ -38,6 +42,89 @@
                 lightboxOpen = false;
                 lightboxImage = '';
         }
+        
+        // Highlighting functions
+        function toggleHighlighting() {
+                highlightingEnabled = !highlightingEnabled;
+                if (!highlightingEnabled) {
+                        // Clear any active selection when disabling
+                        window.getSelection()?.removeAllRanges();
+                }
+        }
+        
+        function handleTextSelection() {
+                if (!highlightingEnabled) return;
+                
+                const selection = window.getSelection();
+                if (selection && selection.toString().trim() && !selection.isCollapsed) {
+                        const range = selection.getRangeAt(0);
+                        
+                        // Only highlight if within the passage container
+                        const passageContainer = range.commonAncestorContainer.nodeType === Node.TEXT_NODE 
+                                ? range.commonAncestorContainer.parentElement?.closest('.passage-text')
+                                : range.commonAncestorContainer.closest?.('.passage-text');
+                        
+                        if (passageContainer) {
+                                highlightSelectedText(range);
+                        }
+                        
+                        selection.removeAllRanges();
+                }
+        }
+        
+        function highlightSelectedText(range: Range) {
+                const span = document.createElement('span');
+                span.className = 'highlight-text bg-yellow-200 dark:bg-yellow-600 cursor-pointer';
+                span.setAttribute('data-highlight-id', Date.now().toString());
+                
+                try {
+                        range.surroundContents(span);
+                        
+                        // Store highlight info
+                        highlightedRanges = [...highlightedRanges, {
+                                id: span.getAttribute('data-highlight-id'),
+                                text: span.textContent
+                        }];
+                        
+                        // Add click listener to remove highlight
+                        span.addEventListener('click', (e) => {
+                                e.stopPropagation();
+                                removeHighlight(span);
+                        });
+                } catch (error) {
+                        // If surroundContents fails for complex selections
+                        console.warn('Could not highlight complex selection:', error);
+                }
+        }
+        
+        function removeHighlight(span: HTMLSpanElement) {
+                const highlightId = span.getAttribute('data-highlight-id');
+                
+                // Remove from state
+                highlightedRanges = highlightedRanges.filter(h => h.id !== highlightId);
+                
+                // Replace span with its text content
+                const parent = span.parentNode;
+                if (parent) {
+                        parent.replaceChild(document.createTextNode(span.textContent || ''), span);
+                        parent.normalize(); // Merge adjacent text nodes
+                }
+        }
+        
+        function clearAllHighlights() {
+                // Remove all highlight spans
+                const highlightSpans = document.querySelectorAll('.highlight-text[data-highlight-id]');
+                highlightSpans.forEach(span => {
+                        const parent = span.parentNode;
+                        if (parent) {
+                                parent.replaceChild(document.createTextNode(span.textContent || ''), span);
+                                parent.normalize();
+                        }
+                });
+                
+                // Clear state
+                highlightedRanges = [];
+        }
 
         function checkAllAnswers() {
                 loadingAnswers = true;
@@ -45,12 +132,12 @@
                 
                 setTimeout(() => {
                         const correctAnswers = {
-                                q1: ['B', 'b'],
-                                q2: ['C', 'c'],
-                                q3: ['F', 'f'],
-                                q4: ['D', 'd'],
-                                q5: ['E', 'e'],
-                                q6: ['A', 'a']
+                                q1: ['B'],
+                                q2: ['C'],
+                                q3: ['F'],
+                                q4: ['D'],
+                                q5: ['E'],
+                                q6: ['A']
                         };
 
                         const userAnswers = { q1, q2, q3, q4, q5, q6 };
@@ -95,8 +182,14 @@
                 window.addEventListener('resize', syncHeights);
                 syncHeights();
                 
+                // Add text selection handlers
+                document.addEventListener('mouseup', handleTextSelection);
+                document.addEventListener('touchend', handleTextSelection);
+                
                 return () => {
                         document.removeEventListener('keydown', handleKeydown);
+                        document.removeEventListener('mouseup', handleTextSelection);
+                        document.removeEventListener('touchend', handleTextSelection);
                         ro.disconnect();
                         window.removeEventListener('resize', syncHeights);
                 };
@@ -116,7 +209,7 @@
         <div class="max-w-5xl container mx-auto px-3 md:px-6 py-12">
                 <div class="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 mb-12">
                         <div class="text-center">
-                                <div class="text-xs text-center text-teal-600 dark:text-teal-400 mb-4">
+                                <div class="text-xs text-left text-teal-600 dark:text-teal-400 mb-4">
                                         SC2(i)
                                 </div>
                                 <h1 class="text-3xl font-bold text-white mb-2">
@@ -137,7 +230,7 @@
         </div>
 
         <!-- Page Content -->
-        <div style="max-width: 1200px;" class="mx-auto px-3 md:px-6 py-12">
+        <div style="max-width: 1200px;" class="mx-auto px-3 md:px-6 py-2">
                 <!-- Skill Check Title -->
                 <section class="bg-blue-600/20 rounded-lg p-6 md:p-10 shadow-sm border border-blue-600/50 mb-12">
                         <div class="flex items-center justify-center gap-4 mb-10">
@@ -146,7 +239,7 @@
                                 <div class="text-4xl text-green-500">✓</div>
                         </div>
                         
-                        <p class="text-center text-white text-xl mb-16">
+                        <p class="text-center text-white text-xl mb-12">
                                 <strong>Complete this Reading Skill Check exercise then upload your answers for checking and feedback.</strong>
                         </p>
 
@@ -158,10 +251,37 @@
                         
                         <h3 class="text-2xl font-bold text-center text-white mb-8">READING - Matching information</h3>
                         
+                        <!-- Highlighting Controls -->
+                        <div class="flex flex-wrap justify-center gap-2 mb-6">
+                                <button
+                                        onclick={toggleHighlighting}
+                                        class="px-4 py-2 rounded-md font-medium transition-colors {highlightingEnabled ? 'bg-yellow-500 text-white' : 'bg-gray-200 text-gray-700 hover:bg-gray-300 dark:bg-gray-600 dark:text-gray-300 dark:hover:bg-gray-500'}"
+                                >
+                                        {highlightingEnabled ? '🖍️ Highlighting ON' : '🖍️ Enable Highlighting'}
+                                </button>
+                                
+                                {#if highlightedRanges.length > 0}
+                                        <button
+                                                onclick={clearAllHighlights}
+                                                class="px-4 py-2 rounded-md font-medium transition-colors bg-red-500 text-white hover:bg-red-600"
+                                        >
+                                                Clear All Highlights
+                                        </button>
+                                {/if}
+                        </div>
+                        
+                        {#if highlightingEnabled}
+                                <div class="flex justify-center mb-6">
+                                        <div class="flex items-center gap-2 px-3 py-2 bg-blue-50 dark:bg-blue-900/20 rounded-md text-sm text-blue-700 dark:text-blue-300">
+                                                <span>💡 Select text to highlight. Click highlighted text to remove.</span>
+                                        </div>
+                                </div>
+                        {/if}
+                        
                         <!-- Desktop: Side-by-side layout (768px+), Mobile: Stacked -->
                         <div class="flex flex-col md:flex-row gap-6 items-start mb-6 min-h-0">
                                 <!-- Reading Passage -->
-                                <div class="md:w-2/3 bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8 overflow-y-auto" bind:this={passageScrollEl}>
+                                <div class="md:w-2/3 bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8 overflow-y-auto passage-text" bind:this={passageScrollEl}>
                                                 <h4 class="text-xl font-bold mb-6 text-center">Could Urban Engineers Learn from Dance?</h4>
                                                 <div class="space-y-4 text-m leading-relaxed">
                                                         <p class="relative pl-5"><span class="font-bold absolute -left-3">A.</span>The way we travel around cities has a major impact on whether they are sustainable. Transportation is climate change's fastest growing contributor, so to reduce emissions, more residents need to be persuaded to use public transport, walk, bike, or travel by some other form of transport, rather than drive cars. Various city councils have invested heavily in public transport networks and bike lanes, but the take-up has been disappointing. Psychology and practicality are other considerations: people's perceptions of route options can be flawed, and it can be hard to work out the logistics of a journey between multiple locations using several modes of transport. Surveying what works and what doesn't, a new guide is being drawn up for city officials on how to provide higher-quality, easier-to-navigate systems that boost traveling efficiency and reduce carbon emissions. The research looks both to the psychology of travel decisions and to the mechanics of "wayfinding", that is, how people navigate through spaces. City officials often "have a feeling" about why a transport system works or doesn't, the researchers say, but rarely "a way to design it better". It is here that dance may hold some of the answers.</p>
@@ -191,7 +311,7 @@
                                                                 <div class="flex items-start gap-2">
                                                                         <span class="font-medium text-blue-600 dark:text-blue-400">1.</span>
                                                                         <div class="flex-1">
-                                                                                <p class="mb-2">reference to an appealing way of using dance that the writer is not proposing</p>
+                                                                                <p class="mb-2">Reference to an appealing way of using dance that the writer is not proposing.</p>
                                                                                 <select bind:value={q1} class="w-16 px-2 py-1 bg-gray-100 dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded text-left text-sm font-medium">
                                                                                         <option value="A">A</option>
                                                                                         <option value="B">B</option>
@@ -208,7 +328,7 @@
                                                                 <div class="flex items-start gap-2">
                                                                         <span class="font-medium text-blue-600 dark:text-blue-400">2.</span>
                                                                         <div class="flex-1">
-                                                                                <p class="mb-2">an example of a contrast between past and present approaches to building</p>
+                                                                                <p class="mb-2">An example of a contrast between past and present approaches to building.</p>
                                                                                 <select bind:value={q2} class="w-16 px-2 py-1 bg-gray-100 dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded text-left text-sm font-medium">
                                                                                         <option value="A">A</option>
                                                                                         <option value="B">B</option>
@@ -225,7 +345,7 @@
                                                                 <div class="flex items-start gap-2">
                                                                         <span class="font-medium text-blue-600 dark:text-blue-400">3.</span>
                                                                         <div class="flex-1">
-                                                                                <p class="mb-2">mention of an objective of both dance and engineering</p>
+                                                                                <p class="mb-2">Mention of an objective of both dance and engineering.</p>
                                                                                 <select bind:value={q3} class="w-16 px-2 py-1 bg-gray-100 dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded text-left text-sm font-medium">
                                                                                         <option value="A">A</option>
                                                                                         <option value="B">B</option>
@@ -242,7 +362,7 @@
                                                                 <div class="flex items-start gap-2">
                                                                         <span class="font-medium text-blue-600 dark:text-blue-400">4.</span>
                                                                         <div class="flex-1">
-                                                                                <p class="mb-2">reference to an unforeseen problem arising from ignoring the climate</p>
+                                                                                <p class="mb-2">Reference to an unforeseen problem arising from ignoring the climate.</p>
                                                                                 <select bind:value={q4} class="w-16 px-2 py-1 bg-gray-100 dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded text-left text-sm font-medium">
                                                                                         <option value="A">A</option>
                                                                                         <option value="B">B</option>
@@ -259,7 +379,7 @@
                                                                 <div class="flex items-start gap-2">
                                                                         <span class="font-medium text-blue-600 dark:text-blue-400">5.</span>
                                                                         <div class="flex-1">
-                                                                                <p class="mb-2">why some measures intended to help people are being reversed</p>
+                                                                                <p class="mb-2">Why some measures intended to help people are being reversed.</p>
                                                                                 <select bind:value={q5} class="w-16 px-2 py-1 bg-gray-100 dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded text-left text-sm font-medium">
                                                                                         <option value="A">A</option>
                                                                                         <option value="B">B</option>
@@ -276,7 +396,7 @@
                                                                 <div class="flex items-start gap-2">
                                                                         <span class="font-medium text-blue-600 dark:text-blue-400">6.</span>
                                                                         <div class="flex-1">
-                                                                                <p class="mb-2">reference to how transport has an impact on human lives</p>
+                                                                                <p class="mb-2">Reference to how transport has an impact on human lives.</p>
                                                                                 <select bind:value={q6} class="w-16 px-2 py-1 bg-gray-100 dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded text-left text-sm font-medium">
                                                                                         <option value="A">A</option>
                                                                                         <option value="B">B</option>
@@ -293,40 +413,6 @@
                                         </div>
                                 </div>
                         </div>
-                        <!-- SC2I_PASSAGE_END -->
-
-                        <!-- SC2I_ANSWERS_START -->
-                        <!-- <h4 class="text-xl font-bold text-center text-white mb-6">ANSWERS</h4>
-                        <div class="bg-gray-800/50 rounded-lg p-6 md:p-8 border border-gray-700">
-                                <div class="flex flex-col gap-3 max-w-xs mx-auto mb-8">
-                                        <div class="flex items-center gap-3">
-                                                <span class="text-white text-sm font-medium w-8">Q1</span>
-                                                <input type="text" bind:value={q1} placeholder="A–G" maxlength="1" class="flex-1 px-3 py-2 bg-gray-700 border border-gray-500 rounded text-white text-sm" />
-                                        </div>
-                                        <div class="flex items-center gap-3">
-                                                <span class="text-white text-sm font-medium w-8">Q2</span>
-                                                <input type="text" bind:value={q2} placeholder="A–G" maxlength="1" class="flex-1 px-3 py-2 bg-gray-700 border border-gray-500 rounded text-white text-sm" />
-                                        </div>
-                                        <div class="flex items-center gap-3">
-                                                <span class="text-white text-sm font-medium w-8">Q3</span>
-                                                <input type="text" bind:value={q3} placeholder="A–G" maxlength="1" class="flex-1 px-3 py-2 bg-gray-700 border border-gray-500 rounded text-white text-sm" />
-                                        </div>
-                                        <div class="flex items-center gap-3">
-                                                <span class="text-white text-sm font-medium w-8">Q4</span>
-                                                <input type="text" bind:value={q4} placeholder="A–G" maxlength="1" class="flex-1 px-3 py-2 bg-gray-700 border border-gray-500 rounded text-white text-sm" />
-                                        </div>
-                                        <div class="flex items-center gap-3">
-                                                <span class="text-white text-sm font-medium w-8">Q5</span>
-                                                <input type="text" bind:value={q5} placeholder="A–G" maxlength="1" class="flex-1 px-3 py-2 bg-gray-700 border border-gray-500 rounded text-white text-sm" />
-                                        </div>
-                                        <div class="flex items-center gap-3">
-                                                <span class="text-white text-sm font-medium w-8">Q6</span>
-                                                <input type="text" bind:value={q6} placeholder="A–G" maxlength="1" class="flex-1 px-3 py-2 bg-gray-700 border border-gray-500 rounded text-white text-sm" />
-                                        </div>
-                                </div>
-                                <p class="text-xs text-gray-300 text-center">Enter letters A–G only</p>
-                        </div> -->
-                        <!-- SC2I_ANSWERS_END -->
                 </section>
 
                 <!-- Check Answers Section -->
@@ -403,7 +489,7 @@
                 <section class="text-center py-12">
                         <p class="text-white mb-16">
                                 <a href="/IETPP#lesson-02" class="text-teal-400 hover:underline">
-                                        ← Back to Progress Table
+                                        ← Back to Contents
                                 </a>
                         </p>
                 </section>
@@ -434,3 +520,39 @@
                 </button>
         </div>
 {/if}
+
+<style>
+        /* Highlighting styles */
+        .highlight-text {
+                padding: 2px 4px;
+                border-radius: 3px;
+                cursor: pointer;
+                transition: all 0.2s ease;
+                user-select: text;
+                -webkit-user-select: text;
+                -moz-user-select: text;
+                -ms-user-select: text;
+                color: rgb(0 0 0) !important;
+        }
+        
+        .highlight-text:hover {
+                opacity: 0.8;
+                box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+        }
+        
+        /* Yellow highlight color */
+        .bg-yellow-200 {
+                background-color: rgb(254 240 138);
+                color: rgb(0 0 0);
+        }
+        
+        /* Dark mode highlighting */
+        .dark .highlight-text {
+                opacity: 0.8;
+        }
+        
+        .dark .bg-yellow-600 {
+                background-color: rgb(202 138 4);
+                color: rgb(255 255 255);
+        }
+</style>
