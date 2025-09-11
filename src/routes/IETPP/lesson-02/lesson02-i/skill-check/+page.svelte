@@ -15,24 +15,15 @@
         let loadingAnswers = false;
         
         // Height sync elements
-        let questionsContentEl: HTMLElement;
+        let questionsContainerEl: HTMLElement;
         let passageScrollEl: HTMLElement;
         
         function syncHeights() {
                 if (!passageScrollEl) return;
                 const isDesktop = window.innerWidth >= 768;
-                if (isDesktop && questionsContentEl) {
-                        // Measure from top of questions content to bottom of Question 6
-                        const questionsRect = questionsContentEl.getBoundingClientRect();
-                        const lastQuestion = questionsContentEl.querySelector('[data-question="6"]');
-                        if (lastQuestion) {
-                                const lastQuestionRect = lastQuestion.getBoundingClientRect();
-                                const contentHeight = lastQuestionRect.bottom - questionsRect.top;
-                                passageScrollEl.style.height = `${contentHeight}px`;
-                        } else {
-                                // Fallback to full content height
-                                passageScrollEl.style.height = `${questionsContentEl.offsetHeight}px`;
-                        }
+                if (isDesktop && questionsContainerEl) {
+                        // Set reading passage height to match questions container height
+                        passageScrollEl.style.height = `${questionsContainerEl.offsetHeight}px`;
                 } else {
                         passageScrollEl.style.height = '';
                 }
@@ -100,7 +91,7 @@
                 
                 // Setup height sync
                 const ro = new ResizeObserver(syncHeights);
-                if (questionsContentEl) ro.observe(questionsContentEl);
+                if (questionsContainerEl) ro.observe(questionsContainerEl);
                 window.addEventListener('resize', syncHeights);
                 syncHeights();
                 
@@ -190,8 +181,8 @@
                                 </div>
                                 
                                 <!-- Questions Section -->
-                                <div class="md:w-1/3 bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8">
-                                        <div bind:this={questionsContentEl}>
+                                <div class="md:w-1/3 bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8" bind:this={questionsContainerEl}>
+                                        <div>
                                                 <h4 class="text-lg font-bold mb-4">Questions 1–6</h4>
                                                 <p class="mb-4 text-sm">Reading Passage 1 has seven paragraphs, A–G. Which paragraph contains the following information?</p>
                                                 <p class="mb-4 text-sm font-medium">Write the correct letter, A–G, in boxes 1–6 on your answer sheet.</p>
