@@ -424,7 +424,7 @@
                                 <div class="text-center mb-10">
                                         <button
                                                 type="button"
-                                                on:click={checkAllAnswers}
+                                                onclick={checkAllAnswers}
                                                 disabled={loadingAnswers}
                                                 class="bg-green-600 hover:bg-green-700 disabled:bg-green-400 disabled:cursor-not-allowed text-white font-bold py-3 px-6 rounded-lg text-lg transition-colors flex items-center justify-center mx-auto border-white border-2"
                                         >
@@ -500,19 +500,19 @@
 {#if lightboxOpen}
         <div 
                 class="fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center z-50 p-4"
-                on:click={closeLightbox}
+                onclick={closeLightbox}
         >
                 <div class="max-w-full max-h-full">
                         <img
                                 src={lightboxImage}
                                 alt="Enlarged view"
                                 class="max-w-full max-h-full object-contain rounded"
-                                on:click|stopPropagation
+                                onclick|stopPropagation
                         />
                 </div>
                 <button
                         type="button"
-                        on:click={closeLightbox}
+                        onclick={closeLightbox}
                         class="absolute top-4 right-4 text-white text-4xl hover:text-gray-300 transition-colors"
                         aria-label="Close lightbox"
                 >
