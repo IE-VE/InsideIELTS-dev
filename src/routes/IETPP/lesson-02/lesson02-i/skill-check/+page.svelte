@@ -507,7 +507,7 @@
                                 src={lightboxImage}
                                 alt="Enlarged view"
                                 class="max-w-full max-h-full object-contain rounded"
-                                onclick|stopPropagation
+                                onclick={(e) => e.stopPropagation()}
                         />
                 </div>
                 <button
