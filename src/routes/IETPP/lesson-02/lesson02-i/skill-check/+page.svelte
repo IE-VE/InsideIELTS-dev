@@ -132,10 +132,10 @@
                         
                         <h3 class="text-2xl font-bold text-center text-white mb-8">READING - Matching information</h3>
                         
-                        <!-- Desktop: Side-by-side layout, Mobile: Stacked -->
-                        <div class="flex flex-col lg:flex-row lg:gap-8 lg:items-start">
+                        <!-- Desktop: Side-by-side layout (768px+), Mobile: Stacked -->
+                        <div class="flex flex-col md:flex-row md:gap-8 md:items-start">
                                 <!-- Reading Passage -->
-                                <div class="lg:flex-1 mb-8 lg:mb-0">
+                                <div class="md:flex-1 mb-8 md:mb-0">
                                         <div class="bg-white dark:bg-gray-800 rounded-lg p-6 md:p-8 shadow-sm border border-gray-200 dark:border-gray-700 text-gray-900 dark:text-gray-100">
                                                 <h4 class="text-xl font-bold mb-6 text-center">Could Urban Engineers Learn from Dance?</h4>
                                                 <div class="space-y-4 text-m leading-relaxed">
@@ -157,19 +157,67 @@
                                 </div>
 
                                 <!-- Questions Section -->
-                                <div class="lg:w-96 lg:flex-shrink-0">
-                                        <div class="bg-white dark:bg-gray-800 rounded-lg p-6 md:p-8 shadow-sm border border-gray-200 dark:border-gray-700 mb-12 lg:mb-0 text-gray-900 dark:text-gray-100">
+                                <div class="md:w-96 md:flex-shrink-0">
+                                        <div class="bg-white dark:bg-gray-800 rounded-lg p-6 md:p-8 shadow-sm border border-gray-200 dark:border-gray-700 mb-12 md:mb-0 text-gray-900 dark:text-gray-100">
                                                 <h4 class="text-lg font-bold mb-4">Questions 1–6</h4>
                                                 <p class="mb-4 text-sm">Reading Passage 1 has seven paragraphs, A–G. Which paragraph contains the following information?</p>
                                                 <p class="mb-4 text-sm font-medium">Write the correct letter, A–G, in boxes 1–6 on your answer sheet.</p>
-                                                <ol class="list-decimal pl-6 space-y-2 text-sm">
-                                                        <li>reference to an appealing way of using dance that the writer is not proposing</li>
-                                                        <li>an example of a contrast between past and present approaches to building</li>
-                                                        <li>mention of an objective of both dance and engineering</li>
-                                                        <li>reference to an unforeseen problem arising from ignoring the climate</li>
-                                                        <li>why some measures intended to help people are being reversed</li>
-                                                        <li>reference to how transport has an impact on human lives</li>
-                                                </ol>
+                                                <div class="space-y-4">
+                                                        <div class="text-sm">
+                                                                <div class="flex items-start gap-2">
+                                                                        <span class="font-medium text-blue-600 dark:text-blue-400">1.</span>
+                                                                        <div class="flex-1">
+                                                                                <p class="mb-2">reference to an appealing way of using dance that the writer is not proposing</p>
+                                                                                <input type="text" bind:value={q1} placeholder="A–G" maxlength="1" class="w-12 px-2 py-1 bg-gray-100 dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded text-center text-sm font-medium" />
+                                                                        </div>
+                                                                </div>
+                                                        </div>
+                                                        <div class="text-sm">
+                                                                <div class="flex items-start gap-2">
+                                                                        <span class="font-medium text-blue-600 dark:text-blue-400">2.</span>
+                                                                        <div class="flex-1">
+                                                                                <p class="mb-2">an example of a contrast between past and present approaches to building</p>
+                                                                                <input type="text" bind:value={q2} placeholder="A–G" maxlength="1" class="w-12 px-2 py-1 bg-gray-100 dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded text-center text-sm font-medium" />
+                                                                        </div>
+                                                                </div>
+                                                        </div>
+                                                        <div class="text-sm">
+                                                                <div class="flex items-start gap-2">
+                                                                        <span class="font-medium text-blue-600 dark:text-blue-400">3.</span>
+                                                                        <div class="flex-1">
+                                                                                <p class="mb-2">mention of an objective of both dance and engineering</p>
+                                                                                <input type="text" bind:value={q3} placeholder="A–G" maxlength="1" class="w-12 px-2 py-1 bg-gray-100 dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded text-center text-sm font-medium" />
+                                                                        </div>
+                                                                </div>
+                                                        </div>
+                                                        <div class="text-sm">
+                                                                <div class="flex items-start gap-2">
+                                                                        <span class="font-medium text-blue-600 dark:text-blue-400">4.</span>
+                                                                        <div class="flex-1">
+                                                                                <p class="mb-2">reference to an unforeseen problem arising from ignoring the climate</p>
+                                                                                <input type="text" bind:value={q4} placeholder="A–G" maxlength="1" class="w-12 px-2 py-1 bg-gray-100 dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded text-center text-sm font-medium" />
+                                                                        </div>
+                                                                </div>
+                                                        </div>
+                                                        <div class="text-sm">
+                                                                <div class="flex items-start gap-2">
+                                                                        <span class="font-medium text-blue-600 dark:text-blue-400">5.</span>
+                                                                        <div class="flex-1">
+                                                                                <p class="mb-2">why some measures intended to help people are being reversed</p>
+                                                                                <input type="text" bind:value={q5} placeholder="A–G" maxlength="1" class="w-12 px-2 py-1 bg-gray-100 dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded text-center text-sm font-medium" />
+                                                                        </div>
+                                                                </div>
+                                                        </div>
+                                                        <div class="text-sm">
+                                                                <div class="flex items-start gap-2">
+                                                                        <span class="font-medium text-blue-600 dark:text-blue-400">6.</span>
+                                                                        <div class="flex-1">
+                                                                                <p class="mb-2">reference to how transport has an impact on human lives</p>
+                                                                                <input type="text" bind:value={q6} placeholder="A–G" maxlength="1" class="w-12 px-2 py-1 bg-gray-100 dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded text-center text-sm font-medium" />
+                                                                        </div>
+                                                                </div>
+                                                        </div>
+                                                </div>
                                         </div>
                                 </div>
                         </div>
