@@ -116,7 +116,7 @@
         <div class="max-w-5xl container mx-auto px-3 md:px-6 py-12">
                 <div class="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 mb-12">
                         <div class="text-center">
-                                <div class="text-xs text-left text-teal-600 dark:text-teal-400 mb-4">
+                                <div class="text-xs text-center text-teal-600 dark:text-teal-400 mb-4">
                                         SC2(i)
                                 </div>
                                 <h1 class="text-3xl font-bold text-white mb-2">
@@ -192,7 +192,7 @@
                                                                         <span class="font-medium text-blue-600 dark:text-blue-400">1.</span>
                                                                         <div class="flex-1">
                                                                                 <p class="mb-2">reference to an appealing way of using dance that the writer is not proposing</p>
-                                                                                <select bind:value={q1} class="w-16 px-2 py-1 bg-gray-100 dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded text-center text-sm font-medium">
+                                                                                <select bind:value={q1} class="w-16 px-2 py-1 bg-gray-100 dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded text-left text-sm font-medium">
                                                                                         <option value="A">A</option>
                                                                                         <option value="B">B</option>
                                                                                         <option value="C">C</option>
@@ -209,7 +209,7 @@
                                                                         <span class="font-medium text-blue-600 dark:text-blue-400">2.</span>
                                                                         <div class="flex-1">
                                                                                 <p class="mb-2">an example of a contrast between past and present approaches to building</p>
-                                                                                <select bind:value={q2} class="w-16 px-2 py-1 bg-gray-100 dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded text-center text-sm font-medium">
+                                                                                <select bind:value={q2} class="w-16 px-2 py-1 bg-gray-100 dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded text-left text-sm font-medium">
                                                                                         <option value="A">A</option>
                                                                                         <option value="B">B</option>
                                                                                         <option value="C">C</option>
@@ -226,7 +226,7 @@
                                                                         <span class="font-medium text-blue-600 dark:text-blue-400">3.</span>
                                                                         <div class="flex-1">
                                                                                 <p class="mb-2">mention of an objective of both dance and engineering</p>
-                                                                                <select bind:value={q3} class="w-16 px-2 py-1 bg-gray-100 dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded text-center text-sm font-medium">
+                                                                                <select bind:value={q3} class="w-16 px-2 py-1 bg-gray-100 dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded text-left text-sm font-medium">
                                                                                         <option value="A">A</option>
                                                                                         <option value="B">B</option>
                                                                                         <option value="C">C</option>
@@ -243,7 +243,7 @@
                                                                         <span class="font-medium text-blue-600 dark:text-blue-400">4.</span>
                                                                         <div class="flex-1">
                                                                                 <p class="mb-2">reference to an unforeseen problem arising from ignoring the climate</p>
-                                                                                <select bind:value={q4} class="w-16 px-2 py-1 bg-gray-100 dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded text-center text-sm font-medium">
+                                                                                <select bind:value={q4} class="w-16 px-2 py-1 bg-gray-100 dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded text-left text-sm font-medium">
                                                                                         <option value="A">A</option>
                                                                                         <option value="B">B</option>
                                                                                         <option value="C">C</option>
@@ -260,7 +260,7 @@
                                                                         <span class="font-medium text-blue-600 dark:text-blue-400">5.</span>
                                                                         <div class="flex-1">
                                                                                 <p class="mb-2">why some measures intended to help people are being reversed</p>
-                                                                                <select bind:value={q5} class="w-16 px-2 py-1 bg-gray-100 dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded text-center text-sm font-medium">
+                                                                                <select bind:value={q5} class="w-16 px-2 py-1 bg-gray-100 dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded text-left text-sm font-medium">
                                                                                         <option value="A">A</option>
                                                                                         <option value="B">B</option>
                                                                                         <option value="C">C</option>
@@ -277,7 +277,7 @@
                                                                         <span class="font-medium text-blue-600 dark:text-blue-400">6.</span>
                                                                         <div class="flex-1">
                                                                                 <p class="mb-2">reference to how transport has an impact on human lives</p>
-                                                                                <select bind:value={q6} class="w-16 px-2 py-1 bg-gray-100 dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded text-center text-sm font-medium">
+                                                                                <select bind:value={q6} class="w-16 px-2 py-1 bg-gray-100 dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded text-left text-sm font-medium">
                                                                                         <option value="A">A</option>
                                                                                         <option value="B">B</option>
                                                                                         <option value="C">C</option>
