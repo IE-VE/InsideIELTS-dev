@@ -1,18 +1,18 @@
 <script lang="ts">
         import { onMount } from 'svelte';
 
-        let lightboxOpen = false;
-        let lightboxImage = '';
+        let lightboxOpen = $state(false);
+        let lightboxImage = $state('');
 
         // Form data
-        let q1 = '', q2 = '', q3 = '', q4 = '', q5 = '', q6 = '';
+        let q1 = $state(''), q2 = $state(''), q3 = $state(''), q4 = $state(''), q5 = $state(''), q6 = $state('');
 
         // Results for the exercise
-        let showResults = false;
-        let markingResults = {};
+        let showResults = $state(false);
+        let markingResults = $state({});
         
         // Loading state
-        let loadingAnswers = false;
+        let loadingAnswers = $state(false);
         
         // Highlighting state
         let highlightingEnabled = $state(false);
@@ -435,7 +435,7 @@
                                                         </svg>
                                                         Processing...
                                                 {:else}
-                                                        UPLOAD
+                                                        Upload
                                                 {/if}
                                         </button>
                                 </div>

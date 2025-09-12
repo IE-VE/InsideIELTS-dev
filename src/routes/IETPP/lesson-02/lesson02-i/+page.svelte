@@ -255,15 +255,28 @@
                 </section>
 
                 <!-- End of Lesson -->
-                <section class="text-center py-12">
-                        <p class="text-white mb-16">End of Lesson 02(i)</p>
-                        <a
-                                href="/IETPP#lesson-02"
-                                data-sveltekit-reload
-                                class="inline-flex items-center text-teal-600 dark:text-teal-400 hover:underline font-semibold"
-                        >
-                                ← Back to Course Contents
-                        </a>
+                <section class="text-center py-8">
+                           <p class="text-white text-lg mb-12">End of Lesson 02-i</p>
+                          <!-- Footer Navigation -->
+                        <div class="bg-gray-800 rounded-lg p-6 shadow-sm border border-gray-700">
+                                <div class="flex justify-between items-center">
+                                        <a
+                                                href="/IETPP#lesson-02"
+                                                class="text-teal-600 dark:text-teal-400 hover:underline font-semibold"
+                                                data-sveltekit-reload
+                                        >
+                                                ← Back to Course Contents
+                                        </a>
+
+                                        <a
+                                                href="/IETPP/lesson-01/lesson01-i"
+                                                class="text-teal-600 dark:text-teal-400 hover:underline font-semibold"
+                                                data-sveltekit-reload
+                                        >
+                                                Next Lesson →
+                                        </a>
+                                </div>
+                        </div>
                 </section>
         </div>
 </div>

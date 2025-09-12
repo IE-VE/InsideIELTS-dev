@@ -149,11 +149,44 @@
                         </div>
                 </div>
         </div>
+        <div style="max-width: 1200px;" class="mx-auto px-3 md:px-6 py-8">
+        <section class="mb-12">
+                <div class="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-sm border border-gray-200 dark:border-gray-700">
+                        <h2 class="text-2xl text-center font-bold text-gray-800 dark:text-white mb-6">
+                                IELTS Reading Test Format
+                        </h2>
+
+                        <div class="space-y-6">
+                                <div class="border-l-4 border-blue-500 pl-6">
+                                        <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-2">Test Duration</h3>
+                                        <p class="text-gray-700 dark:text-gray-300">60 minutes total (no extra transfer time)</p>
+                                </div>
+
+                                <div class="border-l-4 border-green-500 pl-6">
+                                        <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-2">Test Structure</h3>
+                                        <p class="text-gray-700 dark:text-gray-300 mb-6">
+                                                The reading test is made up of 40 questions in three sections:
+                                        </p>
+
+                                        <ul class="list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300 mb-8 ml-4">
+                                                <li>Section 1 contains a text of general interest with 13 or 14 questions;</li>
+                                                <li>Section 2 has a text related to work or training with 13 or 14 questions;</li>
+                                                <li>Section 3 contains a more complex text on an academic topic with 13 or 14 questions.</li>
+                                        </ul>
+                                </div>
+
+                                <div class="border-l-4 border-purple-500 pl-6">
+                                        <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-2">Scoring</h3>
+                                        <p class="text-gray-700 dark:text-gray-300">The reading test is scored out of /40. 1 mark for each question.</p>
+                                </div>
+                        </div>
+                </div>
+        </section>
 
         <!-- Page Content -->
-        <div style="max-width: 1200px;" class="mx-auto px-3 md:px-6 py-8">
+        
                 <!-- Lesson Content Overview -->
-                <section class="bg-gray-800 rounded-lg p-6 shadow-sm border border-gray-700 mb-8">
+                <!-- <section class="bg-gray-800 rounded-lg p-6 shadow-sm border border-gray-700 mb-8">
                         <h2 class="text-xl font-semibold mb-4 text-white">Lesson Content:</h2>
                         <ul class="list-disc text-lg list-inside space-y-2 text-white">
                                 <li>Reading Test Format and Question types</li>
@@ -161,52 +194,26 @@
                                 <li>Reading Test question practice</li>
                         </ul>
                 </section>
-
+ -->
                 <!-- Section 1: Reading Test Format and Question Types -->
                 <section class="bg-teal-900/30 rounded-lg p-4 md:p-8 shadow-sm border border-teal-700 mb-8">
                         <h2 class="text-2xl font-bold text-center text-white mb-8">
-                                Reading Test Format and Question types
+                                Reading Test Question types
                         </h2>
 
-                        <div class="max-w-4xl mx-auto">
-                                <p class="text-white text-lg mb-8">
-                                        The Reading Test is the second test that you will complete on test day. The test lasts
-                                        for <strong>60 minutes</strong>. You write your answers directly on the answer sheet
-                                        provided.
-                                </p>
+                        <div class="max-w-4xl mx-auto">  
 
-                                <div class="flex justify-center mb-12">
-                                        <a
-                                                href="https://insideielts.oppyo.com/video/embed/5rp7dvrywv"
-                                                target="_blank"
-                                                title="InsideIELTS virtual examiner reading test preparation video"
-                                                class="inline-block bg-teal-600 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded border-2 border-red-500 text-sm transition-colors"
-                                        >
-                                                Virtual Examiner Video
-                                        </a>
-                                </div>
-
-                                <p class="text-white mb-6">
-                                        The reading test is made up of <strong>40 questions</strong> in <strong>three sections</strong>:
-                                </p>
-
-                                <ul class="list-disc list-inside space-y-2 text-white mb-8 ml-4">
-                                        <li>Section 1 contains a text of general interest with 13 or 14 questions;</li>
-                                        <li>Section 2 has a text related to work or training with 13 or 14 questions;</li>
-                                        <li>Section 3 contains a more complex text on an academic topic with 13 or 14 questions.</li>
-                                </ul>
-
-                                <div class="bg-gray-800 rounded-lg p-6 border border-gray-700 mb-8">
-                                        <p class="text-white mb-4">
+                         <div class="bg-gray-800 rounded-lg p-6 text-lg border border-gray-700 mb-8">
+                                        <p class="text-white mb-6">
                                                 There are <strong>14</strong> main types of question and the questions increase in
                                                 difficulty as the test progresses. All questions are worth <strong>1 mark</strong>.
                                         </p>
 
-                                        <p class="text-white mb-4">
-                                                The questions will usually be formatted in one of the following ways:
+                                        <p class="text-white mt-4 mb-4">
+                                                The questions will be formatted in one of the following ways:
                                         </p>
 
-                                        <div class="grid grid-cols-1 md:grid-cols-2 gap-2 mb-6">
+                                        <div class="grid grid-cols-1 md:grid-cols-2 gap-2 mb-8">
                                                 <div class="text-white font-semibold">1) Diagram labeling</div>
                                                 <div class="text-white font-semibold">8) Multiple choice</div>
                                                 <div class="text-white font-semibold">2) Flow chart completion</div>
@@ -224,9 +231,20 @@
                                         </div>
 
                                         <p class="text-white">
-                                                Below you can see examples of the different styles of question you will encounter in the
-                                                Reading Test.
+                                                Examples of all these questions are shown on the <a href= "/reading"
+                                                                                                    class="text-white hover:text-teal-600 dark:text-white dark:hover:text-teal-400">READING</a> practice page.
                                         </p>
+                                </div>
+
+                                <div class="flex justify-center mt-12 mb-12">
+                                        <a
+                                                href="https://insideielts.oppyo.com/video/embed/5rp7dvrywv"
+                                                target="_blank"
+                                                title="InsideIELTS virtual examiner reading test preparation video"
+                                                class="inline-block bg-teal-600 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded border-2 border-red-500 text-sm transition-colors"
+                                        >
+                                                Virtual Examiner Video
+                                        </a>
                                 </div>
 
                                 <div class="bg-yellow-900/30 border border-yellow-700 rounded-lg p-6">
@@ -602,25 +620,30 @@
                         </div>
                 </section>
 
-                <!-- Footer Navigation -->
-                <div class="bg-gray-800 rounded-lg p-6 shadow-sm border border-gray-700">
-                        <div class="flex justify-between items-center">
-                                <a
-                                        href="/IETPP#lesson-02"
-                                        class="text-teal-600 dark:text-teal-400 hover:underline font-semibold"
-                                        data-sveltekit-reload
-                                >
-                                        ← Back to Course Contents
-                                </a>
-                                <a
-                                        href="/IETPP/lesson-03"
-                                        class="text-teal-600 dark:text-teal-400 hover:underline font-semibold"
-                                        data-sveltekit-reload
-                                >
-                                        Next Lesson →
-                                </a>
+                <!-- End of Lesson -->
+                <section class="text-center py-8">
+                           <p class="text-white text-lg mb-12">End of Intro Lesson 02</p>
+                          <!-- Footer Navigation -->
+                        <div class="bg-gray-800 rounded-lg p-6 shadow-sm border border-gray-700">
+                                <div class="flex justify-between items-center">
+                                        <a
+                                                href="/IETPP#lesson-02"
+                                                class="text-teal-600 dark:text-teal-400 hover:underline font-semibold"
+                                                data-sveltekit-reload
+                                        >
+                                                ← Back to Course Contents
+                                        </a>
+
+                                        <a
+                                                href="/IETPP/lesson-02/lesson02-i"
+                                                class="text-teal-600 dark:text-teal-400 hover:underline font-semibold"
+                                                data-sveltekit-reload
+                                        >
+                                                Next Lesson →
+                                        </a>
+                                </div>
                         </div>
-                </div>
+                </section>
         </div>
 </div>
 
