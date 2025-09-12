@@ -223,7 +223,7 @@
                                         </div>
                                 </div>
 
-                                <p class="text-white mb-10 font-bold">
+                                <!-- <p class="text-white mb-10 font-bold">
                                         Watch this quick Reading Matching information demonstration vid before testing your skills.
                                 </p>
 
@@ -235,7 +235,7 @@
                                         >
                                                 Your browser does not support this video format.
                                         </video>
-                                </div>
+                                </div> -->
 
                                 <div class="text-center">
                                         <p class="text-white text-xl font-bold mb-16">

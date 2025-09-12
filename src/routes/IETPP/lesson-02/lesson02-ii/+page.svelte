@@ -212,7 +212,7 @@
                                         As always, be on the lookout for synonyms and paraphrasing whenever scanning the text for key-words and answers.
                                 </p>
 
-                                <p class="text-white mb-6 font-bold">
+                                <!-- <p class="text-white mb-6 font-bold">
                                         Watch this short YES/NO/NOT GIVEN demonstration vid before testing your skills.
                                 </p>
 
@@ -225,7 +225,7 @@
                                         >
                                                 Watch VE vid
                                         </a>
-                                </div>
+                                </div> -->
 
                                 <div class="text-center">
                                         <p class="text-white text-xl font-bold mb-16">

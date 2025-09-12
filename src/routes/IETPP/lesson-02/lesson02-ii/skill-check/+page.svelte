@@ -119,7 +119,7 @@
         <!-- Page Content -->
         <div style="max-width: 1200px;" class="mx-auto px-3 md:px-6 py-2">
                 <!-- Skill Check Title -->
-                <section class="bg-blue-600/20 rounded-lg p-6 md:p-10 shadow-sm border border-blue-600/50 mb-12 text-gray-100">
+                <section class="bg-teal-600/20 rounded-lg p-6 md:p-10 shadow-sm border border-blue-600/50 mb-12 text-gray-100">
                         <h2 class="text-2xl font-bold text-center text-gray-100 mb-8">
                                 IELTS Reading Skills Practice Exercise
                         </h2>
