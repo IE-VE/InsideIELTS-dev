@@ -140,7 +140,7 @@
                                                                 </div>
                                                                 <div class="flex gap-2">
                                                                         <span class="text-gray-600 dark:text-gray-400">(ii)</span>
-                                                                        <a href="#" class="text-teal-600 dark:text-teal-400 hover:underline">True/False/Not given</a>
+                                                                        <a href="/IETPP/lesson-02/lesson02-ii" class="text-teal-600 dark:text-teal-400 hover:underline">True/False/Not given</a>
                                                                 </div>
                                                                 <div class="flex gap-2">
                                                                         <span class="text-gray-600 dark:text-gray-400">(iii)</span>

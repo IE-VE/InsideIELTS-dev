@@ -171,19 +171,116 @@
                                         </div>
 
                                         <div class="space-y-4">
-                                                {#each [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] as num}
-                                                        <div class="flex items-center gap-3">
-                                                                <label class="text-sm font-medium min-w-[80px]">
-                                                                        Question {num}:
-                                                                </label>
-                                                                <input
-                                                                        type="text"
-                                                                        bind:value={num === 1 ? q1 : num === 2 ? q2 : num === 3 ? q3 : num === 4 ? q4 : num === 5 ? q5 : num === 6 ? q6 : num === 7 ? q7 : num === 8 ? q8 : num === 9 ? q9 : q10}
-                                                                        class="flex-1 px-3 py-2 bg-gray-700 border border-gray-600 rounded text-white text-sm focus:outline-none focus:border-blue-500"
-                                                                        placeholder="True / False / Not given"
-                                                                />
-                                                        </div>
-                                                {/each}
+                                                <div class="flex items-center gap-3">
+                                                        <label class="text-sm font-medium min-w-[80px]">
+                                                                Question 1:
+                                                        </label>
+                                                        <input
+                                                                type="text"
+                                                                bind:value={q1}
+                                                                class="flex-1 px-3 py-2 bg-gray-700 border border-gray-600 rounded text-white text-sm focus:outline-none focus:border-blue-500"
+                                                                placeholder="True / False / Not given"
+                                                        />
+                                                </div>
+                                                <div class="flex items-center gap-3">
+                                                        <label class="text-sm font-medium min-w-[80px]">
+                                                                Question 2:
+                                                        </label>
+                                                        <input
+                                                                type="text"
+                                                                bind:value={q2}
+                                                                class="flex-1 px-3 py-2 bg-gray-700 border border-gray-600 rounded text-white text-sm focus:outline-none focus:border-blue-500"
+                                                                placeholder="True / False / Not given"
+                                                        />
+                                                </div>
+                                                <div class="flex items-center gap-3">
+                                                        <label class="text-sm font-medium min-w-[80px]">
+                                                                Question 3:
+                                                        </label>
+                                                        <input
+                                                                type="text"
+                                                                bind:value={q3}
+                                                                class="flex-1 px-3 py-2 bg-gray-700 border border-gray-600 rounded text-white text-sm focus:outline-none focus:border-blue-500"
+                                                                placeholder="True / False / Not given"
+                                                        />
+                                                </div>
+                                                <div class="flex items-center gap-3">
+                                                        <label class="text-sm font-medium min-w-[80px]">
+                                                                Question 4:
+                                                        </label>
+                                                        <input
+                                                                type="text"
+                                                                bind:value={q4}
+                                                                class="flex-1 px-3 py-2 bg-gray-700 border border-gray-600 rounded text-white text-sm focus:outline-none focus:border-blue-500"
+                                                                placeholder="True / False / Not given"
+                                                        />
+                                                </div>
+                                                <div class="flex items-center gap-3">
+                                                        <label class="text-sm font-medium min-w-[80px]">
+                                                                Question 5:
+                                                        </label>
+                                                        <input
+                                                                type="text"
+                                                                bind:value={q5}
+                                                                class="flex-1 px-3 py-2 bg-gray-700 border border-gray-600 rounded text-white text-sm focus:outline-none focus:border-blue-500"
+                                                                placeholder="True / False / Not given"
+                                                        />
+                                                </div>
+                                                <div class="flex items-center gap-3">
+                                                        <label class="text-sm font-medium min-w-[80px]">
+                                                                Question 6:
+                                                        </label>
+                                                        <input
+                                                                type="text"
+                                                                bind:value={q6}
+                                                                class="flex-1 px-3 py-2 bg-gray-700 border border-gray-600 rounded text-white text-sm focus:outline-none focus:border-blue-500"
+                                                                placeholder="True / False / Not given"
+                                                        />
+                                                </div>
+                                                <div class="flex items-center gap-3">
+                                                        <label class="text-sm font-medium min-w-[80px]">
+                                                                Question 7:
+                                                        </label>
+                                                        <input
+                                                                type="text"
+                                                                bind:value={q7}
+                                                                class="flex-1 px-3 py-2 bg-gray-700 border border-gray-600 rounded text-white text-sm focus:outline-none focus:border-blue-500"
+                                                                placeholder="True / False / Not given"
+                                                        />
+                                                </div>
+                                                <div class="flex items-center gap-3">
+                                                        <label class="text-sm font-medium min-w-[80px]">
+                                                                Question 8:
+                                                        </label>
+                                                        <input
+                                                                type="text"
+                                                                bind:value={q8}
+                                                                class="flex-1 px-3 py-2 bg-gray-700 border border-gray-600 rounded text-white text-sm focus:outline-none focus:border-blue-500"
+                                                                placeholder="True / False / Not given"
+                                                        />
+                                                </div>
+                                                <div class="flex items-center gap-3">
+                                                        <label class="text-sm font-medium min-w-[80px]">
+                                                                Question 9:
+                                                        </label>
+                                                        <input
+                                                                type="text"
+                                                                bind:value={q9}
+                                                                class="flex-1 px-3 py-2 bg-gray-700 border border-gray-600 rounded text-white text-sm focus:outline-none focus:border-blue-500"
+                                                                placeholder="True / False / Not given"
+                                                        />
+                                                </div>
+                                                <div class="flex items-center gap-3">
+                                                        <label class="text-sm font-medium min-w-[80px]">
+                                                                Question 10:
+                                                        </label>
+                                                        <input
+                                                                type="text"
+                                                                bind:value={q10}
+                                                                class="flex-1 px-3 py-2 bg-gray-700 border border-gray-600 rounded text-white text-sm focus:outline-none focus:border-blue-500"
+                                                                placeholder="True / False / Not given"
+                                                        />
+                                                </div>
                                         </div>
 
                                         <!-- Submit Button -->
