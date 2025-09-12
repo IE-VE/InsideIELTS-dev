@@ -68,6 +68,7 @@
                                 <h2 class="text-3xl font-bold text-center text-white">Skills Practice</h2>
                                 <div class="text-4xl">📖</div>
                         </div>
+                        
                         <div class="bg-white dark:bg-gray-800 rounded-lg p-8 shadow-sm border border-gray-200 dark:border-gray-700 mb-12">
                                 <h2 class="text-2xl text-center font-bold text-gray-800 dark:text-gray-200 mb-10">
                                         True/False/Not given
@@ -77,8 +78,60 @@
                                         <div>
                                                 <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-6">What to Expect</h3>
                                                 <p class="text-gray-700 dark:text-gray-300 text-lg mb-8">
-                                                        Each Reading Test will have a set of <strong>True/False/Not given</strong> or <strong>Yes/No/Not given</strong> questions.
+                                                        True/False/Not given questions test your ability to identify whether information in statements agrees with, contradicts, or is simply not mentioned in the reading passage. You'll need to distinguish between facts that are explicitly stated, facts that contradict the passage, and information that is not provided at all. This question type appears in every IELTS Reading test and requires careful analysis to avoid common traps.
                                                 </p>
+                                        </div>
+
+                                        <div>
+                                                <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-6">Key Strategies</h3>
+                                                <div class="bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-lg p-4">
+                                                        <ul class="space-y-2 text-gray-700 dark:text-gray-300">
+                                                                <li class="flex items-start">
+                                                                        <span class="text-blue-600 dark:text-blue-400 mr-2">1.</span>
+                                                                        <span><strong>Underline keywords:</strong> Identify key words and phrases in each statement before reading the passage</span>
+                                                                </li>
+                                                                <li class="flex items-start">
+                                                                        <span class="text-blue-600 dark:text-blue-400 mr-2">2.</span>
+                                                                        <span><strong>Scan for locations:</strong> Find where each topic is discussed in the passage using keywords</span>
+                                                                </li>
+                                                                <li class="flex items-start">
+                                                                        <span class="text-blue-600 dark:text-blue-400 mr-2">3.</span>
+                                                                        <span><strong>Read carefully:</strong> Focus on the exact meaning of both the statement and passage text</span>
+                                                                </li>
+                                                                <li class="flex items-start">
+                                                                        <span class="text-blue-600 dark:text-blue-400 mr-2">4.</span>
+                                                                        <span><strong>Watch for synonyms:</strong> Look for paraphrased ideas rather than exact word matches</span>
+                                                                </li>
+                                                                <li class="flex items-start">
+                                                                        <span class="text-blue-600 dark:text-blue-400 mr-2">5.</span>
+                                                                        <span><strong>Be precise:</strong> Choose "Not given" only when the information is completely absent</span>
+                                                                </li>
+                                                        </ul>
+                                                </div>
+                                        </div>
+
+                                        <div>
+                                                <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-6">Common Pitfalls</h3>
+                                                <div class="bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-lg p-4">
+                                                        <ul class="space-y-2 text-gray-700 dark:text-gray-300">
+                                                                <li class="flex items-start">
+                                                                        <span class="text-red-600 dark:text-red-400 mr-2">⚠️</span>
+                                                                        <span>Confusing "False" with "Not given" - False means the opposite is stated, Not given means no information</span>
+                                                                </li>
+                                                                <li class="flex items-start">
+                                                                        <span class="text-red-600 dark:text-red-400 mr-2">⚠️</span>
+                                                                        <span>Using outside knowledge instead of only what's written in the passage</span>
+                                                                </li>
+                                                                <li class="flex items-start">
+                                                                        <span class="text-red-600 dark:text-red-400 mr-2">⚠️</span>
+                                                                        <span>Making assumptions when partial information is given - stick to exact meanings</span>
+                                                                </li>
+                                                                <li class="flex items-start">
+                                                                        <span class="text-red-600 dark:text-red-400 mr-2">⚠️</span>
+                                                                        <span>Ignoring qualifying words like "some," "all," "never," or "always" that change meaning</span>
+                                                                </li>
+                                                        </ul>
+                                                </div>
                                         </div>
                                 </div>
                         </div>
