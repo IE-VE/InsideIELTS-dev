@@ -50,18 +50,18 @@
                         <div class="flex justify-between items-center">
                                 <a
                                         href="/IETPP#lesson-01"
-                                        class="text-teal-600 dark:text-teal-400 hover:underline font-semibold"
+                                        class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300 font-semibold"
                                         data-sveltekit-reload
                                 >
                                         ← Back to Contents
                                 </a>
 
                                 <a
-                                        href="/IETPP/lesson-01/lesson01-ii"
-                                        class="text-teal-600 dark:text-teal-400 hover:underline font-semibold"
+                                        href="/IETPP/lesson-01/lesson01-iii/skill-check"
+                                        class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300 font-semibold"
                                         data-sveltekit-reload
                                 >
-                                        ← Previous Lesson
+                                        Next Lesson →
                                 </a>
                         </div>
                 </div>
@@ -260,18 +260,18 @@
                                 <div class="flex justify-between items-center">
                                         <a
                                                 href="/IETPP#lesson-01"
-                                                class="text-teal-600 dark:text-teal-400 hover:underline font-semibold"
+                                                class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300 font-semibold"
                                                 data-sveltekit-reload
                                         >
                                                 ← Back to Contents
                                         </a>
-                                          
+                                        <p class="text-white">End of Lesson 01-iii</p>
                                         <a
-                                                href="/IETPP/lesson-01/lesson01-ii"
-                                                class="text-teal-600 dark:text-teal-400 hover:underline font-semibold"
+                                                href="/IETPP/lesson-01/lesson01-iii/skill-check"
+                                                class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300 font-semibold"
                                                 data-sveltekit-reload
                                         >
-                                                ← Previous Lesson
+                                                Next Lesson →
                                         </a>
                                 </div>
                         </div>
