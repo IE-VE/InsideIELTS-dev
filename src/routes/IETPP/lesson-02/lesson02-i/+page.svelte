@@ -68,9 +68,10 @@
         </div>
 
         <!-- Page Content -->
-        <div style="max-width: 1200px;" class="mx-auto px-6 py-12">
-                <!-- Lesson Title Section -->
-                <section class="bg-blue-600/20 rounded-lg p-10 shadow-sm border border-blue-600/50 mb-12">
+        
+        <div style="max-width: 1200px;" class="mx-auto px-6 py-12">        
+                
+                            <section class="bg-blue-600/20 rounded-lg p-10 shadow-sm border border-blue-600/50 mb-12">
                         <div class="flex items-center justify-center gap-4 mb-10">
                                 <div class="text-4xl">📖</div>
                                 <h2 class="text-3xl font-bold text-center text-white">Skills Practice</h2>
@@ -132,15 +133,11 @@
                                                                 </li>
                                                         </ul>
                                                 </div>
-                                        </div>
-
-                                
+                                        </div>                                
                                 </div>
                         </div>
 
                         <div class="max-w-4xl mx-auto text-lg">
-
-
                                 <div>
                                         <p class="text-gray-700 dark:text-gray-300 text-lg mb-8">
                                                 The instructions at the beginning of the question set will tell you to write the letter which corresponds to the answer paragraph, (<strong><i>e.g. A, B, C, ..G</i></strong>) on your answer sheet.
@@ -231,20 +228,6 @@
                                         </div>
                                 </div>
 
-                                <!-- <p class="text-white mb-10 font-bold">
-                                        Watch this quick Reading Matching information demonstration vid before testing your skills.
-                                </p>
-
-                                <div class="flex justify-center mb-12">
-                                        <video
-                                                controls
-                                                class="w-full max-w-2xl rounded border border-gray-600"
-                                                src="/LESSONS/les02/R02_answervid1.mp4"
-                                        >
-                                                Your browser does not support this video format.
-                                        </video>
-                                </div> -->
-
                                 <div class="text-center">
                                         <p class="text-white text-xl font-bold mb-16">
                                                 Now complete the READING - Matching information Skill Check exercise
@@ -262,10 +245,9 @@
                         </div>
                 </section>
 
-                <!-- End of Lesson -->
-                <section class="text-center">
-                       
-                          <!-- Footer Navigation -->
+                               <!-- Footer Navigation -->
+                <section class="text-center">                       
+                        
                         <div class="bg-gray-800 rounded-lg p-6 shadow-sm border border-gray-700">
                                 <div class="flex justify-between items-center">
                                         <a
@@ -275,7 +257,7 @@
                                         >
                                                 ← Back to Contents
                                         </a>
-                                            <p class="text-white">End of Lesson 02-i</p>
+                                          
                                         <a
                                                 href="/IETPP/lesson-02/lesson02-ii"
                                                 class="text-teal-600 dark:text-teal-400 hover:underline font-semibold"

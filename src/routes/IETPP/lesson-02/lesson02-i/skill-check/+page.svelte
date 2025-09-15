@@ -209,9 +209,7 @@
         <div class="max-w-5xl container mx-auto px-6 pt-8">
                 <div class="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 mb-8">
                         <div class="text-center">
-                                <div class="text-xs text-left text-teal-600 dark:text-teal-400 mb-4">
-                                        SC2(i)
-                                
+                                <div class="text-xs text-left text-teal-600 dark:text-teal-400 mb-4">    SC2(i)                                
                                 </div>
                                 <h1 class="text-3xl font-bold text-white mb-4">
                                         READING - Matching Information
@@ -226,7 +224,6 @@
                                 >
                                         ← Back to Contents
                                 </a>
-
                                 <a
                                         href="/IETPP/lesson-02/lesson02-ii"
                                         class="text-teal-600 dark:text-teal-400 hover:underline font-semibold"
@@ -253,8 +250,7 @@
                         </p>
 
                         <!-- Exercise -->
-                        <!-- SC2I_PASSAGE_START -->
-                        <div class="bg-blue-600 text-white px-4 py-2 rounded-lg text-center font-bold mb-10">
+                      <div class="bg-blue-600 text-white px-4 py-2 rounded-lg text-center font-bold mb-10">
                                 SC2(i)
                         </div>
                         
@@ -484,9 +480,10 @@
                                         </div>
                                 {/if}
                 </section>
-                <!-- End of Lesson -->
-                <section class="text-center">
-                       <!-- Footer Navigation -->
+                
+                  <!-- Footer Navigation -->
+                
+                <section class="text-center">                     
                                         <div class="bg-gray-800 rounded-lg p-6 shadow-sm border border-gray-700">
                                                 <div class="flex justify-between items-center">
                                                         <a
@@ -496,7 +493,7 @@
                                                         >
                                                                 ← Back to Contents
                                                         </a>
-                               
+                                                          <p class="text-white">End of Lesson 02-i</p>
                                                         <a
                                                                 href="/IETPP/lesson-02/lesson02-ii"
                                                                 class="text-teal-600 dark:text-teal-400 hover:underline font-semibold"
@@ -509,7 +506,6 @@
                                 </section>
                         </div>
                 </div>
-
 
 <!-- Lightbox Modal -->
 {#if lightboxOpen}
