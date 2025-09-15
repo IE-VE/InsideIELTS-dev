@@ -206,31 +206,39 @@
 
 <div class="min-h-screen bg-gray-900 text-white">
         <!-- Lesson Header -->
-        <div class="max-w-5xl container mx-auto px-3 md:px-6 py-12">
-                <div class="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 mb-12">
+        <div class="max-w-5xl container mx-auto px-6 pt-8">
+                <div class="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 mb-8">
                         <div class="text-center">
                                 <div class="text-xs text-left text-teal-600 dark:text-teal-400 mb-4">
-                                        SC2(i)
+                                        IE2401_02.1
                                 </div>
-                                <h1 class="text-3xl font-bold text-white mb-2">
+                                <h1 class="text-3xl font-bold text-white mb-4">
                                         READING - Matching Information
                                 </h1>
-        
                         </div>
 
-                        <div class="text-right mt-6">
+                        <div class="flex justify-between items-center">
                                 <a
-                                        href="/IETPP/lesson-02/lesson02-i"
+                                        href="/IETPP#lesson-02"
                                         class="text-teal-600 dark:text-teal-400 hover:underline font-semibold"
+                                        data-sveltekit-reload
                                 >
-                                        ← Back to Lesson
+                                        ← Back to Contents
+                                </a>
+
+                                <a
+                                        href="/IETPP/lesson-02/lesson02-ii"
+                                        class="text-teal-600 dark:text-teal-400 hover:underline font-semibold"
+                                        data-sveltekit-reload
+                                >
+                                        Next Lesson →
                                 </a>
                         </div>
                 </div>
         </div>
 
         <!-- Page Content -->
-        <div style="max-width: 1200px;" class="mx-auto px-3 md:px-6 py-2">
+        <div style="max-width: 1200px;" class="mx-auto px-3 md:px-6 py-12">
                 <!-- Skill Check Title -->
                 <section class="bg-blue-600/20 rounded-lg p-6 md:p-10 shadow-sm border border-blue-600/50 mb-12">
                         <div class="flex items-center justify-center gap-4 mb-10">
@@ -462,17 +470,32 @@
                                 </div>
                         {/if}
                 </section>
+                <!-- End of Lesson -->
+                <section class="text-center">
+                       <!-- Footer Navigation -->
+                                        <div class="bg-gray-800 rounded-lg p-6 shadow-sm border border-gray-700">
+                                                <div class="flex justify-between items-center">
+                                                        <a
+                                                                href="/IETPP#lesson-02"
+                                                                class="text-teal-600 dark:text-teal-400 hover:underline font-semibold"
+                                                                data-sveltekit-reload
+                                                        >
+                                                                ← Back to Contents
+                                                        </a>
+                               
+                                                        <a
+                                                                href="/IETPP/lesson-02/lesson02-ii"
+                                                                class="text-teal-600 dark:text-teal-400 hover:underline font-semibold"
+                                                                data-sveltekit-reload
+                                                        >
+                                                                Next Lesson →
+                                                        </a>
+                                                </div>
+                                        </div>
+                                </section>
+                        </div>
+                </div>
 
-                <!-- Back Link -->
-                <section class="text-center py-12">
-                        <p class="text-white mb-16">
-                                <a href="/IETPP#lesson-02" class="text-teal-400 hover:underline">
-                                        ← Back to Contents
-                                </a>
-                        </p>
-                </section>
-        </div>
-</div>
 
 <!-- Lightbox Modal -->
 {#if lightboxOpen}
