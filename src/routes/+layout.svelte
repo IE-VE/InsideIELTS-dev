@@ -278,7 +278,7 @@
 
         /* IETPP pulse animation - only on home page */
         :global(.ietpp-pulse) {
-                animation: ietppColorPulse 9s infinite;
+                animation: ietppColorPulse 5s infinite;
         }
 
         /* Pause animation on hover and show teal color */
@@ -289,8 +289,8 @@
 
         @keyframes ietppColorPulse {
                 0% { color: white; }
-                44.4% { color: rgb(45, 212, 191); } /* teal-400 - reached at 4s */
-                55.6% { color: white; } /* back to white in 1s */
-                100% { color: white; } /* hold white for 4s */
+                60% { color: rgb(45, 212, 191); } /* teal-400 - reached at 3s */
+                70% { color: white; } /* back to white in 0.5s */
+                100% { color: white; } /* hold white for 1.5s */
         }
 </style>
