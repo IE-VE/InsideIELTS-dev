@@ -281,9 +281,10 @@
                 animation: ietppColorPulse 9s infinite;
         }
 
-        /* Pause animation on hover */
+        /* Pause animation on hover and show teal color */
         :global(.ietpp-pulse:hover) {
                 animation-play-state: paused;
+                color: rgb(45, 212, 191) !important; /* teal-400 */
         }
 
         @keyframes ietppColorPulse {
