@@ -278,12 +278,12 @@
 
         /* IETPP pulse animation - only on home page */
         :global(.ietpp-pulse) {
-                animation: ietppColorPulse 8s infinite;
+                animation: ietppColorPulse 5s infinite;
         }
 
         @keyframes ietppColorPulse {
                 0% { color: white; }
-                50% { color: rgb(45, 212, 191); } /* teal-400 */
-                100% { color: white; }
+                80% { color: rgb(45, 212, 191); } /* teal-400 - reached at 4s */
+                100% { color: white; } /* back to white in 1s */
         }
 </style>
