@@ -281,6 +281,11 @@
                 animation: ietppColorPulse 9s infinite;
         }
 
+        /* Pause animation on hover */
+        :global(.ietpp-pulse:hover) {
+                animation-play-state: paused;
+        }
+
         @keyframes ietppColorPulse {
                 0% { color: white; }
                 44.4% { color: rgb(45, 212, 191); } /* teal-400 - reached at 4s */
