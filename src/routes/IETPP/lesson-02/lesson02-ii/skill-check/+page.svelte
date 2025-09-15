@@ -225,6 +225,13 @@
                                 >
                                         ← Back to Contents
                                 </a>
+                                <a
+                                        href="/IETPP/lesson-02/lesson02-ii"
+                                        class="text-teal-600 dark:text-teal-400 hover:underline font-semibold"
+                                        data-sveltekit-reload
+                                >
+                                        Next Lesson →
+                                </a>
                         </div>
                 </div>
         </div>
