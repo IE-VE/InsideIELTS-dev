@@ -4,16 +4,34 @@
         let lightboxOpen = $state(false);
         let lightboxImage = $state('');
 
-        // Form data for True/False/Not given questions
+        // Form data for True/False/Not given questions (5 questions from HTML file)
         let q1 = $state(''), q2 = $state(''), q3 = $state(''), q4 = $state(''), q5 = $state('');
-        let q6 = $state(''), q7 = $state(''), q8 = $state(''), q9 = $state(''), q10 = $state('');
 
-        // Results for all exercises
+        // Results for the exercise
         let showResults = $state(false);
         let markingResults = $state({});
         
         // Loading state
         let loadingAnswers = $state(false);
+        
+        // Highlighting state
+        let highlightingEnabled = $state(false);
+        let highlightedRanges = $state([]);
+        
+        // Height sync elements
+        let questionsContainerEl: HTMLElement;
+        let passageScrollEl: HTMLElement;
+        
+        function syncHeights() {
+                if (!passageScrollEl) return;
+                const isDesktop = window.innerWidth >= 768;
+                if (isDesktop && questionsContainerEl) {
+                        // Set reading passage height to match questions container height
+                        passageScrollEl.style.height = `${questionsContainerEl.offsetHeight}px`;
+                } else {
+                        passageScrollEl.style.height = '';
+                }
+        }
 
         function openLightbox(imageSrc: string) {
                 lightboxImage = imageSrc;
@@ -24,27 +42,105 @@
                 lightboxOpen = false;
                 lightboxImage = '';
         }
+        
+        // Highlighting functions
+        function toggleHighlighting() {
+                highlightingEnabled = !highlightingEnabled;
+                if (!highlightingEnabled) {
+                        // Clear any active selection when disabling
+                        window.getSelection()?.removeAllRanges();
+                }
+        }
+        
+        function handleTextSelection() {
+                if (!highlightingEnabled) return;
+                
+                const selection = window.getSelection();
+                if (selection && selection.toString().trim() && !selection.isCollapsed) {
+                        const range = selection.getRangeAt(0);
+                        
+                        // Only highlight if within the passage container
+                        const passageContainer = range.commonAncestorContainer.nodeType === Node.TEXT_NODE 
+                                ? range.commonAncestorContainer.parentElement?.closest('.passage-text')
+                                : range.commonAncestorContainer.closest?.('.passage-text');
+                        
+                        if (passageContainer) {
+                                highlightSelectedText(range);
+                        }
+                        
+                        selection.removeAllRanges();
+                }
+        }
+        
+        function highlightSelectedText(range: Range) {
+                const span = document.createElement('span');
+                span.className = 'highlight-text bg-yellow-200 dark:bg-yellow-600 cursor-pointer';
+                span.setAttribute('data-highlight-id', Date.now().toString());
+                
+                try {
+                        range.surroundContents(span);
+                        
+                        // Store highlight info
+                        highlightedRanges = [...highlightedRanges, {
+                                id: span.getAttribute('data-highlight-id'),
+                                text: span.textContent
+                        }];
+                        
+                        // Add click listener to remove highlight
+                        span.addEventListener('click', (e) => {
+                                e.stopPropagation();
+                                removeHighlight(span);
+                        });
+                } catch (error) {
+                        // If surroundContents fails for complex selections
+                        console.warn('Could not highlight complex selection:', error);
+                }
+        }
+        
+        function removeHighlight(span: HTMLSpanElement) {
+                const highlightId = span.getAttribute('data-highlight-id');
+                
+                // Remove from state
+                highlightedRanges = highlightedRanges.filter(h => h.id !== highlightId);
+                
+                // Replace span with its text content
+                const parent = span.parentNode;
+                if (parent) {
+                        parent.replaceChild(document.createTextNode(span.textContent || ''), span);
+                        parent.normalize(); // Merge adjacent text nodes
+                }
+        }
+        
+        function clearAllHighlights() {
+                // Remove all highlight spans
+                const highlightSpans = document.querySelectorAll('.highlight-text[data-highlight-id]');
+                highlightSpans.forEach(span => {
+                        const parent = span.parentNode;
+                        if (parent) {
+                                parent.replaceChild(document.createTextNode(span.textContent || ''), span);
+                                parent.normalize();
+                        }
+                });
+                
+                // Clear state
+                highlightedRanges = [];
+        }
 
         function checkAllAnswers() {
                 loadingAnswers = true;
                 showResults = false;
                 
                 setTimeout(() => {
-                        // Correct answers for True/False/Not given questions (case-insensitive)
+                        // Correct answers for the "Remarkable Beetle" passage (case-insensitive)
                         const correctAnswers = {
-                                q1: ['true', 't', 'yes', 'y'],
-                                q2: ['false', 'f', 'no', 'n'],
-                                q3: ['not given', 'ng', 'not stated'],
-                                q4: ['true', 't', 'yes', 'y'],
-                                q5: ['false', 'f', 'no', 'n'],
-                                q6: ['not given', 'ng', 'not stated'],
-                                q7: ['true', 't', 'yes', 'y'],
-                                q8: ['false', 'f', 'no', 'n'],
-                                q9: ['not given', 'ng', 'not stated'],
-                                q10: ['true', 't', 'yes', 'y']
+                                q1: ['not given', 'ng', 'not stated'],  // Bush flies easier to control than buffalo flies
+                                q2: ['false', 'f', 'no', 'n'],         // Four thousand species brought to Australia by CSIRO
+                                q3: ['true', 't', 'yes', 'y'],         // CSIRO brought beetles over fourteen-year period (1968-1982)
+                                q4: ['true', 't', 'yes', 'y'],         // At least twenty-six species became established
+                                q5: ['false', 'f', 'no', 'n']          // Immediate improvement to cow pasture quality
                         };
 
-                        const userAnswers = { q1, q2, q3, q4, q5, q6, q7, q8, q9, q10 };
+                        const userAnswers = { q1, q2, q3, q4, q5 };
                         const results = {};
                         let totalCorrect = 0;
 
@@ -64,7 +160,7 @@
                         });
 
                         results.totalCorrect = totalCorrect;
-                        results.totalQuestions = 10;
+                        results.totalQuestions = 5;
                         markingResults = results;
                         showResults = true;
                         loadingAnswers = false;
@@ -79,7 +175,24 @@
                 }
 
                 document.addEventListener('keydown', handleKeydown);
-                return () => document.removeEventListener('keydown', handleKeydown);
+                
+                // Setup height sync
+                const ro = new ResizeObserver(syncHeights);
+                if (questionsContainerEl) ro.observe(questionsContainerEl);
+                window.addEventListener('resize', syncHeights);
+                syncHeights();
+                
+                // Add text selection handlers
+                document.addEventListener('mouseup', handleTextSelection);
+                document.addEventListener('touchend', handleTextSelection);
+                
+                return () => {
+                        document.removeEventListener('keydown', handleKeydown);
+                        document.removeEventListener('mouseup', handleTextSelection);
+                        document.removeEventListener('touchend', handleTextSelection);
+                        ro.disconnect();
+                        window.removeEventListener('resize', syncHeights);
+                };
         });
 </script>
 
@@ -119,265 +232,268 @@
         <!-- Page Content -->
         <div style="max-width: 1200px;" class="mx-auto px-3 md:px-6 py-2">
                 <!-- Skill Check Title -->
-                <section class="bg-teal-600/20 rounded-lg p-6 md:p-10 shadow-sm border border-blue-600/50 mb-12 text-gray-100">
-                        <h2 class="text-2xl font-bold text-center text-gray-100 mb-8">
-                                IELTS Reading Skills Practice Exercise
-                        </h2>
+                <section class="bg-teal-600/20 rounded-lg p-6 md:p-10 shadow-sm border border-blue-600/50 mb-12">
+                        <div class="flex items-center justify-center gap-4 mb-10">
+                                <div class="text-4xl text-green-500">✓</div>
+                                <h2 class="text-3xl font-bold text-center text-white">SKILL CHECK</h2>
+                                <div class="text-4xl text-green-500">✓</div>
+                        </div>
                         
-                        <div class="bg-gray-800 rounded-lg p-6 border border-gray-600">
-                                <h3 class="text-lg font-semibold mb-4">Instructions:</h3>
-                                <div class="space-y-3 text-sm">
-                                        <p>• Read the passage carefully and answer the True/False/Not given questions</p>
-                                        <p>• Write <strong>True</strong> if the statement agrees with the information</p>
-                                        <p>• Write <strong>False</strong> if the statement contradicts the information</p>  
-                                        <p>• Write <strong>Not given</strong> if there is no information on this</p>
-                                        <p>• Complete all questions before checking your answers</p>
-                                </div>
-                        </div>
-                </section>
+                        <p class="text-center text-white text-xl mb-12">
+                                <strong>Complete this Reading Skill Check exercise then upload your answers for checking and feedback.</strong>
+                        </p>
 
-                <!-- Reading Passage and Questions -->
-                <section class="mb-12">
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <!-- Exercise -->
+                        <!-- SC2II_PASSAGE_START -->
+                        <div class="bg-teal-600 text-white px-4 py-2 rounded-lg text-center font-bold mb-10">
+                                SC2(ii)
+                        </div>
+                        
+                        <h3 class="text-2xl font-bold text-center text-white mb-8">READING - True/False/Not given</h3>
+                        
+                        <!-- Highlighting Controls -->
+                        <div class="flex flex-wrap justify-center gap-2 mb-6">
+                                <button
+                                        onclick={toggleHighlighting}
+                                        class="px-4 py-2 rounded-md font-medium transition-colors {highlightingEnabled ? 'bg-yellow-500 text-white' : 'bg-gray-200 text-gray-700 hover:bg-gray-300 dark:bg-gray-600 dark:text-gray-300 dark:hover:bg-gray-500'}"
+                                >
+                                        {highlightingEnabled ? '🖍️ Highlighting ON' : '🖍️ Enable Highlighting'}
+                                </button>
+                                
+                                {#if highlightedRanges.length > 0}
+                                        <button
+                                                onclick={clearAllHighlights}
+                                                class="px-4 py-2 rounded-md font-medium transition-colors bg-red-500 text-white hover:bg-red-600"
+                                        >
+                                                Clear All Highlights
+                                        </button>
+                                {/if}
+                        </div>
+                        
+                        {#if highlightingEnabled}
+                                <div class="flex justify-center mb-6">
+                                        <div class="flex items-center gap-2 px-3 py-2 bg-blue-50 dark:bg-blue-900/20 rounded-md text-sm text-blue-700 dark:text-blue-300">
+                                                <span>💡 Select text to highlight. Click highlighted text to remove.</span>
+                                        </div>
+                                </div>
+                        {/if}
+                        
+                        <!-- Desktop: Side-by-side layout (768px+), Mobile: Stacked -->
+                        <div class="flex flex-col md:flex-row gap-6 items-start mb-6 min-h-0">
                                 <!-- Reading Passage -->
-                                <div class="bg-gray-800 rounded-lg p-6 border border-gray-600">
-                                        <h3 class="text-xl font-bold mb-6 text-center">Reading Passage</h3>
-                                        <div class="prose prose-invert max-w-none text-sm leading-relaxed">
-                                                <img
-                                                        src="/LESSONS/les02/02(ii)/TFNG-SCtext.png"
-                                                        alt="IELTS Reading Text"
-                                                        class="w-full rounded border border-gray-600 cursor-pointer mb-4"
-                                                        onclick={() => openLightbox('/LESSONS/les02/02(ii)/TFNG-SCtext.png')}
-                                                />
-                                                <img
-                                                        src="/LESSONS/les02/02(ii)/TFNG-SCtext2.png"
-                                                        alt="IELTS Reading Text Continued"
-                                                        class="w-full rounded border border-gray-600 cursor-pointer"
-                                                        onclick={() => openLightbox('/LESSONS/les02/02(ii)/TFNG-SCtext2.png')}
-                                                />
+                                <div class="md:w-2/3 bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8 overflow-y-auto passage-text" bind:this={passageScrollEl}>
+                                        <h4 class="text-xl font-bold mb-6 text-center text-gray-800 dark:text-gray-200">A Remarkable Beetle</h4>
+                                        
+                                        <div class="flex justify-center mb-6">
+                                                <div class="text-sm text-gray-600 dark:text-gray-400 bg-blue-50 dark:bg-blue-900/20 px-3 py-1 rounded">
+                                                        <img src="/reading-images/dung-beetle.png" alt="Dung beetle rolling dung" class="w-32 h-24 object-cover rounded mx-auto"/>
+                                                </div>
+                                        </div>
+                                        
+                                        <div class="space-y-4 text-sm leading-relaxed text-gray-800 dark:text-gray-200">
+                                                <p>Some of the most remarkable beetles are the dung beetles, which spend almost their whole lives eating and breeding in dung.</p>
+
+                                                <p>More than 4,000 species of these remarkable creatures have evolved and adapted to the world's different climates and the dung of its many animals. Australia's native dung beetles are scrub and woodland dwellers, specialising in coarse marsupial droppings and avoiding the soft cattle dung in which bush flies and buffalo flies breed.</p>
+
+                                                <p>In the early 1960s George Bornemissza, then a scientist at the Australian Government's premier research organisation, the Commonwealth Scientific and Industrial Research Organisation (CSIRO), suggested that dung beetles should be introduced to Australia to control dung-breeding flies. Between 1968 and 1982, the CSIRO imported insects from about 50 different species of dung beetle, from Asia, Europe and Africa, aiming to match them to different climatic zones in Australia. Of the 26 species that are known to have become successfully integrated into the local environment, only one, an African species released in northern Australia, has reached its natural boundary.</p>
+
+                                                <p>Introducing dung beetles into a pasture is a simple process: approximately 1,500 beetles are released, a handful at a time, into fresh cow pats in the cow pasture. The beetles immediately disappear beneath the pats digging and tunnelling and, if they successfully adapt to their new environment, soon become a permanent, self-sustaining part of the local ecology. In time they multiply and within three or four years the benefits to the pasture are obvious.</p>
+
+                                                <p>Dung beetles work from the inside of the pat so they are sheltered from predators such as birds and foxes. Most species burrow into the soil and bury dung in tunnels directly underneath the pats, which are hollowed out from within. Some large species originating from France excavate tunnels to a depth of approximately 30 cm below the dung pat. These beetles make sausage-shaped brood chambers along the tunnels. The shallowest tunnels belong to a much smaller Spanish species that buries dung in chambers that hang like fruit from the branches of a pear tree.</p>
                                         </div>
                                 </div>
-
-                                <!-- Questions -->
-                                <div class="bg-gray-800 rounded-lg p-6 border border-gray-600">
-                                        <h3 class="text-xl font-bold mb-6 text-center">Questions 1-10</h3>
-                                        <div class="mb-6">
-                                                <img
-                                                        src="/LESSONS/les02/02(ii)/TFNG-SCQ.png"
-                                                        alt="IELTS Reading Questions"
-                                                        class="w-full rounded border border-gray-600 cursor-pointer"
-                                                        onclick={() => openLightbox('/LESSONS/les02/02(ii)/TFNG-SCQ.png')}
-                                                />
-                                        </div>
-
-                                        <div class="space-y-4">
-                                                <div class="flex items-center gap-3">
-                                                        <label class="text-sm font-medium min-w-[80px]">
-                                                                Question 1:
-                                                        </label>
-                                                        <input
-                                                                type="text"
-                                                                bind:value={q1}
-                                                                class="flex-1 px-3 py-2 bg-gray-700 border border-gray-600 rounded text-white text-sm focus:outline-none focus:border-blue-500"
-                                                                placeholder="True / False / Not given"
-                                                        />
+                                
+                                <!-- Questions Section -->
+                                <div class="md:w-1/3 bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8" bind:this={questionsContainerEl}>
+                                        <div>
+                                                <h4 class="text-lg font-bold mb-4 text-gray-800 dark:text-gray-200">Questions 1–5</h4>
+                                                <p class="mb-4 text-sm text-gray-700 dark:text-gray-300">Do the following statements reflect the claims of the writer in Reading Passage 1?</p>
+                                                
+                                                <div class="mb-4 text-xs text-gray-600 dark:text-gray-400 bg-gray-100 dark:bg-gray-700 p-3 rounded">
+                                                        <p class="mb-2"><em>In boxes 1–5 on your answer sheet write</em></p>
+                                                        <ul class="space-y-1">
+                                                                <li><strong>YES</strong> – if the statement reflects the claims of the writer</li>
+                                                                <li><strong>NO</strong> – if the statement contradicts the claims of the writer</li>
+                                                                <li><strong>NOT GIVEN</strong> – if it is impossible to say what the writer thinks about this</li>
+                                                        </ul>
                                                 </div>
-                                                <div class="flex items-center gap-3">
-                                                        <label class="text-sm font-medium min-w-[80px]">
-                                                                Question 2:
-                                                        </label>
-                                                        <input
-                                                                type="text"
-                                                                bind:value={q2}
-                                                                class="flex-1 px-3 py-2 bg-gray-700 border border-gray-600 rounded text-white text-sm focus:outline-none focus:border-blue-500"
-                                                                placeholder="True / False / Not given"
-                                                        />
-                                                </div>
-                                                <div class="flex items-center gap-3">
-                                                        <label class="text-sm font-medium min-w-[80px]">
-                                                                Question 3:
-                                                        </label>
-                                                        <input
-                                                                type="text"
-                                                                bind:value={q3}
-                                                                class="flex-1 px-3 py-2 bg-gray-700 border border-gray-600 rounded text-white text-sm focus:outline-none focus:border-blue-500"
-                                                                placeholder="True / False / Not given"
-                                                        />
-                                                </div>
-                                                <div class="flex items-center gap-3">
-                                                        <label class="text-sm font-medium min-w-[80px]">
-                                                                Question 4:
-                                                        </label>
-                                                        <input
-                                                                type="text"
-                                                                bind:value={q4}
-                                                                class="flex-1 px-3 py-2 bg-gray-700 border border-gray-600 rounded text-white text-sm focus:outline-none focus:border-blue-500"
-                                                                placeholder="True / False / Not given"
-                                                        />
-                                                </div>
-                                                <div class="flex items-center gap-3">
-                                                        <label class="text-sm font-medium min-w-[80px]">
-                                                                Question 5:
-                                                        </label>
-                                                        <input
-                                                                type="text"
-                                                                bind:value={q5}
-                                                                class="flex-1 px-3 py-2 bg-gray-700 border border-gray-600 rounded text-white text-sm focus:outline-none focus:border-blue-500"
-                                                                placeholder="True / False / Not given"
-                                                        />
-                                                </div>
-                                                <div class="flex items-center gap-3">
-                                                        <label class="text-sm font-medium min-w-[80px]">
-                                                                Question 6:
-                                                        </label>
-                                                        <input
-                                                                type="text"
-                                                                bind:value={q6}
-                                                                class="flex-1 px-3 py-2 bg-gray-700 border border-gray-600 rounded text-white text-sm focus:outline-none focus:border-blue-500"
-                                                                placeholder="True / False / Not given"
-                                                        />
-                                                </div>
-                                                <div class="flex items-center gap-3">
-                                                        <label class="text-sm font-medium min-w-[80px]">
-                                                                Question 7:
-                                                        </label>
-                                                        <input
-                                                                type="text"
-                                                                bind:value={q7}
-                                                                class="flex-1 px-3 py-2 bg-gray-700 border border-gray-600 rounded text-white text-sm focus:outline-none focus:border-blue-500"
-                                                                placeholder="True / False / Not given"
-                                                        />
-                                                </div>
-                                                <div class="flex items-center gap-3">
-                                                        <label class="text-sm font-medium min-w-[80px]">
-                                                                Question 8:
-                                                        </label>
-                                                        <input
-                                                                type="text"
-                                                                bind:value={q8}
-                                                                class="flex-1 px-3 py-2 bg-gray-700 border border-gray-600 rounded text-white text-sm focus:outline-none focus:border-blue-500"
-                                                                placeholder="True / False / Not given"
-                                                        />
-                                                </div>
-                                                <div class="flex items-center gap-3">
-                                                        <label class="text-sm font-medium min-w-[80px]">
-                                                                Question 9:
-                                                        </label>
-                                                        <input
-                                                                type="text"
-                                                                bind:value={q9}
-                                                                class="flex-1 px-3 py-2 bg-gray-700 border border-gray-600 rounded text-white text-sm focus:outline-none focus:border-blue-500"
-                                                                placeholder="True / False / Not given"
-                                                        />
-                                                </div>
-                                                <div class="flex items-center gap-3">
-                                                        <label class="text-sm font-medium min-w-[80px]">
-                                                                Question 10:
-                                                        </label>
-                                                        <input
-                                                                type="text"
-                                                                bind:value={q10}
-                                                                class="flex-1 px-3 py-2 bg-gray-700 border border-gray-600 rounded text-white text-sm focus:outline-none focus:border-blue-500"
-                                                                placeholder="True / False / Not given"
-                                                        />
-                                                </div>
-                                        </div>
-
-                                        <!-- Submit Button -->
-                                        <div class="mt-8 text-center">
-                                                <button
-                                                        onclick={checkAllAnswers}
-                                                        disabled={loadingAnswers}
-                                                        class="px-6 py-3 bg-green-600 hover:bg-green-700 text-white font-bold rounded-lg transition-colors disabled:opacity-50"
-                                                >
-                                                        {#if loadingAnswers}
-                                                                <div class="flex items-center gap-2">
-                                                                        <div class="animate-spin w-4 h-4 border-2 border-white border-t-transparent rounded-full"></div>
-                                                                        Checking...
+                                                
+                                                <div class="space-y-4">
+                                                        <div class="text-sm">
+                                                                <div class="flex items-start gap-2">
+                                                                        <span class="font-medium text-teal-600 dark:text-teal-400 min-w-[20px]">1.</span>
+                                                                        <div class="flex-1">
+                                                                                <p class="mb-2 text-gray-700 dark:text-gray-300">Bush flies are easier to control than buffalo flies.</p>
+                                                                                <input
+                                                                                        bind:value={q1}
+                                                                                        type="text"
+                                                                                        class="w-full px-2 py-1 bg-gray-100 dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded text-sm text-gray-800 dark:text-gray-200"
+                                                                                        placeholder="Yes / No / Not given"
+                                                                                />
+                                                                        </div>
                                                                 </div>
-                                                        {:else}
-                                                                Check Answers
-                                                        {/if}
-                                                </button>
+                                                        </div>
+                                                        
+                                                        <div class="text-sm">
+                                                                <div class="flex items-start gap-2">
+                                                                        <span class="font-medium text-teal-600 dark:text-teal-400 min-w-[20px]">2.</span>
+                                                                        <div class="flex-1">
+                                                                                <p class="mb-2 text-gray-700 dark:text-gray-300">Four thousand species of dung beetle were initially brought to Australia by the CSIRO.</p>
+                                                                                <input
+                                                                                        bind:value={q2}
+                                                                                        type="text"
+                                                                                        class="w-full px-2 py-1 bg-gray-100 dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded text-sm text-gray-800 dark:text-gray-200"
+                                                                                        placeholder="Yes / No / Not given"
+                                                                                />
+                                                                        </div>
+                                                                </div>
+                                                        </div>
+                                                        
+                                                        <div class="text-sm">
+                                                                <div class="flex items-start gap-2">
+                                                                        <span class="font-medium text-teal-600 dark:text-teal-400 min-w-[20px]">3.</span>
+                                                                        <div class="flex-1">
+                                                                                <p class="mb-2 text-gray-700 dark:text-gray-300">Dung beetles were brought to Australia by the CSIRO over a fourteen-year period.</p>
+                                                                                <input
+                                                                                        bind:value={q3}
+                                                                                        type="text"
+                                                                                        class="w-full px-2 py-1 bg-gray-100 dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded text-sm text-gray-800 dark:text-gray-200"
+                                                                                        placeholder="Yes / No / Not given"
+                                                                                />
+                                                                        </div>
+                                                                </div>
+                                                        </div>
+                                                        
+                                                        <div class="text-sm">
+                                                                <div class="flex items-start gap-2">
+                                                                        <span class="font-medium text-teal-600 dark:text-teal-400 min-w-[20px]">4.</span>
+                                                                        <div class="flex-1">
+                                                                                <p class="mb-2 text-gray-700 dark:text-gray-300">At least twenty-six of the introduced species have become established in Australia.</p>
+                                                                                <input
+                                                                                        bind:value={q4}
+                                                                                        type="text"
+                                                                                        class="w-full px-2 py-1 bg-gray-100 dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded text-sm text-gray-800 dark:text-gray-200"
+                                                                                        placeholder="Yes / No / Not given"
+                                                                                />
+                                                                        </div>
+                                                                </div>
+                                                        </div>
+                                                        
+                                                        <div class="text-sm">
+                                                                <div class="flex items-start gap-2">
+                                                                        <span class="font-medium text-teal-600 dark:text-teal-400 min-w-[20px]">5.</span>
+                                                                        <div class="flex-1">
+                                                                                <p class="mb-2 text-gray-700 dark:text-gray-300">The dung beetles cause an immediate improvement to the quality of a cow pasture.</p>
+                                                                                <input
+                                                                                        bind:value={q5}
+                                                                                        type="text"
+                                                                                        class="w-full px-2 py-1 bg-gray-100 dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded text-sm text-gray-800 dark:text-gray-200"
+                                                                                        placeholder="Yes / No / Not given"
+                                                                                />
+                                                                        </div>
+                                                                </div>
+                                                        </div>
+                                                </div>
+
+                                                <!-- Submit Button -->
+                                                <div class="mt-8 text-center">
+                                                        <button
+                                                                onclick={checkAllAnswers}
+                                                                disabled={loadingAnswers}
+                                                                class="px-6 py-3 bg-green-600 hover:bg-green-700 text-white font-bold rounded-lg transition-colors disabled:opacity-50"
+                                                        >
+                                                                {#if loadingAnswers}
+                                                                        <div class="flex items-center gap-2 justify-center">
+                                                                                <div class="animate-spin w-4 h-4 border-2 border-white border-t-transparent rounded-full"></div>
+                                                                                Checking...
+                                                                        </div>
+                                                                {:else}
+                                                                        Check Answers
+                                                                {/if}
+                                                        </button>
+                                                </div>
                                         </div>
                                 </div>
                         </div>
-                </section>
-
-                <!-- Results -->
-                {#if showResults}
-                        <section class="mb-12">
-                                <div class="bg-gray-800 rounded-lg p-6 border border-gray-600">
-                                        <h3 class="text-xl font-bold mb-6 text-center">Results</h3>
-                                        
-                                        <div class="mb-6 text-center">
-                                                <div class="text-2xl font-bold mb-2">
+                        
+                        <!-- Results -->
+                        {#if showResults}
+                                <div class="mt-12 bg-gray-800 rounded-lg p-6 border border-gray-600">
+                                        <h4 class="text-xl font-bold mb-4 text-center text-white">Your Results</h4>
+                                        <div class="text-center mb-6">
+                                                <div class="inline-block bg-blue-600 text-white px-4 py-2 rounded-lg font-bold text-lg">
                                                         Score: {markingResults.totalCorrect}/{markingResults.totalQuestions}
-                                                </div>
-                                                <div class="text-lg">
                                                         ({Math.round((markingResults.totalCorrect / markingResults.totalQuestions) * 100)}%)
                                                 </div>
                                         </div>
-
-                                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                                                {#each Object.entries(markingResults).filter(([key]) => key.startsWith('q')) as [questionKey, result]}
-                                                        <div class="flex items-center justify-between p-3 rounded border border-gray-600 {result.isCorrect ? 'bg-green-900/30 border-green-600' : 'bg-red-900/30 border-red-600'}">
-                                                                <div class="flex items-center gap-2">
-                                                                        <span class="{result.isCorrect ? 'text-green-400' : 'text-red-400'} text-lg">
-                                                                                {result.isCorrect ? '✓' : '✗'}
-                                                                        </span>
-                                                                        <span class="font-medium">
-                                                                                {questionKey.toUpperCase()}:
-                                                                        </span>
-                                                                </div>
-                                                                <div class="text-right text-sm">
-                                                                        <div>Your answer: <span class="font-medium">{result.userAnswer || 'No answer'}</span></div>
-                                                                        {#if !result.isCorrect}
-                                                                                <div class="text-gray-400">Correct: {result.correctAnswers[0]}</div>
+                                        
+                                        <div class="grid gap-3">
+                                                {#each Object.entries(markingResults).slice(0, 5) as [key, result]}
+                                                        <div class="flex items-center justify-between p-3 bg-gray-700 rounded">
+                                                                <span class="font-medium">Question {key.replace('q', '')}:</span>
+                                                                <div class="flex items-center gap-3">
+                                                                        <span class="text-sm">Your answer: <strong>{result.userAnswer || 'No answer'}</strong></span>
+                                                                        <span class="text-xs text-gray-400">Correct: {result.correctAnswers.join(' / ')}</span>
+                                                                        {#if result.isCorrect}
+                                                                                <span class="text-green-400 font-bold">✓</span>
+                                                                        {:else}
+                                                                                <span class="text-red-400 font-bold">✗</span>
                                                                         {/if}
                                                                 </div>
                                                         </div>
                                                 {/each}
                                         </div>
-
+                                        
                                         <div class="mt-6 text-center">
                                                 <p class="text-gray-300 mb-4">
-                                                        {#if markingResults.totalCorrect >= 8}
-                                                                Excellent work! You have mastered True/False/Not given questions.
-                                                        {:else if markingResults.totalCorrect >= 6}
-                                                                Good progress! Review the incorrect answers to improve further.
+                                                        {#if markingResults.totalCorrect === markingResults.totalQuestions}
+                                                                🎉 Perfect score! Excellent work!
+                                                        {:else if markingResults.totalCorrect >= markingResults.totalQuestions * 0.8}
+                                                                👍 Great job! You're doing well with True/False/Not given questions.
+                                                        {:else if markingResults.totalCorrect >= markingResults.totalQuestions * 0.6}
+                                                                📚 Good effort! Keep practicing to improve your skills.
                                                         {:else}
-                                                                Keep practicing! Review the technique and try again.
+                                                                💪 Keep practicing! Focus on distinguishing between False and Not given answers.
                                                         {/if}
                                                 </p>
                                         </div>
                                 </div>
-                        </section>
-                {/if}
-        </div>
-</div>
+                        {/if}
+                        <!-- SC2II_PASSAGE_END -->
+                </section>
 
-<!-- Lightbox Modal -->
-{#if lightboxOpen}
-        <div
-                class="fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center z-50 p-4"
-                onclick={closeLightbox}
-        >
-                <div class="max-w-full max-h-full">
-                        <img
-                                src={lightboxImage}
-                                alt="Enlarged view"
-                                class="max-w-full max-h-full object-contain rounded"
-                                onclick={(e) => e.stopPropagation()}
-                        />
-                </div>
-                <button
-                        type="button"
-                        onclick={closeLightbox}
-                        class="absolute top-4 right-4 text-white text-4xl hover:text-gray-300 transition-colors"
-                        aria-label="Close lightbox"
-                >
-                        ×
-                </button>
+                <!-- End of Exercise -->
+                <section class="text-center py-12">
+                        <p class="text-white mb-16">End of Skill Check 02(ii)</p>
+                        <a
+                                href="/IETPP/lesson-02/lesson02-ii"
+                                class="inline-block bg-teal-600 hover:bg-teal-700 text-white font-bold py-3 px-6 rounded-lg transition-colors"
+                        >
+                                ← Back to Lesson 02(ii)
+                        </a>
+                </section>
         </div>
-{/if}
+
+        <!-- Lightbox -->
+        {#if lightboxOpen}
+                <div 
+                        class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 p-4"
+                        onclick={closeLightbox}
+                >
+                        <div class="max-w-4xl max-h-full overflow-auto">
+                                <img
+                                        src={lightboxImage}
+                                        alt="Enlarged view"
+                                        class="w-full h-auto rounded-lg shadow-xl"
+                                        onclick={(e) => e.stopPropagation()}
+                                />
+                                <button
+                                        onclick={closeLightbox}
+                                        class="absolute top-4 right-4 text-white text-3xl hover:text-gray-300 bg-black bg-opacity-50 rounded-full w-10 h-10 flex items-center justify-center"
+                                >
+                                        ×
+                                </button>
+                        </div>
+                </div>
+        {/if}
+</div>
