@@ -210,7 +210,8 @@
                 <div class="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 mb-8">
                         <div class="text-center">
                                 <div class="text-xs text-left text-teal-600 dark:text-teal-400 mb-4">
-                                        IE2401_02.1
+                                        SC2(i)
+                                
                                 </div>
                                 <h1 class="text-3xl font-bold text-white mb-4">
                                         READING - Matching Information
@@ -419,7 +420,7 @@
                                                         </div>
                                                 </div>
 
-                                                <!-- Submit Button -->
+                                                <!-- CHECK_ANSWERS_BUTTON: keep inside questions container -->
                                                 <div class="mt-8 text-center">
                                                         <button
                                                                 onclick={checkAllAnswers}
@@ -440,35 +441,48 @@
                                 </div>
                         </div>
                         
-                        <!-- Results -->
-                        {#if showResults}
-                                <div class="mt-12 bg-gray-800 rounded-lg p-6 border border-gray-600">
-                                        <h4 class="text-xl font-bold mb-4 text-center text-white">Your Results</h4>
-                                        <div class="text-center mb-6">
-                                                <div class="inline-block bg-blue-600 text-white px-4 py-2 rounded-lg font-bold text-lg">
-                                                        Score: {markingResults.totalCorrect}/{markingResults.totalQuestions}
-                                                        ({Math.round((markingResults.totalCorrect / markingResults.totalQuestions) * 100)}%)
+                        <!-- Results Display -->
+                                {#if showResults}
+                                        <div class="bg-gray-700 rounded-lg p-6 md:p-8 mt-10 border border-gray-600">
+                                                <h4 class="text-2xl font-semibold text-white mb-8 text-center">Your Results</h4>
+                                                
+                                                <!-- Score Summary -->
+                                                <div class="text-center mb-10">
+                                                        <div class="text-3xl font-bold text-white mb-4">
+                                                                {markingResults.totalCorrect}/{markingResults.totalQuestions}
+                                                        </div>
+                                                        <div class="text-lg text-gray-300">
+                                                                {Math.round((markingResults.totalCorrect / markingResults.totalQuestions) * 100)}% Correct
+                                                        </div>
+                                                </div>
+
+                                                <!-- Results -->
+                                                <div class="mb-10">
+                                                        <h5 class="text-lg font-bold text-white mb-6">Reading Matching Information (Q1-Q6)</h5>
+                                                        <div class="space-y-3 text-sm">
+                                                                {#each ['q1', 'q2', 'q3', 'q4', 'q5', 'q6'] as questionKey}
+                                                                        <div class="flex items-center justify-between p-3 rounded border {markingResults[questionKey]?.isCorrect ? 'bg-green-900/20 border-green-800' : 'bg-red-900/20 border-red-800'}">
+                                                                                <div class="flex-1">
+                                                                                        <div class="font-medium text-white">
+                                                                                                {questionKey.toUpperCase()}: "{markingResults[questionKey]?.userAnswer || '(blank)'}"
+                                                                                        </div>
+                                                                                        <div class="text-xs text-gray-400 mt-1">
+                                                                                                Correct: {markingResults[questionKey]?.correctAnswers?.join(' / ')}
+                                                                                        </div>
+                                                                                </div>
+                                                                                <div class="ml-3">
+                                                                                        {#if markingResults[questionKey]?.isCorrect}
+                                                                                                <span class="text-green-400 text-xl">✓</span>
+                                                                                        {:else}
+                                                                                                <span class="text-red-400 text-xl">✗</span>
+                                                                                        {/if}
+                                                                                </div>
+                                                                        </div>
+                                                                {/each}
+                                                        </div>
                                                 </div>
                                         </div>
-                                        
-                                        <div class="grid gap-3">
-                                                {#each Object.entries(markingResults).slice(0, 6) as [key, result]}
-                                                        <div class="flex items-center justify-between p-3 bg-gray-700 rounded">
-                                                                <span class="font-medium">Question {key.replace('q', '')}:</span>
-                                                                <div class="flex items-center gap-3">
-                                                                        <span class="text-sm text-gray-300">Your answer: <strong>{result.userAnswer || '(blank)'}</strong></span>
-                                                                        <span class="text-sm text-gray-300">Correct: <strong>{result.correctAnswers.join('/')}</strong></span>
-                                                                        {#if result.isCorrect}
-                                                                                <span class="text-green-400 text-xl">✓</span>
-                                                                        {:else}
-                                                                                <span class="text-red-400 text-xl">✗</span>
-                                                                        {/if}
-                                                                </div>
-                                                        </div>
-                                                {/each}
-                                        </div>
-                                </div>
-                        {/if}
+                                {/if}
                 </section>
                 <!-- End of Lesson -->
                 <section class="text-center">
