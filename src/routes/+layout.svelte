@@ -147,7 +147,7 @@
                                 {:else}
                                         <a
                                                 href="/IETPP"
-                                                class="text-gray-600 hover:text-teal-600 dark:text-gray-300 dark:hover:text-teal-400 font-bold text-sm md:text-base lg:text-lg"
+                                                class="text-gray-600 hover:text-teal-600 dark:text-gray-300 dark:hover:text-teal-400 font-bold text-sm md:text-base lg:text-lg {$page.url.pathname === '/' ? 'ietpp-pulse' : ''}"
                                         >
                                                 IETPP
                                         </a>
@@ -274,5 +274,16 @@
         :global(footer) {
                 content-visibility: auto;
                 contain-intrinsic-size: 0 200px;
+        }
+
+        /* IETPP pulse animation - only on home page */
+        :global(.ietpp-pulse) {
+                animation: ietppColorPulse 8s infinite;
+        }
+
+        @keyframes ietppColorPulse {
+                0% { color: white; }
+                50% { color: rgb(45, 212, 191); } /* teal-400 */
+                100% { color: white; }
         }
 </style>
