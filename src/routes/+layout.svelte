@@ -195,7 +195,7 @@
                                                 IETPP
                                         </span>
                                 {:else}
-                                        <a href="/IETPP" class="block text-gray-600 dark:text-gray-300 font-bold">
+                                        <a href="/IETPP" class="block text-gray-600 hover:text-teal-600 dark:text-gray-300 dark:hover:text-teal-400 font-bold {$page.url.pathname === '/' ? 'ietpp-pulse' : ''}">
                                                 IETPP
                                         </a>
                                 {/if}
