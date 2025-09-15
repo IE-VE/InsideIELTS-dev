@@ -284,13 +284,13 @@
                                 <div class="md:w-2/3 bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8 overflow-y-auto passage-text" bind:this={passageScrollEl}>
                                         <h4 class="text-xl font-bold mb-6 text-center text-gray-800 dark:text-gray-200">A Remarkable Beetle</h4>
                                         
-                                        <div class="flex justify-center mb-6">
-                                                <div class="text-sm text-gray-600 dark:text-gray-400 bg-blue-50 dark:bg-blue-900/20 px-3 py-1 rounded">
-                                                        <img src="/reading-images/dung-beetle.png" alt="Dung beetle rolling dung" class="w-32 h-24 object-cover rounded mx-auto"/>
-                                                </div>
-                                        </div>
-                                        
                                         <div class="space-y-4 text-sm leading-relaxed text-gray-800 dark:text-gray-200">
+                                                <div class="float-right ml-4 mb-4 mt-1">
+                                                        <div class="text-sm text-gray-600 dark:text-gray-400 bg-blue-50 dark:bg-blue-900/20 px-3 py-1 rounded">
+                                                                <img src="/reading-images/dung-beetle.png" alt="Dung beetle rolling dung" class="w-32 h-24 object-cover rounded"/>
+                                                        </div>
+                                                </div>
+                                                
                                                 <p>Some of the most remarkable beetles are the dung beetles, which spend almost their whole lives eating and breeding in dung.</p>
 
                                                 <p>More than 4,000 species of these remarkable creatures have evolved and adapted to the world's different climates and the dung of its many animals. Australia's native dung beetles are scrub and woodland dwellers, specialising in coarse marsupial droppings and avoiding the soft cattle dung in which bush flies and buffalo flies breed.</p>
