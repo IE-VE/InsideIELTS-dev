@@ -111,13 +111,6 @@
                                 >
                                         ← Back to Contents
                                 </a>
-
-                                <a
-                                        href="/IETPP/lesson-01/lesson01-i"
-                                        class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300 font-semibold"
-                                >
-                                        ← Back to Lesson
-                                </a>
                         </div>
                 </div>
         </div>
@@ -451,8 +444,7 @@
                                                                 class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300 font-semibold"
                                                                 data-sveltekit-reload
                                                         >
-                                                                ← Back to Lesson
-                                                        </a>
+                                                                        </a>
                                                 </div>
                                         </div>
                                 </section>
