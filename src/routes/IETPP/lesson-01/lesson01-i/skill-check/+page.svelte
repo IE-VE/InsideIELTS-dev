@@ -106,7 +106,7 @@
                         <div class="flex justify-between items-center">
                                 <a
                                         href="/IETPP#lesson-01"
-                                        class="text-teal-600 dark:text-teal-400 hover:underline font-semibold"
+                                        class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300 font-semibold"
                                         data-sveltekit-reload
                                 >
                                         ← Back to Contents
@@ -114,7 +114,7 @@
 
                                 <a
                                         href="/IETPP/lesson-01/lesson01-i"
-                                        class="text-teal-600 dark:text-teal-400 hover:underline font-semibold"
+                                        class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300 font-semibold"
                                 >
                                         ← Back to Lesson
                                 </a>
@@ -440,7 +440,7 @@
                                                 <div class="flex justify-between items-center">
                                                         <a
                                                                 href="/IETPP#lesson-01"
-                                                                class="text-teal-600 dark:text-teal-400 hover:underline font-semibold"
+                                                                class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300 font-semibold"
                                                                 data-sveltekit-reload
                                                         >
                                                                 ← Back to Contents
@@ -448,7 +448,7 @@
                                                           <p class="text-white">End of Lesson 01-i</p>
                                                         <a
                                                                 href="/IETPP/lesson-01/lesson01-i"
-                                                                class="text-teal-600 dark:text-teal-400 hover:underline font-semibold"
+                                                                class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300 font-semibold"
                                                                 data-sveltekit-reload
                                                         >
                                                                 ← Back to Lesson

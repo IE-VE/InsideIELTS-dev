@@ -50,7 +50,7 @@
                         <div class="flex justify-between items-center">
                                 <a
                                         href="/IETPP#lesson-02"
-                                        class="text-teal-600 dark:text-teal-400 hover:underline font-semibold"
+                                        class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300 font-semibold"
                                         data-sveltekit-reload
                                 >
                                         ← Back to Contents
@@ -58,7 +58,7 @@
 
                                 <a
                                         href="/IETPP/lesson-02/lesson02-ii"
-                                        class="text-teal-600 dark:text-teal-400 hover:underline font-semibold"
+                                        class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300 font-semibold"
                                         data-sveltekit-reload
                                 >
                                         Next Lesson →
@@ -252,7 +252,7 @@
                                 <div class="flex justify-between items-center">
                                         <a
                                                 href="/IETPP#lesson-02"
-                                                class="text-teal-600 dark:text-teal-400 hover:underline font-semibold"
+                                                class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300 font-semibold"
                                                 data-sveltekit-reload
                                         >
                                                 ← Back to Contents
@@ -260,7 +260,7 @@
                                           
                                         <a
                                                 href="/IETPP/lesson-02/lesson02-ii"
-                                                class="text-teal-600 dark:text-teal-400 hover:underline font-semibold"
+                                                class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300 font-semibold"
                                                 data-sveltekit-reload
                                         >
                                                 Next Lesson →
