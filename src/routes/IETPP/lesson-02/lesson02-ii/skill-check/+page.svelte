@@ -206,19 +206,26 @@
 
 <div class="min-h-screen bg-gray-900 text-white">
         <!-- Lesson Header -->
-        <div class="max-w-5xl container mx-auto px-3 md:px-6 py-12">
-                <div class="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 mb-12">
+        <div class="max-w-5xl container mx-auto px-6 pt-8">
+                <div class="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 mb-8">
                         <div class="text-center">
                                 <div class="text-xs text-left text-teal-600 dark:text-teal-400 mb-4">
                                         SC2(ii)
                                 </div>
-                                <h1 class="text-3xl font-bold text-white mb-2">
+                                <h1 class="text-3xl font-bold text-white mb-4">
                                         READING - True/False/Not given
                                 </h1>
-        
                         </div>
 
-                        <div class="text-right mt-6">
+                        <div class="flex justify-between items-center">
+                                <a
+                                        href="/IETPP#lesson-02"
+                                        class="text-teal-600 dark:text-teal-400 hover:underline font-semibold"
+                                        data-sveltekit-reload
+                                >
+                                        ← Back to Contents
+                                </a>
+
                                 <a
                                         href="/IETPP/lesson-02/lesson02-ii"
                                         class="text-teal-600 dark:text-teal-400 hover:underline font-semibold"
@@ -462,16 +469,29 @@
                         <!-- SC2II_PASSAGE_END -->
                 </section>
 
-                <!-- End of Exercise -->
-                <section class="text-center py-12">
-                        <p class="text-white mb-16">End of Skill Check 02(ii)</p>
-                        <a
-                                href="/IETPP/lesson-02/lesson02-ii"
-                                class="inline-block bg-teal-600 hover:bg-teal-700 text-white font-bold py-3 px-6 rounded-lg transition-colors"
-                        >
-                                ← Back to Lesson 02(ii)
-                        </a>
-                </section>
+                  <!-- Footer Navigation -->
+                
+                <section class="text-center">                     
+                                        <div class="bg-gray-800 rounded-lg p-6 shadow-sm border border-gray-700">
+                                                <div class="flex justify-between items-center">
+                                                        <a
+                                                                href="/IETPP#lesson-02"
+                                                                class="text-teal-600 dark:text-teal-400 hover:underline font-semibold"
+                                                                data-sveltekit-reload
+                                                        >
+                                                                ← Back to Contents
+                                                        </a>
+                                                          <p class="text-white">End of Lesson 02-ii</p>
+                                                        <a
+                                                                href="/IETPP/lesson-02/lesson02-ii"
+                                                                class="text-teal-600 dark:text-teal-400 hover:underline font-semibold"
+                                                                data-sveltekit-reload
+                                                        >
+                                                                ← Back to Lesson
+                                                        </a>
+                                                </div>
+                                        </div>
+                                </section>
         </div>
 
         <!-- Lightbox -->
