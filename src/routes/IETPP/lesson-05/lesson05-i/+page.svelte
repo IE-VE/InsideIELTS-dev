@@ -396,8 +396,41 @@
 <svelte:window on:keydown={handleKeydown} />
 
 <div class="min-h-screen bg-gradient-to-br from-teal-50 to-blue-50 py-8 dark:from-gray-900 dark:to-gray-800">
+
+        <!-- Lesson Header -->
+        <div class="max-w-5xl container mx-auto px-6 pt-8">
+                <div class="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 mb-8">
+                        <div class="text-center">
+                                <div class="text-xs text-left text-teal-600 dark:text-teal-400 mb-4">
+                                        IE2401_05.1
+                                </div>
+                                <h1 class="text-3xl font-bold text-white mb-4">
+                                        LISTENING - Practice Test 1
+                                </h1>
+                        </div>
+
+                        <div class="flex justify-between items-center">
+                                <a
+                                        href="/IETPP#lesson-05"
+                                        class="text-teal-600 dark:text-teal-400 hover:underline font-semibold"
+                                        data-sveltekit-reload
+                                >
+                                        ← Back to Contents
+                                </a>
+
+                                <a
+                                        href="/IETPP/lesson-05/lesson05-ii"
+                                        class="text-teal-600 dark:text-teal-400 hover:underline font-semibold"
+                                        data-sveltekit-reload
+                                >
+                                        Next Lesson →
+                                </a>
+                        </div>
+                </div>
+        </div>
+
         <div class="max-w-4xl mx-auto px-4">
-                <!-- Header -->
+                <!-- Test Header -->
                 <div class="text-center mb-8">
                         <h1 class="text-4xl font-bold mb-4 text-gray-900 dark:text-gray-100">IELTS Listening Test</h1>
                         <p class="text-lg mb-6 text-gray-700 dark:text-gray-300">Complete practice test with all 4 sections - 40 questions total</p>
@@ -1147,6 +1180,29 @@
                 </div>
         </div>
 {/if}
+
+        <!-- Footer Navigation -->
+        <div class="max-w-5xl container mx-auto px-6 py-8">
+                <div class="bg-gray-800 rounded-lg p-6 shadow-sm border border-gray-700">
+                        <div class="flex justify-between items-center">
+                                <a
+                                        href="/IETPP#lesson-05"
+                                        class="text-teal-600 dark:text-teal-400 hover:underline font-semibold"
+                                        data-sveltekit-reload
+                                >
+                                        ← Back to Contents
+                                </a>
+                                <p class="text-white">End of Lesson 05-i</p>
+                                <a
+                                        href="/IETPP/lesson-05/lesson05-ii"
+                                        class="text-teal-600 dark:text-teal-400 hover:underline font-semibold"
+                                        data-sveltekit-reload
+                                >
+                                        Next Lesson →
+                                </a>
+                        </div>
+                </div>
+        </div>
 
 <style>
         input[type="text"], input[type="radio"] {

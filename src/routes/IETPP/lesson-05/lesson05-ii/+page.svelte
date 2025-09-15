@@ -709,6 +709,39 @@
 </svelte:head>
 
 <div class="min-h-screen bg-gradient-to-br from-teal-50 to-blue-50 dark:from-gray-900 dark:to-gray-800">
+
+        <!-- Lesson Header -->
+        <div class="max-w-5xl container mx-auto px-6 pt-8">
+                <div class="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 mb-8">
+                        <div class="text-center">
+                                <div class="text-xs text-left text-teal-600 dark:text-teal-400 mb-4">
+                                        IE2401_05.2
+                                </div>
+                                <h1 class="text-3xl font-bold text-white mb-4">
+                                        READING - Practice Test 1
+                                </h1>
+                        </div>
+
+                        <div class="flex justify-between items-center">
+                                <a
+                                        href="/IETPP#lesson-05"
+                                        class="text-teal-600 dark:text-teal-400 hover:underline font-semibold"
+                                        data-sveltekit-reload
+                                >
+                                        ← Back to Contents
+                                </a>
+
+                                <a
+                                        href="/IETPP/lesson-05/lesson05-iii"
+                                        class="text-teal-600 dark:text-teal-400 hover:underline font-semibold"
+                                        data-sveltekit-reload
+                                >
+                                        Next Lesson →
+                                </a>
+                        </div>
+                </div>
+        </div>
+
         {#if showInstructions}
                 <!-- Instructions Screen -->
                 <div class="container mx-auto px-6 py-8">
@@ -2127,6 +2160,29 @@
                 </div>
         </div>
 {/if}
+
+        <!-- Footer Navigation -->
+        <div class="max-w-5xl container mx-auto px-6 py-8">
+                <div class="bg-gray-800 rounded-lg p-6 shadow-sm border border-gray-700">
+                        <div class="flex justify-between items-center">
+                                <a
+                                        href="/IETPP#lesson-05"
+                                        class="text-teal-600 dark:text-teal-400 hover:underline font-semibold"
+                                        data-sveltekit-reload
+                                >
+                                        ← Back to Contents
+                                </a>
+                                <p class="text-white">End of Lesson 05-ii</p>
+                                <a
+                                        href="/IETPP/lesson-05/lesson05-iii"
+                                        class="text-teal-600 dark:text-teal-400 hover:underline font-semibold"
+                                        data-sveltekit-reload
+                                >
+                                        Next Lesson →
+                                </a>
+                        </div>
+                </div>
+        </div>
 </div>
 
 <style>
