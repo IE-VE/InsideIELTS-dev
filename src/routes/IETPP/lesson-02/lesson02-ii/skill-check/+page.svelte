@@ -476,11 +476,12 @@
                                                         </a>
                                                           <p class="text-white">End of Lesson 02-ii</p>
                                                         <a
-                                                                href="/IETPP/lesson-02/lesson02-ii"
+                                                                href="/IETPP/lesson-05"
                                                                 class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300 font-semibold"
                                                                 data-sveltekit-reload
                                                         >
-                                                                        </a>
+                                                                Next Lesson →
+                                                        </a>
                                                 </div>
                                         </div>
                                 </section>
