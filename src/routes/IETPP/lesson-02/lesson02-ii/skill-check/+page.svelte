@@ -324,15 +324,12 @@
                                                                         <span class="font-medium text-teal-600 dark:text-teal-400 min-w-[20px]">1.</span>
                                                                         <div class="flex-1">
                                                                                 <p class="mb-2 text-gray-700 dark:text-gray-300">Bush flies are easier to control than buffalo flies.</p>
-                                                                                <select
+                                                                                <input
                                                                                         bind:value={q1}
+                                                                                        type="text"
                                                                                         class="w-full px-2 py-1 bg-gray-100 dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded text-sm text-gray-800 dark:text-gray-200"
-                                                                                >
-                                                                                        <option value="">Choose answer...</option>
-                                                                                        <option value="Yes">Yes</option>
-                                                                                        <option value="No">No</option>
-                                                                                        <option value="Not given">Not given</option>
-                                                                                </select>
+                                                                                        placeholder="Yes / No / Not given"
+                                                                                />
                                                                         </div>
                                                                 </div>
                                                         </div>
@@ -342,15 +339,12 @@
                                                                         <span class="font-medium text-teal-600 dark:text-teal-400 min-w-[20px]">2.</span>
                                                                         <div class="flex-1">
                                                                                 <p class="mb-2 text-gray-700 dark:text-gray-300">Four thousand species of dung beetle were initially brought to Australia by the CSIRO.</p>
-                                                                                <select
+                                                                                <input
                                                                                         bind:value={q2}
+                                                                                        type="text"
                                                                                         class="w-full px-2 py-1 bg-gray-100 dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded text-sm text-gray-800 dark:text-gray-200"
-                                                                                >
-                                                                                        <option value="">Choose answer...</option>
-                                                                                        <option value="Yes">Yes</option>
-                                                                                        <option value="No">No</option>
-                                                                                        <option value="Not given">Not given</option>
-                                                                                </select>
+                                                                                        placeholder="Yes / No / Not given"
+                                                                                />
                                                                         </div>
                                                                 </div>
                                                         </div>
@@ -360,15 +354,12 @@
                                                                         <span class="font-medium text-teal-600 dark:text-teal-400 min-w-[20px]">3.</span>
                                                                         <div class="flex-1">
                                                                                 <p class="mb-2 text-gray-700 dark:text-gray-300">Dung beetles were brought to Australia by the CSIRO over a fourteen-year period.</p>
-                                                                                <select
+                                                                                <input
                                                                                         bind:value={q3}
+                                                                                        type="text"
                                                                                         class="w-full px-2 py-1 bg-gray-100 dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded text-sm text-gray-800 dark:text-gray-200"
-                                                                                >
-                                                                                        <option value="">Choose answer...</option>
-                                                                                        <option value="Yes">Yes</option>
-                                                                                        <option value="No">No</option>
-                                                                                        <option value="Not given">Not given</option>
-                                                                                </select>
+                                                                                        placeholder="Yes / No / Not given"
+                                                                                />
                                                                         </div>
                                                                 </div>
                                                         </div>
@@ -378,15 +369,12 @@
                                                                         <span class="font-medium text-teal-600 dark:text-teal-400 min-w-[20px]">4.</span>
                                                                         <div class="flex-1">
                                                                                 <p class="mb-2 text-gray-700 dark:text-gray-300">At least twenty-six of the introduced species have become established in Australia.</p>
-                                                                                <select
+                                                                                <input
                                                                                         bind:value={q4}
+                                                                                        type="text"
                                                                                         class="w-full px-2 py-1 bg-gray-100 dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded text-sm text-gray-800 dark:text-gray-200"
-                                                                                >
-                                                                                        <option value="">Choose answer...</option>
-                                                                                        <option value="Yes">Yes</option>
-                                                                                        <option value="No">No</option>
-                                                                                        <option value="Not given">Not given</option>
-                                                                                </select>
+                                                                                        placeholder="Yes / No / Not given"
+                                                                                />
                                                                         </div>
                                                                 </div>
                                                         </div>
@@ -396,15 +384,12 @@
                                                                         <span class="font-medium text-teal-600 dark:text-teal-400 min-w-[20px]">5.</span>
                                                                         <div class="flex-1">
                                                                                 <p class="mb-2 text-gray-700 dark:text-gray-300">The dung beetles cause an immediate improvement to the quality of a cow pasture.</p>
-                                                                                <select
+                                                                                <input
                                                                                         bind:value={q5}
+                                                                                        type="text"
                                                                                         class="w-full px-2 py-1 bg-gray-100 dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded text-sm text-gray-800 dark:text-gray-200"
-                                                                                >
-                                                                                        <option value="">Choose answer...</option>
-                                                                                        <option value="Yes">Yes</option>
-                                                                                        <option value="No">No</option>
-                                                                                        <option value="Not given">Not given</option>
-                                                                                </select>
+                                                                                        placeholder="Yes / No / Not given"
+                                                                                />
                                                                         </div>
                                                                 </div>
                                                         </div>
@@ -462,13 +447,13 @@
                                         <div class="mt-6 text-center">
                                                 <p class="text-gray-300 mb-4">
                                                         {#if markingResults.totalCorrect === markingResults.totalQuestions}
-                                                                🎉 Perfect score! Excellent work!
+                                                                Perfect score! Excellent work!
                                                         {:else if markingResults.totalCorrect >= markingResults.totalQuestions * 0.8}
-                                                                👍 Great job! You're doing well with True/False/Not given questions.
+                                                                Great job! You're doing well with True/False/Not given questions.
                                                         {:else if markingResults.totalCorrect >= markingResults.totalQuestions * 0.6}
-                                                                📚 Good effort! Keep practicing to improve your skills.
+                                                                Good effort! Keep practicing to improve your skills.
                                                         {:else}
-                                                                💪 Keep practicing! Focus on distinguishing between False and Not given answers.
+                                                                Keep practicing! Focus on distinguishing between False and Not given answers.
                                                         {/if}
                                                 </p>
                                         </div>
