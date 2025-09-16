@@ -204,7 +204,8 @@
                                         />
                                 </div>
 
-                                <p class="text-white mb-6 font-bold">
+                                <!-- Video demonstration section - video not yet available -->
+                                <!-- <p class="text-white mb-6 font-bold">
                                         Watch this quick Reading Summary completion demonstration vid before testing your skills.
                                 </p>
 
@@ -216,7 +217,7 @@
                                         >
                                                 Your browser does not support the video tag.
                                         </video>
-                                </div>
+                                </div> -->
 
                                 <div class="text-center">
                                         <p class="text-white text-xl font-bold mb-16">
