@@ -105,11 +105,19 @@
 
                         <div class="flex justify-between items-center">
                                 <a
-                                        href="/IETPP#lesson-01"
+                                        href="/IETPP/lesson-01/lesson01-i"
                                         class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300 font-semibold"
                                         data-sveltekit-reload
                                 >
-                                        ← Back to Contents
+                                        ← Back to Lesson
+                                </a>
+
+                                <a
+                                        href="/IETPP/lesson-01/lesson01-ii"
+                                        class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300 font-semibold"
+                                        data-sveltekit-reload
+                                >
+                                        Next Lesson →
                                 </a>
                         </div>
                 </div>
@@ -118,7 +126,7 @@
         <!-- Page Content -->
         <div style="max-width: 1200px;" class="mx-auto px-3 md:px-6 py-8">
                 <!-- Skill Check Title -->
-                <section class="bg-blue-600/20 rounded-lg p-4 md:p-8 shadow-sm border border-blue-600/50 mb-8">
+                <section class="bg-blue-800/25 rounded-lg p-4 md:p-8 shadow-sm border border-blue-600/50 mb-8">
                         <div class="flex items-center justify-center gap-4 mb-8">
                                 <div class="text-4xl text-green-500">✓</div>
                                 <h2 class="text-3xl font-bold text-center text-white">SKILL CHECK</h2>
@@ -233,7 +241,7 @@
                                 </div>
 
                                 <!-- Exercise 2 -->
-                                <div class="bg-teal-700/30 rounded-lg p-4 md:p-6 shadow-sm border border-teal-700/50">
+                                <div class="bg-white dark:bg-gray-800 rounded-lg p-4 md:p-6 shadow-sm border border-teal-700/50">
                                         <h4 class="text-xl font-bold text-white mb-6 underline">Multiple choice ex.2</h4>
 
                                         <!-- Audio Player -->

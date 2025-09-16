@@ -402,7 +402,7 @@
                                                         </div>
                                                 </div>
 
-                                                <!-- Submit Button -->
+                                                <!-- Check answers Button -->
                                                 <div class="mt-8 text-center">
                                                         <button
                                                                 onclick={checkAllAnswers}

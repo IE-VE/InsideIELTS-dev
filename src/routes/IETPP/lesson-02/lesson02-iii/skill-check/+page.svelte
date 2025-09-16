@@ -212,7 +212,7 @@
                 <div class="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 mb-8">
                         <div class="text-center">
                                 <div class="text-xs text-left text-teal-600 dark:text-teal-400 mb-4">
-                                        SC2(iii)
+                                        SC_2.3
                                 </div>
                                 <h1 class="text-3xl font-bold text-white mb-4">
                                         READING - Summary completion
@@ -241,7 +241,7 @@
         <!-- Page Content -->
         <div style="max-width: 1200px;" class="mx-auto px-3 md:px-6 py-2">
                 <!-- Skill Check Title -->
-                <section class="bg-teal-600/20 rounded-lg p-6 md:p-10 shadow-sm border border-blue-600/50 mb-12">
+                <section class="bg-emerald-600/20 rounded-lg p-6 md:p-10 shadow-sm border border-emerald-600/50 mb-12">
                         <div class="flex items-center justify-center gap-4 mb-10">
                                 <div class="text-4xl text-green-500">✓</div>
                                 <h2 class="text-3xl font-bold text-center text-white">SKILL CHECK</h2>
@@ -254,7 +254,7 @@
 
                         <!-- Exercise -->
                         <!-- SC2III_PASSAGE_START -->
-                        <div class="bg-teal-600 text-white px-4 py-2 rounded-lg text-center font-bold mb-10">
+                        <div class="bg-blue-700 text-white px-4 py-2 rounded-lg text-center font-bold mb-10">
                                 SC2(iii)
                         </div>
                         
@@ -317,7 +317,7 @@
                                 </div>
                                 
                                 <!-- Questions Section -->
-                                <div class="md:w-1/3 bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8" bind:this={questionsContainerEl}>
+                                <div class="md:w-1/3 bg-white dark:bg-gray-800 rounded-lg shadow-lg px-4 py-8" bind:this={questionsContainerEl}>
                                         <div>
                                                 <h4 class="text-lg font-bold mb-4 text-gray-800 dark:text-gray-200">Questions 34–40</h4>
                                                 <p class="mb-4 text-sm text-gray-700 dark:text-gray-300"><em>Complete the summary below. Choose <strong>ONE WORD ONLY</strong> from the passage for each answer.</em></p>
@@ -352,13 +352,20 @@
                                                 </div>
                                                 
                                                 <!-- Check Answers Button -->
-                                                <div class="text-center mb-6">
+                                                <div class="mt-8 text-center">
                                                         <button
                                                                 onclick={checkAllAnswers}
                                                                 disabled={loadingAnswers}
-                                                                class="px-6 py-3 bg-teal-600 hover:bg-teal-700 disabled:bg-teal-400 text-white font-bold rounded-lg transition-colors"
+                                                                class="px-6 py-3 bg-green-600 hover:bg-green-700 text-white font-bold rounded-lg transition-colors disabled:opacity-50"
                                                         >
-                                                                {loadingAnswers ? 'Checking Answers...' : 'Check My Answers'}
+                                                                {#if loadingAnswers}
+                                                                        <div class="flex items-center gap-2 justify-center">
+                                                                                <div class="animate-spin w-4 h-4 border-2 border-white border-t-transparent rounded-full"></div>
+                                                                                Checking...
+                                                                        </div>
+                                                                {:else}
+                                                                        Check Answers
+                                                                {/if}
                                                         </button>
                                                 </div>
                                         </div>
@@ -408,6 +415,29 @@
                         {/if}
                         <!-- SC2III_PASSAGE_END -->
                 </section>
+                <!-- Footer Navigation -->
+
+                <section class="text-center">                     
+                                        <div class="bg-gray-800 rounded-lg p-6 shadow-sm border border-gray-700">
+                                                <div class="flex justify-between items-center">
+                                                        <a
+                                                                href="/IETPP#lesson-02"
+                                                                class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300 font-semibold"
+                                                                data-sveltekit-reload
+                                                        >
+                                                                ← Back to Contents
+                                                        </a>
+                                                          <p class="text-white">End of Lesson 02-iii</p>
+                                                        <a
+                                                                href="/IETPP/lesson-05"
+                                                                class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300 font-semibold"
+                                                                data-sveltekit-reload
+                                                        >
+                                                                Next Lesson →
+                                                        </a>
+                                                </div>
+                                        </div>
+                                </section>
         </div>
 
         <!-- Lightbox -->

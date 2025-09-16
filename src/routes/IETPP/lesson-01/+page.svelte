@@ -62,7 +62,7 @@
                 <div class="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 mb-8">
                         <div class="text-center">
                                 <div class="text-xs text-left text-teal-600 dark:text-teal-400 mb-4">
-                                        LESSON CODE: IE2401_01
+                                        IE2401_01
                                 </div>
                                 <h1 class="text-3xl font-bold text-white mb-2">
                                         Introduction to the Listening Test
@@ -70,12 +70,21 @@
                                 <!-- <p class="text-white italic">(30 mins)</p> -->
                         </div>
 
-                        <div class="text-right mt-6">
+                        <div class="flex justify-between items-center">
                                 <a
                                         href="/IETPP#lesson-01"
-                                        class="text-teal-600 dark:text-teal-400 hover:underline font-semibold"
+                                        class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300 font-semibold"
+                                        data-sveltekit-reload
                                 >
                                         ← Back to Contents
+                                </a>
+
+                                <a
+                                        href="/IETPP/lesson-01/lesson01-ii"
+                                        class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300 font-semibold"
+                                        data-sveltekit-reload
+                                >
+                                        Next Lesson →
                                 </a>
                         </div>
                 </div>
@@ -126,8 +135,9 @@
                                 </div>
                         </div>
                 </section>
+                
                 <!-- Section 1: Listening Test Format and Question Types -->
-                <section class="bg-teal-900/30 rounded-lg p-4 md:p-8 shadow-sm border border-teal-700 mb-8">
+                <section class="bg-blue-800/25 rounded-lg p-4 md:p-8 shadow-sm border border-teal-700 mb-8">
                         <h2 class="text-2xl font-bold text-center text-white mb-8">
                                 Listening Test Question types
                         </h2>
@@ -183,7 +193,7 @@
                 </section>
 
                 <!-- Section 2: Example Listening Questions -->
-                <section class="bg-gray-700/50 rounded-lg p-4 md:p-8 shadow-sm border border-gray-600 mb-8">
+                <section class="bg-teal-700/25 rounded-lg p-4 md:p-8 shadow-sm border border-teal-600 mb-8">
                         <h2 class="text-2xl font-bold text-center text-white mb-8">Example Listening Questions</h2>
 
                         <div class="max-w-4xl mx-auto">
@@ -248,12 +258,12 @@
                 </section>
 
                 <!-- Section 3: Listening Question Practice -->
-                <section class="bg-teal-900/30 rounded-lg p-4 md:p-8 shadow-sm border border-teal-700 mb-8">
+                <section class="bg-emerald-700/40 rounded-lg p-4 md:p-8 shadow-sm border border-teal-500 mb-8">
                         <h2 class="text-2xl font-bold text-center text-white mb-8">Listening Question Practice</h2>
 
                         <div class="max-w-6xl mx-auto">
                                 <p class="text-white mb-4">
-                                        <span class="inline-block bg-red-500 text-white font-bold px-2 py-1 rounded-md border-2 border-yellow-600 shadow-lg mr-2">
+                                        <span class="inline-block bg-red-600 text-white font-bold px-2 py-1 rounded-md border-2 border-yellow-600 shadow-lg mr-2">
                                                 TASK >
                                         </span> Complete these three Listening question practice exercises. Enter
                                         your answers on the answer sheets provided before checking your answers in the video
@@ -325,7 +335,7 @@
                                                         </div>
                                                         
                                                         <!-- Show Answers Button -->
-                                                        <div class="text-center mt-4 mb-4">
+                                                        <div class="text-center mt-8 mb-4">
                                                                 <button
                                                                         type="button"
                                                                         onclick={toggleMissingAnswers}
@@ -425,7 +435,7 @@
                                                         </div>
                                                         
                                                         <!-- Show Answers Button -->
-                                                        <div class="text-center mt-4 mb-4">
+                                                        <div class="text-center mt-8 mb-4">
                                                                 <button
                                                                         type="button"
                                                                         onclick={toggleDiagramAnswers}
@@ -522,7 +532,7 @@
                                                         </div>
                                                         
                                                         <!-- Show Answers Button -->
-                                                        <div class="text-center mt-4 mb-4">
+                                                        <div class="text-center mt-8 mb-4">
                                                                 <button
                                                                         type="button"
                                                                         onclick={toggleMatchingAnswers}
@@ -574,7 +584,6 @@
 
                 <!-- End of Lesson -->
                 <section class="text-center py-8">
-                           <p class="text-white text-lg mb-12">End of Intro Lesson 01</p>
                           <!-- Footer Navigation -->
                         <div class="bg-gray-800 rounded-lg p-6 shadow-sm border border-gray-700">
                                 <div class="flex justify-between items-center">
@@ -583,9 +592,9 @@
                                                 class="text-teal-600 dark:text-teal-400 hover:underline font-semibold"
                                                 data-sveltekit-reload
                                         >
-                                                ← Back to Course Contents
+                                                ← Back to Contents
                                         </a>
-                                       
+                                       <p>End of Intro 01</p>
                                         <a
                                                 href="/IETPP/lesson-01/lesson01-i"
                                                 class="text-teal-600 dark:text-teal-400 hover:underline font-semibold"

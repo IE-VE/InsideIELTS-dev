@@ -143,7 +143,7 @@
                         <!-- Exercise 1 -->
                         <div class="bg-gray-100 dark:bg-gray-800 rounded-lg p-6 mb-8 border border-gray-300 dark:border-gray-600">
                                 <div class="text-center mb-6">
-                                        <div class="bg-blue-600 text-white px-4 py-2 rounded-lg text-center font-bold mb-6">
+                                        <div class="bg-blue-700 text-white px-4 py-2 rounded-lg text-center font-bold mb-6">
                                                 SC1(iii)
                                         </div>
                                         <h3 class="text-2xl font-bold text-gray-800 dark:text-gray-200 mb-4">
