@@ -70,7 +70,7 @@
         <!-- Page Content -->
         <div style="max-width: 1200px;" class="mx-auto px-6 py-12">
                 <!-- Lesson Title Section -->
-                <section class="bg-teal-600/20 rounded-lg p-10 shadow-sm border border-teal-600/50 mb-12">
+                <section class="bg-emerald-600/20 rounded-lg p-10 shadow-sm border border-emerald-600/50 mb-12">
                         <div class="flex items-center justify-center gap-4 mb-10">
                                 <div class="text-4xl">📖</div>
                                 <h2 class="text-3xl font-bold text-center text-white">Skills Practice</h2>
