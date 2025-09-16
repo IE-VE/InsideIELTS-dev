@@ -27,10 +27,10 @@
 </script>
 
 <svelte:head>
-        <title>IETPP - Lesson 02(ii): Reading True/False/Not given | InsideIELTS</title>
+        <title>IETPP - Lesson 02(iii): Reading Summary completion | InsideIELTS</title>
         <meta
                 name="description"
-                content="Master IELTS Reading True/False/Not given questions with proven techniques and practice exercises."
+                content="Master IELTS Reading Summary completion questions with proven techniques and practice exercises."
         />
 </svelte:head>
 
@@ -40,10 +40,10 @@
                 <div class="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 mb-8">
                         <div class="text-center">
                                 <div class="text-xs text-left text-teal-600 dark:text-teal-400 mb-4">
-                                        IE2401_02.2
+                                        IE2401_02.3
                                 </div>
                                 <h1 class="text-3xl font-bold text-white mb-4">
-                                        READING - True/False/Not given
+                                        READING - Summary completion
                                 </h1>
                         </div>
 
@@ -57,7 +57,7 @@
                                 </a>
 
                                 <a
-                                        href="/IETPP/lesson-02/lesson02-ii/skill-check"
+                                        href="/IETPP/lesson-02/lesson02-iii/skill-check"
                                         class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300 font-semibold"
                                         data-sveltekit-reload
                                 >
@@ -70,7 +70,7 @@
         <!-- Page Content -->
         <div style="max-width: 1200px;" class="mx-auto px-6 py-12">
                 <!-- Lesson Title Section -->
-                <section class="bg-teal-600/20 rounded-lg p-10 shadow-sm border border-blue-600/50 mb-12">
+                <section class="bg-teal-600/20 rounded-lg p-10 shadow-sm border border-teal-600/50 mb-12">
                         <div class="flex items-center justify-center gap-4 mb-10">
                                 <div class="text-4xl">📖</div>
                                 <h2 class="text-3xl font-bold text-center text-white">Skills Practice</h2>
@@ -79,40 +79,40 @@
                         
                         <div class="bg-white dark:bg-gray-800 rounded-lg p-8 shadow-sm border border-gray-200 dark:border-gray-700 mb-12">
                                 <h2 class="text-2xl text-center font-bold text-gray-800 dark:text-gray-200 mb-10">
-                                        True/False/Not given
+                                        Summary completion
                                 </h2>
 
                                 <div class="space-y-10">
                                         <div>
                                                 <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-6">What to Expect</h3>
                                                 <p class="text-gray-700 dark:text-gray-300 text-lg mb-8">
-                                                        True/False/Not given questions test your ability to identify whether information in statements agrees with, contradicts, or is simply not mentioned in the reading passage. You'll need to distinguish between facts that are explicitly stated, facts that contradict the passage, and information that is not provided at all. This question type appears in every IELTS Reading test and requires careful analysis to avoid common traps.
+                                                        Summary completion question sets take the form of gap-fill exercises which test your overall comprehension of the text. In addition to skimming the passage for broad comprehension, you also need to read the summary question text in detail, and then scan the passage for paraphrased statements containing the same general idea. The instructions will ask you to choose a specified number of words and/or numbers directly from the passage to fill the blanks in the given summary.
                                                 </p>
                                         </div>
 
                                         <div>
                                                 <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-6">Key Strategies</h3>
-                                                <div class="bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-lg p-4">
+                                                <div class="bg-teal-50 dark:bg-teal-900/20 border border-teal-200 dark:border-teal-800 rounded-lg p-4">
                                                         <ul class="space-y-2 text-gray-700 dark:text-gray-300">
                                                                 <li class="flex items-start">
-                                                                        <span class="text-blue-600 dark:text-blue-400 mr-2">1.</span>
-                                                                        <span><strong>Underline keywords:</strong> Identify key words and phrases in each statement before reading the passage</span>
+                                                                        <span class="text-teal-600 dark:text-teal-400 mr-2">1.</span>
+                                                                        <span><strong>Read the instructions:</strong> Note the word limit and any specific requirements</span>
                                                                 </li>
                                                                 <li class="flex items-start">
-                                                                        <span class="text-blue-600 dark:text-blue-400 mr-2">2.</span>
-                                                                        <span><strong>Scan for locations:</strong> Find where each topic is discussed in the passage using keywords</span>
+                                                                        <span class="text-teal-600 dark:text-teal-400 mr-2">2.</span>
+                                                                        <span><strong>Read the summary in detail:</strong> Focus on each gap-fill phrase individually and highlight key topic words</span>
                                                                 </li>
                                                                 <li class="flex items-start">
-                                                                        <span class="text-blue-600 dark:text-blue-400 mr-2">3.</span>
-                                                                        <span><strong>Read carefully:</strong> Focus on the exact meaning of both the statement and passage text</span>
+                                                                        <span class="text-teal-600 dark:text-teal-400 mr-2">3.</span>
+                                                                        <span><strong>Scan for matching information:</strong> Look for sentences containing the same general information or idea</span>
                                                                 </li>
                                                                 <li class="flex items-start">
-                                                                        <span class="text-blue-600 dark:text-blue-400 mr-2">4.</span>
-                                                                        <span><strong>Watch for synonyms:</strong> Look for paraphrased ideas rather than exact word matches</span>
+                                                                        <span class="text-teal-600 dark:text-teal-400 mr-2">4.</span>
+                                                                        <span><strong>Read in detail:</strong> Examine the exact sentence to locate the precise answer</span>
                                                                 </li>
                                                                 <li class="flex items-start">
-                                                                        <span class="text-blue-600 dark:text-blue-400 mr-2">5.</span>
-                                                                        <span><strong>Be precise:</strong> Choose "Not given" only when the information is completely absent</span>
+                                                                        <span class="text-teal-600 dark:text-teal-400 mr-2">5.</span>
+                                                                        <span><strong>Use exact words:</strong> Write the words directly from the passage on your answer sheet</span>
                                                                 </li>
                                                         </ul>
                                                 </div>
@@ -124,19 +124,19 @@
                                                         <ul class="space-y-2 text-gray-700 dark:text-gray-300">
                                                                 <li class="flex items-start">
                                                                         <span class="text-red-600 dark:text-red-400 mr-2">⚠️</span>
-                                                                        <span>Confusing "False" with "Not given" - False means the opposite is stated, Not given means no information</span>
+                                                                        <span>Exceeding word limits - stick to the maximum number specified</span>
                                                                 </li>
                                                                 <li class="flex items-start">
                                                                         <span class="text-red-600 dark:text-red-400 mr-2">⚠️</span>
-                                                                        <span>Using outside knowledge instead of only what's written in the passage</span>
+                                                                        <span>Changing word forms or grammar - use words exactly as they appear in the text</span>
                                                                 </li>
                                                                 <li class="flex items-start">
                                                                         <span class="text-red-600 dark:text-red-400 mr-2">⚠️</span>
-                                                                        <span>Making assumptions when partial information is given - stick to exact meanings</span>
+                                                                        <span>Missing synonyms and paraphrasing - the summary may use different words with the same meaning</span>
                                                                 </li>
                                                                 <li class="flex items-start">
                                                                         <span class="text-red-600 dark:text-red-400 mr-2">⚠️</span>
-                                                                        <span>Ignoring qualifying words like "some," "all," "never," or "always" that change meaning</span>
+                                                                        <span>Not reading around the answer - context is crucial for accuracy</span>
                                                                 </li>
                                                         </ul>
                                                 </div>
@@ -147,101 +147,84 @@
                         <div class="max-w-4xl mx-auto text-lg">
                                 <div class="flex justify-center mb-10">
                                         <img
-                                                src="/LESSONS/les02/02(ii)/TFNG_exampletorn.png"
-                                                alt="IELTS Reading - Yes/No/Not given"
+                                                src="/LESSONS/les02/02(iii)/Summary_comp-exQ.png"
+                                                alt="IELTS Reading - Summary completion"
                                                 class="w-full max-w-md rounded border border-gray-600 cursor-pointer"
-                                                onclick={() => openLightbox('/LESSONS/les02/02(ii)/TFNG_exampletorn.png')}
+                                                onclick={() => openLightbox('/LESSONS/les02/02(iii)/Summary_comp-exQ.png')}
                                         />
                                 </div>
-
-                                <p class="text-white mb-16">
-                                        Each question consists of a statement about the passage which you need to qualify by writing either <strong><em>True/Yes</em></strong>,
-                                        if the statement is correct; <strong><em>False/No</em></strong>, if the statement is wrong;
-                                        or <strong><em>Not given</em></strong>, if there is no such information given in the passage.
-                                </p>
 
                                 <h3 class="text-xl font-bold text-white mb-8 underline">Question technique</h3>
 
                                 <p class="text-white mb-10">
-                                        <strong>1. Read the instructions and underline key-words in the question statements.</strong>
+                                        <strong>1. Read the instructions.</strong>
+                                </p>
+
+                                <p class="text-white mb-10">
+                                        <strong>2. Read the summary in detail - for understanding.</strong><br>
+                                        Focus on each gap-fill phrase individually, read for understanding and highlight the key topic words contained in the phrase.
                                 </p>
 
                                 <div class="flex justify-center mb-10">
                                         <img
-                                                src="/LESSONS/les02/02(ii)/TFNG_tech-Q.png"
-                                                alt="IELTS Reading - diagram completion"
+                                                src="/LESSONS/les02/02(iii)/Summary_comp-techQ.png"
+                                                alt="IELTS Reading - Summary completion technique"
                                                 class="w-full max-w-2xl rounded border-2 border-black cursor-pointer"
-                                                onclick={() => openLightbox('/LESSONS/les02/02(ii)/TFNG_tech-Q.png')}
+                                                onclick={() => openLightbox('/LESSONS/les02/02(iii)/Summary_comp-techQ.png')}
                                         />
                                 </div>
 
                                 <p class="text-white mb-10">
-                                        <strong>2. Scan the passage for the key-words to locate the <span style="color: #2e63f3">paragraph</span>
-                                        containing the information needed.</strong>
+                                        <strong>3. Scan the text for sentences containing the same general information/idea.</strong>
+                                </p>
+
+                                <p class="text-white mb-10">
+                                        <strong>4. Read the sentence in detail to locate the answer.</strong>
                                 </p>
 
                                 <div class="flex justify-center mb-10">
                                         <img
-                                                src="/LESSONS/les02/02(ii)/TFNG_tech-text.png"
-                                                alt="IELTS Reading - diagram completion"
+                                                src="/LESSONS/les02/02(iii)/Summary_comp-techtext.png"
+                                                alt="IELTS Reading - Summary completion text analysis"
                                                 class="w-full max-w-2xl rounded border-2 border-black cursor-pointer"
-                                                onclick={() => openLightbox('/LESSONS/les02/02(ii)/TFNG_tech-text.png')}
+                                                onclick={() => openLightbox('/LESSONS/les02/02(iii)/Summary_comp-techtext.png')}
                                         />
                                 </div>
 
-                                <p class="text-white mb-8">
-                                        <strong>3. Skim the paragraph and read the sentences before and after the key-word to find the location of the <span style="color: #00a36c">answer</span> within the paragraph itself.</strong>
-                                </p>
-
-                                <p class="text-white mb-8">
-                                        <strong>4. Read that section of the paragraph in detail to understand how the information given relates to the question statement.</strong>
+                                <p class="text-white mb-10">
+                                        <strong>5. Write the word/s directly on your answer sheet.</strong>
                                 </p>
 
                                 <div class="flex justify-center mb-10">
                                         <img
-                                                src="/LESSONS/les02/02(ii)/TFNG_tech-ans.png"
-                                                alt="IELTS Reading - answers"
+                                                src="/LESSONS/les02/02(iii)/Summary_comp-techans.png"
+                                                alt="IELTS Reading - Summary completion answers"
                                                 class="w-full max-w-2xl rounded border-2 border-black cursor-pointer"
-                                                onclick={() => openLightbox('/LESSONS/les02/02(ii)/TFNG_tech-ans.png')}
+                                                onclick={() => openLightbox('/LESSONS/les02/02(iii)/Summary_comp-techans.png')}
                                         />
                                 </div>
 
-                                <p class="text-white mb-4">
-                                        <strong>5. When you find the information directly relating to the question statement (or not*),
-                                        write your answer on the answer sheet.</strong>
-                                </p>
-
-                                <p class="text-white mb-8">
-                                        * Choose the NOT GIVEN option when you have found the paragraph with the correct
-                                        key-word topic but the question statement is not mentioned at all.
-                                </p>
-
-                                <p class="text-white mb-8">
-                                        As always, be on the lookout for synonyms and paraphrasing whenever scanning the text for key-words and answers.
-                                </p>
-
-                                <!-- <p class="text-white mb-6 font-bold">
-                                        Watch this short YES/NO/NOT GIVEN demonstration vid before testing your skills.
+                                <p class="text-white mb-6 font-bold">
+                                        Watch this quick Reading Summary completion demonstration vid before testing your skills.
                                 </p>
 
                                 <div class="flex justify-center mb-12">
-                                        <a
-                                                href="https://insideielts.oppyo.com/video/embed/o4tbupim2x"
-                                                target="_blank"
-                                                title="InsideIELTS virtual examiner reading test true false not given"
-                                                class="inline-block bg-teal-600 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded border-2 border-red-500 text-sm transition-colors"
+                                        <video
+                                                controls
+                                                class="w-full max-w-2xl bg-black rounded border border-gray-600"
+                                                src="/LESSONS/les02/01(iii)/Reading_demoQ-summarycomp.mp4"
                                         >
-                                                Watch VE vid
-                                        </a>
-                                </div> -->
+                                                Your browser does not support the video tag.
+                                        </video>
+                                </div>
 
                                 <div class="text-center">
                                         <p class="text-white text-xl font-bold mb-16">
-                                                Now complete the READING - True/False/Not given Skill Check exercise
+                                                Now complete the READING - Summary completion Skill Check exercise
                                         </p>
 
                                         <a
-                                                href="/IETPP/lesson-02/lesson02-ii/skill-check"
+                                                href="/IETPP/lesson-02/lesson02-iii/skill-check"
                                                 class="inline-flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-lg transition-colors border-2 border-white"
                                         >
                                                 <span class="text-2xl">✓</span>
@@ -265,7 +248,7 @@
                                                 ← Back to Contents
                                         </a>
                                         <a
-                                                href="/IETPP/lesson-02/lesson02-ii/skill-check"
+                                                href="/IETPP/lesson-02/lesson02-iii/skill-check"
                                                 class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300 font-semibold"
                                                 data-sveltekit-reload
                                         >
