@@ -144,7 +144,7 @@
                                                                 </div>
                                                                 <div class="flex gap-2">
                                                                         <span class="text-gray-600 dark:text-gray-400">(iii)</span>
-                                                                        <a href="#" class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300">Summary completion</a>
+                                                                        <a href="/IETPP/lesson-02/lesson02-iii" class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300">Summary completion</a>
                                                                 </div>
                                                         </div>
                                                 </div>
