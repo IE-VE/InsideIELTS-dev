@@ -327,54 +327,27 @@
                                                         <h5 class="text-sm font-bold mb-3 text-gray-800 dark:text-gray-200">Leonardo da Vinci's ideal city</h5>
                                                         
                                                         <div class="space-y-4 text-xs text-gray-700 dark:text-gray-300">
-                                                                <div class="flex items-start gap-2">
-                                                                        <span class="font-medium text-teal-600 dark:text-teal-400 min-w-[24px]">34.</span>
-                                                                        <div class="flex-1">
-                                                                                <p class="mb-2">A collection of Leonardo da Vinci's paperwork reveals his design of a new city beside the Ticino River. This was to provide better <input bind:value={q34} type="text" class="inline-block w-20 px-1 py-0.5 bg-white dark:bg-gray-600 border border-gray-300 dark:border-gray-500 rounded text-xs text-gray-800 dark:text-gray-200" placeholder="____"> for trade and a less polluted environment.</p>
-                                                                        </div>
-                                                                </div>
+                                                                <p class="mb-4">
+                                                                        A collection of Leonardo da Vinci's paperwork reveals his design of a new city beside the Ticino River.
+                                                                        This was to provide better <span class="font-medium text-teal-600 dark:text-teal-400">34</span> <input bind:value={q34} type="text" class="inline-block w-20 px-1 py-0.5 bg-white dark:bg-gray-600 border border-gray-300 dark:border-gray-500 rounded text-xs text-gray-800 dark:text-gray-200" placeholder="____"> for trade and a less polluted environment.
+                                                                        Although Leonardo da Vinci's city shared many of the ideals of his time, some of his innovations were considered
+                                                                        unconventional in their design. They included features that can be seen in some tower blocks today, such as
+                                                                        <span class="font-medium text-teal-600 dark:text-teal-400">35</span> <input bind:value={q35} type="text" class="inline-block w-20 px-1 py-0.5 bg-white dark:bg-gray-600 border border-gray-300 dark:border-gray-500 rounded text-xs text-gray-800 dark:text-gray-200" placeholder="____"> on the exterior of a building.
+                                                                </p>
                                                                 
-                                                                <div class="flex items-start gap-2">
-                                                                        <span class="font-medium text-teal-600 dark:text-teal-400 min-w-[24px]">35.</span>
-                                                                        <div class="flex-1">
-                                                                                <p class="mb-2">Although Leonardo da Vinci's city shared many of the ideals of his time, some of his innovations were considered unconventional in their design. They included features that can be seen in some tower blocks today, such as <input bind:value={q35} type="text" class="inline-block w-20 px-1 py-0.5 bg-white dark:bg-gray-600 border border-gray-300 dark:border-gray-500 rounded text-xs text-gray-800 dark:text-gray-200" placeholder="____"> on the exterior of a building.</p>
-                                                                        </div>
-                                                                </div>
+                                                                <p class="mb-4">
+                                                                        Leonardo da Vinci wasn't only an architect. His expertise in <span class="font-medium text-teal-600 dark:text-teal-400">36</span> <input bind:value={q36} type="text" class="inline-block w-20 px-1 py-0.5 bg-white dark:bg-gray-600 border border-gray-300 dark:border-gray-500 rounded text-xs text-gray-800 dark:text-gray-200" placeholder="____"> was evident
+                                                                        in his plans for artificial canals within his ideal city. He also believed that the height of houses should relate
+                                                                        to the width of streets in case earthquakes occurred. The design of many cities in Italy today follows this
+                                                                        <span class="font-medium text-teal-600 dark:text-teal-400">37</span> <input bind:value={q37} type="text" class="inline-block w-20 px-1 py-0.5 bg-white dark:bg-gray-600 border border-gray-300 dark:border-gray-500 rounded text-xs text-gray-800 dark:text-gray-200" placeholder="____">.
+                                                                </p>
                                                                 
-                                                                <div class="flex items-start gap-2">
-                                                                        <span class="font-medium text-teal-600 dark:text-teal-400 min-w-[24px]">36.</span>
-                                                                        <div class="flex-1">
-                                                                                <p class="mb-2">Leonardo da Vinci wasn't only an architect. His expertise in <input bind:value={q36} type="text" class="inline-block w-20 px-1 py-0.5 bg-white dark:bg-gray-600 border border-gray-300 dark:border-gray-500 rounded text-xs text-gray-800 dark:text-gray-200" placeholder="____"> was evident in his plans for artificial canals within his ideal city.</p>
-                                                                        </div>
-                                                                </div>
-                                                                
-                                                                <div class="flex items-start gap-2">
-                                                                        <span class="font-medium text-teal-600 dark:text-teal-400 min-w-[24px]">37.</span>
-                                                                        <div class="flex-1">
-                                                                                <p class="mb-2">He also believed that the height of houses should relate to the width of streets in case earthquakes occurred. The design of many cities in Italy today follows this <input bind:value={q37} type="text" class="inline-block w-20 px-1 py-0.5 bg-white dark:bg-gray-600 border border-gray-300 dark:border-gray-500 rounded text-xs text-gray-800 dark:text-gray-200" placeholder="____">.</p>
-                                                                        </div>
-                                                                </div>
-                                                                
-                                                                <div class="flex items-start gap-2">
-                                                                        <span class="font-medium text-teal-600 dark:text-teal-400 min-w-[24px]">38.</span>
-                                                                        <div class="flex-1">
-                                                                                <p class="mb-2">While some cities from <input bind:value={q38} type="text" class="inline-block w-20 px-1 py-0.5 bg-white dark:bg-gray-600 border border-gray-300 dark:border-gray-500 rounded text-xs text-gray-800 dark:text-gray-200" placeholder="____"> times have aspects that can also be found in Leonardo's designs, his ideas weren't put into practice until long after his death.</p>
-                                                                        </div>
-                                                                </div>
-                                                                
-                                                                <div class="flex items-start gap-2">
-                                                                        <span class="font-medium text-teal-600 dark:text-teal-400 min-w-[24px]">39.</span>
-                                                                        <div class="flex-1">
-                                                                                <p class="mb-2"><input bind:value={q39} type="text" class="inline-block w-20 px-1 py-0.5 bg-white dark:bg-gray-600 border border-gray-300 dark:border-gray-500 rounded text-xs text-gray-800 dark:text-gray-200" placeholder="____"> is one example of a city that was redesigned in the 19th century in the way that Leonardo had envisaged.</p>
-                                                                        </div>
-                                                                </div>
-                                                                
-                                                                <div class="flex items-start gap-2">
-                                                                        <span class="font-medium text-teal-600 dark:text-teal-400 min-w-[24px]">40.</span>
-                                                                        <div class="flex-1">
-                                                                                <p class="mb-2">His ideas are also relevant to today's world, where building <input bind:value={q40} type="text" class="inline-block w-20 px-1 py-0.5 bg-white dark:bg-gray-600 border border-gray-300 dark:border-gray-500 rounded text-xs text-gray-800 dark:text-gray-200" placeholder="____"> no longer seems to be the best approach.</p>
-                                                                        </div>
-                                                                </div>
+                                                                <p class="mb-4">
+                                                                        While some cities from <span class="font-medium text-teal-600 dark:text-teal-400">38</span> <input bind:value={q38} type="text" class="inline-block w-20 px-1 py-0.5 bg-white dark:bg-gray-600 border border-gray-300 dark:border-gray-500 rounded text-xs text-gray-800 dark:text-gray-200" placeholder="____"> times have aspects that can also be found in Leonardo's designs,
+                                                                        his ideas weren't put into practice until long after his death. <span class="font-medium text-teal-600 dark:text-teal-400">39</span> <input bind:value={q39} type="text" class="inline-block w-20 px-1 py-0.5 bg-white dark:bg-gray-600 border border-gray-300 dark:border-gray-500 rounded text-xs text-gray-800 dark:text-gray-200" placeholder="____"> is one example of a city
+                                                                        that was redesigned in the 19th century in the way that Leonardo had envisaged. His ideas are also relevant to today's
+                                                                        world, where building <span class="font-medium text-teal-600 dark:text-teal-400">40</span> <input bind:value={q40} type="text" class="inline-block w-20 px-1 py-0.5 bg-white dark:bg-gray-600 border border-gray-300 dark:border-gray-500 rounded text-xs text-gray-800 dark:text-gray-200" placeholder="____"> no longer seems to be the best approach.
+                                                                </p>
                                                         </div>
                                                 </div>
                                                 
