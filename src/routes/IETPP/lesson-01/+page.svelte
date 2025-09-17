@@ -59,32 +59,49 @@
 <div class="min-h-screen bg-gray-900 text-white">
         <!-- Lesson Header -->
         <div class="max-w-5xl container mx-auto px-3 md:px-6 py-8">
-                <div class="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 mb-8">
+                <div class="bg-gray-50 dark:bg-gray-800 rounded-lg px-6 py-2 mb-8">
                         <div class="text-center">
-                                <div class="text-xs text-left text-teal-600 dark:text-teal-400 mb-4">
+                                <div class="text-xs text-left text-teal-600 dark:text-teal-400">
                                         IE2401_01
                                 </div>
-                                <h1 class="text-3xl font-bold text-white mb-2">
+                                <h1 class="text-3xl font-bold text-white my-7">
                                         Introduction to the Listening Test
                                 </h1>
-                                <!-- <p class="text-white italic">(30 mins)</p> -->
+                        </div>
+<!-- Header Nav -->
+                        <div class="mt-6 mb-8 text-lg">
+                                <h2 class="font-semibold mb-4 text-white">Lesson Content:</h2>
+                                <ul class="list-disc list-inside space-y-2 text-white">
+                                        <li>Test format</li>
+                                        <li>Question types</li>
+                                          <li>Examples & Technique</li>
+                                        <li>Practice exercise</li>
+                                </ul>
                         </div>
 
                         <div class="flex justify-between items-center">
+                                <a
+                                        href="/IETPP/lesson-00"
+                                        class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300 font-semibold"
+                                        data-sveltekit-reload
+                                >
+                                        ← Contents
+                                </a>
+
                                 <a
                                         href="/IETPP#lesson-01"
                                         class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300 font-semibold"
                                         data-sveltekit-reload
                                 >
-                                        ← Back to Contents
+                                        Contents
                                 </a>
-
+                                
                                 <a
-                                        href="/IETPP/lesson-01/lesson01-ii"
-                                        class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300 font-semibold"
+                                        href="/IETPP/lesson-01/lesson01-i"
+                                        class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300 font-semibold ml-8"
                                         data-sveltekit-reload
                                 >
-                                        Next Lesson →
+                                        Next →
                                 </a>
                         </div>
                 </div>
@@ -92,16 +109,7 @@
 
         <!-- Page Content -->
         <div style="max-width: 1200px;" class="mx-auto px-3 md:px-6 py-8">
-                <!-- Lesson Content Overview -->
-                <!-- <section class="bg-gray-800 rounded-lg p-6 shadow-sm border border-gray-700 mb-8">
-                        <h2 class="text-xl font-semibold mb-4 text-white">Lesson Content:</h2>
-                        <ul class="list-disc text-lg list-inside space-y-2 text-white">
-                                <li>Listening Test Format and Question types</li>
-                                <li>Example Listening Test questions</li>
-                                <li>Listening Test question practice</li>
-                        </ul>
-                </section>
- -->
+    
                 <section class="mb-12">
                         <div class="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-sm border border-gray-200 dark:border-gray-700">
                                 <h2 class="text-2xl text-center font-bold text-gray-800 dark:text-white mb-6">
@@ -137,7 +145,7 @@
                 </section>
                 
                 <!-- Section 1: Listening Test Format and Question Types -->
-                <section class="bg-blue-800/25 rounded-lg p-4 md:p-8 shadow-sm border border-teal-700 mb-8">
+                <section class="bg-cyan-600/25 rounded-lg p-4 md:p-8 shadow-sm border border-teal-600 mb-8">
                         <h2 class="text-2xl font-bold text-center text-white mb-8">
                                 Listening Test Question types
                         </h2>
@@ -166,7 +174,7 @@
 
                                         <p class="text-white">
                                                 Examples of all these questions are shown on the <a href= "/listening"
-                                                                                                    class="text-white hover:text-teal-600 dark:text-white dark:hover:text-teal-400">LISTENING</a> practice page.
+                                                                                                    class="text-teal-300 hover:text-teal-600 dark:text-teal-300 dark:hover:text-teal-500">LISTENING</a> page.
                                         </p>
                                 </div>
                                 <div class="flex justify-center mt-12 mb-12">
@@ -193,7 +201,7 @@
                 </section>
 
                 <!-- Section 2: Example Listening Questions -->
-                <section class="bg-teal-700/25 rounded-lg p-4 md:p-8 shadow-sm border border-teal-600 mb-8">
+                <section class="bg-teal-600/25 rounded-lg p-4 md:p-8 shadow-sm border border-teal-600 mb-8">
                         <h2 class="text-2xl font-bold text-center text-white mb-8">Example Listening Questions</h2>
 
                         <div class="max-w-4xl mx-auto">
@@ -258,7 +266,7 @@
                 </section>
 
                 <!-- Section 3: Listening Question Practice -->
-                <section class="bg-emerald-700/40 rounded-lg p-4 md:p-8 shadow-sm border border-teal-500 mb-8">
+                <section class="bg-cyan-800/25 rounded-lg p-4 md:p-8 shadow-sm border border-teal-500 mb-8">
                         <h2 class="text-2xl font-bold text-center text-white mb-8">Listening Question Practice</h2>
 
                         <div class="max-w-6xl mx-auto">
@@ -581,26 +589,31 @@
                         </div>
                 </section>
 
-
-                <!-- End of Lesson -->
+                                            <!-- Footer Navigation -->
                 <section class="text-center py-8">
-                          <!-- Footer Navigation -->
-                        <div class="bg-gray-800 rounded-lg p-6 shadow-sm border border-gray-700">
+                      
+                        <div class="bg-gray-800 rounded-lg p-4 shadow-sm border border-gray-700">
                                 <div class="flex justify-between items-center">
                                         <a
                                                 href="/IETPP#lesson-01"
                                                 class="text-teal-600 dark:text-teal-400 hover:underline font-semibold"
                                                 data-sveltekit-reload
                                         >
-                                                ← Back to Contents
+                                                ← Contents
                                         </a>
-                                       <p>End of Intro 01</p>
+                                        <!-- <a
+                                                href="/IETPP#lesson-01"
+                                                class="text-teal-600 dark:text-teal-400 hover:underline font-semibold"
+                                                data-sveltekit-reload
+                                        >
+                                                Contents
+                                        </a> -->
                                         <a
                                                 href="/IETPP/lesson-01/lesson01-i"
                                                 class="text-teal-600 dark:text-teal-400 hover:underline font-semibold"
                                                 data-sveltekit-reload
                                         >
-                                                Next Lesson →
+                                                Next →
                                         </a>
                                 </div>
                         </div>

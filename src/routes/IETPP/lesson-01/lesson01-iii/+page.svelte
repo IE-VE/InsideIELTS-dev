@@ -37,47 +37,55 @@
 <div class="min-h-screen bg-gray-900 text-white">
         <!-- Lesson Header -->
         <div class="max-w-5xl container mx-auto px-6 pt-8">
-                <div class="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 mb-8">
+                <div class="bg-gray-50 dark:bg-gray-800 rounded-lg px-6 py-2 mb-8">
                         <div class="text-center">
-                                <div class="text-xs text-left text-teal-600 dark:text-teal-400 mb-4">
+                                <div class="text-xs text-left text-teal-600 dark:text-teal-400">
                                         IE2401_01.3
                                 </div>
-                                <h1 class="text-3xl font-bold text-white mb-4">
-                                        LISTENING - Sentence Completion
+                                <h1 class="text-3xl font-bold text-white my-7">
+                                        LISTENING - Sentence completion
                                 </h1>
                         </div>
 
                         <div class="flex justify-between items-center">
                                 <a
+                                        href="/IETPP/lesson-01/lesson01-i"
+                                        class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300 font-semibold"
+                                        data-sveltekit-reload
+                                >
+                                        ← Previous
+                                </a>
+
+                                <a
                                         href="/IETPP#lesson-01"
                                         class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300 font-semibold"
                                         data-sveltekit-reload
                                 >
-                                        ← Back to Contents
+                                        Contents
                                 </a>
 
                                 <a
-                                        href="/IETPP/lesson-01/lesson01-iii/skill-check"
-                                        class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300 font-semibold"
+                                        href="/IETPP/lesson-01/lesson01-iii"
+                                        class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300 font-semibold ml-8"
                                         data-sveltekit-reload
                                 >
-                                        Next Lesson →
+                                        Next →
                                 </a>
                         </div>
                 </div>
         </div>
 
         <!-- Page Content -->
-        <div style="max-width: 1200px;" class="mx-auto px-3 md:px-6 py-12">
+        <div style="max-width: 1200px;" class="mx-auto px-3 md:px-6 py-8">
                 <!-- Lesson Title Section -->
-                <section class="bg-emerald-600/20 rounded-lg p-6 md:p-10 shadow-sm border border-emerald-600/50 mb-12">
+                <section class="bg-cyan-800/25 rounded-lg p-4 md:p-10 shadow-sm border border-emerald-600/50 mb-12">
                         <div class="flex items-center justify-center gap-4 mb-10">
                                 <div class="text-4xl">👂</div>
                                 <h2 class="text-3xl font-bold text-center text-white">Skills Practice</h2>
                                 <div class="text-4xl">👂</div>
                         </div>
 
-                        <div class="bg-white dark:bg-gray-800 rounded-lg p-8 shadow-sm border border-gray-200 dark:border-gray-700 mb-12">
+                        <div class="bg-white dark:bg-gray-800 rounded-lg p-4 md:p-8 shadow-sm border border-gray-200 dark:border-gray-700 mb-12">
                                 <h2 class="text-2xl text-center font-bold text-gray-800 dark:text-gray-200 mb-10">
                                         Sentence Completion Questions
                                 </h2>
@@ -91,7 +99,7 @@
                                         </div>
 
                                         <div>
-                                                <h3 class="text-lg font-semibold text-teal-600 dark:text-teal-400 mb-6">Key Strategies</h3>
+                                                <h3 class="text-lg font-semibold text-teal-400 mb-6">Key Strategies</h3>
                                                 <div class="bg-teal-50 dark:bg-teal-900/20 border border-teal-200 dark:border-teal-800 rounded-lg p-4">
                                                         <ul class="space-y-2 text-gray-700 dark:text-gray-300">
                                                                 <li class="flex items-start">
@@ -115,7 +123,7 @@
                                         </div>
 
                                         <div>
-                                                <h3 class="text-lg font-semibold text-red-600 dark:text-red-400 mb-6">Common Pitfalls</h3>
+                                                <h3 class="text-lg font-semibold text-red-400 mb-6">Common Pitfalls</h3>
                                                 <div class="bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-lg p-4">
                                                         <ul class="space-y-2 text-gray-700 dark:text-gray-300">
                                                                 <li class="flex items-start">

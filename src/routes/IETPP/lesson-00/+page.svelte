@@ -48,31 +48,40 @@
 <div class="min-h-screen bg-white dark:bg-gray-900">
         <!-- Lesson Header -->
         <div class="max-w-5xl container mx-auto px-6 py-8">
-                <div class="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 mb-8">
+                <div class="bg-gray-50 dark:bg-gray-800 rounded-lg px-6 py-2 mb-8">
                         <div class="text-center">
-                                <div class="text-xs text-left font-bold text-teal-600 dark:text-teal-400 mb-4">
+                                <div class="text-xs text-left font-bold text-teal-600 dark:text-teal-400 mt-1">
                                         LESSON CODE: IE2401_00
                                 </div>
-                                <h1 class="text-3xl font-bold text-white mb-2">
+                                <h1 class="text-3xl font-bold text-white my-7">
                                         IELTS Test Overview
                                 </h1>
-                                <!-- <p class="text-white italic">(15 mins)</p> -->
+        
                         </div>
 
-                        <div class="mt-6">
-                                <h2 class="text-xl font-semibold mb-4 text-white">Lesson Content:</h2>
-                                <ul class="list-disc text-xl list-inside space-y-2 text-white">
+                        <div class="mt-6 mb-8 text-lg">
+                                <h2 class="font-semibold mb-4 text-white">Lesson Content:</h2>
+                                <ul class="list-disc list-inside space-y-2 text-white">
                                         <li>IELTS Test make-up</li>
                                         <li>IELTS Test Assessment</li>
                                 </ul>
                         </div>
 
-                        <div class="text-right mt-6">
+                        <div class="flex justify-between items-center">
                                 <a
-                                        href="/IETPP#lesson-00"
-                                        class="text-teal-600 dark:text-teal-400 hover:underline font-semibold"
+                                        href="/IETPP#lesson-01"
+                                        class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300 font-semibold"
+                                        data-sveltekit-reload
                                 >
                                         ← Back to Contents
+                                </a>
+
+                                <a
+                                        href="/IETPP/lesson-01"
+                                        class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300 font-semibold"
+                                        data-sveltekit-reload
+                                >
+                                        Next Lesson →
                                 </a>
                         </div>
                 </div>
@@ -104,7 +113,7 @@
                                 </div>
                         </div>
 
-                        <p class="text-white mb-8">
+                        <p class="text-white text-lg mb-8">
                                 The full <strong>IELTS</strong> test is made up of:
                         </p>
 
@@ -344,16 +353,29 @@
                         </div>
                 </section>
 
-                <!-- Navigation -->
-                <div class="text-center mt-12">
-                        <a
-                                href="/IETPP#lesson-00"
-                                data-sveltekit-reload
-                                class="inline-flex items-center text-teal-600 dark:text-teal-400 hover:underline font-semibold"
-                        >
-                                ← Back to Course Contents
-                        </a>
-                </div>
+                                              <!-- Footer Navigation -->
+                <section class="text-center py-8">
+
+                        <div class="bg-gray-800 rounded-lg p-6 shadow-sm border border-gray-700">
+                                <div class="flex justify-between items-center">
+                                        <a
+                                                href="/IETPP#lesson-00"
+                                                class="text-teal-600 dark:text-teal-400 hover:underline font-semibold"
+                                                data-sveltekit-reload
+                                        >
+                                                ← Back to Contents
+                                        </a>
+                        
+                                        <a
+                                                href="/IETPP/lesson-01"
+                                                class="text-teal-600 dark:text-teal-400 hover:underline font-semibold"
+                                                data-sveltekit-reload
+                                        >
+                                                Next Lesson →
+                                        </a>
+                                </div>
+                        </div>
+                </section>
 </div>
         
         <!-- Lightbox Modal -->
