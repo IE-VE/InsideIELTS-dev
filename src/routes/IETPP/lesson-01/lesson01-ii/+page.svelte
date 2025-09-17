@@ -42,8 +42,8 @@
                                 <div class="text-xs text-left text-teal-600 dark:text-teal-400">
                                         IE2401_01.2
                                 </div>
-                                <h1 class="text-3xl font-bold text-white my-7">
-                                        LISTENING - Short answer
+                                <h1 class="text-4xl font-bold text-white my-7">
+                                        LISTENING
                                 </h1>
                         </div>
 
@@ -81,26 +81,26 @@
                 <section class="bg-teal-600/25 rounded-lg p-4 md:p-10 shadow-sm border border-teal-600 mb-12">
                         <div class="flex items-center justify-center gap-4 mb-10">
                                 <div class="text-4xl">👂</div>
-                                <h2 class="text-3xl font-bold text-center text-white">Skills Practice</h2>
+                                <h2 class="text-3xl font-bold text-center text-white underline">Short Answer</h2>
                                 <div class="text-4xl">👂</div>
                         </div>
                         
                         <!-- Educational Section -->
-                        <div class="bg-white dark:bg-gray-800 rounded-lg p-4 md:p-8 shadow-sm border border-gray-200 dark:border-gray-700 mb-12">
-                                <h2 class="text-2xl text-center font-bold text-gray-800 dark:text-gray-200 mb-10">
-                                        Short Answer Questions
-                                </h2>
-
+                        <div class="bg-gray-800 rounded-lg p-4 md:p-8 shadow-sm border border-gray-700 mb-12">
+                                
                                 <div class="space-y-10">
+                                        
                                         <div>
-                                                <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-6">What to Expect</h3>
-                                                <p class="text-gray-700 dark:text-gray-300 text-lg mb-8">
+                                                <h3 class="text-lg font-semibold text-blue-400 mb-6">What to Expect</h3>
+                                                <div class="bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-lg p-4">
+                                                <p class="text-gray-300 text-lg mb-8">
                                                         Short answer questions in the IELTS Listening test require you to write brief answers using words directly from the audio. These questions test your ability to identify specific factual information such as names, dates, times, numbers, and locations.
                                                 </p>
+                                                        </div>
                                         </div>
 
                                         <div>
-                                                <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-6">Key Strategies</h3>
+                                                <h3 class="text-lg font-semibold text-teal-400 mb-6">Key Strategies</h3>
                                                 <div class="bg-teal-900/20 border border-teal-200 dark:border-teal-800 rounded-lg p-4">
                                                         <ul class="space-y-2 text-gray-700 dark:text-gray-300">
                                                                 <li class="flex items-start">
@@ -128,7 +128,7 @@
                                         </div>
 
                                         <div>
-                                                <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-6">Common Pitfalls</h3>
+                                                <h3 class="text-lg font-semibold text-red-400 mb-6">Common Pitfalls</h3>
                                                 <div class="bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-lg p-4">
                                                         <ul class="space-y-2 text-gray-700 dark:text-gray-300">
                                                                 <li class="flex items-start">
@@ -186,7 +186,9 @@
                                                 Watch VE vid
                                         </a>
                                 </div>
-
+                           </div>
+                                <div class="mx-auto text-lg">
+                                <div class="bg-gray-800 rounded-lg p-4 md:p-8 shadow-sm border border-gray-600 mb-12">
                                 <h3 class="text-xl font-bold text-white mb-8 underline">Question technique</h3>
 
                                 <p class="text-white mb-10">
@@ -204,12 +206,14 @@
                                         />
                                 </div>
 
-                                <p class="text-white mb-8">
+                                <p class="text-white mb-2">
                                         Be aware of paraphrased answers and synonyms, and also for tricks such as when the speaker
                                         may say one thing and then change their mind or correct themself.
                                 </p>
-
-                                <p class="text-white mb-10 font-bold">
+                                        </div>
+                                                                          </div>
+                        
+                                <p class="max-w-4xl mx-auto text-white mb-10 font-bold">
                                         Watch this quick Listening Short answer question demonstration vid before testing your
                                         understanding of this question format.
                                 </p>
@@ -238,7 +242,7 @@
                                                 <span class="text-2xl">✓</span>
                                         </a>
                                 </div>
-                        </div>
+                        
                 </section>
 
                                <!-- Footer Navigation -->

@@ -42,14 +42,14 @@
                                 <div class="text-xs text-left text-teal-600 dark:text-teal-400">
                                         IE2401_01.3
                                 </div>
-                                <h1 class="text-3xl font-bold text-white my-7">
-                                        LISTENING - Sentence completion
+                                <h1 class="text-4xl font-bold text-white my-7">
+                                        LISTENING
                                 </h1>
                         </div>
 
                         <div class="flex justify-between items-center">
                                 <a
-                                        href="/IETPP/lesson-01/lesson01-i"
+                                        href="/IETPP/lesson-01/lesson01-ii"
                                         class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300 font-semibold"
                                         data-sveltekit-reload
                                 >
@@ -65,7 +65,7 @@
                                 </a>
 
                                 <a
-                                        href="/IETPP/lesson-01/lesson01-iii"
+                                        href="/IETPP/lesson-02"
                                         class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300 font-semibold ml-8"
                                         data-sveltekit-reload
                                 >
@@ -81,22 +81,23 @@
                 <section class="bg-cyan-800/25 rounded-lg p-4 md:p-10 shadow-sm border border-emerald-600/50 mb-12">
                         <div class="flex items-center justify-center gap-4 mb-10">
                                 <div class="text-4xl">👂</div>
-                                <h2 class="text-3xl font-bold text-center text-white">Skills Practice</h2>
+                                <h2 class="text-3xl font-bold text-center text-white underline">Sentence Completion</h2>
                                 <div class="text-4xl">👂</div>
                         </div>
 
-                        <div class="bg-white dark:bg-gray-800 rounded-lg p-4 md:p-8 shadow-sm border border-gray-200 dark:border-gray-700 mb-12">
-                                <h2 class="text-2xl text-center font-bold text-gray-800 dark:text-gray-200 mb-10">
-                                        Sentence Completion Questions
-                                </h2>
-
-                                <div class="space-y-10">
+                        <!-- Educational Section -->
+                        <div class="bg-gray-800 rounded-lg p-4 md:p-8 shadow-sm border border-gray-700 mb-12">
+                                
+                                                            <div class="space-y-10">
+                                                                    
                                         <div>
-                                                <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-6">What to Expect</h3>
-                                                <p class="text-gray-700 dark:text-gray-300 text-lg mb-8">
+                                                <h3 class="text-lg font-semibold text-blue-400 mb-6">What to Expect</h3>
+                                                       <div class="bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-lg p-4">
+                                                <p class="text-gray-300 text-lg mb-8">
                                                         Sentence completion questions require you to fill in missing information in sentences or notes. You'll hear specific details in the audio that complete the gaps. Instructions will specify the maximum number of words allowed (e.g., "ONE WORD ONLY" or "NO MORE THAN TWO WORDS").
                                                 </p>
                                         </div>
+                                                </div>
 
                                         <div>
                                                 <h3 class="text-lg font-semibold text-teal-400 mb-6">Key Strategies</h3>
@@ -198,6 +199,9 @@
                                                 Watch VE vid
                                         </a>
                                 </div>
+                            </div>
+                                <div class="mx-auto text-lg">
+                                        <div class="bg-gray-800 rounded-lg p-4 md:p-8 shadow-sm border border-gray-600 mb-12">
 
                                 <h3 class="text-xl font-bold text-white mb-8 underline">Question technique</h3>
 
@@ -223,13 +227,13 @@
                                         />
                                 </div>
 
-                                <p class="text-white mb-8">
+                                <p class="text-white mb-2">
                                         As always, be aware of paraphrased answers and synonyms, and also for tricks such as when
                                         the speaker may say one thing and then change their mind, or mention other answer options
                                         before opting for the correct answer.
                                 </p>
-
-                                <p class="text-white mb-6 font-bold">
+                                                </div>
+                                <p class="max-w-4xl mx-auto text-white mb-10 font-bold">
                                         Watch this quick Listening sentence completion demonstration vid before testing your
                                         skills.
                                 </p>
@@ -251,14 +255,14 @@
 
                                         <a
                                                 href="/IETPP/lesson-01/lesson01-iii/skill-check"
-                                                class="inline-flex items-center gap-3 bg-green-600 hover:bg-green-700 text-white font-bold py-4 px-8 rounded-lg transition-colors text-lg"
+                                                class="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition-colors border-2 border-white"
                                         >
                                                 <span class="text-2xl">✓</span>
                                                 <span>SKILL CHECK</span>
                                                 <span class="text-2xl">✓</span>
                                         </a>
                                 </div>
-                        </div>
+                        
                 </section>
 
                                <!-- Footer Navigation -->
@@ -273,9 +277,9 @@
                                         >
                                                 ← Back to Contents
                                         </a>
-                                        <p class="text-white">End of Lesson 01-iii</p>
+                        
                                         <a
-                                                href="/IETPP/lesson-01/lesson01-iii/skill-check"
+                                                href="/IETPP/lesson-02"
                                                 class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300 font-semibold"
                                                 data-sveltekit-reload
                                         >

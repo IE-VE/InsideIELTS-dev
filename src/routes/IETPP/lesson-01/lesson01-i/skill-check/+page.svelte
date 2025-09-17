@@ -247,7 +247,7 @@
                                 </div>
 
                                 <!-- Exercise 2 -->
-                                <div class="bg-white dark:bg-gray-800 rounded-lg p-4 md:p-6 shadow-sm border border-teal-700/50">
+                                <div class="bg-gray-800 rounded-lg p-4 md:p-6 shadow-sm border border-teal-700/50">
                                         <h4 class="text-xl font-bold text-white mb-6">Exercise 2</h4>
 
                                         <!-- Audio Player -->
@@ -345,7 +345,7 @@
                 </section>
 
                 <!-- Check Answers Section -->
-                <section class="bg-gray-800 rounded-lg p-4 md:p-4 shadow-sm border border-gray-700 mb-8">
+                <section class="bg-gray-800 rounded-lg p-4 shadow-sm border border-gray-700 mb-8">
                         <div class="text-center">
                                                               
                                 <!-- Check Button -->

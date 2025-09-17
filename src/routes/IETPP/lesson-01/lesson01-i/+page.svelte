@@ -86,6 +86,7 @@
                         </div>
                         <!-- Educational Section -->
                         <div class="bg-gray-800 rounded-lg p-4 md:p-8 shadow-sm border border-gray-600 mb-12">
+                                
                                                         <div class="space-y-10">
                                         <div>
                                                 <h3 class="text-lg font-semibold text-blue-400 mb-6">What to Expect</h3>
@@ -177,7 +178,7 @@
                                                 Watch VE vid
                                         </a>
                                 </div>
-                                </div>
+                           </div>
                                 <div class="mx-auto text-lg">
                                 <div class="bg-gray-800 rounded-lg p-4 md:p-8 shadow-sm border border-gray-600 mb-12">
                                 <h3 class="text-xl font-bold text-white mb-8 underline">Question technique</h3>

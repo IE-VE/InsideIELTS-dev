@@ -96,31 +96,39 @@
 <div class="min-h-screen bg-gray-900 text-white">
         <!-- Lesson Header -->
         <div class="max-w-5xl container mx-auto px-6 pt-8">
-                <div class="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 mb-8">
+                <div class="bg-gray-50 dark:bg-gray-800 rounded-lg px-6 py-2 mb-8">
                         <div class="text-center">
-                                <div class="text-xs text-left text-teal-600 dark:text-teal-400 mb-4">
+                                <div class="text-xs text-left text-teal-600 dark:text-teal-400">
                                         SC_1.3
                                 </div>
-                                <h1 class="text-3xl font-bold text-white mb-4">
-                                        LISTENING - Sentence completion
+                                <h1 class="text-4xl font-bold text-white my-7">
+                                        LISTENING
                                 </h1>
                         </div>
 
                         <div class="flex justify-between items-center">
                                 <a
-                                        href="/IETPP#lesson-01"
-                                        class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300 font-semibold"
-                                        data-sveltekit-reload
-                                >
-                                        ← Back to Contents
-                                </a>
-
-                                <a
                                         href="/IETPP/lesson-01/lesson01-iii"
                                         class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300 font-semibold"
                                         data-sveltekit-reload
                                 >
-                                        
+                                        ← Previous
+                                </a>
+
+                                <a
+                                        href="/IETPP#lesson-01"
+                                        class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300 font-semibold"
+                                        data-sveltekit-reload
+                                >
+                                        Contents
+                                </a>
+
+                                <a
+                                        href="/IETPP/lesson-02"
+                                        class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300 font-semibold ml-8"
+                                        data-sveltekit-reload
+                                >
+                                        Next →
                                 </a>
                         </div>
                 </div>
@@ -129,10 +137,10 @@
         <!-- Page Content -->
         <div style="max-width: 1200px;" class="mx-auto px-3 md:px-6 py-8">
                 <!-- Skill Check Title -->
-                <section class="bg-emerald-600/20 rounded-lg p-4 md:p-8 shadow-sm border border-emerald-600/50 mb-8">
+                <section class="bg-cyan-800/25 rounded-lg p-4 md:p-10 shadow-sm border border-cyan-600/50 mb-8">
                         <div class="flex items-center justify-center gap-4 mb-8">
                                 <div class="text-4xl text-green-500">✓</div>
-                                <h2 class="text-3xl font-bold text-center text-white">SKILL CHECK</h2>
+                                <h2 class="text-3xl font-bold text-center text-white underline">SKILL CHECK 1.3</h2>
                                 <div class="text-4xl text-green-500">✓</div>
                         </div>
 
@@ -141,26 +149,21 @@
                         </p>
 
                         <!-- Exercise 1 -->
-                        <div class="bg-gray-100 dark:bg-gray-800 rounded-lg p-6 mb-8 border border-gray-300 dark:border-gray-600">
-                                <div class="text-center mb-6">
-                                        <div class="bg-blue-700 text-white px-4 py-2 rounded-lg text-center font-bold mb-6">
-                                                SC1(iii)
-                                        </div>
-                                        <h3 class="text-2xl font-bold text-gray-800 dark:text-gray-200 mb-4">
-                                                LISTENING - Sentence completion
-                                        </h3>
-                                </div>
-
-                                <div class="bg-teal-50 dark:bg-teal-900/20 rounded-lg p-6 mb-6">
-                                        <h4 class="text-lg font-bold text-gray-800 dark:text-gray-200 mb-4">
-                                                <u>Sentence completion ex.1</u>
+                        <div class="bg-cyan-700/25 rounded-lg p-4 md:p-8 border border-gray-600 mb-8">
+                
+                                        <div class="bg-blue-600 text-white text-xl px-4 py-2 rounded-lg text-center font-bold mb-8 border-1 border-white">
+                                                                        Sentence Completion
+                                        </div>                                     
+                                
+                                <div class="bg-gray-800 rounded-lg p-4 md:p-6 shadow-sm border border-gray-700 mb-8">
+                                        <h4 class="text-xl font-bold text-gray-200 mb-4">
+                                                Exercise 1
                                         </h4>
-
                                         <!-- Audio Player for Exercise 1 -->
                                         <div class="flex justify-center mb-4">
                                                 <audio
                                                         controls
-                                                        class="w-full max-w-md bg-gray-600 rounded"
+                                                        class="w-full max-w-md bg-gray-600 rounded-lg p-4"
                                                         src="/LESSONS/les01/01(iii)/15.1.2cut.mp3"
                                                         title="Q15-20 audio"
                                                 >
@@ -237,16 +240,16 @@
                                 </div>
 
                                 <!-- Exercise 2 -->
-                                <div class="bg-teal-100 dark:bg-teal-900/30 rounded-lg p-6 mb-6">
-                                        <h4 class="text-lg font-bold text-gray-800 dark:text-gray-200 mb-4">
-                                                <u>Sentence completion ex.2</u>
+                                <div class="bg-gray-800 rounded-lg p-4 md:p-6 shadow-sm border border-gray-700">
+                                        <h4 class="text-xl font-bold text-gray-200 mb-4">
+                                                Exercise 2
                                         </h4>
 
                                         <!-- Audio Player for Exercise 2 -->
                                         <div class="flex justify-center mb-4">
                                                 <audio
                                                         controls
-                                                        class="w-full max-w-md bg-gray-600 rounded"
+                                                        class="w-full max-w-md bg-gray-600 rounded-lg p-4"
                                                         src="/LESSONS/les01/01(iii)/9.2.3cut.mp3"
                                                         title="Q25-30 audio"
                                                 >
@@ -326,10 +329,9 @@
                 </section>
 
                 <!-- Check Answers Section -->
-                <section class="bg-gray-800 rounded-lg p-4 md:p-8 shadow-sm border border-gray-700 mb-8">
+                <section class="bg-gray-800 rounded-lg p-4 shadow-sm border border-gray-700 mb-8">
                         <div class="text-center">
-                                <h3 class="text-2xl font-bold text-white mb-8">Submit Your Answers</h3>
-                                
+                                        
                                 <!-- Check Button -->
                                 <div class="text-center mb-6">
                                         <button
@@ -418,12 +420,14 @@
                                                 </div>
                                         </div>
                                 {/if}
+
+                                  <h3 class="text-lg font-bold text-white mt-8">End of Lesson 01-iii</h3>
                         </div>
                 </section>
 
                   <!-- Footer Navigation -->
                 
-                <section class="text-center">                     
+                                <section class="text-center">                     
                                         <div class="bg-gray-800 rounded-lg p-6 shadow-sm border border-gray-700">
                                                 <div class="flex justify-between items-center">
                                                         <a
@@ -433,7 +437,7 @@
                                                         >
                                                                 ← Back to Contents
                                                         </a>
-                                                          <p class="text-white">End of Lesson 01-iii</p>
+
                                                         <a
                                                                 href="/IETPP/lesson-02"
                                                                 class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300 font-semibold"
