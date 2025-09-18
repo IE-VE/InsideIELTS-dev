@@ -70,12 +70,11 @@
                         </div>
 <!-- Header Nav -->
                         <div class="mt-6 mb-8 text-lg">
-                                <h2 class="font-semibold mb-4 text-white">Lesson Content:</h2>
                                 <ul class="list-disc list-inside space-y-2 text-white">
                                         <li>Test format</li>
                                         <li>Question types</li>
                                           <li>Examples & Technique</li>
-                                        <li>Practice exercise</li>
+                                        <li>Sample exercises</li>
                                 </ul>
                         </div>
 
@@ -111,7 +110,7 @@
         <div style="max-width: 1200px;" class="mx-auto px-3 md:px-6 py-8">
     
                 <section class="mb-12">
-                        <div class="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-sm border border-gray-200 dark:border-gray-700">
+                        <div class="bg-gray-800 rounded-lg p-6 shadow-sm border border-gray-200 dark:border-gray-700">
                                 <h2 class="text-2xl text-center font-bold text-gray-800 dark:text-white mb-6">
                                         IELTS Listening Test Format
                                 </h2>
@@ -143,15 +142,13 @@
                                 </div>
                         </div>
                 </section>
-                
+
+<!-- Page Content -->
                 <!-- Section 1: Listening Test Format and Question Types -->
                 <section class="bg-cyan-600/25 rounded-lg p-4 md:p-8 shadow-sm border border-teal-600 mb-8">
                         <h2 class="text-2xl font-bold text-center text-white mb-8">
-                                Listening Test Question types
-                        </h2>
-
-                        <div class="max-w-4xl mx-auto">
-                                                 
+                                Listening Test Question types</h2>
+                        <div class="max-w-4xl mx-auto">                       
 
                                 <div class="bg-gray-800 rounded-lg p-6 text-lg border border-gray-700 mb-8">
                                         <p class="text-white mb-6">
@@ -174,7 +171,7 @@
 
                                         <p class="text-white">
                                                 Examples of all these questions are shown on the <a href= "/listening"
-                                                                                                    class="text-teal-300 hover:text-teal-600 dark:text-teal-300 dark:hover:text-teal-500">LISTENING</a> page.
+                                                                                                    class="text-teal-300 hover:text-teal-500">LISTENING</a> page.
                                         </p>
                                 </div>
                                 <div class="flex justify-center mt-12 mb-12">
@@ -267,10 +264,10 @@
 
                 <!-- Section 3: Listening Question Practice -->
                 <section class="bg-cyan-800/25 rounded-lg p-4 md:p-8 shadow-sm border border-teal-500 mb-8">
-                        <h2 class="text-2xl font-bold text-center text-white mb-8">Listening Question Practice</h2>
+                        <h2 class="text-2xl font-bold text-center text-white mb-8">Listening Sample Exercises</h2>
 
                         <div class="max-w-6xl mx-auto">
-                                <p class="text-white mb-4">
+                                <p class="text-white text-lg mb-4">
                                         <span class="inline-block bg-red-600 text-white font-bold px-2 py-1 rounded-md border-2 border-yellow-600 shadow-lg mr-2">
                                                 TASK >
                                         </span> Complete these three Listening question practice exercises. Enter
@@ -601,13 +598,7 @@
                                         >
                                                 ← Contents
                                         </a>
-                                        <!-- <a
-                                                href="/IETPP#lesson-01"
-                                                class="text-teal-600 dark:text-teal-400 hover:underline font-semibold"
-                                                data-sveltekit-reload
-                                        >
-                                                Contents
-                                        </a> -->
+                               
                                         <a
                                                 href="/IETPP/lesson-01/lesson01-i"
                                                 class="text-teal-600 dark:text-teal-400 hover:underline font-semibold"

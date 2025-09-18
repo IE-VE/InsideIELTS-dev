@@ -87,21 +87,20 @@
                         <!-- Educational Section -->
                         <div class="bg-gray-800 rounded-lg p-4 md:p-8 shadow-sm border border-gray-600 mb-12">
                                 
-                                                        <div class="space-y-10">
-                                        <div>
-                                                <h3 class="text-lg font-semibold text-blue-400 mb-6">What to Expect</h3>
+        <div class="space-y-10">
+                <div>                
+                        <h3 class="text-lg font-semibold text-blue-400 mb-6">What to Expect</h3>
                                                 <div class="bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-lg p-4">
                                                 <p class="text-gray-700 dark:text-gray-300 text-lg mb-2">
                                                         Multiple choice questions in the IELTS Listening test require you to choose the correct answer from three to five options (A, B, C...). These questions test your ability to understand specific information, main ideas, and speaker attitudes.
                                                 </p>
-
                                                 </div>
                                         </div>
 
                                         <div>
                                                 <h3 class="text-lg font-semibold text-teal-400 mb-6">Key Strategies</h3>
-                                                <div class="bg-teal-900/20 border border-teal-200 dark:border-teal-800 rounded-lg p-4">
-                                                        <ul class="space-y-2 text-gray-700 dark:text-gray-300">
+                                                <div class="bg-teal-900/20 border border-teal-800 rounded-lg p-4">
+                                                        <ul class="space-y-2 text-gray-300">
                                                                 <li class="flex items-start">
                                                                         <span class="text-green-500 mr-2">1.</span>
                                                                         <span><strong>Read ahead:</strong> Use the preparation time to read the questions and options</span>
@@ -145,12 +144,12 @@
                                 </div>
                         </div>
                  
-                        <div class="max-w-4xl mx-auto text-lg">
+                        <div class="max-w-4xl mx-auto text-lg text-white">
                                 
-                                <p class="text-white mb-10">
-                                        There will usually be at least one set of multiple choice answer questions in each
-                                        <strong>IELTS</strong> Listening Test. The question format is a question or statement
-                                        followed by three to five options labeled with letters.
+                                <p class="mb-4">
+                                        There will usually be at least one set of multiple choice answer questions in every Listening Test.</p>
+                                
+                                <p class="mb-10">The question format is a question or statement followed by three to five options labeled with letters.
                                 </p>
 
                                 <div class="flex justify-center mb-10">
@@ -162,13 +161,9 @@
                                         />
                                 </div>
 
-                                <p class="text-white mb-16">
-                                        The instructions at the beginning of the section will tell you to circle the appropriate
-                                        letter from the choices given. (At the end of the test you will be given time to transfer
-                                        your answers from the question paper to the answer sheet.)
-                                </p>
-
-                                <div class="flex justify-center mb-12">
+                                <p class="mb-16">
+                                        The instructions at the beginning of the section will tell you to circle the appropriate letter from the choices given.</p>                  
+                        <div class="flex justify-center mb-12">
                                         <a
                                                 href="https://insideielts.oppyo.com/video/embed/o4tbupim2x"
                                                 target="_blank"
@@ -179,17 +174,14 @@
                                         </a>
                                 </div>
                            </div>
+                        
                                 <div class="mx-auto text-lg">
                                 <div class="bg-gray-800 rounded-lg p-4 md:p-8 shadow-sm border border-gray-600 mb-12">
                                 <h3 class="text-xl font-bold text-white mb-8 underline">Question technique</h3>
 
-                                <p class="text-white mb-10">
-                                        Use the time given at the beginning of each section before the audio begins (about
-                                        <strong>40-50 seconds</strong> in total) to underline key topic words in the questions.
-                                        Skim through the answer options and highlight, or just take note of, key words in the
-                                        answers.
-                                </p>
-
+                                <p class="mb-10">
+                                <strong> 1. At the beginning of each section before the audio begins (about 40-50 seconds in total), use the time given to read and underline key topic words in the questions and answer options.</strong></p>
+                                     
                                 <div class="flex justify-center mb-10">
                                         <img
                                                 src="/LESSONS/les01/01(i)/L_multiplechoice-example-technique.png"
@@ -200,13 +192,29 @@
                                         />
                                 </div>
 
-                                <p class="text-white mb-8">
-                                        Be aware of paraphrased answers and synonyms, and also for tricks such as when the speaker
-                                        may say one thing and then change their mind, or mention other answer options before
-                                        opting for the correct answer.
-                                </p>
+                                <p class="mb-4">
+                                <strong>2.  When the audio begins listen for the key words.</strong></p>                <ul>
+                                        <li class="mb-4 ml-4">
+                                                - The answers will come in order.<li>
+                                        <li class="mb-4 ml-4">
+                                                - Listen out for paraphrased answers and synonyms.</li>
+                                        <li class="mb-8 ml-4">
+                                                 - Be aware of tricks such as when the speaker may say one thing and then change their mind, or mention other answer options before opting for the correct answer.</li>
+                                        <li class="mb-8 ml-4">
+                                                 - If you think you have missed an answer leave it blank and listen for next-question key words.</li>
+                                                </ul>
+                                        <p class="mb-4">
+                                           <strong>3. When you hear the correct answer circle the correct option clearly, directly on your question paper.</strong></p>
+                                     <ul>   <li class="mb-8 ml-6">
+                                                (You'll have time at the end of the test to transfer your answers to the answer sheet).
+                                        </li></ul>
+                                    <p class="mb-4">    <strong>4. At the end of each SECTION use the time given to fill in (best guess) any answers you have missed then skip forward to the next section and begin reading the questions.</strong></p>
+                                             <ul>   <li class="mb-8 ml-6">
+                                                        Don't wait!
+                                                </li></ul>
                                         </div>
                                 </div>
+                        
                                 <p class="text-white text-center mb-10 font-bold">
                                         Watch this quick Listening multiple choice demonstration vid before testing your skills.
                                 </p>

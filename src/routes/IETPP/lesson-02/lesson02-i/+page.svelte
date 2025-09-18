@@ -37,64 +37,71 @@
 <div class="min-h-screen bg-gray-900 text-white">
         <!-- Lesson Header -->
         <div class="max-w-5xl container mx-auto px-6 pt-8">
-                <div class="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 mb-8">
+                <div class="bg-gray-50 dark:bg-gray-800 rounded-lg px-6 py-2 mb-8">
                         <div class="text-center">
-                                <div class="text-xs text-left text-teal-600 dark:text-teal-400 mb-4">
+                                <div class="text-xs text-left text-teal-600 dark:text-teal-400">
                                         IE2401_02.1
                                 </div>
-                                <h1 class="text-3xl font-bold text-white mb-4">
-                                        READING - Matching Information
+                                <h1 class="text-4xl font-bold text-white my-7">
+                                        READING
                                 </h1>
                         </div>
 
                         <div class="flex justify-between items-center">
                                 <a
+                                        href="/IETPP/lesson-02"
+                                        class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300 font-semibold"
+                                        data-sveltekit-reload
+                                >
+                                        ← Previous
+                                </a>
+
+                                <a
                                         href="/IETPP#lesson-02"
                                         class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300 font-semibold"
                                         data-sveltekit-reload
                                 >
-                                        ← Back to Contents
+                                        Contents
                                 </a>
 
                                 <a
                                         href="/IETPP/lesson-02/lesson02-ii"
-                                        class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300 font-semibold"
+                                        class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300 font-semibold ml-8"
                                         data-sveltekit-reload
                                 >
-                                        Next Lesson →
+                                        Next →
                                 </a>
                         </div>
                 </div>
         </div>
 
-        <!-- Page Content -->
-        
+        <!-- Page Content -->        
         <div style="max-width: 1200px;" class="mx-auto px-6 py-12">        
-                
-                            <section class="bg-blue-600/20 rounded-lg p-10 shadow-sm border border-blue-600/50 mb-12">
+                <!-- Lesson Title Section -->
+                <section class="bg-cyan-600/25 rounded-lg p-4 md:p-10 shadow-sm border border-blue-600 mb-12">
                         <div class="flex items-center justify-center gap-4 mb-10">
                                 <div class="text-4xl">📖</div>
-                                <h2 class="text-3xl font-bold text-center text-white">Skills Practice</h2>
+                                <h2 class="text-3xl font-bold text-center text-white underline">Matching Information</h2>
                                 <div class="text-4xl">📖</div>
                         </div>
+                        <!-- Educational Section -->
+                                    <div class="bg-gray-800 rounded-lg p-4 md:p-8 shadow-sm border border-gray-600 mb-12">
 
-                        <div class="bg-white dark:bg-gray-800 rounded-lg p-8 shadow-sm border border-gray-200 dark:border-gray-700 mb-12">
-                                <h2 class="text-2xl text-center font-bold text-gray-800 dark:text-gray-200 mb-10">
-                                        Matching Information Questions
-                                </h2>
+        <div class="space-y-10">
+                <div>
 
-                                <div class="space-y-10">
-                                        <div>
-                                                <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-6">What to Expect</h3>
-                                                <p class="text-gray-700 dark:text-gray-300 text-lg mb-8">
-                                                        <strong>Matching information</strong> question sets usually appear at the beginning of a section. Each paragraph in the text will be assigned an alphabetical letter and the questions will ask you to locate the paragraph containing specific information. The skill is to be able to skim the whole passage quickly for gist, to get a rough understanding of what each paragraph is about, before scanning for specific key-word terms to allow you to confirm your answer.
+                <h3 class="text-lg font-semibold text-blue-400 mb-6">What to Expect</h3>
+                                                            <div class="bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-lg p-4">
+                                                            <p class="text-gray-700 dark:text-gray-300 text-lg mb-2">
+                                                        Matching information question sets usually appear at the beginning of a section. Each paragraph in the text will be assigned an alphabetical letter and the questions will ask you to locate the paragraph containing specific information. The skill is to be able to skim the whole passage quickly for gist, to get a rough understanding of what each paragraph is about, before scanning for specific key-word terms to allow you to confirm your answer.
                                                 </p>
                                         </div>
-
-                                        <div>
-                                                <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-6">Key Strategies</h3>
-                                                <div class="bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-lg p-4">
-                                                        <ul class="space-y-2 text-gray-700 dark:text-gray-300">
+                                                    </div>
+                
+                <div>
+                        <h3 class="text-lg font-semibold text-teal-400 mb-6">Key Strategies</h3>
+                        <div class="bg-teal-900/20 border border-teal-800 rounded-lg p-4">
+                                <ul class="space-y-2 text-gray-300">
                                                                 <li class="flex items-start">
                                                                         <span class="text-blue-600 dark:text-blue-400 mr-2">1.</span>
                                                                         <span><strong>Skim first:</strong> Read the passage quickly to understand the main idea of each paragraph</span>
@@ -116,7 +123,7 @@
                                         </div>
 
                                         <div>
-                                                <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-6">Common Pitfalls</h3>
+                                                <h3 class="text-lg font-semibold text-red-400 mb-6">Common Pitfalls</h3>
                                                 <div class="bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-lg p-4">
                                                         <ul class="space-y-2 text-gray-700 dark:text-gray-300">
                                                                 <li class="flex items-start">
@@ -139,7 +146,7 @@
 
                         <div class="max-w-4xl mx-auto text-lg">
                                 <div>
-                                        <p class="text-gray-700 dark:text-gray-300 text-lg mb-8">
+                                        <p class="text-white mb-10">
                                                 The instructions at the beginning of the question set will tell you to write the letter which corresponds to the answer paragraph, (<strong><i>e.g. A, B, C, ..G</i></strong>) on your answer sheet.
                                         </p>
                                 </div>
@@ -152,12 +159,14 @@
                                                 on:click={() => openLightbox('/LESSONS/les02/02(i)/Matching_info-exQ.png')}
                                         />
                                 </div>
+                             </div>
+                        
+                                <div class="mx-auto text-lg">
+                                        <div class="bg-gray-800 rounded-lg p-4 md:p-8 shadow-sm border border-gray-600 mb-12">
+                                        <h3 class="text-xl font-bold text-white mb-8 underline">Question technique</h3>
 
-                                <h3 class="text-xl font-bold text-white mb-8 underline">Question technique</h3>
 
-                                <div class="space-y-10">
-                                        <div>
-                                                <p class="text-white mb-8 font-semibold">
+                                                <p class="text-white mb-10">
                                                         <strong>1. Read the instructions and underline key-words in the question statements.</strong>
                                                 </p>
 
@@ -169,9 +178,9 @@
                                                                 on:click={() => openLightbox('/LESSONS/les02/02(i)/Matching_info-techQ.png')}
                                                         />
                                                 </div>
-                                        </div>
+                                        
 
-                                        <div>
+                                        
                                                 <p class="text-white mb-8 font-semibold">
                                                         <strong>2. Focusing on the questions <u>one at a time</u>, scan each paragraph for the key-words.</strong>
                                                 </p>
@@ -198,7 +207,7 @@
                                                                 <li>- If you can't find the key-words (or synonyms) first time, move on to the next question.</li>
                                                         </ul>
                                                 </div>
-                                        </div>
+                                        
 
                                         <div>
                                                 <p class="text-white mb-8 font-semibold">
@@ -225,9 +234,8 @@
                                                                 on:click={() => openLightbox('/LESSONS/les02/02(i)/Matching_info-techans.png')}
                                                         />
                                                 </div>
-                                        </div>
-                                </div>
-
+                                                </div>
+                                                </div>
                                 <div class="text-center">
                                         <p class="text-white text-xl font-bold mb-16">
                                                 Now complete the READING - Matching information Skill Check exercise
@@ -235,13 +243,13 @@
 
                                         <a
                                                 href="/IETPP/lesson-02/lesson02-i/skill-check"
-                                                class="inline-flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-lg transition-colors border-2 border-white"
+                                                class="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition-colors border-2 border-white"
                                         >
                                                 <span class="text-2xl">✓</span>
                                                 <span>SKILL CHECK</span>
                                                 <span class="text-2xl">✓</span>
                                         </a>
-                                </div>
+                                
                         </div>
                 </section>
 
