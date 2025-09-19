@@ -222,7 +222,7 @@
                                 <div class="flex justify-center mb-12">
                                         <video
                                                 controls
-                                                class="w-full max-w-4xl rounded border border-gray-600"
+                                                class="w-full max-w-2xl rounded border border-gray-600"
                                                 src="/LESSONS/les01/01(i)/Listening_demoQ-multiplechoice.mp4"
                                         >
                                                 Your browser does not support this video format.
