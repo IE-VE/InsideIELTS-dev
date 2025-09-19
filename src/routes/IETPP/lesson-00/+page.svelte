@@ -144,7 +144,7 @@
                                                                 Your browser does not support the audio element.
                                                         </audio>
                                                 </div>
-                                                <p class="text-sm font-semibold">Listening test audio</p>
+                                                <p class="text-sm font-semibold">Listening test sample audio</p>
                                         </div>
                                 </div>
                         </div>

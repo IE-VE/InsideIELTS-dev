@@ -198,13 +198,13 @@
                                                 - The answers will come in order.<li>
                                         <li class="mb-4 ml-4">
                                                 - Listen out for paraphrased answers and synonyms.</li>
-                                        <li class="mb-8 ml-4">
+                                        <li class="mb-4 ml-4">
                                                  - Be aware of tricks such as when the speaker may say one thing and then change their mind, or mention other answer options before opting for the correct answer.</li>
                                         <li class="mb-8 ml-4">
                                                  - If you think you have missed an answer leave it blank and listen for next-question key words.</li>
                                                 </ul>
                                         <p class="mb-4">
-                                           <strong>3. When you hear the correct answer circle the correct option clearly, directly on your question paper.</strong></p>
+                                           <strong>3. When you hear the answer circle the correct option clearly, directly on your question paper.</strong></p>
                                      <ul>   <li class="mb-8 ml-6">
                                                 (You'll have time at the end of the test to transfer your answers to the answer sheet).
                                         </li></ul>

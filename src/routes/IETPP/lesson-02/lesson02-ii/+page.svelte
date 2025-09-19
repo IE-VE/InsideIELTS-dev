@@ -37,81 +37,90 @@
 <div class="min-h-screen bg-gray-900 text-white">
         <!-- Lesson Header -->
         <div class="max-w-5xl container mx-auto px-6 pt-8">
-                <div class="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 mb-8">
+                <div class="bg-gray-50 dark:bg-gray-800 rounded-lg px-6 py-2 mb-8">
                         <div class="text-center">
-                                <div class="text-xs text-left text-teal-600 dark:text-teal-400 mb-4">
-                                        IE2401_02.2
+                                <div class="text-xs text-left text-teal-600 dark:text-teal-400">
+                                        IE2401_02.1
                                 </div>
-                                <h1 class="text-3xl font-bold text-white mb-4">
-                                        READING - True/False/Not given
+                                <h1 class="text-4xl font-bold text-white my-7">
+                                        READING
                                 </h1>
                         </div>
 
                         <div class="flex justify-between items-center">
                                 <a
+                                        href="/IETPP/lesson-02/lesson02-i"
+                                        class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300 font-semibold"
+                                        data-sveltekit-reload
+                                >
+                                        ← Previous
+                                </a>
+
+                                <a
                                         href="/IETPP#lesson-02"
                                         class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300 font-semibold"
                                         data-sveltekit-reload
                                 >
-                                        ← Back to Contents
+                                        Contents
                                 </a>
 
                                 <a
-                                        href="/IETPP/lesson-02/lesson02-ii/skill-check"
-                                        class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300 font-semibold"
+                                        href="/IETPP/lesson-02/lesson02-iii"
+                                        class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300 font-semibold ml-8"
                                         data-sveltekit-reload
                                 >
-                                        Next Lesson →
+                                        Next →
                                 </a>
                         </div>
                 </div>
         </div>
 
         <!-- Page Content -->
-        <div style="max-width: 1200px;" class="mx-auto px-6 py-12">
+        <div style="max-width: 1200px;" class="mx-auto px-3 md:px-6 py-8">
                 <!-- Lesson Title Section -->
-                <section class="bg-teal-600/20 rounded-lg p-10 shadow-sm border border-blue-600/50 mb-12">
+                <section class="bg-teal-600/25 rounded-lg p-10 shadow-sm border border-teal-600 mb-12">
                         <div class="flex items-center justify-center gap-4 mb-10">
                                 <div class="text-4xl">📖</div>
-                                <h2 class="text-3xl font-bold text-center text-white">Skills Practice</h2>
+                                <h2 class="text-3xl font-bold text-center text-white">True/False/Not given</h2>
                                 <div class="text-4xl">📖</div>
                         </div>
-                        
-                        <div class="bg-white dark:bg-gray-800 rounded-lg p-8 shadow-sm border border-gray-200 dark:border-gray-700 mb-12">
-                                <h2 class="text-2xl text-center font-bold text-gray-800 dark:text-gray-200 mb-10">
-                                        True/False/Not given
-                                </h2>
+
+                          <!-- Educational Section -->
+                          <div class="bg-gray-800 rounded-lg p-4 md:p-8 shadow-sm border border-gray-600 mb-12">
 
                                 <div class="space-y-10">
                                         <div>
-                                                <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-6">What to Expect</h3>
-                                                <p class="text-gray-700 dark:text-gray-300 text-lg mb-8">
+
+                                        <h3 class="text-lg font-semibold text-blue-400 mb-6">What to Expect</h3>
+                                                                                    <div class="bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-lg p-4">
+                                                                                    <p class="text-gray-700 dark:text-gray-300 text-lg mb-2">
                                                         True/False/Not given questions test your ability to identify whether information in statements agrees with, contradicts, or is simply not mentioned in the reading passage. You'll need to distinguish between facts that are explicitly stated, facts that contradict the passage, and information that is not provided at all. This question type appears in every IELTS Reading test and requires careful analysis to avoid common traps.
                                                 </p>
                                         </div>
-
+                                        </div>
+                                        
                                         <div>
-                                                <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-6">Key Strategies</h3>
-                                                <div class="bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-lg p-4">
-                                                        <ul class="space-y-2 text-gray-700 dark:text-gray-300">
-                                                                <li class="flex items-start">
-                                                                        <span class="text-blue-600 dark:text-blue-400 mr-2">1.</span>
+                                                <h3 class="text-lg font-semibold text-teal-400 mb-6">Key Strategies</h3>
+                                                <div class="bg-teal-900/20 border border-teal-800 rounded-lg p-4">
+                                                        <ul class="space-y-2 text-gray-300">
+                                                                                        <li class="flex items-start">
+                                                                                                <span class="text-teal-400 mr-2">1.</span>
                                                                         <span><strong>Underline keywords:</strong> Identify key words and phrases in each statement before reading the passage</span>
                                                                 </li>
                                                                 <li class="flex items-start">
-                                                                        <span class="text-blue-600 dark:text-blue-400 mr-2">2.</span>
+                                                                        <span class="text-teal-400 mr-2">2.</span>
                                                                         <span><strong>Scan for locations:</strong> Find where each topic is discussed in the passage using keywords</span>
                                                                 </li>
                                                                 <li class="flex items-start">
-                                                                        <span class="text-blue-600 dark:text-blue-400 mr-2">3.</span>
+                                                                        <span class="text-teal-400 mr-2">3.</span>
                                                                         <span><strong>Read carefully:</strong> Focus on the exact meaning of both the statement and passage text</span>
                                                                 </li>
                                                                 <li class="flex items-start">
-                                                                        <span class="text-blue-600 dark:text-blue-400 mr-2">4.</span>
+                                                                        <span class="text-teal-400 mr-2">4.</span>
                                                                         <span><strong>Watch for synonyms:</strong> Look for paraphrased ideas rather than exact word matches</span>
                                                                 </li>
                                                                 <li class="flex items-start">
-                                                                        <span class="text-blue-600 dark:text-blue-400 mr-2">5.</span>
+                                                                        <span class="text-teal-400 mr-2">5.</span>
                                                                         <span><strong>Be precise:</strong> Choose "Not given" only when the information is completely absent</span>
                                                                 </li>
                                                         </ul>
@@ -145,6 +154,14 @@
                         </div>
                  
                         <div class="max-w-4xl mx-auto text-lg">
+
+                                <div>
+                                        <p class="text-white mb-16">
+                                                Each question consists of a statement about the passage which you need to qualify by writing either <strong><em>True/Yes</em></strong>,
+                                                if the statement is correct; <strong><em>False/No</em></strong>, if the statement is wrong;
+                                                or <strong><em>Not given</em></strong>, if there is no such information given in the passage.
+                                        </p>
+                                                </div>
                                 <div class="flex justify-center mb-10">
                                         <img
                                                 src="/LESSONS/les02/02(ii)/TFNG_exampletorn.png"
@@ -153,13 +170,10 @@
                                                 onclick={() => openLightbox('/LESSONS/les02/02(ii)/TFNG_exampletorn.png')}
                                         />
                                 </div>
+                        </div>
 
-                                <p class="text-white mb-16">
-                                        Each question consists of a statement about the passage which you need to qualify by writing either <strong><em>True/Yes</em></strong>,
-                                        if the statement is correct; <strong><em>False/No</em></strong>, if the statement is wrong;
-                                        or <strong><em>Not given</em></strong>, if there is no such information given in the passage.
-                                </p>
-
+                        <div class="mx-auto text-lg">
+                                <div class="bg-gray-800 rounded-lg p-4 md:p-8 shadow-sm border border-gray-600 mb-12">
                                 <h3 class="text-xl font-bold text-white mb-8 underline">Question technique</h3>
 
                                 <p class="text-white mb-10">
@@ -219,30 +233,17 @@
                                 <p class="text-white mb-8">
                                         As always, be on the lookout for synonyms and paraphrasing whenever scanning the text for key-words and answers.
                                 </p>
-
-                                <!-- <p class="text-white mb-6 font-bold">
-                                        Watch this short YES/NO/NOT GIVEN demonstration vid before testing your skills.
-                                </p>
-
-                                <div class="flex justify-center mb-12">
-                                        <a
-                                                href="https://insideielts.oppyo.com/video/embed/o4tbupim2x"
-                                                target="_blank"
-                                                title="InsideIELTS virtual examiner reading test true false not given"
-                                                class="inline-block bg-teal-600 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded border-2 border-red-500 text-sm transition-colors"
-                                        >
-                                                Watch VE vid
-                                        </a>
-                                </div> -->
-
-                                <div class="text-center">
+                                        
+                        </div>
+                        
+                         <div class="text-center">
                                         <p class="text-white text-xl font-bold mb-16">
                                                 Now complete the READING - True/False/Not given Skill Check exercise
                                         </p>
 
                                         <a
                                                 href="/IETPP/lesson-02/lesson02-ii/skill-check"
-                                                class="inline-flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-lg transition-colors border-2 border-white"
+                                                class="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition-colors border-2 border-white"
                                         >
                                                 <span class="text-2xl">✓</span>
                                                 <span>SKILL CHECK</span>

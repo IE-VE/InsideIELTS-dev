@@ -315,12 +315,15 @@
                                                 </a>
                                         </div>                                     
                                 </div>
+                        </div>
+                        <div>
                                 
+                                <div class="bg-gray-800 border border border-gray-600 rounded-lg p-6 mt-16">
                             <div class="text-white text-xl">
-                                <p class="text-center mt-16 mb-8">
+                                <p class="text-center mt-4 mb-8">
                                         <b>TIME MANAGEMENT</b></p> 
                                         
-                                 <p class="mb-10"> Unlike the Listening Test, the Reading Test is not split into individual timed sections. You will have 60 minutes in total to complete the entire test and must manage your time between the 3 sections effectively.
+                                 <p class="mb-8"> Unlike the Listening Test, the Reading Test is not split into individual timed sections. You will have 60 minutes in total to complete the entire test and must manage your time between the 3 sections effectively.
                                 </p>
                                     
                                 <div class="flex justify-center mb-10">
@@ -333,23 +336,24 @@
                                         />
                                 </div>
                                     
-                                <p class="mb-10"> The sections in the reading test increase in difficulty as you progress through the test. You should aim to spend <u>LESS</u> than 20 minutes on Sections 1 & 2.
-                                        </p>
+                                <p class="mb-6"> The passages in the reading test increase in difficulty as you progress through the test.                                        </p>
+                                    <p class="mb-6"> You should aim to spend <u>LESS</u> than 20 minutes on Passages 1 & 2 to allow you maximum time to focus on Passage 3, and enough time to check through your answers before the end of the test.
+                                            </p>
                                 </div>
+                                        </div>
                         </div>
                 </section>
 
                 <!-- Section 3: Reading Question Practice -->
                 <section class="bg-cyan-800/25 rounded-lg p-4 md:p-8 shadow-sm border border-teal-500 mb-8">
-                        <h2 class="text-2xl font-bold text-center text-white mb-8">Reading Sample Exercises</h2>
+                        <h2 class="text-2xl font-bold text-center text-white">Reading Sample Exercises</h2>
 
                         <div class="max-w-6xl mx-auto">
-                                <p class="text-white text-lg mb-4">
+                                <p class="text-white text-lg p-2 md:p-10">
                                         <span class="inline-block bg-red-500 text-white font-bold px-2 py-1 rounded-md border-2 border-yellow-600 shadow-lg mr-2">
                                                 TASK >
                                         </span>Complete these two Reading question practice exercises. Enter
-                                        your answers on the answer sheets provided before checking your answers in the video
-                                        beneath.
+                                        your answers on the answer sheets provided before checking your                                               answers in the video beneath.
                                 </p>
                                 <p class="text-center text-white font-bold mb-8">
                                         [Don't watch the answer video until you have completed the practice exercises!]

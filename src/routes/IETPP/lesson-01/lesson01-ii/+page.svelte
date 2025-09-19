@@ -101,26 +101,26 @@
 
                                         <div>
                                                 <h3 class="text-lg font-semibold text-teal-400 mb-6">Key Strategies</h3>
-                                                <div class="bg-teal-900/20 border border-teal-200 dark:border-teal-800 rounded-lg p-4">
+                                                <div class="bg-teal-900/20 border border-teal-800 rounded-lg p-4">
                                                         <ul class="space-y-2 text-gray-700 dark:text-gray-300">
                                                                 <li class="flex items-start">
-                                                                        <span class="text-teal-600 dark:text-teal-400 mr-2">1.</span>
+                                                                        <span class="text-teal-400 mr-2">1.</span>
                                                                         <span><strong>Check word limits:</strong> Note the maximum number of words allowed (e.g., "no more than 3 words")</span>
                                                                 </li>
                                                                 <li class="flex items-start">
-                                                                        <span class="text-teal-600 dark:text-teal-400 mr-2">2.</span>
+                                                                        <span class="text-teal-400 mr-2">2.</span>
                                                                         <span><strong>Identify question types:</strong> Look for 'wh' words (who, what, when, where, why, how)</span>
                                                                 </li>
                                                                 <li class="flex items-start">
-                                                                        <span class="text-teal-600 dark:text-teal-400 mr-2">3.</span>
+                                                                        <span class="text-teal-400 mr-2">3.</span>
                                                                         <span><strong>Predict answers:</strong> Think about what type of information you need to listen for</span>
                                                                 </li>
                                                                 <li class="flex items-start">
-                                                                        <span class="text-teal-600 dark:text-teal-400 mr-2">4.</span>
+                                                                        <span class="text-teal-400 mr-2">4.</span>
                                                                         <span><strong>Use exact words:</strong> Write exactly what you hear - don't paraphrase or change the form</span>
                                                                 </li>
                                                                 <li class="flex items-start">
-                                                                        <span class="text-teal-600 dark:text-teal-400 mr-2">5.</span>
+                                                                        <span class="text-teal-400 mr-2">5.</span>
                                                                         <span><strong>Listen for signals:</strong> Pay attention to phrases that introduce answers</span>
                                                                 </li>
                                                         </ul>

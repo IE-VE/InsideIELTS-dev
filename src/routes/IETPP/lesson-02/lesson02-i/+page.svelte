@@ -93,7 +93,7 @@
                 <h3 class="text-lg font-semibold text-blue-400 mb-6">What to Expect</h3>
                                                             <div class="bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-lg p-4">
                                                             <p class="text-gray-700 dark:text-gray-300 text-lg mb-2">
-                                                        Matching information question sets usually appear at the beginning of a section. Each paragraph in the text will be assigned an alphabetical letter and the questions will ask you to locate the paragraph containing specific information. The skill is to be able to skim the whole passage quickly for gist, to get a rough understanding of what each paragraph is about, before scanning for specific key-word terms to allow you to confirm your answer.
+                                                        Matching information question sets usually appear at the beginning of a section. Each paragraph in the text will be assigned an alphabetical letter and the questions will ask you to locate the paragraph containing specific information. The skill is to be able to skim the whole passage quickly for gist, to get a rough understanding of what each paragraph is about, before scanning for specific key-word terms to allow you to locate your answer.
                                                 </p>
                                         </div>
                                                     </div>
@@ -103,19 +103,19 @@
                         <div class="bg-teal-900/20 border border-teal-800 rounded-lg p-4">
                                 <ul class="space-y-2 text-gray-300">
                                                                 <li class="flex items-start">
-                                                                        <span class="text-blue-600 dark:text-blue-400 mr-2">1.</span>
+                                                                        <span class="text-teal-400 mr-2">1.</span>
                                                                         <span><strong>Skim first:</strong> Read the passage quickly to understand the main idea of each paragraph</span>
                                                                 </li>
                                                                 <li class="flex items-start">
-                                                                        <span class="text-blue-600 dark:text-blue-400 mr-2">2.</span>
+                                                                        <span class="text-teal-400 mr-2">2.</span>
                                                                         <span><strong>Identify keywords:</strong> Underline key words and phrases in the questions</span>
                                                                 </li>
                                                                 <li class="flex items-start">
-                                                                        <span class="text-blue-600 dark:text-blue-400 mr-2">3.</span>
+                                                                        <span class="text-teal-400 mr-2">3.</span>
                                                                         <span><strong>Scan for synonyms:</strong> Look for synonyms and paraphrases, not just exact matches</span>
                                                                 </li>
                                                                 <li class="flex items-start">
-                                                                        <span class="text-blue-600 dark:text-blue-400 mr-2">4.</span>
+                                                                        <span class="text-teal-400 mr-2">4.</span>
                                                                         <span><strong>Work systematically:</strong> Focus on one question at a time to avoid confusion</span>
                                                                 </li>
                                                         </ul>
@@ -150,8 +150,7 @@
                                                 The instructions at the beginning of the question set will tell you to write the letter which corresponds to the answer paragraph, (<strong><i>e.g. A, B, C, ..G</i></strong>) on your answer sheet.
                                         </p>
                                 </div>
-                                <div class="flex justify-center mb-10">
-                                        
+                                <div class="flex justify-center mb-10">                                        
                                         <img
                                                 src="/LESSONS/les02/02(i)/Matching_info-exQ.png"
                                                 alt="IELTS Reading - Matching information"
