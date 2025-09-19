@@ -1,7 +1,7 @@
 <script lang="ts">
         // LESSON 00: IELTS Test Overview
         import { onMount } from 'svelte';
-        
+
         let lightboxModal: HTMLDivElement;
         let lightboxImage: HTMLImageElement;
         let lightboxCaption: HTMLParagraphElement;
@@ -56,7 +56,7 @@
                                 <h1 class="text-3xl font-bold text-white my-7">
                                         IELTS Test Overview
                                 </h1>
-        
+
                         </div>
 
                         <div class="mt-6 mb-8 text-lg">
@@ -139,7 +139,7 @@
                                 <div class="text-center mb-8">
                                         <div class="bg-gray-100 dark:bg-gray-700 rounded-lg p-4 inline-block">
                                                 <div class="mb-4">
-                                                        <audio controls class="w-full max-w-md bg-gray-600 rounded-lg p-4">
+                                                        <audio controls class="w-full max-w-2xl bg-gray-600 rounded-lg p-4">
                                                                 <source src="/00_L.mp3" type="audio/mpeg">
                                                                 Your browser does not support the audio element.
                                                         </audio>
@@ -231,7 +231,7 @@
                                 <div class="text-center mb-8">
                                         <div class="bg-gray-100 dark:bg-gray-700 rounded-lg p-4 inline-block">
                                                 <div class="mb-4">
-                                                        <audio controls class="w-full max-w-md bg-gray-600 rounded-lg p-4">
+                                                        <audio controls class="w-full max-w-2xl bg-gray-600 rounded-lg p-4">
                                                                 <source src="/00_S.mp3" type="audio/mpeg">
                                                                 Your browser does not support the audio element.
                                                         </audio>
@@ -365,7 +365,7 @@
                                         >
                                                 ← Back to Contents
                                         </a>
-                        
+
                                         <a
                                                 href="/IETPP/lesson-01"
                                                 class="text-teal-600 dark:text-teal-400 hover:underline font-semibold"
@@ -377,7 +377,7 @@
                         </div>
                 </section>
 </div>
-        
+
         <!-- Lightbox Modal -->
         <div bind:this={lightboxModal} class="lightbox-overlay" style="display: none;" on:click={closeLightbox} on:keydown={handleKeydown}>
                 <div class="lightbox-content" on:click|stopPropagation>
@@ -393,11 +393,11 @@
                 cursor: pointer;
                 transition: transform 0.2s ease;
         }
-        
+
         .lightbox-image:hover {
                 transform: scale(1.05);
         }
-        
+
         .lightbox-overlay {
                 position: fixed;
                 top: 0;
@@ -410,21 +410,21 @@
                 align-items: center;
                 z-index: 1000;
         }
-        
+
         .lightbox-content {
                 position: relative;
                 max-width: 90%;
                 max-height: 90%;
                 text-align: center;
         }
-        
+
         .lightbox-img {
                 max-width: 100%;
                 max-height: 80vh;
                 object-fit: contain;
                 border-radius: 8px;
         }
-        
+
         .lightbox-close {
                 position: absolute;
                 top: -40px;
@@ -440,25 +440,25 @@
                 align-items: center;
                 justify-content: center;
         }
-        
+
         .lightbox-caption {
                 color: white;
                 margin-top: 1rem;
                 font-size: 1rem;
                 font-weight: 500;
         }
-        
+
         /* Custom CSS for persistent text wrapping */
         .text-wrap-container {
                 position: relative;
         }
-        
+
         .floating-video-button {
                 float: right;
                 margin-left: 1rem;
                 margin-bottom: 1rem;
         }
-        
+
         /* Responsive design: On mobile (<768px), position button below text */
         @media (max-width: 767px) {
                 .floating-video-button {
@@ -469,15 +469,15 @@
                         text-align: center;
                         clear: both;
                 }
-                
+
                 .text-wrap-container {
                         display: flex;
                         flex-direction: column;
                 }
-                
+
                 .floating-video-button {
                         order: 2;
                 }
-                
+
         }
 </style>
