@@ -313,7 +313,28 @@
                                                 >
                                                         Watch VE vid
                                                 </a>
-                                        </div>
+                                        </div>                                     
+                                </div>
+                                
+                            <div class="text-white text-xl">
+                                <p class="text-center mt-16 mb-8">
+                                        <b>TIME MANAGEMENT</b></p> 
+                                        
+                                 <p class="mb-10"> Unlike the Listening Test, the Reading Test is not split into individual timed sections. You will have 60 minutes in total to complete the entire test and must manage your time between the 3 sections effectively.
+                                </p>
+                                    
+                                <div class="flex justify-center mb-10">
+
+                                        <img
+                                                src="/LESSONS/les02/section_time.png"
+                                                alt="IELTS Reading - Section Time Management"
+                                                class="w-full max-w-xl rounded border border-gray-600 cursor-pointer"
+                                                onclick={() => openLightbox('/LESSONS/les02/section_time.png')}
+                                        />
+                                </div>
+                                    
+                                <p class="mb-10"> The sections in the reading test increase in difficulty as you progress through the test. You should aim to spend <u>LESS</u> than 20 minutes on Sections 1 & 2.
+                                        </p>
                                 </div>
                         </div>
                 </section>

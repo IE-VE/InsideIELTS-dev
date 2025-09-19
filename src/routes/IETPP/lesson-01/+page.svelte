@@ -295,7 +295,7 @@
                                                         <p class="text-white mb-2">Q17 - 20 audio</p>
                                                         <audio
                                                                 controls
-                                                                class="w-full bg-gray-600 rounded"
+                                                                class="w-full max-w-md bg-gray-600 rounded-lg p-4"
                                                                 src="/LESSONS/les01/01_L1-prac.mp3"
                                                         >
                                                                 Your browser does not support the audio element.
@@ -387,7 +387,7 @@
                                                         <p class="text-white mb-2">Q16 - 20 audio</p>
                                                         <audio
                                                                 controls
-                                                                class="w-full bg-gray-600 rounded"
+                                                                class="w-full max-w-md bg-gray-600 rounded-lg p-4"
                                                                 src="/LESSONS/les01/01_L2-prac.mp3"
                                                         >
                                                                 Your browser does not support the audio element.
@@ -492,7 +492,7 @@
                                                         <p class="text-white mb-2">Q27 - 30 audio</p>
                                                         <audio
                                                                 controls
-                                                                class="w-full bg-gray-600 rounded"
+                                                                class="w-full max-w-md bg-gray-600 rounded-lg p-4"
                                                                 src="/LESSONS/les01/01_L3-prac.mp3"
                                                         >
                                                                 Your browser does not support the audio element.

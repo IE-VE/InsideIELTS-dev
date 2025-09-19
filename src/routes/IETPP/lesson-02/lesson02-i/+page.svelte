@@ -76,7 +76,7 @@
         </div>
 
         <!-- Page Content -->        
-        <div style="max-width: 1200px;" class="mx-auto px-6 py-12">        
+        <div style="max-width: 1200px;" class="mx-auto px-3 md:px-6 py-8">   
                 <!-- Lesson Title Section -->
                 <section class="bg-cyan-600/25 rounded-lg p-4 md:p-10 shadow-sm border border-blue-600 mb-12">
                         <div class="flex items-center justify-center gap-4 mb-10">
@@ -146,7 +146,7 @@
 
                         <div class="max-w-4xl mx-auto text-lg">
                                 <div>
-                                        <p class="text-white mb-10">
+                                                                                                    <p class="text-white mb-10">
                                                 The instructions at the beginning of the question set will tell you to write the letter which corresponds to the answer paragraph, (<strong><i>e.g. A, B, C, ..G</i></strong>) on your answer sheet.
                                         </p>
                                 </div>

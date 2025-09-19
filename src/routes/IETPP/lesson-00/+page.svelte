@@ -139,7 +139,7 @@
                                 <div class="text-center mb-8">
                                         <div class="bg-gray-100 dark:bg-gray-700 rounded-lg p-4 inline-block">
                                                 <div class="mb-4">
-                                                        <audio controls class="w-full max-w-md">
+                                                        <audio controls class="w-full max-w-md bg-gray-600 rounded-lg p-4">
                                                                 <source src="/00_L.mp3" type="audio/mpeg">
                                                                 Your browser does not support the audio element.
                                                         </audio>
@@ -231,7 +231,7 @@
                                 <div class="text-center mb-8">
                                         <div class="bg-gray-100 dark:bg-gray-700 rounded-lg p-4 inline-block">
                                                 <div class="mb-4">
-                                                        <audio controls class="w-full max-w-md">
+                                                        <audio controls class="w-full max-w-md bg-gray-600 rounded-lg p-4">
                                                                 <source src="/00_S.mp3" type="audio/mpeg">
                                                                 Your browser does not support the audio element.
                                                         </audio>
