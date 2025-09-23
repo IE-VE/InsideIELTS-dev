@@ -207,55 +207,64 @@
 <div class="min-h-screen bg-gray-900 text-white">
         <!-- Lesson Header -->
         <div class="max-w-5xl container mx-auto px-6 pt-8">
-                <div class="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 mb-8">
+                <div class="bg-gray-50 dark:bg-gray-800 rounded-lg px-6 py-2 mb-8">
                         <div class="text-center">
-                                <div class="text-xs text-left text-teal-600 dark:text-teal-400 mb-4">    SC2(i)                                
+                                <div class="text-xs text-left text-teal-600 dark:text-teal-400">
+                                        SC_2.1
                                 </div>
-                                <h1 class="text-3xl font-bold text-white mb-4">
-                                        READING - Matching Information
+                                <h1 class="text-4xl font-bold text-white my-7 tracking-wide">
+                                        READING
                                 </h1>
                         </div>
 
                         <div class="flex justify-between items-center">
                                 <a
+                                        href="/IETPP/lesson-02/lesson02-i"
+                                        class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300 font-semibold"
+                                        data-sveltekit-reload
+                                >
+                                        ← Prev
+                                </a>
+
+                                <a
                                         href="/IETPP#lesson-02"
                                         class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300 font-semibold"
                                         data-sveltekit-reload
                                 >
-                                        ← Back to Contents
+                                        Contents
                                 </a>
+
                                 <a
                                         href="/IETPP/lesson-02/lesson02-ii"
                                         class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300 font-semibold"
                                         data-sveltekit-reload
                                 >
-                                        Next Lesson →
+                                        Next →
                                 </a>
                         </div>
                 </div>
         </div>
 
         <!-- Page Content -->
-        <div style="max-width: 1200px;" class="mx-auto px-3 md:px-6 py-12">
+        <div style="max-width: 1200px;" class="mx-auto px-3 md:px-6 py-8">
                 <!-- Skill Check Title -->
-                <section class="bg-blue-600/20 rounded-lg p-6 md:p-10 shadow-sm border border-blue-600/50 mb-12">
+                <section class="bg-cyan-600/25 rounded-lg p-4 md:p-10 shadow-sm border border-blue-600 mb-8">
                         <div class="flex items-center justify-center gap-4 mb-10">
                                 <div class="text-4xl text-green-500">✓</div>
-                                <h2 class="text-3xl font-bold text-center text-white">SKILL CHECK</h2>
+                                <h2 class="text-2xl font-bold text-center text-white tracking-wider">SKILL CHECK 2.1</h2>
                                 <div class="text-4xl text-green-500">✓</div>
                         </div>
                         
-                        <p class="text-center text-white text-xl mb-12">
+                        <p class="text-center text-white text-lg mb-8">
                                 <strong>Complete this Reading Skill Check exercise then upload your answers for checking and feedback.</strong>
                         </p>
 
                         <!-- Exercise -->
-                      <div class="bg-blue-600 text-white px-4 py-2 rounded-lg text-center font-bold mb-10">
-                                SC2(i)
-                        </div>
-                        
-                        <h3 class="text-2xl font-bold text-center text-white mb-8">READING - Matching information</h3>
-                        
+                        <div class="bg-cyan-500/25 rounded-lg p-4 md:p-8 border border-teal-600/50 mb-8">
+                                <div class="bg-blue-600 text-white text-xl px-4 py-2 rounded-lg text-center font-bold mb-8 border-1 border-white">
+                                        Matching Information
+                                </div>                                                       
+                                         
                         <!-- Highlighting Controls -->
                         <div class="flex flex-wrap justify-center gap-2 mb-6">
                                 <button
@@ -434,7 +443,9 @@
                                                         </button>
                                                 </div>
                                         </div>
+                                        
                                 </div>
+                                
                         </div>
                         
                         <!-- Results Display -->
@@ -476,11 +487,13 @@
                                                                         </div>
                                                                 {/each}
                                                         </div>
-                                                </div>
-                                        </div>
-                                {/if}
+                                                </div>    
+                                        </div>              
+                                {/if}  
+                                  <div> <p class="text-white"><b>End of Lesson 02-i</b></p> </div>
                 </section>
-                
+                   
+        
                   <!-- Footer Navigation -->
                 
                 <section class="text-center">                     
@@ -493,7 +506,7 @@
                                                         >
                                                                 ← Back to Contents
                                                         </a>
-                                                          <p class="text-white">End of Lesson 02-i</p>
+                                                         
                                                         <a
                                                                 href="/IETPP/lesson-02/lesson02-ii"
                                                                 class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300 font-semibold"
@@ -504,6 +517,7 @@
                                                 </div>
                                         </div>
                                 </section>
+                
                         </div>
                 </div>
 

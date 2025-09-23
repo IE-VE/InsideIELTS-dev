@@ -37,59 +37,50 @@
 <div class="min-h-screen bg-gray-900 text-white">
         <!-- Lesson Header -->
         <div class="max-w-5xl container mx-auto px-6 pt-8">
-                <div class="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 mb-8">
+                <div class="bg-gray-50 dark:bg-gray-800 rounded-lg px-6 py-2 mb-8">
                         <div class="text-center">
-                                <div class="text-xs text-left text-teal-600 dark:text-teal-400 mb-4">
+                                <div class="text-xs text-left text-teal-600 dark:text-teal-400">
                                         IE2401_02.3
                                 </div>
-                                <h1 class="text-3xl font-bold text-white mb-4">
-                                        READING - Summary completion
+                                <h1 class="text-4xl font-bold text-white my-7">
+                                        READING
                                 </h1>
                         </div>
 
                         <div class="flex justify-between items-center">
                                 <a
+                                        href="/IETPP/lesson-02/lesson02-ii"
+                                        class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300 font-semibold"
+                                        data-sveltekit-reload
+                                >
+                                        ← Previous
+                                </a>
+
+                                <a
                                         href="/IETPP#lesson-02"
                                         class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300 font-semibold"
                                         data-sveltekit-reload
                                 >
-                                        ← Back to Contents
+                                        Contents
                                 </a>
 
                                 <a
-                                        href="/IETPP/lesson-02/lesson02-iii/skill-check"
-                                        class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300 font-semibold"
+                                        href="/IETPP/lesson-03/lesson03"
+                                        class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300 font-semibold ml-8"
                                         data-sveltekit-reload
                                 >
-                                        Next Lesson →
+                                        Next →
                                 </a>
                         </div>
                 </div>
         </div>
 
         <!-- Page Content -->
-        <div style="max-width: 1200px;" class="mx-auto px-6 py-12">
-                <!-- Lesson Title Section -->
-                <section class="bg-emerald-600/20 rounded-lg p-10 shadow-sm border border-emerald-600/50 mb-12">
-                        <div class="flex items-center justify-center gap-4 mb-10">
-                                <div class="text-4xl">📖</div>
-                                <h2 class="text-3xl font-bold text-center text-white">Skills Practice</h2>
-                                <div class="text-4xl">📖</div>
-                        </div>
-                        
-                        <div class="bg-white dark:bg-gray-800 rounded-lg p-8 shadow-sm border border-gray-200 dark:border-gray-700 mb-12">
-                                <h2 class="text-2xl text-center font-bold text-gray-800 dark:text-gray-200 mb-10">
-                                        Summary completion
-                                </h2>
-
-                                <div class="space-y-10">
-                                        <div>
-                                                <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-6">What to Expect</h3>
-                                                <p class="text-gray-700 dark:text-gray-300 text-lg mb-8">
-                                                        Summary completion question sets take the form of gap-fill exercises which test your overall comprehension of the text. In addition to skimming the passage for broad comprehension, you also need to read the summary question text in detail, and then scan the passage for paraphrased statements containing the same general idea. The instructions will ask you to choose a specified number of words and/or numbers directly from the passage to fill the blanks in the given summary.
-                                                </p>
+ <div style="max-width: 1200px;" class="mx-auto px-3 md:px-6 py-8">                                                                                               <!-- Lesson Title Section -->                                             <section class="bg-cyan-800/25 rounded-lg p-4 md:p-10 shadow-sm border border-emerald-600/50 mb-12">                                                              <div class="flex items-center justify-center gap-4 mb-10">                                                                                      <div class="text-4xl">📖</div>                                                 <h2 class="text-3xl font-bold text-center text-white">Summary Completion</h2>                                                                     <div class="text-4xl">📖</div>                                                </div>                                                                                                            <!-- Educational Section -->                                                                               <div class="bg-gray-800 rounded-lg p-4 md:p-8 shadow-sm border border-gray-600 mb-12">
+                                                                                                                    <div class="space-y-10">                                                      <div>                                                                        <h3 class="text-lg font-semibold text-blue-400 mb-6">What to Expect</h3>                                                            <div class="bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-lg p-4">                                                                                                                                   <p class="text-gray-300 text-lg mb-2">
+                                                        Summary completion question sets take the form of gap-fill exercises which test your overall comprehension of the text. In addition to skimming the passage for broad comprehension, you also need to read the summary question text in detail, and then scan the passage for paraphrased statements containing the same general idea.  </p>
                                         </div>
-
+                                                                                                                            </div>
                                         <div>
                                                 <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-6">Key Strategies</h3>
                                                 <div class="bg-teal-50 dark:bg-teal-900/20 border border-teal-200 dark:border-teal-800 rounded-lg p-4">
@@ -142,18 +133,24 @@
                                                 </div>
                                         </div>
                                 </div>
-                        </div>
+                        </div>            
                  
                         <div class="max-w-4xl mx-auto text-lg">
+                                <div>
+                                        <p class="text-white mb-12">
+                                                 The instructions will ask you to choose a specified number of words and/or numbers directly from the passage to fill the blanks in the given summary. </p>
+                                                </div>
                                 <div class="flex justify-center mb-10">
                                         <img
                                                 src="/LESSONS/les02/02(iii)/Summary_comp-exQ.png"
                                                 alt="IELTS Reading - Summary completion"
-                                                class="w-full max-w-md rounded border border-gray-600 cursor-pointer"
+                                                class="w-full max-w-xl rounded border border-gray-600 cursor-pointer"
                                                 onclick={() => openLightbox('/LESSONS/les02/02(iii)/Summary_comp-exQ.png')}
                                         />
                                 </div>
-
+                                           </div>
+                                <div class="mx-auto text-lg">
+                                        <div class="bg-gray-800 rounded-lg p-4 md:p-8 shadow-sm border border-gray-600 mb-12">
                                 <h3 class="text-xl font-bold text-white mb-8 underline">Question technique</h3>
 
                                 <p class="text-white mb-10">
@@ -203,22 +200,8 @@
                                                 onclick={() => openLightbox('/LESSONS/les02/02(iii)/Summary_comp-techans.png')}
                                         />
                                 </div>
-
-                                <!-- Video demonstration section - video not yet available -->
-                                <!-- <p class="text-white mb-6 font-bold">
-                                        Watch this quick Reading Summary completion demonstration vid before testing your skills.
-                                </p>
-
-                                <div class="flex justify-center mb-12">
-                                        <video
-                                                controls
-                                                class="w-full max-w-2xl bg-black rounded border border-gray-600"
-                                                src="/LESSONS/les02/01(iii)/Reading_demoQ-summarycomp.mp4"
-                                        >
-                                                Your browser does not support the video tag.
-                                        </video>
-                                </div> -->
-
+                                                </div>
+                   
                                 <div class="text-center">
                                         <p class="text-white text-xl font-bold mb-16">
                                                 Now complete the READING - Summary completion Skill Check exercise
@@ -226,7 +209,7 @@
 
                                         <a
                                                 href="/IETPP/lesson-02/lesson02-iii/skill-check"
-                                                class="inline-flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-lg transition-colors border-2 border-white"
+                                                class="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition-colors border-2 border-white"
                                         >
                                                 <span class="text-2xl">✓</span>
                                                 <span>SKILL CHECK</span>
@@ -249,7 +232,7 @@
                                                 ← Back to Contents
                                         </a>
                                         <a
-                                                href="/IETPP/lesson-02/lesson02-iii/skill-check"
+                                                href="/IETPP/lesson-03/lesson03"
                                                 class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300 font-semibold"
                                                 data-sveltekit-reload
                                         >

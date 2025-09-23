@@ -84,7 +84,7 @@
                                         class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300 font-semibold"
                                         data-sveltekit-reload
                                 >
-                                        ← Contents
+                                        ← Prev
                                 </a>
 
                                 <a
@@ -97,7 +97,7 @@
                                 
                                 <a
                                         href="/IETPP/lesson-01/lesson01-i"
-                                        class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300 font-semibold ml-8"
+                                        class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300 font-semibold"
                                         data-sveltekit-reload
                                 >
                                         Next →
@@ -596,7 +596,7 @@
                                                 class="text-teal-600 dark:text-teal-400 hover:underline font-semibold"
                                                 data-sveltekit-reload
                                         >
-                                                ← Contents
+                                                ← Back to Contents
                                         </a>
                                
                                         <a
@@ -604,7 +604,7 @@
                                                 class="text-teal-600 dark:text-teal-400 hover:underline font-semibold"
                                                 data-sveltekit-reload
                                         >
-                                                Next →
+                                                Next Lesson →
                                         </a>
                                 </div>
                         </div>

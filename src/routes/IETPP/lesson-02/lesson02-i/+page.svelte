@@ -53,7 +53,7 @@
                                         class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300 font-semibold"
                                         data-sveltekit-reload
                                 >
-                                        ← Previous
+                                        ← Prev
                                 </a>
 
                                 <a
@@ -66,7 +66,7 @@
 
                                 <a
                                         href="/IETPP/lesson-02/lesson02-ii"
-                                        class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300 font-semibold ml-8"
+                                        class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300 font-semibold"
                                         data-sveltekit-reload
                                 >
                                         Next →
@@ -81,7 +81,7 @@
                 <section class="bg-cyan-600/25 rounded-lg p-4 md:p-10 shadow-sm border border-blue-600 mb-12">
                         <div class="flex items-center justify-center gap-4 mb-10">
                                 <div class="text-4xl">📖</div>
-                                <h2 class="text-3xl font-bold text-center text-white underline">Matching Information</h2>
+                                <h2 class="text-3xl font-bold text-center text-white tracking-wide">Matching Information</h2>
                                 <div class="text-4xl">📖</div>
                         </div>
                         <!-- Educational Section -->

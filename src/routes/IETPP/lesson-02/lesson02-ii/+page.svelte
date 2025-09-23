@@ -65,7 +65,7 @@
                                 </a>
 
                                 <a
-                                        href="/IETPP/lesson-02/lesson02-iii"
+                                        href="/IETPP/lesson-03/lesson02-iii"
                                         class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300 font-semibold ml-8"
                                         data-sveltekit-reload
                                 >
@@ -90,10 +90,8 @@
 
                                 <div class="space-y-10">
                                         <div>
-
-                                        <h3 class="text-lg font-semibold text-blue-400 mb-6">What to Expect</h3>
-                                                                                    <div class="bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-lg p-4">
-                                                                                    <p class="text-gray-700 dark:text-gray-300 text-lg mb-2">
+                                        <h3 class="text-lg font-semibold text-blue-400 mb-6">What to Expect</h3>                                                 <div class="bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-lg p-4">
+                                                                                    <p class="text-gray-300 text-lg mb-2">
                                                         True/False/Not given questions test your ability to identify whether information in statements agrees with, contradicts, or is simply not mentioned in the reading passage. You'll need to distinguish between facts that are explicitly stated, facts that contradict the passage, and information that is not provided at all. This question type appears in every IELTS Reading test and requires careful analysis to avoid common traps.
                                                 </p>
                                         </div>
@@ -157,9 +155,7 @@
 
                                 <div>
                                         <p class="text-white mb-16">
-                                                Each question consists of a statement about the passage which you need to qualify by writing either <strong><em>True/Yes</em></strong>,
-                                                if the statement is correct; <strong><em>False/No</em></strong>, if the statement is wrong;
-                                                or <strong><em>Not given</em></strong>, if there is no such information given in the passage.
+                                                Each question consists of a statement about the passage which you need to qualify by writing either <strong><em>True/Yes</em></strong>,     if the statement is correct; <strong><em>False/No</em></strong>, if the statement is wrong; or <strong><em>Not given</em></strong>, if there is no such information given in the passage.
                                         </p>
                                                 </div>
                                 <div class="flex justify-center mb-10">
@@ -266,7 +262,7 @@
                                                 ← Back to Contents
                                         </a>
                                         <a
-                                                href="/IETPP/lesson-02/lesson02-ii/skill-check"
+                                                href="/IETPP/lesson-02/lesson02-iii"
                                                 class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300 font-semibold"
                                                 data-sveltekit-reload
                                         >
