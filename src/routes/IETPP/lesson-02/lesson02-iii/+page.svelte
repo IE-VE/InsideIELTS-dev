@@ -134,7 +134,7 @@
                                         </div>
                                 </div>
                         </div>            
-                 
+
                         <div class="max-w-4xl mx-auto text-lg">
                                 <div>
                                         <p class="text-white mb-12">
@@ -201,7 +201,7 @@
                                         />
                                 </div>
                                                 </div>
-                   
+
                                 <div class="text-center">
                                         <p class="text-white text-xl font-bold mb-16">
                                                 Now complete the READING - Summary completion Skill Check exercise
@@ -221,7 +221,7 @@
 
                                <!-- Footer Navigation -->
                 <section class="text-center">                       
-                        
+
                         <div class="bg-gray-800 rounded-lg p-6 shadow-sm border border-gray-700">
                                 <div class="flex justify-between items-center">
                                         <a
@@ -241,7 +241,6 @@
                                 </div>
                         </div>
                 </section>
-        </div>
 </div>
 
 <!-- Lightbox Modal -->
