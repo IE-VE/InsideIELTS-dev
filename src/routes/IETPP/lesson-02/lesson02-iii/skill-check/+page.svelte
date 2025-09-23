@@ -209,56 +209,64 @@
 <div class="min-h-screen bg-gray-900 text-white">
         <!-- Lesson Header -->
         <div class="max-w-5xl container mx-auto px-6 pt-8">
-                <div class="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 mb-8">
+                <div class="bg-gray-50 dark:bg-gray-800 rounded-lg px-6 py-2 mb-8">
                         <div class="text-center">
-                                <div class="text-xs text-left text-teal-600 dark:text-teal-400 mb-4">
+                                <div class="text-xs text-left text-teal-400">
                                         SC_2.3
                                 </div>
-                                <h1 class="text-3xl font-bold text-white mb-4">
-                                        READING - Summary completion
+                                <h1 class="text-4xl font-bold text-white my-7 tracking-wide">
+                                        READING
                                 </h1>
                         </div>
 
                         <div class="flex justify-between items-center">
                                 <a
-                                        href="/IETPP#lesson-02"
-                                        class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300 font-semibold"
+                                        href="/IETPP/lesson-02/lesson02-i"
+                                        class="text-teal-400 hover:text-teal-300 font-semibold"
                                         data-sveltekit-reload
                                 >
-                                        ← Back to Contents
+                                        ← Prev
                                 </a>
+
                                 <a
-                                        href="/IETPP/lesson-02/lesson02-iii"
-                                        class="text-teal-600 dark:text-teal-400 hover:underline font-semibold"
+                                        href="/IETPP#lesson-02"
+                                        class="text-teal-400 hover:text-teal-300 font-semibold"
                                         data-sveltekit-reload
                                 >
-                                        Next Lesson →
+                                        Contents
+                                </a>
+
+                                <a
+                                        href="/IETPP/lesson-03"
+                                        class="text-teal-400 hover:text-teal-300 font-semibold"
+                                        data-sveltekit-reload
+                                >
+                                        Next →
                                 </a>
                         </div>
                 </div>
         </div>
 
+
         <!-- Page Content -->
-        <div style="max-width: 1200px;" class="mx-auto px-3 md:px-6 py-2">
+        <div style="max-width: 1200px;" class="mx-auto px-3 md:px-6 py-8">
                 <!-- Skill Check Title -->
-                <section class="bg-emerald-600/20 rounded-lg p-6 md:p-10 shadow-sm border border-emerald-600/50 mb-12">
+                <section class="bg-cyan-800/25 rounded-lg p-4 md:p-10 shadow-sm border border-emerald-600/50 mb-8">
                         <div class="flex items-center justify-center gap-4 mb-10">
                                 <div class="text-4xl text-green-500">✓</div>
-                                <h2 class="text-3xl font-bold text-center text-white">SKILL CHECK</h2>
+                                  <h2 class="text-2xl font-bold text-center text-white tracking-wider">SKILL CHECK 2.3</h2>
                                 <div class="text-4xl text-green-500">✓</div>
                         </div>
                         
-                        <p class="text-center text-white text-xl mb-12">
+                        <p class="text-center text-white text-lg mb-8">
                                 <strong>Complete this Reading Skill Check exercise then upload your answers for checking and feedback.</strong>
                         </p>
 
                         <!-- Exercise -->
-                        <!-- SC2III_PASSAGE_START -->
-                        <div class="bg-blue-700 text-white px-4 py-2 rounded-lg text-center font-bold mb-10">
-                                SC2(iii)
-                        </div>
-                        
-                        <h3 class="text-2xl font-bold text-center text-white mb-8">READING - Summary completion</h3>
+                        <div class="bg-cyan-500/25 rounded-lg p-4 md:p-8 border border-teal-600/50 mb-4 md:mb-8">
+                                <div class="bg-blue-600 text-white text-xl px-4 py-2 rounded-lg text-center font-bold mb-8 border-1 border-white tracking-wide">
+                                        Summary Completion
+                                </div>
                         
                         <!-- Highlighting Controls -->
                         <div class="flex flex-wrap justify-center gap-2 mb-6">
@@ -413,8 +421,13 @@
                                         </div>
                                 </div>
                         {/if}
-                        <!-- SC2III_PASSAGE_END -->
+                                </div>
+
+                                <div class="text-center md:mt-12">
+                                        <p class="text-white"><b>End of Reading Section 02</b></p>
+                                </div>
                 </section>
+                
                 <!-- Footer Navigation -->
 
                 <section class="text-center">                     
@@ -422,15 +435,15 @@
                                                 <div class="flex justify-between items-center">
                                                         <a
                                                                 href="/IETPP#lesson-02"
-                                                                class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300 font-semibold"
+                                                                class="text-teal-400 hover:text-teal-300 font-semibold"
                                                                 data-sveltekit-reload
                                                         >
                                                                 ← Back to Contents
                                                         </a>
-                                                          <p class="text-white">End of Lesson 02-iii</p>
+                                                        
                                                         <a
-                                                                href="/IETPP/lesson-05"
-                                                                class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300 font-semibold"
+                                                                href="/IETPP/lesson-03"
+                                                                class="text-teal-400 hover:text-teal-300 font-semibold"
                                                                 data-sveltekit-reload
                                                         >
                                                                 Next Lesson →

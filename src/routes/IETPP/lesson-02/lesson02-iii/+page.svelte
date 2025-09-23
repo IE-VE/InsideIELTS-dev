@@ -42,7 +42,7 @@
                                 <div class="text-xs text-left text-teal-600 dark:text-teal-400">
                                         IE2401_02.3
                                 </div>
-                                <h1 class="text-4xl font-bold text-white my-7">
+                                <h1 class="text-4xl font-bold text-white my-7 tracking-wide">
                                         READING
                                 </h1>
                         </div>
@@ -50,15 +50,15 @@
                         <div class="flex justify-between items-center">
                                 <a
                                         href="/IETPP/lesson-02/lesson02-ii"
-                                        class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300 font-semibold"
+                                        class="text-teal-400 hover:text-teal-300 font-semibold"
                                         data-sveltekit-reload
                                 >
-                                        ← Previous
+                                        ← Prev
                                 </a>
 
                                 <a
                                         href="/IETPP#lesson-02"
-                                        class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300 font-semibold"
+                                        class="text-teal-400 hover:text-teal-300 font-semibold"
                                         data-sveltekit-reload
                                 >
                                         Contents
@@ -66,7 +66,7 @@
 
                                 <a
                                         href="/IETPP/lesson-03/lesson03"
-                                        class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300 font-semibold ml-8"
+                                        class="text-teal-400 hover:text-teal-300 font-semibold"
                                         data-sveltekit-reload
                                 >
                                         Next →
@@ -76,7 +76,7 @@
         </div>
 
         <!-- Page Content -->
- <div style="max-width: 1200px;" class="mx-auto px-3 md:px-6 py-8">                                                                                               <!-- Lesson Title Section -->                                             <section class="bg-cyan-800/25 rounded-lg p-4 md:p-10 shadow-sm border border-emerald-600/50 mb-12">                                                              <div class="flex items-center justify-center gap-4 mb-10">                                                                                      <div class="text-4xl">📖</div>                                                 <h2 class="text-3xl font-bold text-center text-white">Summary Completion</h2>                                                                     <div class="text-4xl">📖</div>                                                </div>                                                                                                            <!-- Educational Section -->                                                                               <div class="bg-gray-800 rounded-lg p-4 md:p-8 shadow-sm border border-gray-600 mb-12">
+ <div style="max-width: 1200px;" class="mx-auto px-3 md:px-6 py-8">                                                                                               <!-- Lesson Title Section -->                                             <section class="bg-cyan-800/25 rounded-lg p-4 md:p-10 shadow-sm border border-emerald-600/50 mb-12">                                                              <div class="flex items-center justify-center gap-4 mb-10">                                                                                      <div class="text-4xl">📖</div>                                                 <h2 class="text-3xl font-bold text-center text-white tracking-wide">Summary Completion</h2>                                                                     <div class="text-4xl">📖</div>                                                </div>                                                                                                            <!-- Educational Section -->                                                                               <div class="bg-gray-800 rounded-lg p-4 md:p-8 shadow-sm border border-gray-600 mb-12">
                                                                                                                     <div class="space-y-10">                                                      <div>                                                                        <h3 class="text-lg font-semibold text-blue-400 mb-6">What to Expect</h3>                                                            <div class="bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-lg p-4">                                                                                                                                   <p class="text-gray-300 text-lg mb-2">
                                                         Summary completion question sets take the form of gap-fill exercises which test your overall comprehension of the text. In addition to skimming the passage for broad comprehension, you also need to read the summary question text in detail, and then scan the passage for paraphrased statements containing the same general idea.  </p>
                                         </div>
@@ -242,6 +242,7 @@
                         </div>
                 </section>
 </div>
+        </div>
 
 <!-- Lightbox Modal -->
 {#if lightboxOpen}

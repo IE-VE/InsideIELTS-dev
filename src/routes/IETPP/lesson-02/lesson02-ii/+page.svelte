@@ -40,9 +40,9 @@
                 <div class="bg-gray-50 dark:bg-gray-800 rounded-lg px-6 py-2 mb-8">
                         <div class="text-center">
                                 <div class="text-xs text-left text-teal-600 dark:text-teal-400">
-                                        IE2401_02.1
+                                        IE2401_02.2
                                 </div>
-                                <h1 class="text-4xl font-bold text-white my-7">
+                                <h1 class="text-4xl font-bold text-white my-7 tracking-wide">
                                         READING
                                 </h1>
                         </div>
@@ -50,15 +50,15 @@
                         <div class="flex justify-between items-center">
                                 <a
                                         href="/IETPP/lesson-02/lesson02-i"
-                                        class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300 font-semibold"
+                                        class="text-teal-400 hover:text-teal-300 font-semibold"
                                         data-sveltekit-reload
                                 >
-                                        ← Previous
+                                        ← Prev
                                 </a>
 
                                 <a
                                         href="/IETPP#lesson-02"
-                                        class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300 font-semibold"
+                                        class="text-teal-400 hover:text-teal-300 font-semibold"
                                         data-sveltekit-reload
                                 >
                                         Contents
@@ -66,7 +66,7 @@
 
                                 <a
                                         href="/IETPP/lesson-03/lesson02-iii"
-                                        class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300 font-semibold ml-8"
+                                        class="text-teal-400 hover:text-teal-300 font-semibold"
                                         data-sveltekit-reload
                                 >
                                         Next →
@@ -81,7 +81,7 @@
                 <section class="bg-teal-600/25 rounded-lg p-10 shadow-sm border border-teal-600 mb-12">
                         <div class="flex items-center justify-center gap-4 mb-10">
                                 <div class="text-4xl">📖</div>
-                                <h2 class="text-3xl font-bold text-center text-white">True/False/Not given</h2>
+                                <h2 class="text-3xl font-bold text-center text-white tracking-wide">True/False/Not given</h2>
                                 <div class="text-4xl">📖</div>
                         </div>
 

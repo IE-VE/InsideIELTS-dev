@@ -209,7 +209,7 @@
         <div class="max-w-5xl container mx-auto px-6 pt-8">
                 <div class="bg-gray-50 dark:bg-gray-800 rounded-lg px-6 py-2 mb-8">
                         <div class="text-center">
-                                <div class="text-xs text-left text-teal-600 dark:text-teal-400">
+                                <div class="text-xs text-left text-teal-400">
                                         SC_2.1
                                 </div>
                                 <h1 class="text-4xl font-bold text-white my-7 tracking-wide">
@@ -219,8 +219,8 @@
 
                         <div class="flex justify-between items-center">
                                 <a
-                                        href="/IETPP/lesson-02/lesson02-i"
-                                        class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300 font-semibold"
+                                        href="/IETPP/lesson-02"
+                                        class="text-teal-400 hover:text-teal-300 font-semibold"
                                         data-sveltekit-reload
                                 >
                                         ← Prev
@@ -228,7 +228,7 @@
 
                                 <a
                                         href="/IETPP#lesson-02"
-                                        class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300 font-semibold"
+                                        class="text-teal-400 hover:text-teal-300 font-semibold"
                                         data-sveltekit-reload
                                 >
                                         Contents
@@ -236,7 +236,7 @@
 
                                 <a
                                         href="/IETPP/lesson-02/lesson02-ii"
-                                        class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300 font-semibold"
+                                        class="text-teal-400 hover:text-teal-300 font-semibold"
                                         data-sveltekit-reload
                                 >
                                         Next →
@@ -249,7 +249,7 @@
         <div style="max-width: 1200px;" class="mx-auto px-3 md:px-6 py-8">
                 <!-- Skill Check Title -->
                 <section class="bg-cyan-600/25 rounded-lg p-4 md:p-10 shadow-sm border border-blue-600 mb-8">
-                        <div class="flex items-center justify-center gap-4 mb-10">
+                        <div class="flex items-center justify-center gap-4 mb-8">
                                 <div class="text-4xl text-green-500">✓</div>
                                 <h2 class="text-2xl font-bold text-center text-white tracking-wider">SKILL CHECK 2.1</h2>
                                 <div class="text-4xl text-green-500">✓</div>
@@ -260,8 +260,8 @@
                         </p>
 
                         <!-- Exercise -->
-                        <div class="bg-cyan-500/25 rounded-lg p-4 md:p-8 border border-teal-600/50 mb-8">
-                                <div class="bg-blue-600 text-white text-xl px-4 py-2 rounded-lg text-center font-bold mb-8 border-1 border-white">
+                        <div class="bg-cyan-500/25 rounded-lg p-4 md:p-8 border border-teal-600/50 mb-4 md:mb-8">
+                                <div class="bg-blue-600 text-white text-xl px-4 py-2 rounded-lg text-center font-bold mb-8 border-1 border-white tracking-wide">
                                         Matching Information
                                 </div>
 
@@ -492,11 +492,10 @@
                                         {/if}
                         </div>
 
-                        <div class="text-center mt-8">
+                        <div class="text-center md:mt-12">
                                 <p class="text-white"><b>End of Lesson 02-i</b></p>
                         </div>
                 </section>
-
 
                   <!-- Footer Navigation -->
 
@@ -505,7 +504,7 @@
                                                 <div class="flex justify-between items-center">
                                                         <a
                                                                 href="/IETPP#lesson-02"
-                                                                class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300 font-semibold"
+                                                                class="text-teal-400 hover:text-teal-300 font-semibold"
                                                                 data-sveltekit-reload
                                                         >
                                                                 ← Back to Contents
@@ -513,7 +512,7 @@
 
                                                         <a
                                                                 href="/IETPP/lesson-02/lesson02-ii"
-                                                                class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300 font-semibold"
+                                                                class="text-teal-400 hover:text-teal-300 font-semibold"
                                                                 data-sveltekit-reload
                                                         >
                                                                 Next Lesson →
@@ -525,7 +524,7 @@
                         </div>
                 </div>
 
-<!-- Lightbox Modal -->
+<!-- Lightbox -->
 {#if lightboxOpen}
         <div
                 class="fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center z-50 p-4"

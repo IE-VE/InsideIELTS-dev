@@ -421,7 +421,7 @@
                                         </div>
                                 {/if}
 
-                                  <h3 class="text-lg font-bold text-white mt-8">End of Lesson 01-iii</h3>
+                                  <h3 class="text-lg font-bold text-white mt-8">End of Lesson Listening Section 01</h3>
                         </div>
                 </section>
 
