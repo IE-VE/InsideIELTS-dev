@@ -490,6 +490,8 @@
                                                         </div>
                                                 </div>
                                         {/if}
+                        </div>
+
                         <div class="text-center mt-8">
                                 <p class="text-white"><b>End of Lesson 02-i</b></p>
                         </div>
