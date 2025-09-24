@@ -108,7 +108,7 @@
                                                 </a>
                                         </div>
                                         <p class="text-white text-xl mb-4">
-                                                The <strong>IELTS</strong> examination is a language proficiency test designed to                                                                assess your Listening, Reading, Writing and Speaking skills in English.
+                                                The <strong>IELTS</strong> examination is a language proficiency test designed to assess your Listening, Reading, Writing and Speaking skills in English.
                                         </p>
                                 </div>
                         </div>

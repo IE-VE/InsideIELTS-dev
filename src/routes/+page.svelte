@@ -48,7 +48,7 @@
 			id: 3,
 			title: 'What if I need more help?',
 			content:
-				'The InsideIELTS freetests are designed to give you a good idea of your starting point for improvement. For personal guidance on your IELTS journey you can sign up to the InsideIELTS Test Preparation Program.<br><br>No other personalised IELTS preparation service offers this much value - and if you are not <strong>100%</strong> satisfied with your progress we\'ll refund your payment in full at any time - no questions asked.'
+				'The InsideIELTS freetests are designed to give you a good idea of your starting point for improvement. For personalised guidance on your IELTS journey you can sign up to the <a href="/IETPP" class="text-teal-400 hover:text-teal-300">InsideIELTS Test Preparation Program<a/>.<br><br>No other personalised IELTS preparation service offers this much value - <strong>guaranteed</strong>.'
 		}
 	];
 
@@ -123,9 +123,9 @@
 			href="/record"
 			class="rounded-lg border border-gray-200 bg-white p-6 shadow-md transition hover:shadow-lg dark:border-gray-700 dark:bg-gray-800"
 		>
-			<h2 class="mb-2 text-xl text-center font-bold text-teal-600 dark:text-teal-400">Free Speaking Evaluation</h2>
+			<h2 class="mb-2 text-xl text-center font-bold text-teal-600 dark:text-teal-400">Speaking Evaluation</h2>
 			<p class="text-gray-600 dark:text-gray-300">
-				<b>3 minute</b> Speaking interview with Official Assessment Criteria Feedback & Band Score estimate.
+				<b>Free 3 minute</b> Speaking interview with Official Assessment Criteria Feedback & Band Score estimate.
 			</p>
 			<div class="mt-4 text-sm font-medium text-teal-600 dark:text-teal-400">START SPEAKING →</div>
 		</a>
@@ -135,9 +135,9 @@
 			href="/writing/practice"
 			class="rounded-lg border border-gray-200 bg-white p-6 shadow-md transition hover:shadow-lg dark:border-gray-700 dark:bg-gray-800"
 		>
-			<h2 class="mb-2 text-xl text-center font-bold text-teal-600 dark:text-teal-400">Free Writing Evaluation</h2>
+			<h2 class="mb-2 text-xl text-center font-bold text-teal-600 dark:text-teal-400">Writing Evaluation</h2>
 			<p class="text-gray-600 dark:text-gray-300">
-				<b>10 minute</b> Writing exercise with Official Assessment Criteria Feedback & Band Score estimate.
+				<b>Free 10 minute</b> Writing exercise with Official Assessment Criteria Feedback & Band Score estimate.
 			</p>
 			<div class="mt-4 text-sm font-medium text-teal-600 dark:text-teal-400">START WRITING →</div>
 		</a>
@@ -147,9 +147,9 @@
 			href="/reading/practice"
 			class="rounded-lg border border-gray-200 bg-white p-6 shadow-md transition hover:shadow-lg dark:border-gray-700 dark:bg-gray-800"
 		>
-			<h2 class="mb-2 text-xl text-center font-bold text-teal-600 dark:text-teal-400">Free Reading Evaluation</h2>
+			<h2 class="mb-2 text-xl text-center font-bold text-teal-600 dark:text-teal-400">Reading Evaluation</h2>
 			<p class="text-gray-600 dark:text-gray-300">
-				<b>20 minute</b> Official Materials Reading Test with analysis, scoring and feedback.
+				<b>Free 20 minute</b> Official Materials Reading Test with analysis, scoring and feedback.
 			</p>
 			<div class="mt-4 text-sm font-medium text-teal-600 dark:text-teal-400">START READING →</div>
 		</a>
@@ -159,9 +159,9 @@
 			href="/listening/practice"
 			class="rounded-lg border border-gray-200 bg-white p-6 shadow-md transition hover:shadow-lg dark:border-gray-700 dark:bg-gray-800"
 		>
-			<h2 class="mb-2 text-xl text-center font-bold text-teal-600 dark:text-teal-400">Free Listening Evaluation</h2>
+			<h2 class="mb-2 text-xl text-center font-bold text-teal-600 dark:text-teal-400">Listening Evaluation</h2>
 			<p class="text-gray-600 dark:text-gray-300">
-				<b>7 minute</b> Official Materials Listening Test with analysis, scoring and feedback.
+				<b>Free 7 minute</b> Official Materials Listening Test with analysis, scoring and feedback.
 			</p>
 			<div class="mt-4 text-sm font-medium text-teal-600 dark:text-teal-400">START LISTENING →</div>
 		</a>
