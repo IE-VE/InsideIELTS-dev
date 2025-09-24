@@ -319,9 +319,9 @@
                                                         Task 1 (GT)
                                                 </h4>
                                                 
-                                                <div class="flex flex-col lg:flex-row gap-8 items-start">
-                                                        <!-- Left side: Image -->
-                                                        <div class="w-full lg:w-2/3">
+                                                <div class="flex flex-col gap-8">
+                                                        <!-- Image -->
+                                                        <div class="w-full">
                                                                 <img
                                                                         src="/LESSONS/les03/W_T1(GT)example.png"
                                                                         alt="Writing Task 1 GT example"
@@ -330,8 +330,8 @@
                                                                 />
                                                         </div>
                                                         
-                                                        <!-- Right side: Questions -->
-                                                        <div class="w-full lg:w-1/3">
+                                                        <!-- Questions below -->
+                                                        <div class="w-full">
                                                                 <div class="bg-gray-700 rounded-lg p-4">
                                                                         <h5 class="text-white font-bold mb-4">Comprehension Questions:</h5>
                                                                         <ul class="space-y-3 text-white">
@@ -350,9 +350,9 @@
                                                         Task 1 (Ac)
                                                 </h4>
                                                 
-                                                <div class="flex flex-col lg:flex-row gap-8 items-start">
-                                                        <!-- Left side: Image -->
-                                                        <div class="w-full lg:w-2/3">
+                                                <div class="flex flex-col gap-8">
+                                                        <!-- Image -->
+                                                        <div class="w-full">
                                                                 <img
                                                                         src="/LESSONS/les03/W_T1(Ac)example.png"
                                                                         alt="Writing Task 1 AC example"
@@ -361,8 +361,8 @@
                                                                 />
                                                         </div>
                                                         
-                                                        <!-- Right side: Questions -->
-                                                        <div class="w-full lg:w-1/3">
+                                                        <!-- Questions below -->
+                                                        <div class="w-full">
                                                                 <div class="bg-gray-700 rounded-lg p-4">
                                                                         <h5 class="text-white font-bold mb-4">Comprehension Questions:</h5>
                                                                         <ul class="space-y-3 text-white">
@@ -381,9 +381,9 @@
                                                         Task 2
                                                 </h4>
                                                 
-                                                <div class="flex flex-col lg:flex-row gap-8 items-start">
-                                                        <!-- Left side: Image -->
-                                                        <div class="w-full lg:w-2/3">
+                                                <div class="flex flex-col gap-8">
+                                                        <!-- Image -->
+                                                        <div class="w-full">
                                                                 <img
                                                                         src="/LESSONS/les03/W_T2example.png"
                                                                         alt="Writing Task 2 example"
@@ -392,8 +392,8 @@
                                                                 />
                                                         </div>
                                                         
-                                                        <!-- Right side: Questions -->
-                                                        <div class="w-full lg:w-1/3">
+                                                        <!-- Questions below -->
+                                                        <div class="w-full">
                                                                 <div class="bg-gray-700 rounded-lg p-4">
                                                                         <h5 class="text-white font-bold mb-4">Comprehension Questions:</h5>
                                                                         <ul class="space-y-3 text-white">
