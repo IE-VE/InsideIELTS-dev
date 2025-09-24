@@ -249,10 +249,10 @@
                                                 <h3 class="text-xl font-bold text-white mb-6">IELTS Writing Test Assessment Rubric (public version)</h3>
                                                 <div class="flex justify-center">
                                                         <img
-                                                                src="/rubrics/Writing_T1_rubric.png"
+                                                                src="/Writing_T2_rubic.png"
                                                                 alt="Official IELTS Writing Test assessment rubric (public version)"
                                                                 class="max-w-full rounded border border-gray-600 cursor-pointer hover:opacity-80 transition-opacity"
-                                                                onclick={() => openLightbox('/rubrics/Writing_T1_rubric.png')}
+                                                                onclick={() => openLightbox('/Writing_T2_rubic.png')}
                                                         />
                                                 </div>
                                         </div>
@@ -313,63 +313,63 @@
                                 </p>
 
                                 <div class="space-y-12 mb-8">
-                                        <!-- Task 1 GT Example -->
+                                        <!-- Task 1 Examples - Responsive Layout -->
                                         <div class="bg-gray-800 rounded-lg p-6 border border-gray-600">
                                                 <h4 class="text-lg font-semibold text-white mb-6 text-center">
-                                                        Task 1 (GT)
+                                                        Task 1 Examples
                                                 </h4>
                                                 
-                                                <div class="flex flex-col gap-8">
-                                                        <!-- Image -->
-                                                        <div class="w-full">
-                                                                <img
-                                                                        src="/LESSONS/les03/W_T1(GT)example.png"
-                                                                        alt="Writing Task 1 GT example"
-                                                                        class="w-full rounded border border-gray-500 cursor-pointer"
-                                                                        onclick={() => openLightbox('/LESSONS/les03/W_T1(GT)example.png')}
-                                                                />
-                                                        </div>
-                                                        
-                                                        <!-- Questions below -->
-                                                        <div class="w-full">
-                                                                <div class="bg-gray-700 rounded-lg p-4">
-                                                                        <h5 class="text-white font-bold mb-4">Comprehension Questions:</h5>
-                                                                        <ul class="space-y-3 text-white">
-                                                                                <li>• What is the writer's situation?</li>
-                                                                                <li>• What reason does the writer give for not starting on time?</li>
-                                                                                <li>• When does he want to start work?</li>
-                                                                        </ul>
+                                                <!-- Responsive Grid: Side by side on large screens, stacked on small -->
+                                                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                                                        <!-- Task 1 (Ac) - Left side on large screens -->
+                                                        <div class="flex flex-col gap-6">
+                                                                <h5 class="text-md font-semibold text-white text-center">Task 1 (Ac)</h5>
+                                                                <!-- Image -->
+                                                                <div class="w-full">
+                                                                        <img
+                                                                                src="/LESSONS/les03/W_T1(Ac)example.png"
+                                                                                alt="Writing Task 1 AC example"
+                                                                                class="w-full rounded border border-gray-500 cursor-pointer"
+                                                                                onclick={() => openLightbox('/LESSONS/les03/W_T1(Ac)example.png')}
+                                                                        />
+                                                                </div>
+                                                                
+                                                                <!-- Questions below -->
+                                                                <div class="w-full">
+                                                                        <div class="bg-gray-700 rounded-lg p-4">
+                                                                                <h6 class="text-white font-bold mb-4">Comprehension Questions:</h6>
+                                                                                <ul class="space-y-3 text-white">
+                                                                                        <li>• What do the two graphs show?</li>
+                                                                                        <li>• What are the units used?</li>
+                                                                                        <li>• When are the most people there?</li>
+                                                                                </ul>
+                                                                        </div>
                                                                 </div>
                                                         </div>
-                                                </div>
-                                        </div>
 
-                                        <!-- Task 1 AC Example -->
-                                        <div class="bg-gray-800 rounded-lg p-6 border border-gray-600">
-                                                <h4 class="text-lg font-semibold text-white mb-6 text-center">
-                                                        Task 1 (Ac)
-                                                </h4>
-                                                
-                                                <div class="flex flex-col gap-8">
-                                                        <!-- Image -->
-                                                        <div class="w-full">
-                                                                <img
-                                                                        src="/LESSONS/les03/W_T1(Ac)example.png"
-                                                                        alt="Writing Task 1 AC example"
-                                                                        class="w-full rounded border border-gray-500 cursor-pointer"
-                                                                        onclick={() => openLightbox('/LESSONS/les03/W_T1(Ac)example.png')}
-                                                                />
-                                                        </div>
-                                                        
-                                                        <!-- Questions below -->
-                                                        <div class="w-full">
-                                                                <div class="bg-gray-700 rounded-lg p-4">
-                                                                        <h5 class="text-white font-bold mb-4">Comprehension Questions:</h5>
-                                                                        <ul class="space-y-3 text-white">
-                                                                                <li>• What do the two graphs show?</li>
-                                                                                <li>• What are the units used?</li>
-                                                                                <li>• When are the most people there?</li>
-                                                                        </ul>
+                                                        <!-- Task 1 (GT) - Right side on large screens -->
+                                                        <div class="flex flex-col gap-6">
+                                                                <h5 class="text-md font-semibold text-white text-center">Task 1 (GT)</h5>
+                                                                <!-- Image -->
+                                                                <div class="w-full">
+                                                                        <img
+                                                                                src="/LESSONS/les03/W_T1(GT)example.png"
+                                                                                alt="Writing Task 1 GT example"
+                                                                                class="w-full rounded border border-gray-500 cursor-pointer"
+                                                                                onclick={() => openLightbox('/LESSONS/les03/W_T1(GT)example.png')}
+                                                                        />
+                                                                </div>
+                                                                
+                                                                <!-- Questions below -->
+                                                                <div class="w-full">
+                                                                        <div class="bg-gray-700 rounded-lg p-4">
+                                                                                <h6 class="text-white font-bold mb-4">Comprehension Questions:</h6>
+                                                                                <ul class="space-y-3 text-white">
+                                                                                        <li>• What is the writer's situation?</li>
+                                                                                        <li>• What reason does the writer give for not starting on time?</li>
+                                                                                        <li>• When does he want to start work?</li>
+                                                                                </ul>
+                                                                        </div>
                                                                 </div>
                                                         </div>
                                                 </div>
