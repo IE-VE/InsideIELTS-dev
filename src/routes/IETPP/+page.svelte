@@ -163,9 +163,9 @@
                                                                 Introduction to the Writing Test
                                                         </a>
                                                         <div class="space-y-1 ml-4">
-                                                                <div>- <a href="/IETPP/lesson-03T1Ac" class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300">Task 1 (Ac)</a></div>
-                                                                <div>- <a href="/IETPP/lesson-03T1GT" class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300">Task 1 (GT)</a></div>
-                                                                <div>- <a href="/IETPP/lesson-03T2" class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300">Task 2</a></div>
+                                                                <div>- <a href="/IETPP/lesson-03/lesson-03T1Ac" class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300">Task 1 (Ac)</a></div>
+                                                                <div>- <a href="/IETPP/lesson-03/lesson-03T1GT" class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300">Task 1 (GT)</a></div>
+                                                                <div>- <a href="/IETPP/lesson-03/lesson-03T2" class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300">Task 2</a></div>
                                                         </div>
                                                 </div>
                                                 <div class="ml-12">
