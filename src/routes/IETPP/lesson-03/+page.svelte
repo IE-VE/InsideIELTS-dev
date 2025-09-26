@@ -427,9 +427,9 @@
                            
                            <!-- Three Large Buttons -->
                            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-                                   <a href="/IETPP/lesson-03T1Ac" class="bg-teal-600 hover:bg-teal-700 text-white font-bold py-6 px-8 rounded-lg transition-colors duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 text-center block">
+                                   <button class="bg-teal-600 hover:bg-teal-700 text-white font-bold py-6 px-8 rounded-lg transition-colors duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
                                            <div class="text-xl">Task 1 (Ac)</div>
-                                   </a>
+                                   </button>
                                    
                                    <button class="bg-teal-600 hover:bg-teal-700 text-white font-bold py-6 px-8 rounded-lg transition-colors duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
                                            <div class="text-xl">Task 1 (GT)</div>
