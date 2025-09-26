@@ -22,14 +22,9 @@
         let currentSlide = 0;
         const slides = [
                 { title: "Line graph", src: "/writing-images/ielts-writing-test-1-line-graph.png", alt: "ielts writing test-1 line graph" },
-                { title: "Table (i)", src: "/writing-images/ielts-writing-test-1-table.png", alt: "ielts writing test-1 table" },
-                { title: "Table (ii)", src: "/writing-images/ielts-writing-test-1-table-2.png", alt: "ielts writing test-1 table" },
-                { title: "Table (iii)", src: "/writing-images/ielts-writing-test-1-table-3.png", alt: "ielts writing test-1 table" },
+                { title: "Table", src: "/writing-images/ielts-writing-test-1-table-2.png", alt: "ielts writing test-1 table" },
                 { title: "Pie chart", src: "/writing-images/ielts-writing-test-1-pie-chart.png", alt: "ielts writing test-1 pie chart" },
-                { title: "Bar chart (i)", src: "/writing-images/ielts-writing-test-1-bar-chart.png", alt: "ielts writing test-1 bar chart" },
-                { title: "Bar chart (ii)", src: "/writing-images/ielts-writing-test-1-bar-chart-2.png", alt: "ielts writing test-1 bar chart" },
-                { title: "Combined Table & Line graph", src: "/writing-images/ielts-writing-test-1-combined.png", alt: "ielts writing test-1 table line graph" },
-                { title: "Combined Pie chart & Table", src: "/writing-images/ielts-writing-test-1-combined_2.png", alt: "ielts writing test-1 pie chart table" },
+                { title: "Bar chart", src: "/writing-images/ielts-writing-test-1-bar-chart.png", alt: "ielts writing test-1 bar chart" },
                 { title: "Process diagram", src: "/writing-images/ielts-writing-test-1-process.png", alt: "ielts writing test-1 process diagram" },
                 { title: "Map", src: "/writing-images/ielts-writing-test-1-map.png", alt: "ielts writing test-1 map" }
         ];
@@ -247,16 +242,9 @@
                                                                 Watch VE vid
                                                         </a>
 
-                                                        <img
-                                                                src="/writing-images/Ac1-line_graph.png"
-                                                                alt="Line graph example answer"
-                                                                class="w-full rounded border border-gray-600 cursor-pointer hover:opacity-80 transition-opacity"
-                                                                tabindex="0"
-                                                                role="button"
-                                                                onclick={() => openLightbox('/writing-images/Ac1-line_graph.png')}
-                                                                onkeydown={(e) => e.key === 'Enter' || e.key === ' ' ? (e.preventDefault(), openLightbox('/writing-images/Ac1-line_graph.png')) : null}
-                                                        />
-                                                        <p class="text-sm text-gray-400 mt-2">Line graph example answer</p>
+                                                        <div class="bg-gray-700 border border-gray-600 rounded-lg p-4 text-center">
+                                                                <p class="text-gray-400 text-sm">Model answer video provides detailed explanation and example response structure for line graph questions.</p>
+                                                        </div>
                                                 </div>
 
                                                 <!-- Map Example -->
@@ -282,16 +270,9 @@
                                                                 Watch VE vid
                                                         </a>
 
-                                                        <img
-                                                                src="/writing-images/Ac1-map.png"
-                                                                alt="Map question example answer"
-                                                                class="w-full rounded border border-gray-600 cursor-pointer hover:opacity-80 transition-opacity"
-                                                                tabindex="0"
-                                                                role="button"
-                                                                onclick={() => openLightbox('/writing-images/Ac1-map.png')}
-                                                                onkeydown={(e) => e.key === 'Enter' || e.key === ' ' ? (e.preventDefault(), openLightbox('/writing-images/Ac1-map.png')) : null}
-                                                        />
-                                                        <p class="text-sm text-gray-400 mt-2">Map question example answer</p>
+                                                        <div class="bg-gray-700 border border-gray-600 rounded-lg p-4 text-center">
+                                                                <p class="text-gray-400 text-sm">Model answer video provides detailed explanation and example response structure for map questions.</p>
+                                                        </div>
                                                 </div>
                                         </div>
                                 </div>
