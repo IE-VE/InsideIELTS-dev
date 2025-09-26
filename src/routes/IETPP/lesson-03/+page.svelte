@@ -421,8 +421,8 @@
 
                 <section class="py-8">
 
-                        <div class="bg-gray-800 rounded-lg p-6 shadow-sm border border-gray-700">
-                           <div>   <p class="max-w-5xl mx-auto mb-8">Before we cover writing task strategy and the four writing assessment criteria in Lessons 3(i) to 3(iv), take a more in-depth look at each of the Writing Tasks.</p>                      
+                        <div class="bg-gray-800 rounded-lg p-8 shadow-sm border border-gray-500">
+                           <div>   <p class="max-w-5xl mx-auto mb-8">Before we cover writing task strategy and the four writing assessment criteria in Lessons 3(i) to 3(iv), take a more in-depth look at each of the IELTS Writing Tasks.</p>                      
                            </div>
                            
                            <!-- Three Large Buttons -->
