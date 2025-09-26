@@ -41,6 +41,21 @@
         function prevSlide() {
                 currentSlide = (currentSlide - 1 + slides.length) % slides.length;
         }
+
+        onMount(() => {
+                function handleKeydown(event: KeyboardEvent) {
+                        if (event.key === 'Escape' && lightboxOpen) {
+                                closeLightbox();
+                        }
+                }
+
+                document.addEventListener('keydown', handleKeydown);
+                
+                // Cleanup function
+                return () => {
+                        document.removeEventListener('keydown', handleKeydown);
+                };
+        });
 </script>
 
 <svelte:head>
@@ -48,50 +63,67 @@
         <meta name="description" content="Master IELTS Writing Task 1 Academic with expert techniques, practice exercises, and Virtual Examiner videos." />
 </svelte:head>
 
-<div class="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
-        <!-- Header with lesson info -->
-        <div class="bg-gray-800 border-b border-gray-600 py-6">
-                <div class="max-w-6xl mx-auto px-4">
+<div class="min-h-screen bg-gray-900 text-white">
+         <!-- Lesson Header -->
+        <div class="max-w-5xl container mx-auto px-3 md:px-6 py-8">
+                <div class="bg-gray-50 dark:bg-gray-800 rounded-lg px-6 py-2 mb-8">
                         <div class="text-center">
-                                <div class="text-sm text-gray-400 mb-2">LESSON CODE: IE2401_0301</div>
-                                <h1 class="text-3xl font-bold text-white mb-2">Writing Task 1 - Academic</h1>
-                                <div class="text-gray-300 italic">(40 mins)</div>
-                                
-                                <div class="mt-6 text-white">
-                                        <ul class="space-y-3">
-                                                <li>• Task 1 (Ac) format & question types</li>
-                                                <li>• Task 1 (Ac) technique</li>
-                                                <li>• Task 1 (Ac) practice</li>
-                                        </ul>
+                                <div class="text-xs text-left text-teal-600 dark:text-teal-400">
+                                        IE2401_0301
                                 </div>
+                                <h1 class="text-3xl font-bold text-white my-7">
+                                        Writing Task 1 - Academic
+                                </h1>
+                        </div>
+        <!-- Header Nav -->
+                        <div class="mt-6 mb-8 text-lg">
+                                <ul class="list-disc list-inside space-y-2 text-white">
+                                        <li>Task 1 (Ac) format & question types</li>
+                                        <li>Task 1 (Ac) technique</li>
+                                        <li>Task 1 (Ac) practice</li>
+                                </ul>
+                        </div>
 
-                                <div class="mt-6">
-                                        <a
-                                                href="/IETPP#lesson-03"
-                                                class="text-teal-400 hover:underline font-semibold"
-                                                data-sveltekit-reload
-                                        >
-                                                ← Back to Contents
-                                        </a>
-                                </div>
+                        <div class="flex justify-between items-center">
+                                <a
+                                        href="/IETPP/lesson-03"
+                                        class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300 font-semibold"
+                                        data-sveltekit-reload
+                                >
+                                        ← Prev
+                                </a>
+
+                                <a
+                                        href="/IETPP#lesson-03"
+                                        class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300 font-semibold"
+                                        data-sveltekit-reload
+                                >
+                                        Contents
+                                </a>
+
+                                <span class="text-gray-500">Next →</span>
                         </div>
                 </div>
         </div>
+        
+        <!-- Page Content -->
+        <div style="max-width: 1200px;" class="mx-auto px-3 md:px-6 py-8">
 
-        <!-- Section 1: Format and Question Types -->
-        <section class="bg-gray-200 border-b-4 border-black py-8">
-                <div class="max-w-6xl mx-auto px-4">
-                        <h2 class="text-2xl font-bold text-center text-black mb-8">Task 1 (Ac) format and question types</h2>
-                        
-                        <div class="bg-white rounded-lg p-6 shadow-sm border border-gray-300 mb-8">
-                                <p class="text-gray-800 mb-6">
-                                        The <strong>Task 1 Academic</strong> writing exercise is in the form of
-                                        a <strong>report</strong>. You may be asked to report on a line graph,
-                                        bar chart, table, pie chart, map or process diagram. Sometimes
-                                        the question may combine these elements, e.g. a line graph
-                                        with a pie chart or multiple graphs or tables presented
-                                        together.
-                                </p>
+                <!-- Section 1: Format and Question Types -->
+                <section class="bg-cyan-600/25 rounded-lg p-4 md:p-8 shadow-sm border border-teal-600 mb-8">
+                        <h2 class="text-2xl font-bold text-center text-white mb-8">
+                                Task 1 (Ac) format and question types</h2>
+                        <div class="max-w-6xl mx-auto">  
+
+                         <div class="bg-gray-800 rounded-lg p-6 text-lg border border-gray-700 mb-8">
+                                        <p class="text-white mb-6">
+                                                The <strong>Task 1 Academic</strong> writing exercise is in the form of
+                                                a <strong>report</strong>. You may be asked to report on a line graph,
+                                                bar chart, table, pie chart, map or process diagram. Sometimes
+                                                the question may combine these elements, e.g. a line graph
+                                                with a pie chart or multiple graphs or tables presented
+                                                together.
+                                        </p>
 
                                 <div class="flex justify-center mb-6">
                                         <a
@@ -104,19 +136,19 @@
                                         </a>
                                 </div>
 
-                                <p class="text-gray-800 mb-6">
-                                        The question will ask you to:
-                                        <em>
-                                                <strong>
-                                                        "Summarise the information by selecting and reporting the
-                                                        main features, and make comparisons where relevant."
-                                                </strong>
-                                        </em>
-                                </p>
+                                        <p class="text-white mb-6">
+                                                The question will ask you to:
+                                                <em>
+                                                        <strong>
+                                                                "Summarise the information by selecting and reporting the
+                                                                main features, and make comparisons where relevant."
+                                                        </strong>
+                                                </em>
+                                        </p>
 
-                                <p class="text-gray-800 mb-6">
-                                        Here are some sample <strong>Task 1 Academic</strong> questions:
-                                </p>
+                                        <p class="text-white mb-6">
+                                                Here are some sample <strong>Task 1 Academic</strong> questions:
+                                        </p>
 
                                 <!-- Carousel -->
                                 <div class="relative max-w-2xl mx-auto mb-8">
@@ -172,202 +204,204 @@
                                         </div>
                                 </div>
 
-                                <div class="bg-teal-50 border-l-4 border-teal-500 p-4 rounded">
-                                        <p class="text-gray-800">
-                                                <strong>Task 1</strong> is worth a third of the available marks for the
-                                                writing section, so you should aim to spend around
-                                                <strong>20 minutes</strong> on this task.
-                                        </p>
+                                        <div class="border-l-4 border-teal-500 pl-6">
+                                                <p class="text-white">
+                                                        <strong>Task 1</strong> is worth a third of the available marks for the
+                                                        writing section, so you should aim to spend around
+                                                        <strong>20 minutes</strong> on this task.
+                                                </p>
+                                        </div>
                                 </div>
                         </div>
-                </div>
-        </section>
+                </section>
 
-        <!-- Section 2: Technique -->
-        <section class="bg-teal-100 border-b-4 border-black py-8">
-                <div class="max-w-6xl mx-auto px-4">
-                        <h2 class="text-2xl font-bold text-center text-black mb-8">Task 1 (Ac) technique</h2>
-                        
-                        <div class="bg-white rounded-lg p-6 shadow-sm border border-gray-300 mb-8">
-                                <p class="text-gray-800 mb-8">Watch the Task 1 Academic report tutorial videos below:</p>
+                <!-- Section 2: Technique -->
+                <section class="bg-teal-600/25 rounded-lg p-4 md:p-8 shadow-sm border border-teal-600 mb-8">
+                        <h2 class="text-2xl font-bold text-center text-white mb-8">Task 1 (Ac) technique</h2>
+
+                        <div class="max-w-6xl mx-auto">
+                                <div class="bg-gray-800 rounded-lg p-6 text-lg border border-gray-700 mb-8">
+                                        <p class="text-white mb-8">Watch the Task 1 Academic report tutorial videos below:</p>
                                 
-                                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                                        <!-- Line Graph Example -->
-                                        <div class="text-center">
-                                                <h3 class="text-xl font-bold text-gray-800 mb-4">1) Line graph</h3>
-                                                
-                                                <img
-                                                        src="/writing-images/ielts-writing-test-1-line-graph.png"
-                                                        alt="Task 1 Line graph Q"
-                                                        class="w-full rounded border border-gray-300 cursor-pointer mb-6"
-                                                        tabindex="0"
-                                                        role="button"
-                                                        onclick={() => openLightbox('/writing-images/ielts-writing-test-1-line-graph.png')}
-                                                        onkeydown={(e) => e.key === 'Enter' || e.key === ' ' ? (e.preventDefault(), openLightbox('/writing-images/ielts-writing-test-1-line-graph.png')) : null}
-                                                />
+                                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                                                <!-- Line Graph Example -->
+                                                <div class="text-center">
+                                                        <h3 class="text-xl font-bold text-white mb-4">1) Line graph</h3>
+                                                        
+                                                        <img
+                                                                src="/writing-images/ielts-writing-test-1-line-graph.png"
+                                                                alt="Task 1 Line graph Q"
+                                                                class="w-full rounded border border-gray-600 cursor-pointer hover:opacity-80 transition-opacity mb-6"
+                                                                tabindex="0"
+                                                                role="button"
+                                                                onclick={() => openLightbox('/writing-images/ielts-writing-test-1-line-graph.png')}
+                                                                onkeydown={(e) => e.key === 'Enter' || e.key === ' ' ? (e.preventDefault(), openLightbox('/writing-images/ielts-writing-test-1-line-graph.png')) : null}
+                                                        />
 
-                                                <a
-                                                        href="https://insideielts.oppyo.com/video/embed/pbgbw3zl6y"
-                                                        target="_blank"
-                                                        title="InsideIELTS virtual examiner listening test preparation video"
-                                                        class="inline-block bg-teal-600 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded border-2 border-red-500 text-sm transition-colors mb-6"
-                                                >
-                                                        Watch VE vid
-                                                </a>
+                                                        <a
+                                                                href="https://insideielts.oppyo.com/video/embed/pbgbw3zl6y"
+                                                                target="_blank"
+                                                                title="InsideIELTS virtual examiner listening test preparation video"
+                                                                class="inline-block bg-teal-600 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded border-2 border-red-500 text-sm transition-colors mb-6"
+                                                        >
+                                                                Watch VE vid
+                                                        </a>
 
-                                                <img
-                                                        src="/writing-images/Ac1-line_graph.png"
-                                                        alt="Line graph example answer"
-                                                        class="w-full rounded border border-gray-300 cursor-pointer"
-                                                        tabindex="0"
-                                                        role="button"
-                                                        onclick={() => openLightbox('/writing-images/Ac1-line_graph.png')}
-                                                        onkeydown={(e) => e.key === 'Enter' || e.key === ' ' ? (e.preventDefault(), openLightbox('/writing-images/Ac1-line_graph.png')) : null}
-                                                />
-                                                <p class="text-sm text-gray-600 mt-2">Line graph example answer</p>
-                                        </div>
+                                                        <img
+                                                                src="/writing-images/Ac1-line_graph.png"
+                                                                alt="Line graph example answer"
+                                                                class="w-full rounded border border-gray-600 cursor-pointer hover:opacity-80 transition-opacity"
+                                                                tabindex="0"
+                                                                role="button"
+                                                                onclick={() => openLightbox('/writing-images/Ac1-line_graph.png')}
+                                                                onkeydown={(e) => e.key === 'Enter' || e.key === ' ' ? (e.preventDefault(), openLightbox('/writing-images/Ac1-line_graph.png')) : null}
+                                                        />
+                                                        <p class="text-sm text-gray-400 mt-2">Line graph example answer</p>
+                                                </div>
 
-                                        <!-- Map Example -->
-                                        <div class="text-center">
-                                                <h3 class="text-xl font-bold text-gray-800 mb-4">2) Map</h3>
-                                                
-                                                <img
-                                                        src="/writing-images/ielts-writing-test-1-map.png"
-                                                        alt="Task 1 Map Q"
-                                                        class="w-full rounded border border-gray-300 cursor-pointer mb-4"
-                                                        tabindex="0"
-                                                        role="button"
-                                                        onclick={() => openLightbox('/writing-images/ielts-writing-test-1-map.png')}
-                                                        onkeydown={(e) => e.key === 'Enter' || e.key === ' ' ? (e.preventDefault(), openLightbox('/writing-images/ielts-writing-test-1-map.png')) : null}
-                                                />
+                                                <!-- Map Example -->
+                                                <div class="text-center">
+                                                        <h3 class="text-xl font-bold text-white mb-4">2) Map</h3>
+                                                        
+                                                        <img
+                                                                src="/writing-images/ielts-writing-test-1-map.png"
+                                                                alt="Task 1 Map Q"
+                                                                class="w-full rounded border border-gray-600 cursor-pointer hover:opacity-80 transition-opacity mb-4"
+                                                                tabindex="0"
+                                                                role="button"
+                                                                onclick={() => openLightbox('/writing-images/ielts-writing-test-1-map.png')}
+                                                                onkeydown={(e) => e.key === 'Enter' || e.key === ' ' ? (e.preventDefault(), openLightbox('/writing-images/ielts-writing-test-1-map.png')) : null}
+                                                        />
 
-                                                <a
-                                                        href="https://insideielts.oppyo.com/video/embed/pff54lkawz"
-                                                        target="_blank"
-                                                        title="InsideIELTS virtual examiner listening test preparation video"
-                                                        class="inline-block bg-teal-600 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded border-2 border-red-500 text-sm transition-colors mb-4"
-                                                >
-                                                        Watch VE vid
-                                                </a>
+                                                        <a
+                                                                href="https://insideielts.oppyo.com/video/embed/pff54lkawz"
+                                                                target="_blank"
+                                                                title="InsideIELTS virtual examiner listening test preparation video"
+                                                                class="inline-block bg-teal-600 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded border-2 border-red-500 text-sm transition-colors mb-4"
+                                                        >
+                                                                Watch VE vid
+                                                        </a>
 
-                                                <img
-                                                        src="/writing-images/Ac1-map.png"
-                                                        alt="Map question example answer"
-                                                        class="w-full rounded border border-gray-300 cursor-pointer"
-                                                        tabindex="0"
-                                                        role="button"
-                                                        onclick={() => openLightbox('/writing-images/Ac1-map.png')}
-                                                        onkeydown={(e) => e.key === 'Enter' || e.key === ' ' ? (e.preventDefault(), openLightbox('/writing-images/Ac1-map.png')) : null}
-                                                />
-                                                <p class="text-sm text-gray-600 mt-2">Map question example answer</p>
+                                                        <img
+                                                                src="/writing-images/Ac1-map.png"
+                                                                alt="Map question example answer"
+                                                                class="w-full rounded border border-gray-600 cursor-pointer hover:opacity-80 transition-opacity"
+                                                                tabindex="0"
+                                                                role="button"
+                                                                onclick={() => openLightbox('/writing-images/Ac1-map.png')}
+                                                                onkeydown={(e) => e.key === 'Enter' || e.key === ' ' ? (e.preventDefault(), openLightbox('/writing-images/Ac1-map.png')) : null}
+                                                        />
+                                                        <p class="text-sm text-gray-400 mt-2">Map question example answer</p>
+                                                </div>
                                         </div>
                                 </div>
                         </div>
-                </div>
-        </section>
+                </section>
 
-        <!-- Section 3: Practice -->
-        <section class="bg-gray-200 border-b-4 border-black py-8">
-                <div class="max-w-6xl mx-auto px-4">
-                        <h2 class="text-2xl font-bold text-center text-black mb-8">Task 1 (Ac) practice</h2>
-                        
-                        <div class="bg-white rounded-lg p-6 shadow-sm border border-gray-300 mb-8">
-                                <p class="text-gray-800 mb-8">
-                                        <strong>TASK</strong>: complete and upload this pair of short Task 1 Academic practice exercises.
-                                </p>
+                <!-- Section 3: Practice -->
+                <section class="bg-cyan-800/25 rounded-lg p-4 md:p-8 shadow-sm border border-teal-500 mb-8">
+                        <h2 class="text-2xl font-bold text-center text-white mb-8">Task 1 (Ac) practice</h2>
+
+                        <div class="max-w-6xl mx-auto">
+                                <div class="bg-gray-800 rounded-lg p-6 text-lg border border-gray-700 mb-8">
+                                        <p class="text-white mb-8">
+                                                <strong>TASK</strong>: complete and upload this pair of short Task 1 Academic practice exercises.
+                                        </p>
                                 
                                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
                                         <!-- Practice Exercise 1 -->
                                         <div class="text-center">
-                                                <h3 class="text-xl font-bold text-gray-800 mb-4">1) Line graph</h3>
+                                                <h3 class="text-xl font-bold text-white mb-4">1) Line graph</h3>
                                                 
                                                 <img
                                                         src="/LESSONS/les03/T1_Ac(3).png"
                                                         alt="Task 1 Line graph Q"
-                                                        class="w-full rounded border border-gray-300 cursor-pointer mb-6"
+                                                        class="w-full rounded border border-gray-600 cursor-pointer hover:opacity-80 transition-opacity mb-6"
                                                         tabindex="0"
                                                         role="button"
                                                         onclick={() => openLightbox('/LESSONS/les03/T1_Ac(3).png')}
                                                         onkeydown={(e) => e.key === 'Enter' || e.key === ' ' ? (e.preventDefault(), openLightbox('/LESSONS/les03/T1_Ac(3).png')) : null}
                                                 />
 
-                                                <div class="bg-teal-50 border border-teal-300 rounded-lg p-4 mb-4">
-                                                        <h4 class="font-bold text-center text-gray-800 mb-3 underline">TASK</h4>
-                                                        <p class="text-gray-800 mb-3">
+                                                <div class="bg-gray-700 border border-gray-600 rounded-lg p-4 mb-4">
+                                                        <h4 class="font-bold text-center text-white mb-3 underline">TASK</h4>
+                                                        <p class="text-white mb-3">
                                                                 Write the first paragraph for this Task 1 question.
                                                         </p>
-                                                        <ul class="text-left text-gray-700 space-y-1 mb-3">
+                                                        <ul class="text-left text-gray-300 space-y-1 mb-3">
                                                                 <li>• paraphrase the question</li>
                                                                 <li>• say what the graph shows</li>
                                                                 <li>• mention the broad trend/s (overview)</li>
                                                         </ul>
-                                                        <p class="text-sm text-gray-600 italic">(Maximum 60 words)</p>
+                                                        <p class="text-sm text-gray-400 italic">(Maximum 60 words)</p>
                                                 </div>
 
-                                                <h4 class="font-bold text-gray-800 mb-2 underline">answer sheet</h4>
+                                                <h4 class="font-bold text-white mb-2 underline">answer sheet</h4>
                                                 <textarea
                                                         bind:value={task1Answer}
                                                         rows="15"
                                                         cols="40"
                                                         placeholder="  write your response"
-                                                        class="w-full p-3 border border-gray-300 rounded resize-none focus:outline-none focus:ring-2 focus:ring-teal-500"
+                                                        class="w-full p-3 border border-gray-500 bg-gray-700 text-white rounded resize-none focus:outline-none focus:ring-2 focus:ring-teal-500"
                                                 ></textarea>
                                         </div>
 
                                         <!-- Practice Exercise 2 -->
                                         <div class="text-center">
-                                                <h3 class="text-xl font-bold text-gray-800 mb-4">2) Map</h3>
+                                                <h3 class="text-xl font-bold text-white mb-4">2) Map</h3>
                                                 
                                                 <img
                                                         src="/LESSONS/les03/T1_Ac(5).png"
                                                         alt="Task 1 Map Q"
-                                                        class="w-full rounded border border-gray-300 cursor-pointer mb-4"
+                                                        class="w-full rounded border border-gray-600 cursor-pointer hover:opacity-80 transition-opacity mb-4"
                                                         tabindex="0"
                                                         role="button"
                                                         onclick={() => openLightbox('/LESSONS/les03/T1_Ac(5).png')}
                                                         onkeydown={(e) => e.key === 'Enter' || e.key === ' ' ? (e.preventDefault(), openLightbox('/LESSONS/les03/T1_Ac(5).png')) : null}
                                                 />
 
-                                                <div class="bg-teal-50 border border-teal-300 rounded-lg p-4 mb-4">
-                                                        <h4 class="font-bold text-center text-gray-800 mb-3 underline">TASK</h4>
-                                                        <p class="text-gray-800 mb-3">
+                                                <div class="bg-gray-700 border border-gray-600 rounded-lg p-4 mb-4">
+                                                        <h4 class="font-bold text-center text-white mb-3 underline">TASK</h4>
+                                                        <p class="text-white mb-3">
                                                                 List the main features that you will include in your report for this Task 1 question.
                                                         </p>
-                                                        <ul class="text-left text-gray-700 space-y-1 mb-3">
+                                                        <ul class="text-left text-gray-300 space-y-1 mb-3">
                                                                 <li>• different buildings</li>
                                                                 <li>• paths</li>
                                                                 <li>• other additional features</li>
                                                         </ul>
-                                                        <p class="text-sm text-gray-600 italic">(Maximum 5-6 points)</p>
+                                                        <p class="text-sm text-gray-400 italic">(Maximum 5-6 points)</p>
                                                 </div>
 
-                                                <h4 class="font-bold text-gray-800 mb-2 underline">answer sheet</h4>
+                                                <h4 class="font-bold text-white mb-2 underline">answer sheet</h4>
                                                 <textarea
                                                         bind:value={task2Answer}
                                                         rows="12"
                                                         cols="40"
                                                         placeholder=" write your response"
-                                                        class="w-full p-3 border border-gray-300 rounded resize-none focus:outline-none focus:ring-2 focus:ring-teal-500"
+                                                        class="w-full p-3 border border-gray-500 bg-gray-700 text-white rounded resize-none focus:outline-none focus:ring-2 focus:ring-teal-500"
                                                 ></textarea>
                                         </div>
                                 </div>
+                                </div>
                         </div>
-                </div>
-        </section>
+                </section>
 
-        <!-- End Section -->
-        <section class="py-8">
-                <div class="max-w-6xl mx-auto px-4 text-center">
-                        <p class="text-white mb-8">End of Intro Lesson</p>
-                        <a
-                                href="/IETPP#lesson-03"
-                                class="text-teal-400 hover:underline font-semibold"
-                                data-sveltekit-reload
-                        >
-                                ← Back to Contents
-                        </a>
-                </div>
-        </section>
+                <!-- End Section -->
+                <section class="py-8">
+                        <div class="max-w-6xl mx-auto px-4 text-center">
+                                <p class="text-white mb-8">End of Task 1 (Ac) Page</p>
+                                <a
+                                        href="/IETPP#lesson-03"
+                                        class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300 font-semibold"
+                                        data-sveltekit-reload
+                                >
+                                        ← Back to Contents
+                                </a>
+                        </div>
+                </section>
+
+        </div>
 
         <!-- Lightbox -->
         {#if lightboxOpen}
