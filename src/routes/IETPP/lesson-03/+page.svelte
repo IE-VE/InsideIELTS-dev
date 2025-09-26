@@ -439,9 +439,11 @@
                                            </button>
                                    </a>
                                    
-                                   <button class="bg-teal-600 hover:bg-teal-700 text-white font-bold py-6 px-8 rounded-lg transition-colors duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
-                                           <div class="text-xl">Task 2</div>
-                                   </button>
+                                   <a href="/IETPP/lesson-03T2" data-sveltekit-reload class="block">
+                                           <button class="bg-teal-600 hover:bg-teal-700 text-white font-bold py-6 px-8 rounded-lg transition-colors duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 w-full">
+                                                   <div class="text-xl">Task 2</div>
+                                           </button>
+                                   </a>
                            </div>
                                    
                         </div>
