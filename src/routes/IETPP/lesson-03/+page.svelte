@@ -55,7 +55,7 @@
                                 <ul class="list-disc list-inside space-y-2 text-white">
                                         <li>Writing Test make-up</li>
                                         <li>Writing Test assessment</li>
-                                        <li>Writing Test example model answers</li>
+                                        <li>Writing Test example Q & A</li>
                                 </ul>
                         </div>
 
@@ -127,7 +127,7 @@
                 <section class="bg-cyan-600/25 rounded-lg p-4 md:p-8 shadow-sm border border-teal-600 mb-8">
                         <h2 class="text-2xl font-bold text-center text-white mb-8">
                                 Writing Test make-up</h2>
-                        <div class="max-w-4xl mx-auto">  
+                        <div class="max-w-6xl mx-auto">  
 
                          <div class="bg-gray-800 rounded-lg p-6 text-lg border border-gray-700 mb-8">
                                         <p class="text-white mb-6">
@@ -160,7 +160,10 @@
                                                                 src="/LESSONS/les03/T1_Ac(2).png"
                                                                 alt="Writing Task 1 Academic example"
                                                                 class="w-full rounded border border-gray-600 cursor-pointer hover:opacity-80 transition-opacity"
+                                                                tabindex="0"
+                                                                role="button"
                                                                 onclick={() => openLightbox('/LESSONS/les03/T1_Ac(2).png')}
+                                                                onkeydown={(e) => e.key === 'Enter' || e.key === ' ' ? (e.preventDefault(), openLightbox('/LESSONS/les03/T1_Ac(2).png')) : null}
                                                         />
                                                 </div>
 
@@ -170,7 +173,10 @@
                                                                 src="/LESSONS/les03/W_answersheet-T1.png"
                                                                 alt="Task 1 Writing answer sheet"
                                                                 class="w-full rounded border border-gray-600 cursor-pointer hover:opacity-80 transition-opacity"
+                                                                tabindex="0"
+                                                                role="button"
                                                                 onclick={() => openLightbox('/LESSONS/les03/W_answersheet-T1.png')}
+                                                                onkeydown={(e) => e.key === 'Enter' || e.key === ' ' ? (e.preventDefault(), openLightbox('/LESSONS/les03/W_answersheet-T1.png')) : null}
                                                         />
                                                 </div>
 
@@ -180,7 +186,10 @@
                                                                 src="/LESSONS/les03/T1_GT.png"
                                                                 alt="Writing Task 1 General Training example"
                                                                 class="w-full rounded border border-gray-600 cursor-pointer hover:opacity-80 transition-opacity"
+                                                                tabindex="0"
+                                                                role="button"
                                                                 onclick={() => openLightbox('/LESSONS/les03/T1_GT.png')}
+                                                                onkeydown={(e) => e.key === 'Enter' || e.key === ' ' ? (e.preventDefault(), openLightbox('/LESSONS/les03/T1_GT.png')) : null}
                                                         />
                                                 </div>
                                         </div>
@@ -198,7 +207,10 @@
                                                                 src="/LESSONS/les03/T2.png"
                                                                 alt="Task 2 essay question example"
                                                                 class="w-full rounded border border-gray-600 cursor-pointer hover:opacity-80 transition-opacity"
+                                                                tabindex="0"
+                                                                role="button"
                                                                 onclick={() => openLightbox('/LESSONS/les03/T2.png')}
+                                                                onkeydown={(e) => e.key === 'Enter' || e.key === ' ' ? (e.preventDefault(), openLightbox('/LESSONS/les03/T2.png')) : null}
                                                         />
                                                 </div>
 
@@ -208,7 +220,10 @@
                                                                 src="/LESSONS/les03/W_answersheet-T2.png"
                                                                 alt="Task 2 Writing answer sheet"
                                                                 class="w-full rounded border border-gray-600 cursor-pointer hover:opacity-80 transition-opacity"
+                                                                tabindex="0"
+                                                                role="button"
                                                                 onclick={() => openLightbox('/LESSONS/les03/W_answersheet-T2.png')}
+                                                                onkeydown={(e) => e.key === 'Enter' || e.key === ' ' ? (e.preventDefault(), openLightbox('/LESSONS/les03/W_answersheet-T2.png')) : null}
                                                         />
                                                 </div>
                                         </div>
@@ -225,13 +240,12 @@
 
                 <!-- Section 2: Writing Test Assessment -->
                 <section class="bg-teal-600/25 rounded-lg p-4 md:p-8 shadow-sm border border-teal-600 mb-8">
-                        <h2 class="text-2xl font-bold text-center text-white mb-8">Writing Test assessment</h2>
+                        <h2 class="text-2xl font-bold text-center text-white mb-8">Writing Test Assessment</h2>
 
-                        <div class="max-w-4xl mx-auto">
+                        <div class="max-w-6xl mx-auto">
                                 <div class="bg-gray-800 rounded-lg p-6 text-lg border border-gray-700 mb-8">
                                         <p class="text-white mb-6">
-                                                The writing test is assessed by Cambridge qualified writing test assessors using a rubric
-                                                very similar to the one shown below.
+                                                The writing test is assessed by Cambridge qualified writing test assessors using a rubric very similar to the one shown below.
                                         </p>
 
                                         <div class="flex justify-center mb-8">
@@ -252,14 +266,16 @@
                                                                 src="/Writing_T2_rubic.png"
                                                                 alt="Official IELTS Writing Test assessment rubric (public version)"
                                                                 class="max-w-full rounded border border-gray-600 cursor-pointer hover:opacity-80 transition-opacity"
+                                                                tabindex="0"
+                                                                role="button"
                                                                 onclick={() => openLightbox('/Writing_T2_rubic.png')}
+                                                                onkeydown={(e) => e.key === 'Enter' || e.key === ' ' ? (e.preventDefault(), openLightbox('/Writing_T2_rubic.png')) : null}
                                                         />
                                                 </div>
                                         </div>
 
-                                        <p class="text-white mb-6">
-                                                Although the full rubric might look very complex, as a test taker you only need to have a clear understanding
-                                                of the four assessment criteria and the two or three descriptors used for each.
+                                        <p class="text-white mb-10">
+                                                Although the full rubric might look very complex, as a test taker you only need to have a basic understanding of the four assessment criteria and the general descriptors used for each.
                                         </p>
 
                                         <p class="text-white mb-4 font-bold">
@@ -273,39 +289,25 @@
                                                 <li>GRAMMATICAL RANGE & ACCURACY <strong>(GRA)</strong> - grammar.</li>
                                         </ul>
 
-                                        <p class="text-white mb-6">
+                                        <p class="text-white mb-10">
                                                 (*The Task 1 and Task 2 rubrics differ only in regard to the
                                                 first assessment component: <strong>Task Achievement (TA)</strong> in
                                                 <strong>Task 1</strong> and <strong>Task Response (TR)</strong> in <strong>Task 2</strong>.)
                                         </p>
 
                                         <p class="text-white mb-6">
-                                                Under the headings in each column you will see a list of
-                                                bullet-pointed descriptors which describe the writing features
-                                                which must be demonstrated by the candidate in order to achieve
-                                                the corresponding band score rating.
-                                        </p>
-
-                                        <p class="text-white mb-6">
-                                                The <strong>IELTS</strong> writing test assessor has all of these criteria in
-                                                mind and, as he/she reads through your written response, is
-                                                looking for examples of each in order to accurately assess and grade the
-                                                level of your writing ability.
+                                                Under the headings in each column of the rubric you will see a list of bullet-pointed descriptors which describe the writing features which must be demonstrated in order to achieve the corresponding band score rating.
                                         </p>
 
                                         <p class="text-white">
-                                                To be awarded a certain band level rating you must be able to
-                                                demonstrate <u><strong>all</strong></u> of the descriptors specified at the corresponding
-                                                band level. We'll cover each of the four assessment criteria, their descriptors, and how they relate to each of 
-                                                the <strong>IELTS</strong> writing test tasks, in Lessons 3(i) to 3(iv).
-                                        </p>
+                                                To be awarded a certain band level rating you must be able to demonstrate <u><strong>all</strong></u> of the descriptors specified at the corresponding band level. </p>
                                 </div>
                         </div>
                 </section>
 
                 <!-- Section 3: Writing Test Example Model Answers -->
                 <section class="bg-cyan-800/25 rounded-lg p-4 md:p-8 shadow-sm border border-teal-500 mb-8">
-                        <h2 class="text-2xl font-bold text-center text-white mb-8">Writing Test example model answers</h2>
+                        <h2 class="text-2xl font-bold text-center text-white mb-8">Writing Test example Q & A</h2>
 
                         <div class="max-w-6xl mx-auto">
                                 <p class="text-white text-lg mb-8">
@@ -330,7 +332,10 @@
                                                                                 src="/LESSONS/les03/W_T1(Ac)example.png"
                                                                                 alt="Writing Task 1 AC example"
                                                                                 class="w-full rounded border border-gray-500 cursor-pointer"
+                                                                                tabindex="0"
+                                                                                role="button"
                                                                                 onclick={() => openLightbox('/LESSONS/les03/W_T1(Ac)example.png')}
+                                                                                onkeydown={(e) => e.key === 'Enter' || e.key === ' ' ? (e.preventDefault(), openLightbox('/LESSONS/les03/W_T1(Ac)example.png')) : null}
                                                                         />
                                                                 </div>
                                                                 
@@ -356,7 +361,10 @@
                                                                                 src="/LESSONS/les03/W_T1(GT)example.png"
                                                                                 alt="Writing Task 1 GT example"
                                                                                 class="w-full rounded border border-gray-500 cursor-pointer"
+                                                                                tabindex="0"
+                                                                                role="button"
                                                                                 onclick={() => openLightbox('/LESSONS/les03/W_T1(GT)example.png')}
+                                                                                onkeydown={(e) => e.key === 'Enter' || e.key === ' ' ? (e.preventDefault(), openLightbox('/LESSONS/les03/W_T1(GT)example.png')) : null}
                                                                         />
                                                                 </div>
                                                                 
@@ -383,12 +391,15 @@
                                                 
                                                 <div class="flex flex-col gap-8">
                                                         <!-- Image -->
-                                                        <div class="w-full">
+                                                        <div class="w-max-4xl mx-auto">
                                                                 <img
                                                                         src="/LESSONS/les03/W_T2example.png"
                                                                         alt="Writing Task 2 example"
                                                                         class="w-full rounded border border-gray-500 cursor-pointer"
+                                                                        tabindex="0"
+                                                                        role="button"
                                                                         onclick={() => openLightbox('/LESSONS/les03/W_T2example.png')}
+                                                                        onkeydown={(e) => e.key === 'Enter' || e.key === ' ' ? (e.preventDefault(), openLightbox('/LESSONS/les03/W_T2example.png')) : null}
                                                                 />
                                                         </div>
                                                         
@@ -402,17 +413,60 @@
                                                                 </div>
                                                         </div>
                                                 </div>
-                                        </div>
-                                </div>
-
-                                <div class="text-center">
-                                        <p class="text-white text-lg font-bold">
-                                                End of Lesson 03
-                                        </p>
+                                        </div>           
                                 </div>
                         </div>
+                    
                 </section>
-        </div>
+
+                <section class="py-8">
+
+                        <div class="bg-gray-800 rounded-lg p-6 shadow-sm border border-gray-700">
+                           <div>   <p class="max-w-5xl mx-auto mb-8">Before we cover writing task strategy and the four writing assessment criteria in Lessons 3(i) to 3(iv), take a more in-depth look at each of the Writing Tasks.</p>                      
+                           </div>
+                           
+                           <!-- Three Large Buttons -->
+                           <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+                                   <button class="bg-teal-600 hover:bg-teal-700 text-white font-bold py-6 px-8 rounded-lg transition-colors duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                                           <div class="text-xl">Task 1 (Ac)</div>
+                                   </button>
+                                   
+                                   <button class="bg-teal-600 hover:bg-teal-700 text-white font-bold py-6 px-8 rounded-lg transition-colors duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                                           <div class="text-xl">Task 1 (GT)</div>
+                                   </button>
+                                   
+                                   <button class="bg-teal-600 hover:bg-teal-700 text-white font-bold py-6 px-8 rounded-lg transition-colors duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                                           <div class="text-xl">Task 2</div>
+                                   </button>
+                           </div>
+                                   
+                        </div>
+                </section>
+                
+                  <!-- Footer Navigation -->
+                                <section class="text-center py-8">
+
+                                        <div class="bg-gray-800 rounded-lg p-6 shadow-sm border border-gray-700">
+                                                <div class="flex justify-between items-center">
+                                                        <a
+                                                                href="/IETPP#lesson-03"
+                                                                class="text-teal-400 hover:underline font-semibold"
+                                                                data-sveltekit-reload
+                                                        >
+                                                                ← Back to Contents
+                                                        </a>
+
+                                                        <a
+                                                                href="/IETPP/lesson-03/lesson03-i"
+                                                                class="text-teal-400 hover:underline font-semibold"
+                                                                data-sveltekit-reload
+                                                        >
+                                                                Next Lesson →
+                                                        </a>
+                                                </div>
+                                        </div>
+                                </section>
+                </div>
 
         <!-- Lightbox -->
         {#if lightboxOpen}
