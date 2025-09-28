@@ -145,45 +145,53 @@
                                 </p>
 
                                 <!-- Carousel -->
-                                <div class="relative max-w-4xl mx-auto mb-8">
-                                        <div class="bg-gray-700 rounded-lg p-6 border border-gray-600">
-                                                <!-- Current slide display -->
-                                                <div class="text-center mb-4">
-                                                        <h3 class="text-xl font-semibold text-white mb-4">{slides[currentSlide].title}</h3>
-                                                        <img
-                                                                src={slides[currentSlide].src}
-                                                                alt={slides[currentSlide].alt}
-                                                                class="w-full max-w-2xl mx-auto rounded border border-gray-500 cursor-pointer hover:opacity-80 transition-opacity"
-                                                                tabindex="0"
-                                                                role="button"
-                                                                onclick={() => openLightbox(slides[currentSlide].src)}
-                                                                onkeydown={(e) => e.key === 'Enter' || e.key === ' ' ? (e.preventDefault(), openLightbox(slides[currentSlide].src)) : null}
-                                                        />
-                                                </div>
-
-                                                <!-- Navigation buttons -->
-                                                <div class="flex justify-center gap-4">
-                                                        <button
-                                                                onclick={prevSlide}
-                                                                class="bg-teal-600 hover:bg-teal-700 text-white px-4 py-2 rounded transition-colors"
-                                                        >
-                                                                ◀ Previous
-                                                        </button>
-                                                        <button
-                                                                onclick={nextSlide}
-                                                                class="bg-teal-600 hover:bg-teal-700 text-white px-4 py-2 rounded transition-colors"
-                                                        >
-                                                                Next ▶
-                                                        </button>
-                                                </div>
-
-                                                <!-- Slide indicators -->
-                                                <div class="flex justify-center mt-4 gap-2">
+                                <div class="relative max-w-2xl mx-auto mb-8">
+                                        <div class="relative overflow-hidden rounded-lg bg-gray-100">
+                                                <div class="flex transition-transform duration-300 ease-in-out"
+                                                     style="transform: translateX(-{currentSlide * 100}%)">
                                                         {#each slides as slide, index}
+                                                                <div class="w-full flex-shrink-0 bg-white p-4">
+                                                                        <h3 class="text-xl font-semibold text-gray-800 text-center mb-4">{slide.title}</h3>
+                                                                        <img
+                                                                                src={slide.src}
+                                                                                alt={slide.alt}
+                                                                                class="w-full h-auto cursor-pointer"
+                                                                                tabindex="0"
+                                                                                role="button"
+                                                                                onclick={() => openLightbox(slide.src)}
+                                                                                onkeydown={(e) => e.key === 'Enter' || e.key === ' ' ? (e.preventDefault(), openLightbox(slide.src)) : null}
+                                                                        />
+                                                                </div>
+                                                        {/each}
+                                                </div>
+                                                
+                                                <!-- Navigation buttons -->
+                                                <button 
+                                                        class="absolute left-2 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 hover:bg-opacity-75 text-white p-2 rounded-full transition-all"
+                                                        onclick={prevSlide}
+                                                >
+                                                        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                                                        </svg>
+                                                </button>
+                                                
+                                                <button 
+                                                        class="absolute right-2 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 hover:bg-opacity-75 text-white p-2 rounded-full transition-all"
+                                                        onclick={nextSlide}
+                                                >
+                                                        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                                                        </svg>
+                                                </button>
+                                        </div>
+                                        
+                                        <!-- Slide indicators -->
+                                        <div class="text-center mt-4">
+                                                <div class="flex justify-center space-x-2">
+                                                        {#each slides as _, index}
                                                                 <button
-                                                                        class="w-3 h-3 rounded-full {index === currentSlide ? 'bg-teal-500' : 'bg-gray-500'} transition-colors"
+                                                                        class="w-2 h-2 rounded-full transition-all {index === currentSlide ? 'bg-teal-600' : 'bg-gray-400'}"
                                                                         onclick={() => currentSlide = index}
-                                                                        aria-label="Go to slide {index + 1}"
                                                                 ></button>
                                                         {/each}
                                                 </div>
@@ -283,9 +291,9 @@
                                         <div class="mb-12">
                                                 <h3 class="text-xl font-bold text-white mb-6 text-center">1) Letter of complaint</h3>
                                                 
-                                                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
+                                                <div class="grid grid-cols-1 md:grid-cols-5 gap-8 items-start">
                                                         <!-- Left Column - Image (2/3 width) -->
-                                                        <div class="md:col-span-2">
+                                                        <div class="md:col-span-3">
                                                                 <img
                                                                         src="/LESSONS/les03/T1_GT(6).png"
                                                                         alt="Task 1 GT complaint practice"
@@ -298,7 +306,7 @@
                                                         </div>
 
                                                         <!-- Right Column - Task and Answer Sheet (1/3 width) -->
-                                                        <div class="md:col-span-1 space-y-4">
+                                                        <div class="md:col-span-2 space-y-4">
                                                                 <div class="bg-gray-700 border border-gray-600 rounded-lg p-4">
                                                                         <h4 class="font-bold text-center text-white mb-3 underline">TASK</h4>
                                                                         <p class="text-white mb-3">
@@ -313,7 +321,7 @@
                                                                 </div>
 
                                                                 <div>
-                                                                        <h4 class="font-bold text-white mb-2 underline">answer sheet</h4>
+                                                                        <h4 class="font-bold text-white text-center mb-2">answer sheet</h4>
                                                                         <textarea
                                                                                 bind:value={task1Answer}
                                                                                 rows="12"
@@ -329,9 +337,9 @@
                                         <div class="mb-8">
                                                 <h3 class="text-xl font-bold text-white mb-6 text-center">2) Letter to inform</h3>
                                                 
-                                                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
+                                                <div class="grid grid-cols-1 md:grid-cols-5 gap-8 items-start">
                                                         <!-- Left Column - Image (2/3 width) -->
-                                                        <div class="md:col-span-2">
+                                                        <div class="md:col-span-3">
                                                                 <img
                                                                         src="/LESSONS/les03/T1_GT(4).png"
                                                                         alt="Task 1 GT inform practice"
@@ -344,7 +352,7 @@
                                                         </div>
 
                                                         <!-- Right Column - Task and Answer Sheet (1/3 width) -->
-                                                        <div class="md:col-span-1 space-y-4">
+                                                        <div class="md:col-span-2 space-y-4">
                                                                 <div class="bg-gray-700 border border-gray-600 rounded-lg p-4">
                                                                         <h4 class="font-bold text-center text-white mb-3 underline">TASK</h4>
                                                                         <p class="text-white mb-3">
@@ -359,7 +367,7 @@
                                                                 </div>
 
                                                                 <div>
-                                                                        <h4 class="font-bold text-white mb-2 underline">answer sheet</h4>
+                                                                        <h4 class="font-bold text-white text-center mb-2">answer sheet</h4>
                                                                         <textarea
                                                                                 bind:value={task2Answer}
                                                                                 rows="12"
