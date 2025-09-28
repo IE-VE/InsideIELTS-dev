@@ -387,7 +387,7 @@
                         <div class="bg-gray-800 rounded-lg p-6 shadow-sm border border-gray-700">
                                 <div class="flex justify-between items-center">
                                         <a
-                                                href="/IETPP/lesson-03"
+                                                href="/IETPP#lesson-03"
                                                 class="text-teal-400 hover:underline font-semibold"
                                                 data-sveltekit-reload
                                         >
@@ -395,11 +395,11 @@
                                         </a>
 
                                         <a
-                                                href="/IETPP#lesson-03"
+                                                href="/IETPP/lesson-03/lesson03-i"
                                                 class="text-teal-400 hover:underline font-semibold"
                                                 data-sveltekit-reload
                                         >
-                                                Back to Contents
+                                                Next Lesson →
                                         </a>
                                 </div>
                         </div>
