@@ -21,12 +21,12 @@
         // Carousel functionality
         let currentSlide = 0;
         const slides = [
-                { title: "Line graph", src: "/writing-images/ielts-writing-test-1-line-graph.png", alt: "ielts writing test-1 line graph" },
-                { title: "Table", src: "/writing-images/ielts-writing-test-1-table-2.png", alt: "ielts writing test-1 table" },
-                { title: "Pie chart", src: "/writing-images/ielts-writing-test-1-pie-chart.png", alt: "ielts writing test-1 pie chart" },
-                { title: "Bar chart", src: "/writing-images/ielts-writing-test-1-bar-chart.png", alt: "ielts writing test-1 bar chart" },
-                { title: "Process diagram", src: "/writing-images/ielts-writing-test-1-process.png", alt: "ielts writing test-1 process diagram" },
-                { title: "Map", src: "/writing-images/ielts-writing-test-1-map.png", alt: "ielts writing test-1 map" }
+                { title: "Line graph Q", src: "/writing-images/ielts-writing-test-1-line-graph.png", alt: "ielts writing test-1 line graph" },
+                { title: "Table Question", src: "/writing-images/ielts-writing-test-1-table-2.png", alt: "ielts writing test-1 table" },
+                { title: "Pie chart Q", src: "/writing-images/ielts-writing-test-1-pie-chart.png", alt: "ielts writing test-1 pie chart" },
+                { title: "Bar chart Q", src: "/writing-images/ielts-writing-test-1-bar-chart.png", alt: "ielts writing test-1 bar chart" },
+                { title: "Process diagram Q", src: "/writing-images/ielts-writing-test-1-process.png", alt: "ielts writing test-1 process diagram" },
+                { title: "Map Question", src: "/writing-images/ielts-writing-test-1-map.png", alt: "ielts writing test-1 map" }
         ];
 
         function nextSlide() {
@@ -239,17 +239,17 @@
                                                                 onkeydown={(e) => e.key === 'Enter' || e.key === ' ' ? (e.preventDefault(), openLightbox('/writing-images/ielts-writing-test-1-line-graph.png')) : null}
                                                         />
 
-                                                        <a
+                                            <div class="mt-8">            <a
                                                                 href="https://insideielts.oppyo.com/video/embed/pbgbw3zl6y"
                                                                 target="_blank"
                                                                 title="InsideIELTS virtual examiner listening test preparation video"
                                                                 class="inline-block bg-teal-600 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded border-2 border-red-500 text-sm transition-colors mb-6"
                                                         >
                                                                 Watch VE vid
-                                                        </a>
+                                                        </a> </div>
 
                                                         <div class="bg-gray-700 border border-gray-600 rounded-lg p-4 text-center">
-                                                                <p class="text-gray-400 text-sm">Model answer video provides detailed explanation and example response structure for line graph questions.</p>
+                                                                <p class="text-gray-400 text-xs">Model answer video provides detailed explanation and example response structure for line graph questions.</p>
                                                         </div>
                                                 </div>
 
@@ -267,7 +267,7 @@
                                                                 onkeydown={(e) => e.key === 'Enter' || e.key === ' ' ? (e.preventDefault(), openLightbox('/writing-images/ielts-writing-test-1-map.png')) : null}
                                                         />
 
-                                                        <a
+                                                        <div class="mt-8"><a
                                                                 href="https://insideielts.oppyo.com/video/embed/pff54lkawz"
                                                                 target="_blank"
                                                                 title="InsideIELTS virtual examiner listening test preparation video"
@@ -275,9 +275,10 @@
                                                         >
                                                                 Watch VE vid
                                                         </a>
+                                                                </div>
 
-                                                        <div class="bg-gray-700 border border-gray-600 rounded-lg p-4 text-center">
-                                                                <p class="text-gray-400 text-sm">Model answer video provides detailed explanation and example response structure for map questions.</p>
+                                                        <div class="bg-gray-700 border border-gray-600 rounded-lg p-4 text-center mb-6">
+                                                                <p class="text-gray-400 text-xs">Model answer video provides detailed explanation and example response structure for map questions.</p>
                                                         </div>
                                                 </div>
                                         </div>
@@ -295,79 +296,95 @@
                                                 <strong>TASK</strong>: complete and upload this pair of short Task 1 Academic practice exercises.
                                         </p>
                                 
-                                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                                        <!-- Practice Exercise 1 -->
-                                        <div class="text-center">
-                                                <h3 class="text-xl font-bold text-white mb-4">1) Line graph</h3>
-                                                
-                                                <img
-                                                        src="/LESSONS/les03/T1_Ac(3).png"
-                                                        alt="Task 1 Line graph Q"
-                                                        class="w-full rounded border border-gray-600 cursor-pointer hover:opacity-80 transition-opacity mb-6"
-                                                        tabindex="0"
-                                                        role="button"
-                                                        onclick={() => openLightbox('/LESSONS/les03/T1_Ac(3).png')}
-                                                        onkeydown={(e) => e.key === 'Enter' || e.key === ' ' ? (e.preventDefault(), openLightbox('/LESSONS/les03/T1_Ac(3).png')) : null}
-                                                />
-
-                                                <div class="bg-gray-700 border border-gray-600 rounded-lg p-4 mb-4">
-                                                        <h4 class="font-bold text-center text-white mb-3 underline">TASK</h4>
-                                                        <p class="text-white mb-3">
-                                                                Write the first paragraph for this Task 1 question.
-                                                        </p>
-                                                        <ul class="text-left text-gray-300 space-y-1 mb-3">
-                                                                <li>• paraphrase the question</li>
-                                                                <li>• say what the graph shows</li>
-                                                                <li>• mention the broad trend/s (overview)</li>
-                                                        </ul>
-                                                        <p class="text-sm text-gray-400 italic">(Maximum 60 words)</p>
+                                <!-- Practice Exercise 1 -->
+                                <div class="mb-12">
+                                        <h3 class="text-xl font-bold text-white mb-6 text-center">1) Line graph</h3>
+                                        
+                                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                                                <!-- Left Column - Image -->
+                                                <div class="flex justify-center">
+                                                        <img
+                                                                src="/LESSONS/les03/T1_Ac(3).png"
+                                                                alt="Task 1 Line graph Q"
+                                                                class="w-full max-w-md rounded border border-gray-600 cursor-pointer hover:opacity-80 transition-opacity"
+                                                                tabindex="0"
+                                                                role="button"
+                                                                onclick={() => openLightbox('/LESSONS/les03/T1_Ac(3).png')}
+                                                                onkeydown={(e) => e.key === 'Enter' || e.key === ' ' ? (e.preventDefault(), openLightbox('/LESSONS/les03/T1_Ac(3).png')) : null}
+                                                        />
                                                 </div>
 
-                                                <h4 class="font-bold text-white mb-2 underline">answer sheet</h4>
-                                                <textarea
-                                                        bind:value={task1Answer}
-                                                        rows="15"
-                                                        cols="40"
-                                                        placeholder="  write your response"
-                                                        class="w-full p-3 border border-gray-500 bg-gray-700 text-white rounded resize-none focus:outline-none focus:ring-2 focus:ring-teal-500"
-                                                ></textarea>
+                                                <!-- Right Column - Task and Answer Sheet -->
+                                                <div class="space-y-4">
+                                                        <div class="bg-gray-700 border border-gray-600 rounded-lg p-4">
+                                                                <h4 class="font-bold text-center text-white mb-3 underline">TASK</h4>
+                                                                <p class="text-white mb-3">
+                                                                        Write the first paragraph for this Task 1 question.
+                                                                </p>
+                                                                <ul class="text-left text-gray-300 space-y-1 mb-3">
+                                                                        <li>• paraphrase the question</li>
+                                                                        <li>• say what the graph shows</li>
+                                                                        <li>• mention the broad trend/s (overview)</li>
+                                                                </ul>
+                                                                <p class="text-sm text-gray-400 italic">(Maximum 60 words)</p>
+                                                        </div>
+
+                                                        <div>
+                                                                <h4 class="font-bold text-white mb-2 underline">answer sheet</h4>
+                                                                <textarea
+                                                                        bind:value={task1Answer}
+                                                                        rows="15"
+                                                                        placeholder="  write your response"
+                                                                        class="w-full p-3 border border-gray-500 bg-gray-700 text-white rounded resize-none focus:outline-none focus:ring-2 focus:ring-teal-500"
+                                                                ></textarea>
+                                                        </div>
+                                                </div>
                                         </div>
+                                </div>
 
-                                        <!-- Practice Exercise 2 -->
-                                        <div class="text-center">
-                                                <h3 class="text-xl font-bold text-white mb-4">2) Map</h3>
-                                                
-                                                <img
-                                                        src="/LESSONS/les03/T1_Ac(5).png"
-                                                        alt="Task 1 Map Q"
-                                                        class="w-full rounded border border-gray-600 cursor-pointer hover:opacity-80 transition-opacity mb-4"
-                                                        tabindex="0"
-                                                        role="button"
-                                                        onclick={() => openLightbox('/LESSONS/les03/T1_Ac(5).png')}
-                                                        onkeydown={(e) => e.key === 'Enter' || e.key === ' ' ? (e.preventDefault(), openLightbox('/LESSONS/les03/T1_Ac(5).png')) : null}
-                                                />
-
-                                                <div class="bg-gray-700 border border-gray-600 rounded-lg p-4 mb-4">
-                                                        <h4 class="font-bold text-center text-white mb-3 underline">TASK</h4>
-                                                        <p class="text-white mb-3">
-                                                                List the main features that you will include in your report for this Task 1 question.
-                                                        </p>
-                                                        <ul class="text-left text-gray-300 space-y-1 mb-3">
-                                                                <li>• different buildings</li>
-                                                                <li>• paths</li>
-                                                                <li>• other additional features</li>
-                                                        </ul>
-                                                        <p class="text-sm text-gray-400 italic">(Maximum 5-6 points)</p>
+                                <!-- Practice Exercise 2 -->
+                                <div class="mb-8">
+                                        <h3 class="text-xl font-bold text-white mb-6 text-center">2) Map</h3>
+                                        
+                                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                                                <!-- Left Column - Image -->
+                                                <div class="flex justify-center">
+                                                        <img
+                                                                src="/LESSONS/les03/T1_Ac(5).png"
+                                                                alt="Task 1 Map Q"
+                                                                class="w-full max-w-md rounded border border-gray-600 cursor-pointer hover:opacity-80 transition-opacity"
+                                                                tabindex="0"
+                                                                role="button"
+                                                                onclick={() => openLightbox('/LESSONS/les03/T1_Ac(5).png')}
+                                                                onkeydown={(e) => e.key === 'Enter' || e.key === ' ' ? (e.preventDefault(), openLightbox('/LESSONS/les03/T1_Ac(5).png')) : null}
+                                                        />
                                                 </div>
 
-                                                <h4 class="font-bold text-white mb-2 underline">answer sheet</h4>
-                                                <textarea
-                                                        bind:value={task2Answer}
-                                                        rows="12"
-                                                        cols="40"
-                                                        placeholder=" write your response"
-                                                        class="w-full p-3 border border-gray-500 bg-gray-700 text-white rounded resize-none focus:outline-none focus:ring-2 focus:ring-teal-500"
-                                                ></textarea>
+                                                <!-- Right Column - Task and Answer Sheet -->
+                                                <div class="space-y-4">
+                                                        <div class="bg-gray-700 border border-gray-600 rounded-lg p-4">
+                                                                <h4 class="font-bold text-center text-white mb-3 underline">TASK</h4>
+                                                                <p class="text-white mb-3">
+                                                                        List the main features that you will include in your report for this Task 1 question.
+                                                                </p>
+                                                                <ul class="text-left text-gray-300 space-y-1 mb-3">
+                                                                        <li>• different buildings</li>
+                                                                        <li>• paths</li>
+                                                                        <li>• other additional features</li>
+                                                                </ul>
+                                                                <p class="text-sm text-gray-400 italic">(Maximum 5-6 points)</p>
+                                                        </div>
+
+                                                        <div>
+                                                                <h4 class="font-bold text-white mb-2 underline">answer sheet</h4>
+                                                                <textarea
+                                                                        bind:value={task2Answer}
+                                                                        rows="12"
+                                                                        placeholder=" write your response"
+                                                                        class="w-full p-3 border border-gray-500 bg-gray-700 text-white rounded resize-none focus:outline-none focus:ring-2 focus:ring-teal-500"
+                                                                ></textarea>
+                                                        </div>
+                                                </div>
                                         </div>
                                 </div>
                                 </div>
