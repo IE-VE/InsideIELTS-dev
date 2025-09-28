@@ -70,9 +70,9 @@
         <!-- Header Nav -->
                         <div class="mt-6 mb-8 text-lg">
                                 <ul class="list-disc list-inside space-y-2 text-white">
-                                        <li>Task 1 (GT) format & question types</li>
-                                        <li>Task 1 (GT) technique</li>
-                                        <li>Task 1 (GT) practice</li>
+                                        <li>T1 (GT) format & question types</li>
+                                        <li>T1 (GT) technique</li>
+                                        <li>T1 (GT) practice</li>
                                 </ul>
                         </div>
 

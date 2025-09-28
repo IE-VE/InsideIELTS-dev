@@ -390,18 +390,28 @@
                                 </div>
                         </div>
                 </section>
+           
+                <!-- Footer Navigation -->
+                <section class="text-center py-8">
 
-                <!-- End Section -->
-                <section class="py-8">
-                        <div class="max-w-6xl mx-auto px-4 text-center">
-                                <p class="text-white mb-8">End of Task 1 (Ac) Page</p>
-                                <a
-                                        href="/IETPP#lesson-03"
-                                        class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300 font-semibold"
-                                        data-sveltekit-reload
-                                >
-                                        ← Back to Contents
-                                </a>
+                        <div class="bg-gray-800 rounded-lg p-6 shadow-sm border border-gray-700">
+                                <div class="flex justify-between items-center">
+                                        <a
+                                                href="/IETPP#lesson-03"
+                                                class="text-teal-400 hover:underline font-semibold"
+                                                data-sveltekit-reload
+                                        >
+                                                ← Back to Contents
+                                        </a>
+
+                                        <a
+                                                href="/IETPP/lesson-03/lesson03-i"
+                                                class="text-teal-400 hover:underline font-semibold"
+                                                data-sveltekit-reload
+                                        >
+                                                Next Lesson →
+                                        </a>
+                                </div>
                         </div>
                 </section>
 

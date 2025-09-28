@@ -12,7 +12,7 @@ localPort = 5000
 externalPort = 80
 
 [[ports]]
-localPort = 34257
+localPort = 38289
 externalPort = 3000
 
 [workflows]
