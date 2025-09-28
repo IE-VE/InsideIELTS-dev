@@ -279,85 +279,95 @@
                                                 <strong>TASK</strong>: complete and upload this pair of short Task 1 General Training practice exercises.
                                         </p>
                                         
-                                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                                                <!-- Practice Exercise 1 -->
-                                                <div class="bg-gray-700 rounded-lg p-6 border border-gray-600">
-                                                        <h4 class="text-lg font-semibold text-white mb-4 text-center">1) Letter of complaint</h4>
-                                                        
-                                                        <img
-                                                                src="/LESSONS/les03/T1_GT(6).png"
-                                                                alt="Task 1 GT complaint practice"
-                                                                class="w-full rounded border border-gray-500 cursor-pointer hover:opacity-80 transition-opacity mb-6"
-                                                                onclick={() => openLightbox('/LESSONS/les03/T1_GT(6).png')}
-                                                                onkeydown={(e) => e.key === 'Enter' || e.key === ' ' ? (e.preventDefault(), openLightbox('/LESSONS/les03/T1_GT(6).png')) : null}
-                                                                tabindex="0"
-                                                                role="button"
-                                                        />
+                                        <!-- Practice Exercise 1 -->
+                                        <div class="mb-12">
+                                                <h3 class="text-xl font-bold text-white mb-6 text-center">1) Letter of complaint</h3>
+                                                
+                                                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                                                        <!-- Left Column - Image -->
+                                                        <div class="flex justify-center">
+                                                                <img
+                                                                        src="/LESSONS/les03/T1_GT(6).png"
+                                                                        alt="Task 1 GT complaint practice"
+                                                                        class="w-full max-w-md rounded border border-gray-600 cursor-pointer hover:opacity-80 transition-opacity"
+                                                                        tabindex="0"
+                                                                        role="button"
+                                                                        onclick={() => openLightbox('/LESSONS/les03/T1_GT(6).png')}
+                                                                        onkeydown={(e) => e.key === 'Enter' || e.key === ' ' ? (e.preventDefault(), openLightbox('/LESSONS/les03/T1_GT(6).png')) : null}
+                                                                />
+                                                        </div>
 
-                                                        <div class="bg-gray-600 rounded-lg p-4 mb-6">
-                                                                <h5 class="text-white font-bold mb-3 text-center text-decoration-line: underline">TASK</h5>
-                                                                <p class="text-white mb-3">
-                                                                        Write the opening statement for this Task 1 GT question.
-                                                                </p>
-                                                                <ul class="text-white mb-3 space-y-1">
-                                                                        <li>• use the appropriate greeting (formal)</li>
-                                                                        <li>• say why you are writing</li>
-                                                                        <li>• include some details of the specific problem</li>
-                                                                </ul>
-                                                                <div class="text-right">
-                                                                        <em class="text-sm text-gray-300">(Maximum 50 words)</em>
+                                                        <!-- Right Column - Task and Answer Sheet -->
+                                                        <div class="space-y-4">
+                                                                <div class="bg-gray-700 border border-gray-600 rounded-lg p-4">
+                                                                        <h4 class="font-bold text-center text-white mb-3 underline">TASK</h4>
+                                                                        <p class="text-white mb-3">
+                                                                                Write the opening statement for this Task 1 GT question.
+                                                                        </p>
+                                                                        <ul class="text-left text-gray-300 space-y-1 mb-3">
+                                                                                <li>• use the appropriate greeting (formal)</li>
+                                                                                <li>• say why you are writing</li>
+                                                                                <li>• include some details of the specific problem</li>
+                                                                        </ul>
+                                                                        <p class="text-sm text-gray-400 italic">(Maximum 50 words)</p>
+                                                                </div>
+
+                                                                <div>
+                                                                        <h4 class="font-bold text-white mb-2 underline">answer sheet</h4>
+                                                                        <textarea
+                                                                                bind:value={task1Answer}
+                                                                                rows="12"
+                                                                                placeholder="write your response"
+                                                                                class="w-full p-3 border border-gray-500 bg-gray-700 text-white rounded resize-none focus:outline-none focus:ring-2 focus:ring-teal-500"
+                                                                        ></textarea>
                                                                 </div>
                                                         </div>
-
-                                                        <div class="text-center mb-4">
-                                                                <h6 class="text-white font-bold text-decoration-line: underline">answer sheet</h6>
-                                                        </div>
-                                                        
-                                                        <textarea
-                                                                bind:value={task1Answer}
-                                                                class="w-full h-48 p-4 bg-gray-600 border border-gray-500 rounded-lg text-white resize-none focus:outline-none focus:ring-2 focus:ring-teal-500"
-                                                                placeholder="write your response"
-                                                        ></textarea>
                                                 </div>
+                                        </div>
 
-                                                <!-- Practice Exercise 2 -->
-                                                <div class="bg-gray-700 rounded-lg p-6 border border-gray-600">
-                                                        <h4 class="text-lg font-semibold text-white mb-4 text-center">2) Letter to inform</h4>
-                                                        
-                                                        <img
-                                                                src="/LESSONS/les03/T1_GT(4).png"
-                                                                alt="Task 1 GT inform practice"
-                                                                class="w-full rounded border border-gray-500 cursor-pointer hover:opacity-80 transition-opacity mb-6"
-                                                                onclick={() => openLightbox('/LESSONS/les03/T1_GT(4).png')}
-                                                                onkeydown={(e) => e.key === 'Enter' || e.key === ' ' ? (e.preventDefault(), openLightbox('/LESSONS/les03/T1_GT(4).png')) : null}
-                                                                tabindex="0"
-                                                                role="button"
-                                                        />
+                                        <!-- Practice Exercise 2 -->
+                                        <div class="mb-8">
+                                                <h3 class="text-xl font-bold text-white mb-6 text-center">2) Letter to inform</h3>
+                                                
+                                                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                                                        <!-- Left Column - Image -->
+                                                        <div class="flex justify-center">
+                                                                <img
+                                                                        src="/LESSONS/les03/T1_GT(4).png"
+                                                                        alt="Task 1 GT inform practice"
+                                                                        class="w-full max-w-md rounded border border-gray-600 cursor-pointer hover:opacity-80 transition-opacity"
+                                                                        tabindex="0"
+                                                                        role="button"
+                                                                        onclick={() => openLightbox('/LESSONS/les03/T1_GT(4).png')}
+                                                                        onkeydown={(e) => e.key === 'Enter' || e.key === ' ' ? (e.preventDefault(), openLightbox('/LESSONS/les03/T1_GT(4).png')) : null}
+                                                                />
+                                                        </div>
 
-                                                        <div class="bg-gray-600 rounded-lg p-4 mb-6">
-                                                                <h5 class="text-white font-bold mb-3 text-center text-decoration-line: underline">TASK</h5>
-                                                                <p class="text-white mb-3">
-                                                                        List two content details per bullet point for this Task 1 GT question.
-                                                                </p>
-                                                                <ul class="text-white mb-3 space-y-1">
-                                                                        <li>• your previous accommodation</li>
-                                                                        <li>• how to search for accommodation</li>
-                                                                        <li>• what to avoid/be wary of</li>
-                                                                </ul>
-                                                                <div class="text-right">
-                                                                        <em class="text-sm text-gray-300">(Maximum 6 points)</em>
+                                                        <!-- Right Column - Task and Answer Sheet -->
+                                                        <div class="space-y-4">
+                                                                <div class="bg-gray-700 border border-gray-600 rounded-lg p-4">
+                                                                        <h4 class="font-bold text-center text-white mb-3 underline">TASK</h4>
+                                                                        <p class="text-white mb-3">
+                                                                                List two content details per bullet point for this Task 1 GT question.
+                                                                        </p>
+                                                                        <ul class="text-left text-gray-300 space-y-1 mb-3">
+                                                                                <li>• your previous accommodation</li>
+                                                                                <li>• how to search for accommodation</li>
+                                                                                <li>• what to avoid/be wary of</li>
+                                                                        </ul>
+                                                                        <p class="text-sm text-gray-400 italic">(Maximum 6 points)</p>
+                                                                </div>
+
+                                                                <div>
+                                                                        <h4 class="font-bold text-white mb-2 underline">answer sheet</h4>
+                                                                        <textarea
+                                                                                bind:value={task2Answer}
+                                                                                rows="12"
+                                                                                placeholder="write your response"
+                                                                                class="w-full p-3 border border-gray-500 bg-gray-700 text-white rounded resize-none focus:outline-none focus:ring-2 focus:ring-teal-500"
+                                                                        ></textarea>
                                                                 </div>
                                                         </div>
-
-                                                        <div class="text-center mb-4">
-                                                                <h6 class="text-white font-bold text-decoration-line: underline">answer sheet</h6>
-                                                        </div>
-                                                        
-                                                        <textarea
-                                                                bind:value={task2Answer}
-                                                                class="w-full h-48 p-4 bg-gray-600 border border-gray-500 rounded-lg text-white resize-none focus:outline-none focus:ring-2 focus:ring-teal-500"
-                                                                placeholder="write your response"
-                                                        ></textarea>
                                                 </div>
                                         </div>
                                 </div>
