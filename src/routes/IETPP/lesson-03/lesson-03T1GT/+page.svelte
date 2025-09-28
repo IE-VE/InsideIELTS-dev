@@ -391,7 +391,7 @@
                                                 class="text-teal-400 hover:underline font-semibold"
                                                 data-sveltekit-reload
                                         >
-                                                ← Back to Lesson 03
+                                                ← Back to Contents
                                         </a>
 
                                         <a
