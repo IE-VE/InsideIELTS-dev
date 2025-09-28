@@ -283,13 +283,13 @@
                                         <div class="mb-12">
                                                 <h3 class="text-xl font-bold text-white mb-6 text-center">1) Letter of complaint</h3>
                                                 
-                                                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                                                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
                                                         <!-- Left Column - Image (2/3 width) -->
-                                                        <div class="md:col-span-2 flex justify-center">
+                                                        <div class="md:col-span-2">
                                                                 <img
                                                                         src="/LESSONS/les03/T1_GT(6).png"
                                                                         alt="Task 1 GT complaint practice"
-                                                                        class="w-full rounded border border-gray-600 cursor-pointer hover:opacity-80 transition-opacity"
+                                                                        class="w-full h-auto rounded border border-gray-600 cursor-pointer hover:opacity-80 transition-opacity"
                                                                         tabindex="0"
                                                                         role="button"
                                                                         onclick={() => openLightbox('/LESSONS/les03/T1_GT(6).png')}
@@ -329,13 +329,13 @@
                                         <div class="mb-8">
                                                 <h3 class="text-xl font-bold text-white mb-6 text-center">2) Letter to inform</h3>
                                                 
-                                                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                                                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
                                                         <!-- Left Column - Image (2/3 width) -->
-                                                        <div class="md:col-span-2 flex justify-center">
+                                                        <div class="md:col-span-2">
                                                                 <img
                                                                         src="/LESSONS/les03/T1_GT(4).png"
                                                                         alt="Task 1 GT inform practice"
-                                                                        class="w-full rounded border border-gray-600 cursor-pointer hover:opacity-80 transition-opacity"
+                                                                        class="w-full h-auto rounded border border-gray-600 cursor-pointer hover:opacity-80 transition-opacity"
                                                                         tabindex="0"
                                                                         role="button"
                                                                         onclick={() => openLightbox('/LESSONS/les03/T1_GT(4).png')}
