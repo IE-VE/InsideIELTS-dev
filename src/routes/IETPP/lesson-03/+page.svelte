@@ -130,13 +130,13 @@
                         <div class="max-w-6xl mx-auto">  
 
                          <div class="bg-gray-800 rounded-lg p-6 text-lg border border-gray-700 mb-8">
-                                        <p class="text-white mb-6">
+                                        <p class="text-white">
                                                 The Writing Test is the third paper you will take on test day. It
                                                 is split into two parts: <strong>Task 1</strong> and <strong>Task 2</strong>. You have
                                                 <strong>60 minutes</strong> to complete both tasks.
                                         </p>
 
-                                        <div class="flex justify-center mb-8">
+                                        <div class="flex justify-center m-10">
                                                 <a
                                                         href="https://insideielts.oppyo.com/video/embed/2l7o2v7ip6"
                                                         target="_blank"
@@ -244,11 +244,11 @@
 
                         <div class="max-w-6xl mx-auto">
                                 <div class="bg-gray-800 rounded-lg p-6 text-lg border border-gray-700 mb-8">
-                                        <p class="text-white mb-6">
+                                        <p class="text-white">
                                                 The writing test is assessed by Cambridge qualified writing test assessors using a rubric very similar to the one shown below.
                                         </p>
 
-                                        <div class="flex justify-center mb-8">
+                                        <div class="flex justify-center m-10">
                                                 <a
                                                         href="https://insideielts.oppyo.com/video/embed/2tt97h585d"
                                                         target="_blank"
@@ -428,7 +428,7 @@
                            <!-- Three Large Buttons -->
                            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
                                    <a href="/IETPP/lesson-03/lesson-03T1Ac" data-sveltekit-reload class="block">
-                                           <button class="bg-teal-600 hover:bg-teal-700 text-white font-bold py-6 px-8 rounded-lg transition-colors duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 w-full">
+                                           <button class="bg-teal-600 hover:bg-teal-700 text-white font-bold py-6 px-8 rounded-lg transition-colors duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-transform duration-300 ease-in-out w-full">
                                                    <div class="text-xl">Task 1 (Ac)</div>
                                            </button>
                                    </a>

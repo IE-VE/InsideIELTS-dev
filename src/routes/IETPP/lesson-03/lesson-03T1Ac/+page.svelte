@@ -73,9 +73,9 @@
         <!-- Header Nav -->
                         <div class="mt-6 mb-8 text-lg">
                                 <ul class="list-disc list-inside space-y-2 text-white">
-                                        <li>Task 1 (Ac) format & question types</li>
-                                        <li>Task 1 (Ac) technique</li>
-                                        <li>Task 1 (Ac) practice</li>
+                                        <li>T1 (Ac) format & question types</li>
+                                        <li>T1 (Ac) technique</li>
+                                        <li>T1 (Ac) practice</li>
                                 </ul>
                         </div>
 
@@ -96,7 +96,13 @@
                                         Contents
                                 </a>
 
-                                <span class="text-gray-500">Next →</span>
+                                <a
+                                        href="/IETPP#lesson-03T2"
+                                        class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300 font-semibold"
+                                        data-sveltekit-reload
+                                >
+                                        Next →
+                                </a>
                         </div>
                 </div>
         </div>
@@ -111,7 +117,7 @@
                         <div class="max-w-6xl mx-auto">  
 
                          <div class="bg-gray-800 rounded-lg p-6 text-lg border border-gray-700 mb-8">
-                                        <p class="text-white mb-6">
+                                        <p class="text-white">
                                                 The <strong>Task 1 Academic</strong> writing exercise is in the form of
                                                 a <strong>report</strong>. You may be asked to report on a line graph,
                                                 bar chart, table, pie chart, map or process diagram. Sometimes
@@ -120,7 +126,7 @@
                                                 together.
                                         </p>
 
-                                <div class="flex justify-center mb-6">
+                                <div class="flex justify-center m-10">
                                         <a
                                                 href="https://insideielts.oppyo.com/video/embed/p248japtth"
                                                 target="_blank"
@@ -151,7 +157,8 @@
                                                 <div class="flex transition-transform duration-300 ease-in-out"
                                                      style="transform: translateX(-{currentSlide * 100}%)">
                                                         {#each slides as slide, index}
-                                                                <div class="w-full flex-shrink-0">
+                                                                <div class="w-full flex-shrink-0 bg-white p-4">
+                                                                        <h3 class="text-xl font-semibold text-gray-800 text-center mb-4">{slide.title}</h3>
                                                                         <img
                                                                                 src={slide.src}
                                                                                 alt={slide.alt}
@@ -185,9 +192,8 @@
                                                 </button>
                                         </div>
                                         
-                                        <!-- Slide title and indicators -->
+                                        <!-- Slide indicators -->
                                         <div class="text-center mt-4">
-                                                <h3 class="text-lg font-semibold text-gray-800 mb-2">{slides[currentSlide].title}</h3>
                                                 <div class="flex justify-center space-x-2">
                                                         {#each slides as _, index}
                                                                 <button
