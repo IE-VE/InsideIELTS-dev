@@ -148,53 +148,45 @@
                                 <p class="text-white mb-8">Let's take a look at some sample Task 2 questions:</p>
 
                                 <!-- Carousel -->
-                                <div class="relative max-w-2xl mx-auto mb-8">
-                                        <div class="relative overflow-hidden rounded-lg bg-gray-100">
-                                                <div class="flex transition-transform duration-300 ease-in-out"
-                                                     style="transform: translateX(-{currentSlide * 100}%)">
-                                                        {#each slides as slide, index}
-                                                                <div class="w-full flex-shrink-0 bg-white p-4">
-                                                                        <h3 class="text-xl font-semibold text-gray-800 text-center mb-4">{slide.title}</h3>
-                                                                        <img
-                                                                                src={slide.src}
-                                                                                alt={slide.alt}
-                                                                                class="w-full h-auto cursor-pointer"
-                                                                                tabindex="0"
-                                                                                role="button"
-                                                                                onclick={() => openLightbox(slide.src)}
-                                                                                onkeydown={(e) => e.key === 'Enter' || e.key === ' ' ? (e.preventDefault(), openLightbox(slide.src)) : null}
-                                                                        />
-                                                                </div>
-                                                        {/each}
+                                <div class="relative max-w-4xl mx-auto mb-8">
+                                        <div class="bg-gray-700 rounded-lg p-6 border border-gray-600">
+                                                <!-- Current slide display -->
+                                                <div class="text-center mb-4">
+                                                        <h3 class="text-xl font-semibold text-white mb-4">{slides[currentSlide].title}</h3>
+                                                        <img
+                                                                src={slides[currentSlide].src}
+                                                                alt={slides[currentSlide].alt}
+                                                                class="w-full max-w-2xl mx-auto rounded border border-gray-500 cursor-pointer hover:opacity-80 transition-opacity"
+                                                                tabindex="0"
+                                                                role="button"
+                                                                onclick={() => openLightbox(slides[currentSlide].src)}
+                                                                onkeydown={(e) => e.key === 'Enter' || e.key === ' ' ? (e.preventDefault(), openLightbox(slides[currentSlide].src)) : null}
+                                                        />
                                                 </div>
-                                                
+
                                                 <!-- Navigation buttons -->
-                                                <button 
-                                                        class="absolute left-2 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 hover:bg-opacity-75 text-white p-2 rounded-full transition-all"
-                                                        onclick={prevSlide}
-                                                >
-                                                        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
-                                                        </svg>
-                                                </button>
-                                                
-                                                <button 
-                                                        class="absolute right-2 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 hover:bg-opacity-75 text-white p-2 rounded-full transition-all"
-                                                        onclick={nextSlide}
-                                                >
-                                                        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-                                                        </svg>
-                                                </button>
-                                        </div>
-                                        
-                                        <!-- Slide indicators -->
-                                        <div class="text-center mt-4">
-                                                <div class="flex justify-center space-x-2">
-                                                        {#each slides as _, index}
+                                                <div class="flex justify-center gap-4">
+                                                        <button
+                                                                onclick={prevSlide}
+                                                                class="bg-teal-600 hover:bg-teal-700 text-white px-4 py-2 rounded transition-colors"
+                                                        >
+                                                                ◀ Previous
+                                                        </button>
+                                                        <button
+                                                                onclick={nextSlide}
+                                                                class="bg-teal-600 hover:bg-teal-700 text-white px-4 py-2 rounded transition-colors"
+                                                        >
+                                                                Next ▶
+                                                        </button>
+                                                </div>
+
+                                                <!-- Slide indicators -->
+                                                <div class="flex justify-center mt-4 gap-2">
+                                                        {#each slides as slide, index}
                                                                 <button
-                                                                        class="w-2 h-2 rounded-full transition-all {index === currentSlide ? 'bg-teal-600' : 'bg-gray-400'}"
+                                                                        class="w-3 h-3 rounded-full {index === currentSlide ? 'bg-teal-500' : 'bg-gray-500'} transition-colors"
                                                                         onclick={() => currentSlide = index}
+                                                                        aria-label="Go to slide {index + 1}"
                                                                 ></button>
                                                         {/each}
                                                 </div>
@@ -324,7 +316,7 @@
                                                 class="text-teal-400 hover:underline font-semibold"
                                                 data-sveltekit-reload
                                         >
-                                                ← Back to Lesson 03
+                                                ← Back to 
                                         </a>
 
                                         <a
