@@ -405,7 +405,7 @@
                                         </a>
 
                                         <a
-                                                href="/IETPP/lesson-03/lesson03-i"
+                                                href="/IETPP/lesson-03T2"
                                                 class="text-teal-400 hover:underline font-semibold"
                                                 data-sveltekit-reload
                                         >
