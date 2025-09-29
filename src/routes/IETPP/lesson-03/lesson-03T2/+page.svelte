@@ -227,26 +227,26 @@
                                                         <img
                                                                 src="/LESSONS/les03/T2-technique.png"
                                                                 alt="Task 2 evaluate technique example"
-                                                                class="w-full rounded border border-gray-600 cursor-pointer hover:opacity-80 transition-opacity mb-6"
+                                                                class="max-w-2xl mx-auto rounded border border-gray-600 cursor-pointer hover:opacity-80 transition-opacity"
                                                                 tabindex="0"
                                                                 role="button"
                                                                 onclick={() => openLightbox('/LESSONS/les03/T2-technique.png')}
                                                                 onkeydown={(e) => e.key === 'Enter' || e.key === ' ' ? (e.preventDefault(), openLightbox('/LESSONS/les03/T2-technique.png')) : null}
                                                         />
 
-                                                        <a
+    <div class='m-10'>                                                    <a
                                                                 href="https://insideielts.oppyo.com/video/embed/nnfpntpc6c"
                                                                 target="_blank"
                                                                 title="InsideIELTS virtual examiner writing test preparation video"
-                                                                class="inline-block bg-teal-600 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded border-2 border-red-500 text-sm transition-colors mb-6"
-                                                        >
+                                                                class="inline-block bg-teal-600 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded border-2 border-red-500 text-sm transition-colors"
+                                                        >  
                                                                 Watch VE vid
-                                                        </a>
+                                                        </a>   </div>
 
                                                         <img
                                                                 src="/LESSONS/les03/T2-evaluate.png"
                                                                 alt="Task 2 evaluate model answer"
-                                                                class="w-full rounded border border-gray-600 cursor-pointer hover:opacity-80 transition-opacity"
+                                                                class="max-w-2xl mx-auto rounded border border-gray-600 cursor-pointer hover:opacity-80 transition-opacity"
                                                                 tabindex="0"
                                                                 role="button"
                                                                 onclick={() => openLightbox('/LESSONS/les03/T2-evaluate.png')}
@@ -265,7 +265,7 @@
                                 Task 2 essay practice</h2>
                         
                         <div class="max-w-6xl mx-auto">
-                                <div class="bg-gray-800 rounded-lg p-6 text-lg border border-gray-700">
+                                <div class=" bg-gray-800 rounded-lg p-6 text-lg border border-gray-700">
                                         <p class="text-white mb-8">
                                                 <strong>TASK</strong>: complete this Task 2 essay planning practice exercise.
                                         </p>
@@ -278,7 +278,7 @@
                                                         <img
                                                                 src="/LESSONS/les03/T2-practice.png"
                                                                 alt="Task 2 practice exercise"
-                                                                class="w-full rounded border border-gray-500 cursor-pointer hover:opacity-80 transition-opacity mb-6"
+                                                                class="max-w-2xl mx-auto rounded border border-gray-500 cursor-pointer hover:opacity-80 transition-opacity mb-6"
                                                                 onclick={() => openLightbox('/LESSONS/les03/T2-practice.png')}
                                                                 onkeydown={(e) => e.key === 'Enter' || e.key === ' ' ? (e.preventDefault(), openLightbox('/LESSONS/les03/T2-practice.png')) : null}
                                                                 tabindex="0"
