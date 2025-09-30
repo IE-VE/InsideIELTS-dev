@@ -227,7 +227,7 @@
                                                         <img
                                                                 src="/LESSONS/les03/T2-technique.png"
                                                                 alt="Task 2 evaluate technique example"
-                                                                class="max-w-2xl mx-auto rounded border border-gray-600 cursor-pointer hover:opacity-80 transition-opacity"
+                                                                class="w-full max-w-2xl mx-auto rounded border border-gray-600 cursor-pointer hover:opacity-80 transition-opacity"
                                                                 tabindex="0"
                                                                 role="button"
                                                                 onclick={() => openLightbox('/LESSONS/les03/T2-technique.png')}
@@ -246,7 +246,7 @@
                                                         <img
                                                                 src="/LESSONS/les03/T2-evaluate.png"
                                                                 alt="Task 2 evaluate model answer"
-                                                                class="max-w-2xl mx-auto rounded border border-gray-600 cursor-pointer hover:opacity-80 transition-opacity"
+                                                                class="w-full max-w-2xl mx-auto rounded border border-gray-600 cursor-pointer hover:opacity-80 transition-opacity"
                                                                 tabindex="0"
                                                                 role="button"
                                                                 onclick={() => openLightbox('/LESSONS/les03/T2-evaluate.png')}
@@ -278,7 +278,7 @@
                                                         <img
                                                                 src="/LESSONS/les03/T2-practice.png"
                                                                 alt="Task 2 practice exercise"
-                                                                class="max-w-2xl mx-auto rounded border border-gray-500 cursor-pointer hover:opacity-80 transition-opacity mb-6"
+                                                                class="w-full max-w-2xl mx-auto rounded border border-gray-500 cursor-pointer hover:opacity-80 transition-opacity mb-6"
                                                                 onclick={() => openLightbox('/LESSONS/les03/T2-practice.png')}
                                                                 onkeydown={(e) => e.key === 'Enter' || e.key === ' ' ? (e.preventDefault(), openLightbox('/LESSONS/les03/T2-practice.png')) : null}
                                                                 tabindex="0"
@@ -301,7 +301,7 @@
                                                         </div>
 
                                                         <div class="text-center mb-4">
-                                                                <h6 class="text-white font-bold text-decoration-line: underline">answer sheet</h6>
+                                                                <h6 class="text-white font-bold">answer sheet</h6>
                                                         </div>
                                                         
                                                         <textarea
