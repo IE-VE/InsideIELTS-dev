@@ -43,10 +43,9 @@
 					IE2401_03.1
 				</div>
 				<h1 class="text-3xl font-bold text-white my-7">
-					Writing - Task Achievement / Task Response
+					WRITING
 				</h1>
-				<p class="text-sm text-gray-400 mb-4">03 (i) • Skills Practice • (60 mins)</p>
-			</div>
+						</div>
 
 			<div class="flex justify-between items-center">
 				<a
@@ -65,7 +64,7 @@
 					Contents
 				</a>
 				<a
-					href="/IETPP/lesson-03"
+					href="/IETPP/lesson-03/lesson03-ii"
 					class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300 font-semibold"
 					data-sveltekit-reload
 				>
@@ -80,6 +79,11 @@
 
 		<!-- Main Section: Writing TA/TR -->
 		<section class="bg-cyan-600/25 rounded-lg p-4 md:p-8 shadow-sm border border-teal-600 mb-8">
+			<div class="flex items-center justify-center gap-4 mb-10">
+				<div class="text-4xl">📖</div>
+				<h2 class="text-3xl font-bold text-center text-white tracking-wide">Task Achievement / Task Response</h2>
+				<div class="text-4xl">📖</div>
+			</div>
 			<div class="max-w-6xl mx-auto">
 				<div class="bg-gray-800 rounded-lg p-6 text-lg border border-gray-700 mb-8">
 					
@@ -156,7 +160,7 @@
 
 					<div class="flex justify-center mb-8">
 						<img
-							src="/rubrics/W_Table-TA.png"
+							src="/LESSONS/les03/03(i)/W_Table-TA.png"
 							alt="IELTS Task 1 writing rubric TA"
 							class="w-full max-w-4xl rounded border border-gray-600 cursor-pointer hover:opacity-80 transition-opacity"
 							onclick={() => openLightbox('/rubrics/W_Table-TA.png')}
@@ -174,7 +178,7 @@
 						Watch this video for a <strong>Task 1</strong> model answer break-down of <strong>TA</strong> descriptors.
 					</p>
 
-					<div class="flex justify-center gap-8 mb-8">
+					<div class="flex justify-center gap-8 m-12">
 						<div class="text-center">
 							<a
 								href="/LESSONS/les03/03(i)/ASSESSMENT_Writing_TATR-GT.mp4"
@@ -197,14 +201,14 @@
 						</div>
 					</div>
 
-					<p class="text-white text-center mb-6 font-bold">
+					<p class="text-white text-center mb-12 font-bold">
 						Test your understanding of WRITING TASK 1 - TASK ACHIEVEMENT
 					</p>
 
 					<div class="flex justify-center mb-12">
 						<a
 							href="/IETPP/lesson-03/lesson03-i/skill-check#T1SC"
-							class="inline-flex items-center gap-3 bg-teal-600 hover:bg-teal-700 text-white font-bold py-3 px-6 rounded-lg border-2 border-teal-400 transition-colors"
+							class="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition-colors border-2 border-white"
 						>
 							<span>✓</span>
 							<span>SKILL CHECK</span>
@@ -252,7 +256,7 @@
 
 					<div class="flex justify-center mb-8">
 						<img
-							src="/rubrics/W_Table-TR.png"
+							src="/LESSONS/les03/03(i)/W_Table-TR.png"
 							alt="IELTS Task 2 writing rubric TR"
 							class="w-full max-w-4xl rounded border border-gray-600 cursor-pointer hover:opacity-80 transition-opacity"
 							onclick={() => openLightbox('/rubrics/W_Table-TR.png')}
@@ -270,7 +274,7 @@
 						Watch this video for a <strong>Task 2</strong> model answer break-down of <strong>TR</strong> descriptors
 					</p>
 
-					<div class="flex justify-center mb-8">
+					<div class="flex justify-center m-12">
 						<div class="text-center">
 							<a
 								href="/LESSONS/les03/03(i)/ASSESSMENT_Writing_TATR-T2.mp4"
@@ -283,14 +287,14 @@
 						</div>
 					</div>
 
-					<p class="text-white text-center mb-6 font-bold">
+					<p class="text-white text-center mb-12 font-bold">
 						Test your understanding of WRITING TASK 2 - TASK RESPONSE
 					</p>
 
 					<div class="flex justify-center mb-8">
 						<a
 							href="/IETPP/lesson-03/lesson03-i/skill-check#T2SC"
-							class="inline-flex items-center gap-3 bg-teal-600 hover:bg-teal-700 text-white font-bold py-3 px-6 rounded-lg border-2 border-teal-400 transition-colors"
+							class="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition-colors border-2 border-white"
 						>
 							<span>✓</span>
 							<span>SKILL CHECK</span>
@@ -302,20 +306,29 @@
 			</div>
 		</section>
 
-		<!-- Lesson End Section -->
-		<section class="text-center py-8">
-			<div class="bg-gray-800 rounded-lg p-6 shadow-sm border border-gray-700">
-				<p class="text-white mb-6">End of Lesson 03 (i)</p>
-				<a
-					href="/IETPP#lesson-03"
-					class="text-teal-400 hover:underline font-semibold"
-					data-sveltekit-reload
-				>
-					← Back to Contents
-				</a>
-			</div>
-		</section>
-	</div>
+				<!-- Footer Navigation -->
+									<section class="text-center">                       
+
+													<div class="bg-gray-800 rounded-lg p-6 shadow-sm border border-gray-700">
+																	<div class="flex justify-between items-center">
+																					<a
+																									href="/IETPP#lesson-03"
+																									class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300 font-semibold"
+																									data-sveltekit-reload
+																					>
+																									← Back to Contents
+																					</a>
+																					<a
+																									href="/IETPP/lesson-02/lesson03-ii"
+																									class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300 font-semibold"
+																									data-sveltekit-reload
+																					>
+																									Next Lesson →
+																					</a>
+																	</div>
+													</div>
+									</section>
+					</div>	
 
 	<!-- Lightbox -->
 	{#if lightboxOpen}

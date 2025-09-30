@@ -213,13 +213,11 @@
                                                         <strong>3. When you find an answer cross-out the paragraph letter and write the question number in the margin.</strong>
                                                 </p>
                                         </div>
-
                                         <div>
                                                 <p class="text-white mb-8 font-semibold">
                                                         <strong>4. When you reach the end of the question set return and scan the remaining paragraphs for answers you didn't find the first time.</strong>
                                                 </p>
                                         </div>
-
                                         <div>
                                                 <p class="text-white mb-8 font-semibold">
                                                         <strong>5. Write the corresponding paragraph letters directly on your answer sheet.</strong>

@@ -173,20 +173,19 @@
                                                         <div class="space-y-2 ml-8">
                                                                 <div class="flex gap-2">
                                                                         <span class="text-gray-600 dark:text-gray-400">(i)</span>
-                                                                        <a href="#" class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300">Task Achievement / Task Response</a>
+                                                                        <a href="/IETPP/lesson-03/lesson03-i" class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300">Task Achievement / Task Response</a>
                                                                 </div>
                                                                 <div class="flex gap-2">
                                                                         <span class="text-gray-600 dark:text-gray-400">(ii)</span>
-                                                                        <a href="#" class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300">Coherence & Cohesion</a>
+                                                                        <a href="/IETPP/lesson-03/lesson03-ii" class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300">Coherence & Cohesion</a>
                                                                 </div>
                                                                 <div class="flex gap-2">
                                                                         <span class="text-gray-600 dark:text-gray-400">(iii)</span>
-                                                                        <a href="#" class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300">Lexical Resource</a>
+                                                                        <a href="/IETPP/lesson-03/lesson03-iii" class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300">Lexical Resource</a>
                                                                 </div>
                                                                 <div class="flex gap-2">
                                                                         <span class="text-gray-600 dark:text-gray-400">(iv)</span>
-                                                                        <a href="#" class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300">Grammatical Range & Accuracy</a>
-                                                                </div>
+                                                                        <a href="/IETPP/lesson-03/lesson03-iv" class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300">Grammatical Range & Accuracy</a>                                                               </div>
                                                         </div>
                                                 </div>
                                         </div>
