@@ -152,17 +152,8 @@
                                                         {#each slides as slide, index}
                                                                 <div class="w-full flex-shrink-0 bg-white p-4">
                                                                         <h3 class="text-xl font-semibold text-gray-800 text-center mb-4">{slide.title}</h3>
-                                                                        <img
-                                                                                src={slide.src}
-                                                                                alt={slide.alt}
-                                                                                class="w-full h-auto cursor-pointer"
-                                                                                
-                                                                                
-                                                                                
-                                                                                
-                                                                        />
-                                                                </div>
-                                                        {/each}
+                                                                        <img                                                         src={slide.src}                                       alt={slide.alt}                                        class="w-full h-auto cursor-pointer"/>
+                                                                </div>                                                        {/each}
                                                 </div>
                                                 
                                                 <!-- Navigation buttons -->
@@ -225,18 +216,9 @@
                                                         <img
                                                                 src="/writing-images/ielts-writing-test-1-general-complaint.png"
                                                                 alt="Task 1 complaint letter example"
-                                                                class="w-full rounded border border-gray-600 cursor-pointer hover:opacity-80 transition-opacity mb-6"
-                                                                
-                                                                
-                                                                
-                                                                
-                                                        />
-
-                                                        <div class="mt-8"> <a
-                                                                href="https://insideielts.oppyo.com/video/embed/l8ngn5k1wr"
-                                                                target="_blank"
-                                                                title="InsideIELTS virtual examiner writing test preparation video"
-                                                                class="inline-block bg-teal-600 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded border-2 border-red-500 text-sm transition-colors mb-6"
+                                                                class="w-full rounded border border-gray-600 cursor-pointer hover:opacity-80 transition-opacity mb-6"/>
+                                                        <div class="mt-8"> <a href="https://insideielts.oppyo.com/video/embed/l8ngn5k1wr"
+                                                                target="_blank"                                        title="InsideIELTS virtual examiner writing test preparation video"                                         class="inline-block bg-teal-600 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded border-2 border-red-500 text-sm transition-colors mb-6"
                                                         >
                                                                 Watch VE vid
                                                         </a> </div>
@@ -252,19 +234,12 @@
                                                         <img
                                                                 src="/writing-images/ielts-writing-test-1-general-inform.png"
                                                                 alt="Task 1 letter to inform example"
-                                                                class="w-full rounded border border-gray-600 cursor-pointer hover:opacity-80 transition-opacity mb-6"
-                                                                
-                                                                
-                                                                
-                                                                
-                                                        />
-
+                                                                class="w-full rounded border border-gray-600 cursor-pointer hover:opacity-80 transition-opacity mb-6" />
                                                         <div class="mt-8"> <a href="https://insideielts.oppyo.com/video/embed/nm3hxt4rpn"
                                                                 target="_blank"
-                                                                title="InsideIELTS virtual examiner writing test preparation video"
-                                                                class="inline-block bg-teal-600 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded border-2 border-red-500 text-sm transition-colors mb-6"
-                                                        >
-                                                                Watch VE vid
+         title="InsideIELTS virtual examiner writing test preparation video"
+         class="inline-block bg-teal-600 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded border-2 border-red-500 text-sm transition-colors mb-6"
+                                                        >                                                                Watch VE vid
                                                         </a>    </div>
 
                                                         <div class="bg-gray-700 border border-gray-600 rounded-lg p-4 text-center mb-6">
@@ -298,9 +273,7 @@
                                                                         src="/LESSONS/les03/T1_GT(6).png"
                                                                         alt="Task 1 GT complaint practice"
                                                                         class="w-full h-auto rounded border border-gray-600 cursor-pointer hover:opacity-80 transition-opacity"
-                                                                        
-                                                                        
-                                                                        onclick={() => openLightbox('/LESSONS/les03/T1_GT(6).png')}
+                                                                          onclick={() => openLightbox('/LESSONS/les03/T1_GT(6).png')}
                                                                         onkeydown={(e) => e.key === 'Enter' || e.key === ' ' ? (e.preventDefault(), openLightbox('/LESSONS/les03/T1_GT(6).png')) : null}
                                                                 />
                                                         </div>
@@ -326,17 +299,15 @@
                                                                                 bind:value={task1Answer}
                                                                                 rows="6"
                                                                                 placeholder="write your response"
-                                                                                class="w-full p-3 border border-gray-500 bg-gray-700 text-white rounded resize-none focus:outline-none focus:ring-2 focus:ring-teal-500"
-                                                                        ></textarea>
+                                                                                class="w-full p-3 border border-gray-500 bg-gray-700 text-white rounded resize-none focus:outline-none focus:ring-2 focus:ring-teal-500"></textarea>
                                                                 </div>
                                                         </div>
                                                 </div>
 
 										<!-- Answer sheet - desktop/tablet only -->
 										<div class="hidden md:block mt-6 max-w-[700px] mx-auto">
-											<h4 class="font-bold text-white text-center mb-2">answer sheet</h4>
-											<textarea
-												bind:value={task1Answer}
+				<h4 class="font-bold text-white text-center mb-2">answer sheet</h4>
+											<textarea	bind:value={task1Answer}
 												rows="6"
 												placeholder="write your response"
 												class="w-full p-3 border border-gray-500 bg-gray-700 text-white rounded resize-none focus:outline-none focus:ring-2 focus:ring-teal-500"

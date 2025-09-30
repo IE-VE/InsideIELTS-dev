@@ -201,7 +201,7 @@
                                         </div>
                                 </div>
 
-                                <div class="bg-gray-700 rounded-lg p-6 border border-gray-600">
+                                <div class="bg-gray-700 rounded-lg p-6 border border-gray-600 mt-8 mb-2">
                                         <p class="text-white text-center">
                                                 The <strong>Task 2</strong> essay is worth 2/3 of your writing score, so you should aim to spend around <strong>40 minutes</strong> on
                                                 <strong>Task 2</strong>.
@@ -212,7 +212,7 @@
                 </section>
 
                 <!-- Section 2: Technique -->
-                <section class="bg-cyan-600/25 rounded-lg p-4 md:p-8 shadow-sm border border-teal-600 mb-8">
+                <section class="bg-teal-600/25 rounded-lg p-4 md:p-8 shadow-sm border border-teal-600 mb-8">
                         <h2 class="text-2xl font-bold text-center text-white mb-8">
                                 Task 2 essay technique</h2>
                         
@@ -260,7 +260,7 @@
                 </section>
 
                 <!-- Section 3: Practice -->
-                <section class="bg-cyan-600/25 rounded-lg p-4 md:p-8 shadow-sm border border-teal-600 mb-8">
+                <section class="bg-cyan-800/25 rounded-lg p-4 md:p-8 shadow-sm border border-teal-600 mb-8">
                         <h2 class="text-2xl font-bold text-center text-white mb-8">
                                 Task 2 essay practice</h2>
                         
@@ -272,20 +272,18 @@
                                         
                                         <div class="max-w-4xl mx-auto">
                                                 <!-- Practice Exercise -->
-                                                <div class="bg-gray-700 rounded-lg p-6 border border-gray-600">
-                                                        <h4 class="text-lg font-semibold text-white mb-4 text-center">Evaluate and give opinion</h4>
-                                                        
+                                                                                 <h4 class="text-lg font-semibold text-white mb-4 text-center">Evaluate and give opinion</h4>         
                                                         <img
                                                                 src="/LESSONS/les03/T2-practice.png"
                                                                 alt="Task 2 practice exercise"
-                                                                class="w-full max-w-2xl mx-auto rounded border border-gray-500 cursor-pointer hover:opacity-80 transition-opacity mb-6"
+                                                                class="w-full max-w-2xl mx-auto rounded border border-gray-500 cursor-pointer hover:opacity-80 transition-opacity mb-12"
                                                                 onclick={() => openLightbox('/LESSONS/les03/T2-practice.png')}
                                                                 onkeydown={(e) => e.key === 'Enter' || e.key === ' ' ? (e.preventDefault(), openLightbox('/LESSONS/les03/T2-practice.png')) : null}
                                                                 tabindex="0"
                                                                 role="button"
                                                         />
 
-                                                        <div class="bg-gray-600 rounded-lg p-4 mb-6">
+                                                        <div class="bg-gray-600 border border-gray-500 rounded-lg p-4 mb-6">
                                                                 <h5 class="text-white font-bold mb-3 text-center text-decoration-line: underline">TASK</h5>
                                                                 <p class="text-white mb-3">
                                                                         Brainstorm this question and make a brief plan for this essay.
@@ -300,7 +298,7 @@
                                                                 </div>
                                                         </div>
 
-                                                        <div class="text-center mb-4">
+                      <div class="hidden md:block mt-6 max-w-[700px] mx-auto">                                  <div class="text-center mb-4 max-w-700px mx-auto">
                                                                 <h6 class="text-white font-bold">answer sheet</h6>
                                                         </div>
                                                         
@@ -309,7 +307,7 @@
                                                                 class="w-full h-64 p-4 bg-gray-600 border border-gray-500 rounded-lg text-white resize-none focus:outline-none focus:ring-2 focus:ring-teal-500"
                                                                 placeholder="write your response"
                                                         ></textarea>
-                                                </div>
+                      </div>
                                         </div>
                                 </div>
                         </div>

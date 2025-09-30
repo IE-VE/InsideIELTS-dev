@@ -168,21 +168,17 @@
                                                                                 onclick={() => openLightbox(slide.src)}
                                                                                 onkeydown={(e) => e.key === 'Enter' || e.key === ' ' ? (e.preventDefault(), openLightbox(slide.src)) : null}
                                                                         />
-                                                                </div>
-                                                        {/each}
-                                                </div>
-                                                
-                                                <!-- Navigation buttons -->
-                                                <button 
-                                                        class="absolute left-2 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 hover:bg-opacity-75 text-white p-2 rounded-full transition-all"
+                            </div>
+                    {/each}
+</div>                                          <!-- Navigation buttons -->
+                                                <button                                                         class="absolute left-2 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 hover:bg-opacity-75 text-white p-2 rounded-full transition-all"
                                                         onclick={prevSlide}
                                                 >
                                                         <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
                                                         </svg>
                                                 </button>
-                                                
-                                                <button 
+        <button 
                                                         class="absolute right-2 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 hover:bg-opacity-75 text-white p-2 rounded-full transition-all"
                                                         onclick={nextSlide}
                                                 >
