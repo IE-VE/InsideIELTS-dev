@@ -216,6 +216,9 @@
 						</a>
 					</div>
 
+					<!-- Separator Line -->
+					<div class="w-full h-px bg-white my-16"></div>
+
 					<!-- Task 2 Section -->
 					<h3 class="text-2xl font-bold text-white mb-6 underline mt-16">TASK 2</h3>
 
