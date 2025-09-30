@@ -305,22 +305,23 @@
                                                                 />
                                                         </div>
 
-                                                        <!-- Right Column - Task and Answer Sheet (2/5 width) -->
+                                                        <!-- Right Column - Task Modal (2/5 width) -->
                                                         <div class="md:col-span-2">
                                                                 <div class="bg-gray-700 border border-gray-600 rounded-lg p-4">
-                                                                        <h4 class="font-bold text-center text-white mb-3 underline">TASK</h4>
-                                                                        <p class="text-white mb-3">
+                                                                        <h4 class="font-bold text-center text-white mb-3 underline md:text-sm lg:text-base">TASK</h4>
+                                                                        <p class="text-white mb-3 md:text-sm lg:text-base">
                                                                                 Write the opening statement for this Task 1 GT question.
                                                                         </p>
-                                                                        <ul class="text-left text-gray-300 space-y-1 mb-3">
+                                                                        <ul class="text-left text-gray-300 space-y-1 mb-3 md:text-sm lg:text-base">
                                                                                 <li>• use the appropriate greeting (formal)</li>
                                                                                 <li>• say why you are writing</li>
                                                                                 <li>• include some details of the specific problem</li>
                                                                         </ul>
-                                                                        <p class="text-sm text-gray-400 italic">(Maximum 50 words)</p>
+                                                                        <p class="md:text-xs lg:text-sm text-gray-400 italic">(Maximum 50 words)</p>
                                                                 </div>
 
-                                                                <div>
+                                                                <!-- Answer sheet - visible only on mobile -->
+                                                                <div class="md:hidden mt-4">
                                                                         <h4 class="font-bold text-white text-center mb-2">answer sheet</h4>
                                                                         <textarea
                                                                                 bind:value={task1Answer}
@@ -330,6 +331,17 @@
                                                                         ></textarea>
                                                                 </div>
                                                         </div>
+                                                </div>
+
+                                                <!-- Answer sheet - visible only on tablet and desktop, positioned below columns -->
+                                                <div class="hidden md:block mt-6">
+                                                        <h4 class="font-bold text-white text-center mb-2">answer sheet</h4>
+                                                        <textarea
+                                                                bind:value={task1Answer}
+                                                                rows="6"
+                                                                placeholder="write your response"
+                                                                class="w-full p-3 border border-gray-500 bg-gray-700 text-white rounded resize-none focus:outline-none focus:ring-2 focus:ring-teal-500"
+                                                        ></textarea>
                                                 </div>
                                         </div>
 
@@ -351,22 +363,23 @@
                                                                 />
                                                         </div>
 
-                                                        <!-- Right Column - Task and Answer Sheet (1/3 width) -->
+                                                        <!-- Right Column - Task Modal (1/3 width) -->
                                                         <div class="md:col-span-2">
                                                                 <div class="bg-gray-700 border border-gray-600 rounded-lg p-4">
-                                                                        <h4 class="font-bold text-center text-white mb-3 underline">TASK</h4>
-                                                                        <p class="text-white mb-3">
+                                                                        <h4 class="font-bold text-center text-white mb-3 underline md:text-sm lg:text-base">TASK</h4>
+                                                                        <p class="text-white mb-3 md:text-sm lg:text-base">
                                                                                 List two content details per bullet point for this Task 1 GT question.
                                                                         </p>
-                                                                        <ul class="text-left text-gray-300 space-y-1 mb-3">
+                                                                        <ul class="text-left text-gray-300 space-y-1 mb-3 md:text-sm lg:text-base">
                                                                                 <li>• your previous accommodation</li>
                                                                                 <li>• how to search for accommodation</li>
                                                                                 <li>• what to avoid/be wary of</li>
                                                                         </ul>
-                                                                        <p class="text-sm text-gray-400 italic">(Maximum 6 points)</p>
+                                                                        <p class="md:text-xs lg:text-sm text-gray-400 italic">(Maximum 6 points)</p>
                                                                 </div>
 
-                                                                <div>
+                                                                <!-- Answer sheet - visible only on mobile -->
+                                                                <div class="md:hidden mt-4">
                                                                         <h4 class="font-bold text-white text-center mb-2">answer sheet</h4>
                                                                         <textarea
                                                                                 bind:value={task2Answer}
@@ -376,6 +389,17 @@
                                                                         ></textarea>
                                                                 </div>
                                                         </div>
+                                                </div>
+
+                                                <!-- Answer sheet - visible only on tablet and desktop, positioned below columns -->
+                                                <div class="hidden md:block mt-6">
+                                                        <h4 class="font-bold text-white text-center mb-2">answer sheet</h4>
+                                                        <textarea
+                                                                bind:value={task2Answer}
+                                                                rows="6"
+                                                                placeholder="write your response"
+                                                                class="w-full p-3 border border-gray-500 bg-gray-700 text-white rounded resize-none focus:outline-none focus:ring-2 focus:ring-teal-500"
+                                                        ></textarea>
                                                 </div>
                                         </div>
                                 </div>
