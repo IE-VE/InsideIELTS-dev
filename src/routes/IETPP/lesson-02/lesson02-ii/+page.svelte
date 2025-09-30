@@ -65,7 +65,7 @@
                                 </a>
 
                                 <a
-                                        href="/IETPP/lesson-03/lesson02-iii"
+                                        href="/IETPP/lesson-02/lesson02-iii"
                                         class="text-teal-400 hover:text-teal-300 font-semibold"
                                         data-sveltekit-reload
                                 >

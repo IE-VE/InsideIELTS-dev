@@ -36,7 +36,7 @@
 
 <div class="min-h-screen bg-gray-900 text-white">
 	<!-- Lesson Header -->
-	<div class="max-w-5xl container mx-auto px-3 md:px-6 py-8">
+	<div class="max-w-5xl container mx-auto px-6 pt-8">
 		<div class="bg-gray-50 dark:bg-gray-800 rounded-lg px-6 py-2 mb-8">
 			<div class="text-center">
 				<div class="text-xs text-left text-teal-600 dark:text-teal-400">
@@ -78,25 +78,27 @@
 	<div style="max-width: 1200px;" class="mx-auto px-3 md:px-6 py-8">
 
 		<!-- Main Section: Writing TA/TR -->
-		<section class="bg-cyan-600/25 rounded-lg p-4 md:p-8 shadow-sm border border-teal-600 mb-8">
+		<section class="bg-cyan-600/25 rounded-lg p-4 md:p-10 shadow-sm border border-blue-600 mb-12">
 			<div class="flex items-center justify-center gap-4 mb-10">
 				<div class="text-4xl">✏️</div>
 				<h2 class="text-3xl font-bold text-center text-white tracking-wide">Task Achievement / Task Response</h2>
 				<div class="text-4xl">✏️</div>
 			</div>
 			<div class="max-w-6xl mx-auto">
-				<div class="bg-gray-800 rounded-lg p-6 text-lg border border-gray-700 mb-8">
-					
-					<p class="text-white mb-6">
+				<div class="bg-gray-800 rounded-lg p-4 md:p-8 text-lg border border-gray-600 mb-12">
+
+					 <div class="bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-lg p-4 mb-8">
+					<p class="text-gray-700 dark:text-gray-300 text-lg mb-2">
 						<strong>Task Achievement</strong> in <strong>Writing Task 1</strong> and <strong>Task Response</strong> in <strong>Writing Task 2</strong> measure how well you
 						fulfill the requirements of the two writing questions. We'll look at the <strong>TA/TR</strong> descriptors for each of the writing tasks individually.
 					</p>
-
+					 </div>
+					
 					<p class="text-white mb-8">
 						Watch this video for an overview of how the three <strong>Task Achievement</strong> and <strong>Task Response</strong> descriptors are applied to your writing response.
 					</p>
 
-					<div class="flex justify-center mb-8">
+					<div class="flex justify-center mb-4">
 						<a
 							href="/LESSONS/les03/03(i)/ASSESSMENT_Writing_TATR1.mp4"
 							target="_blank"
@@ -106,6 +108,9 @@
 							Watch VE vid
 						</a>
 					</div>
+					</div>
+				
+					<div class="bg-gray-800 rounded-lg p-4 md:p-8 text-lg border border-gray-600 mb-12">
 
 					<!-- Task 1 Section -->
 					<h3 class="text-2xl font-bold text-white mb-6 underline">TASK 1</h3>
@@ -201,13 +206,13 @@
 						</div>
 					</div>
 
-					<p class="text-white text-center mb-12 font-bold">
+					<p class="text-white text-center mb-10 font-bold">
 						Test your understanding of WRITING TASK 1 - TASK ACHIEVEMENT
 					</p>
 
 					<div class="flex justify-center mb-12">
 						<a
-							href="/IETPP/lesson-03/lesson03-i/skill-check#T1SC"
+							href="/IETPP/lesson-03/lesson03-i/skill-check_T1"
 							class="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition-colors border-2 border-white"
 						>
 							<span>✓</span>
@@ -215,12 +220,12 @@
 							<span>✓</span>
 						</a>
 					</div>
+					</div>
 
-					<!-- Separator Line -->
-					<div class="w-full h-px bg-white my-16"></div>
+				<!-- Task 2 Section -->
+					<div class="bg-gray-800 rounded-lg p-4 md:p-8 text-lg border border-gray-600 mb-12">
 
-					<!-- Task 2 Section -->
-					<h3 class="text-2xl font-bold text-white mb-6 underline mt-16">TASK 2</h3>
+					<h3 class="text-2xl font-bold text-white mb-6 underline mt-4">TASK 2</h3>
 
 					<p class="text-white mb-4">
 						There are <strong>three parts</strong> to every <strong>Task 2 essay question</strong>: the topic statement which introduces the subject of the essay;
@@ -274,7 +279,7 @@
 					</p>
 
 					<p class="text-white mb-6">
-						Watch this video for a <strong>Task 2</strong> model answer break-down of <strong>TR</strong> descriptors
+						Watch this video for a <strong>Task 2</strong> model answer break-down of <strong>TR</strong> descriptors.
 					</p>
 
 					<div class="flex justify-center m-12">
@@ -289,21 +294,22 @@
 							</a>
 						</div>
 					</div>
-
-					<p class="text-white text-center mb-12 font-bold">
+						
+						<div class="text-center mb-10">
+					<p class="text-white mb-12 font-bold">
 						Test your understanding of WRITING TASK 2 - TASK RESPONSE
 					</p>
-					<div class="flex justify-center mb-8">
+		
 						<a
-							href="/IETPP/lesson-03/lesson03-i/skill-check#T2SC"
+							href="/IETPP/lesson-03/lesson03-i/skill-check_T2"
 							class="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition-colors border-2 border-white"
 						>
 							<span>✓</span>
 							<span>SKILL CHECK</span>
 							<span>✓</span>
 						</a>
-					</div>
-				</div>
+					
+						</div>
 			</div>
 		</section>
 
