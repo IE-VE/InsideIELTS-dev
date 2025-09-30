@@ -53,9 +53,9 @@
         <!-- Header Nav -->
                         <div class="mt-6 mb-8 text-lg">
                                 <ul class="list-disc list-inside space-y-2 text-white">
-                                        <li>Writing Test make-up</li>
-                                        <li>Writing Test assessment</li>
-                                        <li>Writing Test example Q & A</li>
+                                        <li>format and make-up</li>
+                                        <li>assessment</li>
+                                        <li>example questions & answers</li>
                                 </ul>
                         </div>
 

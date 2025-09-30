@@ -73,9 +73,9 @@
         <!-- Header Nav -->
                         <div class="mt-6 mb-8 text-lg">
                                 <ul class="list-disc list-inside space-y-2 text-white">
-                                        <li>T1 (Ac) format & question types</li>
-                                        <li>T1 (Ac) technique</li>
-                                        <li>T1 (Ac) practice</li>
+                                        <li>format & question types</li>
+                                        <li>technique</li>
+                                        <li>practice</li>
                                 </ul>
                         </div>
 
@@ -287,7 +287,7 @@
                 </section>
 
                 <!-- Section 3: Practice -->
-                <section class="bg-cyan-800/25 rounded-lg p-4 md:p-8 shadow-sm border border-teal-500 mb-8">
+                <section class="bg-cyan-800/25 rounded-lg p-4 md:p-8 shadow-sm border border-teal-600 mb-8">
                         <h2 class="text-2xl font-bold text-center text-white mb-8">Task 1 (Ac) practice</h2>
 
                         <div class="max-w-6xl mx-auto">
@@ -300,13 +300,13 @@
                                 <div class="mb-12">
                                         <h3 class="text-xl font-bold text-white mb-6 text-center">1) Line graph</h3>
                                         
-                                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                                                <!-- Left Column - Image -->
-                                                <div class="flex justify-center">
+                                        <div class="grid grid-cols-1 md:grid-cols-5 gap-8">
+                                                <!-- Left Column - Image (3/5 width) -->
+                                                <div class="md:col-span-3">
                                                         <img
                                                                 src="/LESSONS/les03/T1_Ac(3).png"
                                                                 alt="Task 1 Line graph Q"
-                                                                class="w-full max-w-md rounded border border-gray-600 cursor-pointer hover:opacity-80 transition-opacity"
+                                                                class="w-full rounded border border-gray-600 cursor-pointer hover:opacity-80 transition-opacity"
                                                                 tabindex="0"
                                                                 role="button"
                                                                 onclick={() => openLightbox('/LESSONS/les03/T1_Ac(3).png')}
@@ -315,7 +315,7 @@
                                                 </div>
 
                                                 <!-- Right Column - Task and Answer Sheet -->
-                                                <div class="space-y-4">
+                                                <div class="md:col-span-2 flex flex-col space-y-4">
                                                         <div class="bg-gray-700 border border-gray-600 rounded-lg p-4">
                                                                 <h4 class="font-bold text-center text-white mb-3 underline">TASK</h4>
                                                                 <p class="text-white mb-3">
@@ -329,13 +329,12 @@
                                                                 <p class="text-sm text-gray-400 italic">(Maximum 60 words)</p>
                                                         </div>
 
-                                                        <div>
-                                                                <h4 class="font-bold text-white mb-2 underline">answer sheet</h4>
+                                                        <div class="flex flex-col flex-1">
+                                                                <h4 class="font-bold text-white mb-2 text-center">answer sheet</h4>
                                                                 <textarea
                                                                         bind:value={task1Answer}
-                                                                        rows="15"
                                                                         placeholder="  write your response"
-                                                                        class="w-full p-3 border border-gray-500 bg-gray-700 text-white rounded resize-none focus:outline-none focus:ring-2 focus:ring-teal-500"
+                                                                        class="w-full h-full p-3 border border-gray-500 bg-gray-700 text-white rounded resize-none focus:outline-none focus:ring-2 focus:ring-teal-500"
                                                                 ></textarea>
                                                         </div>
                                                 </div>
@@ -346,13 +345,13 @@
                                 <div class="mb-8">
                                         <h3 class="text-xl font-bold text-white mb-6 text-center">2) Map</h3>
                                         
-                                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                                        <div class="grid grid-cols-1 md:grid-cols-5 gap-8">
                                                 <!-- Left Column - Image -->
-                                                <div class="flex justify-center">
+                                                <div class="md:col-span-3">
                                                         <img
                                                                 src="/LESSONS/les03/T1_Ac(5).png"
                                                                 alt="Task 1 Map Q"
-                                                                class="w-full max-w-md rounded border border-gray-600 cursor-pointer hover:opacity-80 transition-opacity"
+                                                                class="w-full rounded border border-gray-600 cursor-pointer hover:opacity-80 transition-opacity"
                                                                 tabindex="0"
                                                                 role="button"
                                                                 onclick={() => openLightbox('/LESSONS/les03/T1_Ac(5).png')}
@@ -361,7 +360,7 @@
                                                 </div>
 
                                                 <!-- Right Column - Task and Answer Sheet -->
-                                                <div class="space-y-4">
+                                                <div class="md:col-span-2 flex flex-col space-y-4">
                                                         <div class="bg-gray-700 border border-gray-600 rounded-lg p-4">
                                                                 <h4 class="font-bold text-center text-white mb-3 underline">TASK</h4>
                                                                 <p class="text-white mb-3">
@@ -375,13 +374,12 @@
                                                                 <p class="text-sm text-gray-400 italic">(Maximum 5-6 points)</p>
                                                         </div>
 
-                                                        <div>
-                                                                <h4 class="font-bold text-white mb-2 underline">answer sheet</h4>
+                                                        <div class="flex flex-col flex-1">
+                                                                <h4 class="font-bold text-white mb-2 text-center">answer sheet</h4>
                                                                 <textarea
                                                                         bind:value={task2Answer}
-                                                                        rows="12"
                                                                         placeholder=" write your response"
-                                                                        class="w-full p-3 border border-gray-500 bg-gray-700 text-white rounded resize-none focus:outline-none focus:ring-2 focus:ring-teal-500"
+                                                                        class="w-full h-full p-3 border border-gray-500 bg-gray-700 text-white rounded resize-none focus:outline-none focus:ring-2 focus:ring-teal-500"
                                                                 ></textarea>
                                                         </div>
                                                 </div>

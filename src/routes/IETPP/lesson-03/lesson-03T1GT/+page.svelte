@@ -70,9 +70,9 @@
         <!-- Header Nav -->
                         <div class="mt-6 mb-8 text-lg">
                                 <ul class="list-disc list-inside space-y-2 text-white">
-                                        <li>T1 (GT) format & question types</li>
-                                        <li>T1 (GT) technique</li>
-                                        <li>T1 (GT) practice</li>
+                                        <li>format & question types</li>
+                                        <li>technique</li>
+                                        <li>practice</li>
                                 </ul>
                         </div>
 
@@ -210,7 +210,7 @@
                 </section>
 
                 <!-- Section 2: Technique -->
-                <section class="bg-cyan-600/25 rounded-lg p-4 md:p-8 shadow-sm border border-teal-600 mb-8">
+                <section class="bg-teal-600/25 rounded-lg p-4 md:p-8 shadow-sm border border-teal-600 mb-8">
                         <h2 class="text-2xl font-bold text-center text-white mb-8">
                                 Task 1 (GT) technique</h2>
                         
@@ -277,7 +277,7 @@
                 </section>
 
                 <!-- Section 3: Practice -->
-                <section class="bg-cyan-600/25 rounded-lg p-4 md:p-8 shadow-sm border border-teal-600 mb-8">
+                <section class="bg-cyan-800/25 rounded-lg p-4 md:p-8 shadow-sm border border-teal-600 mb-8">
                         <h2 class="text-2xl font-bold text-center text-white mb-8">
                                 Task 1 (GT) practice</h2>
                         
@@ -292,7 +292,7 @@
                                                 <h3 class="text-xl font-bold text-white mb-6 text-center">1) Letter of complaint</h3>
                                                 
                                                 <div class="grid grid-cols-1 md:grid-cols-5 gap-8 items-start">
-                                                        <!-- Left Column - Image (2/3 width) -->
+                                                        <!-- Left Column - Image (3/5 width) -->
                                                         <div class="md:col-span-3">
                                                                 <img
                                                                         src="/LESSONS/les03/T1_GT(6).png"
@@ -305,7 +305,7 @@
                                                                 />
                                                         </div>
 
-                                                        <!-- Right Column - Task and Answer Sheet (1/3 width) -->
+                                                        <!-- Right Column - Task and Answer Sheet (2/5 width) -->
                                                         <div class="md:col-span-2 space-y-4">
                                                                 <div class="bg-gray-700 border border-gray-600 rounded-lg p-4">
                                                                         <h4 class="font-bold text-center text-white mb-3 underline">TASK</h4>

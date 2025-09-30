@@ -69,9 +69,9 @@
         <!-- Header Nav -->
                         <div class="mt-6 mb-8 text-lg">
                                 <ul class="list-disc list-inside space-y-2 text-white">
-                                        <li>T2 format & question types</li>
-                                        <li>T2 technique</li>
-                                        <li>T2 practice</li>
+                                        <li>format & question types</li>
+                                        <li>technique</li>
+                                        <li>practice</li>
                                 </ul>
                         </div>
 
