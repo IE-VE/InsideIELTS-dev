@@ -156,10 +156,10 @@
                                                                                 src={slide.src}
                                                                                 alt={slide.alt}
                                                                                 class="w-full h-auto cursor-pointer"
-                                                                                
-                                                                                
-                                                                                
-                                                                                
+                                                                                tabindex="0"
+                                                                                role="button"
+                                                                                onclick={() => openLightbox(slide.src)}
+                                                                                onkeydown={(e) => e.key === 'Enter' || e.key === ' ' ? (e.preventDefault(), openLightbox(slide.src)) : null}
                                                                         />
                                                                 </div>
                                                         {/each}
@@ -168,7 +168,7 @@
                                                 <!-- Navigation buttons -->
                                                 <button 
                                                         class="absolute left-2 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 hover:bg-opacity-75 text-white p-2 rounded-full transition-all"
-                                                        aria-label="Previous slide" onclick={prevSlide}
+                                                        onclick={prevSlide}
                                                 >
                                                         <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
@@ -177,7 +177,7 @@
                                                 
                                                 <button 
                                                         class="absolute right-2 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 hover:bg-opacity-75 text-white p-2 rounded-full transition-all"
-                                                        aria-label="Next slide" onclick={nextSlide}
+                                                        onclick={nextSlide}
                                                 >
                                                         <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
@@ -191,7 +191,7 @@
                                                         {#each slides as _, index}
                                                                 <button
                                                                         class="w-2 h-2 rounded-full transition-all {index === currentSlide ? 'bg-teal-600' : 'bg-gray-400'}"
-                                                                        aria-label="Go to slide {index + 1}" onclick={() => currentSlide = index}
+                                                                        onclick={() => currentSlide = index}
                                                                 ></button>
                                                         {/each}
                                                 </div>
@@ -226,10 +226,10 @@
                                                                 src="/writing-images/ielts-writing-test-1-general-complaint.png"
                                                                 alt="Task 1 complaint letter example"
                                                                 class="w-full rounded border border-gray-600 cursor-pointer hover:opacity-80 transition-opacity mb-6"
-                                                                
-                                                                
-                                                                
-                                                                
+                                                                tabindex="0"
+                                                                role="button"
+                                                                onclick={() => openLightbox('/writing-images/ielts-writing-test-1-general-complaint.png')}
+                                                                onkeydown={(e) => e.key === 'Enter' || e.key === ' ' ? (e.preventDefault(), openLightbox('/writing-images/ielts-writing-test-1-general-complaint.png')) : null}
                                                         />
 
                                                         <div class="mt-8"> <a
@@ -253,10 +253,10 @@
                                                                 src="/writing-images/ielts-writing-test-1-general-inform.png"
                                                                 alt="Task 1 letter to inform example"
                                                                 class="w-full rounded border border-gray-600 cursor-pointer hover:opacity-80 transition-opacity mb-6"
-                                                                
-                                                                
-                                                                
-                                                                
+                                                                tabindex="0"
+                                                                role="button"
+                                                                onclick={() => openLightbox('/writing-images/ielts-writing-test-1-general-inform.png')}
+                                                                onkeydown={(e) => e.key === 'Enter' || e.key === ' ' ? (e.preventDefault(), openLightbox('/writing-images/ielts-writing-test-1-general-inform.png')) : null}
                                                         />
 
                                                         <div class="mt-8"> <a href="https://insideielts.oppyo.com/video/embed/nm3hxt4rpn"
@@ -298,8 +298,8 @@
                                                                         src="/LESSONS/les03/T1_GT(6).png"
                                                                         alt="Task 1 GT complaint practice"
                                                                         class="w-full h-auto rounded border border-gray-600 cursor-pointer hover:opacity-80 transition-opacity"
-                                                                        
-                                                                        
+                                                                        tabindex="0"
+                                                                        role="button"
                                                                         onclick={() => openLightbox('/LESSONS/les03/T1_GT(6).png')}
                                                                         onkeydown={(e) => e.key === 'Enter' || e.key === ' ' ? (e.preventDefault(), openLightbox('/LESSONS/les03/T1_GT(6).png')) : null}
                                                                 />
@@ -320,7 +320,7 @@
                                                                         <p class="md:text-xs lg:text-sm text-gray-400 italic">(Maximum 50 words)</p>
                                                                 </div>
 
-                                                                <div class="md:hidden mt-4">
+                                                                <div>
                                                                         <h4 class="font-bold text-white text-center mb-2">answer sheet</h4>
                                                                         <textarea
                                                                                 bind:value={task1Answer}
@@ -331,17 +331,6 @@
                                                                 </div>
                                                         </div>
                                                 </div>
-
-										<!-- Answer sheet - desktop/tablet only -->
-										<div class="hidden md:block mt-6">
-											<h4 class="font-bold text-white text-center mb-2">answer sheet</h4>
-											<textarea
-												bind:value={task1Answer}
-												rows="6"
-												placeholder="write your response"
-												class="w-full p-3 border border-gray-500 bg-gray-700 text-white rounded resize-none focus:outline-none focus:ring-2 focus:ring-teal-500"
-											></textarea>
-										</div>
                                         </div>
 
                                         <!-- Practice Exercise 2 -->
@@ -355,8 +344,8 @@
                                                                         src="/LESSONS/les03/T1_GT(4).png"
                                                                         alt="Task 1 GT inform practice"
                                                                         class="w-full h-auto rounded border border-gray-600 cursor-pointer hover:opacity-80 transition-opacity"
-                                                                        
-                                                                        
+                                                                        tabindex="0"
+                                                                        role="button"
                                                                         onclick={() => openLightbox('/LESSONS/les03/T1_GT(4).png')}
                                                                         onkeydown={(e) => e.key === 'Enter' || e.key === ' ' ? (e.preventDefault(), openLightbox('/LESSONS/les03/T1_GT(4).png')) : null}
                                                                 />
@@ -377,28 +366,17 @@
                                                                         <p class="md:text-xs lg:text-sm text-gray-400 italic">(Maximum 6 points)</p>
                                                                 </div>
 
-                                                                <div class="md:hidden mt-4">
+                                                                <div>
                                                                         <h4 class="font-bold text-white text-center mb-2">answer sheet</h4>
                                                                         <textarea
                                                                                 bind:value={task2Answer}
                                                                                 rows="6"
                                                                                 placeholder="write your response"
-                                                                                class="w-full p-3 border border-gray-500 bg-gray-700 text-white rounded resize-none focus:outline-none focus:ring-2 focus:ring-teal-500"
+                                                                                class="p-3 border border-gray-500 bg-gray-700 text-white rounded resize-none focus:outline-none focus:ring-2 focus:ring-teal-500"
                                                                         ></textarea>
                                                                 </div>
                                                         </div>
                                                 </div>
-
-										<!-- Answer sheet - desktop/tablet only -->
-										<div class="hidden md:block mt-6">
-											<h4 class="font-bold text-white text-center mb-2">answer sheet</h4>
-											<textarea
-												bind:value={task2Answer}
-												rows="6"
-												placeholder="write your response"
-												class="w-full p-3 border border-gray-500 bg-gray-700 text-white rounded resize-none focus:outline-none focus:ring-2 focus:ring-teal-500"
-											></textarea>
-										</div>
                                         </div>
                                 </div>
                         </div>
@@ -433,8 +411,8 @@
                 <div
                         class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 p-4"
                         onclick={closeLightbox}
-                        
-                        
+                        role="button"
+                        tabindex="0"
                         onkeydown={(e) => e.key === 'Enter' && closeLightbox()}
                 >
                         <div class="max-w-4xl max-h-full">
