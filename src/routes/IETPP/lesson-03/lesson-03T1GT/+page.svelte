@@ -333,7 +333,7 @@
                                                 </div>
 
 										<!-- Answer sheet - desktop/tablet only -->
-										<div class="hidden md:block mt-6">
+										<div class="hidden md:block mt-6 max-w-[700px] mx-auto">
 											<h4 class="font-bold text-white text-center mb-2">answer sheet</h4>
 											<textarea
 												bind:value={task1Answer}
@@ -390,7 +390,7 @@
                                                 </div>
 
 										<!-- Answer sheet - desktop/tablet only -->
-										<div class="hidden md:block mt-6">
+										<div class="hidden md:block mt-6 max-w-[700px] mx-auto">
 											<h4 class="font-bold text-white text-center mb-2">answer sheet</h4>
 											<textarea
 												bind:value={task2Answer}
