@@ -4,6 +4,16 @@ InsideIELTS is a comprehensive IELTS (International English Language Testing Sys
 
 The platform serves as both a lead generation tool and a valuable educational resource, offering instant feedback on speaking performance and personalized improvement exercises. Users can complete a short speaking test, receive detailed AI analysis, and access targeted practice materials to improve their IELTS scores.
 
+# Recent Changes
+
+## September 30, 2025
+- **Responsive Answer Sheet Positioning (Lesson 03 T1GT)**: Implemented adaptive layout for practice exercise answer sheets
+  - Mobile (< 768px): Answer sheets display within the right column of the two-column grid layout
+  - Desktop/Tablet (≥ 768px): Answer sheets display below the two-column layout for better space utilization
+  - Used Tailwind's responsive classes (`md:hidden` and `hidden md:block`) with synchronized Svelte variable bindings
+  - Both textarea instances bound to same variables (task1Answer, task2Answer) to preserve user input across breakpoints
+- **Accessibility Improvements**: Removed `role="button"` attributes from non-interactive image elements to reduce accessibility warnings
+
 # User Preferences
 
 Preferred communication style: Simple, everyday language.
