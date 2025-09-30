@@ -317,16 +317,16 @@
                                                 <!-- Right Column - Task and Answer Sheet -->
                                                 <div class="md:col-span-2 flex flex-col space-y-4">
                                                         <div class="bg-gray-700 border border-gray-600 rounded-lg p-4">
-                                                                <h4 class="font-bold text-center text-white mb-3 underline">TASK</h4>
-                                                                <p class="text-white mb-3">
+                                                                <h4 class="font-bold text-center text-white mb-3 underline md:text-sm lg:text-base">TASK</h4>
+                                                                <p class="text-white mb-3 md:text-sm lg:text-base">
                                                                         Write the first paragraph for this Task 1 question.
                                                                 </p>
-                                                                <ul class="text-left text-gray-300 space-y-1 mb-3">
+                                                                <ul class="text-left text-gray-300 space-y-1 mb-3 md:text-sm lg:text-base">
                                                                         <li>• paraphrase the question</li>
                                                                         <li>• say what the graph shows</li>
                                                                         <li>• mention the broad trend/s (overview)</li>
                                                                 </ul>
-                                                                <p class="text-sm text-gray-400 italic">(Maximum 60 words)</p>
+                                                                <p class="text-sm text-gray-400 italic md:text-xs lg:text-sm">(Maximum 60 words)</p>
                                                         </div>
 
                                                         <div class="flex flex-col flex-1">
@@ -362,16 +362,16 @@
                                                 <!-- Right Column - Task and Answer Sheet -->
                                                 <div class="md:col-span-2 flex flex-col space-y-4">
                                                         <div class="bg-gray-700 border border-gray-600 rounded-lg p-4">
-                                                                <h4 class="font-bold text-center text-white mb-3 underline">TASK</h4>
-                                                                <p class="text-white mb-3">
+                                                                <h4 class="font-bold text-center text-white mb-3 underline md:text-sm lg:text-base">TASK</h4>
+                                                                <p class="text-white mb-3 md:text-sm lg:text-base">
                                                                         List the main features that you will include in your report for this Task 1 question.
                                                                 </p>
-                                                                <ul class="text-left text-gray-300 space-y-1 mb-3">
+                                                                <ul class="text-left text-gray-300 space-y-1 mb-3 md:text-sm lg:text-base">
                                                                         <li>• different buildings</li>
                                                                         <li>• paths</li>
                                                                         <li>• other additional features</li>
                                                                 </ul>
-                                                                <p class="text-sm text-gray-400 italic">(Maximum 5-6 points)</p>
+                                                                <p class="text-sm text-gray-400 italic md:text-xs lg:text-sm">(Maximum 5-6 points)</p>
                                                         </div>
 
                                                         <div class="flex flex-col flex-1">

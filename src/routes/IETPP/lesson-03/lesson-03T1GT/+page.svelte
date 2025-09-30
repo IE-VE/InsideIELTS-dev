@@ -306,7 +306,7 @@
                                                         </div>
 
                                                         <!-- Right Column - Task and Answer Sheet (2/5 width) -->
-                                                        <div class="md:col-span-2 space-y-4">
+                                                        <div class="md:col-span-2">
                                                                 <div class="bg-gray-700 border border-gray-600 rounded-lg p-4">
                                                                         <h4 class="font-bold text-center text-white mb-3 underline">TASK</h4>
                                                                         <p class="text-white mb-3">
@@ -324,7 +324,7 @@
                                                                         <h4 class="font-bold text-white text-center mb-2">answer sheet</h4>
                                                                         <textarea
                                                                                 bind:value={task1Answer}
-                                                                                rows="12"
+                                                                                rows="6"
                                                                                 placeholder="write your response"
                                                                                 class="w-full p-3 border border-gray-500 bg-gray-700 text-white rounded resize-none focus:outline-none focus:ring-2 focus:ring-teal-500"
                                                                         ></textarea>
@@ -352,7 +352,7 @@
                                                         </div>
 
                                                         <!-- Right Column - Task and Answer Sheet (1/3 width) -->
-                                                        <div class="md:col-span-2 space-y-4">
+                                                        <div class="md:col-span-2">
                                                                 <div class="bg-gray-700 border border-gray-600 rounded-lg p-4">
                                                                         <h4 class="font-bold text-center text-white mb-3 underline">TASK</h4>
                                                                         <p class="text-white mb-3">
@@ -370,7 +370,7 @@
                                                                         <h4 class="font-bold text-white text-center mb-2">answer sheet</h4>
                                                                         <textarea
                                                                                 bind:value={task2Answer}
-                                                                                rows="12"
+                                                                                rows="6"
                                                                                 placeholder="write your response"
                                                                                 class="w-full p-3 border border-gray-500 bg-gray-700 text-white rounded resize-none focus:outline-none focus:ring-2 focus:ring-teal-500"
                                                                         ></textarea>
