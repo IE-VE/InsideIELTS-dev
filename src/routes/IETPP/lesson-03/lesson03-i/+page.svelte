@@ -120,7 +120,7 @@
 						<img
 							src="/LESSONS/les03/03(i)/T1_AcQ-torn.png"
 							alt="IELTS Task 1 Academic writing question"
-							class="w-full max-w-2xl rounded border border-gray-600 cursor-pointer hover:opacity-80 transition-opacity"
+							class="w-full max-w-2xl rounded border border-gray-600 cursor-pointer hover:opacity-80 transition-opacity mt-8 mb-8"
 							onclick={() => openLightbox('/LESSONS/les03/03(i)/T1_AcQ-torn.png')}
 							onkeydown={(e) => e.key === 'Enter' || e.key === ' ' ? (e.preventDefault(), openLightbox('/LESSONS/les03/03(i)/T1_AcQ-torn.png')) : null}
 							tabindex="0"
@@ -137,7 +137,7 @@
 						<img
 							src="/LESSONS/les03/03(i)/T1_GTQ-torn.png"
 							alt="IELTS Task 1 General Training writing question"
-							class="w-full max-w-2xl rounded border border-gray-600 cursor-pointer hover:opacity-80 transition-opacity"
+							class="w-full max-w-2xl rounded border border-gray-600 cursor-pointer hover:opacity-80 transition-opacity mt-8 mb-8"
 							onclick={() => openLightbox('/LESSONS/les03/03(i)/T1_GTQ-torn.png')}
 							onkeydown={(e) => e.key === 'Enter' || e.key === ' ' ? (e.preventDefault(), openLightbox('/LESSONS/les03/03(i)/T1_GTQ-torn.png')) : null}
 							tabindex="0"
@@ -162,7 +162,7 @@
 						<img
 							src="/LESSONS/les03/03(i)/W_Table-TA.png"
 							alt="IELTS Task 1 writing rubric TA"
-							class="w-full max-w-4xl rounded border border-gray-600 cursor-pointer hover:opacity-80 transition-opacity"
+							class="w-full max-w-4xl rounded border border-gray-600 cursor-pointer hover:opacity-80 transition-opacity mt-8 mb-8"
 							onclick={() => openLightbox('/rubrics/W_Table-TA.png')}
 							onkeydown={(e) => e.key === 'Enter' || e.key === ' ' ? (e.preventDefault(), openLightbox('/rubrics/W_Table-TA.png')) : null}
 							tabindex="0"
@@ -232,7 +232,7 @@
 						<img
 							src="/LESSONS/les03/03(i)/T2-breakdown.png"
 							alt="IELTS Task 2 writing question breakdown"
-							class="w-full max-w-2xl rounded border-2 border-gray-900 cursor-pointer hover:opacity-80 transition-opacity"
+							class="w-full max-w-2xl rounded border-2 border-gray-900 cursor-pointer hover:opacity-80 transition-opacity mt-8 mb-8"
 							onclick={() => openLightbox('/LESSONS/les03/03(i)/T2-breakdown.png')}
 							onkeydown={(e) => e.key === 'Enter' || e.key === ' ' ? (e.preventDefault(), openLightbox('/LESSONS/les03/03(i)/T2-breakdown.png')) : null}
 							tabindex="0"
@@ -261,7 +261,7 @@
 						<img
 							src="/LESSONS/les03/03(i)/W_Table-TR.png"
 							alt="IELTS Task 2 writing rubric TR"
-							class="w-full max-w-4xl rounded border border-gray-600 cursor-pointer hover:opacity-80 transition-opacity"
+							class="w-full max-w-4xl rounded border border-gray-600 cursor-pointer hover:opacity-80 transition-opacity mt-8 mb-8"
 							onclick={() => openLightbox('/rubrics/W_Table-TR.png')}
 							onkeydown={(e) => e.key === 'Enter' || e.key === ' ' ? (e.preventDefault(), openLightbox('/rubrics/W_Table-TR.png')) : null}
 							tabindex="0"
