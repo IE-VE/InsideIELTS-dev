@@ -1,58 +1,58 @@
 <script lang="ts">
-        import { onMount } from 'svelte';
+	import { onMount } from 'svelte';
 
-        let lightboxOpen = false;
-        let lightboxImage = '';
+	let lightboxOpen = false;
+	let lightboxImage = '';
 
-        // Answer input variables for practice exercises
-        let task1Answer = '';
-        let task2Answer = '';
+	// Answer input variables for practice exercises
+	let task1Answer = '';
+	let task2Answer = '';
 
-        function openLightbox(imageSrc: string) {
-                lightboxImage = imageSrc;
-                lightboxOpen = true;
-        }
+	function openLightbox(imageSrc: string) {
+		lightboxImage = imageSrc;
+		lightboxOpen = true;
+	}
 
-        function closeLightbox() {
-                lightboxOpen = false;
-                lightboxImage = '';
-        }
+	function closeLightbox() {
+		lightboxOpen = false;
+		lightboxImage = '';
+	}
 
-        // Carousel functionality
-        let currentSlide = 0;
-        const slides = [
-                { title: "Complaint letter", src: "/writing-images/ielts-writing-test-1-general-complaint.png", alt: "ielts writing test-1 general complaint letter" },
-                { title: "Letter to inform", src: "/writing-images/ielts-writing-test-1-general-inform.png", alt: "ielts writing test-1 general inform letter" },
-                { title: "Request letter", src: "/writing-images/ielts-writing-test-1-general-request.png", alt: "ielts writing test-1 general request letter" }
-        ];
+	// Carousel functionality
+	let currentSlide = 0;
+	const slides = [
+		{ title: "Complaint letter", src: "/writing-images/ielts-writing-test-1-general-complaint.png", alt: "ielts writing test-1 general complaint letter" },
+		{ title: "Letter to inform", src: "/writing-images/ielts-writing-test-1-general-inform.png", alt: "ielts writing test-1 general inform letter" },
+		{ title: "Request letter", src: "/writing-images/ielts-writing-test-1-general-request.png", alt: "ielts writing test-1 general request letter" }
+	];
 
-        function nextSlide() {
-                currentSlide = (currentSlide + 1) % slides.length;
-        }
+	function nextSlide() {
+		currentSlide = (currentSlide + 1) % slides.length;
+	}
 
-        function prevSlide() {
-                currentSlide = (currentSlide - 1 + slides.length) % slides.length;
-        }
+	function prevSlide() {
+		currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+	}
 
-        onMount(() => {
-                function handleKeydown(event: KeyboardEvent) {
-                        if (event.key === 'Escape' && lightboxOpen) {
-                                closeLightbox();
-                        }
-                }
+	onMount(() => {
+		function handleKeydown(event: KeyboardEvent) {
+			if (event.key === 'Escape' && lightboxOpen) {
+				closeLightbox();
+			}
+		}
 
-                document.addEventListener('keydown', handleKeydown);
-                
-                // Cleanup function
-                return () => {
-                        document.removeEventListener('keydown', handleKeydown);
-                };
-        });
+		document.addEventListener('keydown', handleKeydown);
+		
+		// Cleanup function
+		return () => {
+			document.removeEventListener('keydown', handleKeydown);
+		};
+	});
 </script>
 
 <svelte:head>
-        <title>Writing Task 1 - General Training | InsideIELTS Test Preparation Program</title>
-        <meta name="description" content="Master IELTS Writing Task 1 General Training with expert letter writing techniques, practice exercises, and Virtual Examiner videos." />
+	<title>Writing Task 1 - General Training | InsideIELTS Test Preparation Program</title>
+	<meta name="description" content="Master IELTS Writing Task 1 General Training with expert letter writing techniques, practice exercises, and Virtual Examiner videos." />
 </svelte:head>
 
 <div class="min-h-screen bg-gray-900 text-white">
@@ -437,11 +437,20 @@
                         onclick={closeLightbox}
                         role="button"
                         tabindex="0"
-                        onkeydown={(e) => e.key === 'Enter' && closeLightbox()}
+                        onkeydown={(e) => e.key === 'Escape' ? closeLightbox() : null}
                 >
-                        <div class="max-w-4xl max-h-full">
-                                <img src={lightboxImage} alt="Enlarged view" class="max-w-full max-h-full object-contain rounded-lg" />
-                        </div>
+                        <img
+                                src={lightboxImage}
+                                alt="Enlarged view"
+                                class="max-w-full max-h-full object-contain"
+                                onclick={(e) => e.stopPropagation()}
+                        />
+                        <button
+                                class="absolute top-4 right-4 text-white text-2xl font-bold bg-black bg-opacity-50 rounded-full w-10 h-10 flex items-center justify-center hover:bg-opacity-75"
+                                onclick={closeLightbox}
+                        >
+                                ×
+                        </button>
                 </div>
         {/if}
 </div>
