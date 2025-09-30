@@ -293,7 +293,6 @@
 					<p class="text-white text-center mb-12 font-bold">
 						Test your understanding of WRITING TASK 2 - TASK RESPONSE
 					</p>
-
 					<div class="flex justify-center mb-8">
 						<a
 							href="/IETPP/lesson-03/lesson03-i/skill-check#T2SC"
@@ -304,27 +303,24 @@
 							<span>✓</span>
 						</a>
 					</div>
-
 				</div>
 			</div>
 		</section>
 
 				<!-- Footer Navigation -->
-									<section class="text-center">                       
+									<section class="text-center">          
 
 													<div class="bg-gray-800 rounded-lg p-6 shadow-sm border border-gray-700">
 																	<div class="flex justify-between items-center">
 																					<a
 																									href="/IETPP#lesson-03"
 																									class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300 font-semibold"
-																									data-sveltekit-reload
+					data-sveltekit-reload
 																					>
 																									← Back to Contents
 																					</a>
-																					<a
-																									href="/IETPP/lesson-02/lesson03-ii"
-																									class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300 font-semibold"
-																									data-sveltekit-reload
+																					<a																href="/IETPP/lesson-02/lesson03-ii"												class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300 font-semibold"
+							data-sveltekit-reload
 																					>
 																									Next Lesson →
 																					</a>
