@@ -154,7 +154,7 @@
 					</p>
 					<ul class="text-white mb-8 space-y-2 ml-6">
 						<li>• covering the task requirements;</li>
-						<li>• presenting a clear overview (Ac) / purpose (GT);</li>
+			<li>• presenting a clear overview (Ac) / purpose (GT);</li>
 						<li>• covering the key features (Ac) / bullet points (GT) given in the question.</li>
 					</ul>
 

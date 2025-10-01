@@ -1,0 +1,251 @@
+<script lang="ts">
+	import { onMount } from 'svelte';
+
+	let answer1 = '';
+	let answer2 = '';
+	let answer3 = '';
+	let answer4 = '';
+	let answer5 = '';
+	let answer6 = '';
+
+	let lightboxOpen = false;
+	let lightboxImage = '';
+
+	function openLightbox(imageSrc: string) {
+		lightboxImage = imageSrc;
+		lightboxOpen = true;
+	}
+
+	function closeLightbox() {
+		lightboxOpen = false;
+		lightboxImage = '';
+	}
+
+	function handleUpload() {
+		alert('Upload functionality will be implemented soon!');
+	}
+
+	onMount(() => {
+		function handleKeydown(event: KeyboardEvent) {
+			if (event.key === 'Escape' && lightboxOpen) {
+				closeLightbox();
+			}
+		}
+
+		document.addEventListener('keydown', handleKeydown);
+		
+		return () => {
+			document.removeEventListener('keydown', handleKeydown);
+		};
+	});
+</script>
+
+<svelte:head>
+	<title>Skill Check - Writing Coherence & Cohesion | InsideIELTS</title>
+	<meta name="description" content="Test your understanding of IELTS Writing Coherence & Cohesion criteria." />
+</svelte:head>
+
+<div class="min-h-screen bg-gray-900 text-white">
+	<!-- Header -->
+	<div class="max-w-5xl container mx-auto px-3 md:px-6 py-8">
+		<div class="bg-gray-50 dark:bg-gray-800 rounded-lg px-6 py-4 mb-8">
+			<div class="text-center">
+				<h1 class="text-3xl font-bold text-teal-400 my-4 flex items-center justify-center gap-3">
+					<span class="text-4xl">✓</span>
+					<span>Skill Check</span>
+					<span class="text-4xl">✓</span>
+				</h1>
+			</div>
+
+			<div class="flex justify-between items-center mt-4">
+				<a
+					href="/IETPP/lesson-03/lesson03-ii"
+					class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300 font-semibold"
+					data-sveltekit-reload
+				>
+					← Back to Lesson
+				</a>
+
+				<a
+					href="/IETPP#lesson-03"
+					class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300 font-semibold"
+					data-sveltekit-reload
+				>
+					Contents
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<!-- Main Content -->
+	<div style="max-width: 1200px;" class="mx-auto px-3 md:px-6 py-8">
+		<section class="bg-gray-200 dark:bg-gray-700 rounded-lg p-4 md:p-8 shadow-sm border border-blue-600 mb-8">
+			<div class="max-w-6xl mx-auto">
+				
+				<!-- Introduction -->
+				<div class="bg-gray-800 rounded-lg p-6 text-lg border border-gray-700 mb-8">
+					<p class="text-white mb-6 font-bold">
+						Complete this Writing Skill-Check exercise then upload your answers for checking and feedback.
+					</p>
+
+					<p class="text-white mb-8 font-bold">
+						For CC, LR and GRA we will focus on the Task 2 essay. (The assessment criteria and descriptors
+						are the same for both tasks.)
+					</p>
+
+					<!-- Section Header -->
+					<div class="bg-blue-900 rounded-lg p-6 mb-6 border-2 border-blue-500">
+						<p class="text-teal-400 text-xl font-bold mb-4">SC3(ii)</p>
+						<h2 class="text-white text-2xl font-bold text-center mb-6">WRITING - Coherence & Cohesion</h2>
+
+						<p class="text-white mb-6 italic">- Answer the following comprehension questions -</p>
+
+						<!-- Question 1 -->
+						<div class="mb-8">
+							<p class="text-white mb-3">
+								1. What are the 4 descriptors used to rate the <em>Coherence & Cohesion</em> of your Task 2 essay?
+							</p>
+							<textarea
+								bind:value={answer1}
+								rows="4"
+								class="w-full p-3 rounded bg-gray-700 text-white border border-gray-600 focus:border-teal-400 focus:outline-none"
+								placeholder="answer"
+							></textarea>
+						</div>
+
+						<p class="text-white mb-8 text-center italic">
+							Questions 2 - 5 refer to the sample (Band 7) Task 2 response below.
+						</p>
+
+						<!-- Sample Image -->
+						<div class="bg-white rounded-lg p-4 mb-8 border-2 border-black">
+							<img
+								src="/LESSONS/les03/03(ii)/CC_T2sample.png"
+								alt="IELTS Task 2 sample answer"
+								class="w-full cursor-pointer hover:opacity-80 transition-opacity"
+								onclick={() => openLightbox('/LESSONS/les03/03(ii)/CC_T2sample.png')}
+								onkeydown={(e) => e.key === 'Enter' || e.key === ' ' ? (e.preventDefault(), openLightbox('/LESSONS/les03/03(ii)/CC_T2sample.png')) : null}
+								tabindex="0"
+							/>
+						</div>
+
+						<!-- Question 2 -->
+						<div class="mb-8">
+							<p class="text-white mb-3">
+								2. What is the correct order of the paragraphs in this essay? (<em>Use the cohesive 
+								devices and organisation of information/ideas to help you.</em>)
+							</p>
+							<textarea
+								bind:value={answer2}
+								rows="1"
+								class="w-full p-3 rounded bg-gray-700 text-white border border-gray-600 focus:border-teal-400 focus:outline-none"
+								placeholder="answer"
+							></textarea>
+						</div>
+
+						<!-- Question 3 -->
+						<div class="mb-8">
+							<p class="text-white mb-3">
+								3. List three cohesive devices used in paragraphs A, D and E.
+							</p>
+							<textarea
+								bind:value={answer3}
+								rows="3"
+								class="w-full p-3 rounded bg-gray-700 text-white border border-gray-600 focus:border-teal-400 focus:outline-none"
+								placeholder="answer"
+							></textarea>
+						</div>
+
+						<!-- Question 4 -->
+						<div class="mb-8">
+							<p class="text-white mb-3">
+								4. Find and explain three examples of referencing (used appropriately).
+							</p>
+							<textarea
+								bind:value={answer4}
+								rows="6"
+								class="w-full p-3 rounded bg-gray-700 text-white border border-gray-600 focus:border-teal-400 focus:outline-none"
+								placeholder="answer"
+							></textarea>
+						</div>
+
+						<!-- Question 5 -->
+						<div class="mb-8">
+							<p class="text-white mb-3">
+								5. What is the central topic (main idea) in body paragraph A and body paragraph E?
+							</p>
+							<textarea
+								bind:value={answer5}
+								rows="6"
+								class="w-full p-3 rounded bg-gray-700 text-white border border-gray-600 focus:border-teal-400 focus:outline-none"
+								placeholder="answer"
+							></textarea>
+						</div>
+
+						<!-- Question 6 -->
+						<div class="mb-8">
+							<p class="text-white mb-3">
+								6. Fill the gaps in the Task 2 essay extracts below.
+							</p>
+							<div class="flex justify-center mb-6">
+								<img
+									src="/LESSONS/les03/03(ii)/SC3(ii)-Q6.png"
+									alt="IELTS CC gapfill"
+									class="w-full max-w-4xl cursor-pointer hover:opacity-80 transition-opacity border-2 border-black rounded"
+									onclick={() => openLightbox('/LESSONS/les03/03(ii)/SC3(ii)-Q6.png')}
+									onkeydown={(e) => e.key === 'Enter' || e.key === ' ' ? (e.preventDefault(), openLightbox('/LESSONS/les03/03(ii)/SC3(ii)-Q6.png')) : null}
+									tabindex="0"
+								/>
+							</div>
+							<textarea
+								bind:value={answer6}
+								rows="6"
+								class="w-full p-3 rounded bg-gray-700 text-white border border-gray-600 focus:border-teal-400 focus:outline-none"
+								placeholder="answer"
+							></textarea>
+						</div>
+
+						<!-- Upload Button -->
+						<div class="flex justify-center mt-8">
+							<button
+								onclick={handleUpload}
+								class="bg-teal-600 hover:bg-teal-700 text-white font-bold py-3 px-8 rounded-lg border-2 border-teal-400 transition-colors text-lg"
+							>
+								UPLOAD
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Lesson End Section -->
+		<section class="text-center py-8">
+			<div class="bg-gray-800 rounded-lg p-6 shadow-sm border border-gray-700">
+				<p class="text-white mb-6">End of Skill Check 03(ii)</p>
+				<a
+					href="/IETPP#lesson-03"
+					class="text-teal-400 hover:underline font-semibold"
+					data-sveltekit-reload
+				>
+					← Back to Contents
+				</a>
+			</div>
+		</section>
+	</div>
+
+	<!-- Lightbox -->
+	{#if lightboxOpen}
+		<div
+			class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 p-4"
+			onclick={closeLightbox}
+			role="button"
+			tabindex="0"
+			onkeydown={(e) => e.key === 'Enter' && closeLightbox()}
+		>
+			<div class="max-w-6xl max-h-full">
+				<img src={lightboxImage} alt="Enlarged view" class="max-w-full max-h-full object-contain rounded-lg" />
+			</div>
+		</div>
+	{/if}
+</div>
