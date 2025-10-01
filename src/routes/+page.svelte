@@ -97,7 +97,7 @@
 	const testimonials = [
 		{
 			quote:
-				'The personalised feedback was super valuable! It helped me identify my exact weak points in fluency and pronunciation. After following the focused exercises I improved from Band 6 to Band 7 in only two weeks.',
+				'The personalised feedback was great. It helped me identify my exact weak points in fluency and pronunciation. After following the focused exercises I improved from Band 6 to Band 7 in only two weeks.',
 			author: 'Aliza from Pakistan'
 		},
 		{
@@ -299,9 +299,9 @@
 			<P class="mb-2 text-center text-sm font-semibold text-teal-600 dark:text-teal-400"
 				>WHY WE'RE DIFFERENT</P
 			>
-			<Heading tag="h2">Why Choose Our Free Test</Heading>
+			<Heading tag="h2">Why Choose Our Free Tests</Heading>
 			<div class="mx-auto mt-4 h-1 w-24 rounded-full bg-teal-500/40"></div>
-			<P class="mt-6 text-center">Expert features to help you succeed</P>
+			<P class="mt-6 text-center">Expert analysis to help you succeed</P>
 		</div>
 		<div class="grid place-items-center gap-8 md:grid-cols-3">
 			{#each valueProps as prop}
@@ -332,24 +332,27 @@
 			<div class="space-y-4 md:space-y-4">
 				<center><Heading tag="h4">Meet Your IELTS Experts</Heading></center>
 				<P>
-					At <b>InsideIELTS</b>, our team of experts – Alex, Paul, and Wendy – combine over two decades of IELTS teaching and examiner                    experience to help you achieve your goals.
+					At <b>InsideIELTS</b>, our team of experts combine over two decades of IELTS teaching and examiner experience to help you achieve your goals.
 					We focus on what really matters: identifying your weaknesses, building your strengths, and giving you clear, actionable strategies              for test-day success.
 				</P>
 			</div>
 			
 			<!-- Image positioned between paragraph and blockquote on mobile, right column on desktop -->
 			<div class="flex justify-center md:row-span-2">
+				<figure>
 				<picture>
 					<source srcset="/IE_Team1.webp" type="image/webp" />
 					<img
 						src="/IE_Team1.png"
-						alt="Alex - IELTS Speaking Expert"
-						class="h-48 w-72 rounded-md border-1 border-white m-6"
+						alt="Alex, Paul & Jane - InsideIELTS Experts"
+						class="h-48 w-72 rounded-md border-1 border-white mt-6 mb-2"
 						loading="lazy"
 						height="281"
 						width="457"
 						/>
 				</picture>
+<figcaption class="text-center text-sm text-gray-400 dark:text-gray-400 mb-4">Alex, Paul and Jane at IE HQ</figcaption>
+					</figure>
 			</div>
 			
 			<div class="md:col-start-1">

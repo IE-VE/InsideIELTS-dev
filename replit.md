@@ -6,12 +6,24 @@ The platform serves as both a lead generation tool and a valuable educational re
 
 # Recent Changes
 
+## October 01, 2025
+- **Lesson 03(ii) - Writing Coherence & Cohesion**: Created new skills practice lesson page
+  - Content: Coherence & Cohesion assessment criteria for writing tasks
+  - Features: 2 video tutorials (intro and demo), rubric table, and skill check link
+  - Media: Integrated 2 MP4 videos and 1 PNG rubric from static/LESSONS/les03/03(ii)
+  - Navigation: Connected lesson flow from lesson03-i → lesson03-ii → lesson-03
+
 ## September 30, 2025
 - **Lesson 03(i) - Writing Task Achievement/Task Response**: Created new skills practice lesson page
   - Content: Writing assessment criteria for Task 1 (Academic & General Training) and Task 2
   - Features: Video tutorials, rubric tables, model answer breakdowns, and skill check links
   - Media: Integrated 4 MP4 videos and 6 PNG images from static/LESSONS/les03/03(i)
   - Navigation: Connected lesson flow from lesson-03T2 → lesson03-i → lesson-03
+- **Lesson 03(i) Skill Check Page**: Created comprehensive skill check page with 3 sections
+  - Academic (SC3(i):Ac): 6 comprehension questions about Task Achievement
+  - General Training (SC3(i):GT): 6 comprehension questions with letter scenario
+  - Task 2 (SC3(i):T2): 5 comprehension questions about Task Response
+  - All images integrated with lightbox functionality and upload placeholders
 - **Image Responsiveness (Lesson 03 T2)**: Fixed all Section 2 and 3 images with `w-full` class for proper mobile/tablet resizing
 - **Answer Sheet Width Constraint (Lesson 03 T1GT)**: Added 700px maximum width to answer sheets with centering (max-w-[700px] mx-auto)
 - **Responsive Answer Sheet Positioning (Lesson 03 T1GT)**: Implemented adaptive layout for practice exercise answer sheets
