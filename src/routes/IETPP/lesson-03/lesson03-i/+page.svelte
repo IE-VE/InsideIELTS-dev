@@ -30,7 +30,7 @@
 </script>
 
 <svelte:head>
-	<title>Writing - Task Achievement / Task Response | InsideIELTS Test Preparation Program</title>
+	<title>Writing - TA / TR | InsideIELTS Test Preparation Program</title>
 	<meta name="description" content="Master IELTS Writing Task Achievement and Task Response criteria with expert guidance and Virtual Examiner videos." />
 </svelte:head>
 
@@ -78,7 +78,7 @@
 	<div style="max-width: 1200px;" class="mx-auto px-3 md:px-6 py-8">
 
 		<!-- Main Section: Writing TA/TR -->
-		<section class="bg-cyan-600/25 rounded-lg p-4 md:p-10 shadow-sm border border-blue-600 mb-12">
+		<section class="bg-cyan-600/25 rounded-lg p-4 md:p-10 shadow-sm border border-blue-700 mb-12">
 			<div class="flex items-center justify-center gap-4 mb-10">
 				<div class="text-4xl">✏️</div>
 				<h2 class="text-3xl font-bold text-center text-white tracking-wide">Task Achievement / Task Response</h2>

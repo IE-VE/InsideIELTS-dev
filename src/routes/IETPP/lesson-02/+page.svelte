@@ -212,7 +212,7 @@
 
 <!-- Page Content -->     
                 <!-- Section 1: Reading Test Format and Question Types -->
-                <section class="bg-cyan-600/25 rounded-lg p-4 md:p-8 shadow-sm border border-teal-600 mb-8">
+                <section class="bg-cyan-600/25 rounded-lg p-4 md:p-8 shadow-sm border border-blue-700 mb-8">
                         <h2 class="text-2xl font-bold text-center text-white mb-8">
                                 Reading Test Question types</h2>
                         <div class="max-w-4xl mx-auto">  
@@ -345,9 +345,9 @@
                 </section>
 
                 <!-- Section 3: Reading Question Practice -->
-                <section class="bg-cyan-800/25 rounded-lg p-4 md:p-8 shadow-sm border border-teal-500 mb-8">
+                <section class="bg-cyan-800/25 rounded-lg p-4 md:p-8 shadow-sm border border-cyan-600 mb-8">
                         <h2 class="text-2xl font-bold text-center text-white">Reading Sample Exercises</h2>
-
+                        
                         <div class="max-w-6xl mx-auto">
                                 <p class="text-white text-lg p-2 md:p-10">
                                         <span class="inline-block bg-red-500 text-white font-bold px-2 py-1 rounded-md border-2 border-yellow-600 shadow-lg mr-2">

@@ -43,15 +43,15 @@
 </script>
 
 <svelte:head>
-	<title>Skill Check 03(i) - Writing Task Achievement | InsideIELTS</title>
+	<title>Skill Check - Writing TA | InsideIELTS</title>
 	<meta
 		name="description"
-		content="Complete IELTS Writing Task Achievement and Task Response skill check exercises with comprehension questions."
+		content="Complete IELTS Writing Task Achievement & Task Response skill check exercises with comprehension questions."
 	/>
 </svelte:head>
 
 <div class="min-h-screen bg-gray-900 text-white">
-	<!-- Lesson Header -->
+	<!-- Header -->
 	<div class="max-w-5xl container mx-auto px-6 pt-8">
 		<div class="bg-gray-50 dark:bg-gray-800 rounded-lg px-6 py-2 mb-8">
 			<div class="text-center">
@@ -94,7 +94,7 @@
 	<div style="max-width: 1200px;" class="mx-auto px-3 md:px-6 py-8">
 
 		<!-- Skill Check Title -->
-		<section class="bg-cyan-600/25 rounded-lg p-4 md:p-10 shadow-sm border border-blue-600 mb-8">
+		<section class="bg-cyan-600/25 rounded-lg p-4 md:p-10 shadow-sm border border-blue-700 mb-8">
 			<div class="flex items-center justify-center gap-4 mb-8">
 							<div class="text-4xl text-green-500">✓</div>
 							<h2 class="text-2xl font-bold text-center text-white tracking-wider">SKILL CHECK 3.1</h2>
