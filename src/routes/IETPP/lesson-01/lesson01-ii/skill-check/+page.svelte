@@ -367,9 +367,8 @@
                                                                                 <div class="ml-3">
                                                                                         {#if markingResults[questionKey]?.isCorrect}
                                                                                                 <span class="text-green-400 text-xl">✓</span>
-                                                                                        {:else}
-                                                                                                <span class="text-red-400 text-xl">✗</span>
-                                                                                        {/if}
+                                                                                        {:else}                                                                                     <span class="text-red-400 text-xl">✗</span>
+                                                            {/if}
                                                                                 </div>
                                                                         </div>
                                                                 {/each}

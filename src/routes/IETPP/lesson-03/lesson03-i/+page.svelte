@@ -37,7 +37,7 @@
 <div class="min-h-screen bg-gray-900 text-white">
 	<!-- Lesson Header -->
 	<div class="max-w-5xl container mx-auto px-6 pt-8">
-		<div class="bg-gray-50 dark:bg-gray-800 rounded-lg px-6 py-2 mb-8">
+		<div class="bg-gray-800 border border-gray-600 rounded-lg px-6 py-2 mb-8">
 			<div class="text-center">
 				<div class="text-xs text-left text-teal-600 dark:text-teal-400">
 					IE2401_03.1
