@@ -87,8 +87,8 @@
 			<div class="max-w-6xl mx-auto">
 				<div class="bg-gray-800 rounded-lg p-4 md:p-8 text-lg border border-gray-600 mb-12">
 
-					 <div class="bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-lg p-4 mb-8">
-					<p class="text-gray-700 dark:text-gray-300 text-lg mb-2">
+					 <div class="bg-blue-900/50 border border-blue-700 rounded-lg p-4 mb-8">
+					<p class="text-gray-700 dark:text-gray-300 text-lg">
 						<strong>Task Achievement</strong> in <strong>Writing Task 1</strong> and <strong>Task Response</strong> in <strong>Writing Task 2</strong> measure how well you
 						fulfill the requirements of the two writing questions. We'll look at the <strong>TA/TR</strong> descriptors for each of the writing tasks individually.
 					</p>
@@ -210,7 +210,7 @@
 						Test your understanding of WRITING TASK 1 - TASK ACHIEVEMENT
 					</p>
 
-					<div class="flex justify-center mb-12">
+					<div class="flex justify-center mb-8">
 						<a
 							href="/IETPP/lesson-03/lesson03-i/skill-check_T1"
 							class="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition-colors border-2 border-white"
@@ -223,7 +223,7 @@
 					</div>
 
 				<!-- Task 2 Section -->
-					<div class="bg-gray-800 rounded-lg p-4 md:p-8 text-lg border border-gray-600 mb-12">
+					<div class="bg-gray-800 rounded-lg p-4 md:p-8 text-lg border border-gray-600 mb-8">
 
 					<h3 class="text-2xl font-bold text-white mb-6 underline mt-4">TASK 2</h3>
 
@@ -295,7 +295,7 @@
 						</div>
 					</div>
 						
-						<div class="text-center mb-10">
+						<div class="text-center mb-6">
 					<p class="text-white mb-12 font-bold">
 						Test your understanding of WRITING TASK 2 - TASK RESPONSE
 					</p>

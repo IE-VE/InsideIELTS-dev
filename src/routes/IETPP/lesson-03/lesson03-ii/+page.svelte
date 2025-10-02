@@ -30,19 +30,19 @@
 </script>
 
 <svelte:head>
-	<title>Writing - Coherence & Cohesion | InsideIELTS Test Preparation Program</title>
+	<title>Writing - C&C | InsideIELTS Test Preparation Program</title>
 	<meta name="description" content="Master IELTS Writing Coherence & Cohesion criteria with expert guidance and Virtual Examiner videos." />
 </svelte:head>
 
 <div class="min-h-screen bg-gray-900 text-white">
 	<!-- Lesson Header -->
 	<div class="max-w-5xl container mx-auto px-6 pt-8">
-		<div class="bg-gray-50 dark:bg-gray-800 rounded-lg px-6 py-2 mb-8">
+		<div class="bg-gray-800 border border-gray-600 rounded-lg px-6 py-2 mb-8">
 			<div class="text-center">
-				<div class="text-xs text-left text-teal-600 dark:text-teal-400">
+				<div class="text-xs text-left text-teal-400">
 					IE2401_03.2
 				</div>
-				<h1 class="text-3xl font-bold text-white my-7">
+				<h1 class="text-4xl font-bold text-white my-7">
 					WRITING
 				</h1>
 			</div>
@@ -87,8 +87,8 @@
 				<div class="max-w-6xl mx-auto">
 					<div class="bg-gray-800 rounded-lg p-4 md:p-8 text-lg border border-gray-600 mb-12">
 
-						 <div class="bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-lg p-4 mb-8">
-						<p class="text-gray-700 dark:text-gray-300 text-lg mb-2">
+						 <div class="bg-blue-900/50 border border-blue-700 rounded-lg p-4 mb-8">
+						<p class="text-white text-lg">
 						<strong>Coherence & Cohesion</strong> is a measure of how well your writing task is structured in terms of organisation of ideas,
 						clarity of information/argument, and ease of understanding for the reader.
 					</p>
@@ -109,7 +109,7 @@
 					</div>
 						</div>
 
-								<div class="bg-gray-800 rounded-lg p-4 md:p-8 text-lg border border-gray-600 mb-12">
+								<div class="bg-gray-800 rounded-lg p-4 md:p-8 text-lg border border-gray-600 mb-8">
 									
 					<p class="text-white mb-6">
 						The <strong>four descriptors</strong> used to assess the <strong>Coherence & Cohesion</strong> of your <strong>Writing Task</strong> are:
@@ -129,7 +129,7 @@
 						<img
 							src="/LESSONS/les03/03(ii)/W_Table-CC(T2).png"
 							alt="IELTS Writing rubric CC"
-							class="w-full max-w-4xl rounded border border-gray-600 cursor-pointer hover:opacity-80 transition-opacity"
+							class="w-full max-w-4xl rounded border border-gray-600 cursor-pointer hover:opacity-80 transition-opacity mt-8 mb-8"
 							onclick={() => openLightbox('/LESSONS/les03/03(ii)/W_Table-CC(T2).png')}
 							onkeydown={(e) => e.key === 'Enter' || e.key === ' ' ? (e.preventDefault(), openLightbox('/LESSONS/les03/03(ii)/W_Table-CC(T2).png')) : null}
 							tabindex="0"
@@ -159,7 +159,7 @@
 						</div>
 					</div>
 									
-									<div class="text-center mb-10">
+									<div class="text-center mb-6">
 					<p class="text-white mb-12 font-bold">
 						Now test your understanding of WRITING - COHERENCE & COHESION
 					</p>
@@ -174,7 +174,8 @@
 						</a>
 					</div>
 				</div>
-	
+					</div>
+			
 		</section>
 
 	<!-- Footer Navigation -->

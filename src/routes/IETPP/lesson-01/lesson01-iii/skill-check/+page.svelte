@@ -86,7 +86,7 @@
 </script>
 
 <svelte:head>
-        <title>IETPP - Lesson 01(iii): Listening Sentence Completion Skill Check | InsideIELTS</title>
+        <title>IETPP - Listening Sentence Completion Skill Check | InsideIELTS</title>
         <meta
                 name="description"
                 content="Complete IELTS Listening sentence completion skill check exercises with audio practice and instant feedback."
@@ -149,7 +149,7 @@
                         </p>
 
                         <!-- Exercise 1 -->
-                        <div class="bg-cyan-700/25 rounded-lg p-4 md:p-8 border border-cyan-600 mb-8">
+                        <div class="bg-cyan-700/25 rounded-lg p-4 md:p-8 border border-cyan-600/50 mb-8">
                 
                                         <div class="bg-blue-600 text-white text-xl px-4 py-2 rounded-lg text-center font-bold mb-8 border-1 border-white tracking-wide">
                                                                         Sentence Completion
