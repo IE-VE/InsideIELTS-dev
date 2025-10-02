@@ -94,15 +94,12 @@
 							<h2 class="text-2xl font-bold text-center text-white tracking-wider">SKILL CHECK 3.2</h2>
 							<div class="text-4xl text-green-500">✓</div>
 			</div>
-
+			<p class="text-white mb-8 font-bold">
+				For CC, LR and GRA practice we will focus on the Task 2 essay. (The assessment criteria and descriptors are the same for both tasks.)
+			</p>
 			<p class="text-center text-white text-lg mb-8">
 							<strong>Complete this Writing Skill Check exercise then upload your answers for checking and feedback.</strong>
 			</p>
-
-					<p class="text-white mb-8 font-bold">
-						For CC, LR and GRA we will focus on the Task 2 essay. (The assessment criteria and descriptors
-						are the same for both tasks.)
-					</p>
 
 			<!-- Exercise -->
 			<div class="bg-cyan-500/25 rounded-lg p-4 md:p-8 border border-teal-600 mb-4 md:mb-8">

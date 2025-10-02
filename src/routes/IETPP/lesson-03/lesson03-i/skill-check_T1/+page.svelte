@@ -71,7 +71,6 @@
 				>
 					← Prev
 				</a>
-
 				<a
 					href="/IETPP#lesson-03"
 					class="text-teal-400 hover:text-teal-300 font-semibold"
@@ -80,7 +79,7 @@
 					Contents
 				</a>
 				<a
-					href="/IETPP/lesson-0/lesson03-ii"
+					href="/IETPP/lesson-03/lesson03-ii"
 					class="text-teal-400 hover:text-teal-300 font-semibold"
 					data-sveltekit-reload
 				>
