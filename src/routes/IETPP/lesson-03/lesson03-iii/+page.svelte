@@ -86,11 +86,11 @@
 				<div class="text-4xl">✏️</div>
 			</div>
 			<div class="max-w-6xl mx-auto">
-				<div class="bg-gray-800 rounded-lg p-4 md:p-8 text-lg border border-gray-600 mb-12">
+				<div class="bg-gray-800 rounded-lg p-4 md:p-10 text-lg border border-gray-600 mb-12">
 
 					 <div class="bg-blue-900/50 border border-blue-700 rounded-lg p-4 mb-8">
 					<p class="text-white text-lg">
-						<strong>Lexical Resource</strong> measures the range and accuracy of the vocabulary you are able to use.
+						<strong>Lexical Resource (LR)</strong> measures the range and accuracy of the vocabulary you are able to use.
 					</p>
 						 </div>
 					<p class="text-white mb-8">
@@ -108,7 +108,7 @@
 					</div>
 					</div>
 				
-					<div class="bg-gray-800 rounded-lg p-4 md:p-8 text-lg border border-gray-600 mb-8">
+					<div class="bg-gray-800 rounded-lg p-4 md:p-10 text-lg border border-gray-600 mb-8">
 
 					<p class="text-white mb-6">
 						The <strong>5 descriptors</strong> used to assess the <strong>LEXICAL RESOURCE</strong> of your <strong>Writing Task</strong> are:
@@ -200,7 +200,6 @@
 									</div>
 					</section>
 	</div>	
-
 
 	<!-- Lightbox -->
 	{#if lightboxOpen}
