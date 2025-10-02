@@ -79,7 +79,7 @@
 	<div style="max-width: 1200px;" class="mx-auto px-3 md:px-6 py-8">
 
 		<!-- Main Section: Writing Grammatical Range & Accuracy -->
-		<section class="bg-gray-500/25 rounded-lg p-4 md:p-10 shadow-sm border border-teal-600 mb-12">
+		<section class="bg-teal-800/25 rounded-lg p-4 md:p-10 shadow-sm border border-teal-700 mb-12">
 			<div class="flex items-center justify-center gap-4 mb-10">
 				<div class="text-4xl">✏️</div>
 				<h2 class="text-3xl font-bold text-center text-white tracking-wide">Grammatical Range & Accuracy</h2>

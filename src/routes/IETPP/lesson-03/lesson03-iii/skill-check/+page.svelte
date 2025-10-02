@@ -59,7 +59,7 @@
 
 			<div class="flex justify-between items-center">
 				<a
-					href="/IETPP/lesson-03/lesson03-iii"
+					href="/IETPP/lesson-03/lesson03-ii"
 					class="text-teal-400 hover:text-teal-300 font-semibold"
 					data-sveltekit-reload
 				>

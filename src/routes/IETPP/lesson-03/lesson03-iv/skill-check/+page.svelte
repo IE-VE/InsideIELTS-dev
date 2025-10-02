@@ -57,7 +57,7 @@
 
 			<div class="flex justify-between items-center">
 				<a
-					href="/IETPP/lesson-03/lesson03-iii/skill-check"
+					href="/IETPP/lesson-03/lesson03-iv"
 					class="text-teal-400 hover:text-teal-300 font-semibold"
 					data-sveltekit-reload
 				>
@@ -72,7 +72,7 @@
 					Contents
 				</a>
 				<a
-					href="/IETPP/lesson-03"
+					href="/IETPP/lesson-04"
 					class="text-teal-400 hover:text-teal-300 font-semibold"
 					data-sveltekit-reload
 				>
@@ -85,7 +85,7 @@
 	<!-- Main Content -->
 	<div style="max-width: 1200px;" class="mx-auto px-3 md:px-6 py-8">
 		
-		<section class="bg-cyan-800/25 rounded-lg p-4 md:p-10 shadow-sm border border-cyan-600 mb-8">
+		<section class="bg-teal-800/25 rounded-lg p-4 md:p-10 shadow-sm border border-teal-700 mb-8">
 			<div class="flex items-center justify-center gap-4 mb-8">
 				<div class="text-4xl text-green-500">✓</div>
 				<h2 class="text-2xl font-bold text-center text-white tracking-wider">SKILL CHECK 3.4</h2>
@@ -97,12 +97,12 @@
 			</p>
 
 			<!-- Exercise -->
-			<div class="bg-cyan-700/25 rounded-lg p-4 md:p-8 border border-cyan-600/50 mb-4 md:mb-8">
+			<div class="bg-teal-700/25 rounded-lg p-4 md:p-8 border border-teal-700/50 mb-4 md:mb-8">
 				<div class="bg-blue-600 text-white text-xl px-4 py-2 rounded-lg text-center font-bold mb-8 border-1 border-white tracking-wide">
 					Grammatical Range & Accuracy (GRA)
 				</div>
 
-				<div class="bg-gray-800 rounded-lg p-4 md:p-12 border border-teal-600/50 mb-4 md:mb-8 max-w-4xl mx-auto space-y-6 text-lg">
+				<div class="bg-gray-800 rounded-lg p-4 md:p-12 border border-gray-700 mb-4 md:mb-8 max-w-4xl mx-auto space-y-6 text-lg">
 					<p class="text-white text-center mb-8"><em>- Answer the following comprehension questions -</em></p>
 
 					<div class="space-y-6">
@@ -129,7 +129,7 @@
 							<img
 								src="/LESSONS/les03/03(iv)/SC3.4_Q.png"
 								alt="IELTS Task 2 essay question"
-								class="w-full max-w-4xl cursor-pointer hover:opacity-80 transition-opacity border-2 border-black rounded"
+								class="w-full max-w-2xl cursor-pointer hover:opacity-80 transition-opacity border-2 border-black rounded"
 								onclick={() => openLightbox('/LESSONS/les03/03(iv)/SC3.4_Q.png')}
 								onkeydown={(e) => e.key === 'Enter' || e.key === ' ' ? (e.preventDefault(), openLightbox('/LESSONS/les03/03(iv)/SC3.4_Q.png')) : null}
 								tabindex="0"
@@ -145,7 +145,7 @@
 								<img
 									src="/LESSONS/les03/03(iv)/SC3.4_Q2.png"
 									alt="IELTS Task 2 sample sentences"
-									class="w-full max-w-4xl cursor-pointer hover:opacity-80 transition-opacity border-2 border-black rounded"
+									class="w-full max-w-2xl cursor-pointer hover:opacity-80 transition-opacity border-2 border-black rounded"
 									onclick={() => openLightbox('/LESSONS/les03/03(iv)/SC3.4_Q2.png')}
 									onkeydown={(e) => e.key === 'Enter' || e.key === ' ' ? (e.preventDefault(), openLightbox('/LESSONS/les03/03(iv)/SC3.4_Q2.png')) : null}
 									tabindex="0"
@@ -171,7 +171,7 @@
 								<img
 									src="/LESSONS/les03/03(iv)/SC3.4_Q3.png"
 									alt="IELTS Task 2 introduction paragraph"
-									class="w-full max-w-4xl cursor-pointer hover:opacity-80 transition-opacity border-2 border-black rounded"
+									class="w-full max-w-2xl cursor-pointer hover:opacity-80 transition-opacity border-2 border-black rounded"
 									onclick={() => openLightbox('/LESSONS/les03/03(iv)/SC3.4_Q3.png')}
 									onkeydown={(e) => e.key === 'Enter' || e.key === ' ' ? (e.preventDefault(), openLightbox('/LESSONS/les03/03(iv)/SC3.4_Q3.png')) : null}
 									tabindex="0"
@@ -200,32 +200,42 @@
 						</div>
 
 						<!-- Upload Button -->
-						<div class="flex justify-center mt-8">
-							<button
-								onclick={handleUpload}
-								class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg border-2 border-white transition-colors text-lg"
-							>
-								UPLOAD
-							</button>
+		<div class="flex justify-center mt-6">
+								<button
+									onclick={() => handleUpload('Task 2')}
+									class="px-6 py-3 bg-green-600 hover:bg-green-700 text-white font-bold rounded-lg transition-colors disabled:opacity-50"
+									>
+										Check Answers
+								</button>
+							</div>
 						</div>
 					</div>
-				</div>
+			<div class="text-center md:mt-12">
+						<p class="text-white"><b>End of Lesson 03-iv</b></p>
 			</div>
 		</section>
 
-		<!-- Lesson End Section -->
-		<section class="text-center py-8">
-			<div class="bg-gray-800 rounded-lg p-6 shadow-sm border border-gray-700">
-				<p class="text-white mb-6">End of Skill Check 03(iv)</p>
-				<a
-					href="/IETPP#lesson-03"
-					class="text-teal-400 hover:underline font-semibold"
-					data-sveltekit-reload
-				>
-					← Back to Contents
-				</a>
-			</div>
-		</section>
+	<section class="text-center">
+														<div class="bg-gray-800 rounded-lg p-6 shadow-sm border border-gray-700">
+																		<div class="flex justify-between items-center">
+																						<a
+																										href="/IETPP#lesson-03"
+																										class="text-teal-400 hover:text-teal-300 font-semibold"
+																										data-sveltekit-reload
+																						>
+																										← Back to Contents
+																						</a>
+
+																						<a
+																										href="/IETPP/lesson-04"
+																										class="text-teal-400 hover:text-teal-300 font-semibold"
+																										data-sveltekit-reload
+																						>
+																										Next Lesson →
+																						</a>
+																		</div>
+														</div>
+										</section>
 	</div>
 
 	<!-- Lightbox -->
