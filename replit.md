@@ -6,6 +6,18 @@ The platform serves as both a lead generation tool and a valuable educational re
 
 # Recent Changes
 
+## October 05, 2025
+- **Lesson 04 - Introduction to the Speaking Test**: Created main intro page for Speaking Test lesson
+  - Content: Speaking Test format & content (3 parts), assessment criteria (4 criteria), example interview
+  - Features: 5 VE video links, Speaking rubric with lightbox, interview transcript PDF link
+  - Media: Integrated images from static/speaking-images/ and static/LESSONS/les04/P1_Q/
+  - Sections: Part 1 (4-5 mins intro questions), Part 2 (3-4 mins long turn), Part 3 (4-5 mins discussion)
+  - Navigation: Connected from lesson-03-iv → lesson-04 → lesson04-i (next)
+- **Lesson 03(iv) Skill Check**: Created comprehensive skill check page for Writing GRA
+  - Content: 4 comprehension questions covering structural range and grammar/punctuation
+  - Features: 3 images with lightbox functionality, textareas for answers, upload button placeholder
+  - Navigation: Connected skill-check pages lesson03-iii/skill-check ← lesson03-iv/skill-check → lesson-03
+
 ## October 01, 2025
 - **Lesson 03(ii) - Writing Coherence & Cohesion**: Created new skills practice lesson page
   - Content: Coherence & Cohesion assessment criteria for writing tasks
