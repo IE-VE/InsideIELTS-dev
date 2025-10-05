@@ -52,15 +52,15 @@
 			<!-- Header Nav -->
 			<div class="mt-6 mb-8 text-lg">
 				<ul class="list-disc list-inside space-y-2 text-white">
-					<li>Speaking Test format & content</li>
-					<li>Speaking Test assessment</li>
-					<li>Example Speaking Test</li>
+					<li>format and make-up</li>
+					<li>assessment</li>
+					<li>example questions & answers</li>
 				</ul>
 			</div>
 
 			<div class="flex justify-between items-center">
 				<a
-					href="/IETPP/lesson-03/lesson03-iv"
+					href="/IETPP/lesson-03"
 					class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300 font-semibold"
 					data-sveltekit-reload
 				>
@@ -85,14 +85,48 @@
 			</div>
 		</div>
 	</div>
-	
+
 	<!-- Page Content -->
 	<div style="max-width: 1200px;" class="mx-auto px-3 md:px-6 py-8">
 
-		<!-- Section 1: Speaking Test Format & Content -->
+	<section class="mb-12">
+					<div class="bg-gray-800 rounded-lg p-6 shadow-sm border border-gray-200 dark:border-gray-700">
+									<h2 class="text-2xl text-center font-bold text-gray-800 dark:text-white mb-6">
+													IELTS Speaking Test Format
+									</h2>
+
+									<div class="space-y-6">
+													<div class="border-l-4 border-blue-500 pl-6">
+																	<h3 class="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-2">Test Duration</h3>
+														<p class="text-gray-300 mb-6">
+															The total duration of the interview will be <strong>13 - 14 minutes</strong>.
+														</p>												
+														<ul class="list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300 mb-8 ml-4">
+																		<li><strong>Part 1 -</strong> after a short introduction you will be asked <strong>8 short answer questions</strong> on two topics lasting <strong>4 - 5 minutes</strong></li>
+																		<li><strong>Part 2 -</strong> the <strong>'long turn'</strong> : you are given <strong>1 minute</strong> to prepare and make some notes on a given topic before speaking for <strong>2 minutes</strong> uninterupted.</li>
+															<li><strong>Part 3 -</strong> you will discuss <strong>6 questions</strong> related to the topic of your long turn response for the remaining	<strong>4 - 5 minutes</strong> of the interview.</li>
+														</ul>
+													</div>
+
+													<div class="border-l-4 border-green-500 pl-6">
+																	<h3 class="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-2">Test Structure</h3>
+														<p class="text-gray-300 mb-6">
+															The Speaking test takes the form of a face-to-face interview with a qualified <strong>IELTS</strong> speaking examiner. The interview is split into <strong>three sections</strong> and follows a preset script which the examiner must adhere to.
+														</p>
+																</div>
+
+													<div class="border-l-4 border-purple-500 pl-6">
+																	<h3 class="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-2">Time Management</h3>
+																	<p class="text-gray-700 dark:text-gray-300">The examiner will take full control of all timings for the sections of the speaking test. You only need to make sure you extend the length of your responses until the examiner asks the next question.</p>
+													</div>
+									</div>
+					</div>
+	</section>
+
+	<!-- Section 1: Speaking Test Format & Content -->
 		<section class="bg-cyan-600/25 rounded-lg p-4 md:p-8 shadow-sm border border-blue-700 mb-8">
 			<h2 class="text-2xl font-bold text-center text-white mb-8">
-				Speaking Test format & content
+				Speaking Test make-up
 			</h2>
 			<div class="max-w-6xl mx-auto">
 
@@ -113,25 +147,6 @@
 						</a>
 					</div>
 
-					<p class="text-white mb-6">
-						The Speaking test takes the form of a face-to-face interview with a qualified <strong>IELTS</strong> speaking examiner. The interview is split
-						into <strong>three sections</strong> and follows a preset script which the examiner must adhere to.
-					</p>
-
-					<p class="text-white mb-6">
-						After a short introduction you will be asked <strong>8 short answer questions</strong> on two topics lasting
-						<strong>4 - 5 minutes</strong>, followed by the <strong>'long turn'</strong> question where you
-						are given one minute to prepare and make some notes before speaking for <strong>2 minutes</strong> uninterupted on a given topic.
-						Finally you will discuss <strong>6 questions</strong> related to the topic of your long turn response for the remaining
-						<strong>4 - 5 minutes</strong> of the interview.
-					</p>
-
-					<p class="text-white mb-8">
-						The total duration of the interview will be <strong>13 - 14 minutes</strong>.
-					</p>
-
-					<hr class="border-gray-600 mb-8" />
-
 					<!-- Part 1 Section -->
 					<div class="mb-12">
 						<p class="text-white mb-8">
@@ -146,9 +161,8 @@
 								href="https://insideielts.oppyo.com/video/embed/pyq16syy6d"
 								target="_blank"
 								title="InsideIELTS virtual examiner speaking test preparation video"
-								class="flex-shrink-0"
-							>
-								<img src="/img/VE-button.png" alt="VE-button" class="w-20 h-auto" />
+								class="inline-block bg-teal-600 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded border-2 border-red-500 text-sm transition-colors"
+							>Virtual Examiner Video					
 							</a>
 						</div>
 
@@ -229,9 +243,8 @@
 								href="https://insideielts.oppyo.com/video/embed/c9ymihgvqs"
 								target="_blank"
 								title="InsideIELTS virtual examiner speaking test preparation video"
-								class="flex-shrink-0"
-							>
-								<img src="/img/VE-button.png" alt="VE-button" class="w-20 h-auto" />
+								class="inline-block bg-teal-600 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded border-2 border-red-500 text-sm transition-colors"
+								>Virtual Examiner Video		
 							</a>
 						</div>
 
@@ -279,9 +292,8 @@
 								href="https://insideielts.oppyo.com/video/embed/fa82w8g28j"
 								target="_blank"
 								title="InsideIELTS virtual examiner speaking test preparation video"
-								class="flex-shrink-0"
-							>
-								<img src="/img/VE-button.png" alt="VE-button" class="w-20 h-auto" />
+								class="inline-block bg-teal-600 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded border-2 border-red-500 text-sm transition-colors"
+								>Virtual Examiner Video		
 							</a>
 						</div>
 
@@ -323,10 +335,9 @@
 								href="https://insideielts.oppyo.com/video/embed/1bmcb8wvkl"
 								target="_blank"
 								title="InsideIELTS virtual examiner speaking test preparation video"
-								class="flex-shrink-0"
-							>
-								<img src="/img/VE-button.png" alt="VE-button" class="w-20 h-auto" />
-							</a>
+								class="inline-block bg-teal-600 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded border-2 border-red-500 text-sm transition-colors"
+									>Virtual Examiner Video		
+								</a>
 						</div>
 					</div>
 
@@ -415,26 +426,26 @@
 			<div class="max-w-6xl mx-auto">
 				<div class="bg-gray-800 rounded-lg p-6 text-lg border border-gray-700">
 					
-					<p class="text-white mb-8">
+					<p class="text-white mb-12">
 						Watch this Virtual Examiner Native Speaker interview to get a better idea of the format, parts, timings and question types you will
 						face in the Speaking Test interview.
 					</p>
 
-					<div class="flex flex-col md:flex-row items-center justify-center gap-8 mb-8">
+					<div class="flex flex-col md:flex-row items-center justify-center gap-16 mb-12">
 						<a
 							href="https://insideielts.oppyo.com/video/embed/zarg3f9h4o"
 							target="_blank"
 							title="InsideIELTS VE interview L1"
-						>
-							<img src="/img/VE-button.png" alt="VE-button" class="w-32 h-auto" />
-						</a>
+							class="inline-block bg-teal-600 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded border-2 border-red-500 text-sm transition-colors"
+								>Virtual Examiner Video		
+							</a>
 						<a
 							href="/transcript/NS_INTERVIEW1-Transcript.pdf"
 							target="_blank"
 							title="view/download transcript"
-							class="text-teal-400 hover:text-teal-300 font-bold text-center underline text-lg"
+							class="text-teal-400 hover:text-teal-300 font-bold text-center text-lg"
 						>
-							Interview<br />Transcript
+							Interview Transcript
 						</a>
 					</div>
 					<p class="text-white font-bold text-center mb-8">
@@ -444,22 +455,31 @@
 				</div>
 			</div>
 		</section>
+		
+		<!-- Footer Navigation -->
+										<section class="text-center py-8">
 
-		<!-- Lesson End Section -->
-		<section class="text-center py-8">
-			<div class="bg-gray-800 rounded-lg p-6 shadow-sm border border-gray-700">
-				<p class="text-white mb-6">End of Intro Lesson</p>
-				<a
-					href="/IETPP#lesson-04"
-					class="text-teal-400 hover:underline font-semibold"
-					data-sveltekit-reload
-				>
-					← Back to Contents
-				</a>
-			</div>
-		</section>
-	</div>
+														<div class="bg-gray-800 rounded-lg p-6 shadow-sm border border-gray-700">
+																		<div class="flex justify-between items-center">
+																						<a
+																										href="/IETPP#lesson-04"
+																										class="text-teal-400 hover:underline font-semibold"
+																										data-sveltekit-reload
+																						>
+																										← Back to Contents
+																						</a>
 
+																						<a
+																										href="/IETPP/lesson-04/lesson04-i"
+																										class="text-teal-400 hover:underline font-semibold"
+																										data-sveltekit-reload
+																						>
+																										Next Lesson →
+																						</a>
+																		</div>
+														</div>
+										</section>
+		</div>
 	<!-- Lightbox -->
 	{#if lightboxOpen}
 		<div

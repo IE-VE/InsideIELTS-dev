@@ -122,8 +122,7 @@
                 </div>
         </section>
 
-<!-- Page Content -->     
-                <!-- Section 1: Writing Test Make-up -->
+  <!-- Section 1: Writing Test Make-up -->
                 <section class="bg-cyan-600/25 rounded-lg p-4 md:p-8 shadow-sm border border-blue-700 mb-8">
                         <h2 class="text-2xl font-bold text-center text-white mb-8">
                                 Writing Test make-up</h2>
@@ -147,9 +146,8 @@
                                                 </a>
                                         </div>
 
-                                        <p class="text-white mb-8">
-                                                <strong>Task 1</strong> takes the form of an analytical report (Ac), or a
-                                                letter (GT) of at least <strong>150 words</strong> in length.
+                                        <p class="bg-blue-900 text-center rounded-lg p-2 mb-8 mt-12 gap-4">
+                                                <b>Task 1 - </b> an analytical report (Ac), or a letter (GT), of at least <b>150 words</b> in length.
                                         </p>
 
                                         <!-- Task 1 Examples -->
@@ -193,8 +191,8 @@
                                                         />
                                                 </div>
                                         </div>
-
-                                        <p class="text-white mb-8">
+                                 <hr class="border-gray-600 mb-8 mt-12" />
+                                        <p class="bg-blue-900 text-center rounded-lg p-2 mb-8 mt-12 gap-4">
                                                 <strong>Task 2</strong> is a discursive essay of at least
                                                 <strong>250 words</strong> in length.
                                         </p>
