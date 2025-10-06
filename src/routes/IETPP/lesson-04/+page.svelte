@@ -124,7 +124,7 @@
 	</section>
 
 	<!-- Section 1: Speaking Test Format & Content -->
-		<section class="bg-cyan-600/25 rounded-lg p-4 md:p-8 shadow-sm border border-blue-700 mb-8">
+		<section class="bg-cyan-600/25 rounded-lg p-4 md:p-10 shadow-sm border border-blue-700 mb-8">
 			<h2 class="text-2xl font-bold text-center text-white mb-8">
 				Speaking Test make-up
 			</h2>
