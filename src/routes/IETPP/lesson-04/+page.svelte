@@ -76,7 +76,7 @@
 				</a>
 
 				<a
-					href="/IETPP/lesson-04/lesson04-i"
+					href="/IETPP/lesson-04/lesson04P1"
 					class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300 font-semibold"
 					data-sveltekit-reload
 				>
@@ -470,7 +470,7 @@
 																						</a>
 
 																						<a
-																										href="/IETPP/lesson-04/lesson04-i"
+																										href="/IETPP/lesson-04/lesson04P1"
 																										class="text-teal-400 hover:underline font-semibold"
 																										data-sveltekit-reload
 																						>

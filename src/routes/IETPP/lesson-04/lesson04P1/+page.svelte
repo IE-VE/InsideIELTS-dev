@@ -116,7 +116,7 @@
 				Part 1 structure & question types</h2>
 			<div class="max-w-6xl mx-auto">  
 
-			 <div class="bg-gray-800 rounded-lg p-6 text-lg border border-gray-700 mb-8">
+			 <div class="bg-gray-800 rounded-lg p-6 md:p-12 text-lg border border-gray-700 mb-8">
 					<p class="text-white mb-6">
 						The examiner will begin the interview by reading out the date and
 						test venue identification details for the benefit of the
@@ -124,7 +124,7 @@
 						the time you are in the interview room).
 					</p>
 
-				<div class="flex justify-center m-10">
+				<div class="flex justify-center mt-10 mb-10">
 					<a
 						href="https://insideielts.oppyo.com/video/embed/pyq16syy6d"
 						target="_blank"
@@ -204,12 +204,10 @@
 				</div>
 
 				<p class="text-white mb-6">
-					The topics chosen are centered around familiar, every day experiences. You should aim to
-					speak for <strong>20-30 seconds</strong> for each question. The examiner can prompt you to extend your response
-					by asking "<em>Why/why not?</em>" if your answers are not long enough, - but nothing more than that.
+					The topics chosen are centered around familiar, every day experiences. You should aim to speak for <strong>20-30 seconds</strong> for each question. The examiner can prompt you to extend your response by asking "<em>Why/why not?</em>" if your answers are not long enough, - but nothing more than that.
 				</p>
 
-				<div class="bg-gray-700 rounded-lg p-6 border border-gray-600 mt-8 mb-2">
+				<div class="bg-gray-700 rounded-lg p-2 border border-gray-600 mt-8 mb-2">
 					<p class="text-white text-center">
 						The total duration for <strong>Part 1</strong> will be just under <strong>5 minutes</strong>.
 					</p>
@@ -246,7 +244,7 @@
 									href="/LESSONS/les04/INT2-L1-new-P1Q.mp4"
 									target="_blank"
 									title="InsideIELTS virtual examiner speaking test preparation video"
-									class="inline-block bg-teal-600 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded border-2 border-red-500 text-sm transition-colors"
+									class="inline-block bg-teal-600 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded border-2 border-red-500 text-sm transition-colors mt-6"
 								>  
 									Watch Part 1 example Q
 								</a>
@@ -271,7 +269,7 @@
 									href="/LESSONS/les04/INT3-L1-new-P1Q.mp4"
 									target="_blank"
 									title="InsideIELTS virtual examiner speaking test preparation video"
-									class="inline-block bg-teal-600 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded border-2 border-red-500 text-sm transition-colors"
+									class="inline-block bg-teal-600 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded border-2 border-red-500 text-sm transition-colors mt-6"
 								>  
 									Watch Part 1 example Q
 								</a>
@@ -297,9 +295,9 @@
 						<!-- Practice Grid -->
 						<div class="flex flex-col items-center mb-8">
 							<img
-								src="/img/QQ_pic.png"
+								src="/LESSONS/les04/QQ_pic.png"
 								alt="Quick Question"
-								class="w-32 h-auto mb-6"
+								class="w-32 h-auto mb-10"
 							/>
 
 							<div class="grid grid-cols-1 md:grid-cols-3 gap-4 w-full max-w-3xl">
@@ -337,7 +335,7 @@
 								href="https://youtu.be/l9KIxk_JZwk"
 								target="_blank"
 								title="VE Quick-Question #1"
-								class="text-teal-400 hover:text-teal-300 underline"
+								class="text-teal-400 hover:text-teal-300"
 							>example Quick-Question</a> response.
 						</p>
 					</div>

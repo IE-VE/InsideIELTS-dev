@@ -111,11 +111,10 @@
                                 Task 2 format & question types</h2>
                         <div class="max-w-6xl mx-auto">  
 
-                         <div class="bg-gray-800 rounded-lg p-6 text-lg border border-gray-700 mb-8">
+                         <div class="bg-gray-800 rounded-lg p-6 md:p-12 text-lg border border-gray-700 mb-8">
                                         <p class="text-white">
                                                 The <strong>Task 2</strong> general and academic writing exercise is a
-                                                <strong>250 word discursive essay</strong>. The question will be in the
-                                                form of a topic statement followed by a question.
+                                                <strong>250 word discursive essay</strong>. The question will be in the form of a topic statement followed by a question.
                                         </p>
 
                                 <div class="flex justify-center m-10">

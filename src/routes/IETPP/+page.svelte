@@ -203,9 +203,9 @@
                                                                 Introduction to the Speaking Test
                                                         </a>
                                                         <div class="space-y-1 ml-4">
-                                                                <div>- <a href="#" class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300">Part 1</a></div>
-                                                                <div>- <a href="#" class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300">Part 2</a></div>
-                                                                <div>- <a href="#" class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300">Part 3</a></div>
+                                                                <div>- <a href="/IETPP/lesson-04/lesson04P1" class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300">Part 1</a></div>
+                                                                <div>- <a href="/IETPP/lesson-04/lesson04P2" class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300">Part 2</a></div>
+                                                                <div>- <a href="/IETPP/lesson-04/lesson04P3" class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300">Part 3</a></div>
                                                         </div>
                                                 </div>
                                                 <div class="ml-12">

@@ -7,6 +7,12 @@ The platform serves as both a lead generation tool and a valuable educational re
 # Recent Changes
 
 ## October 06, 2025
+- **Lesson 04(ii) - Speaking Test Part 2: long-turn**: Created comprehensive Part 2 lesson page matching lesson04P1 format exactly
+  - Content: Part 2 structure & technique, example long-turn response, practice exercises
+  - Features: 4-slide carousel with Part 2 long-turn questions, 1 VE example response video, practice question with VE vid
+  - Media: Integrated 4 PNG images (P2 questions), 1 MP4 example video with thumbnail, practice materials
+  - Sections: Structure & technique (teal), Example response (cyan), Practice (teal)
+  - Navigation: Connected lesson04P1 → lesson04P2 → lesson04P3 (next)
 - **Lesson 04(i) - Speaking Test Part 1**: Created comprehensive Part 1 lesson page matching lesson-03T2 format exactly
   - Content: Part 1 structure & question types, example responses, practice exercises
   - Features: 12-slide carousel with Part 1 question frames, 2 VE example response videos, Quick-Question practice links
