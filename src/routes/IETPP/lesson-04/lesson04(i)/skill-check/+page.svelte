@@ -77,10 +77,10 @@
 	<!-- Page Content -->
 	<div style="max-width: 1200px;" class="mx-auto px-3 md:px-6 py-8">
 		<!-- Skill Check Title -->
-		<section class="bg-cyan-600/25 rounded-lg p-4 md:p-10 shadow-sm border border-cyan-600 mb-8">
+		<section class="bg-cyan-600/25 rounded-lg p-4 md:p-10 shadow-sm border border-blue-700 mb-8">
 			<div class="flex items-center justify-center gap-4 mb-8">
 				<div class="text-4xl text-green-500">✓</div>
-				<h2 class="text-2xl font-bold text-center text-white tracking-wider">SKILL CHECK</h2>
+				<h2 class="text-2xl font-bold text-center text-white tracking-wider">SKILL CHECK 4.1</h2>
 				<div class="text-4xl text-green-500">✓</div>
 			</div>
 			<p class="text-center text-white text-lg mb-8">
@@ -90,18 +90,12 @@
 			<!-- Exercise -->
 			<div class="bg-cyan-500/25 rounded-lg p-4 md:p-8 border border-cyan-600/50 mb-4 md:mb-8">
 				<div class="bg-blue-600 text-white text-xl px-4 py-2 rounded-lg text-center font-bold mb-8 border-1 border-white tracking-wide">
-					SC4(i)
-				</div>
-
-				<div class="text-center mb-8">
-					<h3 class="text-2xl font-bold text-white">SPEAKING - Fluency & Coherence</h3>
+					Fluency & Coherence
 				</div>
 
 				<div class="bg-gray-800 rounded-lg p-4 md:p-8 border border-cyan-600/50 mb-4 md:mb-8 max-w-4xl mx-auto space-y-6 text-lg">
 					<p class="text-white mb-12">
-						To score well for Speaking FLC you need to be able to give an extended answer
-						to the examiner's questions and make use of a range of connective features and discourse markers,
-						without too much pausing and hesitation.
+						To score well for Speaking FLC you need to be able to give an extended answer	to the examiner's questions and make use of a range of connective features and discourse markers,	without too much pausing and hesitation.
 					</p>
 
 					<p class="text-white mb-8 font-medium">
@@ -139,11 +133,8 @@
 						<img
 							src="/LESSONS/les04/04(i)/QQ_pic4i.png"
 							alt="VE Quick Question"
-							class="w-full max-w-lg cursor-pointer hover:opacity-80 transition-opacity rounded"
-							onclick={() => openLightbox('/LESSONS/les04/04(i)/QQ_pic4i.png')}
-							onkeydown={(e) => e.key === 'Enter' || e.key === ' ' ? (e.preventDefault(), openLightbox('/LESSONS/les04/04(i)/QQ_pic4i.png')) : null}
-							tabindex="0"
-						/>
+							class="w-full max-w-xs cursor-pointer hover:opacity-80 transition-opacity rounded"
+												/>
 					</div>
 
 					<p class="text-white mb-8">
@@ -172,8 +163,7 @@
 		<!-- Footer Section -->
 		<section class="text-center py-8">
 			<div class="bg-gray-800 rounded-lg p-6 shadow-sm border border-gray-700">
-				<p class="text-white mb-6">End of Skill Check 04(i)</p>
-				<div class="flex justify-between items-center">
+					<div class="flex justify-between items-center">
 					<a
 						href="/IETPP#lesson-04"
 						class="text-teal-400 hover:underline font-semibold"
