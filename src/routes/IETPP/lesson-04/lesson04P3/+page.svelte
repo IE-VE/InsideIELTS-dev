@@ -17,10 +17,10 @@
 	// Carousel functionality
 	let currentSlide = 0;
 	const slides = [
-		{ title: "street market", src: "/LESSONS/les04/P2-market.png", alt: "ielts Part 2 Speaking Test Qs" },
-		{ title: "a new experience", src: "/LESSONS/les04/P2-new_experience.png", alt: "ielts Part 2 Speaking Test Qs" },
-		{ title: "a journey you remember", src: "/LESSONS/les04/P2-journey.png", alt: "ielts Part 2 Speaking Test Qs" },
-		{ title: "something you lost", src: "/LESSONS/les04/P2-something_you_lost.png", alt: "ielts Part 2 Speaking Test Qs" }
+		{ title: "street market", src: "/LESSONS/les04/P3-market.png", alt: "ielts Part 3 Speaking Test Qs" },
+		{ title: "a new experience", src: "/LESSONS/les04/P3-new_experience.png", alt: "ielts Part 3 Speaking Test Qs" },
+		{ title: "a journey you remember", src: "/LESSONS/les04/P3-journey.png", alt: "ielts Part 3 Speaking Test Qs" },
+		{ title: "something you lost", src: "/LESSONS/les04/P3-something_you_lost.png", alt: "ielts Part 3 Speaking Test Qs" }
 	];
 
 	function nextSlide() {
@@ -47,8 +47,8 @@
 </script>
 
 <svelte:head>
-	<title>Speaking Test - Part 2: long-turn | InsideIELTS Test Preparation Program</title>
-	<meta name="description" content="Master IELTS Speaking Part 2 long-turn with structure, technique, example responses, and practice from the Virtual Examiner." />
+	<title>Speaking Test - Part 3: discussion | InsideIELTS Test Preparation Program</title>
+	<meta name="description" content="Master IELTS Speaking Part 3 discussion with structure, technique, example responses, and practice from the Virtual Examiner." />
 </svelte:head>
 
 <div class="min-h-screen bg-gray-900 text-white">
@@ -57,24 +57,24 @@
 		<div class="bg-gray-50 dark:bg-gray-800 rounded-lg px-6 py-2 mb-8">
 			<div class="text-center">
 				<div class="text-xs text-left text-teal-600 dark:text-teal-400">
-					IE2401_0402
+					IE2401_0403
 				</div>
 				<h1 class="text-3xl font-bold text-white my-7">
-					Speaking Test - Part 2: long-turn
+					Speaking Test - Part 3: discussion
 				</h1>
 			</div>
 	<!-- Header Nav -->
 			<div class="mt-6 mb-8 text-lg">
 				<ul class="list-disc list-inside space-y-2 text-white">
-					<li>Part 2 structure & question types</li>
-					<li>Example Part 2 long-turn response</li>
-					<li>Part 2 practice</li>
+					<li>Part 3 structure & question types</li>
+					<li>Example Part 3 Discussion</li>
+					<li>Part 3 practice</li>
 				</ul>
 			</div>
 
 			<div class="flex justify-between items-center">
 				<a
-					href="/IETPP/lesson-04/lesson04P1"
+					href="/IETPP/lesson-04/lesson04P2"
 					class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300 font-semibold"
 					data-sveltekit-reload
 				>
@@ -89,7 +89,7 @@
 					Contents
 				</a>
 				<a
-					href="/IETPP/lesson-04/lesson04P3"
+					href="/IETPP/lesson-05"
 					class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300 font-semibold"
 					data-sveltekit-reload
 				>
@@ -102,22 +102,31 @@
 	<!-- Page Content -->
 	<div style="max-width: 1200px;" class="mx-auto px-3 md:px-6 py-8">
 
-		<!-- Section 1: Part 2 Structure & Technique -->
-		<section class="bg-teal-600/25 rounded-lg p-4 md:p-8 shadow-sm border border-teal-600 mb-8">
+		<!-- Section 1: Part 3 Structure & Technique -->
+		<section class="bg-cyan-600/25 rounded-lg p-4 md:p-8 shadow-sm border border-blue-600 mb-8">
 			<h2 class="text-2xl font-bold text-center text-white mb-8">
-				Part 2 structure & technique</h2>
+				Part 3 structure & technique</h2>
 			<div class="max-w-6xl mx-auto">  
 
 			 <div class="bg-gray-800 rounded-lg p-6 text-lg border border-gray-700 mb-8">
 					<p class="text-white mb-6">
-						Upon completion of Part 1 the examiner will say, "<strong><em>Now i'm going to give you a topic and i'd like you to talk
-						about it for 1 to 2 minutes.</em></strong>" You will then be given a topic card, pencil and a piece of
-						blank paper and allowed <strong>1 minute</strong> to make some notes on the topic.
+						The final section of the speaking test is a
+						<strong>4 to 5 minute</strong> discussion based on topics related to your
+						Part 2 long turn.
+					</p>
+
+					<p class="text-white mb-6">
+						In <strong>Part 3</strong> the examiner has a choice of three sets of three
+						questions, from which he/she <strong>will select two</strong> to base the
+						discussion around. In this final part of the test the examiner is
+						able to discuss the questions in a more natural manner and will
+						ask you a few additional follow-up questions based on your answers
+						to previous questions.
 					</p>
 
 				<div class="flex justify-center m-10">
 					<a
-						href="https://insideielts.oppyo.com/video/embed/c9ymihgvqs"
+						href="https://insideielts.oppyo.com/video/embed/fa82w8g28j"
 						target="_blank"
 						title="InsideIELTS virtual examiner speaking test preparation video"
 						class="inline-block bg-teal-600 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded border-2 border-red-500 text-sm transition-colors"
@@ -127,17 +136,12 @@
 				</div>
 
 				<p class="text-white mb-6">
-					After your 1 minute preparation time the examiner will say, "<strong><em>Remember, you have 1 to 2 minutes for this, 
-					so don't worry if I stop you, can you start speaking now please.</em></strong>"
+					In this final part of the interview the examiner is trying
+					to elicit specified forms of language in response to the question prompts and is
+					providing you with the opportunity to display the the highest level of your language ability.
 				</p>
 
-				<p class="text-white mb-6">
-					The examiner will not speak again until your <strong>2 minutes</strong> time
-					is up. (Unless you stop speaking before 1:40s, in which case the
-					examiner will prompt you to say more.)
-				</p>
-
-				<p class="text-white mb-8">Here are some examples of <strong>Part 2</strong> long-turn questions.</p>
+				<p class="text-white mb-6">The questions are structured in the following way:</p>
 
 				<!-- Carousel -->
 				<div class="relative max-w-2xl mx-auto mb-8">
@@ -194,51 +198,62 @@
 				</div>
 
 				<p class="text-white mb-6">
-					After your 2 minutes speaking time the examiner will ask you to
-					stop speaking and will ask you one or two short rounding-off questions before leading into Part 3.
-					(You should give a short 1 or 2 sentence reply to reply to these questions only).
+					After around <strong>four and a half minutes</strong> of discussion the
+					examiner will thank you for your time and end the interview.
 				</p>
 
-				<div class="bg-gray-700 rounded-lg p-2 border border-gray-600 mt-8 mb-2">
-					<p class="text-white text-center">
-						The total duration for <strong>Part 2</strong> will be just under <strong>4 minutes</strong>.
+				<div class="bg-gray-700 rounded-lg p-6 border border-gray-600 mt-8 mb-2 flex flex-col md:flex-row items-center justify-between gap-4">
+					<p class="text-white text-center md:text-left">
+						The <strong>total duration</strong> of the interview will be
+						<strong>13 - 14 minutes</strong>.
 					</p>
+					<a
+						href="https://insideielts.oppyo.com/video/embed/1bmcb8wvkl"
+						target="_blank"
+						title="InsideIELTS virtual examiner speaking test preparation video"
+						class="inline-block bg-teal-600 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded border-2 border-red-500 text-sm transition-colors"
+					>
+						Virtual Examiner Video
+					</a>
 				</div>
 			</div>
 		</div>
 		</section>
 
-		<!-- Section 2: Example Long-turn Response -->
-		<section class="bg-cyan-600/25 rounded-lg p-4 md:p-8 shadow-sm border border-blue-600 mb-8">
+		<!-- Section 2: Example Discussion Responses -->
+		<section class="bg-teal-600/25 rounded-lg p-4 md:p-8 shadow-sm border border-teal-600 mb-8">
 			<h2 class="text-2xl font-bold text-center text-white mb-8">
-				Part 2 example long-turn response</h2>
+				Part 3 example discussion responses</h2>
 			
 			<div class="max-w-6xl mx-auto">
 				<div class="bg-gray-800 rounded-lg p-6 text-lg border border-gray-700 mb-8">
-					<p class="text-white mb-8">Watch this example <strong>VE Native Speaker Interview Part 2</strong> response.</p>
+					<p class="text-white mb-4">Watch this example <strong>VE Native Speaker Interview Part 3</strong> response.</p>
+					<p class="text-white italic mb-8">
+						(Take note of the follow-up questions asked by the examiner to develop the conversation).
+					</p>
 					
 					<div class="max-w-4xl mx-auto">
 						<!-- Example -->
 						<div class="text-center">
-							<h4 class="text-lg font-semibold text-white mb-4 underline">Topic: Song or piece of music</h4>
+							<h4 class="text-lg font-semibold text-white mb-4 underline">Topic: Music and young people</h4>
 							<img
-								src="/LESSONS/les04/INT2_L1-new-P2Q-pic.png"
-								alt="Speaking Part 2 response - Song or piece of music"
+								src="/LESSONS/les04/INT2-L1-new-P3Q-pic.png"
+								alt="Speaking Part 3 response - Music and young people"
 								class="w-full max-w-2xl mx-auto rounded border border-gray-600 cursor-pointer hover:opacity-80 transition-opacity mb-6"
 								tabindex="0"
 								role="button"
-								onclick={() => openLightbox('/LESSONS/les04/INT2_L1-new-P2Q-pic.png')}
-								onkeydown={(e) => e.key === 'Enter' || e.key === ' ' ? (e.preventDefault(), openLightbox('/LESSONS/les04/INT2_L1-new-P2Q-pic.png')) : null}
+								onclick={() => openLightbox('/LESSONS/les04/INT2-L1-new-P3Q-pic.png')}
+								onkeydown={(e) => e.key === 'Enter' || e.key === ' ' ? (e.preventDefault(), openLightbox('/LESSONS/les04/INT2-L1-new-P3Q-pic.png')) : null}
 							/>
 
-							<div class="mt-12 mb-6">
+							<div class="m-6">
 								<a
-									href="/LESSONS/les04/INT2_L1-new-P2Q.mp4"
+									href="/LESSONS/les04/INT2_L1-new-P3Q.mp4"
 									target="_blank"
 									title="InsideIELTS virtual examiner speaking test preparation video"
 									class="inline-block bg-teal-600 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded border-2 border-red-500 text-sm transition-colors"
 								>  
-									Watch Part 2 long-turn example
+									Watch Part 3 discussion example
 								</a>
 							</div>
 						</div>
@@ -248,50 +263,37 @@
 		</section>
 
 		<!-- Section 3: Practice -->
-		<section class="bg-teal-600/25 rounded-lg p-4 md:p-8 shadow-sm border border-teal-600 mb-8">
+		<section class="bg-cyan-600/25 rounded-lg p-4 md:p-8 shadow-sm border border-blue-600 mb-8">
 			<h2 class="text-2xl font-bold text-center text-white mb-8">
-				Part 2 practice</h2>
+				Part 3 practice</h2>
 			
 			<div class="max-w-6xl mx-auto">
 				<div class=" bg-gray-800 rounded-lg p-6 text-lg border border-gray-700">
 					<p class="text-white mb-8">
-						Plan your own (2 minute) Part 2 response to the question below. 
-						Try to complete your planning in under 1 minute.
+						Now practice responding to a Part 3 Discussion question with follow-up question.
 					</p>
 					
 					<div class="max-w-4xl mx-auto">
-						<!-- Practice Question -->
-						<div class="flex justify-center mb-12">
-							<img
-								src="/LESSONS/les04/QQP2-pracQ.png"
-								alt="Part 2 practice question"
-								class="w-full max-w-md cursor-pointer hover:opacity-80 transition-opacity"
-								tabindex="0"
-								role="button"
-								onclick={() => openLightbox('/LESSONS/les04/QQP2-pracQ.png')}
-								onkeydown={(e) => e.key === 'Enter' || e.key === ' ' ? (e.preventDefault(), openLightbox('/LESSONS/les04/QQP2-pracQ.png')) : null}
-							/>
-						</div>
-
-						<p class="text-white text-center mb-8">
-							Then practice your delivery with this VE Part 2 Question Vid:
-						</p>
-
+						<!-- Practice Video -->
 						<div class="text-center">
 							<a
-								href="/LESSONS/les04/QQP2-prac.mp4"
+								href="/LESSONS/les04/QQP3-prac.mp4"
 								target="_blank"
 								title="InsideIELTS virtual examiner speaking test preparation video"
 								class="inline-block"
 							>
 								<img
-									src="/LESSONS/les04/QQP2-pracpic.png"
-									alt="VE Part 2 Q"
+									src="/LESSONS/les04/QQP3-pracpic.png"
+									alt="VE Part 3 Q"
 									class="w-full max-w-sm mx-auto rounded border border-gray-600 hover:opacity-80 transition-opacity mb-2"
 								/>
-								<p class="text-sm text-teal-400 font-semibold">VE Part 2 Q</p>
+								<p class="text-sm text-teal-400 font-semibold">VE Part 3 Q</p>
 							</a>
 						</div>
+
+						<p class="text-white text-center mt-8 italic">
+							( The sub-topic is "<em>famous people in your country</em>", - following on from Part 2 )
+						</p>
 					</div>
 				</div>
 			</div>
@@ -300,6 +302,7 @@
 		<!-- Footer Navigation -->
 		<section class="text-center py-8">
 			<div class="bg-gray-800 rounded-lg p-6 shadow-sm border border-gray-700">
+				<p class="text-white mb-6">End of Intro Lesson</p>
 				<div class="flex justify-between items-center">
 					<a
 						href="/IETPP#lesson-04"
@@ -310,7 +313,7 @@
 					</a>
 
 					<a
-						href="/IETPP/lesson-04/lesson04P3"
+						href="/IETPP/lesson-05"
 						class="text-teal-400 hover:underline font-semibold"
 						data-sveltekit-reload
 					>
