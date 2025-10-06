@@ -6,13 +6,21 @@ The platform serves as both a lead generation tool and a valuable educational re
 
 # Recent Changes
 
+## October 06, 2025
+- **Lesson 04(i) - Speaking Test Part 1**: Created comprehensive Part 1 lesson page matching lesson-03T2 format exactly
+  - Content: Part 1 structure & question types, example responses, practice exercises
+  - Features: 12-slide carousel with Part 1 question frames, 2 VE example response videos, Quick-Question practice links
+  - Media: Integrated 12 PNG images from static/LESSONS/les04/P1_Q/, 2 MP4 videos with thumbnails
+  - Sections: Structure & question types (cyan), Example responses (teal), Practice (cyan-800)
+  - Navigation: Connected lesson-04 → lesson04P1 → lesson04P2 (next)
+
 ## October 05, 2025
 - **Lesson 04 - Introduction to the Speaking Test**: Created main intro page for Speaking Test lesson
   - Content: Speaking Test format & content (3 parts), assessment criteria (4 criteria), example interview
   - Features: 5 VE video links, Speaking rubric with lightbox, interview transcript PDF link
   - Media: Integrated images from static/speaking-images/ and static/LESSONS/les04/P1_Q/
   - Sections: Part 1 (4-5 mins intro questions), Part 2 (3-4 mins long turn), Part 3 (4-5 mins discussion)
-  - Navigation: Connected from lesson-03-iv → lesson-04 → lesson04-i (next)
+  - Navigation: Connected from lesson-03-iv → lesson-04 → lesson04P1 (next)
 - **Lesson 03(iv) Skill Check**: Created comprehensive skill check page for Writing GRA
   - Content: 4 comprehension questions covering structural range and grammar/punctuation
   - Features: 3 images with lightbox functionality, textareas for answers, upload button placeholder

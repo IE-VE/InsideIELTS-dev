@@ -350,7 +350,7 @@
 			<h2 class="text-2xl font-bold text-center text-white mb-8">Speaking Test assessment</h2>
 
 			<div class="max-w-6xl mx-auto">
-				<div class="bg-gray-800 rounded-lg p-6 text-lg border border-gray-700 mb-8">
+				<div class="bg-gray-800 rounded-lg p-6 md:p-10 text-lg border border-gray-700 mb-8">
 					<p class="text-white mb-6">
 						During the <strong>Speaking Test</strong> interview the examiner is using a <strong>rubric</strong>
 						very similar to the one shown below.
@@ -424,7 +424,7 @@
 			<h2 class="text-2xl font-bold text-center text-white mb-8">Example Speaking Test</h2>
 
 			<div class="max-w-6xl mx-auto">
-				<div class="bg-gray-800 rounded-lg p-6 text-lg border border-gray-700">
+				<div class="bg-gray-800 rounded-lg p-6 md:p-10 text-lg border border-gray-700">
 					
 					<p class="text-white mb-12">
 						Watch this Virtual Examiner Native Speaker interview to get a better idea of the format, parts, timings and question types you will
