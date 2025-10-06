@@ -87,16 +87,18 @@
 			<div class="max-w-6xl mx-auto">
 				<div class="bg-gray-800 rounded-lg p-4 md:p-8 text-lg border border-gray-600 mb-12">
 
-					<p class="text-white mb-8">
+					<div class="bg-blue-900/50 border border-blue-700 rounded-lg p-4 mb-8">
+						<p class="text-gray-700 dark:text-gray-300 text-lg">
+		
 						The <strong>Fluency & Coherence</strong> criterion assesses how fluently you are able to communicate.
 					</p>
-
+						</div>
 					<div class="flex justify-center mb-8">
 						<a
 							href="https://insideielts.oppyo.com/video/embed/7sinnwfk55"
 							target="_blank"
 							title="InsideIELTS virtual examiner speaking test assessment video FLC"
-							class="inline-block bg-teal-600 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded border-2 border-red-500 text-sm transition-colors"
+							class="inline-block bg-teal-600 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded border-2 border-red-500 text-sm transition-colors mt-6"
 						>
 							Watch VE vid
 						</a>
@@ -115,11 +117,11 @@
 						This table shows how these three descriptors change from Band 5 <strong>(B5)</strong> up to Band 7 <strong>(B7)</strong>:
 					</p>
 
-					<div class="flex justify-center mb-12">
+					<div class="flex justify-center mb-8">
 						<img
-							src="/rubrics/S_Table-FLC.png"
+							src="/LESSONS/les04/04(i)/S_Table-FLC.png"
 							alt="official IELTS speaking rubric Fluency & Coherence"
-							class="w-full max-w-4xl cursor-pointer hover:opacity-80 transition-opacity rounded border border-gray-600"
+							class="w-full max-w-4xl cursor-pointer hover:opacity-80 transition-opacity rounded border border-gray-600 mt-8 mb-8"
 							onclick={() => openLightbox('/rubrics/S_Table-FLC.png')}
 							onkeydown={(e) => e.key === 'Enter' || e.key === ' ' ? (e.preventDefault(), openLightbox('/rubrics/S_Table-FLC.png')) : null}
 							tabindex="0"
@@ -132,7 +134,7 @@
 						make sure hesitation, repetition and self-correction does not affect the coherence of your speech.
 					</p>
 
-					<p class="text-white mb-6">
+					<p class="text-white mb-10">
 						Watch this Native Speaker Interview extract which focuses on <strong>Fluency & Coherence</strong>. The connective features, cohesive devices
 						and discourse markers are highlighted. The native speaker responds to each question at length and does not pause, hesitate
 						or correct herself when speaking.
@@ -153,21 +155,21 @@
 						</video>
 					</div>
 
-					<div class="text-center mb-8">
+					<div class="text-center mb-10">
 						<p class="text-2xl font-bold text-white">
 							Now test your own &nbsp;SPEAKING - Fluency & Coherence
 						</p>
 					</div>
 
-					<div class="flex justify-center">
+					<div class="flex justify-center m-4">
 						<a
 							href="/IETPP/lesson-04/lesson04(i)/skill-check"
-							class="inline-flex items-center gap-4 bg-gradient-to-r from-teal-600 to-cyan-600 hover:from-teal-700 hover:to-cyan-700 text-white font-bold py-4 px-8 rounded-lg text-xl transition-all transform hover:scale-105 border-2 border-teal-400"
+							class="inline-flex items-center gap-4 bg-gradient-to-r from-teal-600 to-cyan-600 hover:from-teal-700 hover:to-cyan-700 text-white font-bold py-2 px-4 rounded-lg text-lg transition-all transform hover:scale-105 border-2 border-teal-400"
 							data-sveltekit-reload
 						>
-							<span class="text-3xl">✓</span>
+							<span class="text-2xl">✓</span>
 							<span>SKILL CHECK</span>
-							<span class="text-3xl">✓</span>
+							<span class="text-2xl">✓</span>
 						</a>
 					</div>
 				</div>
@@ -177,7 +179,7 @@
 		<!-- Footer Section -->
 		<section class="text-center py-8">
 			<div class="bg-gray-800 rounded-lg p-6 shadow-sm border border-gray-700">
-				<p class="text-white mb-6">End of Lesson 04(i)</p>
+		
 				<div class="flex justify-between items-center">
 					<a
 						href="/IETPP#lesson-04"

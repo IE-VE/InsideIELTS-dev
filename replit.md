@@ -7,6 +7,10 @@ The platform serves as both a lead generation tool and a valuable educational re
 # Recent Changes
 
 ## October 06, 2025
+- **Lesson 04(i) Skill Check**: Created comprehensive skill check page for Speaking FLC
+  - Content: Native speaker transcript with cohesive devices highlighted, task instructions, VE Quick Question
+  - Features: 2 images with lightbox (transcript + question card), link to VE Quick Question recording
+  - Navigation: Connected lesson04(i) → skill-check → lesson04(ii)
 - **Lesson 04(i) - SPEAKING Fluency & Coherence**: Created comprehensive skills practice lesson page matching lesson-03(i) format exactly
   - Content: FLC criterion assessment, descriptors, rubric table, native speaker interview example
   - Features: VE video button, speaking rubric with lightbox, NS interview video (FLC - Entertainment), Skill Check link
