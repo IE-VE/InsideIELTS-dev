@@ -153,7 +153,7 @@
 							Let's look at the three sections of the interview in more detail:
 						</p>
 
-						<div class="flex flex-col md:flex-row justify-between items-start md:items-center bg-blue-900 rounded-lg p-4 mb-6 gap-4">
+						<div class="flex flex-col md:flex-row justify-between items-center bg-blue-900 rounded-lg p-4 mb-6 gap-4">
 							<p class="text-white font-bold text-lg">
 								PART 1 - introduction and short answer questions (4-5 mins)
 							</p>
@@ -235,7 +235,7 @@
 
 					<!-- Part 2 Section -->
 					<div class="mb-12">
-						<div class="flex flex-col md:flex-row justify-between items-start md:items-center bg-blue-900 rounded-lg p-4 mb-6 gap-4">
+						<div class="flex flex-col md:flex-row justify-between items-center bg-blue-900 rounded-lg p-4 mb-6 gap-4">
 							<p class="text-white font-bold text-lg">
 								PART 2 - the long turn (3-4 mins)
 							</p>
@@ -284,7 +284,7 @@
 
 					<!-- Part 3 Section -->
 					<div class="mb-8">
-						<div class="flex flex-col md:flex-row justify-between items-start md:items-center bg-blue-900 rounded-lg p-4 mb-6 gap-4">
+						<div class="flex flex-col md:flex-row justify-between items-center bg-blue-900 rounded-lg p-4 mb-6 gap-4">
 							<p class="text-white font-bold text-lg">
 								PART 3 - discussion (4-5 mins)
 							</p>
@@ -440,7 +440,7 @@
 								>Virtual Examiner Video		
 							</a>
 						<a
-							href="/transcript/NS_INTERVIEW1-Transcript.pdf"
+							href="/LESSONS/les04/NS_INTERVIEW1-Transcript.pdf"
 							target="_blank"
 							title="view/download transcript"
 							class="text-teal-400 hover:text-teal-300 font-bold text-center text-lg"
