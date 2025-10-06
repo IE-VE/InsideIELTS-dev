@@ -89,7 +89,7 @@
 					Contents
 				</a>
 				<a
-					href="/IETPP/lesson-05"
+					href="/IETPP/lesson-04/lesson04(i)"
 					class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300 font-semibold"
 					data-sveltekit-reload
 				>
@@ -198,24 +198,16 @@
 				</div>
 
 				<p class="text-white mb-6">
-					After around <strong>four and a half minutes</strong> of discussion the
+					At the end of the second Part 3 frame the
 					examiner will thank you for your time and end the interview.
 				</p>
 
-				<div class="bg-gray-700 rounded-lg p-6 border border-gray-600 mt-8 mb-2 flex flex-col md:flex-row items-center justify-between gap-4">
-					<p class="text-white text-center md:text-left">
-						The <strong>total duration</strong> of the interview will be
-						<strong>13 - 14 minutes</strong>.
+				<div class="bg-gray-700 rounded-lg p-2 border border-gray-600 mt-8 mb-2">
+					<p class="text-white text-center">
+						The total duration of <strong>Part 3</strong> will be
+						just under <strong>5 minutes</strong>.
 					</p>
-					<a
-						href="https://insideielts.oppyo.com/video/embed/1bmcb8wvkl"
-						target="_blank"
-						title="InsideIELTS virtual examiner speaking test preparation video"
-						class="inline-block bg-teal-600 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded border-2 border-red-500 text-sm transition-colors"
-					>
-						Virtual Examiner Video
-					</a>
-				</div>
+							</div>
 			</div>
 		</div>
 		</section>
@@ -246,7 +238,7 @@
 								onkeydown={(e) => e.key === 'Enter' || e.key === ' ' ? (e.preventDefault(), openLightbox('/LESSONS/les04/INT2-L1-new-P3Q-pic.png')) : null}
 							/>
 
-							<div class="m-6">
+							<div class="mt-12 mb-6">
 								<a
 									href="/LESSONS/les04/INT2_L1-new-P3Q.mp4"
 									target="_blank"
@@ -263,7 +255,7 @@
 		</section>
 
 		<!-- Section 3: Practice -->
-		<section class="bg-cyan-600/25 rounded-lg p-4 md:p-8 shadow-sm border border-blue-600 mb-8">
+		<section class="bg-cyan-800/25 rounded-lg p-4 md:p-8 shadow-sm border border-cyan-600 mb-8">
 			<h2 class="text-2xl font-bold text-center text-white mb-8">
 				Part 3 practice</h2>
 			
@@ -302,7 +294,7 @@
 		<!-- Footer Navigation -->
 		<section class="text-center py-8">
 			<div class="bg-gray-800 rounded-lg p-6 shadow-sm border border-gray-700">
-				<p class="text-white mb-6">End of Intro Lesson</p>
+			
 				<div class="flex justify-between items-center">
 					<a
 						href="/IETPP#lesson-04"

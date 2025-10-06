@@ -103,7 +103,7 @@
 	<div style="max-width: 1200px;" class="mx-auto px-3 md:px-6 py-8">
 
 		<!-- Section 1: Part 2 Structure & Technique -->
-		<section class="bg-teal-600/25 rounded-lg p-4 md:p-8 shadow-sm border border-teal-600 mb-8">
+		<section class="bg-cyan-600/25 rounded-lg p-4 md:p-8 shadow-sm border border-blue-600 mb-8">
 			<h2 class="text-2xl font-bold text-center text-white mb-8">
 				Part 2 structure & technique</h2>
 			<div class="max-w-6xl mx-auto">  
@@ -209,7 +209,7 @@
 		</section>
 
 		<!-- Section 2: Example Long-turn Response -->
-		<section class="bg-cyan-600/25 rounded-lg p-4 md:p-8 shadow-sm border border-blue-600 mb-8">
+		<section class="bg-teal-600/25 rounded-lg p-4 md:p-8 shadow-sm border border-teal-600 mb-8">
 			<h2 class="text-2xl font-bold text-center text-white mb-8">
 				Part 2 example long-turn response</h2>
 			
@@ -248,7 +248,7 @@
 		</section>
 
 		<!-- Section 3: Practice -->
-		<section class="bg-teal-600/25 rounded-lg p-4 md:p-8 shadow-sm border border-teal-600 mb-8">
+		<section class="bg-cyan-800/25 rounded-lg p-4 md:p-8 shadow-sm border border-cyan-600 mb-8">
 			<h2 class="text-2xl font-bold text-center text-white mb-8">
 				Part 2 practice</h2>
 			

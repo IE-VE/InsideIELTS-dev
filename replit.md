@@ -7,12 +7,18 @@ The platform serves as both a lead generation tool and a valuable educational re
 # Recent Changes
 
 ## October 06, 2025
+- **Lesson 04(i) - SPEAKING Fluency & Coherence**: Created comprehensive skills practice lesson page matching lesson-03(i) format exactly
+  - Content: FLC criterion assessment, descriptors, rubric table, native speaker interview example
+  - Features: VE video button, speaking rubric with lightbox, NS interview video (FLC - Entertainment), Skill Check link
+  - Media: Integrated S_Table-FLC.png rubric, NS_INT1_P1cut.mp4 video from static/LESSONS/les04/04(i)
+  - Sections: Fluency & Coherence (cyan background with speaking icons)
+  - Navigation: Connected lesson04P3 → lesson04(i) → lesson04(ii) (next)
 - **Lesson 04(iii) - Speaking Test Part 3: discussion**: Created comprehensive Part 3 lesson page matching lesson04P1 format exactly
   - Content: Part 3 structure & technique, example discussion responses, practice exercises
   - Features: 4-slide carousel with Part 3 discussion questions, 1 VE example response video, practice VE video
   - Media: Integrated 4 PNG images (P3 questions), 1 MP4 example video with thumbnail, practice video with thumbnail
   - Sections: Structure & technique (cyan), Example responses (teal), Practice (cyan)
-  - Navigation: Connected lesson04P2 → lesson04P3 → lesson-05 (next)
+  - Navigation: Connected lesson04P2 → lesson04P3 → lesson04(i) (next)
 - **Lesson 04(ii) - Speaking Test Part 2: long-turn**: Created comprehensive Part 2 lesson page matching lesson04P1 format exactly
   - Content: Part 2 structure & technique, example long-turn response, practice exercises
   - Features: 4-slide carousel with Part 2 long-turn questions, 1 VE example response video, practice question with VE vid

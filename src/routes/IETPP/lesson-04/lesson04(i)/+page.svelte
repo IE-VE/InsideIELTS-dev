@@ -1,0 +1,216 @@
+<script lang="ts">
+	import { onMount } from 'svelte';
+
+	let lightboxOpen = false;
+	let lightboxImage = '';
+
+	function openLightbox(imageSrc: string) {
+		lightboxImage = imageSrc;
+		lightboxOpen = true;
+	}
+
+	function closeLightbox() {
+		lightboxOpen = false;
+		lightboxImage = '';
+	}
+
+	onMount(() => {
+		function handleKeydown(event: KeyboardEvent) {
+			if (event.key === 'Escape' && lightboxOpen) {
+				closeLightbox();
+			}
+		}
+
+		document.addEventListener('keydown', handleKeydown);
+		
+		return () => {
+			document.removeEventListener('keydown', handleKeydown);
+		};
+	});
+</script>
+
+<svelte:head>
+	<title>Speaking - Fluency & Coherence | InsideIELTS Test Preparation Program</title>
+	<meta name="description" content="Master IELTS Speaking Fluency & Coherence criteria with expert guidance and Virtual Examiner videos." />
+</svelte:head>
+
+<div class="min-h-screen bg-gray-900 text-white">
+	<!-- Lesson Header -->
+	<div class="max-w-5xl container mx-auto px-6 pt-8">
+		<div class="bg-gray-800 border border-gray-600 rounded-lg px-6 py-2 mb-8">
+			<div class="text-center">
+				<div class="text-xs text-left text-teal-600 dark:text-teal-400">
+					IE2401_04.1
+				</div>
+				<h1 class="text-3xl font-bold text-white my-7">
+					SPEAKING
+				</h1>
+			</div>
+
+			<div class="flex justify-between items-center">
+				<a
+					href="/IETPP/lesson-04/lesson04P3"
+					class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300 font-semibold"
+					data-sveltekit-reload
+				>
+					← Prev
+				</a>
+
+				<a
+					href="/IETPP#lesson-04"
+					class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300 font-semibold"
+					data-sveltekit-reload
+				>
+					Contents
+				</a>
+				<a
+					href="/IETPP/lesson-04/lesson04(ii)"
+					class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300 font-semibold"
+					data-sveltekit-reload
+				>
+					Next →
+				</a>
+			</div>
+		</div>
+	</div>
+	
+	<!-- Page Content -->
+	<div style="max-width: 1200px;" class="mx-auto px-3 md:px-6 py-8">
+
+		<!-- Main Section: Speaking Fluency & Coherence -->
+		<section class="bg-cyan-600/25 rounded-lg p-4 md:p-10 shadow-sm border border-blue-700 mb-12">
+			<div class="flex items-center justify-center gap-4 mb-10">
+				<div class="text-4xl">💬</div>
+				<h2 class="text-3xl font-bold text-center text-white tracking-wide">Fluency & Coherence</h2>
+				<div class="text-4xl">💬</div>
+			</div>
+			<div class="max-w-6xl mx-auto">
+				<div class="bg-gray-800 rounded-lg p-4 md:p-8 text-lg border border-gray-600 mb-12">
+
+					<p class="text-white mb-8">
+						The <strong>Fluency & Coherence</strong> criterion assesses how fluently you are able to communicate.
+					</p>
+
+					<div class="flex justify-center mb-8">
+						<a
+							href="https://insideielts.oppyo.com/video/embed/7sinnwfk55"
+							target="_blank"
+							title="InsideIELTS virtual examiner speaking test assessment video FLC"
+							class="inline-block bg-teal-600 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded border-2 border-red-500 text-sm transition-colors"
+						>
+							Watch VE vid
+						</a>
+					</div>
+
+					<p class="text-white mb-8">
+						There are three main descriptors within the <strong>FLC</strong> criterion that the examiner is focusing on:
+					</p>
+					<ul class="list-disc list-inside text-white mb-12 space-y-2">
+						<li>your ability to speak at length;</li>
+						<li>the frequency of hesitation, repetition and self-correction in your language;</li>
+						<li>your use of connective features such as pronouns, conjunctions and spoken discourse markers.</li>
+					</ul>
+
+					<p class="text-white mb-6">
+						This table shows how these three descriptors change from Band 5 <strong>(B5)</strong> up to Band 7 <strong>(B7)</strong>:
+					</p>
+
+					<div class="flex justify-center mb-12">
+						<img
+							src="/rubrics/S_Table-FLC.png"
+							alt="official IELTS speaking rubric Fluency & Coherence"
+							class="w-full max-w-4xl cursor-pointer hover:opacity-80 transition-opacity rounded border border-gray-600"
+							onclick={() => openLightbox('/rubrics/S_Table-FLC.png')}
+							onkeydown={(e) => e.key === 'Enter' || e.key === ' ' ? (e.preventDefault(), openLightbox('/rubrics/S_Table-FLC.png')) : null}
+							tabindex="0"
+						/>
+					</div>
+
+					<p class="text-white mb-12">
+						To score above <strong>B6</strong> for <strong>Fluency & Coherence</strong> you must: show a willingness to speak at length; 
+						make use of a range of connective features and spoken discourse markers; 
+						make sure hesitation, repetition and self-correction does not affect the coherence of your speech.
+					</p>
+
+					<p class="text-white mb-6">
+						Watch this Native Speaker Interview extract which focuses on <strong>Fluency & Coherence</strong>. The connective features, cohesive devices
+						and discourse markers are highlighted. The native speaker responds to each question at length and does not pause, hesitate
+						or correct herself when speaking.
+					</p>
+
+					<div class="text-center mb-6">
+						<p class="text-xl font-semibold text-white"><strong>FLC - Entertainment</strong></p>
+					</div>
+
+					<div class="flex justify-center mb-12">
+						<video
+							controls
+							class="w-full max-w-3xl rounded border border-gray-600"
+							title="Work through the IE Test Preparation Program"
+						>
+							<source src="/LESSONS/les04/04(i)/NS_INT1_P1cut.mp4" type="video/mp4" />
+							Your browser does not support this video format.
+						</video>
+					</div>
+
+					<div class="text-center mb-8">
+						<p class="text-2xl font-bold text-white">
+							Now test your own &nbsp;SPEAKING - Fluency & Coherence
+						</p>
+					</div>
+
+					<div class="flex justify-center">
+						<a
+							href="/IETPP/lesson-04/lesson04(i)/skill-check"
+							class="inline-flex items-center gap-4 bg-gradient-to-r from-teal-600 to-cyan-600 hover:from-teal-700 hover:to-cyan-700 text-white font-bold py-4 px-8 rounded-lg text-xl transition-all transform hover:scale-105 border-2 border-teal-400"
+							data-sveltekit-reload
+						>
+							<span class="text-3xl">✓</span>
+							<span>SKILL CHECK</span>
+							<span class="text-3xl">✓</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Footer Section -->
+		<section class="text-center py-8">
+			<div class="bg-gray-800 rounded-lg p-6 shadow-sm border border-gray-700">
+				<p class="text-white mb-6">End of Lesson 04(i)</p>
+				<div class="flex justify-between items-center">
+					<a
+						href="/IETPP#lesson-04"
+						class="text-teal-400 hover:underline font-semibold"
+						data-sveltekit-reload
+					>
+						← Back to Contents
+					</a>
+
+					<a
+						href="/IETPP/lesson-04/lesson04(ii)"
+						class="text-teal-400 hover:underline font-semibold"
+						data-sveltekit-reload
+					>
+						Next Lesson →
+					</a>
+				</div>
+			</div>
+		</section>
+	</div>
+
+	<!-- Lightbox -->
+	{#if lightboxOpen}
+		<div
+			class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 p-4"
+			onclick={closeLightbox}
+			role="button"
+			tabindex="0"
+			onkeydown={(e) => e.key === 'Enter' && closeLightbox()}
+		>
+			<div class="max-w-6xl max-h-full">
+				<img src={lightboxImage} alt="Enlarged view" class="max-w-full max-h-full object-contain rounded-lg" />
+			</div>
+		</div>
+	{/if}
+</div>
