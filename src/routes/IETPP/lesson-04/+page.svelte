@@ -130,13 +130,13 @@
 			</h2>
 			<div class="max-w-6xl mx-auto">
 
-				<div class="bg-gray-800 rounded-lg p-6 text-lg border border-gray-700 mb-8">
+				<div class="bg-gray-800 rounded-lg p-6 md:p-10 text-lg border border-gray-700 mb-8">
 					<p class="text-white mb-6">
 						The Speaking Test is usually conducted before or after the Listening, Reading and Writing Test on test day, but
 						it can be conducted up to one week after sitting the paper based tests.
 					</p>
 
-					<div class="flex justify-center m-10">
+					<div class="flex justify-center mt-10 mb-10">
 						<a
 							href="https://insideielts.oppyo.com/video/embed/xnlqjz62dx"
 							target="_blank"
@@ -155,7 +155,7 @@
 
 						<div class="flex flex-col md:flex-row justify-between items-center bg-blue-900 rounded-lg p-4 mb-6 gap-4">
 							<p class="text-white font-bold text-lg">
-								PART 1 - intro  short answer questions (4-5 mins)
+								PART 1 - intro & short answer questions (4-5 mins)
 							</p>
 							<a
 								href="https://insideielts.oppyo.com/video/embed/pyq16syy6d"
@@ -327,7 +327,7 @@
 							After around <strong>four and a half minutes</strong> of discussion the examiner will thank you for your time and end the interview.
 						</p>
 
-						<div class="flex flex-col md:flex-row justify-between items-start md:items-center bg-blue-900 rounded-lg p-4 mt-8 gap-4">
+						<div class="flex flex-col md:flex-row justify-between items-center bg-blue-900 rounded-lg p-4 mb-6 gap-4">
 							<p class="text-white font-bold text-lg">
 								The <strong>total duration</strong> of the interview will be <strong>13 - 14 minutes</strong>.
 							</p>
@@ -356,7 +356,7 @@
 						very similar to the one shown below.
 					</p>
 
-					<div class="flex justify-center m-10">
+					<div class="flex justify-center mt-10 mb-10">
 						<a
 							href="https://insideielts.oppyo.com/video/embed/j12k62ytwn"
 							target="_blank"
