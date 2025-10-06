@@ -155,7 +155,7 @@
 
 						<div class="flex flex-col md:flex-row justify-between items-center bg-blue-900 rounded-lg p-4 mb-6 gap-4">
 							<p class="text-white font-bold text-lg">
-								PART 1 - introduction and short answer questions (4-5 mins)
+								PART 1 - intro  short answer questions (4-5 mins)
 							</p>
 							<a
 								href="https://insideielts.oppyo.com/video/embed/pyq16syy6d"
