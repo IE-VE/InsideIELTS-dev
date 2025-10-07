@@ -96,7 +96,7 @@
 				</div>
 			</Card>
 
-			<div class="mt-6 rounded-lg bg-indigo-50 p-4 dark:bg-indigo-900/30">
+			<div class="mt-6 rounded-lg bg-indigo-50 p-4 dark:bg-indigo-900/30 border border-blue-700">
 				<div>
 					<p class="text-xl"><strong>A personal note:</strong></p>
 					<br /><br />
@@ -222,7 +222,12 @@
 					<P>
 						{truncateText(analysis.analysis.feedback.fluencyAndCoherence, 100)}
 						<span class="mt-2 block font-medium text-blue-700 dark:text-blue-300">
-							Get full FLC feedback from the IETPP
+							Get full FLC feedback from the  <a
+								href="/IETPP"
+								class="text-gray-600 hover:text-teal-600 dark:text-gray-300 dark:hover:text-teal-400 font-bold text-sm md:text-base lg:text-lg {$page.url.pathname === '/' ? 'ietpp-pulse' : ''}"
+							>
+								IETPP
+							</a>
 						</span>
 					</P>
 				</div>
