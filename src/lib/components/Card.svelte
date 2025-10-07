@@ -10,7 +10,7 @@
 		accent2: string;
 	};
 
-	type VariantType = 'default' | 'teal' | 'greyscale' | 'primary' | 'secondary';
+	type VariantType = 'default' | 'teal' | 'greyscale' | 'primary' | 'secondary' | 'notebook';
 
 	// Color scheme presets with classes for each variant
 	const colorVariants = {
