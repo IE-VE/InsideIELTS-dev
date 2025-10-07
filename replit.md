@@ -7,6 +7,11 @@ The platform serves as both a lead generation tool and a valuable educational re
 # Recent Changes
 
 ## October 07, 2025
+- **Lesson 04(ii) Skill Check**: Created comprehensive skill check page for Speaking LR
+  - Content: Part 1 question on topic 'your country', task instructions, VE Quick Question
+  - Features: 2 images with lightbox (Part 1 question + Quick Question card), link to VE Quick Question recording (qid=3)
+  - Note about high-level vocabulary usage and practice recommendations
+  - Navigation: Connected lesson04(ii) → skill-check → lesson04(iii)
 - **Lesson 04(ii) - SPEAKING Lexical Resource**: Created comprehensive skills practice lesson page matching lesson04(i) format exactly
   - Content: LR criterion assessment, descriptors, rubric table, native speaker interview example
   - Features: VE video button, speaking rubric with lightbox, NS interview video (LR - Shoes), Skill Check link

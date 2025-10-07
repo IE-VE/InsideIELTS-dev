@@ -88,14 +88,12 @@
 				<div class="bg-gray-800 rounded-lg p-4 md:p-8 text-lg border border-gray-600 mb-12">
 
 					<div class="bg-blue-900/50 border border-blue-700 rounded-lg p-4 mb-8">
-						<p class="text-gray-700 dark:text-gray-300 text-lg">
-		
-						The <strong>Fluency & Coherence</strong> criterion assesses how fluently you are able to communicate.
+						<p class="text-gray-700 dark:text-gray-300 text-lg">	The <strong>Fluency & Coherence</strong> criterion assesses how fluently you are able to communicate.
 					</p>
 						</div>
+					
 					<div class="flex justify-center mb-8">
-						<a
-							href="https://insideielts.oppyo.com/video/embed/7sinnwfk55"
+						<a href="https://insideielts.oppyo.com/video/embed/7sinnwfk55"
 							target="_blank"
 							title="InsideIELTS virtual examiner speaking test assessment video FLC"
 							class="inline-block bg-teal-600 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded border-2 border-red-500 text-sm transition-colors mt-6"
