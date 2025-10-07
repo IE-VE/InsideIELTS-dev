@@ -5,6 +5,11 @@ InsideIELTS is an AI-powered IELTS preparation platform offering free speaking t
 # Recent Changes
 
 ## October 07, 2025
+- **Lesson 04(iv) Skill Check**: Created comprehensive skill check page for Speaking PR
+  - Content: Listen and repeat Native Speaker responses task, focus on rhythm/intonation/chunking
+  - Features: Native Speaker Interview video (NS_INT2_L2cut.mp4), link to NS-INT Level 2 practice, NS_INT-pic.png image with lightbox, VE Rated Interview #2 link
+  - Task: Practice reproducing native speaker pronunciation features then record full interview for rating
+  - Navigation: Connected lesson04(iv) → skill-check → Contents (next)
 - **Lesson 04(iv) - SPEAKING Pronunciation**: Created comprehensive skills practice lesson page matching lesson04(i) format exactly
   - Content: PR criterion assessment, four descriptors (phonological features, rhythm/stress/intonation, clarity/mispronunciation, ease of understanding), rubric table, IETPP Level 2 pronunciation focus
   - Features: VE video button (vyo934gzvg), speaking rubric with lightbox (B4-B8 progression), IETPP Level 2 screenshot showing phrase breakdown, Skill Check link
