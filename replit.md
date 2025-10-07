@@ -2,6 +2,38 @@
 
 InsideIELTS is an AI-powered IELTS preparation platform offering free speaking tests and practice materials. It leverages advanced AI to analyze student responses against IELTS criteria (Fluency & Coherence, Lexical Resource, Grammatical Range & Accuracy, Pronunciation), providing instant feedback and personalized exercises. The platform aims to be a lead generation tool and a valuable educational resource, helping users improve their IELTS speaking scores.
 
+# Recent Changes
+
+## October 07, 2025
+- **Lesson 04(iv) - SPEAKING Pronunciation**: Created comprehensive skills practice lesson page matching lesson04(i) format exactly
+  - Content: PR criterion assessment, four descriptors (phonological features, rhythm/stress/intonation, clarity/mispronunciation, ease of understanding), rubric table, IETPP Level 2 pronunciation focus
+  - Features: VE video button (vyo934gzvg), speaking rubric with lightbox (B4-B8 progression), IETPP Level 2 screenshot showing phrase breakdown, Skill Check link
+  - Media: Integrated S_Table-PR.png rubric, PR_NSint-pic.png showing Level 2 pronunciation interface from static/LESSONS/les04/04(iv)
+  - Sections: Pronunciation (gray background with speaking icons)
+  - Navigation: Connected lesson04(iii)/skill-check → lesson04(iv) → skill-check (next)
+- **Lesson 04(iii) Skill Check**: Created comprehensive skill check page for Speaking GRA
+  - Content: Task to rewrite four B5 example speaking test responses to produce grammatically correct complex sentences
+  - Features: 4 images with lightbox (SC_GRA1-4.png showing B5 responses with errors), textareas for corrected answers, upload button
+  - Each question shows original response with errors and space for student to rewrite correctly
+  - Navigation: Connected lesson04(iii) → skill-check → lesson04(iv)
+- **Lesson 04(iii) - SPEAKING Grammatical Range & Accuracy**: Created comprehensive skills practice lesson page matching lesson04(i) format exactly
+  - Content: GRA criterion assessment, descriptors, rubric table, B5 level example with errors
+  - Features: VE video button, speaking rubric with lightbox, example transcript showing grammatical errors (red) vs corrected version (green), Skill Check link
+  - Media: Integrated S_Table-GRA.png rubric, GRA_example.png showing error analysis from static/LESSONS/les04/04(iii)
+  - Sections: Grammatical Range & Accuracy (teal background with speaking icons)
+  - Navigation: Connected lesson04(ii)/skill-check → lesson04(iii) → lesson04(iv) (next)
+- **Lesson 04(ii) Skill Check**: Created comprehensive skill check page for Speaking LR
+  - Content: Part 1 question on topic 'your country', task instructions, VE Quick Question
+  - Features: 2 images with lightbox (Part 1 question + Quick Question card), link to VE Quick Question recording (qid=3)
+  - Note about high-level vocabulary usage and practice recommendations
+  - Navigation: Connected lesson04(ii) → skill-check → lesson04(iii)
+- **Lesson 04(ii) - SPEAKING Lexical Resource**: Created comprehensive skills practice lesson page matching lesson04(i) format exactly
+  - Content: LR criterion assessment, descriptors, rubric table, native speaker interview example
+  - Features: VE video button, speaking rubric with lightbox, NS interview video (LR - Shoes), Skill Check link
+  - Media: Integrated S_Table-LR.png rubric, NS_INT3_L4cut.mp4 video from static/LESSONS/les04/04(ii)
+  - Sections: Lexical Resource (gray background with speaking icons)
+  - Navigation: Connected lesson04(i)/skill-check → lesson04(ii) → lesson04(iii) (next)
+
 # User Preferences
 
 Preferred communication style: Simple, everyday language.
