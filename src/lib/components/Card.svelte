@@ -33,6 +33,10 @@
 		secondary: {
 			card: 'border-primary-200 from-primary-50 to-primary-100 dark:border-primary-700 dark:from-primary-900/20 dark:to-primary-800/20',
 			accent: 'from-primary-400 to-primary-300 dark:from-primary-500 dark:to-primary-400'
+		},
+		notebook: {
+			card: 'border-amber-200 from-[#fff5e9] to-[#fffdf7] dark:border-amber-800 dark:from-amber-950/30 dark:to-amber-900/20',
+			accent: 'from-amber-300 to-yellow-200 dark:from-amber-500 dark:to-yellow-400'
 		}
 	};
 

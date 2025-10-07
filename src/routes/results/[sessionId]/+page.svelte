@@ -222,7 +222,7 @@
 					<P>
 						{truncateText(analysis.analysis.feedback.fluencyAndCoherence, 100)}
 						<span class="mt-2 block font-medium text-blue-700 dark:text-blue-300">
-							Get full detailed feedback from the IETPP
+							Get full FLC feedback from the IETPP
 						</span>
 					</P>
 				</div>
@@ -238,7 +238,7 @@
 					<P>
 						{truncateText(analysis.analysis.feedback.lexicalResource, 100)}
 						<span class="mt-2 block font-medium text-green-700 dark:text-green-300">
-							Get full detailed feedback from the IETPP
+							Get full LR feedback from the IETPP
 						</span>
 					</P>
 				</div>
@@ -256,7 +256,7 @@
 					<P>
 						{truncateText(analysis.analysis.feedback.grammaticalRangeAndAccuracy, 100)}
 						<span class="mt-2 block font-medium text-purple-700 dark:text-purple-300">
-							Get full detailed feedback from the IETPP
+							Get full GRA feedback from the IETPP
 						</span>
 					</P>
 				</div>
@@ -272,7 +272,7 @@
 					<P>
 						{truncateText(analysis.analysis.feedback.pronunciation, 100)}
 						<span class="mt-2 block font-medium text-red-700 dark:text-red-300">
-							Get full detailed feedback from the IETPP
+							Get full PR feedback from the IETPP
 						</span>
 					</P>
 				</div>
