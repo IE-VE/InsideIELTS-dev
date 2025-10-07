@@ -78,7 +78,7 @@
 	<div style="max-width: 1200px;" class="mx-auto px-3 md:px-6 py-8">
 
 		<!-- Main Section: Speaking Pronunciation -->
-		<section class="bg-gray-600/25 rounded-lg p-4 md:p-10 shadow-sm border border-gray-600 mb-12">
+		<section class="bg-teal-800/25 rounded-lg p-4 md:p-10 shadow-sm border border-teal-700 mb-12">
 			<div class="flex items-center justify-center gap-4 mb-10">
 				<div class="text-4xl">💬</div>
 				<h2 class="text-3xl font-bold text-center text-white tracking-wide">Pronunciation</h2>
@@ -120,7 +120,7 @@
 						<img
 							src="/LESSONS/les04/04(iv)/S_Table-PR.png"
 							alt="official IELTS speaking rubric Pronunciation"
-							class="w-full max-w-4xl cursor-pointer hover:opacity-80 transition-opacity rounded border border-gray-600"
+							class="w-full max-w-4xl cursor-pointer hover:opacity-80 transition-opacity rounded border border-gray-600 mt-8 mb-8"
 							onclick={() => openLightbox('/LESSONS/les04/04(iv)/S_Table-PR.png')}
 							onkeydown={(e) => e.key === 'Enter' || e.key === ' ' ? (e.preventDefault(), openLightbox('/LESSONS/les04/04(iv)/S_Table-PR.png')) : null}
 							tabindex="0"
@@ -156,15 +156,15 @@
 						</p>
 					</div>
 
-					<div class="flex justify-center">
+					<div class="flex justify-center m-4">
 						<a
 							href="/IETPP/lesson-04/lesson04(iv)/skill-check"
-							class="inline-flex items-center gap-4 bg-gradient-to-r from-teal-600 to-cyan-600 hover:from-teal-700 hover:to-cyan-700 text-white font-bold py-4 px-8 rounded-lg text-xl transition-all transform hover:scale-105 border-2 border-teal-400"
+							class="inline-flex items-center gap-4 bg-gradient-to-r from-teal-600 to-cyan-600 hover:from-teal-700 hover:to-cyan-700 text-white font-bold py-2 px-4 rounded-lg text-lg transition-all transform hover:scale-105 border-2 border-teal-400"
 							data-sveltekit-reload
 						>
-							<span class="text-3xl">✓</span>
+							<span class="text-2xl">✓</span>
 							<span>SKILL CHECK</span>
-							<span class="text-3xl">✓</span>
+							<span class="text-2xl">✓</span>
 						</a>
 					</div>
 				</div>
@@ -174,7 +174,7 @@
 		<!-- Footer Section -->
 		<section class="text-center py-8">
 			<div class="bg-gray-800 rounded-lg p-6 shadow-sm border border-gray-700">
-				<p class="text-white mb-6">End of Lesson 04(iv)</p>
+			
 				<div class="flex justify-between items-center">
 					<a
 						href="/IETPP#lesson-04"
@@ -185,7 +185,7 @@
 					</a>
 
 					<a
-						href="/IETPP/lesson-04/lesson04(iv)/skill-check"
+						href="/IETPP/lesson-05"
 						class="text-teal-400 hover:underline font-semibold"
 						data-sveltekit-reload
 					>
