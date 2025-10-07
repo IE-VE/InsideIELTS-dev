@@ -35,8 +35,8 @@
 			accent: 'from-primary-400 to-primary-300 dark:from-primary-500 dark:to-primary-400'
 		},
 		notebook: {
-			card: 'border-amber-200 from-[#fff5e9] to-[#fffdf7] dark:border-amber-800 dark:from-amber-950/30 dark:to-amber-900/20',
-			accent: 'from-amber-300 to-yellow-200 dark:from-amber-500 dark:to-yellow-400'
+			card: 'border-amber-400 from-amber-50 to-yellow-50 dark:border-amber-600 dark:from-amber-900/40 dark:to-yellow-900/30',
+			accent: 'from-amber-400 to-yellow-300 dark:from-amber-500 dark:to-yellow-400'
 		}
 	};
 
