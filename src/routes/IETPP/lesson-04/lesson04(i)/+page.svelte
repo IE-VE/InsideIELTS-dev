@@ -134,8 +134,7 @@
 
 					<p class="text-white mb-10">
 						Watch this Native Speaker Interview extract which focuses on <strong>Fluency & Coherence</strong>. The connective features, cohesive devices
-						and discourse markers are highlighted. The native speaker responds to each question at length and does not pause, hesitate
-						or correct herself when speaking.
+						and discourse markers are highlighted. The native speaker responds to each question at length and does not pause, hesitate or correct herself when speaking.
 					</p>
 
 					<div class="text-center mb-6">

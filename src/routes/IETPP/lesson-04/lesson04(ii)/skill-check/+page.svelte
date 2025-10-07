@@ -111,7 +111,7 @@
 						<img
 							src="/LESSONS/les04/04(ii)/P1Q.png"
 							alt="IELTS SPEAKING LR"
-							class="w-full max-w-xl cursor-pointer hover:opacity-80 transition-opacity rounded border-2 border-black"
+							class="w-full max-w-lg cursor-pointer hover:opacity-80 transition-opacity rounded border-2 border-black"
 							onclick={() => openLightbox('/LESSONS/les04/04(ii)/P1Q.png')}
 							onkeydown={(e) => e.key === 'Enter' || e.key === ' ' ? (e.preventDefault(), openLightbox('/LESSONS/les04/04(ii)/P1Q.png')) : null}
 							tabindex="0"

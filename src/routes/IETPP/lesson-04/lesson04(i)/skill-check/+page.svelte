@@ -108,7 +108,7 @@
 						<img
 							src="/LESSONS/les04/04(i)/FLC_NSint-scriptcut.png"
 							alt="IELTS SPEAKING FLC"
-							class="w-full max-w-3xl cursor-pointer hover:opacity-80 transition-opacity rounded border-2 border-black"
+							class="w-full max-w-xl cursor-pointer hover:opacity-80 transition-opacity rounded border-2 border-black"
 							onclick={() => openLightbox('/LESSONS/les04/04(i)/FLC_NSint-scriptcut.png')}
 							onkeydown={(e) => e.key === 'Enter' || e.key === ' ' ? (e.preventDefault(), openLightbox('/LESSONS/les04/04(i)/FLC_NSint-scriptcut.png')) : null}
 							tabindex="0"
