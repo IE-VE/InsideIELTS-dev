@@ -147,9 +147,9 @@
 							href="https://insideielts.oppyo.com/quick-questions?qid=2"
 							target="_blank"
 							title="How often do you eat snacks?"
-							class="inline-block bg-gradient-to-r from-teal-600 to-cyan-600 hover:from-teal-700 hover:to-cyan-700 text-white font-bold py-4 px-8 rounded-lg text-xl transition-all transform hover:scale-105 border-2 border-teal-400"
+							class="inline-block bg-gradient-to-r from-teal-600 to-cyan-600 hover:from-teal-700 hover:to-cyan-700 text-white font-bold py-2 px-4 rounded-lg text-lg transition-all transform hover:scale-105 border-2 border-teal-400"
 						>
-							GO TO VE QQ
+							GO TO QQ
 						</a>
 					</div>
 

@@ -6,6 +6,14 @@ The platform serves as both a lead generation tool and a valuable educational re
 
 # Recent Changes
 
+## October 07, 2025
+- **Lesson 04(ii) - SPEAKING Lexical Resource**: Created comprehensive skills practice lesson page matching lesson04(i) format exactly
+  - Content: LR criterion assessment, descriptors, rubric table, native speaker interview example
+  - Features: VE video button, speaking rubric with lightbox, NS interview video (LR - Shoes), Skill Check link
+  - Media: Integrated S_Table-LR.png rubric, NS_INT3_L4cut.mp4 video from static/LESSONS/les04/04(ii)
+  - Sections: Lexical Resource (gray background with speaking icons)
+  - Navigation: Connected lesson04(i)/skill-check → lesson04(ii) → lesson04(iii) (next)
+
 ## October 06, 2025
 - **Lesson 04(i) Skill Check**: Created comprehensive skill check page for Speaking FLC
   - Content: Native speaker transcript with cohesive devices highlighted, task instructions, VE Quick Question

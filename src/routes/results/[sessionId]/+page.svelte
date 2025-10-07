@@ -154,7 +154,7 @@
 								</li>
 							</ul>
 							<br />
-							<strong>All the best with your IELTS preparations - Alex</strong>
+							<strong>All the best with your IELTS preparations - IE Team</strong>
 						{/if}
 					</div>
 				</div>
@@ -243,7 +243,12 @@
 					<P>
 						{truncateText(analysis.analysis.feedback.lexicalResource, 100)}
 						<span class="mt-2 block font-medium text-green-700 dark:text-green-300">
-							Get full LR feedback from the IETPP
+							Get full LR feedback from the <a
+								href="/IETPP"
+								class="text-gray-600 hover:text-teal-600 dark:text-gray-300 dark:hover:text-teal-400 font-bold text-sm md:text-base lg:text-lg {$page.url.pathname === '/' ? 'ietpp-pulse' : ''}"
+							>
+								IETPP
+							</a>
 						</span>
 					</P>
 				</div>
@@ -261,7 +266,12 @@
 					<P>
 						{truncateText(analysis.analysis.feedback.grammaticalRangeAndAccuracy, 100)}
 						<span class="mt-2 block font-medium text-purple-700 dark:text-purple-300">
-							Get full GRA feedback from the IETPP
+							Get full GRA feedback from the <a
+								href="/IETPP"
+								class="text-gray-600 hover:text-teal-600 dark:text-gray-300 dark:hover:text-teal-400 font-bold text-sm md:text-base lg:text-lg {$page.url.pathname === '/' ? 'ietpp-pulse' : ''}"
+							>
+								IETPP
+							</a>
 						</span>
 					</P>
 				</div>
@@ -277,7 +287,12 @@
 					<P>
 						{truncateText(analysis.analysis.feedback.pronunciation, 100)}
 						<span class="mt-2 block font-medium text-red-700 dark:text-red-300">
-							Get full PR feedback from the IETPP
+							Get full PR feedback from the <a
+								href="/IETPP"
+								class="text-gray-600 hover:text-teal-600 dark:text-gray-300 dark:hover:text-teal-400 font-bold text-sm md:text-base lg:text-lg {$page.url.pathname === '/' ? 'ietpp-pulse' : ''}"
+							>
+								IETPP
+							</a>
 						</span>
 					</P>
 				</div>

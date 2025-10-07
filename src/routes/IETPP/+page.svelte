@@ -213,19 +213,19 @@
                                                         <div class="space-y-2 ml-8">
                                                                 <div class="flex gap-2">
                                                                         <span class="text-gray-600 dark:text-gray-400">(i)</span>
-                                                                        <a href="#" class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300">Fluency & Coherence</a>
+                                                                        <a href="/IETPP/lesson-04/lesson04(i)" class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300">Fluency & Coherence</a>
                                                                 </div>
                                                                 <div class="flex gap-2">
                                                                         <span class="text-gray-600 dark:text-gray-400">(ii)</span>
-                                                                        <a href="#" class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300">Lexical Resource</a>
+                                                                        <a href="/IETPP/lesson-04/lesson04(ii)" class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300">Lexical Resource</a>
                                                                 </div>
                                                                 <div class="flex gap-2">
                                                                         <span class="text-gray-600 dark:text-gray-400">(iii)</span>
-                                                                        <a href="#" class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300">Grammatical Range & Accuracy</a>
+                                                                        <a href="/IETPP/lesson-04/lesson04(iii)" class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300">Grammatical Range & Accuracy</a>
                                                                 </div>
                                                                 <div class="flex gap-2">
                                                                         <span class="text-gray-600 dark:text-gray-400">(iv)</span>
-                                                                        <a href="#" class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300">Pronunciation</a>
+                                                                        <a href="/IETPP/lesson-04/lesson04(iv)" class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300">Pronunciation</a>
                                                                 </div>
                                                         </div>
                                                 </div>
