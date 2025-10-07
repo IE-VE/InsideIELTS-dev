@@ -7,7 +7,7 @@
 
         // Check if we're on IETPP pages  
         let isIETTPActive = $state(false);
-        
+
         $effect(() => {
                 if (typeof window !== 'undefined') {
                         isIETTPActive = $page.url?.pathname?.startsWith('/IETPP') || false;
@@ -147,7 +147,7 @@
                                 {:else}
                                         <a
                                                 href="/IETPP"
-                                                class="text-gray-600 hover:text-teal-600 dark:text-gray-300 dark:hover:text-teal-400 font-bold text-sm md:text-base lg:text-lg {$page.url.pathname === '/' ? 'ietpp-pulse' : ''}"
+                                                class="text-gray-600 hover:text-teal-600 dark:text-gray-300 dark:hover:text-teal-400 font-bold text-sm md:text-base lg:text-lg {!$page.url.pathname.startsWith('/IETPP') ? 'ietpp-pulse' : ''}"
                                         >
                                                 IETPP
                                         </a>
@@ -195,7 +195,7 @@
                                                 IETPP
                                         </span>
                                 {:else}
-                                        <a href="/IETPP" class="block text-gray-600 hover:text-teal-600 dark:text-gray-300 dark:hover:text-teal-400 font-bold {$page.url.pathname === '/' ? 'ietpp-pulse' : ''}">
+                                        <a href="/IETPP" class="block text-gray-600 hover:text-teal-600 dark:text-gray-300 dark:hover:text-teal-400 font-bold {!$page.url.pathname.startsWith('/IETPP') ? 'ietpp-pulse' : ''}">
                                                 IETPP
                                         </a>
                                 {/if}
