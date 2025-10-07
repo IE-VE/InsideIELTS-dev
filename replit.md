@@ -7,6 +7,12 @@ The platform serves as both a lead generation tool and a valuable educational re
 # Recent Changes
 
 ## October 07, 2025
+- **Lesson 04(iii) - SPEAKING Grammatical Range & Accuracy**: Created comprehensive skills practice lesson page matching lesson04(i) format exactly
+  - Content: GRA criterion assessment, descriptors, rubric table, B5 level example with errors
+  - Features: VE video button, speaking rubric with lightbox, example transcript showing grammatical errors (red) vs corrected version (green), Skill Check link
+  - Media: Integrated S_Table-GRA.png rubric, GRA_example.png showing error analysis from static/LESSONS/les04/04(iii)
+  - Sections: Grammatical Range & Accuracy (teal background with speaking icons)
+  - Navigation: Connected lesson04(ii)/skill-check → lesson04(iii) → lesson04(iv) (next)
 - **Lesson 04(ii) Skill Check**: Created comprehensive skill check page for Speaking LR
   - Content: Part 1 question on topic 'your country', task instructions, VE Quick Question
   - Features: 2 images with lightbox (Part 1 question + Quick Question card), link to VE Quick Question recording (qid=3)

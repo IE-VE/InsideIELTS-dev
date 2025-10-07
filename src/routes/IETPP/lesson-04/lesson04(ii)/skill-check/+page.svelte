@@ -77,7 +77,7 @@
 	<!-- Page Content -->
 	<div style="max-width: 1200px;" class="mx-auto px-3 md:px-6 py-8">
 		<!-- Skill Check Title -->
-		<section class="bg-cyan-600/25 rounded-lg p-4 md:p-10 shadow-sm border border-blue-700 mb-8">
+		<section class="bg-teal-600/25 rounded-lg p-4 md:p-10 shadow-sm border border-teal-600 mb-8">
 			<div class="flex items-center justify-center gap-4 mb-8">
 				<div class="text-4xl text-green-500">✓</div>
 				<h2 class="text-2xl font-bold text-center text-white tracking-wider">SKILL CHECK 4.2</h2>
@@ -88,7 +88,7 @@
 			</p>
 
 			<!-- Exercise -->
-			<div class="bg-cyan-500/25 rounded-lg p-4 md:p-8 border border-cyan-600/50 mb-4 md:mb-8">
+			<div class="bg-teal-500/25 rounded-lg p-4 md:p-8 border border-teal-600/50 mb-4 md:mb-8">
 				<div class="bg-blue-600 text-white text-xl px-4 py-2 rounded-lg text-center font-bold mb-8 border-1 border-white tracking-wide">
 					Lexical Resource
 				</div>
@@ -111,7 +111,7 @@
 						<img
 							src="/LESSONS/les04/04(ii)/P1Q.png"
 							alt="IELTS SPEAKING LR"
-							class="w-full max-w-3xl cursor-pointer hover:opacity-80 transition-opacity rounded border-2 border-black"
+							class="w-full max-w-xl cursor-pointer hover:opacity-80 transition-opacity rounded border-2 border-black"
 							onclick={() => openLightbox('/LESSONS/les04/04(ii)/P1Q.png')}
 							onkeydown={(e) => e.key === 'Enter' || e.key === ' ' ? (e.preventDefault(), openLightbox('/LESSONS/les04/04(ii)/P1Q.png')) : null}
 							tabindex="0"
