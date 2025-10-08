@@ -198,16 +198,15 @@
 					<!-- Upload Button -->
 					<div class="flex justify-center mb-8">
 						<button
-							class="inline-block bg-gradient-to-r from-teal-600 to-cyan-600 hover:from-teal-700 hover:to-cyan-700 text-white font-bold py-3 px-8 rounded-lg text-lg transition-all transform hover:scale-105 border-2 border-teal-400"
-						>
-							UPLOAD
+							class="px-6 py-3 bg-green-600 hover:bg-green-700 text-white font-bold rounded-lg transition-colors disabled:opacity-50"
+							>
+								Check Answers
 						</button>
 					</div>
-
-					<p class="text-white mb-8">
-						Upload your answers for feedback.
-					</p>
 				</div>
+			</div>
+			<div class="text-center md:mt-12">
+						<p class="text-white"><b>End of Lesson 04-iii</b></p>
 			</div>
 		</section>
 

@@ -86,9 +86,12 @@
 			</div>
 			<div class="max-w-6xl mx-auto">
 				<div class="bg-gray-800 rounded-lg p-4 md:p-8 text-lg border border-gray-600 mb-12">
-
+					<div class="bg-blue-900/50 border border-blue-700 rounded-lg p-4 mb-8">
+						<p class="text-gray-700 dark:text-gray-300 text-lg">	<strong>Pronunciation</strong> is the final criterion assessed by the Speaking Test examiner.
+					</p>
+						</div>
 					<p class="text-white mb-8">
-						<strong>Pronunciation</strong> is the final criterion assessed by the Speaking Test examiner. Technically competent speakers sometimes score below average for <strong>Pronunciation</strong> and, as a result, this criterion can often be the cause of lower-than-expected scores in the speaking test.
+						 Technically competent speakers sometimes score below average for pronunciation and, as a result, this criterion can often be the cause of lower-than-expected scores in the speaking test.
 					</p>
 
 					<div class="flex justify-center mb-8">
@@ -96,7 +99,7 @@
 							href="https://insideielts.oppyo.com/video/embed/vyo934gzvg"
 							target="_blank"
 							title="InsideIELTS virtual examiner speaking test assessment video PR"
-							class="inline-block bg-teal-600 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded border-2 border-red-500 text-sm transition-colors"
+							class="inline-block bg-teal-600 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded border-2 border-red-500 text-sm transition-colors mt-6"
 						>
 							Watch VE vid
 						</a>
@@ -132,23 +135,26 @@
 					</p>
 
 					<p class="text-white mb-8">
-						<strong>Level 2</strong> of the <strong>IE Test Preparation Program</strong> focuses on <strong>pronunciation</strong>. Each Native Speaker response is broken down into phrases for you to listen to and repeat, allowing you to focus on and perfect rhythm, speech rate, stress, and intonation.
+						The Native Speaker response below is broken down into phrases for you to listen to and repeat, allowing you to focus on and perfect rhythm, speech rate, stress, and intonation.
 					</p>
 
-					<div class="text-center mb-8">
-						<p class="text-xl font-bold text-white">IETPP Level 2: &nbsp;&nbsp;PRONUNCIATION</p>
-					</div>
+			
+						<p class="text-white mb-8">
+							Listen to and repeat the Native Speaker responses in the time-space given. Focus on reproducing the rhythm, intonation and chunking of the native speaker's speech.
+						</p>
 
-					<div class="flex justify-center mb-12">
-						<img
-							src="/LESSONS/les04/04(iv)/PR_NSint-pic.png"
-							alt="IELTS Speaking Test Pronunciation"
-							class="w-full max-w-4xl cursor-pointer hover:opacity-80 transition-opacity rounded border border-gray-600"
-							onclick={() => openLightbox('/LESSONS/les04/04(iv)/PR_NSint-pic.png')}
-							onkeydown={(e) => e.key === 'Enter' || e.key === ' ' ? (e.preventDefault(), openLightbox('/LESSONS/les04/04(iv)/PR_NSint-pic.png')) : null}
-							tabindex="0"
-						/>
-					</div>
+											<!-- Native Speaker Interview Video -->
+						<div class="flex justify-center mb-12">
+							<video
+								controls
+								class="w-full max-w-3xl rounded border-2 border-gray-600"
+								title="Work through the IE Test Preparation Program"
+							>
+								<source src="/LESSONS/les04/04(iv)/NS_INT2_L2cut.mp4" type="video/mp4" />
+								<track kind="captions" />
+								Your browser does not support this video format.
+							</video>
+						</div>
 
 					<div class="text-center mb-8">
 						<p class="text-2xl font-bold text-white">
@@ -167,7 +173,7 @@
 							<span class="text-2xl">✓</span>
 						</a>
 					</div>
-				</div>
+			
 			</div>
 		</section>
 

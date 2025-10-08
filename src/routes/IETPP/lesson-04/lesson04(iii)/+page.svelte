@@ -97,7 +97,7 @@
 							href="https://insideielts.oppyo.com/video/embed/hqbirteg3b"
 							target="_blank"
 							title="InsideIELTS virtual examiner speaking test assessment video GRA"
-							class="inline-block bg-teal-600 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded border-2 border-red-500 text-sm transition-colors"
+							class="inline-block bg-teal-600 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded border-2 border-red-500 text-sm transition-colors mt-6"
 						>
 							Watch VE vid
 						</a>
