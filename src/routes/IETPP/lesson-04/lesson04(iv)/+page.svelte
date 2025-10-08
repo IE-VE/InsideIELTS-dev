@@ -87,12 +87,8 @@
 			<div class="max-w-6xl mx-auto">
 				<div class="bg-gray-800 rounded-lg p-4 md:p-8 text-lg border border-gray-600 mb-12">
 
-					<div class="bg-blue-900/50 border border-blue-700 rounded-lg p-4 mb-8">
-						<p class="text-gray-700 dark:text-gray-300 text-lg">	<strong>Pronunciation</strong> is the final criterion assessed by the Speaking Test examiner.
-					</p>
-						</div>
 					<p class="text-white mb-8">
-						 Technically competent speakers sometimes score below average for <strong>Pronunciation</strong> and, as a result, this criterion can often be the cause of lower-than-expected scores in the speaking test.
+						<strong>Pronunciation</strong> is the final criterion assessed by the Speaking Test examiner. Technically competent speakers sometimes score below average for <strong>Pronunciation</strong> and, as a result, this criterion can often be the cause of lower-than-expected scores in the speaking test.
 					</p>
 
 					<div class="flex justify-center mb-8">

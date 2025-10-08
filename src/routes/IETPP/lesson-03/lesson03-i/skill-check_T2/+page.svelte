@@ -186,7 +186,7 @@
 								<div class="flex justify-center mt-6">
 									<button
 										onclick={() => handleUpload('Task 2')}
-										class="inline-flex items-center gap-4 bg-gradient-to-r from-teal-600 to-cyan-600 hover:from-teal-700 hover:to-cyan-700 text-white font-bold py-2 px-4 rounded-lg text-lg transition-all transform hover:scale-105 border-2 border-teal-400 disabled:opacity-50"
+										class="px-6 py-3 bg-green-600 hover:bg-green-700 text-white font-bold rounded-lg transition-colors disabled:opacity-50"
 										>
 											Check Answers
 									</button>

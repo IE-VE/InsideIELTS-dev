@@ -22,7 +22,7 @@
 		}
 
 		document.addEventListener('keydown', handleKeydown);
-
+		
 		return () => {
 			document.removeEventListener('keydown', handleKeydown);
 		};
@@ -89,7 +89,7 @@
 
 			<!-- Exercise -->
 			<div class="bg-cyan-500/25 rounded-lg p-4 md:p-8 border border-cyan-600/50 mb-4 md:mb-8">
-				<div class="bg-gradient-to-r from-teal-600 to-cyan-600  text-white text-xl px-4 py-2 rounded-lg text-center font-bold mb-8 border-2 border-teal-400 tracking-wide">
+				<div class="bg-blue-600 text-white text-xl px-4 py-2 rounded-lg text-center font-bold mb-8 border-1 border-white tracking-wide">
 					Fluency & Coherence
 				</div>
 
@@ -141,7 +141,7 @@
 						Click the link below to record your response to this VE Quick Question.
 					</p>
 
-					<!-- VE Quick Question Link - to /record - FLC analysis -->
+					<!-- VE Quick Question Link -->
 					<div class="flex justify-center mb-12">
 						<a
 							href="https://insideielts.oppyo.com/quick-questions?qid=2"
@@ -154,12 +154,9 @@
 					</div>
 
 					<p class="text-white mb-8">
-						When you are satisfied with your recording you can upload your response for <b>FLC</b> feedback.
+						When you are satisfied with your recording you can upload your response for feedback.
 					</p>
 				</div>
-			</div>
-			<div class="text-center md:mt-12">
-							<p class="text-white"><b>End of Lesson 04-i</b></p>
 			</div>
 		</section>
 

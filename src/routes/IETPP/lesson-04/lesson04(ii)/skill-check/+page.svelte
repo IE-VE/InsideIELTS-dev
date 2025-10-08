@@ -22,7 +22,7 @@
 		}
 
 		document.addEventListener('keydown', handleKeydown);
-
+		
 		return () => {
 			document.removeEventListener('keydown', handleKeydown);
 		};
@@ -102,7 +102,23 @@
 						[Note: <em>A high-level range of vocabulary cannot be achieved overnight, and you <u>should not</u> attempt to use words and phrases that you are not familiar with in your speaking test interview. The following exercise is designed to demonstrate use of high-level lexis, and for you to practice and become familiar with incorporating less-common vocabulary into your speech</em>.]
 					</p>
 
-				<div class="text-center my-8">
+					<p class="text-white mb-12 font-medium">
+						Below is a simple Part 1 question on the topic of '<em>your country</em>'.
+					</p>
+
+					<!-- Part 1 Question Image -->
+					<div class="flex justify-center mb-12">
+						<img
+							src="/LESSONS/les04/04(ii)/P1Q.png"
+							alt="IELTS SPEAKING LR"
+							class="w-full max-w-lg cursor-pointer hover:opacity-80 transition-opacity rounded border-2 border-black"
+							onclick={() => openLightbox('/LESSONS/les04/04(ii)/P1Q.png')}
+							onkeydown={(e) => e.key === 'Enter' || e.key === ' ' ? (e.preventDefault(), openLightbox('/LESSONS/les04/04(ii)/P1Q.png')) : null}
+							tabindex="0"
+						/>
+					</div>
+
+					<div class="text-center my-8">
 						<p class="text-2xl font-bold text-white underline mb-8">TASK</p>
 					</div>
 
@@ -123,7 +139,7 @@
 						Click the link below to record your response to this VE Quick Question.
 					</p>
 
-					<!-- VE Quick Question Link - to /record - LR analysis -->
+					<!-- VE Quick Question Link -->
 					<div class="flex justify-center mb-12">
 						<a
 							href="https://insideielts.oppyo.com/quick-questions?qid=3"
@@ -131,17 +147,14 @@
 							title="Which part of your country do most people live in?"
 							class="inline-block bg-gradient-to-r from-teal-600 to-cyan-600 hover:from-teal-700 hover:to-cyan-700 text-white font-bold py-2 px-4 rounded-lg text-lg transition-all transform hover:scale-105 border-2 border-teal-400"
 						>
-							GO TO QQ
+							GO TO VE QQ
 						</a>
 					</div>
 
 					<p class="text-white mb-8">
-						When you are satisfied with your recording you can upload your response for <b>LR</b> feedback.
+						When you are satisfied with your recording you can upload your response for feedback.
 					</p>
 				</div>
-			</div>
-			<div class="text-center md:mt-12">
-							<p class="text-white"><b>End of Lesson 04-ii</b></p>
 			</div>
 		</section>
 
