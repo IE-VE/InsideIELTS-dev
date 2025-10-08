@@ -141,7 +141,7 @@
 						Click the link below to record your response to this VE Quick Question.
 					</p>
 
-					<!-- VE Quick Question Link -->
+					<!-- VE Quick Question Link - to /record - FLC analysis -->
 					<div class="flex justify-center mb-12">
 						<a
 							href="https://insideielts.oppyo.com/quick-questions?qid=2"
@@ -154,9 +154,12 @@
 					</div>
 
 					<p class="text-white mb-8">
-						When you are satisfied with your recording you can upload your response for feedback.
+						When you are satisfied with your recording you can upload your response for <b>FLC</b> feedback.
 					</p>
 				</div>
+			</div>
+			<div class="text-center md:mt-12">
+							<p class="text-white"><b>End of Lesson 04-i</b></p>
 			</div>
 		</section>
 

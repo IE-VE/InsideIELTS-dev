@@ -164,6 +164,9 @@
 					</div>
 				</div>
 			</div>
+			<div class="text-center md:mt-12">
+							<p class="text-white"><b>End of Lesson 04-iv</b></p>
+			</div>
 		</section>
 
 		<!-- Footer Section -->
@@ -187,6 +190,7 @@
 					</a>
 				</div>
 			</div>
+			
 		</section>
 	</div>
 
