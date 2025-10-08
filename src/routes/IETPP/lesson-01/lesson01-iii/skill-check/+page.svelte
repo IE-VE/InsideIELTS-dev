@@ -11,7 +11,7 @@
         // Results for all exercises
         let showResults = false;
         let markingResults = {};
-        
+
         // Loading state
         let loadingAnswers = false;
 
@@ -28,7 +28,7 @@
         function checkAllAnswers() {
                 loadingAnswers = true;
                 showResults = false;
-                
+
                 setTimeout(() => {
                         // Correct answers for sentence completion questions (case-insensitive)
                         const correctAnswers = {
@@ -55,13 +55,13 @@
                                 const correct = correctAnswers[key].some(correctAnswer => 
                                         userAnswer === correctAnswer.toLowerCase()
                                 );
-                                
+
                                 results[key] = {
                                         userAnswer: answer,
                                         isCorrect: correct,
                                         correctAnswers: correctAnswers[key]
                                 };
-                                
+
                                 if (correct) totalCorrect++;
                         });
 
@@ -140,7 +140,7 @@
                 <section class="bg-cyan-800/25 rounded-lg p-4 md:p-10 shadow-sm border border-cyan-600 mb-8">
                         <div class="flex items-center justify-center gap-4 mb-8">
                                 <div class="text-4xl text-green-500">✓</div>
-                                <h2 class="text-3xl font-bold text-center text-white tracking-wider">SKILL CHECK 1.3</h2>
+                                <h2 class="text-3xl font-bold text-center text-white tracking-wider underline decoration-2 underline-offset-4">SKILL CHECK 1.3</h2>
                                 <div class="text-4xl text-green-500">✓</div>
                         </div>
 
@@ -150,11 +150,11 @@
 
                         <!-- Exercise 1 -->
                         <div class="bg-cyan-700/25 rounded-lg p-4 md:p-8 border border-cyan-600/50 mb-8">
-                
+
                                         <div class="bg-blue-600 text-white text-xl px-4 py-2 rounded-lg text-center font-bold mb-8 border-1 border-white tracking-wide">
                                                                         Sentence Completion
                                         </div>                                     
-                                
+
                                 <div class="bg-gray-800 rounded-lg p-4 md:p-6 shadow-sm border border-gray-700 mb-8">
                                         <h4 class="text-xl font-bold text-gray-200 mb-4">
                                                 Exercise 1
@@ -331,7 +331,7 @@
                 <!-- Check Answers Section -->
                 <section class="bg-gray-800 rounded-lg p-4 shadow-sm border border-gray-700 mb-8">
                         <div class="text-center">
-                                        
+
                                 <!-- Check Button -->
                                 <div class="text-center mb-6">
                                         <button
@@ -351,12 +351,12 @@
                                                 {/if}
                                         </button>
                                 </div>
-                                
+
                                 <!-- Results Display -->
                                 {#if showResults}
                                         <div class="bg-gray-700 rounded-lg p-4 md:p-6 mt-6 border border-gray-600">
                                                 <h4 class="text-2xl font-semibold text-white mb-4 text-center">Your Results</h4>
-                                                
+
                                                 <!-- Score Summary -->
                                                 <div class="text-center mb-6">
                                                         <div class="text-3xl font-bold text-white mb-2">
@@ -426,7 +426,7 @@
                 </section>
 
                   <!-- Footer Navigation -->
-                
+
                                 <section class="text-center">                     
                                         <div class="bg-gray-800 rounded-lg p-6 shadow-sm border border-gray-700">
                                                 <div class="flex justify-between items-center">

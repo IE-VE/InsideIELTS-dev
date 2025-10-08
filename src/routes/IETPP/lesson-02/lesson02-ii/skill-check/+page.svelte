@@ -10,18 +10,18 @@
         // Results for the exercise
         let showResults = $state(false);
         let markingResults = $state({});
-        
+
         // Loading state
         let loadingAnswers = $state(false);
-        
+
         // Highlighting state
         let highlightingEnabled = $state(false);
         let highlightedRanges = $state([]);
-        
+
         // Height sync elements
         let questionsContainerEl: HTMLElement;
         let passageScrollEl: HTMLElement;
-        
+
         function syncHeights() {
                 if (!passageScrollEl) return;
                 const isDesktop = window.innerWidth >= 768;
@@ -42,7 +42,7 @@
                 lightboxOpen = false;
                 lightboxImage = '';
         }
-        
+
         // Highlighting functions
         function toggleHighlighting() {
                 highlightingEnabled = !highlightingEnabled;
@@ -51,41 +51,41 @@
                         window.getSelection()?.removeAllRanges();
                 }
         }
-        
+
         function handleTextSelection() {
                 if (!highlightingEnabled) return;
-                
+
                 const selection = window.getSelection();
                 if (selection && selection.toString().trim() && !selection.isCollapsed) {
                         const range = selection.getRangeAt(0);
-                        
+
                         // Only highlight if within the passage container
                         const passageContainer = range.commonAncestorContainer.nodeType === Node.TEXT_NODE 
                                 ? range.commonAncestorContainer.parentElement?.closest('.passage-text')
                                 : range.commonAncestorContainer.closest?.('.passage-text');
-                        
+
                         if (passageContainer) {
                                 highlightSelectedText(range);
                         }
-                        
+
                         selection.removeAllRanges();
                 }
         }
-        
+
         function highlightSelectedText(range: Range) {
                 const span = document.createElement('span');
                 span.className = 'highlight-text bg-yellow-200 dark:bg-yellow-600 cursor-pointer';
                 span.setAttribute('data-highlight-id', Date.now().toString());
-                
+
                 try {
                         range.surroundContents(span);
-                        
+
                         // Store highlight info
                         highlightedRanges = [...highlightedRanges, {
                                 id: span.getAttribute('data-highlight-id'),
                                 text: span.textContent
                         }];
-                        
+
                         // Add click listener to remove highlight
                         span.addEventListener('click', (e) => {
                                 e.stopPropagation();
@@ -96,13 +96,13 @@
                         console.warn('Could not highlight complex selection:', error);
                 }
         }
-        
+
         function removeHighlight(span: HTMLSpanElement) {
                 const highlightId = span.getAttribute('data-highlight-id');
-                
+
                 // Remove from state
                 highlightedRanges = highlightedRanges.filter(h => h.id !== highlightId);
-                
+
                 // Replace span with its text content
                 const parent = span.parentNode;
                 if (parent) {
@@ -110,7 +110,7 @@
                         parent.normalize(); // Merge adjacent text nodes
                 }
         }
-        
+
         function clearAllHighlights() {
                 // Remove all highlight spans
                 const highlightSpans = document.querySelectorAll('.highlight-text[data-highlight-id]');
@@ -121,7 +121,7 @@
                                 parent.normalize();
                         }
                 });
-                
+
                 // Clear state
                 highlightedRanges = [];
         }
@@ -129,7 +129,7 @@
         function checkAllAnswers() {
                 loadingAnswers = true;
                 showResults = false;
-                
+
                 setTimeout(() => {
                         // Correct answers for the "Remarkable Beetle" passage (case-insensitive)
                         const correctAnswers = {
@@ -149,13 +149,13 @@
                                 const correct = correctAnswers[key].some(correctAnswer => 
                                         userAnswer === correctAnswer.toLowerCase()
                                 );
-                                
+
                                 results[key] = {
                                         userAnswer: answer,
                                         isCorrect: correct,
                                         correctAnswers: correctAnswers[key]
                                 };
-                                
+
                                 if (correct) totalCorrect++;
                         });
 
@@ -175,17 +175,17 @@
                 }
 
                 document.addEventListener('keydown', handleKeydown);
-                
+
                 // Setup height sync
                 const ro = new ResizeObserver(syncHeights);
                 if (questionsContainerEl) ro.observe(questionsContainerEl);
                 window.addEventListener('resize', syncHeights);
                 syncHeights();
-                
+
                 // Add text selection handlers
                 document.addEventListener('mouseup', handleTextSelection);
                 document.addEventListener('touchend', handleTextSelection);
-                
+
                 return () => {
                         document.removeEventListener('keydown', handleKeydown);
                         document.removeEventListener('mouseup', handleTextSelection);
@@ -244,17 +244,17 @@
                         </div>
                 </div>
         </div>
-        
+
         <!-- Page Content -->
         <div style="max-width: 1200px;" class="mx-auto px-3 md:px-6 py-8">
                 <!-- Skill Check Title -->
                 <section class="bg-teal-600/25 rounded-lg p-4 md:p-10 shadow-sm border border-teal-600 mb-8">
                         <div class="flex items-center justify-center gap-4 mb-10">
-                                <div class="text-4xl text-green-500">✓</div>
-                                <h2 class="text-2xl font-bold text-center text-white tracking-wider">SKILL CHECK 2.2</h2>
-                                <div class="text-4xl text-green-500">✓</div>
-                        </div>
-                        
+				<div class="text-4xl text-green-500">✓</div>
+				<h2 class="text-2xl font-bold text-center text-white tracking-wider underline decoration-2 underline-offset-4">SKILL CHECK 2.2</h2>
+				<div class="text-4xl text-green-500">✓</div>
+			</div>
+
                         <p class="text-center text-white text-lg mb-8">
                                 <strong>Complete this Reading Skill Check exercise then upload your answers for checking and feedback.</strong>
                         </p>
@@ -264,7 +264,7 @@
                                 <div class="bg-blue-600 text-white text-xl px-4 py-2 rounded-lg text-center font-bold mb-8 border-1 border-white tracking-wide">
                                          True/False/Not given
                                 </div>
-                       
+
                         <!-- Highlighting Controls -->
                         <div class="flex flex-wrap justify-center gap-2 mb-6">
                                 <button
@@ -273,7 +273,7 @@
                                 >
                                         {highlightingEnabled ? '🖍️ Highlighting ON' : '🖍️ Enable Highlighting'}
                                 </button>
-                                
+
                                 {#if highlightedRanges.length > 0}
                                         <button
                                                 onclick={clearAllHighlights}
@@ -283,7 +283,7 @@
                                         </button>
                                 {/if}
                         </div>
-                        
+
                         {#if highlightingEnabled}
                                 <div class="flex justify-center mb-6">
                                         <div class="flex items-center gap-2 px-3 py-2 bg-blue-50 dark:bg-blue-900/20 rounded-md text-sm text-blue-700 dark:text-blue-300">
@@ -291,20 +291,20 @@
                                         </div>
                                 </div>
                         {/if}
-                        
+
                         <!-- Desktop: Side-by-side layout (768px+), Mobile: Stacked -->
                         <div class="flex flex-col md:flex-row gap-6 items-start mb-6 min-h-0">
                                 <!-- Reading Passage -->
                                 <div class="md:w-2/3 bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8 overflow-y-auto passage-text" bind:this={passageScrollEl}>
                                         <h4 class="text-xl font-bold mb-6 text-center text-gray-800 dark:text-gray-200">A Remarkable Beetle</h4>
-                                        
+
                                         <div class="space-y-4 text-m leading-relaxed text-gray-800 dark:text-gray-200">
                                                 <div class="float-right ml-4 mb-2 mt-2">
                                                         <div class="text-sm text-gray-600 dark:text-gray-400 bg-blue-50 dark:bg-blue-900/20 px-3 py-1 rounded">
                                                                 <img src="/reading-images/dung-beetle.png" alt="Dung beetle rolling dung" class="w-50 object-cover rounded"/>
                                                         </div>
                                                 </div>
-                                                
+
                                                 <p>Some of the most remarkable beetles are the dung beetles, which spend almost their whole lives eating and breeding in dung.</p>
 
                                                 <p>More than 4,000 species of these remarkable creatures have evolved and adapted to the world's different climates and the dung of its many animals. Australia's native dung beetles are scrub and woodland dwellers, specialising in coarse marsupial droppings and avoiding the soft cattle dung in which bush flies and buffalo flies breed.</p>
@@ -316,13 +316,13 @@
                                                 <p>Dung beetles work from the inside of the pat so they are sheltered from predators such as birds and foxes. Most species burrow into the soil and bury dung in tunnels directly underneath the pats, which are hollowed out from within. Some large species originating from France excavate tunnels to a depth of approximately 30 cm below the dung pat. These beetles make sausage-shaped brood chambers along the tunnels. The shallowest tunnels belong to a much smaller Spanish species that buries dung in chambers that hang like fruit from the branches of a pear tree.</p>
                                         </div>
                                 </div>
-                                
+
                                 <!-- Questions Section -->
                                 <div class="md:w-1/3 bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8" bind:this={questionsContainerEl}>
                                         <div>
                                                 <h4 class="text-lg font-bold mb-4 text-gray-800 dark:text-gray-200">Questions 1–5</h4>
                                                 <p class="mb-4 text-sm text-gray-700 dark:text-gray-300">Do the following statements reflect the claims of the writer in Reading Passage 1?</p>
-                                                
+
                                                 <div class="mb-4 text-xs text-gray-600 dark:text-gray-400 bg-gray-100 dark:bg-gray-700 p-3 rounded">
                                                         <p class="mb-2"><em>In boxes 1–5 on your answer sheet write</em></p>
                                                         <ul class="space-y-1">
@@ -331,7 +331,7 @@
                                                                 <li><strong>NOT GIVEN</strong> – if it is impossible to say what the writer thinks about this</li>
                                                         </ul>
                                                 </div>
-                                                
+
                                                 <div class="space-y-4">
                                                         <div class="text-sm">
                                                                 <div class="flex items-start gap-2">
@@ -347,7 +347,7 @@
                                                                         </div>
                                                                 </div>
                                                         </div>
-                                                        
+
                                                         <div class="text-sm">
                                                                 <div class="flex items-start gap-2">
                                                                         <span class="font-medium text-teal-600 dark:text-teal-400 min-w-[20px]">2.</span>
@@ -362,7 +362,7 @@
                                                                         </div>
                                                                 </div>
                                                         </div>
-                                                        
+
                                                         <div class="text-sm">
                                                                 <div class="flex items-start gap-2">
                                                                         <span class="font-medium text-teal-600 dark:text-teal-400 min-w-[20px]">3.</span>
@@ -377,7 +377,7 @@
                                                                         </div>
                                                                 </div>
                                                         </div>
-                                                        
+
                                                         <div class="text-sm">
                                                                 <div class="flex items-start gap-2">
                                                                         <span class="font-medium text-teal-600 dark:text-teal-400 min-w-[20px]">4.</span>
@@ -392,7 +392,7 @@
                                                                         </div>
                                                                 </div>
                                                         </div>
-                                                        
+
                                                         <div class="text-sm">
                                                                 <div class="flex items-start gap-2">
                                                                         <span class="font-medium text-teal-600 dark:text-teal-400 min-w-[20px]">5.</span>
@@ -429,7 +429,7 @@
                                         </div>
                                 </div>
                         </div>
-                        
+
                         <!-- Results -->
                         {#if showResults}
                                 <div class="mt-12 bg-gray-800 rounded-lg p-6 border border-gray-600">
@@ -440,7 +440,7 @@
                                                         ({Math.round((markingResults.totalCorrect / markingResults.totalQuestions) * 100)}%)
                                                 </div>
                                         </div>
-                                        
+
                                         <div class="grid gap-3">
                                                 {#each Object.entries(markingResults).slice(0, 5) as [key, result]}
                                                         <div class="flex items-center justify-between p-3 bg-gray-700 rounded">
@@ -457,7 +457,7 @@
                                                         </div>
                                                 {/each}
                                         </div>
-                                        
+
                                         <div class="mt-6 text-center">
                                                 <p class="text-gray-300 mb-4">
                                                         {#if markingResults.totalCorrect === markingResults.totalQuestions}
@@ -480,7 +480,7 @@
                 </section>
 
                   <!-- Footer Navigation -->
-                
+
                 <section class="text-center">                     
                                         <div class="bg-gray-800 rounded-lg p-6 shadow-sm border border-gray-700">
                                                 <div class="flex justify-between items-center">
@@ -491,7 +491,7 @@
                                                         >
                                                                 ← Back to Contents
                                                         </a>
-                                
+
                                                         <a
                                                                 href="/IETPP/lesson-02-iii"
                                                                 class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300 font-semibold"
