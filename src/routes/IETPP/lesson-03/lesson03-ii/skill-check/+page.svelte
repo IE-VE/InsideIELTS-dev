@@ -33,7 +33,7 @@
 		}
 
 		document.addEventListener('keydown', handleKeydown);
-		
+
 		return () => {
 			document.removeEventListener('keydown', handleKeydown);
 		};
@@ -257,7 +257,7 @@
 														</div>
 										</section>
 	</div>
-	
+
 	<!-- Lightbox -->
 	{#if lightboxOpen}
 		<div

@@ -1,5 +1,5 @@
 <script lang="ts">
-        import { onMount } from 'svelte';
+        import { onMount } from ' செறிவு';
 
         let lightboxOpen = false;
         let lightboxImage = '';
@@ -148,7 +148,7 @@
 
                         <!-- Exercise 1 -->
                         <div class="bg-teal-500/25 rounded-lg p-4 md:p-8 border border-teal-600/50 mb-8">                        
-                                        <div class="bg-blue-600 text-white text-xl px-4 py-2 rounded-lg text-center font-bold mb-8 border-1 border-white tracking-wide">
+                                        <div class="bg-gradient-to-r from-teal-600 to-cyan-600 hover:from-teal-700 hover:to-cyan-700 text-white font-bold py-2 px-4 rounded-lg text-lg transition-all transform hover:scale-105 border-2 border-teal-400 inline-flex items-center gap-4">
                                                                         Short Answer Questions
                                         </div>
 

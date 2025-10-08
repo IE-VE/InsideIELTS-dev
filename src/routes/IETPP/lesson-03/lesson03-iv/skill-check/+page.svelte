@@ -31,7 +31,7 @@
 		}
 
 		document.addEventListener('keydown', handleKeydown);
-		
+
 		return () => {
 			document.removeEventListener('keydown', handleKeydown);
 		};
@@ -84,14 +84,14 @@
 
 	<!-- Main Content -->
 	<div style="max-width: 1200px;" class="mx-auto px-3 md:px-6 py-8">
-		
+
 		<section class="bg-teal-800/25 rounded-lg p-4 md:p-10 shadow-sm border border-teal-700 mb-8">
 			<div class="flex items-center justify-center gap-4 mb-8">
 				<div class="text-4xl text-green-500">✓</div>
 				<h2 class="text-2xl font-bold text-center text-white tracking-wider underline decoration-2 underline-offset-4">SKILL CHECK 3.4</h2>
 				<div class="text-4xl text-green-500">✓</div>
 			</div>
-			
+
 			<p class="text-white text-center text-lg mb-8 font-bold">
 				Complete this Writing Skill-Check exercise then upload your answers for checking and feedback.
 			</p>

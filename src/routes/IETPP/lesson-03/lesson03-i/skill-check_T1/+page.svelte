@@ -66,21 +66,21 @@
 			<div class="flex justify-between items-center">
 				<a
 					href="/IETPP/lesson-03/lesson03-i"
-					class="text-teal-400 hover:text-teal-300 font-semibold"
+					class="inline-flex items-center gap-4 bg-gradient-to-r from-teal-600 to-cyan-600 hover:from-teal-700 hover:to-cyan-700 text-white font-bold py-2 px-4 rounded-lg text-lg transition-all transform hover:scale-105 border-2 border-teal-400"
 					data-sveltekit-reload
 				>
 					← Prev
 				</a>
 				<a
 					href="/IETPP#lesson-03"
-					class="text-teal-400 hover:text-teal-300 font-semibold"
+					class="inline-flex items-center gap-4 bg-gradient-to-r from-teal-600 to-cyan-600 hover:from-teal-700 hover:to-cyan-700 text-white font-bold py-2 px-4 rounded-lg text-lg transition-all transform hover:scale-105 border-2 border-teal-400"
 					data-sveltekit-reload
 				>
 					Contents
 				</a>
 				<a
 					href="/IETPP/lesson-03/lesson03-ii"
-					class="text-teal-400 hover:text-teal-300 font-semibold"
+					class="inline-flex items-center gap-4 bg-gradient-to-r from-teal-600 to-cyan-600 hover:from-teal-700 hover:to-cyan-700 text-white font-bold py-2 px-4 rounded-lg text-lg transition-all transform hover:scale-105 border-2 border-teal-400"
 					data-sveltekit-reload
 				>
 					Next →
@@ -307,9 +307,9 @@
 					</div>
 				</div>				
 					</div>			
-			
+
 			</section>		
-			
+
 		<!-- Footer Navigation -->
 
 		<section class="text-center">
@@ -317,7 +317,7 @@
 																		<div class="flex justify-between items-center">
 																						<a
 																										href="/IETPP#lesson-03"
-																										class="text-teal-400 hover:text-teal-300 font-semibold"
+																										class="inline-flex items-center gap-4 bg-gradient-to-r from-teal-600 to-cyan-600 hover:from-teal-700 hover:to-cyan-700 text-white font-bold py-2 px-4 rounded-lg text-lg transition-all transform hover:scale-105 border-2 border-teal-400"
 																										data-sveltekit-reload
 																						>
 																										← Back to Contents
@@ -325,7 +325,7 @@
 
 																						<a
 																										href="/IETPP/lesson-02/lesson03-ii"
-																										class="text-teal-400 hover:text-teal-300 font-semibold"
+																										class="inline-flex items-center gap-4 bg-gradient-to-r from-teal-600 to-cyan-600 hover:from-teal-700 hover:to-cyan-700 text-white font-bold py-2 px-4 rounded-lg text-lg transition-all transform hover:scale-105 border-2 border-teal-400"
 																										data-sveltekit-reload
 																						>
 																										Next Lesson →
@@ -349,4 +349,3 @@
 			</div>
 		</div>
 	{/if}
-

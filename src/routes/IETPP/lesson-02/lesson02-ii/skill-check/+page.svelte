@@ -60,7 +60,7 @@
                         const range = selection.getRangeAt(0);
 
                         // Only highlight if within the passage container
-                        const passageContainer = range.commonAncestorContainer.nodeType === Node.TEXT_NODE 
+                        const passageContainer = range.commonAncestorContainer.nodeType === Node.TEXT_NODE
                                 ? range.commonAncestorContainer.parentElement?.closest('.passage-text')
                                 : range.commonAncestorContainer.closest?.('.passage-text');
 
@@ -146,7 +146,7 @@
 
                         Object.entries(userAnswers).forEach(([key, answer]) => {
                                 const userAnswer = answer.toLowerCase().trim();
-                                const correct = correctAnswers[key].some(correctAnswer => 
+                                const correct = correctAnswers[key].some(correctAnswer =>
                                         userAnswer === correctAnswer.toLowerCase()
                                 );
 
@@ -481,7 +481,7 @@
 
                   <!-- Footer Navigation -->
 
-                <section class="text-center">                     
+                <section class="text-center">
                                         <div class="bg-gray-800 rounded-lg p-6 shadow-sm border border-gray-700">
                                                 <div class="flex justify-between items-center">
                                                         <a
@@ -506,7 +506,7 @@
 
         <!-- Lightbox -->
         {#if lightboxOpen}
-                <div 
+                <div
                         class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 p-4"
                         onclick={closeLightbox}
                 >
