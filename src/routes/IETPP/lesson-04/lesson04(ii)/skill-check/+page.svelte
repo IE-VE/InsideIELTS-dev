@@ -123,7 +123,7 @@
 						Click the link below to record your response to this VE Quick Question.
 					</p>
 
-					<!-- VE Quick Question Link -->
+					<!-- VE Quick Question Link - to /record - LR analysis -->
 					<div class="flex justify-center mb-12">
 						<a
 							href="https://insideielts.oppyo.com/quick-questions?qid=3"

@@ -89,7 +89,7 @@
 
 			<!-- Exercise -->
 			<div class="bg-cyan-500/25 rounded-lg p-4 md:p-8 border border-cyan-600/50 mb-4 md:mb-8">
-				<div class="bg-blue-600 text-white text-xl px-4 py-2 rounded-lg text-center font-bold mb-8 border-1 border-white tracking-wide">
+				<div class="bg-gradient-to-r from-teal-600 to-cyan-600  text-white text-xl px-4 py-2 rounded-lg text-center font-bold mb-8 border-2 border-teal-400 tracking-wide">
 					Fluency & Coherence
 				</div>
 
