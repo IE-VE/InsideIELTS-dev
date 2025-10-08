@@ -87,9 +87,9 @@
 
                         <!-- Educational Section -->
                         <div class="bg-gray-800 rounded-lg p-4 md:p-8 shadow-sm border border-gray-700 mb-12">
-                                
+
                                                             <div class="space-y-10">
-                                                                    
+
                                         <div>
                                                 <h3 class="text-lg font-semibold text-blue-400 mb-6">What to Expect</h3>
                                                        <div class="bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-lg p-4">
@@ -262,12 +262,12 @@
                                                 <span class="text-2xl">✓</span>
                                         </a>
                                 </div>
-                        
+
                 </section>
 
                                <!-- Footer Navigation -->
                 <section class="text-center">                       
-                        
+
                         <div class="bg-gray-800 rounded-lg p-6 shadow-sm border border-gray-700">
                                 <div class="flex justify-between items-center">
                                         <a
@@ -277,7 +277,7 @@
                                         >
                                                 ← Back to Contents
                                         </a>
-                        
+
                                         <a
                                                 href="/IETPP/lesson-02"
                                                 class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300 font-semibold"

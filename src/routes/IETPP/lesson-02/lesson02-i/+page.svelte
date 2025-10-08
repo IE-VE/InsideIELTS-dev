@@ -97,7 +97,7 @@
                                                 </p>
                                         </div>
                                                     </div>
-                
+
                 <div>
                         <h3 class="text-lg font-semibold text-teal-400 mb-6">Key Strategies</h3>
                         <div class="bg-teal-900/20 border border-teal-800 rounded-lg p-4">
@@ -159,7 +159,7 @@
                                         />
                                 </div>
                              </div>
-                        
+
                                 <div class="mx-auto text-lg">
                                         <div class="bg-gray-800 rounded-lg p-4 md:p-8 shadow-sm border border-gray-600 mb-12">
                                         <h3 class="text-xl font-bold text-white mb-8 underline">Question technique</h3>
@@ -177,9 +177,9 @@
                                                                 on:click={() => openLightbox('/LESSONS/les02/02(i)/Matching_info-techQ.png')}
                                                         />
                                                 </div>
-                                        
 
-                                        
+
+
                                                 <p class="text-white mb-8 font-semibold">
                                                         <strong>2. Focusing on the questions <u>one at a time</u>, scan each paragraph for the key-words.</strong>
                                                 </p>
@@ -206,7 +206,7 @@
                                                                 <li>- If you can't find the key-words (or synonyms) first time, move on to the next question.</li>
                                                         </ul>
                                                 </div>
-                                        
+
 
                                         <div>
                                                 <p class="text-white mb-8 font-semibold">
@@ -233,7 +233,7 @@
                                                 </div>
                                                 </div>
                                                 </div>
-                                        
+
                                 <div class="text-center">
                                         <p class="text-white text-xl font-bold mb-16">
                                                 Now complete the READING - Matching information Skill Check exercise
@@ -247,13 +247,13 @@
                                                 <span>SKILL CHECK</span>
                                                 <span class="text-2xl">✓</span>
                                         </a>
-                                
+
                         </div>
                 </section>
 
                                <!-- Footer Navigation -->
                 <section class="text-center">                       
-                        
+
                         <div class="bg-gray-800 rounded-lg p-6 shadow-sm border border-gray-700">
                                 <div class="flex justify-between items-center">
                                         <a
@@ -263,7 +263,7 @@
                                         >
                                                 ← Back to Contents
                                         </a>
-                                          
+
                                         <a
                                                 href="/IETPP/lesson-02/lesson02-ii"
                                                 class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300 font-semibold"

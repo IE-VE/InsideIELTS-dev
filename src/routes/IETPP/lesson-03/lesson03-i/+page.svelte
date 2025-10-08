@@ -42,7 +42,7 @@
 				<div class="text-xs text-left text-teal-600 dark:text-teal-400">
 					IE2401_03.1
 				</div>
-				<h1 class="text-3xl font-bold text-white my-7">
+				<h1 class="text-4xl font-bold text-white my-7 tracking-wide">
 					WRITING
 				</h1>
 						</div>

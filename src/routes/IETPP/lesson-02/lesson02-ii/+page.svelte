@@ -43,8 +43,8 @@
                                         IE2401_02.2
                                 </div>
                                 <h1 class="text-4xl font-bold text-white my-7 tracking-wide">
-                                        READING
-                                </h1>
+					READING
+				</h1>
                         </div>
 
                         <div class="flex justify-between items-center">
@@ -96,7 +96,7 @@
                                                 </p>
                                         </div>
                                         </div>
-                                        
+
                                         <div>
                                                 <h3 class="text-lg font-semibold text-teal-400 mb-6">Key Strategies</h3>
                                                 <div class="bg-teal-900/20 border border-teal-800 rounded-lg p-4">
@@ -150,7 +150,7 @@
                                         </div>
                                 </div>
                         </div>
-                 
+
                         <div class="max-w-4xl mx-auto text-lg">
 
                                 <div>
@@ -229,9 +229,9 @@
                                 <p class="text-white mb-8">
                                         As always, be on the lookout for synonyms and paraphrasing whenever scanning the text for key-words and answers.
                                 </p>
-                                        
+
                         </div>
-                        
+
                          <div class="text-center">
                                         <p class="text-white text-xl font-bold mb-16">
                                                 Now complete the READING - True/False/Not given Skill Check exercise
@@ -251,7 +251,7 @@
 
                                <!-- Footer Navigation -->
                 <section class="text-center">                       
-                        
+
                         <div class="bg-gray-800 rounded-lg p-6 shadow-sm border border-gray-700">
                                 <div class="flex justify-between items-center">
                                         <a

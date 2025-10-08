@@ -86,7 +86,7 @@
                         </div>
                         <!-- Educational Section -->
                         <div class="bg-gray-800 rounded-lg p-4 md:p-8 shadow-sm border border-gray-600 mb-12">
-                                
+
         <div class="space-y-10">
                 <div>                
                         <h3 class="text-lg font-semibold text-blue-400 mb-6">What to Expect</h3>
@@ -117,7 +117,7 @@
                                                                         <span class="text-green-500 mr-2">4.</span>
                                                                         <span><strong>Listen for keywords:</strong> Focus on key words that match the options</span>
                                                                 </li>
-                                                             
+
                                                         </ul>
                                                 </div>
                                         </div>
@@ -143,12 +143,12 @@
                                         </div>
                                 </div>
                         </div>
-                 
+
                         <div class="max-w-4xl mx-auto text-lg text-white">
-                                
+
                                 <p class="mb-4">
                                         There will usually be at least one set of multiple choice answer questions in every Listening Test.</p>
-                                
+
                                 <p class="mb-10">The question format is a question or statement followed by three to five options labeled with letters.
                                 </p>
 
@@ -174,14 +174,14 @@
                                         </a>
                                 </div>
                            </div>
-                        
+
                                 <div class="mx-auto text-lg">
                                 <div class="bg-gray-800 rounded-lg p-4 md:p-8 shadow-sm border border-gray-600 mb-12">
                                 <h3 class="text-xl font-bold text-white mb-8 underline">Question technique</h3>
 
                                 <p class="mb-10">
                                 <strong> 1. At the beginning of each section before the audio begins (about 40-50 seconds in total), use the time given to read and underline key topic words in the questions and answer options.</strong></p>
-                                     
+
                                 <div class="flex justify-center mb-10">
                                         <img
                                                 src="/LESSONS/les01/01(i)/L_multiplechoice-example-technique.png"
@@ -214,7 +214,7 @@
                                                 </li></ul>
                                         </div>
                                 </div>
-                        
+
                                 <p class="text-white text-center mb-10 font-bold">
                                         Watch this quick Listening multiple choice demonstration vid before testing your skills.
                                 </p>
@@ -228,7 +228,7 @@
                                                 Your browser does not support this video format.
                                         </video>
                                 </div>
-                                
+
                                 <div class="text-center">
                                         <p class="text-white text-xl font-bold mb-16">
                                                 Test your understanding of LISTENING - Multiple choice
@@ -242,13 +242,13 @@
                                                 <span>SKILL CHECK</span>
                                                 <span class="text-2xl">✓</span>
                                         </a>
-                                
+
                         </div>
                 </section>
 
                                <!-- Footer Navigation -->
                 <section class="text-center">                       
-                        
+
                         <div class="bg-gray-800 rounded-lg p-4 shadow-sm border border-gray-700">
                                 <div class="flex justify-between items-center">
                                         <a
