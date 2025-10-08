@@ -422,10 +422,11 @@
 
                                                         <a
                                                                 href="/IETPP/lesson-01/lesson01-iii"
-                                                                class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300 font-semibold"
+                                                                class="inline-flex items-center gap-4 bg-gradient-to-r from-teal-600 to-cyan-600 hover:from-teal-700 hover:to-cyan-700 text-white font-bold py-2 px-4 rounded-lg text-lg transition-all transform hover:scale-105 border-2 border-teal-400"
                                                                 data-sveltekit-reload
                                                         >
-                                                                Next Lesson →
+                                                                <span class="text-2xl">→</span>
+                                                                <span>NEXT LESSON</span>
                                                         </a>
                                                 </div>
                                         </div>
