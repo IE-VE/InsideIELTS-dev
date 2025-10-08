@@ -81,7 +81,7 @@
                 <section class="bg-teal-600/25 rounded-lg p-10 shadow-sm border border-teal-600 mb-12">
                         <div class="flex items-center justify-center gap-4 mb-10">
                                 <div class="text-4xl">📖</div>
-                                <h2 class="text-3xl font-bold text-center text-white tracking-wide">True/False/Not given</h2>
+                                <h2 class="text-3xl font-bold text-center text-white tracking-wide underline decoration-2 underline-offset-4">True/False/Not given</h2>
                                 <div class="text-4xl">📖</div>
                         </div>
 

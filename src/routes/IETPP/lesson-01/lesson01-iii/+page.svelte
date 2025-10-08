@@ -81,7 +81,7 @@
                 <section class="bg-cyan-800/25 rounded-lg p-4 md:p-10 shadow-sm border border-cyan-600 mb-12">
                         <div class="flex items-center justify-center gap-4 mb-10">
                                 <div class="text-4xl">👂</div>
-                                <h2 class="text-3xl font-bold text-center text-white tracking-wide">Sentence Completion</h2>
+                                <h2 class="text-3xl font-bold text-center text-white tracking-wide underline decoration-2 underline-offset-4">Sentence Completion</h2>
                                 <div class="text-4xl">👂</div>
                         </div>
 
