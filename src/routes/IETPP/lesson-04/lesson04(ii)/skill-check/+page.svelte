@@ -89,7 +89,7 @@
 
 			<!-- Exercise -->
 			<div class="bg-teal-500/25 rounded-lg p-4 md:p-8 border border-teal-600/50 mb-4 md:mb-8">
-				<div class="bg-blue-600 text-white text-xl px-4 py-2 rounded-lg text-center font-bold mb-8 border-1 border-white tracking-wide">
+				<div class="bg-gradient-to-r from-teal-600 to-cyan-600 text-white font-bold py-1 px-4 rounded-lg text-lg border-2 border-teal-400 tracking-wide text-center mb-8">
 					Lexical Resource
 				</div>
 
@@ -99,11 +99,11 @@
 					</p>
 
 					<p class="text-white mb-12 italic">
-						[Note: <em>A high-level range of vocabulary cannot be achieved overnight, and you <u>should not</u> attempt to use words and phrases that you are not familiar with in your speaking test interview. The following exercise is designed to demonstrate use of high-level lexis, and for you to practice and become familiar with incorporating less-common vocabulary into your speech</em>.]
+						[ Note: <em>A high-level vocabulary cannot be achieved overnight, and you <u>should not</u> use words and phrases that you are not familiar with in your speaking test interview. - The following exercise is designed to help you practice techniques for actively expanding your lexical range</em>. ]
 					</p>
 
 					<p class="text-white mb-12 font-medium">
-						Below is a simple Part 1 question on the topic of '<em>your country</em>'.
+						Below is a simple Part 1 question on the topic of: ' <em>your country</em> '.
 					</p>
 
 					<!-- Part 1 Question Image -->
@@ -139,20 +139,20 @@
 						Click the link below to record your response to this VE Quick Question.
 					</p>
 
-					<!-- VE Quick Question Link -->
-					<div class="flex justify-center mb-12">
+					<!-- VE Quick Question Link - for LR analysis feedback -->
+					<div class="flex justify-center mb-8">
 						<a
 							href="https://insideielts.oppyo.com/quick-questions?qid=3"
 							target="_blank"
 							title="Which part of your country do most people live in?"
-							class="inline-block bg-gradient-to-r from-teal-600 to-cyan-600 hover:from-teal-700 hover:to-cyan-700 text-white font-bold py-2 px-4 rounded-lg text-lg transition-all transform hover:scale-105 border-2 border-teal-400"
-						>
-							GO TO VE QQ
+							class="px-6 py-2 bg-green-600 hover:bg-green-700 border-2 border-white text-white font-bold rounded-lg transition-colors transition-all transform hover:scale-105"
+							>
+								SC TASK
 						</a>
 					</div>
 
 					<p class="text-white mb-8">
-						When you are satisfied with your recording you can upload your response for feedback.
+						You will be rated based on the <b>3 LR</b> descriptors.
 					</p>
 				</div>
 			</div>
@@ -164,7 +164,7 @@
 				<div class="flex justify-between items-center">
 					<a
 						href="/IETPP#lesson-04"
-						class="text-teal-400 hover:underline font-semibold"
+						class="text-teal-400 hover:text-teal-300 font-semibold"
 						data-sveltekit-reload
 					>
 						← Back to Contents
@@ -172,7 +172,7 @@
 
 					<a
 						href="/IETPP/lesson-04/lesson04(iii)"
-						class="text-teal-400 hover:underline font-semibold"
+						class="text-teal-400 hover:text-teal-300 font-semibold"
 						data-sveltekit-reload
 					>
 						Next Lesson →

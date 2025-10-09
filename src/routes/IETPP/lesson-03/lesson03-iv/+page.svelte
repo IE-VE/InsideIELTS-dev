@@ -65,7 +65,7 @@
 					Contents
 				</a>
 				<a
-					href="/IETPP/lesson-03"
+					href="/IETPP/lesson-04"
 					class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300 font-semibold"
 					data-sveltekit-reload
 				>
@@ -166,14 +166,13 @@
 				
 						<a
 							href="/IETPP/lesson-03/lesson03-iv/skill-check"
-							class="inline-flex items-center gap-3 bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg border-2 border-white transition-colors"
+							class="inline-flex items-center gap-4 bg-gradient-to-r from-teal-600 to-cyan-600 hover:from-teal-700 hover:to-cyan-700 text-white font-bold py-2 px-4 rounded-lg text-lg transition-all transform hover:scale-105 border-2 border-teal-400"
 						>
-							<span>✓</span>
+							<span class="text-2xl">✓</span>
 							<span>SKILL CHECK</span>
-							<span>✓</span>
+							<span class="text-2xl">✓</span>
 						</a>
 					</div>
-
 				</div>
 			</div>
 		</section>

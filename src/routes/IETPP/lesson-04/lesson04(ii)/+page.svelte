@@ -30,7 +30,7 @@
 </script>
 
 <svelte:head>
-	<title>Speaking - Lexical Resource | InsideIELTS Test Preparation Program</title>
+	<title>Speaking - LR | InsideIELTS Test Preparation Program</title>
 	<meta name="description" content="Master IELTS Speaking Lexical Resource criteria with expert guidance and Virtual Examiner videos." />
 </svelte:head>
 
@@ -182,7 +182,7 @@
 					<div class="flex justify-between items-center">
 					<a
 						href="/IETPP#lesson-04"
-						class="text-teal-400 hover:underline font-semibold"
+						class="text-teal-400 hover:text-teal-300 font-semibold"
 						data-sveltekit-reload
 					>
 						← Back to Contents
@@ -190,7 +190,7 @@
 
 					<a
 						href="/IETPP/lesson-04/lesson04(iii)"
-						class="text-teal-400 hover:underline font-semibold"
+						class="text-teal-400 hover:text-teal-300 font-semibold"
 						data-sveltekit-reload
 					>
 						Next Lesson →

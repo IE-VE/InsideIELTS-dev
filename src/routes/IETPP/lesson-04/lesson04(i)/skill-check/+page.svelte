@@ -89,7 +89,7 @@
 
 			<!-- Exercise -->
 			<div class="bg-cyan-500/25 rounded-lg p-4 md:p-8 border border-cyan-600/50 mb-4 md:mb-8">
-				<div class="bg-blue-600 text-white text-xl px-4 py-2 rounded-lg text-center font-bold mb-8 border-1 border-white tracking-wide">
+				<div class="bg-gradient-to-r from-teal-600 to-cyan-600 text-white font-bold py-1 px-4 rounded-lg text-lg border-2 border-teal-400 tracking-wide text-center mb-8">
 					Fluency & Coherence
 				</div>
 
@@ -141,21 +141,21 @@
 						Click the link below to record your response to this VE Quick Question.
 					</p>
 
-					<!-- VE Quick Question Link -->
+					<!-- VE Quick Question Link - for FLC analysis feedback -->
 					<div class="flex justify-center mb-12">
 						<a
 							href="https://insideielts.oppyo.com/quick-questions?qid=2"
 							target="_blank"
 							title="How often do you eat snacks?"
-							class="inline-block bg-gradient-to-r from-teal-600 to-cyan-600 hover:from-teal-700 hover:to-cyan-700 text-white font-bold py-2 px-4 rounded-lg text-lg transition-all transform hover:scale-105 border-2 border-teal-400"
-						>
-							GO TO QQ
+							class="px-6 py-2 bg-green-600 hover:bg-green-700 border-2 border-white text-white font-bold rounded-lg transition-colors transition-all transform hover:scale-105"
+							>
+								SC TASK
 						</a>
 					</div>
 
-					<p class="text-white mb-8">
-						When you are satisfied with your recording you can upload your response for feedback.
-					</p>
+					<p class="text-white mb-4">
+						You will be rated based on the <b>3 FLC</b> descriptors.
+					</p>	
 				</div>
 			</div>
 		</section>
@@ -166,7 +166,7 @@
 					<div class="flex justify-between items-center">
 					<a
 						href="/IETPP#lesson-04"
-						class="text-teal-400 hover:underline font-semibold"
+						class="text-teal-400 hover:text-teal-300 font-semibold"
 						data-sveltekit-reload
 					>
 						← Back to Contents
@@ -174,7 +174,7 @@
 
 					<a
 						href="/IETPP/lesson-04/lesson04(ii)"
-						class="text-teal-400 hover:underline font-semibold"
+						class="text-teal-400 hover:text-teal-300 font-semibold"
 						data-sveltekit-reload
 					>
 						Next Lesson →

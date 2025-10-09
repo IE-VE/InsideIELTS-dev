@@ -66,21 +66,21 @@
 			<div class="flex justify-between items-center">
 				<a
 					href="/IETPP/lesson-03/lesson03-i"
-					class="inline-flex items-center gap-4 bg-gradient-to-r from-teal-600 to-cyan-600 hover:from-teal-700 hover:to-cyan-700 text-white font-bold py-2 px-4 rounded-lg text-lg transition-all transform hover:scale-105 border-2 border-teal-400"
+					class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300 font-semibold"
 					data-sveltekit-reload
 				>
 					← Prev
 				</a>
 				<a
 					href="/IETPP#lesson-03"
-					class="inline-flex items-center gap-4 bg-gradient-to-r from-teal-600 to-cyan-600 hover:from-teal-700 hover:to-cyan-700 text-white font-bold py-2 px-4 rounded-lg text-lg transition-all transform hover:scale-105 border-2 border-teal-400"
+					class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300 font-semibold"
 					data-sveltekit-reload
 				>
 					Contents
 				</a>
 				<a
 					href="/IETPP/lesson-03/lesson03-ii"
-					class="inline-flex items-center gap-4 bg-gradient-to-r from-teal-600 to-cyan-600 hover:from-teal-700 hover:to-cyan-700 text-white font-bold py-2 px-4 rounded-lg text-lg transition-all transform hover:scale-105 border-2 border-teal-400"
+					class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300 font-semibold"
 					data-sveltekit-reload
 				>
 					Next →
@@ -110,7 +110,7 @@
 
 					<!-- Exercise -->
 			<div class="bg-cyan-500/25 rounded-lg p-4 md:p-8 border border-teal-600/50 mb-4 md:mb-8">
-				<div class="bg-blue-600 text-white text-xl px-4 py-2 rounded-lg text-center font-bold mb-8 border-1 border-white tracking-wide">
+				<div class="bg-gradient-to-r from-teal-600 to-cyan-600 text-white font-bold py-1 px-4 rounded-lg text-lg border-2 border-teal-400 tracking-wide text-center mb-8">
 								Task Achievement (TA)
 				</div>
 
@@ -201,7 +201,7 @@
 								<div class="flex justify-center mt-6">
 									<button
 										onclick={() => handleUpload('Academic')}
-										class="px-6 py-3 bg-green-600 hover:bg-green-700 text-white font-bold rounded-lg transition-colors disabled:opacity-50"
+										class="px-6 py-2 bg-green-600 hover:bg-green-700 border-2 border-white text-white font-bold rounded-lg transition-colors transition-all transform hover:scale-105"
 										>
 											Check Answers
 									</button>
@@ -298,8 +298,8 @@
 							<div class="flex justify-center mt-6">
 								<button
 									onclick={() => handleUpload('General Training')}
-									class="px-6 py-3 bg-green-600 hover:bg-green-700 text-white font-bold rounded-lg transition-colors disabled:opacity-50"
-								>
+									class="px-6 py-2 bg-green-600 hover:bg-green-700 border-2 border-white text-white font-bold rounded-lg transition-colors transition-all transform hover:scale-105"
+									>
 									Check Answers
 								</button>
 							</div>
@@ -317,7 +317,7 @@
 																		<div class="flex justify-between items-center">
 																						<a
 																										href="/IETPP#lesson-03"
-																										class="inline-flex items-center gap-4 bg-gradient-to-r from-teal-600 to-cyan-600 hover:from-teal-700 hover:to-cyan-700 text-white font-bold py-2 px-4 rounded-lg text-lg transition-all transform hover:scale-105 border-2 border-teal-400"
+																							class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300 font-semibold"
 																										data-sveltekit-reload
 																						>
 																										← Back to Contents
@@ -325,7 +325,7 @@
 
 																						<a
 																										href="/IETPP/lesson-02/lesson03-ii"
-																										class="inline-flex items-center gap-4 bg-gradient-to-r from-teal-600 to-cyan-600 hover:from-teal-700 hover:to-cyan-700 text-white font-bold py-2 px-4 rounded-lg text-lg transition-all transform hover:scale-105 border-2 border-teal-400"
+																							class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300 font-semibold"
 																										data-sveltekit-reload
 																						>
 																										Next Lesson →

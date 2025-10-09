@@ -138,7 +138,7 @@
 						<img
 							src="/LESSONS/les04/04(iii)/GRA_example.png"
 							alt="IELTS Speaking Test GRA"
-							class="w-full max-w-4xl cursor-pointer hover:opacity-80 transition-opacity rounded border border-gray-600"
+							class="w-full max-w-3xl"
 							onclick={() => openLightbox('/LESSONS/les04/04(iii)/GRA_example.png')}
 							onkeydown={(e) => e.key === 'Enter' || e.key === ' ' ? (e.preventDefault(), openLightbox('/LESSONS/les04/04(iii)/GRA_example.png')) : null}
 							tabindex="0"
@@ -177,7 +177,7 @@
 				<div class="flex justify-between items-center">
 					<a
 						href="/IETPP#lesson-04"
-						class="text-teal-400 hover:underline font-semibold"
+						class="text-teal-400 hover:text-teal-300 font-semibold"
 						data-sveltekit-reload
 					>
 						← Back to Contents
@@ -185,7 +185,7 @@
 
 					<a
 						href="/IETPP/lesson-04/lesson04(iv)"
-						class="text-teal-400 hover:underline font-semibold"
+						class="text-teal-400 hover:text-teal-300 font-semibold"
 						data-sveltekit-reload
 					>
 						Next Lesson →

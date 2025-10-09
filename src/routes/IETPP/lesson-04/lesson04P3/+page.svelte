@@ -104,7 +104,7 @@
 
 		<!-- Section 1: Part 3 Structure & Technique -->
 		<section class="bg-cyan-600/25 rounded-lg p-4 md:p-8 shadow-sm border border-blue-600 mb-8">
-			<h2 class="text-2xl font-bold text-center text-white mb-8">
+			<h2 class="text-2xl font-bold text-center text-white mb-8 underline decoration-1 underline-offset-3">
 				Part 3 structure & technique</h2>
 			<div class="max-w-6xl mx-auto">  
 
@@ -141,7 +141,7 @@
 					providing you with the opportunity to display the the highest level of your language ability.
 				</p>
 
-				<p class="text-white mb-6">The questions are structured in the following way:</p>
+				<p class="text-white mb-8">The questions are structured in the following way:</p>
 
 				<!-- Carousel -->
 				<div class="relative max-w-2xl mx-auto mb-8">
@@ -197,7 +197,7 @@
 					</div>
 				</div>
 
-				<p class="text-white mb-6">
+				<p class="text-white mb-8">
 					At the end of the second Part 3 frame the
 					examiner will thank you for your time and end the interview.
 				</p>
@@ -214,7 +214,7 @@
 
 		<!-- Section 2: Example Discussion Responses -->
 		<section class="bg-teal-600/25 rounded-lg p-4 md:p-8 shadow-sm border border-teal-600 mb-8">
-			<h2 class="text-2xl font-bold text-center text-white mb-8">
+			<h2 class="text-2xl font-bold text-center text-white mb-8 underline decoration-1 underline-offset-3">
 				Part 3 example discussion responses</h2>
 			
 			<div class="max-w-6xl mx-auto">
@@ -227,7 +227,7 @@
 					<div class="max-w-4xl mx-auto">
 						<!-- Example -->
 						<div class="text-center">
-							<h4 class="text-lg font-semibold text-white mb-4 underline">Topic: Music and young people</h4>
+							<h4 class="text-lg font-semibold text-white mb-4">Topic: Music and young people</h4>
 							<img
 								src="/LESSONS/les04/INT2-L1-new-P3Q-pic.png"
 								alt="Speaking Part 3 response - Music and young people"
@@ -256,7 +256,7 @@
 
 		<!-- Section 3: Practice -->
 		<section class="bg-cyan-800/25 rounded-lg p-4 md:p-8 shadow-sm border border-cyan-600 mb-8">
-			<h2 class="text-2xl font-bold text-center text-white mb-8">
+			<h2 class="text-2xl font-bold text-center text-white mb-8 underline decoration-1 underline-offset-3">
 				Part 3 practice</h2>
 			
 			<div class="max-w-6xl mx-auto">

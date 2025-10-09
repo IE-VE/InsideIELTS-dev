@@ -30,7 +30,7 @@
 </script>
 
 <svelte:head>
-	<title>Speaking - Fluency & Coherence | InsideIELTS Test Preparation Program</title>
+	<title>Speaking - FLC | InsideIELTS Test Preparation Program</title>
 	<meta name="description" content="Master IELTS Speaking Fluency & Coherence criteria with expert guidance and Virtual Examiner videos." />
 </svelte:head>
 
@@ -50,7 +50,7 @@
 			<div class="flex justify-between items-center">
 				<a
 					href="/IETPP/lesson-04/lesson04P3"
-					class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300 font-semibold"
+					class="text-teal-400 hover:text-teal-300 font-semibold"
 					data-sveltekit-reload
 				>
 					← Prev
@@ -58,7 +58,7 @@
 
 				<a
 					href="/IETPP#lesson-04"
-					class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300 font-semibold"
+					class="text-teal-400 hover:text-teal-300 font-semibold"
 					data-sveltekit-reload
 				>
 					Contents
@@ -180,7 +180,7 @@
 				<div class="flex justify-between items-center">
 					<a
 						href="/IETPP#lesson-04"
-						class="text-teal-400 hover:underline font-semibold"
+						class="text-teal-400 hover:text-teal-300 font-semibold"
 						data-sveltekit-reload
 					>
 						← Back to Contents
@@ -188,7 +188,7 @@
 
 					<a
 						href="/IETPP/lesson-04/lesson04(ii)"
-						class="text-teal-400 hover:underline font-semibold"
+						class="text-teal-400 hover:text-teal-300 font-semibold"
 						data-sveltekit-reload
 					>
 						Next Lesson →

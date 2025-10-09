@@ -103,8 +103,8 @@
 
 			<!-- Exercise -->
 			<div class="bg-cyan-500/25 rounded-lg p-4 md:p-8 border border-teal-600/50 mb-4 md:mb-8">
-				<div class="bg-blue-600 text-white text-xl px-4 py-2 rounded-lg text-center font-bold mb-8 border-1 border-white tracking-wide">
-								Coherence & Cohesion (CC)
+				<div class="bg-gradient-to-r from-teal-600 to-cyan-600 text-white font-bold py-1 px-4 rounded-lg text-lg border-2 border-teal-400 tracking-wide text-center mb-8">
+								Coherence & Cohesion
 				</div>
 
 						<div class="bg-gray-800 rounded-lg p-4 md:p-8 border border-teal-600/50 mb-4 md:mb-8 max-w-4xl mx-auto space-y-6 text-lg">
@@ -221,7 +221,7 @@
 		<div class="flex justify-center mt-6">
 								<button
 									onclick={() => handleUpload('Task 2')}
-									class="px-6 py-3 bg-green-600 hover:bg-green-700 text-white font-bold rounded-lg transition-colors disabled:opacity-50"
+									class="px-6 py-2 bg-green-600 hover:bg-green-700 border-2 border-white text-white font-bold rounded-lg transition-colors transition-all transform hover:scale-105"
 									>
 										Check Answers
 								</button>

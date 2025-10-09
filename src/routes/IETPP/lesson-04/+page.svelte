@@ -30,7 +30,7 @@
 </script>
 
 <svelte:head>
-	<title>IETPP - Lesson 04: Introduction to the Speaking Test | InsideIELTS</title>
+	<title>IETPP - Introduction to the Speaking Test | InsideIELTS</title>
 	<meta
 		name="description"
 		content="Learn IELTS Speaking test format, interview structure, assessment criteria, and watch example interviews with the Virtual Examiner."
@@ -91,7 +91,7 @@
 
 	<section class="mb-12">
 					<div class="bg-gray-800 rounded-lg p-6 shadow-sm border border-gray-200 dark:border-gray-700">
-									<h2 class="text-2xl text-center font-bold text-gray-800 dark:text-white mb-6">
+									<h2 class="text-2xl text-center font-bold text-gray-800 dark:text-white mb-6 underline decoration-2 underline-offset-3">
 													IELTS Speaking Test Format
 									</h2>
 
@@ -125,7 +125,7 @@
 
 	<!-- Section 1: Speaking Test Format & Content -->
 		<section class="bg-cyan-600/25 rounded-lg p-4 md:p-10 shadow-sm border border-blue-700 mb-8">
-			<h2 class="text-2xl font-bold text-center text-white mb-8">
+			<h2 class="text-2xl font-bold text-center text-white mb-8 underline decoration-1 underline-offset-3">
 				Speaking Test make-up
 			</h2>
 			<div class="max-w-6xl mx-auto">
@@ -226,7 +226,7 @@
 						</p>
 
 						<p class="text-white mb-8">
-							<u>Part 1 is not a discussion</u>, the examiner can use the "<em>Why/Why not?</em>" prompts if he/she feels you are not extending your answer
+							<u>Part 1 is not a discussion</u>, the examiner can use the "<em>Why/Why not?</em>" prompts if you are not extending your answer
 							sufficiently, but nothing more than that.
 						</p>
 					</div>
@@ -249,14 +249,11 @@
 						</div>
 
 						<p class="text-white mb-6">
-							Upon completion of Part 1 the examiner will say, "<em>Now i'm going to give you a topic and i'd like you to talk
-							about it for 1 to 2 minutes.</em>" You will then be given a topic card, pencil and a piece of
-							blank paper and allowed <strong>1 minute</strong> to make some notes on the topic.
+							Upon completion of Part 1 the examiner will say, "<em>Now i'm going to give you a topic and i'd like you to talk about it for 1 to 2 minutes.</em>" You will then be given a topic card, pencil and a piece of blank paper and allowed <strong>1 minute</strong> to make some notes on the topic.
 						</p>
 
 						<p class="text-white mb-6">
-							After your 1 minute preparation time the examiner will say, "<em>Remember, you have 1 to 2 minutes for this, so don't worry if i
-							stop you, can you start speaking now please.</em>"
+							After your 1 minute preparation time the examiner will say, "<em>Remember, you have 1 to 2 minutes for this, so don't worry if i	stop you, can you start speaking now please.</em>"
 						</p>
 
 						<p class="text-white mb-8">
@@ -347,7 +344,7 @@
 
 		<!-- Section 2: Speaking Test Assessment -->
 		<section class="bg-teal-600/25 rounded-lg p-4 md:p-8 shadow-sm border border-teal-600 mb-8">
-			<h2 class="text-2xl font-bold text-center text-white mb-8">Speaking Test assessment</h2>
+			<h2 class="text-2xl font-bold text-center text-white mb-8 underline decoration-1 underline-offset-3">Speaking Test assessment</h2>
 
 			<div class="max-w-6xl mx-auto">
 				<div class="bg-gray-800 rounded-lg p-6 md:p-10 text-lg border border-gray-700 mb-8">
@@ -421,7 +418,7 @@
 
 		<!-- Section 3: Example Speaking Test -->
 		<section class="bg-cyan-800/25 rounded-lg p-4 md:p-8 shadow-sm border border-cyan-600 mb-8">
-			<h2 class="text-2xl font-bold text-center text-white mb-8">Example Speaking Test</h2>
+			<h2 class="text-2xl font-bold text-center text-white mb-8 underline decoration-1 underline-offset-3">Example Speaking Test</h2>
 
 			<div class="max-w-6xl mx-auto">
 				<div class="bg-gray-800 rounded-lg p-6 md:p-10 text-lg border border-gray-700">
@@ -463,7 +460,7 @@
 																		<div class="flex justify-between items-center">
 																						<a
 																										href="/IETPP#lesson-04"
-																										class="text-teal-400 hover:underline font-semibold"
+																										class="text-teal-400 hover:text-teal-300 font-semibold"
 																										data-sveltekit-reload
 																						>
 																										← Back to Contents
@@ -471,7 +468,7 @@
 
 																						<a
 																										href="/IETPP/lesson-04/lesson04P1"
-																										class="text-teal-400 hover:underline font-semibold"
+																										class="text-teal-400 hover:text-teal-300 font-semibold"
 																										data-sveltekit-reload
 																						>
 																										Next Lesson →

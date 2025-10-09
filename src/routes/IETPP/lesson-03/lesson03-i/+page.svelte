@@ -89,8 +89,7 @@
 
 					 <div class="bg-blue-900/50 border border-blue-700 rounded-lg p-4 mb-8">
 					<p class="text-gray-700 dark:text-gray-300 text-lg">
-						<strong>Task Achievement</strong> in <strong>Writing Task 1</strong> and <strong>Task Response</strong> in <strong>Writing Task 2</strong> measure how well you
-						fulfill the requirements of the two writing questions. We'll look at the <strong>TA/TR</strong> descriptors for each of the writing tasks individually.
+						<strong>Task Achievement (TR)</strong> in <strong>Writing Task 1</strong> and <strong>Task Response (TR)</strong> in <strong>Writing Task 2</strong> measure how well you fulfill the requirements of the two writing questions. We'll look at the <strong>TA/TR</strong> descriptors for each of the writing tasks individually.
 					</p>
 					 </div>
 					
@@ -213,12 +212,13 @@
 					<div class="flex justify-center mb-8">
 						<a
 							href="/IETPP/lesson-03/lesson03-i/skill-check_T1"
-							class="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition-colors border-2 border-white"
-						>
-							<span>✓</span>
-							<span>SKILL CHECK</span>
-							<span>✓</span>
-						</a>
+							class="inline-flex items-center gap-4 bg-gradient-to-r from-teal-600 to-cyan-600 hover:from-teal-700 hover:to-cyan-700 text-white font-bold py-2 px-4 rounded-lg text-lg transition-all transform hover:scale-105 border-2 border-teal-400"
+								data-sveltekit-reload
+							>
+								<span class="text-2xl">✓</span>
+								<span>SKILL CHECK</span>
+								<span class="text-2xl">✓</span>
+							</a>
 					</div>
 					</div>
 
@@ -302,12 +302,13 @@
 		
 						<a
 							href="/IETPP/lesson-03/lesson03-i/skill-check_T2"
-							class="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition-colors border-2 border-white"
-						>
-							<span>✓</span>
-							<span>SKILL CHECK</span>
-							<span>✓</span>
-						</a>
+							class="inline-flex items-center gap-4 bg-gradient-to-r from-teal-600 to-cyan-600 hover:from-teal-700 hover:to-cyan-700 text-white font-bold py-2 px-4 rounded-lg text-lg transition-all transform hover:scale-105 border-2 border-teal-400"
+								data-sveltekit-reload
+							>
+								<span class="text-2xl">✓</span>
+								<span>SKILL CHECK</span>
+								<span class="text-2xl">✓</span>
+							</a>
 					
 						</div>
 			</div>

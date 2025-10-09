@@ -167,12 +167,13 @@
 					
 						<a
 							href="/IETPP/lesson-03/lesson03-iii/skill-check"
-							class="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition-colors border-2 border-white"
-						>
-							<span>✓</span>
-							<span>SKILL CHECK</span>
-							<span>✓</span>
-						</a>
+							class="inline-flex items-center gap-4 bg-gradient-to-r from-teal-600 to-cyan-600 hover:from-teal-700 hover:to-cyan-700 text-white font-bold py-2 px-4 rounded-lg text-lg transition-all transform hover:scale-105 border-2 border-teal-400"
+								data-sveltekit-reload
+							>
+								<span class="text-2xl">✓</span>
+								<span>SKILL CHECK</span>
+								<span class="text-2xl">✓</span>
+							</a>
 					</div>						
 
 				</div>

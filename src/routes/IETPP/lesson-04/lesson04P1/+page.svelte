@@ -112,7 +112,7 @@
 
 		<!-- Section 1: Part 1 Structure & Question Types -->
 		<section class="bg-cyan-600/25 rounded-lg p-4 md:p-8 shadow-sm border border-blue-600 mb-8">
-			<h2 class="text-2xl font-bold text-center text-white mb-8">
+			<h2 class="text-2xl font-bold text-center text-white mb-8 underline decoration-1 underline-offset-3">
 				Part 1 structure & question types</h2>
 			<div class="max-w-6xl mx-auto">  
 
@@ -218,7 +218,7 @@
 
 		<!-- Section 2: Example Responses -->
 		<section class="bg-teal-600/25 rounded-lg p-4 md:p-8 shadow-sm border border-teal-600 mb-8">
-			<h2 class="text-2xl font-bold text-center text-white mb-8">
+			<h2 class="text-2xl font-bold text-center text-white mb-8 underline decoration-1 underline-offset-3">
 				Part 1 example responses</h2>
 			
 			<div class="max-w-6xl mx-auto">
@@ -282,7 +282,7 @@
 
 		<!-- Section 3: Practice -->
 		<section class="bg-cyan-800/25 rounded-lg p-4 md:p-8 shadow-sm border border-cyan-600 mb-8">
-			<h2 class="text-2xl font-bold text-center text-white mb-8">
+			<h2 class="text-2xl font-bold text-center text-white mb-8 underline decoration-1 underline-offset-3">
 				Part 1 practice</h2>
 			
 			<div class="max-w-6xl mx-auto">
@@ -302,7 +302,7 @@
 
 							<div class="grid grid-cols-1 md:grid-cols-3 gap-4 w-full max-w-3xl">
 								<a
-									href="/QQ_vid/QQ1.mp4"
+									href="/LESSONS/les04/QQ1.mp4"
 									target="_blank"
 									title="What are the most popular types of entertainment in your country?"
 									class="bg-teal-600 hover:bg-teal-700 text-white font-bold py-3 px-6 rounded text-center transition-colors"
@@ -311,7 +311,7 @@
 								</a>
 
 								<a
-									href="/QQ_vid/QQ2.mp4"
+									href="/LESSONS/les04/QQ2.mp4"
 									target="_blank"
 									title="How often do you eat snacks?"
 									class="bg-teal-600 hover:bg-teal-700 text-white font-bold py-3 px-6 rounded text-center transition-colors"
@@ -320,7 +320,7 @@
 								</a>
 
 								<a
-									href="/QQ_vid/QQ3.mp4"
+									href="/LESSONS/les04/QQ3.mp4"
 									target="_blank"
 									title="Which part of your country do most people live in?"
 									class="bg-teal-600 hover:bg-teal-700 text-white font-bold py-3 px-6 rounded text-center transition-colors"
@@ -349,7 +349,7 @@
 				<div class="flex justify-between items-center">
 					<a
 						href="/IETPP#lesson-04"
-						class="text-teal-400 hover:underline font-semibold"
+						class="text-teal-400 hover:text-teal-300 font-semibold"
 						data-sveltekit-reload
 					>
 						← Back to Contents
@@ -357,7 +357,7 @@
 
 					<a
 						href="/IETPP/lesson-04/lesson04P2"
-						class="text-teal-400 hover:underline font-semibold"
+						class="text-teal-400 hover:text-teal-300 font-semibold"
 						data-sveltekit-reload
 					>
 						Next Lesson →

@@ -104,7 +104,7 @@
 
 		<!-- Section 1: Part 2 Structure & Technique -->
 		<section class="bg-cyan-600/25 rounded-lg p-4 md:p-8 shadow-sm border border-blue-600 mb-8">
-			<h2 class="text-2xl font-bold text-center text-white mb-8">
+			<h2 class="text-2xl font-bold text-center text-white mb-8 underline decoration-1 underline-offset-3">
 				Part 2 structure & technique</h2>
 			<div class="max-w-6xl mx-auto">  
 
@@ -210,7 +210,7 @@
 
 		<!-- Section 2: Example Long-turn Response -->
 		<section class="bg-teal-600/25 rounded-lg p-4 md:p-8 shadow-sm border border-teal-600 mb-8">
-			<h2 class="text-2xl font-bold text-center text-white mb-8">
+			<h2 class="text-2xl font-bold text-center text-white mb-8 underline decoration-1 underline-offset-3">
 				Part 2 example long-turn response</h2>
 			
 			<div class="max-w-6xl mx-auto">
@@ -220,7 +220,7 @@
 					<div class="max-w-4xl mx-auto">
 						<!-- Example -->
 						<div class="text-center">
-							<h4 class="text-lg font-semibold text-white mb-4 underline">Topic: Song or piece of music</h4>
+							<h4 class="text-lg font-semibold text-white mb-4">Topic: Song or piece of music</h4>
 							<img
 								src="/LESSONS/les04/INT2_L1-new-P2Q-pic.png"
 								alt="Speaking Part 2 response - Song or piece of music"
@@ -249,7 +249,7 @@
 
 		<!-- Section 3: Practice -->
 		<section class="bg-cyan-800/25 rounded-lg p-4 md:p-8 shadow-sm border border-cyan-600 mb-8">
-			<h2 class="text-2xl font-bold text-center text-white mb-8">
+			<h2 class="text-2xl font-bold text-center text-white mb-8 underline decoration-1 underline-offset-3">
 				Part 2 practice</h2>
 			
 			<div class="max-w-6xl mx-auto">
@@ -303,7 +303,7 @@
 				<div class="flex justify-between items-center">
 					<a
 						href="/IETPP#lesson-04"
-						class="text-teal-400 hover:underline font-semibold"
+						class="text-teal-400 hover:text-teal-300 font-semibold"
 						data-sveltekit-reload
 					>
 						← Back to Contents
@@ -311,7 +311,7 @@
 
 					<a
 						href="/IETPP/lesson-04/lesson04P3"
-						class="text-teal-400 hover:underline font-semibold"
+						class="text-teal-400 hover:text-teal-300 font-semibold"
 						data-sveltekit-reload
 					>
 						Next Lesson →

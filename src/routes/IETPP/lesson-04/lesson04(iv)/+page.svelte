@@ -64,7 +64,7 @@
 					Contents
 				</a>
 				<a
-					href="/IETPP/lesson-04/lesson04(iv)/skill-check"
+					href="/IETPP/lesson-05"
 					class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300 font-semibold"
 					data-sveltekit-reload
 				>
@@ -87,7 +87,7 @@
 			<div class="max-w-6xl mx-auto">
 				<div class="bg-gray-800 rounded-lg p-4 md:p-8 text-lg border border-gray-600 mb-12">
 					<div class="bg-blue-900/50 border border-blue-700 rounded-lg p-4 mb-8">
-						<p class="text-gray-700 dark:text-gray-300 text-lg">	<strong>Pronunciation</strong> is the final criterion assessed by the Speaking Test examiner.
+						<p class="text-gray-700 dark:text-gray-300 text-lg">	<strong>Pronunciation (PR)</strong> is the final criterion assessed by the Speaking Test examiner.
 					</p>
 						</div>
 					<p class="text-white mb-8">
@@ -172,8 +172,7 @@
 							<span>SKILL CHECK</span>
 							<span class="text-2xl">✓</span>
 						</a>
-					</div>
-			
+					</div>			
 			</div>
 		</section>
 
@@ -184,7 +183,7 @@
 				<div class="flex justify-between items-center">
 					<a
 						href="/IETPP#lesson-04"
-						class="text-teal-400 hover:underline font-semibold"
+						class="text-teal-400 hover:text-teal-300 font-semibold"
 						data-sveltekit-reload
 					>
 						← Back to Contents
@@ -192,7 +191,7 @@
 
 					<a
 						href="/IETPP/lesson-05"
-						class="text-teal-400 hover:underline font-semibold"
+						class="text-teal-400 hover:text-teal-300 font-semibold"
 						data-sveltekit-reload
 					>
 						Next Lesson →

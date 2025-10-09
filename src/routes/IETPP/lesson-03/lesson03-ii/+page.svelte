@@ -86,11 +86,9 @@
 				</div>
 				<div class="max-w-6xl mx-auto">
 					<div class="bg-gray-800 rounded-lg p-4 md:p-8 text-lg border border-gray-600 mb-12">
-
 						 <div class="bg-blue-900/50 border border-blue-700 rounded-lg p-4 mb-8">
 						<p class="text-white text-lg">
-						<strong>Coherence & Cohesion</strong> is a measure of how well your writing task is structured in terms of organisation of ideas,
-						clarity of information/argument, and ease of understanding for the reader.
+						<strong>Coherence & Cohesion (CC)</strong> is a measure of how well your writing task is structured in terms of organisation of ideas, clarity of information/argument, and ease of understanding for the reader.
 					</p>
 							 </div>
 					<p class="text-white mb-8">
@@ -112,7 +110,7 @@
 								<div class="bg-gray-800 rounded-lg p-4 md:p-8 text-lg border border-gray-600 mb-8">
 									
 					<p class="text-white mb-6">
-						The <strong>four descriptors</strong> used to assess the <strong>Coherence & Cohesion</strong> of your <strong>Writing Task</strong> are:
+						The <strong>four descriptors</strong> used to assess the <strong>Coherence & Cohesion</strong> of your Writing Task are:
 					</p>
 					<ul class="text-white mb-8 space-y-2 ml-6">
 						<li>• arrangement of information and ideas;</li>
@@ -159,27 +157,31 @@
 						</div>
 					</div>
 									
-									<div class="text-center mb-6">
-					<p class="text-white mb-12 font-bold">
-						Now test your understanding of WRITING - COHERENCE & COHESION
-					</p>
-
-						<a
-							href="/IETPP/lesson-03/lesson03-ii/skill-check"
-							class="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition-colors border-2 border-white"
-						>
-							<span>✓</span>
-							<span>SKILL CHECK</span>
-							<span>✓</span>
-						</a>
-					</div>
+									<div class="text-center mb-12">
+										<p class="text-2xl font-bold text-white">
+											Now test your understanding of WRITING - COHERENCE & COHESION
+										</p>
+									</div>
+				
+									<div class="flex justify-center m-4">
+										<a
+											href="/IETPP/lesson-04/lesson04(iv)/skill-check"
+											class="inline-flex items-center gap-4 bg-gradient-to-r from-teal-600 to-cyan-600 hover:from-teal-700 hover:to-cyan-700 text-white font-bold py-2 px-4 rounded-lg text-lg transition-all transform hover:scale-105 border-2 border-teal-400"
+											data-sveltekit-reload
+										>
+											<span class="text-2xl">✓</span>
+											<span>SKILL CHECK</span>
+											<span class="text-2xl">✓</span>
+										</a>
+									</div>		
+					
 				</div>
 					</div>
 			
 		</section>
 
 	<!-- Footer Navigation -->
-					<section class="text-center">          
+					<section class="text-center py-8">          
 
 									<div class="bg-gray-800 rounded-lg p-6 shadow-sm border border-gray-700">
 													<div class="flex justify-between items-center">
