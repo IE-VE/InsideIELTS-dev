@@ -430,7 +430,7 @@
                                                                 <button
                                                                         onclick={checkAllAnswers}
                                                                         disabled={loadingAnswers}
-                                                                        class="px-6 py-3 bg-green-600 hover:bg-green-700 text-white font-bold rounded-lg transition-colors disabled:opacity-50"
+                                                                        class="px-6 py-3 bg-green-600 hover:bg-green-700 border border-white text-white font-bold rounded-lg"
                                                                 >
                                                                         {#if loadingAnswers}
                                                                                 <div class="flex items-center gap-2 justify-center">
