@@ -139,7 +139,7 @@
 							href="https://insideielts.oppyo.com/quick-questions?qid=3"
 							target="_blank"
 							title="Which part of your country do most people live in?"
-							class="inline-block bg-gradient-to-r from-teal-600 to-cyan-600 hover:from-teal-700 hover:to-cyan-700 text-white font-bold py-1 px-4 rounded-lg text-lg transition-all transform hover:scale-105 border-2 border-teal-400"
+							class="inline-block bg-gradient-to-r from-teal-600 to-cyan-600 hover:from-teal-700 hover:to-cyan-700 text-white font-bold py-1 px-4 rounded-lg text-lg transition-all transform hover:scale-105 border-2 border-teal-400 disabled:opacity-50"
 						>
 							TASK
 						</a>
