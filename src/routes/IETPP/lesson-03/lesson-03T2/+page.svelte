@@ -107,7 +107,7 @@
 
                 <!-- Section 1: Format and Question Types -->
                 <section class="bg-cyan-600/25 rounded-lg p-4 md:p-8 shadow-sm border border-blue-600 mb-8">
-                        <h2 class="text-2xl font-bold text-center text-white mb-8">
+                        <h2 class="text-2xl font-bold text-center text-white mb-8 underline decoration-1 underline-offset-3">
                                 Task 2 format & question types</h2>
                         <div class="max-w-6xl mx-auto">  
 
@@ -129,22 +129,17 @@
                                 </div>
 
                                 <p class="text-white mb-6">
-                                        You will be assessed on your ability to present and justify an
-                                        opinion; present a solution to a problem; compare and contrast
-                                        evidence and opinions; and evaluate and challenge ideas,
-                                        evidence and arguments.
+                                        You will be assessed on your ability to present and justify an opinion; present a solution to a problem; compare and contrast evidence and opinions; and evaluate and challenge ideas, evidence and arguments.
                                 </p>
 
-                                <p class="text-white mb-6">
-                                        The task will give you a direct instruction relating to the
-                                        topic and then ask you to:
+                                <p class="text-white mb-12">
+                                        The task will give you a direct instruction relating to the topic and then ask you to:
                                         <em class="font-bold">
-                                                "Give reasons for your answer and include any relevant
-                                                examples from your own knowledge or experience."
+                                                "Give reasons for your answer and include any relevant examples from your own knowledge or experience."
                                         </em>
                                 </p>
 
-                                <p class="text-white mb-8">Let's take a look at some sample Task 2 questions:</p>
+                                <p class="text-white mb-8">Below are some example Task 2 questions:</p>
 
                                 <!-- Carousel -->
                                 <div class="relative max-w-2xl mx-auto mb-8">
@@ -200,10 +195,9 @@
                                         </div>
                                 </div>
 
-                                <div class="bg-gray-700 rounded-lg p-6 border border-gray-600 mt-8 mb-2">
+                                <div class="bg-gray-700 rounded-lg p-6 border border-gray-600 mt-12 mb-4">
                                         <p class="text-white text-center">
-                                                The <strong>Task 2</strong> essay is worth 2/3 of your writing score, so you should aim to spend around <strong>40 minutes</strong> on
-                                                <strong>Task 2</strong>.
+                                                The <strong>Task 2</strong> essay is worth 2/3 of your writing score, so you should aim to spend around <strong>40 minutes</strong> on                 <strong>Task 2</strong>.
                                         </p>
                                 </div>
                         </div>
@@ -212,7 +206,7 @@
 
                 <!-- Section 2: Technique -->
                 <section class="bg-teal-600/25 rounded-lg p-4 md:p-8 shadow-sm border border-teal-600 mb-8">
-                        <h2 class="text-2xl font-bold text-center text-white mb-8">
+                        <h2 class="text-2xl font-bold text-center text-white mb-8 underline decoration-1 underline-offset-3">
                                 Task 2 essay technique</h2>
                         
                         <div class="max-w-6xl mx-auto">
@@ -260,7 +254,7 @@
 
                 <!-- Section 3: Practice -->
                 <section class="bg-cyan-800/25 rounded-lg p-4 md:p-8 shadow-sm border border-cyan-600 mb-8">
-                        <h2 class="text-2xl font-bold text-center text-white mb-8">
+                        <h2 class="text-2xl font-bold text-center text-white mb-8 underline decoration-1 underline-offset-3">
                                 Task 2 essay practice</h2>
                         
                         <div class="max-w-6xl mx-auto">
@@ -297,7 +291,7 @@
                                                                 </div>
                                                         </div>
 
-                      <div class="hidden md:block mt-6 max-w-[700px] mx-auto">                                  <div class="text-center mb-4 max-w-700px mx-auto">
+                      <div class="hidden md:block mt-6 max-w-[700px] mx-auto mb-4">                                  <div class="text-center mb-4 max-w-700px mx-auto">
                                                                 <h6 class="text-white font-bold">answer sheet</h6>
                                                         </div>
                                                         
@@ -318,7 +312,7 @@
                                 <div class="flex justify-between items-center">
                                         <a
                                                 href="/IETPP#lesson-03"
-                                                class="text-teal-400 hover:underline font-semibold"
+                                                class="text-teal-400 hover:text-teal-300 font-semibold"
                                                 data-sveltekit-reload
                                         >
                                                 ← Back to Contents
@@ -326,7 +320,7 @@
 
                                         <a
                                                 href="/IETPP/lesson-03/lesson03-i"
-                                                class="text-teal-400 hover:underline font-semibold"
+                                                class="text-teal-400 hover:text-teal-300 font-semibold"
                                                 data-sveltekit-reload
                                         >
                                                 Next Lesson →

@@ -109,7 +109,7 @@
 
                 <!-- Section 1: Format and Question Types -->
                 <section class="bg-cyan-600/25 rounded-lg p-4 md:p-8 shadow-sm border border-blue-600 mb-8">
-                        <h2 class="text-2xl font-bold text-center text-white mb-8">
+                        <h2 class="text-2xl font-bold text-center text-white mb-8 underline decoration-1 underline-offset-3">
                                 Task 1 (GT) format & question types</h2>
                         <div class="max-w-6xl mx-auto">  
 
@@ -133,7 +133,7 @@
                                         </a>
                                 </div>
 
-                                <p class="text-white mb-6">
+                                <p class="text-white mb-12">
                                         The question will ask you to:
                                         <strong><em>"Write a letter to... "</em></strong>,
                                          and then give you three bullet points that you must cover
@@ -189,11 +189,9 @@
                                         </div>
                                 </div>
 
-                                <div class="bg-gray-700 rounded-lg p-6 border border-gray-600">
+                                <div class="bg-gray-700 rounded-lg p-6 border border-gray-600 mt-12 mb-4">
                                         <p class="text-white text-center">
-                                                <strong>Task 1</strong> is worth a third of the available marks for the
-                                                writing section, so you should aim to spend around
-                                                <strong>20 minutes</strong> on this task.
+                                                <strong>Task 1</strong> is worth a third of the available marks for the      writing section, so you should aim to spend around               <strong>20 minutes</strong> on this task.
                                         </p>
                                 </div>
                         </div>
@@ -202,7 +200,7 @@
 
                 <!-- Section 2: Technique -->
                 <section class="bg-teal-600/25 rounded-lg p-4 md:p-8 shadow-sm border border-teal-600 mb-8">
-                        <h2 class="text-2xl font-bold text-center text-white mb-8">
+                        <h2 class="text-2xl font-bold text-center text-white mb-8 underline decoration-1 underline-offset-3">
                                 Task 1 (GT) technique</h2>
                         
                         <div class="max-w-6xl mx-auto">
@@ -218,7 +216,7 @@
                                                                 alt="Task 1 complaint letter example"
                                                                 class="w-full rounded border border-gray-600 cursor-pointer hover:opacity-80 transition-opacity mb-6"/>
                                                         <div class="mt-8"> <a href="https://insideielts.oppyo.com/video/embed/l8ngn5k1wr"
-                                                                target="_blank"                                        title="InsideIELTS virtual examiner writing test preparation video"                                         class="inline-block bg-teal-600 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded border-2 border-red-500 text-sm transition-colors mb-6"
+                                                                target="_blank"                                        title="InsideIELTS virtual examiner writing test preparation video"                                         class="inline-block bg-teal-600 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded border-2 border-red-500 text-sm transition-colors mb-6 mt-2"
                                                         >
                                                                 Watch VE vid
                                                         </a> </div>
@@ -238,7 +236,7 @@
                                                         <div class="mt-8"> <a href="https://insideielts.oppyo.com/video/embed/nm3hxt4rpn"
                                                                 target="_blank"
          title="InsideIELTS virtual examiner writing test preparation video"
-         class="inline-block bg-teal-600 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded border-2 border-red-500 text-sm transition-colors mb-6"
+         class="inline-block bg-teal-600 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded border-2 border-red-500 text-sm transition-colors mb-6 mt-2"
                                                         >                                                                Watch VE vid
                                                         </a>    </div>
 
@@ -253,7 +251,7 @@
 
                 <!-- Section 3: Practice -->
                 <section class="bg-cyan-800/25 rounded-lg p-4 md:p-8 shadow-sm border border-cyan-600 mb-8">
-                        <h2 class="text-2xl font-bold text-center text-white mb-8">
+                        <h2 class="text-2xl font-bold text-center text-white mb-8 underline decoration-1 underline-offset-3">
                                 Task 1 (GT) practice</h2>
                         
                         <div class="max-w-6xl mx-auto">
@@ -381,7 +379,7 @@
                                 <div class="flex justify-between items-center">
                                         <a
                                                 href="/IETPP#lesson-03"
-                                                class="text-teal-400 hover:underline font-semibold"
+                                                class="text-teal-400 hover:text-teal-300 font-semibold"
                                                 data-sveltekit-reload
                                         >
                                                 ← Back to Contents
@@ -389,7 +387,7 @@
 
                                         <a
                                                 href="/IETPP/lesson-03T2"
-                                                class="text-teal-400 hover:underline font-semibold"
+                                                class="text-teal-400 hover:text-teal-300 font-semibold"
                                                 data-sveltekit-reload
                                         >
                                                 Next Lesson →

@@ -112,7 +112,7 @@
 
                 <!-- Section 1: Format and Question Types -->
                 <section class="bg-cyan-600/25 rounded-lg p-4 md:p-8 shadow-sm border border-blue-700 mb-8">
-                        <h2 class="text-2xl font-bold text-center text-white mb-8">
+                        <h2 class="text-2xl font-bold text-center text-white mb-8 underline decoration-1 underline-offset-3">
                                 Task 1 (Ac) format & question types</h2>
                         <div class="max-w-6xl mx-auto">  
 
@@ -141,8 +141,7 @@
                                                 The question will ask you to:
                                                 <em>
                                                         <strong>
-                                                                "Summarise the information by selecting and reporting the
-                                                                main features, and make comparisons where relevant."
+                                                                "Summarise the information by selecting and reporting the       main features, and make comparisons where relevant."
                                                         </strong>
                                                 </em>
                                         </p>
@@ -201,11 +200,8 @@
                                         </div>
                                 </div>
 
-                                        <div class="border-l-4 border-teal-500 pl-6">
-                                                <p class="text-white">
-                                                        <strong>Task 1</strong> is worth a third of the available marks for the
-                                                        writing section, so you should aim to spend around
-                                                        <strong>20 minutes</strong> on this task.
+                                 <div class="bg-gray-700 rounded-lg p-6 border border-gray-600 mt-12 mb-4">
+                                         <p class="text-white text-center">                                                        <strong>Task 1</strong> is worth a third of the available marks for the writing section, so you should aim to spend around <strong>20 minutes</strong> on this task.
                                                 </p>
                                         </div>
                                 </div>
@@ -214,7 +210,7 @@
 
                 <!-- Section 2: Technique -->
                 <section class="bg-teal-600/25 rounded-lg p-4 md:p-8 shadow-sm border border-teal-600 mb-8">
-                        <h2 class="text-2xl font-bold text-center text-white mb-8">Task 1 (Ac) technique</h2>
+                        <h2 class="text-2xl font-bold text-center text-white mb-8 underline decoration-1 underline-offset-3">Task 1 (Ac) technique</h2>
 
                         <div class="max-w-6xl mx-auto">
                                 <div class="bg-gray-800 rounded-lg p-6 text-lg border border-gray-700 mb-8">
@@ -239,7 +235,7 @@
                                                                 href="https://insideielts.oppyo.com/video/embed/pbgbw3zl6y"
                                                                 target="_blank"
                                                                 title="InsideIELTS virtual examiner listening test preparation video"
-                                                                class="inline-block bg-teal-600 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded border-2 border-red-500 text-sm transition-colors mb-6"
+                                                                class="inline-block bg-teal-600 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded border-2 border-red-500 text-sm transition-colors mb-6 mt-2"
                                                         >
                                                                 Watch VE vid
                                                         </a> </div>
@@ -267,7 +263,7 @@
                                                                 href="https://insideielts.oppyo.com/video/embed/pff54lkawz"
                                                                 target="_blank"
                                                                 title="InsideIELTS virtual examiner listening test preparation video"
-                                                                class="inline-block bg-teal-600 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded border-2 border-red-500 text-sm transition-colors mb-4"
+                                                                class="inline-block bg-teal-600 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded border-2 border-red-500 text-sm transition-colors mb-6 mt-2"
                                                         >
                                                                 Watch VE vid
                                                         </a>
@@ -284,7 +280,7 @@
 
                 <!-- Section 3: Practice -->
                 <section class="bg-cyan-800/25 rounded-lg p-4 md:p-8 shadow-sm border border-cyan-600 mb-8">
-                        <h2 class="text-2xl font-bold text-center text-white mb-8">Task 1 (Ac) practice</h2>
+                        <h2 class="text-2xl font-bold text-center text-white mb-8 underline decoration-1 underline-offset-3">Task 1 (Ac) practice</h2>
 
                         <div class="max-w-6xl mx-auto">
                                 <div class="bg-gray-800 rounded-lg p-6 text-lg border border-gray-700 mb-8">
@@ -392,7 +388,7 @@
                                 <div class="flex justify-between items-center">
                                         <a
                                                 href="/IETPP#lesson-03"
-                                                class="text-teal-400 hover:underline font-semibold"
+                                                class="text-teal-400 hover:text-teal-300 font-semibold"
                                                 data-sveltekit-reload
                                         >
                                                 ← Back to Contents
@@ -400,7 +396,7 @@
 
                                         <a
                                                 href="/IETPP/lesson-03T2"
-                                                class="text-teal-400 hover:underline font-semibold"
+                                                class="text-teal-400 hover:text-teal-300 font-semibold"
                                                 data-sveltekit-reload
                                         >
                                                 Next Lesson →

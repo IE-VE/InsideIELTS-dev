@@ -149,7 +149,7 @@
 
 					<!-- Part 1 Section -->
 					<div class="mb-12">
-						<p class="text-white mb-8">
+						<p class="text-white mb-12">
 							Let's look at the three sections of the interview in more detail:
 						</p>
 
@@ -167,18 +167,15 @@
 						</div>
 
 						<p class="text-white mb-6">
-							The examiner will begin the interview by reading out the date and test venue identification details for the benefit of the
-							recording. (All <strong>IELTS</strong> interviews are recorded for the full duration of the time you are in the interview room).
+							The examiner will begin the interview by reading out the date and test venue identification details for the benefit of the	recording. (All <strong>IELTS</strong> interviews are recorded for the full duration of the time you are in the interview room).
 						</p>
 
 						<p class="text-white mb-6">
-							The examiner will then read out your name and <strong>IELTS</strong> identification number followed by their own name and
-							examiner identification number. You will then be asked to show your passport or national ID card for verification.
+							The examiner will then read out your name and <strong>IELTS</strong> identification number followed by their own name and examiner identification number. You will then be asked to show your passport or national ID card for verification.
 						</p>
 
 						<p class="text-white mb-8">
-							Before asking you two sets of general topic, short answer questions the examiner will begin by asking you about your home
-							and where you live <u>or</u> about your study or work situation. The questions will be something like these:
+							Before asking you two sets of general topic, short answer questions the examiner will begin by asking you about your home	and where you live <u>or</u> about your study or work situation. The questions will be something like these:
 						</p>
 
 						<div class="flex justify-center mb-6">
@@ -221,14 +218,16 @@
 							/>
 						</div>
 
-						<p class="text-white mb-6">
+						<p class="text-white mb-8">
+							<u>Part 1 is not a discussion</u>, the examiner can use the "<em>Why/Why not?</em>" prompts if you are not extending your answer	sufficiently, but nothing more than that.
+						</p> 
+						
+						<div class="bg-gray-700 rounded-lg p-2 border border-gray-600 mt-12 mb-4">
+							<p class="text-white text-center">					
 							The total duration for <strong>Part 1</strong> should be about <strong>four and a half to five minutes</strong>.
 						</p>
-
-						<p class="text-white mb-8">
-							<u>Part 1 is not a discussion</u>, the examiner can use the "<em>Why/Why not?</em>" prompts if you are not extending your answer
-							sufficiently, but nothing more than that.
-						</p>
+						</div>						
+					
 					</div>
 
 					<hr class="border-gray-600 mb-8" />
@@ -272,9 +271,13 @@
 						</div>
 
 						<p class="text-white mb-8">
-							After your two minutes speaking time the examiner will ask you to stop speaking and will ask you a short rounding-off
-							question before leading into Part 3. (You should only give a brief one or two sentence reply to this question).
+							At the end of your long-turn the examiner will stop you and will ask you a short rounding-off	question before leading into Part 3. (You should only give a brief one or two sentence reply to this question).
 						</p>
+						<div class="bg-gray-700 rounded-lg p-2 border border-gray-600 mt-12 mb-4">
+							<p class="text-white text-center">					
+							The total duration for <strong>Part 2</strong> should be about <strong>three and a half to four minutes</strong>.
+						</p>
+						</div>	
 					</div>
 
 					<hr class="border-gray-600 mb-8" />
@@ -300,14 +303,11 @@
 						</p>
 
 						<p class="text-white mb-6">
-							In <strong>Part 3</strong> the examiner has a choice of three sets of three questions, from which he/she will select two to base the
-							discussion around. In this final part of the test the examiner is able to discuss the questions in a more natural manner and will
-							ask you a few additional follow-up questions based on your answers to previous questions.
+							In <strong>Part 3</strong> the examiner has a choice of three sets of three questions, from which he/she will select two to base the	discussion around. In this final part of the test the examiner is able to discuss the questions in a more natural manner and will	ask you a few additional follow-up questions based on your answers to previous questions.
 						</p>
 
 						<p class="text-white mb-6">
-							In this part of the test the examiner is testing your ability to respond to questions in a variety of different ways and is trying
-							to elicit specified forms of language in response to the questions.
+							In this part of the test the examiner is testing your ability to respond to questions in a variety of different ways and is trying to elicit specified forms of language in response to the questions.
 						</p>
 
 						<p class="text-white mb-6">The questions are structured in the following way:</p>
@@ -319,11 +319,15 @@
 								class="max-w-full md:max-w-2xl border-2 border-black rounded"
 							/>
 						</div>
-
-						<p class="text-white mb-6">
-							After around <strong>four and a half minutes</strong> of discussion the examiner will thank you for your time and end the interview.
+						
+						<div class="bg-gray-700 rounded-lg p-2 border border-gray-600 mt-12 mb-8">
+							<p class="text-white text-center">						
+							After around <strong>four and a half minutes</strong> of discussion the examiner will thank you and end the interview.
 						</p>
+							</div>
 
+						<hr class="border-gray-600 mb-12" />
+						
 						<div class="flex flex-col md:flex-row justify-between items-center bg-blue-900 rounded-lg p-4 mb-6 gap-4">
 							<p class="text-white font-bold text-lg">
 								The <strong>total duration</strong> of the interview will be <strong>13 - 14 minutes</strong>.
@@ -394,8 +398,7 @@
 					</div>
 
 					<p class="text-white mb-6">
-						Under each of these headings you will see a list of bullet-pointed descriptors which describe the parts of speech which must be
-						demonstrated by the candidate in order to achieve the corresponding band score rating.
+						Under each of these headings you will see a list of bullet-pointed descriptors which describe the parts of speech which must be	demonstrated by the candidate in order to achieve the corresponding band score rating.
 					</p>
 
 					<p class="text-white mb-6">
@@ -403,7 +406,7 @@
 						in order to be able to score your performance effectively.
 					</p>
 
-					<p class="text-white mb-6">
+					<p class="text-white mb-12">
 						To be awarded a particular band level rating you must be able to demonstrate <u><strong>all</strong></u> of the descriptors specified at the corresponding
 						band level.
 					</p>

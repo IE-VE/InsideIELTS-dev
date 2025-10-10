@@ -82,7 +82,7 @@
                                         </div>
                                                                                                                             </div>
                                         <div>
-                                                <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-6">Key Strategies</h3>
+                                                <h3 class="text-lg font-semibold text-teal-400 mb-6">Key Strategies</h3>
                                                 <div class="bg-teal-50 dark:bg-teal-900/20 border border-teal-200 dark:border-teal-800 rounded-lg p-4">
                                                         <ul class="space-y-2 text-gray-700 dark:text-gray-300">
                                                                 <li class="flex items-start">
@@ -110,7 +110,7 @@
                                         </div>
 
                                         <div>
-                                                <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-6">Common Pitfalls</h3>
+                                                <h3 class="text-lg font-semibold text-red-400 mb-6">Common Pitfalls</h3>
                                                 <div class="bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-lg p-4">
                                                         <ul class="space-y-2 text-gray-700 dark:text-gray-300">
                                                                 <li class="flex items-start">
@@ -209,12 +209,13 @@
 
                                         <a
                                                 href="/IETPP/lesson-02/lesson02-iii/skill-check"
-                                                class="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition-colors border-2 border-white"
-                                        >
-                                                <span class="text-2xl">✓</span>
-                                                <span>SKILL CHECK</span>
-                                                <span class="text-2xl">✓</span>
-                                        </a>
+                                                class="inline-flex items-center gap-4 bg-gradient-to-r from-teal-600 to-cyan-600 hover:from-teal-700 hover:to-cyan-700 text-white font-bold py-2 px-4 rounded-lg text-lg transition-all transform hover:scale-105 border-2 border-teal-400"
+                                                        data-sveltekit-reload
+                                                >
+                                                        <span class="text-2xl">✓</span>
+                                                        <span>SKILL CHECK</span>
+                                                        <span class="text-2xl">✓</span>
+                                                </a>
                                 </div>
                         </div>
                 </section>

@@ -92,7 +92,7 @@
                 
         <section class="mb-12">
                 <div class="bg-gray-800 rounded-lg p-6 shadow-sm border border-gray-200 dark:border-gray-700">
-                        <h2 class="text-2xl text-center font-bold text-gray-800 dark:text-white mb-6">
+                        <h2 class="text-2xl text-center font-bold text-gray-800 dark:text-white mb-6 underline decoration-2 underline-offset-3">
                                 IELTS Writing Test Format
                         </h2>
 
@@ -124,20 +124,14 @@
 
   <!-- Section 1: Writing Test Make-up -->
                 <section class="bg-cyan-600/25 rounded-lg p-4 md:p-8 shadow-sm border border-blue-700 mb-8">
-                        <h2 class="text-2xl font-bold text-center text-white mb-8">
+                        <h2 class="text-2xl font-bold text-center text-white mb-8 underline decoration-1 underline-offset-3">
                                 Writing Test make-up</h2>
                         <div class="max-w-6xl mx-auto">  
 
                          <div class="bg-gray-800 rounded-lg p-6 text-lg border border-gray-700 mb-8">
                                         <p class="text-white">
-                                                The Writing Test is the third paper you will take on test day. It
-                                                is split into two parts: <strong>Task 1</strong> and <strong>Task 2</strong>. You have
-                                                <strong>60 minutes</strong> to complete both tasks.
-                                        </p>
-
-                                        <div class="flex justify-center m-10">
-                                                <a
-                                                        href="https://insideielts.oppyo.com/video/embed/2l7o2v7ip6"
+                                                The Writing Test is the third paper you will take on test day. It is split into two parts: <strong>Task 1</strong> and <strong>Task 2</strong>. You have <strong>60 minutes</strong> to complete both tasks.    </p>
+                                        <div class="flex justify-center m-10">                                                <a                                                        href="https://insideielts.oppyo.com/video/embed/2l7o2v7ip6"
                                                         target="_blank"
                                                         title="InsideIELTS virtual examiner writing test preparation video"
                                                         class="inline-block bg-teal-600 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded border-2 border-red-500 text-sm transition-colors"
@@ -226,19 +220,18 @@
                                                 </div>
                                         </div>
 
-                                        <p class="text-white">
-                                                Task 1 is worth a third of the total marks for writing, and Task 2
-                                                is worth two thirds, so you should try to split your time
-                                                accordingly: approximately <strong>20 minutes</strong> to complete
-                                                <strong>Task 1</strong> and <strong>40 minutes</strong> to finish <strong>Task 2</strong>.
+                                 <div class="bg-gray-700 rounded-lg p-2 border border-gray-600 mt-12 mb-8">
+                                         <p class="text-white text-center">	
+                                                Task 1 is worth a third of the total marks for writing, and Task 2 is worth two thirds, so you should try to split your time accordingly: approximately <strong>20 minutes</strong> to complete            <strong>Task 1</strong> and <strong>40 minutes</strong> to finish <strong>Task 2</strong>.
                                         </p>
+                                         </div>
                                 </div>
                         </div>
                 </section>
 
                 <!-- Section 2: Writing Test Assessment -->
                 <section class="bg-teal-600/25 rounded-lg p-4 md:p-8 shadow-sm border border-teal-600 mb-8">
-                        <h2 class="text-2xl font-bold text-center text-white mb-8">Writing Test Assessment</h2>
+                        <h2 class="text-2xl font-bold text-center text-white mb-8 underline decoration-1 underline-offset-3">Writing Test Assessment</h2>
 
                         <div class="max-w-6xl mx-auto">
                                 <div class="bg-gray-800 rounded-lg p-6 text-lg border border-gray-700 mb-8">
@@ -297,7 +290,7 @@
                                                 Under the headings in each column of the rubric you will see a list of bullet-pointed descriptors which describe the writing features which must be demonstrated in order to achieve the corresponding band score rating.
                                         </p>
 
-                                        <p class="text-white">
+                                        <p class="text-white mb-4">
                                                 To be awarded a certain band level rating you must be able to demonstrate <u><strong>all</strong></u> of the descriptors specified at the corresponding band level. </p>
                                 </div>
                         </div>
@@ -305,7 +298,7 @@
 
                 <!-- Section 3: Writing Test Example Model Answers -->
                 <section class="bg-cyan-800/25 rounded-lg p-4 md:p-8 shadow-sm border border-cyan-600 mb-8">
-                        <h2 class="text-2xl font-bold text-center text-white mb-8">Writing Test example Q & A</h2>
+                        <h2 class="text-2xl font-bold text-center text-white mb-8 underline decoration-1 underline-offset-3">Writing Test example Q & A</h2>
 
                         <div class="max-w-6xl mx-auto">
                                 <p class="text-white text-lg mb-8">
@@ -420,7 +413,7 @@
                 <section class="py-8">
 
                         <div class="bg-gray-800 rounded-lg p-8 shadow-sm border border-gray-500">
-                           <div>   <p class="max-w-5xl mx-auto mb-8">Before we cover writing task strategy and the four writing assessment criteria in Lessons 3(i) to 3(iv), take a more in-depth look at each of the IELTS Writing Tasks.</p>                      
+                           <div>   <p class="max-w-5xl text-lg mx-auto mb-8">Before we cover writing task strategy and the four writing assessment criteria in Lessons 3(i) to 3(iv), take a more in-depth look at each of the IELTS Writing Tasks.</p>                      
                            </div>
                            
                            <!-- Three Large Buttons -->
@@ -454,7 +447,7 @@
                                                 <div class="flex justify-between items-center">
                                                         <a
                                                                 href="/IETPP#lesson-03"
-                                                                class="text-teal-400 hover:underline font-semibold"
+                                                                class="text-teal-400 hover:text-teal-300 font-semibold"
                                                                 data-sveltekit-reload
                                                         >
                                                                 ← Back to Contents
@@ -462,7 +455,7 @@
 
                                                         <a
                                                                 href="/IETPP/lesson-03/lesson03-i"
-                                                                class="text-teal-400 hover:underline font-semibold"
+                                                                class="text-teal-400 hover:text-teal-300 font-semibold"
                                                                 data-sveltekit-reload
                                                         >
                                                                 Next Lesson →
