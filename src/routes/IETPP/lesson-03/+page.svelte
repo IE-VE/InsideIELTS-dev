@@ -222,7 +222,7 @@
 
                                  <div class="bg-gray-700 rounded-lg p-2 border border-gray-600 mt-12 mb-8">
                                          <p class="text-white text-center">	
-                                                Task 1 is worth a third of the total marks for writing, and Task 2 is worth two thirds, so you should try to split your time accordingly: approximately <strong>20 minutes</strong> to complete            <strong>Task 1</strong> and <strong>40 minutes</strong> to finish <strong>Task 2</strong>.
+                                                Task 1 is worth a third of the total marks for writing, and Task 2 is worth two thirds, so you should try to split your time accordingly: approximately <strong>20 minutes</strong> to complete <strong>Task 1</strong> and <strong>40 minutes</strong> to finish <strong>Task 2</strong>.
                                         </p>
                                          </div>
                                 </div>

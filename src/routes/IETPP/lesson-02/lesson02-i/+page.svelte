@@ -79,9 +79,9 @@
         <div style="max-width: 1200px;" class="mx-auto px-3 md:px-6 py-8">   
                 <!-- Lesson Title Section -->
                 <section class="bg-cyan-600/25 rounded-lg p-4 md:p-10 shadow-sm border border-blue-700 mb-12">
-                        <div class="flex items-center justify-center gap-4 mb-10">
+                        <div class="flex items-center justify-center gap-4 mb-10 text-gray-300">
                                 <div class="text-4xl">📖</div>
-                                <h2 class="text-3xl font-bold text-center text-white tracking-wide underline decoration-2 underline-offset-4">Matching Information</h2>
+                                <h2 class="text-3xl font-bold text-center tracking-wide underline decoration-2 underline-offset-4">Matching Information</h2>
                                 <div class="text-4xl">📖</div>
                         </div>
                         <!-- Educational Section -->
@@ -241,12 +241,13 @@
 
                                         <a
                                                 href="/IETPP/lesson-02/lesson02-i/skill-check"
-                                                class="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition-colors border-2 border-white"
-                                        >
-                                                <span class="text-2xl">✓</span>
-                                                <span>SKILL CHECK</span>
-                                                <span class="text-2xl">✓</span>
-                                        </a>
+                                                class="inline-flex items-center gap-4 bg-gradient-to-r from-teal-600 to-cyan-600 hover:from-teal-700 hover:to-cyan-700 text-white font-bold py-2 px-4 rounded-lg text-lg transition-all transform hover:scale-105 border-2 border-teal-400"
+                                                        data-sveltekit-reload
+                                                >
+                                                        <span class="text-2xl">✓</span>
+                                                        <span>SKILL CHECK</span>
+                                                        <span class="text-2xl">✓</span>
+                                                </a>
 
                         </div>
                 </section>

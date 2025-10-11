@@ -147,7 +147,8 @@
 
                         <!-- Exercise 1 -->
                         <div class="bg-cyan-500/25 rounded-lg p-4 md:p-8 border border-blue-700/50 mb-4 md:mb-8">
-                                <div class="bg-blue-600 text-white text-xl px-4 py-2 rounded-lg text-center font-bold mb-8 border-1 border-white tracking-wide">
+                                 <div class="bg-gradient-to-r from-teal-600 to-cyan-600 text-white font-bold py-1 px-4 rounded-lg text-lg border-2 border-teal-400 tracking-wide text-center mb-8">
+
                                         Multiple Choice
                                 </div>                                
 
@@ -354,8 +355,7 @@
                                                 type="button"
                                                 on:click={checkAllAnswers}
                                                 disabled={loadingAnswers}
-                                                class="bg-green-600 hover:bg-green-700 disabled:bg-green-400 disabled:cursor-not-allowed text-white font-bold py-3 px-6 rounded-lg text-lg transition-colors flex items-center justify-center mx-auto border-white border-2"
-                                        >
+                                                class="px-6 py-2 bg-green-600 hover:bg-green-700 border-1 border-white text-white font-bold rounded-lg transition-colors transition-all transform hover:scale-105"     >
                                                 {#if loadingAnswers}
                                                         <svg class="animate-spin -ml-1 mr-2 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
                                                                 <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
@@ -363,7 +363,7 @@
                                                         </svg>
                                                         Processing...
                                                 {:else}
-                                                        Check My Answers
+                                                        Check Answers
                                                 {/if}
                                         </button>
                                 </div>

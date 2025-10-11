@@ -181,12 +181,7 @@
                                 </div>
 
                                 <p class="text-white mb-16">
-                                        Like the short answer questions, the instructions will specify the maximum number of
-                                        words/numbers that you can write, for example, "<strong
-                                                >no more than <em>2 words and/or a number</em></strong
-                                        >", or, as in the examples above, "<strong>ONE WORD ONLY</strong>". Write your answers
-                                        directly on the question paper, at the end of the test you will be given time to transfer
-                                        your answers from the question paper to the Listening Test answer sheet.
+                                        Like the short answer questions, the instructions will specify the maximum number of words/numbers that you can write, for example, "<strong>no more than <em>2 words and/or a number</em></strong>", or, as in the examples above, "<strong>ONE WORD ONLY</strong>". Write your answers directly on the question paper, at the end of the test you will be given time to transfer your answers from the question paper to the Listening Test answer sheet.
                                 </p>
 
                                 <div class="flex justify-center mb-12">
@@ -228,14 +223,11 @@
                                 </div>
 
                                 <p class="text-white mb-2">
-                                        As always, be aware of paraphrased answers and synonyms, and also for tricks such as when
-                                        the speaker may say one thing and then change their mind, or mention other answer options
-                                        before opting for the correct answer.
+                                        As always, be aware of paraphrased answers and synonyms, and also for tricks such as when       the speaker may say one thing and then change their mind, or mention other answer options before opting for the correct answer.
                                 </p>
                                                 </div>
                                 <p class="max-w-4xl mx-auto text-white mb-10 font-bold">
-                                        Watch this quick Listening sentence completion demonstration vid before testing your
-                                        skills.
+                                        Watch this quick Listening sentence completion demonstration vid before testing your skills.
                                 </p>
 
                                 <div class="flex justify-center mb-12">
@@ -255,12 +247,13 @@
 
                                         <a
                                                 href="/IETPP/lesson-01/lesson01-iii/skill-check"
-                                                class="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition-colors border-2 border-white"
-                                        >
-                                                <span class="text-2xl">✓</span>
-                                                <span>SKILL CHECK</span>
-                                                <span class="text-2xl">✓</span>
-                                        </a>
+                                                class="inline-flex items-center gap-4 bg-gradient-to-r from-teal-600 to-cyan-600 hover:from-teal-700 hover:to-cyan-700 text-white font-bold py-2 px-4 rounded-lg text-lg transition-all transform hover:scale-105 border-2 border-teal-400"
+                                                        data-sveltekit-reload
+                                                >
+                                                        <span class="text-2xl">✓</span>
+                                                        <span>SKILL CHECK</span>
+                                                        <span class="text-2xl">✓</span>
+                                                </a>
                                 </div>
 
                 </section>

@@ -261,7 +261,7 @@
 
                         <!-- Exercise -->
                         <div class="bg-teal-500/25 rounded-lg p-4 md:p-8 border border-teal-600 mb-4 md:mb-8">
-                                <div class="bg-blue-600 text-white text-xl px-4 py-2 rounded-lg text-center font-bold mb-8 border-1 border-white tracking-wide">
+                                 <div class="bg-gradient-to-r from-teal-600 to-cyan-600 text-white font-bold py-1 px-4 rounded-lg text-lg border-2 border-teal-400 tracking-wide text-center mb-8">
                                          True/False/Not given
                                 </div>
 
@@ -269,7 +269,7 @@
                         <div class="flex flex-wrap justify-center gap-2 mb-6">
                                 <button
                                         onclick={toggleHighlighting}
-                                        class="px-4 py-2 rounded-md font-medium transition-colors {highlightingEnabled ? 'bg-yellow-500 text-white' : 'bg-gray-200 text-gray-700 hover:bg-gray-300 dark:bg-gray-600 dark:text-gray-300 dark:hover:bg-gray-500'}"
+                                        class="px-2 py-1 rounded-md font-medium transition-colors {highlightingEnabled ? 'bg-yellow-500 text-white' : 'bg-gray-200 text-gray-700 hover:bg-gray-300 dark:bg-gray-600 dark:text-gray-300 dark:hover:bg-gray-500 border border-yellow-500'}"
                                 >
                                         {highlightingEnabled ? '🖍️ Highlighting ON' : '🖍️ Enable Highlighting'}
                                 </button>
@@ -277,7 +277,7 @@
                                 {#if highlightedRanges.length > 0}
                                         <button
                                                 onclick={clearAllHighlights}
-                                                class="px-4 py-2 rounded-md font-medium transition-colors bg-red-500 text-white hover:bg-red-600"
+                                                class="px-2 py-1 rounded-md font-medium transition-colors bg-red-500 text-white hover:bg-red-600"
                                         >
                                                 Clear All Highlights
                                         </button>
@@ -414,7 +414,7 @@
                                                         <button
                                                                 onclick={checkAllAnswers}
                                                                 disabled={loadingAnswers}
-                                                                class="px-6 py-3 bg-green-600 hover:bg-green-700 text-white font-bold rounded-lg transition-colors disabled:opacity-50"
+                                                                class="px-6 py-2 bg-green-600 hover:bg-green-700 border-1 border-white text-white font-bold rounded-lg transition-colors transition-all transform hover:scale-105"
                                                         >
                                                                 {#if loadingAnswers}
                                                                         <div class="flex items-center gap-2 justify-center">

@@ -93,7 +93,7 @@
                                         <div>
                                                 <h3 class="text-lg font-semibold text-blue-400 mb-6">What to Expect</h3>
                                                 <div class="bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-lg p-4">
-                                                <p class="text-gray-300 text-lg mb-8">
+                                                <p class="text-gray-300 text-lg">
                                                         Short answer questions in the IELTS Listening test require you to write brief answers using words directly from the audio. These questions test your ability to identify specific factual information such as names, dates, times, numbers, and locations.
                                                 </p>
                                                         </div>
@@ -235,12 +235,13 @@
 
                                         <a
                                                 href="/IETPP/lesson-01/lesson01-ii/skill-check"
-                                                class="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition-colors border-2 border-white"
-                                        >
-                                                <span class="text-2xl">✓</span>
-                                                <span>SKILL CHECK</span>
-                                                <span class="text-2xl">✓</span>
-                                        </a>
+                                                class="inline-flex items-center gap-4 bg-gradient-to-r from-teal-600 to-cyan-600 hover:from-teal-700 hover:to-cyan-700 text-white font-bold py-2 px-4 rounded-lg text-lg transition-all transform hover:scale-105 border-2 border-teal-400"
+                                                        data-sveltekit-reload
+                                                >
+                                                        <span class="text-2xl">✓</span>
+                                                        <span>SKILL CHECK</span>
+                                                        <span class="text-2xl">✓</span>
+                                                </a>
                                 </div>
 
                 </section>

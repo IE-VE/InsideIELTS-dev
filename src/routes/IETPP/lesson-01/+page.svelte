@@ -49,7 +49,7 @@
 </script>
 
 <svelte:head>
-        <title>IETPP - Lesson 01: Introduction to the Listening Test | InsideIELTS</title>
+        <title>IETPP - Introduction to the Listening Test | InsideIELTS</title>
         <meta
                 name="description"
                 content="Learn IELTS Listening test format, question types, and practice with authentic examples. Master multiple choice, short answer, and sentence completion questions."
@@ -111,7 +111,7 @@
     
                 <section class="mb-12">
                         <div class="bg-gray-800 rounded-lg p-6 shadow-sm border border-gray-200 dark:border-gray-700">
-                                <h2 class="text-2xl text-center font-bold text-gray-800 dark:text-white mb-6">
+                                <h2 class="text-2xl text-center font-bold text-gray-800 dark:text-white mb-6 underline decoration-2 underline-offset-3">
                                         IELTS Listening Test Format
                                 </h2>
 
@@ -146,7 +146,7 @@
 <!-- Page Content -->
                 <!-- Section 1: Listening Test Format and Question Types -->
                 <section class="bg-cyan-600/25 rounded-lg p-4 md:p-8 shadow-sm border border-blue-700 mb-8">
-                        <h2 class="text-2xl font-bold text-center text-white mb-8">
+                        <h2 class="text-2xl font-bold text-center text-white mb-8 underline decoration-1 underline-offset-3">
                                 Listening Test Question types</h2>
                         <div class="max-w-4xl mx-auto">                       
 
@@ -184,22 +184,18 @@
                                                 Virtual Examiner Video
                                         </a>
                                 </div>
-                
+                                 </div>
 
                                 <div class="bg-yellow-900/30 border border-yellow-700 rounded-lg p-6">
                                         <p class="text-white">
-                                                It's <u>very important</u> that you accurately follow the instructions for each set of
-                                                questions: if the format of your answer differs from instructed, even if the correct
-                                                information is included, your answer will be marked <u>WRONG</u>.
+                                                It's <u>very important</u> that you accurately follow the instructions for each set of questions: if the format of your answer differs from instructed, even if the correct information is included, your answer will be marked <u>WRONG</u>.
                                         </p>
-                                </div>
-                                
-                        </div>
+                                </div>                
                 </section>
 
                 <!-- Section 2: Example Listening Questions -->
                 <section class="bg-teal-600/25 rounded-lg p-4 md:p-8 shadow-sm border border-teal-600 mb-8">
-                        <h2 class="text-2xl font-bold text-center text-white mb-8">Example Listening Questions</h2>
+                        <h2 class="text-2xl font-bold text-center text-white mb-8 underline decoration-1 underline-offset-3">Example Listening Questions</h2>
 
                         <div class="max-w-4xl mx-auto">
                                 <p class="text-white mb-8">Watch the 3 Listening question tutorial videos below:</p>
@@ -264,15 +260,13 @@
 
                 <!-- Section 3: Listening Question Practice -->
                 <section class="bg-cyan-800/25 rounded-lg p-4 md:p-8 shadow-sm border border-cyan-600 mb-8">
-                        <h2 class="text-2xl font-bold text-center text-white mb-8">Listening Sample Exercises</h2>
+                        <h2 class="text-2xl font-bold text-center text-white mb-8 underline decoration-1 underline-offset-3">Listening Sample Exercises</h2>
 
                         <div class="max-w-6xl mx-auto">
                                 <p class="text-white text-lg mb-4">
-                                        <span class="inline-block bg-red-600 text-white font-bold px-2 py-1 rounded-md border-2 border-yellow-600 shadow-lg mr-2">
-                                                TASK >
-                                        </span> Complete these three Listening question practice exercises. Enter
-                                        your answers on the answer sheets provided before checking your answers in the video
-                                        beneath.
+                                        <span class="inline-block bg-gradient-to-r from-teal-600 to-cyan-600 text-white font-bold px-4 py-1 rounded-md border-2 border-teal-400 tracking-wide shadow-lg mr-2">
+                                                TASK
+                                        </span> Complete these three Listening question practice exercises. Enter your answers on the answer sheets provided before checking your answers in the video beneath.
                                 </p>
                                 <p class="text-center text-white font-bold mb-8">
                                         [Don't watch the answer video until you have completed the practice exercises!]
@@ -593,7 +587,7 @@
                                 <div class="flex justify-between items-center">
                                         <a
                                                 href="/IETPP#lesson-01"
-                                                class="text-teal-600 dark:text-teal-400 hover:underline font-semibold"
+                                                class="text-teal-600 dark:text-teal-400 hover:text-teal-300 font-semibold"
                                                 data-sveltekit-reload
                                         >
                                                 ← Back to Contents
@@ -601,7 +595,7 @@
                                
                                         <a
                                                 href="/IETPP/lesson-01/lesson01-i"
-                                                class="text-teal-600 dark:text-teal-400 hover:underline font-semibold"
+                                                class="text-teal-600 dark:text-teal-400 hover:text-teal-300 font-semibold"
                                                 data-sveltekit-reload
                                         >
                                                 Next Lesson →

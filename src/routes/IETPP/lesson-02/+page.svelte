@@ -179,7 +179,7 @@
                 
         <section class="mb-12">
                 <div class="bg-gray-800 rounded-lg p-6 shadow-sm border border-gray-200 dark:border-gray-700">
-                        <h2 class="text-2xl text-center font-bold text-gray-800 dark:text-white mb-6">
+                        <h2 class="text-2xl text-center font-bold text-gray-800 dark:text-white mb-6 underline decoration-2 underline-offset-3">
                                 IELTS Reading Test Format
                         </h2>
 
@@ -213,7 +213,7 @@
 <!-- Page Content -->     
                 <!-- Section 1: Reading Test Format and Question Types -->
                 <section class="bg-cyan-600/25 rounded-lg p-4 md:p-8 shadow-sm border border-blue-700 mb-8">
-                        <h2 class="text-2xl font-bold text-center text-white mb-8">
+                        <h2 class="text-2xl font-bold text-center text-white mb-8 underline decoration-1 underline-offset-3">
                                 Reading Test Question types</h2>
                         <div class="max-w-4xl mx-auto">  
 
@@ -260,20 +260,19 @@
                                                 Virtual Examiner Video
                                         </a>
                                 </div>
-
+                                  </div>
+                        
                                 <div class="bg-yellow-900/30 border border-yellow-700 rounded-lg p-6">
                                         <p class="text-white">
-                                                It's <u>very important</u> that you accurately follow the instructions for each set of
-                                                questions: if the format of your answer differs from instructed, even if the correct
-                                                information is included, your answer will be marked <u>WRONG</u>.
+                It's <u>very important</u> that you accurately follow the instructions for each set of questions: if the format of your answer differs from instructed, even if the correct information is included, your answer will be marked <u>WRONG</u>.
                                         </p>
                                 </div>
-                        </div>
+                      
                 </section>
 
                 <!-- Section 2: Example Reading Questions -->
                 <section class="bg-teal-600/25 rounded-lg p-4 md:p-8 shadow-sm border border-teal-600 mb-8">
-                        <h2 class="text-2xl font-bold text-center text-white mb-8">Example Reading Questions</h2>
+                        <h2 class="text-2xl font-bold text-center text-white mb-8 underline decoration-1 underline-offset-3">Example Reading Questions</h2>
 
                         <div class="max-w-4xl mx-auto">
                                 <p class="text-white text-lg mb-8">Watch the 2 Reading question tutorial videos below:</p>
@@ -318,7 +317,7 @@
                         </div>
                         <div>
                                 
-                                <div class="bg-gray-800 border border border-gray-600 rounded-lg p-6 mt-16">
+                                <div class="bg-gray-700 border border border-gray-500 rounded-lg p-6 mt-16">
                             <div class="text-white text-xl">
                                 <p class="text-center mt-4 mb-8">
                                         <b>TIME MANAGEMENT</b></p> 
@@ -337,6 +336,7 @@
                                 </div>
                                     
                                 <p class="mb-6"> The passages in the reading test increase in difficulty as you progress through the test.                                        </p>
+                                    
                                     <p class="mb-6"> You should aim to spend <u>LESS</u> than 20 minutes on Passages 1 & 2 to allow you maximum time to focus on Passage 3, and enough time to check through your answers before the end of the test.
                                             </p>
                                 </div>
@@ -346,12 +346,12 @@
 
                 <!-- Section 3: Reading Question Practice -->
                 <section class="bg-cyan-800/25 rounded-lg p-4 md:p-8 shadow-sm border border-cyan-600 mb-8">
-                        <h2 class="text-2xl font-bold text-center text-white">Reading Sample Exercises</h2>
+                        <h2 class="text-2xl font-bold text-center text-white mb-8 underline decoration-1 underline-offset-3">Reading Sample Exercises</h2>
                         
                         <div class="max-w-6xl mx-auto">
                                 <p class="text-white text-lg p-2 md:p-10">
-                                        <span class="inline-block bg-red-500 text-white font-bold px-2 py-1 rounded-md border-2 border-yellow-600 shadow-lg mr-2">
-                                                TASK >
+                                         <span class="inline-block bg-gradient-to-r from-teal-600 to-cyan-600 text-white font-bold px-4 py-1 rounded-md border-2 border-teal-400 tracking-wide shadow-lg mr-2">
+                                                TASK
                                         </span>Complete these two Reading question practice exercises. Enter
                                         your answers on the answer sheets provided before checking your                                               answers in the video beneath.
                                 </p>
@@ -396,8 +396,7 @@
                                                                                 <button
                                                                                         onclick={resetDiagramTimer}
                                                                                         class="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded text-sm transition-colors"
-                                                                                >
-                                                                                        Reset
+                                                                                >                                                                                 Reset
                                                                                 </button>
                                                                         </div>
                                                                 </div>
@@ -499,7 +498,7 @@
                                                 <!-- Answer video centered in container -->
                                                 <div class="text-center mt-8">
                                                         <p class="text-white mb-2 font-semibold">Answer video</p>
-                                                        <div class="max-w-2xl mx-auto">
+                                                        <div class="max-w-2xl mx-auto mb-4">
                                                                 <video controls class="w-full rounded border border-gray-500">
                                                                         <source src="/LESSONS/les02/R02_answervid1.mp4" type="video/mp4" />
                                                                         Your browser does not support the video tag.
@@ -647,7 +646,7 @@
                                                 <!-- Answer video centered in container -->
                                                 <div class="text-center mt-8">
                                                         <p class="text-white mb-2 font-semibold">Answer video</p>
-                                                        <div class="max-w-2xl mx-auto">
+                                                        <div class="max-w-2xl mx-auto mb-4">
                                                                 <video controls class="w-full rounded border border-gray-500">
                                                                         <source src="/LESSONS/les02/R02_answervid2.mp4" type="video/mp4" />
                                                                         Your browser does not support the video tag.
@@ -665,7 +664,7 @@
                                 <div class="flex justify-between items-center">
                                         <a
                                                 href="/IETPP#lesson-02"
-                                                class="text-teal-600 dark:text-teal-400 hover:underline font-semibold"
+                                                class="text-teal-600 dark:text-teal-400 hover:text-teal-300 font-semibold"
                                                 data-sveltekit-reload
                                         >
                                                 ← Back to Contents
@@ -673,7 +672,7 @@
 
                                         <a
                                                 href="/IETPP/lesson-02/lesson02-i"
-                                                class="text-teal-600 dark:text-teal-400 hover:underline font-semibold"
+                                                class="text-teal-600 dark:text-teal-400 hover:text-teal-300 font-semibold"
                                                 data-sveltekit-reload
                                         >
                                                 Next Lesson →
