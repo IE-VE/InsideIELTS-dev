@@ -70,7 +70,8 @@
                 }
         };
 
-        function startTest() {
+        function startTest(testType: string = 'academic') {
+                currentTest = testType;
                 isTestStarted = true;
                 showInstructions = false;
                 startTimer();
@@ -220,13 +221,22 @@
                                                 </div>
                                         </div>
 
-                                        <div class="text-center mt-8">
-                                                <button
-                                                        onclick={startTest}
-                                                        class="bg-teal-600 hover:bg-teal-700 text-white font-bold py-3 px-8 rounded-lg text-lg transition-colors"
-                                                >
-                                                        Start Writing Test
-                                                </button>
+                                        <div class="bg-purple-50 dark:bg-purple-900/20 p-6 rounded-lg mt-6">
+                                                <h3 class="text-lg font-semibold text-purple-700 dark:text-purple-300 mb-4 text-center">Choose Your Test Version</h3>
+                                                <div class="flex justify-center gap-4">
+                                                        <button
+                                                                onclick={() => startTest('academic')}
+                                                                class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg text-lg transition-colors"
+                                                        >
+                                                                Start AC Test
+                                                        </button>
+                                                        <button
+                                                                onclick={() => startTest('general')}
+                                                                class="bg-teal-600 hover:bg-teal-700 text-white font-bold py-3 px-8 rounded-lg text-lg transition-colors"
+                                                        >
+                                                                Start GT Test
+                                                        </button>
+                                                </div>
                                         </div>
                                 </div>
                         </div>
@@ -308,22 +318,6 @@
                                                         START
                                                 </button>
                                         {/if}
-                                </div>
-
-                                <!-- Test Type Selection -->
-                                <div class="flex justify-center gap-2 mb-4">
-                                        <button
-                                                onclick={() => switchTest('academic')}
-                                                class="px-4 py-2 rounded-md font-medium transition-colors {currentTest === 'academic' ? 'bg-blue-600 text-white' : 'bg-blue-50 text-gray-700 hover:bg-blue-100 dark:bg-gray-700 dark:text-gray-300 dark:hover:bg-gray-600'}"
-                                        >
-                                                Academic
-                                        </button>
-                                        <button
-                                                onclick={() => switchTest('general')}
-                                                class="px-4 py-2 rounded-md font-medium transition-colors {currentTest === 'general' ? 'bg-blue-600 text-white' : 'bg-blue-50 text-gray-700 hover:bg-blue-100 dark:bg-gray-700 dark:text-gray-300 dark:hover:bg-gray-600'}"
-                                        >
-                                                General Training
-                                        </button>
                                 </div>
 
                                 <!-- Task Navigation Buttons -->

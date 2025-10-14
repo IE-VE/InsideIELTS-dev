@@ -163,9 +163,9 @@
                                                                 Introduction to the Writing Test
                                                         </a>
                                                         <div class="space-y-1 ml-4">
-                                                                <div>- <a href="/IETPP/lesson-03/lesson-03T1Ac" class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300">Task 1 (Ac)</a></div>
-                                                                <div>- <a href="/IETPP/lesson-03/lesson-03T1GT" class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300">Task 1 (GT)</a></div>
-                                                                <div>- <a href="/IETPP/lesson-03/lesson-03T2" class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300">Task 2</a></div>
+                                                                <div>- <a href="/IETPP/lesson-03/lesson03-T1Ac" class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300">Task 1 (Ac)</a></div>
+                                                                <div>- <a href="/IETPP/lesson-03/lesson03-T1GT" class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300">Task 1 (GT)</a></div>
+                                                                <div>- <a href="/IETPP/lesson-03/lesson03-T2" class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300">Task 2</a></div>
                                                         </div>
                                                 </div>
                                                 <div class="ml-12">
@@ -203,9 +203,9 @@
                                                                 Introduction to the Speaking Test
                                                         </a>
                                                         <div class="space-y-1 ml-4">
-                                                                <div>- <a href="/IETPP/lesson-04/lesson04P1" class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300">Part 1</a></div>
-                                                                <div>- <a href="/IETPP/lesson-04/lesson04P2" class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300">Part 2</a></div>
-                                                                <div>- <a href="/IETPP/lesson-04/lesson04P3" class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300">Part 3</a></div>
+                                                                <div>- <a href="/IETPP/lesson-04/lesson04-P1" class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300">Part 1</a></div>
+                                                                <div>- <a href="/IETPP/lesson-04/lesson04-P2" class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300">Part 2</a></div>
+                                                                <div>- <a href="/IETPP/lesson-04/lesson04-P3" class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300">Part 3</a></div>
                                                         </div>
                                                 </div>
                                                 <div class="ml-12">
@@ -213,19 +213,19 @@
                                                         <div class="space-y-2 ml-8">
                                                                 <div class="flex gap-2">
                                                                         <span class="text-gray-600 dark:text-gray-400">(i)</span>
-                                                                        <a href="/IETPP/lesson-04/lesson04(i)" class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300">Fluency & Coherence</a>
+                                                                        <a href="/IETPP/lesson-04/lesson04-i" class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300">Fluency & Coherence</a>
                                                                 </div>
                                                                 <div class="flex gap-2">
                                                                         <span class="text-gray-600 dark:text-gray-400">(ii)</span>
-                                                                        <a href="/IETPP/lesson-04/lesson04(ii)" class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300">Lexical Resource</a>
+                                                                        <a href="/IETPP/lesson-04/lesson04-ii" class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300">Lexical Resource</a>
                                                                 </div>
                                                                 <div class="flex gap-2">
                                                                         <span class="text-gray-600 dark:text-gray-400">(iii)</span>
-                                                                        <a href="/IETPP/lesson-04/lesson04(iii)" class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300">Grammatical Range & Accuracy</a>
+                                                                        <a href="/IETPP/lesson-04/lesson04-iii" class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300">Grammatical Range & Accuracy</a>
                                                                 </div>
                                                                 <div class="flex gap-2">
                                                                         <span class="text-gray-600 dark:text-gray-400">(iv)</span>
-                                                                        <a href="/IETPP/lesson-04/lesson04(iv)" class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300">Pronunciation</a>
+                                                                        <a href="/IETPP/lesson-04/lesson04-iv" class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300">Pronunciation</a>
                                                                 </div>
                                                         </div>
                                                 </div>
@@ -240,27 +240,27 @@
                                                         <span class="text-xl font-bold text-gray-800 dark:text-gray-200 underline">ASSESSMENT</span>
                                                 </div>
                                                 <div class="ml-12">
-                                                        <p class="font-semibold mb-3 text-gray-700 dark:text-gray-300">Final Full Test</p>
+                                                 <div class=' mb-3'>       <a href="/IETPP/lesson-05" class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300 font-semibold">Final Full Test</a> </div>
                                                         <div class="space-y-2 ml-8">
                                                                 <div class="flex gap-2">
                                                                         <span class="text-gray-600 dark:text-gray-400">(i)</span>
-                                                                        <a href="#" class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300">Listening Test</a>
+                                                                        <a href="/IETPP/lesson-05/lesson05-i" class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300">Listening Test</a>
                                                                 </div>
                                                                 <div class="flex gap-2">
                                                                         <span class="text-gray-600 dark:text-gray-400">(ii)</span>
-                                                                        <a href="#" class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300">Reading Test</a>
+                                                                        <a href="/IETPP/lesson-05/lesson05-ii" class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300">Reading Test</a>
                                                                 </div>
                                                                 <div class="flex gap-2">
                                                                         <span class="text-gray-600 dark:text-gray-400">(iii)</span>
                                                                         <span class="text-teal-600 dark:text-teal-400">Writing Test</span>
                                                                 </div>
                                                                 <div class="ml-16 space-y-1">
-                                                                        <div><a href="#" class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300">Academic</a></div>
-                                                                        <div><a href="#" class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300">General Training</a></div>
+                                                                        <div><a href="/IETPP/lesson-05/lesson05-iii(Ac)" class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300">Academic</a></div>
+                                                                        <div><a href="/IETPP/lesson-05/lesson05-iii(GT)" class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300">General Training</a></div>
                                                                 </div>
                                                                 <div class="flex gap-2">
                                                                         <span class="text-gray-600 dark:text-gray-400">(iv)</span>
-                                                                        <a href="#" class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300">Speaking Test</a>
+                                                                        <a href="/IETPP/lesson-05/lesson05-iv" class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300">Speaking Test</a>
                                                                 </div>
                                                         </div>
                                                 </div>
