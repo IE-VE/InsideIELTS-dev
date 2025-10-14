@@ -194,24 +194,8 @@
                                                         </ul>
                                                 </div>
 
-                                                <div class="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-lg">
-                                                        <h3 class="text-lg font-semibold text-blue-700 dark:text-blue-300 mb-3">Test Versions</h3>
-                                                        <div class="grid md:grid-cols-2 gap-4">
-                                                                <div class="text-center">
-                                                                        <div class="font-semibold">Academic</div>
-                                                                        <div class="text-sm">Task 1: Describe charts/graphs/diagrams</div>
-                                                                        <div class="text-sm">Task 2: Academic essay</div>
-                                                                </div>
-                                                                <div class="text-center">
-                                                                        <div class="font-semibold">General Training</div>
-                                                                        <div class="text-sm">Task 1: Write a letter</div>
-                                                                        <div class="text-sm">Task 2: General essay</div>
-                                                                </div>
-                                                        </div>
-                                                </div>
-
                                                 <div class="bg-gray-200 dark:bg-gray-800 p-6 rounded-lg">
-                                                        <h3 class="text-lg font-semibold text-orange-700 dark:text-orange-300 mb-3">Assessment Criteria</h3>
+                                                        <h3 class="text-lg font-semibold text-orange-700 dark:text-orange-300 mb-4">Assessment Criteria</h3>
                                                         <ul class="space-y-1 text-sm">
                                                                 <li>• <strong>Task Achievement/Response:</strong> How well you address the task requirements</li>
                                                                 <li>• <strong>Coherence & Cohesion:</strong> Organisation and flow of your writing</li>
@@ -219,25 +203,38 @@
                                                                 <li>• <strong>Grammatical Range & Accuracy:</strong> Grammar variety and correctness</li>
                                                         </ul>
                                                 </div>
+                                                <div class="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-lg mt-8">
+                                                        <h3 class="text-lg font-semibold text-blue-700 dark:text-blue-300 mb-3">Test Versions</h3>
+
+                                                        
+                                                        <div class="grid md:grid-cols-2 gap-12">
+                                                                <div class="text-center">
+                                                                        <div class="font-semibold">Academic</div>
+                                                                        <div class="text-sm">Task 1: Describe charts/graphs/diagrams</div>
+                                                                        <div class="text-sm mb-6">Task 2: Academic essay</div>
+                                                                <button
+                                                                        onclick={() => startTest('academic')}
+                                                                        class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg text-lg transition-colors"
+                                                                >
+                                                                        Start AC Test
+                                                                </button>
+                                                                </div>
+                                                                <div class="text-center">
+                                                                        <div class="font-semibold">General Training</div>
+                                                                        <div class="text-sm">Task 1: Write a letter</div>
+                                                                        <div class="text-sm mb-6">Task 2: General essay</div>
+                                                                        <button
+                                                                                onclick={() => startTest('general')}
+                                                                                class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg text-lg transition-colors mb-4"
+                                                                        >
+                                                                                Start GT Test
+                                                                        </button>
+                                                                </div>
+                                                        </div>
+                                                </div>                                          
                                         </div>
 
-                                        <div class="bg-purple-50 dark:bg-purple-900/20 p-6 rounded-lg mt-6">
-                                                <h3 class="text-lg font-semibold text-purple-700 dark:text-purple-300 mb-4 text-center">Choose Your Test Version</h3>
-                                                <div class="flex justify-center gap-4">
-                                                        <button
-                                                                onclick={() => startTest('academic')}
-                                                                class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg text-lg transition-colors"
-                                                        >
-                                                                Start AC Test
-                                                        </button>
-                                                        <button
-                                                                onclick={() => startTest('general')}
-                                                                class="bg-teal-600 hover:bg-teal-700 text-white font-bold py-3 px-8 rounded-lg text-lg transition-colors"
-                                                        >
-                                                                Start GT Test
-                                                        </button>
-                                                </div>
-                                        </div>
+                                  
                                 </div>
                         </div>
                 </div>
