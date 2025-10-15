@@ -121,49 +121,49 @@
 		<!-- Speaking -->
 		<a
 			href="/record"
-			class="rounded-lg border border-gray-200 bg-white p-6 shadow-md transition hover:shadow-lg dark:border-gray-700 dark:bg-gray-800"
+			class="bg-gray-800 rounded-lg border border-gray-700 p-6 shadow-md transition-all transform hover:scale-103 hover:border-teal-600"
 		>
-			<h2 class="mb-2 text-xl text-center font-bold text-teal-600 dark:text-teal-400">Speaking Evaluation</h2>
+			<h2 class="mb-2 text-xl text-center font-bold text-teal-600 dark:text-teal-400">Speaking</h2>
 			<p class="text-gray-600 dark:text-gray-300">
-				<b>Free 3 minute</b> Speaking interview with Official Assessment Criteria Feedback & Band Score estimate.
+				Complete Speaking Test preparation materials plus <b>free Speaking evaluation</b> with feedback and band score.
 			</p>
-			<div class="mt-4 text-sm font-medium text-teal-600 dark:text-teal-400">START SPEAKING →</div>
+			<div class="mt-4 text-sm font-medium text-teal-600 dark:text-teal-400">SPEAKING FREETEST →</div>
 		</a>
 
 		<!-- Writing -->
 		<a
 			href="/writing/practice"
-			class="rounded-lg border border-gray-200 bg-white p-6 shadow-md transition hover:shadow-lg dark:border-gray-700 dark:bg-gray-800"
-		>
-			<h2 class="mb-2 text-xl text-center font-bold text-teal-600 dark:text-teal-400">Writing Evaluation</h2>
+			class="bg-gray-800 rounded-lg border border-gray-700 p-6 shadow-md transition-all transform hover:scale-103 hover:border-teal-600"
+				>
+			<h2 class="mb-2 text-xl text-center font-bold text-teal-600 dark:text-teal-400">Writing</h2>
 			<p class="text-gray-600 dark:text-gray-300">
-				<b>Free 10 minute</b> Writing exercise with Official Assessment Criteria Feedback & Band Score estimate.
+				Complete Writing Test preparation materials plus <b>free Task 2 Writing evaluation exercise</b> with feedback and band score.
 			</p>
-			<div class="mt-4 text-sm font-medium text-teal-600 dark:text-teal-400">START WRITING →</div>
+			<div class="mt-4 text-sm font-medium text-teal-600 dark:text-teal-400">WRITING FREETEST →</div>
 		</a>
 
 		<!-- Reading -->
 		<a
 			href="/reading/practice"
-			class="rounded-lg border border-gray-200 bg-white p-6 shadow-md transition hover:shadow-lg dark:border-gray-700 dark:bg-gray-800"
-		>
-			<h2 class="mb-2 text-xl text-center font-bold text-teal-600 dark:text-teal-400">Reading Evaluation</h2>
+			class="bg-gray-800 rounded-lg border border-gray-700 p-6 shadow-md transition-all transform hover:scale-103 hover:border-teal-600"
+				>
+			<h2 class="mb-2 text-xl text-center font-bold text-teal-600 dark:text-teal-400">Reading</h2>
 			<p class="text-gray-600 dark:text-gray-300">
-				<b>Free 20 minute</b> Official Materials Reading Test with analysis, scoring and feedback.
+				Complete Reading Test preparation materials plus <b>free Reading skills evaluation</b> with feedback and band score.
 			</p>
-			<div class="mt-4 text-sm font-medium text-teal-600 dark:text-teal-400">START READING →</div>
+			<div class="mt-4 text-sm font-medium text-teal-600 dark:text-teal-400">READING FREETEST →</div>
 		</a>
 
 		<!-- Listening -->
 		<a
 			href="/listening/practice"
-			class="rounded-lg border border-gray-200 bg-white p-6 shadow-md transition hover:shadow-lg dark:border-gray-700 dark:bg-gray-800"
-		>
-			<h2 class="mb-2 text-xl text-center font-bold text-teal-600 dark:text-teal-400">Listening Evaluation</h2>
+			class="bg-gray-800 rounded-lg border border-gray-700 p-6 shadow-md transition-all transform hover:scale-103 hover:border-teal-600"
+				>
+			<h2 class="mb-2 text-xl text-center font-bold text-teal-600 dark:text-teal-400">Listening</h2>
 			<p class="text-gray-600 dark:text-gray-300">
-				<b>Free 7 minute</b> Official Materials Listening Test with analysis, scoring and feedback.
+				Complete Listening Test preparation materials plus <b>free Listening skills evaluation</b> with feedback and band score.
 			</p>
-			<div class="mt-4 text-sm font-medium text-teal-600 dark:text-teal-400">START LISTENING →</div>
+			<div class="mt-4 text-sm font-medium text-teal-600 dark:text-teal-400">LISTENING FREETEST →</div>
 		</a>
 	</div>
 </div>
