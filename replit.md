@@ -5,6 +5,11 @@ InsideIELTS is an AI-powered IELTS preparation platform offering free speaking t
 # Recent Changes
 
 ## October 15, 2025
+- **Speaking Test Instructions Screen**: Added comprehensive instructions screen to lesson05-iv matching Reading/Listening Test format
+  - Features: Test instructions (11-14 minutes, 3 Part 1 questions, 45 seconds per response), video/audio recording options, analysis criteria
+  - Sections: Question 1-3 breakdown with 45-second time limits for each Part 1 topic
+  - Navigation: "Start Speaking Test" button initiates test, instructions screen controlled by showInstructions state
+  - Structure: Instructions → VideoPreference → Test content flow, seamless user experience
 - **Listening Test Instructions Screen**: Added comprehensive instructions screen to lesson05-i matching Reading Test (lesson05-ii) format
   - Features: Test instructions (35 minutes, 40 questions, 4 sections), section breakdown (Section 1: Form Completion, Section 2: Sentence & Plan, Section 3: Multiple Choice, Section 4: Note Completion)
   - Navigation: "Start Listening Test" button initiates test, instructions screen controlled by showInstructions state

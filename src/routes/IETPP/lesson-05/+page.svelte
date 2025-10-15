@@ -45,9 +45,12 @@
 				<div class="text-xs text-left text-teal-600 dark:text-teal-400">
 					IE2401_05
 				</div>
-				<h1 class="text-3xl font-bold text-white my-7">
-					IETPP Final Full Test
+				<h1 class="text-3xl font-bold text-white mb-7">
+					IETPP
 				</h1>
+				<p class="text-3xl font-bold text-white my-7">
+					Final Full Test
+				</p>
 			</div>
 
 			<div class="mt-6 mb-8 text-lg">

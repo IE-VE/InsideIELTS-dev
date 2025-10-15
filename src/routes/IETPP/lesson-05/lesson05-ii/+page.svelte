@@ -717,9 +717,12 @@
                                 <div class="text-xs text-left text-teal-600 dark:text-teal-400">
                                         IE2401_05.2
                                 </div>
-                                <h1 class="text-3xl font-bold text-white my-7">
-                                        IETPP Reading Test
+                                <h1 class="text-3xl font-bold mb-6">
+                                        IETPP
                                 </h1>
+                                <p class="text-3xl font-bold mb-8">
+                                        Reading Test
+                                </p>
                         </div>
 
                   <!-- Header Nav -->

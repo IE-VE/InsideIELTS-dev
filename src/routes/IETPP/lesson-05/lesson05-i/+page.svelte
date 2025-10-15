@@ -412,9 +412,12 @@
                                 <div class="text-xs text-left text-teal-600 dark:text-teal-400">
                                         IE2401_05.1
                                 </div>
-                                <h1 class="text-3xl font-bold text-white my-7">
-                                        IETPP Listening Test
+                                <h1 class="text-3xl font-bold mb-6">
+                                        IETPP
                                 </h1>
+                                <p class="text-3xl font-bold mb-8">
+                                        Listening Test
+                                </p>
                         </div>
 
                   <!-- Header Nav -->
@@ -1244,28 +1247,6 @@
         </div>
 {/if}
 
-        <!-- Footer Navigation -->
-        <div class="max-w-5xl container mx-auto px-6 py-8">
-                <div class="bg-gray-800 rounded-lg p-6 shadow-sm border border-gray-700">
-                        <div class="flex justify-between items-center">
-                                <a
-                                        href="/IETPP#lesson-05"
-                                        class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300 font-semibold"
-                                        data-sveltekit-reload
-                                >
-                                        ← Back to Contents
-                                </a>
-                                <p class="text-white">End of Lesson 05-i</p>
-                                <a
-                                        href="/IETPP/lesson-05/lesson05-ii"
-                                        class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300 font-semibold"
-                                        data-sveltekit-reload
-                                >
-                                        Next Lesson →
-                                </a>
-                        </div>
-                </div>
-        </div>
 </div>
 
 <style>

@@ -147,31 +147,37 @@
         <meta name="description" content="Complete IELTS Writing practice test with Academic and General Training options. Practice Task 1 and Task 2 with authentic test questions." />
 </svelte:head>
 
-<div class="min-h-screen bg-gradient-to-br from-teal-50 to-blue-50 dark:from-gray-900 dark:to-gray-800">
+<div class="min-h-screen bg-gray-900 text-white">
 
         <!-- Lesson Header -->
         <div class="max-w-5xl container mx-auto px-6 pt-8">
-                <div class="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 mb-8">
+                <div class="bg-gray-50 dark:bg-gray-800 rounded-lg px-6 py-2 mb-8">
                         <div class="text-center">
-                                <div class="text-xs text-left text-teal-600 dark:text-teal-400 mb-4">
+                                <div class="text-xs text-left text-teal-600 dark:text-teal-400">
                                         IE2401_05.3
                                 </div>
-                                <h1 class="text-3xl font-bold text-white mb-4">
-                                        WRITING - Practice Test 1
+                                <h1 class="text-3xl font-bold mb-6">
+                                        IETPP
                                 </h1>
+                                <p class="text-3xl font-bold mb-8">
+                                        Writing Test
+                                </p>
                         </div>
 
-                        <div class="flex justify-between items-center">
-                                <a
+                  <!-- Header Nav -->
+
+                        <div class="text-center">
+                                                        <a
                                         href="/IETPP#lesson-05"
                                         class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300 font-semibold"
                                         data-sveltekit-reload
                                 >
-                                        ← Back to Contents
+                                        - Contents -
                                 </a>
                         </div>
                 </div>
         </div>
+        
         {#if showInstructions}
                 <!-- Instructions Screen -->
                 <div class="container mx-auto px-6 py-8">

@@ -17,6 +17,10 @@
         let hasChosenRecordingMode = $state(!!remoteSession?.created_at);
         let useVideo = $state(remoteSession?.use_video ?? true);
 
+        // Instructions screen state
+        let showInstructions = $state(!remoteSession?.created_at);
+        let isTestStarted = $state(!!remoteSession?.created_at);
+
         // Log session data for debugging
         console.log(
                 `📊 Session data - ID: ${sessionId}, UseVideo: ${useVideo}, Session UseVideo: ${session?.use_video}`
@@ -109,6 +113,11 @@
                                         : "Unable to access microphone. Please ensure you've granted permission."
                         );
                 }
+        }
+
+        function startTest() {
+                isTestStarted = true;
+                showInstructions = false;
         }
 
         async function handleVideoPreference(useVideoParam: boolean) {
@@ -450,17 +459,102 @@
 
 <div class="container mx-auto max-w-4xl px-6 py-12">
         <!-- Header -->
-        <div class="mb-12 text-center">
-                <P class="text-center" size="xl">
-                        {#if session?.status === 'completed'}
-                                Review your answers and get your detailed analysis.
-                        {:else}
-                                Answer the three Part 1 questions. Try to talk for at least 30 seconds for each answer.
-                        {/if}
-                </P>
-        </div>
+        <div class="max-w-5xl container mx-auto px-6 pt-8">
+                <div class="bg-gray-50 dark:bg-gray-800 rounded-lg px-6 py-2 mb-8">
+                        <div class="text-center">
+                                <div class="text-xs text-left text-teal-600 dark:text-teal-400">
+                                        IE2401_05.4
+                                </div>
+                                <h1 class="text-3xl font-bold mb-6">
+                                        IETPP
+                                </h1>
+                                <p class="text-3xl font-bold mb-8">
+                                        Speaking Test
+                                </p>
+                        </div>
 
-        {#if session?.status === 'completed' && session && recordings}
+                  <!-- Header Nav -->
+
+                        <div class="text-center">
+                                                        <a
+                                        href="/IETPP#lesson-05"
+                                        class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300 font-semibold"
+                                        data-sveltekit-reload
+                                >
+                                        - Contents -
+                                </a>
+                        </div>
+                </div>
+        </div>
+        
+        {#if showInstructions}
+                <!-- Instructions Screen -->
+                <div class="container mx-auto px-6 py-8">
+                        <div class="max-w-4xl mx-auto">
+                                <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8">
+                                        <h1 class="text-4xl font-bold text-center text-gray-900 dark:text-white mb-8">
+                                                IELTS Speaking Test
+                                        </h1>
+
+                                        <div class="space-y-6 text-gray-700 dark:text-gray-300">
+                                                <div class="bg-teal-50 dark:bg-teal-900/20 p-6 rounded-lg">
+                                                        <h2 class="text-xl font-semibold text-teal-700 dark:text-teal-300 mb-4">Test Instructions</h2>
+                                                        <ul class="space-y-2">
+                                                                <li>• Time allowed: <strong>11-14 minutes</strong></li>
+                                                                <li>• Number of questions: <strong>3 Part 1 questions</strong></li>
+                                                                <li>• Each question allows up to <strong>45 seconds</strong> for your response</li>
+                                                                <li>• You can choose to record with <strong>video</strong> or <strong>audio only</strong></li>
+                                                                <li>• Speak naturally and aim for at least 30 seconds per answer</li>
+                                                                <li>• Your responses will be analyzed for Fluency, Vocabulary, Grammar, and Pronunciation</li>
+                                                        </ul>
+                                                </div>
+
+                                                <div class="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-lg">
+                                                        <center><h3 class="text-lg font-semibold text-blue-700 dark:text-blue-300 mb-3">Speaking Test Sections</h3></center>
+                                                        <div class="grid md:grid-cols-3 gap-4">
+                                                                <div class="text-center">
+                                                                        <div class="font-semibold mb-3">Question 1</div>
+                                                                        <div class="text-sm mb-4">Part 1 Topic</div>
+                                                                        <div class="text-xs text-teal-200">[ 45 seconds max ]</div>
+                                                                </div>
+                                                                <div class="text-center">
+                                                                        <div class="font-semibold mb-3">Question 2</div>
+                                                                        <div class="text-sm mb-4">Part 1 Topic</div>
+                                                                        <div class="text-xs text-teal-200">[ 45 seconds max ]</div>
+                                                                </div>
+                                                                <div class="text-center">
+                                                                        <div class="font-semibold mb-3">Question 3</div>
+                                                                        <div class="text-sm mb-4">Part 1 Topic</div>
+                                                                        <div class="text-xs text-teal-200">[ 45 seconds max ]</div>
+                                                                </div>
+                                                        </div>
+                                                </div>
+                                        </div>
+
+                                        <div class="text-center mt-8">
+                                                <button
+                                                        onclick={startTest}
+                                                        class="bg-teal-600 hover:bg-teal-700 text-white font-bold py-3 px-8 rounded-lg text-lg transition-colors"
+                                                >
+                                                        Start Speaking Test
+                                                </button>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+        {:else}
+                <!-- Page Content -->
+                <div class="mb-12 text-center">
+                        <P class="text-center" size="xl">
+                                {#if session?.status === 'completed'}
+                                        Review your answers and get your detailed analysis.
+                                {:else}
+                                        Answer the three Part 1 questions. Try to talk for at least 30 seconds for each answer.
+                                {/if}
+                        </P>
+                </div>
+
+                {#if session?.status === 'completed' && session && recordings}
                 <CompletedState {session} {recordings} />
         {:else if !hasChosenRecordingMode}
                 <VideoPreference onChoice={handleVideoPreference} />
@@ -647,5 +741,6 @@
                                 45 seconds.
                         {/if}
                 </P>
+        {/if}
         {/if}
 </div>
