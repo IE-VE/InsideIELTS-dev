@@ -252,11 +252,11 @@
                                                                 </div>
                                                                 <div class="flex gap-2">
                                                                         <span class="text-gray-600 dark:text-gray-400">(iii)</span>
-                                                                        <span class="text-teal-600 dark:text-teal-400">Writing Test</span>
+                                                                        <div><a href="/IETPP/lesson-05/lesson05-iii" class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300">Writing Test</a></div>
                                                                 </div>
                                                                 <div class="ml-16 space-y-1">
-                                                                        <div><a href="/IETPP/lesson-05/lesson05-iii(Ac)" class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300">Academic</a></div>
-                                                                        <div><a href="/IETPP/lesson-05/lesson05-iii(GT)" class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300">General Training</a></div>
+                                                                        <div><a href="/IETPP/lesson-05/lesson05-iii" class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300">Academic</a></div>
+                                                                        <div><a href="/IETPP/lesson-05/lesson05-iii" class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300">General Training</a></div>
                                                                 </div>
                                                                 <div class="flex gap-2">
                                                                         <span class="text-gray-600 dark:text-gray-400">(iv)</span>

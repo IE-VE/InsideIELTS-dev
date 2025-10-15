@@ -4,6 +4,17 @@ InsideIELTS is an AI-powered IELTS preparation platform offering free speaking t
 
 # Recent Changes
 
+## October 15, 2025
+- **Listening Test Instructions Screen**: Added comprehensive instructions screen to lesson05-i matching Reading Test (lesson05-ii) format
+  - Features: Test instructions (35 minutes, 40 questions, 4 sections), section breakdown (Section 1: Form Completion, Section 2: Sentence & Plan, Section 3: Multiple Choice, Section 4: Note Completion)
+  - Navigation: "Start Listening Test" button initiates test, instructions screen controlled by showInstructions state
+  - Structure: Consistent with Reading Test pattern - instructions → test content → modals → footer navigation
+- **Speaking Page Enhancement**: Added Hero Section from homepage to /speaking page between Header and Test Overview
+  - Content: Compelling headline "Know your IELTS Band Score in under 3 minutes", key benefits with checkmarks, CTA buttons
+  - Features: Left column with value proposition and list, right column with IELTS Speaking Test card, responsive layout
+  - Components: Replaced Flowbite Heading/P components with standard HTML tags to avoid import issues
+  - Design: Gradient background, teal color scheme, fully responsive (stacks on mobile, side-by-side on desktop)
+
 ## October 07, 2025
 - **Lesson 04(iv) Skill Check**: Created comprehensive skill check page for Speaking PR
   - Content: Listen and repeat Native Speaker responses task, focus on rhythm/intonation/chunking

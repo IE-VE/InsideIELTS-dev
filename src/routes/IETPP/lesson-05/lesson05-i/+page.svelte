@@ -9,6 +9,8 @@
         let userAnswers = $state({});
         let markingResults = $state({});
         let isMarking = $state(false);
+        let showInstructions = $state(true);
+        let isTestStarted = $state(false);
 
         // Question type categorization for analysis
         const questionTypes = {
@@ -293,6 +295,12 @@
                 return 1;
         }
 
+        function startTest() {
+                isTestStarted = true;
+                showInstructions = false;
+                startTestTimer();
+        }
+
         function nextSection() {
                 if (currentSection < totalSections) {
                         currentSection++;
@@ -389,62 +397,117 @@
 </script>
 
 <svelte:head>
-        <title>IELTS Listening Practice Test - InsideIELTS</title>
+        <title>IELTS Listening Test - InsideIELTS</title>
         <meta name="description" content="Complete IELTS Listening practice test with all 4 sections and 40 questions. Free practice material for IELTS preparation." />
 </svelte:head>
 
 <svelte:window on:keydown={handleKeydown} />
 
-<div class="min-h-screen bg-gradient-to-br from-teal-50 to-blue-50 py-8 dark:from-gray-900 dark:to-gray-800">
+<div class="min-h-screen bg-gray-900 text-white">
 
         <!-- Lesson Header -->
         <div class="max-w-5xl container mx-auto px-6 pt-8">
-                <div class="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 mb-8">
+                <div class="bg-gray-50 dark:bg-gray-800 rounded-lg px-6 py-2 mb-8">
                         <div class="text-center">
-                                <div class="text-xs text-left text-teal-600 dark:text-teal-400 mb-4">
+                                <div class="text-xs text-left text-teal-600 dark:text-teal-400">
                                         IE2401_05.1
                                 </div>
-                                <h1 class="text-3xl font-bold text-white mb-4">
-                                        LISTENING - Practice Test 1
+                                <h1 class="text-3xl font-bold text-white my-7">
+                                        IETPP Listening Test
                                 </h1>
                         </div>
 
-                        <div class="flex justify-between items-center">
-                                <a
+                  <!-- Header Nav -->
+
+                        <div class="text-center">
+                                                        <a
                                         href="/IETPP#lesson-05"
                                         class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300 font-semibold"
                                         data-sveltekit-reload
                                 >
-                                        ← Back to Contents
-                                </a>
-
-                                <a
-                                        href="/IETPP/lesson-05/lesson05-ii"
-                                        class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300 font-semibold"
-                                        data-sveltekit-reload
-                                >
-                                        Next Lesson →
+                                        - Contents -
                                 </a>
                         </div>
                 </div>
         </div>
 
-        <div class="max-w-4xl mx-auto px-4">
-                <!-- Test Header -->
-                <div class="text-center mb-8">
-                        <h1 class="text-4xl font-bold mb-4 text-gray-900 dark:text-gray-100">IELTS Listening Test</h1>
-                        <p class="text-lg mb-6 text-gray-700 dark:text-gray-300">Complete practice test with all 4 sections - 40 questions total</p>
+        {#if showInstructions}
+                <!-- Instructions Screen -->
+                <div class="container mx-auto px-6 py-8">
+                        <div class="max-w-4xl mx-auto">
+                                <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8">
+                                        <h1 class="text-4xl font-bold text-center text-gray-900 dark:text-white mb-8">
+                                                IELTS Listening Test
+                                        </h1>
 
-                        <!-- Audio Player -->
-                        <div class="p-6 rounded-lg shadow-md mb-6 bg-white dark:bg-gray-800">
-                                <p class="text-sm mb-4 text-gray-600 dark:text-gray-400">Click to listen and answer the questions below.</p>
-                                <audio controls class="w-full max-w-md mx-auto">
-                                        <source src="/audio/ielts-listening_test1.mp3?v=2" type="audio/mpeg">
-                                        Your browser does not support the audio element.
-                                </audio>
-                                <p class="text-sm mt-2 text-gray-500 dark:text-gray-400">Allow yourself <strong>35 minutes</strong> to complete this test.</p>
+                                        <div class="space-y-6 text-gray-700 dark:text-gray-300">
+                                                <div class="bg-teal-50 dark:bg-teal-900/20 p-6 rounded-lg">
+                                                        <h2 class="text-xl font-semibold text-teal-700 dark:text-teal-300 mb-4">Test Instructions</h2>
+                                                        <ul class="space-y-2">
+                                                                <li>• Time allowed: <strong>35 minutes</strong></li>
+                                                                <li>• Number of questions: <strong>40</strong></li>
+                                                                <li>• There are 4 listening sections with a variety of question types</li>
+                                                                <li>• Answer all questions - there is no penalty for incorrect answers</li>
+                                                                <li>• You can navigate between sections during the test</li>
+                                                                <li>• Listen to the audio and complete the questions</li>
+                                                        </ul>
+                                                </div>
+
+                                                <div class="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-lg">
+                                                        <center><h3 class="text-lg font-semibold text-blue-700 dark:text-blue-300 mb-3">Listening Sections</h3></center>
+                                                        <div class="grid md:grid-cols-4 gap-4">
+                                                                <div class="text-center">
+                                                                        <div class="font-semibold mb-3">Section 1</div>
+                                                                        <div class="text-sm mb-4">Questions 1 - 10</div>
+                                                                        <div class="text-xs text-teal-200">Form Completion</div>
+                                                                </div>
+                                                                <div class="text-center">
+                                                                        <div class="font-semibold mb-3">Section 2</div>
+                                                                        <div class="text-sm mb-4">Questions 11 - 20</div>
+                                                                        <div class="text-xs text-teal-200">Sentence & Plan</div>
+                                                                </div>
+                                                                <div class="text-center">
+                                                                        <div class="font-semibold mb-3">Section 3</div>
+                                                                        <div class="text-sm mb-4">Questions 21 - 30</div>
+                                                                        <div class="text-xs text-teal-200">Multiple Choice</div>
+                                                                </div>
+                                                                <div class="text-center">
+                                                                        <div class="font-semibold mb-3">Section 4</div>
+                                                                        <div class="text-sm mb-4">Questions 31 - 40</div>
+                                                                        <div class="text-xs text-teal-200">Note Completion</div>
+                                                                </div>
+                                                        </div>
+                                                </div>
+                                        </div>
+
+                                        <div class="text-center mt-8">
+                                                <button
+                                                        onclick={startTest}
+                                                        class="bg-teal-600 hover:bg-teal-700 text-white font-bold py-3 px-8 rounded-lg text-lg transition-colors"
+                                                >
+                                                        Start Listening Test
+                                                </button>
+                                        </div>
+                                </div>
                         </div>
                 </div>
+        {:else}
+                <div class="max-w-4xl mx-auto px-4">
+                        <!-- Test Header -->
+                        <div class="text-center mb-8">
+                                <h1 class="text-4xl font-bold mb-4 text-gray-900 dark:text-gray-100">IELTS Listening Test</h1>
+                                <p class="text-lg mb-6 text-gray-700 dark:text-gray-300">Complete practice test with all 4 sections - 40 questions total</p>
+
+                                <!-- Audio Player -->
+                                <div class="p-6 rounded-lg shadow-md mb-6 bg-white dark:bg-gray-800">
+                                        <p class="text-sm mb-4 text-gray-600 dark:text-gray-400">Click to listen and answer the questions below.</p>
+                                        <audio controls class="w-full max-w-md mx-auto">
+                                                <source src="/audio/ielts-listening_test1.mp3?v=2" type="audio/mpeg">
+                                                Your browser does not support the audio element.
+                                        </audio>
+                                        <p class="text-sm mt-2 text-gray-500 dark:text-gray-400">Allow yourself <strong>35 minutes</strong> to complete this test.</p>
+                                </div>
+                        </div>
 
                 <!-- Navigation -->
                 <div class="rounded-lg shadow-md p-4 mb-6 bg-white dark:bg-gray-800">
@@ -806,7 +869,7 @@
                         </div>
                 {/if}
         </div>
-</div>
+{/if}
 
 <!-- Answers Modal -->
 {#if showAnswersModal}
@@ -1203,6 +1266,7 @@
                         </div>
                 </div>
         </div>
+</div>
 
 <style>
         input[type="text"], input[type="radio"] {

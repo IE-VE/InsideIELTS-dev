@@ -120,10 +120,10 @@
 	<div class="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
 		<!-- Speaking -->
 		<a
-			href="/record"
+			href="/speaking"
 			class="bg-gray-800 rounded-lg border border-gray-700 p-6 shadow-md transition-all transform hover:scale-103 hover:border-teal-600"
 		>
-			<h2 class="mb-2 text-xl text-center font-bold text-teal-600 dark:text-teal-400">Speaking</h2>
+			<h2 class="mb-2 text-2xl text-center font-bold text-teal-600 dark:text-teal-400">Speaking</h2>
 			<p class="text-gray-600 dark:text-gray-300">
 				Complete Speaking Test preparation materials plus <b>free Speaking evaluation</b> with feedback and band score.
 			</p>
@@ -135,9 +135,9 @@
 			href="/writing/practice"
 			class="bg-gray-800 rounded-lg border border-gray-700 p-6 shadow-md transition-all transform hover:scale-103 hover:border-teal-600"
 				>
-			<h2 class="mb-2 text-xl text-center font-bold text-teal-600 dark:text-teal-400">Writing</h2>
+			<h2 class="mb-2 text-2xl text-center font-bold text-teal-600 dark:text-teal-400">Writing</h2>
 			<p class="text-gray-600 dark:text-gray-300">
-				Complete Writing Test preparation materials plus <b>free Task 2 Writing evaluation exercise</b> with feedback and band score.
+				Complete Writing Test preparation materials plus <b>free Writing evaluation exercise</b> with feedback and band score.
 			</p>
 			<div class="mt-4 text-sm font-medium text-teal-600 dark:text-teal-400">WRITING FREETEST →</div>
 		</a>
@@ -147,7 +147,7 @@
 			href="/reading/practice"
 			class="bg-gray-800 rounded-lg border border-gray-700 p-6 shadow-md transition-all transform hover:scale-103 hover:border-teal-600"
 				>
-			<h2 class="mb-2 text-xl text-center font-bold text-teal-600 dark:text-teal-400">Reading</h2>
+			<h2 class="mb-2 text-2xl text-center font-bold text-teal-600 dark:text-teal-400">Reading</h2>
 			<p class="text-gray-600 dark:text-gray-300">
 				Complete Reading Test preparation materials plus <b>free Reading skills evaluation</b> with feedback and band score.
 			</p>
@@ -159,7 +159,7 @@
 			href="/listening/practice"
 			class="bg-gray-800 rounded-lg border border-gray-700 p-6 shadow-md transition-all transform hover:scale-103 hover:border-teal-600"
 				>
-			<h2 class="mb-2 text-xl text-center font-bold text-teal-600 dark:text-teal-400">Listening</h2>
+			<h2 class="mb-2 text-2xl text-center font-bold text-teal-600 dark:text-teal-400">Listening</h2>
 			<p class="text-gray-600 dark:text-gray-300">
 				Complete Listening Test preparation materials plus <b>free Listening skills evaluation</b> with feedback and band score.
 			</p>
@@ -323,7 +323,8 @@
 </section>
 
 <!-- Expert Section -->
-<section class="relative flex items-center justify-center py-14">
+
+<!-- <section class="relative flex items-center justify-center py-14">
 	<div
 		class="absolute inset-0 bg-gradient-to-b bg-gradient-to-tr from-gray-50 from-teal-100/20 via-blue-50/10 to-gray-100 to-transparent dark:from-gray-800 dark:from-teal-900/10 dark:via-transparent dark:to-gray-900 dark:to-transparent"
 	></div>
@@ -332,13 +333,12 @@
 			<div class="space-y-4 md:space-y-4">
 				<center><Heading tag="h4">Meet Your IELTS Experts</Heading></center>
 				<P>
-					At <b>InsideIELTS</b>, our team of experts combine over two decades of IELTS teaching and examiner experience to help you achieve your goals.
-					We focus on what really matters: identifying your weaknesses, building your strengths, and giving you clear, actionable strategies              for test-day success.
+					At <b>InsideIELTS</b> our team of experts combine over two decades of IELTS teaching and examiner experience to help you achieve your goals.
+					We focus on what really matters: identifying your weaknesses, building your strengths, and giving you clear, actionable strategies for test-day success.
 				</P>
 			</div>
 			
-			<!-- Image positioned between paragraph and blockquote on mobile, right column on desktop -->
-			<div class="flex justify-center md:row-span-2">
+				<div class="flex justify-center md:row-span-2">
 				<figure>
 				<picture>
 					<source srcset="/IE_Team1.webp" type="image/webp" />
@@ -362,7 +362,7 @@
 			</div>
 		</div>
 	</Card>
-</section>
+</section> -->
 
 <!-- Social Proof -->
 <section class="section-divider relative overflow-hidden py-16">

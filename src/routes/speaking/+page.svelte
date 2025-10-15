@@ -103,86 +103,32 @@
 <div class="min-h-screen bg-gradient-to-br from-teal-50 to-blue-50 py-8 dark:from-gray-900 dark:to-gray-800">
         <div class="container mx-auto max-w-6xl px-6 py-8">
                 <!-- Header Section -->
-                <div class="text-center mb-12">
-                        <h1 class="text-4xl font-bold text-gray-900 dark:text-white mb-4">
+                <div class="text-center mb-4">
+                        <h1 class="text-4xl font-bold text-gray-900 dark:text-white mb-4 underline decoration-2 underline-offset-3">
                                 IELTS SPEAKING
                         </h1>
-                        <div class="max-w-6xl mx-auto px-6">
-                                <p class="text-xl text-gray-600 dark:text-gray-300 text-center py-4 mb-8">
-                                        The IELTS Speaking test takes the form of a face-to-face interview with a qualified IELTS speaking examiner. The interview follows a preset script and is split into three sections.
-                                </p>
+                        <div class="max-w-6xl mx-auto p-6 text-xl text-gray-300 text-left font-semibold">
+                                <p class='mb-2'>
+                                        The IELTS Speaking test takes the form of a face-to-face interview with a qualified IELTS speaking examiner.</p> 
+													<p>The interview follows a preset script and is split into three sections. </p>
                         </div>
                 </div>
 
                 <!-- Hero Section -->
                 <section
-                        class="relative bg-gradient-to-br from-teal-100 via-blue-50 to-indigo-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 mb-12 rounded-lg"
+                        class="relative bg-gradient-to-br from-teal-100 via-blue-50 to-indigo-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 mb-12 rounded-lg border border-gray-600"
                 >
                         <div class="absolute inset-0 bg-gradient-to-tr from-teal-200/20 to-transparent"></div>
-                        <div class="relative container mx-auto px-6 py-16 md:py-24">
-                                <div class="flex flex-col items-center gap-8 md:flex-row md:gap-12 lg:gap-16">
-                                        <div class="mb-10 w-full text-center md:mb-0 md:w-3/5 md:text-left">
+                        <div class="relative container mx-auto px-6 py-6 md:py-8">
+                              
+                                        <div class="mb-10 w-full text-center">
                                                 <h1 class="text-4xl font-bold text-gray-900 dark:text-white mb-4">
-                                                        Know your IELTS Band Score in <span class="text-teal-600 dark:text-teal-400"
-                                                                >under 3 minutes</span
+                                                        Know your IELTS Band Score in <span class="text-teal-600 dark:text-teal-400">under 3 minutes</span
                                                         >
                                                 </h1>
-
-                                                <p class="text-xl text-gray-600 dark:text-gray-300 mt-4">
-                                                        Get instant expert feedback on your speaking skills, based on official IELTS criteria.<br
-                                                        />
-                                                        <strong>No registration required</strong>
-                                                </p>
-
-                                                <List tag="ul" class="mt-6">
-                                                        <Li icon>
-                                                                <Check class="mr-2 h-5 w-5 text-teal-600 dark:text-teal-400" />
-                                                                Identify your key areas of weakness
-                                                        </Li>
-                                                        <Li icon>
-                                                                <Check class="mr-2 h-5 w-5 text-teal-600 dark:text-teal-400" />
-                                                                Detailed band score breakdown across all 4 criteria
-                                                        </Li>                           
-                                                        <Li icon>
-                                                                <Check class="mr-2 h-5 w-5 text-teal-600 dark:text-teal-400" />
-                                                                Personalised improvement tips from IELTS experts
-                                                        </Li>                           
-                                                </List>
-
-                                                <div
-                                                        class="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row md:justify-start"
-                                                >
-                                                        <Button
-                                                                href="/record"
-                                                                onclick={handleStartTest}
-                                                                color="primary"
-                                                                class="shadow-lg"
-                                                                size="lg"
-                                                        >
-                                                                Get My Speaking Score Now
-                                                                <ArrowRight class="ml-2 h-5 w-5" />
-                                                        </Button>
-
-                                                        <div class="flex items-center">
-                                                                <svg
-                                                                        class="mr-1 h-4 w-4 text-teal-600"
-                                                                        fill="none"
-                                                                        viewBox="0 0 24 24"
-                                                                        stroke="currentColor"
-                                                                >
-                                                                        <path
-                                                                                stroke-linecap="round"
-                                                                                stroke-linejoin="round"
-                                                                                stroke-width="2"
-                                                                                d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"
-                                                                        />
-                                                                </svg>
-                                                                <p class="text-sm text-gray-600 dark:text-gray-300">100% private - no account needed</p>
-                                                        </div>
-                                                </div>
                                         </div>
 
-                                        <div class="w-full md:w-2/5">
+                                        <div class="w-full">
                                                 <div class="relative mx-auto max-w-sm">
                                                         <div
                                                                 class="absolute inset-0 rotate-3 transform rounded-lg bg-teal-600 dark:bg-teal-500"
@@ -193,12 +139,8 @@
                                                                                 class="mb-4 inline-flex h-16 w-16 items-center justify-center rounded-full bg-teal-100 dark:bg-teal-800"
                                                                         >
                                                                                 <svg
-                                                                                        class="h-8 w-8 text-teal-600 dark:text-teal-300"
-                                                                                        fill="none"
-                                                                                        viewBox="0 0 24 24"
-                                                                                        stroke="currentColor"
-                                                                                >
-                                                                                        <path
+                                                                                        class="h-8 w-8 text-teal-600 dark:text-teal-300"                              fill="none"                                                                   viewBox="0 0 24 24"                                                           stroke="currentColor"
+                                                                                >                                                                                        <path
                                                                                                 stroke-linecap="round"
                                                                                                 stroke-linejoin="round"
                                                                                                 stroke-width="2"
@@ -206,7 +148,7 @@
                                                                                         />
                                                                                 </svg>
                                                                         </div>
-                                                                        <h4 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">IELTS Speaking Test</h4>
+                                                                        <h4 class="text-2xl font-semibold text-gray-900 dark:text-white mb-2">IELTS Speaking Test</h4>
                                                                         <p class="text-center text-gray-600 dark:text-gray-300">Free assessment in minutes</p>
                                                                 </div>
 
@@ -231,8 +173,7 @@
                                                         </FlowbiteCard>
                                                 </div>
                                         </div>
-                                </div>
-                        </div>
+                                </div>                        
                 </section>
 
                 <!-- Test Overview -->
@@ -278,7 +219,7 @@
                                                                 <Lightbox 
                                                                         src={part.image} 
                                                                         alt="{part.title} example"
-                                                                        className="w-full h-auto max-h-48 object-contain mx-auto rounded-lg border border-gray-200 dark:border-gray-700"
+                                                                        className="w-full h-auto max-h-48 object-contain mx-auto rounded-lg border border-gray-700"
                                                                 />
                                                         </div>
                                                         <p class="text-sm text-gray-600 dark:text-gray-300 mt-3">{part.description}</p>
