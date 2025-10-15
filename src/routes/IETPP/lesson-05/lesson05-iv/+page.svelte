@@ -457,7 +457,7 @@
         });
 </script>
 
-<div class="container mx-auto max-w-4xl px-6 py-12">
+<div class="min-h-screen bg-gray-900 text-white">
         <!-- Header -->
         <div class="max-w-5xl container mx-auto px-6 pt-8">
                 <div class="bg-gray-50 dark:bg-gray-800 rounded-lg px-6 py-2 mb-8">
