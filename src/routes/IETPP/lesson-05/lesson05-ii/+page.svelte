@@ -717,11 +717,11 @@
                                 <div class="text-xs text-left text-teal-600 dark:text-teal-400">
                                         IE2401_05.2
                                 </div>
-                                <h1 class="text-3xl font-bold mb-6">
+                                <h1 class="text-3xl font-bold text-white mb-7">
                                         IETPP
                                 </h1>
-                                <p class="text-3xl font-bold mb-8">
-                                        Reading Test
+                                <p class="text-3xl font-bold text-white my-7 tracking-wide underline decoration-2 underline-offset-4">
+                                        Final Test
                                 </p>
                         </div>
 
@@ -796,6 +796,7 @@
                         </div>
                 </div>
         {:else if isTestCompleted}
+                
                 <!-- Results Screen -->
                 <div class="container mx-auto px-6 py-8">
                         <div class="max-w-4xl mx-auto">
@@ -819,10 +820,12 @@
                         </div>
                 </div>
         {:else}
+                
                 <!-- Test Interface -->
-                <div class="mx-auto px-4">
+                <div class="mx-auto px-4 py-8 max-w-7xl">
                         <!-- Timer and Navigation Header -->
                         <div class="rounded-lg shadow-md p-4 mb-6 bg-white dark:bg-gray-800">
+                           <div class='text-center'>      <h1 class="text-4xl font-bold mb-8 text-gray-900 dark:text-gray-100 mt-4">Reading</h1></div>
                                 {#if showAnswers}
                                         <!-- Title Display when showing answers -->
                                         <div class="text-center mb-4">
@@ -860,7 +863,7 @@
                                 {/if}
 
                                 <!-- Navigation and Highlighting Controls -->
-                                <div class="flex flex-wrap justify-center gap-2 mb-4">
+                                <div class="flex flex-wrap justify-center gap-2 pt-6 mb-4">
                                         {#each [1, 2, 3] as section}
                                                 <button
                                                         onclick={() => goToSection(section)}
@@ -872,10 +875,10 @@
                                 </div>
                                 
                                 <!-- Highlighting Controls -->
-                                <div class="flex flex-wrap justify-center gap-2 mb-6">
+                                <div class="flex flex-wrap justify-center gap-2 pt-2 mb-6">
                                         <button
                                                 onclick={toggleHighlighting}
-                                                class="px-4 py-2 rounded-md font-medium transition-colors {highlightingEnabled ? 'bg-yellow-500 text-white' : 'bg-gray-200 text-gray-700 hover:bg-gray-300 dark:bg-gray-600 dark:text-gray-300 dark:hover:bg-gray-500'}"
+                                                class="px-4 py-2 rounded-md font-medium transition-colors {highlightingEnabled ? 'bg-yellow-500 text-white' : 'bg-gray-200 text-gray-700 hover:bg-gray-300 dark:bg-gray-600 dark:text-gray-300 dark:hover:bg-gray-500 border border-yellow-500'}"
                                         >
                                                 {highlightingEnabled ? '🖍️ Highlighting ON' : '🖍️ Enable Highlighting'}
                                         </button>
@@ -903,7 +906,7 @@
                                         <!-- Reading Passage 1 -->
                                         <div class="flex flex-col md:flex-row gap-6 items-start mb-6">
                                                 <!-- Reading Passage 1 -->
-                                                <div class="md:w-2/3 bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8 max-h-[70vh] overflow-y-auto">
+                                                <div class="md:w-2/3 bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8 max-h-[100vh] overflow-y-auto">
                                                         <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-6">Reading Passage 1</h2>
                                                         <div class="mb-6 rounded-lg bg-gray-50 p-6 dark:bg-gray-700">
                                                                 <p class="mb-4 text-gray-700 dark:text-gray-300">
@@ -940,7 +943,7 @@
                                                         </div>
                                                 </div>
                                                 <!-- Questions for Passage 1 -->
-                                                <div class="md:w-1/3 bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8 max-h-[70vh] overflow-y-auto">
+                                                <div class="md:w-1/3 bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8 max-h-[100vh] overflow-y-auto">
                                                         <!-- Questions 1-8 Block -->
                                                         <div class="question-block space-y-6">
                                                                 <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Questions 1-8</h3>
@@ -1142,7 +1145,7 @@
                                 {:else if currentSection === 2}
                                         <!-- Reading Passage 2 -->
                                         <div class="flex flex-col md:flex-row gap-6 items-start mb-6">
-                                                <div class="md:w-2/3 bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8 max-h-[70vh] overflow-y-auto">
+                                                <div class="md:w-2/3 bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8 max-h-[100vh] overflow-y-auto">
                                                         <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-6">Reading Passage 2</h2>
                                                         <div class="mb-6 rounded-lg bg-gray-50 p-6 dark:bg-gray-700">
                                                                 <p class="mb-4 text-gray-700 dark:text-gray-300">
@@ -1174,7 +1177,7 @@
                                                         </div>
                                                 </div>
                                                 <!-- Questions for Passage 2 -->
-                                                <div class="w-full md:w-1/3 bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8 max-h-[70vh] overflow-y-auto">
+                                                <div class="w-full md:w-1/3 bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8 max-h-[100vh] overflow-y-auto">
                                                         <!-- Questions 15-21 Block -->
                                                         <div class="question-block space-y-6">
                                                                 <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Questions 15-21</h3>
@@ -1496,7 +1499,7 @@
                                 {:else if currentSection === 3}
                                         <!-- Reading Passage 3 -->
                                         <div class="flex flex-col md:flex-row gap-6 items-start mb-6">
-                                                <div class="md:w-2/3 bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8 max-h-[70vh] overflow-y-auto">
+                                                <div class="md:w-2/3 bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8 max-h-[100vh] overflow-y-auto">
                                                         <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-6">Reading Passage 3</h2>
                                                         <div class="mb-6 rounded-lg bg-gray-50 p-6 dark:bg-gray-700">
                                                                 <p class="mb-4 text-gray-700 dark:text-gray-300">
@@ -1533,7 +1536,7 @@
                                                         </div>
                                                 </div>
                                                 <!-- Questions for Passage 3 -->
-                                                <div class="md:w-1/3 bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8 max-h-[70vh] overflow-y-auto">
+                                                <div class="md:w-1/3 bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8 max-h-[100vh] overflow-y-auto">
                                                         <!-- Questions 27-29 Block -->
                                                         <div class="question-block space-y-6">
                                                                 <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Questions 27-29</h3>
@@ -1854,12 +1857,12 @@
 
                                 <!-- Action Button - only show if not marked yet and on section 3 -->
                                 {#if !hasMarked && currentSection === 3}
-                                        <div class="mt-6 flex flex-col gap-4 items-center">
+                                        <div class="flex flex-col gap-4 max-w-5xl mx-auto items-center bg-gray-800 rounded-lg p-6 shadow-sm border border-gray-700 mt-16">
                                                 <button
                                                         type="button"
                                                         onclick={() => { if (!hasMarked && !isMarking) markTest(); }}
                                                         disabled={isMarking}
-                                                        class="inline-flex items-center justify-center px-8 py-4 bg-green-800 text-white font-medium rounded-lg hover:bg-green-700 transition-colors text-lg disabled:opacity-50 disabled:cursor-not-allowed"
+                                                        class="inline-flex items-center justify-center px-8 py-4 bg-green-800 text-white font-medium rounded-lg border border-white hover:bg-green-700 transition-colors text-lg disabled:opacity-50 disabled:cursor-not-allowed"
                                                 >
                                                         {#if isMarking}
                                                                 <svg class="animate-spin -ml-1 mr-3 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">

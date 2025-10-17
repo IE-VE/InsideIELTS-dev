@@ -404,19 +404,18 @@
 <svelte:window on:keydown={handleKeydown} />
 
 <div class="min-h-screen bg-gray-900 text-white">
-
-        <!-- Lesson Header -->
+        <!-- Header -->
         <div class="max-w-5xl container mx-auto px-6 pt-8">
                 <div class="bg-gray-50 dark:bg-gray-800 rounded-lg px-6 py-2 mb-8">
                         <div class="text-center">
                                 <div class="text-xs text-left text-teal-600 dark:text-teal-400">
                                         IE2401_05.1
                                 </div>
-                                <h1 class="text-3xl font-bold mb-6">
+                                <h1 class="text-3xl font-bold text-white mb-7">
                                         IETPP
                                 </h1>
-                                <p class="text-3xl font-bold mb-8">
-                                        Listening Test
+                                <p class="text-3xl font-bold text-white my-7 tracking-wide underline decoration-2 underline-offset-4">
+                                        Final Test
                                 </p>
                         </div>
 
@@ -436,8 +435,8 @@
 
         {#if showInstructions}
                 <!-- Instructions Screen -->
-                <div class="container mx-auto px-6 py-8">
-                        <div class="max-w-4xl mx-auto">
+                <div class="container mx-auto py-8">
+                        <div class="max-w-4xl mx-auto px-6">
                                 <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8">
                                         <h1 class="text-4xl font-bold text-center text-gray-900 dark:text-white mb-8">
                                                 IELTS Listening Test
@@ -452,8 +451,7 @@
                                                                 <li>• There are 4 listening sections with a variety of question types</li>
                                                                 <li>• Answer all questions - there is no penalty for incorrect answers</li>
                                                                 <li>• You can navigate between sections during the test</li>
-                                                                <li>• Listen to the audio and complete the questions</li>
-                                                        </ul>
+                                                                       </ul>
                                                 </div>
 
                                                 <div class="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-lg">
@@ -462,17 +460,17 @@
                                                                 <div class="text-center">
                                                                         <div class="font-semibold mb-3">Section 1</div>
                                                                         <div class="text-sm mb-4">Questions 1 - 10</div>
-                                                                        <div class="text-xs text-teal-200">Form Completion</div>
+                                                                        <div class="text-xs text-teal-200">Gap fill & Form completion</div>
                                                                 </div>
                                                                 <div class="text-center">
                                                                         <div class="font-semibold mb-3">Section 2</div>
                                                                         <div class="text-sm mb-4">Questions 11 - 20</div>
-                                                                        <div class="text-xs text-teal-200">Sentence & Plan</div>
+                                                                        <div class="text-xs text-teal-200">Sentence completion & Plan</div>
                                                                 </div>
                                                                 <div class="text-center">
                                                                         <div class="font-semibold mb-3">Section 3</div>
                                                                         <div class="text-sm mb-4">Questions 21 - 30</div>
-                                                                        <div class="text-xs text-teal-200">Multiple Choice</div>
+                                                                        <div class="text-xs text-teal-200">Multiple choice & Chart labeling</div>
                                                                 </div>
                                                                 <div class="text-center">
                                                                         <div class="font-semibold mb-3">Section 4</div>
@@ -495,16 +493,15 @@
                         </div>
                 </div>
         {:else}
-                <div class="max-w-4xl mx-auto px-4">
+                <div class="max-w-4xl mx-auto px-6 py-8">
                         <!-- Test Header -->
                         <div class="text-center mb-8">
-                                <h1 class="text-4xl font-bold mb-4 text-gray-900 dark:text-gray-100">IELTS Listening Test</h1>
-                                <p class="text-lg mb-6 text-gray-700 dark:text-gray-300">Complete practice test with all 4 sections - 40 questions total</p>
-
+                              
                                 <!-- Audio Player -->
-                                <div class="p-6 rounded-lg shadow-md mb-6 bg-white dark:bg-gray-800">
+                                <div class="p-8 rounded-lg shadow-md mb-6 bg-white dark:bg-gray-800">
+                                          <h1 class="text-4xl font-bold mb-8 text-gray-900 dark:text-gray-100">Listening</h1>
                                         <p class="text-sm mb-4 text-gray-600 dark:text-gray-400">Click to listen and answer the questions below.</p>
-                                        <audio controls class="w-full max-w-md mx-auto">
+                                        <audio controls class="w-full max-w-xl mx-auto">
                                                 <source src="/audio/ielts-listening_test1.mp3?v=2" type="audio/mpeg">
                                                 Your browser does not support the audio element.
                                         </audio>
@@ -825,10 +822,10 @@
                 <!-- Instructions -->
                 <div class="mt-8 border-l-4 border-teal-400 bg-teal-50 p-4 rounded-r-lg dark:bg-teal-900/20 dark:border-teal-500">
                         {#if currentSection === 4}
-                                <center><p class="text-sm text-gray-900 dark:text-gray-100">
+                                <center><p class="text-lg text-gray-900 dark:text-gray-100">
                                         <strong>END OF TEST</strong> 
                                 </p></center>   
-                                <p class="text-sm text-gray-900 dark:text-gray-100">
+                                <p class="text-m text-gray-900 dark:text-gray-100">
                                         In the real IELTS Listening Test you would now have 10 minutes to transfer your answers to the official answer sheet.
                                 </p>
                                 <p class="text-sm text-gray-900 dark:text-gray-100 mt-2">
@@ -841,10 +838,10 @@
                                         </a>
                                 </p>
                         {:else}
-                                <center><p class="text-sm text-gray-900 dark:text-gray-100">
+                                <center><p class="text-m text-gray-900 dark:text-gray-100">
                                         <strong>End of Section {currentSection}</strong> 
                                 </p>
-                                <p class="text-sm text-gray-900 dark:text-gray-100">
+                                <p class="text-m text-gray-900 dark:text-gray-100">
                                         Use any remaining time to check your answers and then move to the next section.
                                 </p></center>   
                         {/if}

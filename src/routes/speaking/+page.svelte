@@ -103,15 +103,15 @@
 <div class="min-h-screen bg-gradient-to-br from-teal-50 to-blue-50 py-8 dark:from-gray-900 dark:to-gray-800">
         <div class="container mx-auto max-w-6xl px-6 py-8">
                 <!-- Header Section -->
-                <div class="text-center mb-4">
+                <div class="text-center mb-8">
                         <h1 class="text-4xl font-bold text-gray-900 dark:text-white mb-4 underline decoration-2 underline-offset-3">
                                 IELTS SPEAKING
                         </h1>
-                        <div class="max-w-6xl mx-auto p-6 text-xl text-gray-300 text-left font-semibold">
+                        <!-- <div class="max-w-6xl mx-auto p-6 text-xl text-white text-left font-semibold">
                                 <p class='mb-2'>
                                         The IELTS Speaking test takes the form of a face-to-face interview with a qualified IELTS speaking examiner.</p> 
 													<p>The interview follows a preset script and is split into three sections. </p>
-                        </div>
+                        </div> -->
                 </div>
 
                 <!-- Hero Section -->
@@ -123,7 +123,7 @@
                               
                                         <div class="mb-10 w-full text-center">
                                                 <h1 class="text-4xl font-bold text-gray-900 dark:text-white mb-4">
-                                                        Know your IELTS Band Score in <span class="text-teal-600 dark:text-teal-400">under 3 minutes</span
+                                                        Know your Speaking Band Score in <span class="text-teal-600 dark:text-teal-400">under 3 minutes</span
                                                         >
                                                 </h1>
                                         </div>

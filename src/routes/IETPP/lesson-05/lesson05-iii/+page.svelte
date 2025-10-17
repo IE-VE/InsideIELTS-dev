@@ -156,11 +156,11 @@
                                 <div class="text-xs text-left text-teal-600 dark:text-teal-400">
                                         IE2401_05.3
                                 </div>
-                                <h1 class="text-3xl font-bold mb-6">
+                                <h1 class="text-3xl font-bold text-white mb-7">
                                         IETPP
                                 </h1>
-                                <p class="text-3xl font-bold mb-8">
-                                        Writing Test
+                                <p class="text-3xl font-bold text-white my-7 tracking-wide underline decoration-2 underline-offset-4">
+                                        Final Test
                                 </p>
                         </div>
 
@@ -201,12 +201,12 @@
                                                 </div>
 
                                                 <div class="bg-gray-200 dark:bg-gray-800 p-6 rounded-lg">
-                                                        <h3 class="text-lg font-semibold text-orange-700 dark:text-orange-300 mb-4">Assessment Criteria</h3>
-                                                        <ul class="space-y-1 text-sm">
+                                                        <h3 class="text-xl font-semibold text-orange-700 dark:text-orange-300 mb-4">Assessment Criteria</h3>
+                                                        <ul class="space-y-1">
                                                                 <li>• <strong>Task Achievement/Response:</strong> How well you address the task requirements</li>
                                                                 <li>• <strong>Coherence & Cohesion:</strong> Organisation and flow of your writing</li>
                                                                 <li>• <strong>Lexical Resource:</strong> Range and accuracy of vocabulary</li>
-                                                                <li>• <strong>Grammatical Range & Accuracy:</strong> Grammar variety and correctness</li>
+                                                                <li>• <strong>Grammatical Range & Accuracy:</strong> Range and accuracy of grammar</li>
                                                         </ul>
                                                 </div>
                                                 <div class="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-lg mt-8">
@@ -296,6 +296,7 @@
                 <div class="max-w-6xl mx-auto px-4">
                         <!-- Timer and Navigation Header -->
                         <div class="rounded-lg shadow-md p-4 mb-6 bg-white dark:bg-gray-800">
+                                   <div class='text-center'>      <h1 class="text-4xl font-bold mb-8 text-gray-900 dark:text-gray-100 mt-4">Writing</h1></div>
                                 <!-- Timer Display -->
                                 <div class="text-center mb-4">
                                         <div class="text-2xl font-bold text-teal-600 dark:text-teal-400">
@@ -324,7 +325,7 @@
                                 </div>
 
                                 <!-- Task Navigation Buttons -->
-                                <div class="flex justify-center gap-2">
+                                <div class="flex justify-center gap-2 pt-6 mb-4">
                                         {#each [1, 2] as task}
                                                 <button
                                                         onclick={() => goToTask(task)}
@@ -546,10 +547,10 @@
 
                                 <!-- Complete Test Button -->
                                 {#if currentTask === 2}
-                                        <div class="mt-6 flex justify-center">
+                                         <div class="flex flex-col gap-4 max-w-5xl mx-auto items-center bg-gray-800 rounded-lg p-6 shadow-sm border border-gray-700 mt-10">
                                                 <button
                                                         onclick={completeTest}
-                                                        class="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-8 rounded-lg text-lg transition-colors"
+                                                        class="bg-green-600 hover:bg-green-700 border border-white text-white font-bold py-2 px-4 rounded-lg text-lg transition-colors"
                                                 >
                                                         Submit my Responses
                                                 </button>
@@ -559,21 +560,7 @@
                 </div>
         {/if}
 
-        <!-- Footer Navigation -->
-        <div class="max-w-5xl container mx-auto px-6 py-8">
-                <div class="bg-gray-800 rounded-lg p-6 shadow-sm border border-gray-700">
-                        <div class="flex justify-between items-center">
-                                <a
-                                        href="/IETPP#lesson-05"
-                                        class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300 font-semibold"
-                                        data-sveltekit-reload
-                                >
-                                        ← Back to Contents
-                                </a>
-                                <p class="text-white">End of Lesson 05-iii</p>
-                        </div>
-                </div>
-        </div>
+     
 </div>
 
 <style>

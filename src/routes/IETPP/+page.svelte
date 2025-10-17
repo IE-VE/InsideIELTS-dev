@@ -31,29 +31,19 @@
                                                 InsideIELTS Test Preparation Program
                                         </h1>
                                         <p class="mb-8 text-lg">
-                                                The <b>IETPP</b> course is a <b>28 lesson</b>
-                                                introductory program designed to give test candidates a full insight into the make-up,
-                                                skill requirements and assessment procedures of the <b>IELTS</b> test.
+                                                The <b>IETPP</b> course is a <b>28 lesson</b> introductory program designed to give test candidates a full insight into the make-up,        skill requirements and assessment procedures of the <b>IELTS</b> test.
                                         </p>
 
                                         <p class="mb-6">
-                                                The course is divided into <b>4 sections</b>, each dealing with one of the <b>4</b>
-                                                assessed <b>IELTS</b> skills. Each section begins with an introduction lesson/s containing
-                                                an explanation of test requirements and assessment procedures with demonstration and practice
-                                                exercises, followed by in-depth skill focused lessons with <b>Skill Check</b> exercises
-                                                to test understanding of key concepts and give practice of specific assessed elements of
-                                                the <b>IELTS</b> test.
+                                                The course is divided into 5 sections covering <b>Listening, Reading, Writing & Speaking</b> with a final <b>full IELTS format assessment test</b> to finish. Each section begins with an introductory lesson/s covering the test requirements and assessment procedures for each skill with demonstration and practice exercises. Section lessons provide in-depth skill focused materials with <b>Skill Check</b> exercises to test understanding of key concepts and give real practice of specific assessed elements of the <b>IELTS</b> test.
                                         </p>
 
                             
                                         <p>
-                                                Personal feedback is given on all <b>Skill Check</b> exercises through the
-                                                <a href="#" class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300 font-bold"
-                                                        >IE Member's Feedback</a
-                                                > page.
+                                                Personal feedback is given on all <b>Skill Check</b> exercises through the <a href="#" class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300 font-bold">IE Member's Feedback</a> page.
                                         </p>
                                         <div class="border-b-2 border-gray-800 dark:border-gray-200 pb-10 mt-6">
-                                             <p>  For additional in-depth explanation click on the <b>Virtual Examiner Video</b> buttons in each section.
+                                             <p>  For additional in-depth explanation of materials click on the <b>Virtual Examiner Video</b> buttons in each section.
                                         </p>
                                         <div class="text-center mt-10">
                                                 <a

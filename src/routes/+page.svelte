@@ -113,7 +113,7 @@
 		InsideIELTS
 	</h1>
 
-	<p class="mb-10 text-center text-lg">
+	<p class="mb-10 text-center text-xl">
 		Comprehensive personalised training for all IELTS skills.
 	</p>
 

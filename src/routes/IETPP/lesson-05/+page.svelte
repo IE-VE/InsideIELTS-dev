@@ -48,8 +48,8 @@
 				<h1 class="text-3xl font-bold text-white mb-7">
 					IETPP
 				</h1>
-				<p class="text-3xl font-bold text-white my-7">
-					Final Full Test
+				<p class="text-3xl font-bold text-white my-7 tracking-wide underline decoration-2 underline-offset-4">
+					Final Test
 				</p>
 			</div>
 
@@ -110,6 +110,7 @@
 																</button>
 												</a>
 										 </div>
+										<p class="text-lg pt-6">Your scores and feedback will be posted to the <b>Member's Page</b>.																					</p>
 									</div>
 					</div>
 	</section>

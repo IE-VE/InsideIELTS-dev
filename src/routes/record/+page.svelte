@@ -451,6 +451,9 @@
 <div class="container mx-auto max-w-4xl px-6 py-12">
         <!-- Header -->
         <div class="mb-12 text-center">
+                <h1 class="text-3xl font-bold text-white mb-8 inline-block px-8 py-4 rounded-xl bg-gradient-to-r from-cyan-600 via-teal-600 to-cyan-700 shadow-xl shadow-cyan-500/30 border-2 border-cyan-400/50">
+                        IE SPEAKING Quick-Test
+                </h1>
                 <P class="text-center" size="xl">
                         {#if session?.status === 'completed'}
                                 Review your answers and get your detailed analysis.

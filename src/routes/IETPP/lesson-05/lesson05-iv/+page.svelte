@@ -465,11 +465,11 @@
                                 <div class="text-xs text-left text-teal-600 dark:text-teal-400">
                                         IE2401_05.4
                                 </div>
-                                <h1 class="text-3xl font-bold mb-6">
+                                <h1 class="text-3xl font-bold text-white mb-7">
                                         IETPP
                                 </h1>
-                                <p class="text-3xl font-bold mb-8">
-                                        Speaking Test
+                                <p class="text-3xl font-bold text-white my-7 tracking-wide underline decoration-2 underline-offset-4">
+                                        Final Test
                                 </p>
                         </div>
 
@@ -499,33 +499,39 @@
                                         <div class="space-y-6 text-gray-700 dark:text-gray-300">
                                                 <div class="bg-teal-50 dark:bg-teal-900/20 p-6 rounded-lg">
                                                         <h2 class="text-xl font-semibold text-teal-700 dark:text-teal-300 mb-4">Test Instructions</h2>
-                                                        <ul class="space-y-2">
-                                                                <li>• Time allowed: <strong>11-14 minutes</strong></li>
-                                                                <li>• Number of questions: <strong>3 Part 1 questions</strong></li>
-                                                                <li>• Each question allows up to <strong>45 seconds</strong> for your response</li>
-                                                                <li>• You can choose to record with <strong>video</strong> or <strong>audio only</strong></li>
-                                                                <li>• Speak naturally and aim for at least 30 seconds per answer</li>
-                                                                <li>• Your responses will be analyzed for Fluency, Vocabulary, Grammar, and Pronunciation</li>
+                                                        <ul class="space-y-2 font-semibold">
+                                                                <li>• Interview format : 3 sections - 11-14 minutes</li>
+                                                                     <li>• Speak naturally and extend your answers</li>
+                                                                <li>• Follow instructions given by the Virtual Examiner</li>
+                                                                     <li>• Your responses will be assessed using the official IELTS Speaking Test assessment rubric</li>
                                                         </ul>
                                                 </div>
-
+                                                <div class="bg-gray-200 dark:bg-gray-800 p-6 rounded-lg">
+                                                        <h3 class="text-xl font-semibold text-orange-700 dark:text-orange-300 mb-4">Assessment Criteria</h3>
+                                                        <ul class="space-y-1">
+                                                                <li>• <strong>Fluency & Coherence:</strong> Fluency of communication</li>
+                                                                <li>• <strong>Lexical Resource:</strong> Range and accuracy of vocabulary</li>
+                                                                     <li>• <strong>Grammatical Range & Accuracy:</strong> Range and accuracy of grammar</li>
+                                                                     <li>• <strong>Pronunciation:</strong> Use of phonological features and ease of understanding</li>
+                                                        </ul>
+                                                </div>
                                                 <div class="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-lg">
                                                         <center><h3 class="text-lg font-semibold text-blue-700 dark:text-blue-300 mb-3">Speaking Test Sections</h3></center>
                                                         <div class="grid md:grid-cols-3 gap-4">
                                                                 <div class="text-center">
-                                                                        <div class="font-semibold mb-3">Question 1</div>
-                                                                        <div class="text-sm mb-4">Part 1 Topic</div>
-                                                                        <div class="text-xs text-teal-200">[ 45 seconds max ]</div>
+                                                                        <div class="font-semibold mb-3">Section 1</div>
+                                                                        <div class="text-sm mb-4"> Intro plus two Part 1 Topics</div>
+                                                                        <div class="text-xs text-teal-200">[ 5 minutes max ]</div>
                                                                 </div>
                                                                 <div class="text-center">
-                                                                        <div class="font-semibold mb-3">Question 2</div>
-                                                                        <div class="text-sm mb-4">Part 1 Topic</div>
-                                                                        <div class="text-xs text-teal-200">[ 45 seconds max ]</div>
+                                                                        <div class="font-semibold mb-3">Section 2</div>
+                                                                        <div class="text-sm mb-4">Part 2 Long-turn</div>
+                                                                        <div class="text-xs text-teal-200">[ 4 minutes max ]</div>
                                                                 </div>
                                                                 <div class="text-center">
-                                                                        <div class="font-semibold mb-3">Question 3</div>
-                                                                        <div class="text-sm mb-4">Part 1 Topic</div>
-                                                                        <div class="text-xs text-teal-200">[ 45 seconds max ]</div>
+                                                                        <div class="font-semibold mb-3">Section 3</div>
+                                                                        <div class="text-sm mb-4">Part 3 discussion</div>
+                                                                        <div class="text-xs text-teal-200">[ 5 minutes max ]</div>
                                                                 </div>
                                                         </div>
                                                 </div>
@@ -544,14 +550,15 @@
                 </div>
         {:else}
                 <!-- Page Content -->
-                <div class="mb-12 text-center">
-                        <P class="text-center" size="xl">
+                <div class="mt-4 mb-8 text-center  w-full max-w-5xl mx-auto">
+                        <!-- <P class="text-center" size="xl">
                                 {#if session?.status === 'completed'}
                                         Review your answers and get your detailed analysis.
                                 {:else}
                                         Answer the three Part 1 questions. Try to talk for at least 30 seconds for each answer.
                                 {/if}
-                        </P>
+                        </P> -->
+                        <h1 class="text-4xl font-bold mb-8 text-gray-900 dark:text-gray-100">Speaking</h1>
                 </div>
 
                 {#if session?.status === 'completed' && session && recordings}
