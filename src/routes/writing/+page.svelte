@@ -150,7 +150,7 @@
                                                         <div
                                                                 class="absolute inset-0 rotate-3 transform rounded-lg bg-teal-600 dark:bg-teal-500"
                                                         ></div>
-                                                        <FlowbiteCard class="relative shadow-lg p-6">
+                                                        <FlowbiteCard class="relative shadow-lg p-6 !max-w-none w-full">
                                                                 <div class="mb-6 text-center">
                                                                         <div
                                                                                 class="mb-4 inline-flex h-16 w-16 items-center justify-center rounded-full bg-teal-100 dark:bg-teal-800"
