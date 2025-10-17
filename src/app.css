@@ -116,3 +116,25 @@
 .p-6 {
 	padding: 1.25rem; /* 20px instead of 24px (equivalent to p-5) */
 }
+
+/* Text outline utilities */
+.text-outline-sm {
+	-webkit-text-stroke: 1px var(--color-neutral-900);
+	text-stroke: 1px var(--color-neutral-900);
+}
+
+.text-outline {
+	-webkit-text-stroke: 2px var(--color-neutral-900);
+	text-stroke: 2px var(--color-neutral-900);
+}
+
+.text-outline-lg {
+	-webkit-text-stroke: 3px var(--color-neutral-900);
+	text-stroke: 3px var(--color-neutral-900);
+}
+
+/* Light outline for dark backgrounds */
+.text-outline-light {
+	-webkit-text-stroke: 2px var(--color-neutral-50);
+	text-stroke: 2px var(--color-neutral-50);
+}
