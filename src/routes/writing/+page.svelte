@@ -138,16 +138,15 @@
                         class="relative bg-gradient-to-br from-teal-100 via-blue-50 to-indigo-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 mb-12 rounded-lg border border-gray-600"
                 >
                         <div class="absolute inset-0 bg-gradient-to-tr from-teal-200/20 to-transparent"></div>
-                        <div class="relative container mx-auto px-6 py-6 md:py-8">
+                        <div class="relative px-6 py-6 md:py-8">
                               
-                                        <div class="mx-auto max-w-2xl">
-                                                <div class="mb-10 w-full text-center p-6 bg-gray-800/10 dark:bg-gray-700/20 rounded-lg">
+                                                <div class="mx-auto max-w-2xl mb-10 text-center p-6 bg-gray-800/10 dark:bg-gray-700/20 rounded-lg">
                                                         <h1 class="text-4xl font-bold text-gray-900 dark:text-white">
                                                                 Get your Writing Score in <span class="text-teal-600 dark:text-teal-400">just 10 minutes</span>
                                                         </h1>
                                                 </div>
 
-                                                <div class="relative w-full">
+                                                <div class="mx-auto max-w-2xl relative">
                                                         <div
                                                                 class="absolute inset-0 rotate-3 transform rounded-lg bg-teal-600 dark:bg-teal-500"
                                                         ></div>
@@ -194,7 +193,6 @@
                                                                 </Button>
                                                         </FlowbiteCard>
                                                 </div>
-                                        </div>
                         </div>
                 </section>
 
