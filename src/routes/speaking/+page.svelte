@@ -123,7 +123,7 @@
                               
                                         <div class="mb-10 w-full text-center">
                                                 <h1 class="text-4xl font-bold text-gray-900 dark:text-white mb-4">
-                                                        Know your Speaking Band Score in <span class="text-teal-600 dark:text-teal-400">under 3 minutes</span
+                                                        Know your  Band Score in <span class="text-teal-600 dark:text-teal-400">under 3 minutes</span
                                                         >
                                                 </h1>
                                         </div>

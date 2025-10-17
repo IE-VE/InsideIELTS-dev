@@ -4,6 +4,18 @@ InsideIELTS is an AI-powered IELTS preparation platform offering free speaking t
 
 # Recent Changes
 
+## October 17, 2025
+- **Writing Page Hero Section**: Added Hero Section to /writing page between Header and Test Overview
+  - Content: "Get your Writing Score in just 10 minutes" headline with teal highlight, writing icon, test card
+  - Features: "Complete one writing task", "Get AI-powered band score", "Receive detailed feedback" with checkmarks
+  - Design: Gradient background (teal-blue-indigo), rotated card effect, teal CTA button to /writing/practice
+  - Components: FlowbiteCard, List, Li, Check icon from lucide-svelte, tracking analytics on test start
+  - Structure: Matches speaking page pattern for consistent user experience across skill sections
+- **Record Page Heading Styling**: Enhanced "IE SPEAKING Quick-Test" heading with cyan gradient background
+  - Design: Gradient from cyan-600 to teal-600 to cyan-700, glowing shadow effect (shadow-cyan-500/30)
+  - Style: Extra-large rounded corners, cyan border with 50% opacity, generous padding, larger text size
+  - Result: Eye-catching gradient badge with glowing cyan aura matching the cyan/teal theme
+
 ## October 15, 2025
 - **Speaking Test Instructions Screen**: Added comprehensive instructions screen to lesson05-iv matching Reading/Listening Test format
   - Features: Test instructions (11-14 minutes, 3 Part 1 questions, 45 seconds per response), video/audio recording options, analysis criteria
