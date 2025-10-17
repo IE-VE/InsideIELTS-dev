@@ -147,7 +147,7 @@
                                         </div>
 
                                         <div class="w-full">
-                                                <div class="relative mx-auto max-w-sm">
+                                                <div class="relative mx-auto max-w-2xl">
                                                         <div
                                                                 class="absolute inset-0 rotate-3 transform rounded-lg bg-teal-600 dark:bg-teal-500"
                                                         ></div>
