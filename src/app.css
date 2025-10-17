@@ -138,3 +138,14 @@
 	-webkit-text-stroke: 2px var(--color-neutral-50);
 	text-stroke: 2px var(--color-neutral-50);
 }
+
+/* Ultra-thin text outlines */
+.text-outline-xs {
+	-webkit-text-stroke: 0.5px var(--color-neutral-900);
+	text-stroke: 0.5px var(--color-neutral-900);
+}
+
+.text-outline-xs-light {
+	-webkit-text-stroke: 0.5px var(--color-neutral-50);
+	text-stroke: 0.5px var(--color-neutral-50);
+}
