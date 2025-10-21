@@ -149,7 +149,7 @@
 				>
 			<h2 class="mb-2 text-2xl text-center font-bold text-teal-600 dark:text-teal-400">Reading</h2>
 			<p class="text-gray-600 dark:text-gray-300">
-				Complete Reading Test preparation materials plus <b>free Reading skills evaluation</b> with feedback and band score.
+				Complete Reading Test preparation materials plus <b>free Reading skills evaluation</b> with feedback and score.
 			</p>
 			<div class="mt-4 text-sm font-medium text-teal-600 dark:text-teal-400">READING FREETEST →</div>
 		</a>
@@ -161,7 +161,7 @@
 				>
 			<h2 class="mb-2 text-2xl text-center font-bold text-teal-600 dark:text-teal-400">Listening</h2>
 			<p class="text-gray-600 dark:text-gray-300">
-				Complete Listening Test preparation materials plus <b>free Listening skills evaluation</b> with feedback and band score.
+				Complete Listening Test preparation materials plus <b>free Listening skills evaluation</b> with feedback and score.
 			</p>
 			<div class="mt-4 text-sm font-medium text-teal-600 dark:text-teal-400">LISTENING FREETEST →</div>
 		</a>

@@ -150,42 +150,27 @@
 	{#if showInstructions}
 		<!-- Instructions Screen -->
 		<div class="container mx-auto px-6 py-8">
+	<div class="text-center mb-12">		<h1 class="text-3xl text-center font-black text-white mb-8 inline-block px-10 py-3 rounded-xl bg-gradient-to-r from-cyan-500 via-teal-500 to-cyan-600 shadow-xl shadow-cyan-500/30 border border-white">
+							IE WRITING Quick-Test
+			</h1>
+		<p class="text-xl mb-6">You will be given a short writing task that replicates Writing Test reqirements.			
+		</p></div>
+	
 			<div class="max-w-4xl mx-auto">
-				<div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8">
-					<h1 class="text-4xl font-bold text-center text-gray-900 dark:text-white mb-8">
-						IELTS Writing Practice Test 1
-					</h1>
+				<div class="bg-gray-800 border border-gray-600 rounded-lg shadow-lg p-8">			
 
 					<div class="space-y-6 text-gray-700 dark:text-gray-300">
-						<div class="bg-teal-50 dark:bg-teal-900/20 p-6 rounded-lg">
+						<div class="bg-teal-900/20 p-6 rounded-lg">
 							<h2 class="text-xl font-semibold text-teal-700 dark:text-teal-300 mb-4">Test Instructions</h2>
 							<ul class="space-y-2">
-								<li>• Time allowed: <strong>60 minutes</strong></li>
-								<li>• Number of tasks: <strong>2</strong></li>
-								<li>• <strong>Task 1</strong>: At least <strong>150 words</strong> (20 minutes recommended)</li>
-								<li>• <strong>Task 2</strong>: At least <strong>250 words</strong> (40 minutes recommended)</li>
-								<li>• Choose between Academic or General Training version</li>
-								<li>• Your progress will be saved automatically</li>
+								<li>• Time allowed: <strong>12 minutes</strong></li>
+								<li>• Number of tasks: <strong>1</strong></li>
+								<li>• <strong>Length</strong>: write at least <strong>100 words</strong></li>
+							<li>• Your progress will be saved automatically</li>
 							</ul>
 						</div>
 
-						<div class="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-lg">
-							<h3 class="text-lg font-semibold text-blue-700 dark:text-blue-300 mb-3">Test Versions</h3>
-							<div class="grid md:grid-cols-2 gap-4">
-								<div class="text-center">
-									<div class="font-semibold">Academic</div>
-									<div class="text-sm">Task 1: Describe charts/graphs/diagrams</div>
-									<div class="text-sm">Task 2: Academic essay</div>
-								</div>
-								<div class="text-center">
-									<div class="font-semibold">General Training</div>
-									<div class="text-sm">Task 1: Write a letter</div>
-									<div class="text-sm">Task 2: General essay</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="bg-gray-200 dark:bg-gray-800 p-6 rounded-lg">
+						<div class="bg-blue-800/10 p-6 rounded-lg">							
 							<h3 class="text-lg font-semibold text-orange-700 dark:text-orange-300 mb-3">Assessment Criteria</h3>
 							<ul class="space-y-1 text-sm">
 								<li>• <strong>Task Achievement/Response:</strong> How well you address the task requirements</li>
@@ -199,7 +184,7 @@
 					<div class="text-center mt-8">
 						<button
 							onclick={startTest}
-							class="bg-teal-600 hover:bg-teal-700 text-white font-bold py-3 px-8 rounded-lg text-lg transition-colors"
+							class="bg-teal-600 hover:bg-teal-700 text-white font-bold py-3 px-8 rounded-lg text-lg border border-white transition-colors"
 						>
 							Start Writing Test
 						</button>
