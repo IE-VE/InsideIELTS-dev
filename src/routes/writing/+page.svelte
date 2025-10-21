@@ -200,7 +200,7 @@
                 <div class="mb-12">
                         <Card variant="secondary">
                                 <h2 class="text-2xl font-semibold text-gray-900 dark:text-white mb-6 text-center">
-                                        Format
+                                        Writing Test Format
                                 </h2>
                                 <p class="text-left mb-4 text-xl">You have 60 minutes to complete both tasks. Task 1 is worth one-third of the marks, and Task 2 is worth two-thirds, so you should spend approximately 20 minutes on Task 1 and 40 minutes on Task 2.
                                 </p>

@@ -116,31 +116,89 @@
 
                 <!-- Hero Section -->
                 <section
-                        class="relative bg-gradient-to-br from-teal-100 via-blue-50 to-indigo-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 mb-12 rounded-lg border border-gray-600"
+                        class="relative bg-gradient-to-br from-teal-100 via-blue-50 to-indigo-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 mb-20"
                 >
                         <div class="absolute inset-0 bg-gradient-to-tr from-teal-200/20 to-transparent"></div>
-                        <div class="relative container mx-auto px-6 py-6 md:py-8">
-                              
-                                        <div class="mb-10 w-full text-center">
-                                                <h1 class="text-4xl font-bold text-gray-900 dark:text-white mb-4">
-                                                        Know your  Band Score in <span class="text-teal-600 dark:text-teal-400">under 3 minutes</span
+                        <div class="relative container mx-auto px-10 py-16 md:py-24">
+                                <div class="flex flex-col items-center gap-8 md:flex-row md:gap-12 lg:gap-16">
+                                        <div class="mb-10 w-full text-center md:mb-0 md:w-3/5 md:text-left">
+                                                <Heading tag="h1">
+                                                        Know your IELTS Band Score in <span class="text-teal-600 dark:text-teal-400"
+                                                                >under 3 minutes</span
                                                         >
-                                                </h1>
+                                                </Heading>
+
+                                                <P size="xl" class="mt-4">
+                                                        Get instant expert feedback on your speaking skills, based on official IELTS criteria.<br
+                                                        />
+                                                        <strong>No registration required</strong>
+                                                </P>
+
+                                                <List tag="ul" class="mt-6">
+                                                        <Li icon>
+                                                                <Check class="mr-2 h-5 w-5 text-teal-600 dark:text-teal-400" />
+                                                                Identify your key areas of weakness
+                                                        </Li>
+                                                        <Li icon>
+                                                                <Check class="mr-2 h-5 w-5 text-teal-600 dark:text-teal-400" />
+                                                                Detailed band score breakdown across all 4 criteria
+                                                        </Li>				
+                                                        <Li icon>
+                                                                <Check class="mr-2 h-5 w-5 text-teal-600 dark:text-teal-400" />
+                                                                Personalised improvement tips from IELTS experts
+                                                        </Li>				
+                                                </List>
+
+                                                <div
+                                                        class="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row md:justify-start"
+                                                >
+                                                        <Button
+                                                                href="/record"
+                                                                onclick={handleStartTest}
+                                                                color="primary"
+                                                                class="shadow-lg"
+                                                                size="lg"
+                                                        >
+                                                                Get My Speaking Score Now
+                                                                <ArrowRight class="ml-2 h-5 w-5" />
+                                                        </Button>
+
+                                                        <div class="flex items-center">
+                                                                <svg
+                                                                        class="mr-1 h-4 w-4 text-teal-600"
+                                                                        fill="none"
+                                                                        viewBox="0 0 24 24"
+                                                                        stroke="currentColor"
+                                                                >
+                                                                        <path
+                                                                                stroke-linecap="round"
+                                                                                stroke-linejoin="round"
+                                                                                stroke-width="2"
+                                                                                d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"
+                                                                        />
+                                                                </svg>
+                                                                <P size="sm">100% private - no account needed</P>
+                                                        </div>
+                                                </div>
                                         </div>
 
-                                        <div class="w-full">
+                                        <div class="w-full md:w-2/5">
                                                 <div class="relative mx-auto max-w-sm">
                                                         <div
                                                                 class="absolute inset-0 rotate-3 transform rounded-lg bg-teal-600 dark:bg-teal-500"
                                                         ></div>
-                                                        <FlowbiteCard class="relative shadow-lg">
+                                                        <Card class="relative shadow-lg">
                                                                 <div class="mb-6 text-center">
                                                                         <div
                                                                                 class="mb-4 inline-flex h-16 w-16 items-center justify-center rounded-full bg-teal-100 dark:bg-teal-800"
                                                                         >
                                                                                 <svg
-                                                                                        class="h-8 w-8 text-teal-600 dark:text-teal-300"                              fill="none"                                                                   viewBox="0 0 24 24"                                                           stroke="currentColor"
-                                                                                >                                                                                        <path
+                                                                                        class="h-8 w-8 text-teal-600 dark:text-teal-300"
+                                                                                        fill="none"
+                                                                                        viewBox="0 0 24 24"
+                                                                                        stroke="currentColor"
+                                                                                >
+                                                                                        <path
                                                                                                 stroke-linecap="round"
                                                                                                 stroke-linejoin="round"
                                                                                                 stroke-width="2"
@@ -148,8 +206,8 @@
                                                                                         />
                                                                                 </svg>
                                                                         </div>
-                                                                        <h4 class="text-2xl font-semibold text-gray-900 dark:text-white mb-2">IELTS Speaking Test</h4>
-                                                                        <p class="text-center text-gray-600 dark:text-gray-300">Free assessment in minutes</p>
+                                                                        <Heading tag="h4">IELTS Speaking Test</Heading>
+                                                                        <P class="text-center">Free assessment in minutes</P>
                                                                 </div>
 
                                                                 <List tag="ul" class="mb-6 space-y-3">
@@ -170,17 +228,18 @@
                                                                 <Button href="/record" onclick={handleStartTest} color="primary">
                                                                         Start Free Test
                                                                 </Button>
-                                                        </FlowbiteCard>
+                                                        </Card>
                                                 </div>
                                         </div>
-                                </div>                        
+                                </div>
+                        </div>
                 </section>
 
                 <!-- Test Overview -->
                 <div class="mb-12">
                         <Card variant="secondary">
                                 <h2 class="text-2xl font-semibold text-gray-900 dark:text-white mb-6 text-center">
-                                        Test Format
+                                        Speaking Test Format
                                 </h2>
                                 <p class="text-left mb-4 text-xl">The speaking test is a face-to-face interview lasting <b>13-14 minutes</b> in total. After a short introduction, you will answer 8 short questions on two topics, followed by a 2-minute long turn, and finally a discussion on topics related to your long turn response.
                                 </p>
