@@ -222,7 +222,7 @@
                                                                         </Li>
                                                                 </List>
 
-                                                                <Button href="/record" onclick={handleStartTest} color="primary">
+                                                                <Button href="/record" onclick={handleStartTest} color="primary" class="w-full">
                                                                         Start Free Test
                                                                 </Button>
                                                         </Card>
