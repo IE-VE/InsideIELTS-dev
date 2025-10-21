@@ -119,36 +119,33 @@
                         class="relative bg-gradient-to-br from-teal-100 via-blue-50 to-indigo-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 mb-20 rounded-xl"
                 >
                         <div class="absolute inset-0 bg-gradient-to-tr from-teal-200/20 to-transparent rounded-xl"></div>
-                        <div class="relative container mx-auto px-10 py-16 md:py-24">
+                        <div class="relative container mx-auto px-10 py-8 md:py-12">
+                                <h1 class="mb-8 text-center text-5xl font-bold text-white">
+                                        Begin your <span class="text-teal-400"
+                                                >IE STUDY JOURNEY</span> now
+                                </h1>
                                 <div class="flex flex-col items-center gap-8 md:flex-row md:gap-12 lg:gap-16">
                                         <div class="mb-10 w-full text-center md:mb-0 md:w-3/5 md:text-left">
-                                                <Heading tag="h1">
-                                                        Know your IELTS Band Score in <span class="text-teal-600 dark:text-teal-400"
-                                                                >under 3 minutes</span
-                                                        >
-                                                </Heading>
+                                                                             
+                                                <p class="mt-4 text-xl">                                                        At <b>InsideIELTS</b> we provide tailormade study programs designed to get you to your goal as quickly, easily and efficiently as possible.
+                                                </p>
+                                                <p class="mt-6 text-left text-xl">                                                          <strong>Our unique program offers : </strong>
+                                                </p>
 
-                                                <P size="xl" class="mt-4">
-                                                        Get instant expert feedback on your speaking skills, based on official IELTS criteria.<br
-                                                        />
-                                                        <strong>No registration required</strong>
-                                                </P>
-
-                                                <List tag="ul" class="mt-6">
-                                                        <Li icon>
-                                                                <Check class="mr-2 h-5 w-5 text-teal-600 dark:text-teal-400" />
-                                                                Identify your key areas of weakness
+                                                <List tag="ul" class="mt-3">
+                                                        <Li icon class="mb-1">
+                                                                <Check class="mr-2 h-5 w-5 text-teal-400" />                                                             Cutting-edge language analysis technology
+                                                        </Li>
+                                                        <Li icon class="mb-1">
+                                                                <Check class="mr-2 h-5 w-5 text-teal-400" />                                                             Inside-knowledge of official IELTS assessment procedures 
                                                         </Li>
                                                         <Li icon>
-                                                                <Check class="mr-2 h-5 w-5 text-teal-600 dark:text-teal-400" />
-                                                                Detailed band score breakdown across all 4 criteria
-                                                        </Li>				
-                                                        <Li icon>
-                                                                <Check class="mr-2 h-5 w-5 text-teal-600 dark:text-teal-400" />
-                                                                Personalised improvement tips from IELTS experts
-                                                        </Li>				
-                                                </List>
-
+                                                                <Check class="mr-2 h-5 w-5 text-teal-400" />
+                                                                Real support from real IELTS examiners
+                                                        </Li>
+                                                                                            </List>
+                                                
+                                                <p class="mt-4 text-xl">Identify your specific areas of weakness and achieve your goals faster — with smarter, precision-focused learning designed for real results.                                              </p>
                                                 <div
                                                         class="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row md:justify-start"
                                                 >
