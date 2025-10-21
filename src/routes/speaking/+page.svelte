@@ -118,7 +118,7 @@
                 <section
                         class="relative bg-gradient-to-br from-teal-100 via-blue-50 to-indigo-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 mb-20 rounded-xl"
                 >
-                        <div class="absolute inset-0 bg-gradient-to-tr from-teal-200/20 to-transparent"></div>
+                        <div class="absolute inset-0 bg-gradient-to-tr from-teal-200/20 to-transparent rounded-xl"></div>
                         <div class="relative container mx-auto px-10 py-16 md:py-24">
                                 <div class="flex flex-col items-center gap-8 md:flex-row md:gap-12 lg:gap-16">
                                         <div class="mb-10 w-full text-center md:mb-0 md:w-3/5 md:text-left">
