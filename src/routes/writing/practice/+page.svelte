@@ -218,8 +218,8 @@
                                                                         <label for="answer-textarea" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
                                                                                 Your Answer:
                                                                         </label>
-                                                                        <div class="w-full max-w-[700px] border border-gray-500 rounded-lg bg-gray-900 p-6">
-                                                                                <p class="text-white text-lg mb-2">One reason that globalisation is a positive force in today's world is that</p>
+                                                                        <div class="w-full max-w-[700px] border border-gray-500 rounded-lg bg-gray-900 p-6 focus-within:ring-2 focus-within:ring-teal-500 focus-within:border-teal-500">
+                                                                                <p class="text-white text-lg">One reason that globalisation is a positive force in today's world is that</p>
                                                                                 <textarea
                                                                                         id="answer-textarea"
                                                                                         bind:value={answer}
