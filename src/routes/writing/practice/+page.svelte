@@ -163,22 +163,22 @@
                         <!-- Main Content Area -->
                         <div class="pb-8">
                         
-                                                <!-- General Training Task 2 -->
+                                                <!-- Writing Task -->
                                                 <div class="bg-gray-800 rounded-lg shadow-lg p-8">
                                                         <div class="mb-6 p-6 rounded-lg bg-gray-700">
-                                                                <h2 class="text-2xl font-bold text-white mb-4">{generalQuestions.task2.title}</h2>
+                                                                <h2 class="text-2xl font-bold text-white mb-4">Task</h2>
                                                                 <div class="grid md:grid-cols-3 gap-4 text-sm text-gray-700 dark:text-gray-300">
                                                                         <div class="text-center">
                                                                                 <div class="font-semibold">Time Limit</div>
-                                                                                <div>{generalQuestions.task2.timeLimit}</div>
+                                                                                <div>10 minutes recommended</div>
                                                                         </div>
                                                                         <div class="text-center mb-6">
                                                                                 <div class="font-semibold">Word Limit</div>
-                                                                                <div>{generalQuestions.task2.wordLimit}</div>
+                                                                                <div>At least 100 words</div>
                                                                         </div>
                                                                         <div class="text-center">
                                                                                 <div class="font-semibold">Current Words</div>
-                                                                                <div class="{countWords(answers['general-task2']) >= 250 ? 'text-green-600' : 'text-red-600'}">{countWords(answers['general-task2'])}</div>
+                                                                                <div class="{countWords(answer) >= 100 ? 'text-green-600' : 'text-red-600'}">{countWords(answer)}</div>
                                                                         </div>
                                                                 </div>
                                                                 <div class="text-center mb-4">
@@ -209,10 +209,6 @@
                                                                 
                                                         </div>
                                                         
-                                                        <!-- <p class="text-2xl text-black font-semibold mb-4">{generalQuestions.task2.instruction}</p>
-                                                        <p class="text-lg font-semibold text-black mb-4">{generalQuestions.task2.task}</p>
-                                                        <p class="text-lg text-black font-semibold mb-6">{generalQuestions.task2.additionalInfo}</p> -->
-
                                                         <div class="space-y-6">
                                                                 <div class="border border-cyan/20 rounded-lg p-6 bg-gray-100">
                                                                         <p class="text-black font-semibold mb-4">Write about the following topic:</p>
@@ -229,7 +225,7 @@
                                                                                 Your Answer:
                                                                         </label>
                                                                         <textarea
-                                                                                bind:value={answers['general-task2']}
+                                                                                bind:value={answer}
                                                                                 placeholder="One reason that globalisation is a positive force in today's world is that..."
 
                                                                                 class="w-full max-w-[700px] h-96 p-4 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-teal-500 focus:border-teal-500 dark:bg-gray-700 dark:text-white resize-none"
