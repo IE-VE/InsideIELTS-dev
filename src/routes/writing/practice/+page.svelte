@@ -22,11 +22,11 @@
 	const generalQuestions = {
 
 		task2: {
-			title: 'IE Quick Test Task',
+			title: 'Task',
 			timeLimit: '10 minutes recommended',
 			wordLimit: 'At least 100 words',
 			instruction: 'Globalisation is good.',
-			task: 'Write a one body paragraph supporting this statement.',
+			task: 'Write one paragraph supporting this statement.',
 			additionalInfo: 'Give reasons for your answer and include any relevant examples from your own knowledge or experience. You do not need to introduce the topic. The Topic sentence has been started for you.',
 				image: '/writing-images/ielts-writing-test-2-discuss.png',
 			imageAlt: 'IELTS Writing Task 2 discuss question example'
@@ -205,42 +205,13 @@
 		</div>
 	{:else}
 		<!-- Test Interface -->
-		<div class="max-w-6xl mx-auto px-4">
+		<div class="max-w-4xl mx-auto px-4">
 			<div class="text-center py-8">		<h1 class="text-3xl text-center font-black text-white mb-8 inline-block px-10 py-3 rounded-xl bg-gradient-to-r from-cyan-500 via-teal-500 to-cyan-600 shadow-xl shadow-cyan-500/30 border border-white">
 				IE WRITING Quick-Test
 			</h1>
 			</div>
 			<!-- Timer and Navigation Header -->
-			<div class="rounded-lg shadow-md p-4 mb-6 bg-white dark:bg-gray-800">
-				<!-- Timer Display -->
-				<div class="text-center mb-4">
-					<div class="text-2xl font-bold text-teal-600 dark:text-teal-400">
-						{formatTime(timeRemaining)}
-					</div>
-					<div class="text-sm text-gray-600 dark:text-gray-300">Time Remaining</div>
-				</div>
-
-				<!-- Timer Control Buttons -->
-				<div class="flex justify-center gap-2 mb-4">
-					{#if isActive}
-						<button
-							onclick={pauseTimer}
-							class="px-3 py-1 bg-indigo-600 hover:bg-indigo-700 text-white font-medium rounded text-sm"
-						>
-							PAUSE TIMER
-						</button>
-					{:else}
-						<button
-							onclick={startTimer}
-							class="px-3 py-1 bg-green-600 hover:bg-green-700 text-white font-medium rounded text-sm"
-						>
-							START
-						</button>
-					{/if}
-				</div>
-
-				</div>
-
+	
 			<!-- Main Content Area -->
 			<div class="pb-8">
 			
@@ -253,7 +224,7 @@
 										<div class="font-semibold">Time Limit</div>
 										<div>{generalQuestions.task2.timeLimit}</div>
 									</div>
-									<div class="text-center">
+									<div class="text-center mb-6">
 										<div class="font-semibold">Word Limit</div>
 										<div>{generalQuestions.task2.wordLimit}</div>
 									</div>
@@ -262,13 +233,47 @@
 										<div class="{countWords(answers['general-task2']) >= 250 ? 'text-green-600' : 'text-red-600'}">{countWords(answers['general-task2'])}</div>
 									</div>
 								</div>
+								<div class="text-center mb-4">
+									<div class="text-2xl font-bold text-teal-600 dark:text-teal-400">
+										{formatTime(timeRemaining)}
+									</div>
+									<div class="text-sm text-gray-600 dark:text-gray-300">Time Remaining</div>
+								</div>
+
+								<!-- Timer Control Buttons -->
+								<div class="flex justify-center gap-2 mb-4">
+									{#if isActive}
+										<button
+											onclick={pauseTimer}
+											class="px-3 py-1 bg-indigo-600 hover:bg-indigo-700 text-white font-medium rounded text-sm"
+										>
+											PAUSE TIMER
+										</button>
+									{:else}
+										<button
+											onclick={startTimer}
+											class="px-3 py-1 bg-green-600 hover:bg-green-700 text-white font-medium rounded text-sm"
+										>
+											START
+										</button>
+									{/if}
+								</div>
+								
 							</div>
+							
+							<!-- <p class="text-2xl text-black font-semibold mb-4">{generalQuestions.task2.instruction}</p>
+							<p class="text-lg font-semibold text-black mb-4">{generalQuestions.task2.task}</p>
+							<p class="text-lg text-black font-semibold mb-6">{generalQuestions.task2.additionalInfo}</p> -->
 
 							<div class="space-y-6">
-								<div class="border border-white/20 rounded-lg p-6 bg-gray-100">
-									<p class="text-2xl text-black font-semibold mb-4">{generalQuestions.task2.instruction}</p>
-									<p class="text-lg font-semibold text-black mb-4">{generalQuestions.task2.task}</p>
-									<p class="text-lg text-black font-semibold mb-6">{generalQuestions.task2.additionalInfo}</p>
+								<div class="border border-cyan/20 rounded-lg p-6 bg-gray-100">
+									<p class="text-black font-semibold mb-4">Write about the following topic:</p>
+					<div class="border-2 border-black p-4 mb-6">				<p class="text-xl font-semibold text-black mb-4">Globalisation is good.</p>
+									<p class="text-lg text-black font-semibold">Say why you <u>support</u> this statement.</p>
+					</div>
+									<p class="text-lg text-black font-semibold mb-6">Give reasons for your answer and include any relevant examples from your own knowledge or experience.</p>
+									<p class="text-lg text-black font-semibold mb-6">You do not need to introduce the topic. The topic sentence has been started for you.</p>
+									<p class="text-lg text-black font-semibold">Write at least 100 words.</p>
 								</div>
 
 								<div class="flex flex-col items-center">
@@ -283,7 +288,7 @@
 									></textarea>
 									<div class="w-full max-w-[700px] mt-4 p-4 bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-700 rounded-lg">
 										<p class="text-sm text-blue-800 dark:text-blue-200">
-											<strong>💡 Final Check:</strong> Use any remaining time to check through both tasks for any content and spelling errors. Then submit your responses for grading.
+											<strong>💡 Final Check:</strong> Use any remaining time to check for any content and spelling errors. Then submit your responses for grading.
 										</p>
 									</div>
 								</div>
@@ -291,7 +296,7 @@
 						</div>				
 
 				<!-- Complete Test Button -->
-				{#if currentTask === 2}
+			
 					<div class="mt-6 flex justify-center">
 						<button
 							onclick={completeTest}
@@ -300,7 +305,7 @@
 							Submit my Responses
 						</button>
 					</div>
-				{/if}
+			
 			</div>
 		</div>
 	{/if}
