@@ -2,7 +2,6 @@
         import { onMount } from 'svelte';
 
         let timeRemaining = $state(10 * 60); // 10 minutes in seconds
-        let isTestStarted = $state(false);
         let isTestCompleted = $state(false);
         let showInstructions = $state(true);
         let answer = $state('');
@@ -12,7 +11,6 @@
         let isActive = $state(false);
 
         function startTest() {
-                isTestStarted = true;
                 showInstructions = false;
                 startTimer();
         }
@@ -59,7 +57,7 @@
 
 <svelte:head>
         <title>IELTS Writing Quick-Test - InsideIELTS</title>
-        <meta name="description" content="Complete IELTS Writing practice test with Academic and General Training options. Practice Task 1 and Task 2 with authentic test questions." />
+        <meta name="description" content="Complete a 10-minute IELTS Writing Quick-Test. Write at least 100 words on a single task and get instant feedback on your writing skills." />
 </svelte:head>
 
 <div class="min-h-screen bg-gradient-to-br from-teal-50 to-blue-50 dark:from-gray-900 dark:to-gray-800">
@@ -82,7 +80,6 @@
                                                                 <li>• Time allowed: <strong>10 minutes</strong></li>
                                                                 <li>• Number of tasks: <strong>1</strong></li>
                                                                 <li>• <strong>Length</strong>: write at least <strong>100 words</strong></li>
-                                                        <li>• Your progress will be saved automatically</li>
                                                         </ul>
                                                 </div>
 
