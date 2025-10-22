@@ -119,7 +119,7 @@
                         class="relative bg-gradient-to-br from-teal-100 via-blue-50 to-indigo-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 mb-20 rounded-xl"
                 >
                         <div class="absolute inset-0 bg-gradient-to-tr from-teal-200/20 to-transparent rounded-xl"></div>
-                        <div class="relative container mx-auto px-6 md:px-0 lg:px-12 py-8 md:py-12">
+                        <div class="relative container mx-auto px-6 md:px-8 lg:px-12 py-8 md:py-12">
                                 <h1 class="mb-8 text-left text-3xl md:text-4xl lg:text-5xl font-bold text-white">
                                         Begin your <span class="text-teal-400"
                                                 >IE STUDY JOURNEY</span> today...
@@ -127,7 +127,7 @@
                                 <div class="flex flex-col items-center gap-8 md:flex-row md:gap-12 lg:gap-16">
                                         <div class="mb-10 w-full text-center md:mb-0 md:w-3/5 md:text-left">
                                                                              
-                                                <p class="mt-4 text-xl">                                                        At <b>InsideIELTS</b> we provide tailormade study programs designed to help you achieve your IELTS score as quickly, easily and efficiently as possible.
+                                                <p class="mt-4 text-lg md:text-xl">                                                        At <b>InsideIELTS</b> we provide tailormade study programs designed to help you achieve your IELTS score as quickly, easily and efficiently as possible.
                                                 </p>
                                                 <p class="mt-6 text-left text-xl">                                                          <strong>Our unique Test Preparation Program offers : </strong>
                                                 </p>
@@ -145,7 +145,7 @@
                                                         </Li>
                                                                                             </List>
                                                 
-                                                <p class="mt-4 text-xl">Target your specific areas of weakness and achieve your IELTS goals faster — with smarter, precision-focused learning designed to get results.                                              </p>
+                                                <p class="mt-4 text-lg md:text-xl">Target your specific areas of weakness and achieve your IELTS goals faster — with smarter, precision-focused learning designed to get results.                                              </p>
                                                 <div
                                                         class="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row md:justify-start"
                                                 >
@@ -229,7 +229,7 @@
                                                 </div>
                                         </div>
                                 </div>
-                                <h1 class="mt-10 text-right text-3xl md:text-5xl font-bold text-white">
+                                <h1 class="mt-10 text-right text-3xl md:text-4xl lg:text-5xl font-bold text-white">
                                         ..to <span class="text-teal-400"
                                                 >achieve the dreams</span> of your future.
                                 </h1>
