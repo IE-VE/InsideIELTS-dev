@@ -155,38 +155,38 @@
                                 IE WRITING Quick-Test
                         </h1>
                         </div>
-                        <!-- Timer and Navigation Header -->
-        
-                        <!-- Main Content Area -->
-                        <div class="pb-8">
-                        
-                                                <!-- Writing Task -->
-                                                <div class="bg-gray-800 rounded-lg shadow-lg p-8">
+
+                                                                         <!-- Main Content Area -->
+                                                                        
+          <!-- Timer and Navigation Header -->             <div class="pb-8">                                              <div class="bg-gray-800 rounded-lg shadow-lg p-8">
                                                         <div class="mb-6 p-6 rounded-lg bg-gray-700">
-                                                                <h2 class="text-2xl font-bold text-white mb-4">Task</h2>
-                                                                <div class="grid md:grid-cols-3 gap-4 text-sm text-gray-700 dark:text-gray-300">
+                                                                <h2 class="text-2xl font-bold text-white text-center underline mb-4">Task</h2>
+                                                                
+                                                                <!-- Timer and Navigation Header -->
+                                                                <div class="grid md:grid-cols-2 gap-6">
+                                                                        <!-- Left Column: Time Limit + Timer -->
                                                                         <div class="text-center">
-                                                                                <div class="font-semibold">Time Limit</div>
-                                                                                <div>10 minutes recommended</div>
+                                                                                <div class="font-semibold text-gray-300 mb-2">Time Limit</div>
+                                                                                <div class="text-sm text-gray-400 mb-3">10 minutes recommended</div>
+                                                                                <div class="text-2xl font-bold text-teal-600 dark:text-teal-400">
+                                                                                        {formatTime(timeRemaining)}
+                                                                                </div>
+                                                                                <div class="text-sm text-gray-600 dark:text-gray-300 mt-1">Time Remaining</div>
                                                                         </div>
-                                                                        <div class="text-center mb-6">
-                                                                                <div class="font-semibold">Word Limit</div>
-                                                                                <div>At least 100 words</div>
-                                                                        </div>
+                                                                        
+                                                                        <!-- Right Column: Word Limit + Word Count -->
                                                                         <div class="text-center">
-                                                                                <div class="font-semibold">Current Words</div>
-                                                                                <div class="{countWords(answer) >= 100 ? 'text-green-600' : 'text-red-600'}">{countWords(answer)}</div>
+                                                                                <div class="font-semibold text-gray-300 mb-2">Word Limit</div>
+                                                                                <div class="text-sm text-gray-400 mb-3">At least 100 words</div>
+                                                                                <div class="text-2xl font-bold {countWords(answer) >= 100 ? 'text-green-600' : 'text-red-600'}">
+                                                                                        {countWords(answer)}
+                                                                                </div>
+                                                                                <div class="text-sm text-gray-600 dark:text-gray-300 mt-1">Current Words</div>
                                                                         </div>
-                                                                </div>
-                                                                <div class="text-center mb-4">
-                                                                        <div class="text-2xl font-bold text-teal-600 dark:text-teal-400">
-                                                                                {formatTime(timeRemaining)}
-                                                                        </div>
-                                                                        <div class="text-sm text-gray-600 dark:text-gray-300">Time Remaining</div>
                                                                 </div>
 
                                                                 <!-- Timer Control Buttons -->
-                                                                <div class="flex justify-center gap-2 mb-4">
+                                                                <div class="flex justify-center gap-2 mt-6">
                                                                         {#if isActive}
                                                                                 <button
                                                                                         onclick={pauseTimer}
@@ -202,11 +202,9 @@
                                                                                         START
                                                                                 </button>
                                                                         {/if}
-                                                                </div>
-                                                                
-                                                        </div>
-                                                        
-                                                        <div class="space-y-6">
+                                                                </div>                                      
+                                                                                                                                                                                                                                        <!-- Writing Task -->
+                                                        <div class="space-y-6 my-10">
                                                                 <div class="border border-cyan/20 rounded-lg p-6 bg-gray-100">
                                                                         <p class="text-black font-semibold mb-4">Write about the following topic:</p>
                                         <div class="border-2 border-black p-4 mb-6">                            <p class="text-xl font-semibold text-black mb-4">Globalisation is good.</p>
@@ -215,35 +213,32 @@
                                                                         <p class="text-lg text-black font-semibold mb-6">Give reasons for your answer and include any relevant examples from your own knowledge or experience.</p>
                                                                         <p class="text-lg text-black font-semibold mb-6">You do not need to introduce the topic. The topic sentence has been started for you.</p>
                                                                         <p class="text-lg text-black font-semibold">Write at least 100 words.</p>
-                                                                </div>
-
+                                                                </div>                                                                                                                                                                                                                                  </div>
                                                                 <div class="flex flex-col items-center">
-                                                                        <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                                                                        <label for="answer-textarea" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
                                                                                 Your Answer:
                                                                         </label>
                                                                         <textarea
+                                                                                id="answer-textarea"
                                                                                 bind:value={answer}
                                                                                 placeholder="One reason that globalisation is a positive force in today's world is that..."
 
-                                                                                class="w-full max-w-[700px] h-96 p-4 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-teal-500 focus:border-teal-500 dark:bg-gray-700 dark:text-white resize-none"
+                                                                                class="w-full max-w-[700px] h-96 p-6 border border-gray-500 rounded-lg focus:ring-2 focus:ring-teal-500 focus:border-teal-500 bg-gray-900 text-white text-lg resize-none"
                                                                         ></textarea>
-                                                                        <div class="w-full max-w-[700px] mt-4 p-4 bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-700 rounded-lg">
+                                                                        <div class="w-full max-w-[700px] mt-4 p-4 bg-blue-900/40 border border-blue-700 rounded-lg mb-4">
                                                                                 <p class="text-sm text-blue-800 dark:text-blue-200">
                                                                                         <strong>💡 Final Check:</strong> Use any remaining time to check for any content and spelling errors. Then submit your responses for grading.
                                                                                 </p>
-                                                                        </div>
-                                                                </div>
-                                                        </div>
-                                                </div>                          
-
-                                <!-- Complete Test Button -->
+                                                                        </div>                                     </div>                                          </div>                                                </div>  
+                                                                                                        
+                        <!-- Complete Test Button -->
                         
                                         <div class="mt-6 flex justify-center">
                                                 <button
                                                         onclick={completeTest}
-                                                        class="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-8 rounded-lg text-lg transition-colors"
+                                                        class="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-8 rounded-lg text-lg border border-white transition-colors"
                                                 >
-                                                        Submit my Responses
+                                                        Submit my Response
                                                 </button>
                                         </div>
                         
