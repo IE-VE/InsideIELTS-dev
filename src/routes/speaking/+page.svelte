@@ -155,7 +155,7 @@
                                                                 class="shadow-lg font-bold border border-white"
                                                                 size="lg"
                                                         >
-                                                                Sign up to the IETPP
+                                                                I E T P P
                                                                 <ArrowRight class="ml-2 h-5 w-5" />
                                                         </Button>
 

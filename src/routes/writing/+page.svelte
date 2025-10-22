@@ -386,7 +386,7 @@
                                         href="/writing/practice"
                                         class="inline-block bg-teal-500 hover:bg-teal-600 text-white font-medium px-8 py-3 rounded-lg transition-colors"
                                 >
-                                        Start Practice Test Now
+                                        Start Free Writing Test Now
                                 </a>
                         </div>
                 </div>
