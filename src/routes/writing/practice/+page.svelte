@@ -218,13 +218,16 @@
                                                                         <label for="answer-textarea" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
                                                                                 Your Answer:
                                                                         </label>
-                                                                        <textarea
-                                                                                id="answer-textarea"
-                                                                                bind:value={answer}
-                                                                                placeholder="One reason that globalisation is a positive force in today's world is that..."
+                                                                        <div class="w-full max-w-[700px] border border-gray-500 rounded-lg bg-gray-900 p-6">
+                                                                                <p class="text-white text-lg mb-2">One reason that globalisation is a positive force in today's world is that</p>
+                                                                                <textarea
+                                                                                        id="answer-textarea"
+                                                                                        bind:value={answer}
+                                                                                        placeholder="..."
 
-                                                                                class="w-full max-w-[700px] h-96 p-6 border border-gray-500 rounded-lg focus:ring-2 focus:ring-teal-500 focus:border-teal-500 bg-gray-900 text-white text-lg resize-none"
-                                                                        ></textarea>
+                                                                                        class="w-full h-80 p-0 border-0 focus:ring-0 focus:outline-none bg-transparent text-white text-lg resize-none"
+                                                                                ></textarea>
+                                                                        </div>
                                                                         <div class="w-full max-w-[700px] mt-4 p-4 bg-blue-900/40 border border-blue-700 rounded-lg mb-4">
                                                                                 <p class="text-sm text-blue-800 dark:text-blue-200">
                                                                                         <strong>💡 Final Check:</strong> Use any remaining time to check for any content and spelling errors. Then submit your responses for grading.
