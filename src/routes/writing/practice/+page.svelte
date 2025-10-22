@@ -116,20 +116,15 @@
                                 <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8 text-center">
                                         <h1 class="text-3xl font-bold text-gray-900 dark:text-white mb-6">Test Completed!</h1>
                                         <p class="text-lg text-gray-700 dark:text-gray-300 mb-8">
-                                                Thank you for completing the IELTS Writing practice test.
+                                                Thank you for completing the IELTS Writing Quick-Test.
                                         </p>
                                         
                                         <div class="space-y-4 mb-8">
                                                 <div class="bg-gray-50 dark:bg-gray-700 p-4 rounded-lg">
                                                         <h3 class="font-semibold mb-2">Your Writing Summary</h3>
-                                                        <div class="grid grid-cols-2 gap-4 text-sm">
+                                                        <div class="text-sm">
                                                                 <div>
-                                                                        <strong>Task 1 ({currentTest === 'academic' ? 'Academic' : 'General'}):</strong>
-                                                                        <div>{countWords(answers[getAnswerKey().replace('2', '1')])} words</div>
-                                                                </div>
-                                                                <div>
-                                                                        <strong>Task 2:</strong>
-                                                                        <div>{countWords(answers[getAnswerKey()])} words</div>
+                                                                        <strong>Words written:</strong> {countWords(answer)} words
                                                                 </div>
                                                         </div>
                                                 </div>
