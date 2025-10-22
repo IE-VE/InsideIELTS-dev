@@ -1,4 +1,3 @@
-
 <script lang="ts">
         import { tracking } from '$lib/utils/analytics';
         import {
@@ -119,14 +118,14 @@
                         class="relative bg-gradient-to-br from-teal-100 via-blue-50 to-indigo-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 mb-20 rounded-xl"
                 >
                         <div class="absolute inset-0 bg-gradient-to-tr from-teal-200/20 to-transparent rounded-xl"></div>
-                        <div class="relative container mx-auto px-6 md:px-8 lg:px-12 py-8 md:py-12">
+                        <div class="relative max-w-6xl mx-auto px-6 lg:px-12 py-8 md:py-12">
                                 <h1 class="mb-8 text-left text-3xl md:text-4xl lg:text-5xl font-bold text-white">
                                         Begin your <span class="text-teal-400"
                                                 >IE STUDY JOURNEY</span> today...
                                 </h1>
                                 <div class="flex flex-col items-center gap-8 md:flex-row md:gap-12 lg:gap-16">
                                         <div class="mb-10 w-full text-center md:mb-0 md:w-3/5 md:text-left">
-                                                                             
+
                                                 <p class="mt-4 text-lg md:text-xl">                                                        At <b>InsideIELTS</b> we provide tailormade study programs designed to help you achieve your IELTS score as quickly, easily and efficiently as possible.
                                                 </p>
                                                 <p class="mt-6 text-left text-xl">                                                          <strong>Our unique Test Preparation Program offers : </strong>
@@ -144,7 +143,7 @@
                                                                 Real support from real IELTS examiners
                                                         </Li>
                                                                                             </List>
-                                                
+
                                                 <p class="mt-4 text-lg md:text-xl">Target your specific areas of weakness and achieve your IELTS goals faster — with smarter, precision-focused learning designed to get results.                                              </p>
                                                 <div
                                                         class="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row md:justify-start"
@@ -235,7 +234,7 @@
                                 </h1>
                         </div>
                 </section>
-                
+
                 <!-- Test Overview -->
                 <div class="mb-12">
                         <Card variant="secondary">
@@ -274,7 +273,7 @@
                                                         <div class="text-2xl mb-3">{part.icon}</div>
                                                         <h3 class="font-semibold text-gray-900 dark:text-white mb-2">{part.title}</h3>
                                                         <p class="text-sm text-primary-600 dark:text-primary-400 font-medium mb-2">({part.duration})</p>
-                                                        
+
                                                         <div class="mt-4">
                                                                 <Lightbox 
                                                                         src={part.image} 
@@ -343,8 +342,8 @@
                                                         <li>• Use a wide range of vocabulary accurately <b>(LR)</b></li>
                                                         <li>• Demonstrate varied grammatical structures <b>(GRA)</b></li>
                                                         <li>• Maintain clear pronunciation and intonation <b>(PR)</b></li>
-                                                                                                
-                                        </ul>
+
+                                                </ul>
                                         </div>
                                 </div>
                         </Card>
