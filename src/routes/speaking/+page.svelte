@@ -119,8 +119,8 @@
                         class="relative bg-gradient-to-br from-teal-100 via-blue-50 to-indigo-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 mb-20 rounded-xl"
                 >
                         <div class="absolute inset-0 bg-gradient-to-tr from-teal-200/20 to-transparent rounded-xl"></div>
-                        <div class="relative container mx-auto px-10 py-8 md:py-12">
-                                <h1 class="mb-8 text-left text-5xl font-bold text-white">
+                        <div class="relative container mx-auto px-6 sm:px-8 lg:px-12 py-8 md:py-12">
+                                <h1 class="mb-8 text-left text-3xl md:text-4xl lg:text-5xl font-bold text-white">
                                         Begin your <span class="text-teal-400"
                                                 >IE STUDY JOURNEY</span> today...
                                 </h1>
@@ -229,7 +229,7 @@
                                                 </div>
                                         </div>
                                 </div>
-                                <h1 class="mt-10 text-right text-5xl font-bold text-white">
+                                <h1 class="mt-10 text-right text-3xl md:text-5xl font-bold text-white">
                                         ..to <span class="text-teal-400"
                                                 >achieve the dreams</span> of your future.
                                 </h1>
