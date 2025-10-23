@@ -299,7 +299,7 @@
 			<P class="mb-2 text-center text-sm font-semibold text-teal-600 dark:text-teal-400"
 				>WHY WE'RE DIFFERENT</P
 			>
-			<Heading tag="h2">Why Choose Our Free Tests</Heading>
+			<Heading tag="h2">Why Choose Our Free-Tests</Heading>
 			<div class="mx-auto mt-4 h-1 w-24 rounded-full bg-teal-500/40"></div>
 			<P class="mt-6 text-center">Expert analysis to help you succeed</P>
 		</div>
