@@ -1,6 +1,23 @@
 <script lang="ts">
+	import { tracking } from '$lib/utils/analytics';
+	import {
+		Button,
+		Heading,
+		P,
+		List,
+		Li
+	} from 'flowbite-svelte';
+	import {
+		ArrowRight,
+		Check,
+		Star
+	} from 'lucide-svelte';
 	import Card from '$lib/components/Card.svelte';
 	import Lightbox from '$lib/components/Lightbox.svelte';
+
+	function handleStartTest() {
+		tracking.startTest();
+	}
 
 	const questionTypes = [
 		{
