@@ -81,8 +81,7 @@
                                                                 <li>• Number of tasks: <strong>1</strong></li>
                                                                 <li>• <strong>Length</strong>: write at least <strong>100 words</strong></li>
                                                         </ul>
-																									<p class="mt-4">Treat this exercise like a mini-Task 2 test. You should spend a minute planning and prganising your thoughts befoe writing.</p>
-                                                </div>
+														 </div>
 
                                                 <div class="bg-blue-800/10 p-6 rounded-lg">                                                     
                                                         <h3 class="text-lg font-semibold text-orange-700 dark:text-orange-300 mb-3">Assessment Criteria</h3>
@@ -161,7 +160,7 @@
                                                                         
           <!-- Timer and Navigation Header -->             <div class="pb-8">                                              <div class="bg-gray-800 rounded-lg shadow-lg p-8">
                                                         <div class="mb-6 p-6 rounded-lg bg-gray-700">
-                                                                <h2 class="text-2xl font-bold text-white text-center underline mb-4">Task</h2>
+                                                                <h2 class="text-2xl font-bold text-white text-center mb-4 tracking-wide underline decoration-2 underline-offset-3">Task</h2>
                                                                 
                                                                 <!-- Timer and Navigation Header -->
                                                                 <div class="grid md:grid-cols-2 gap-6">

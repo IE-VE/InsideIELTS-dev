@@ -128,29 +128,83 @@
         <div class="container mx-auto max-w-6xl px-6 py-8">
                 <!-- Header Section -->
                 <div class="text-center mb-8">
-                        <h1 class="text-4xl font-bold text-gray-900 dark:text-white mb-4 underline decoration-2 underline-offset-3">
+                        <h1 class="text-4xl font-bold text-gray-900 dark:text-white mb-4 tracking-wide underline decoration-2 underline-offset-3">
                                 IELTS WRITING
                         </h1>                                   
                 </div>
 
                 <!-- Hero Section -->
-                <section
-                        class="relative bg-gradient-to-br from-teal-100 via-blue-50 to-indigo-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 mb-12 rounded-lg border border-gray-600"
-                >
-                        <div class="absolute inset-0 bg-gradient-to-tr from-teal-200/20 to-transparent"></div>
-                        <div class="relative px-6 py-6 md:py-8">
-                              
-                                                <div class="mx-auto max-w-2xl mb-10 text-center p-6 bg-gray-800/10 dark:bg-gray-700/20 rounded-lg">
-                                                        <h1 class="text-4xl font-bold text-gray-900 dark:text-white">
-                                                                Get your Writing Score in <span class="text-teal-600 dark:text-teal-400">just 10 minutes</span>
-                                                        </h1>
-                                                </div>
 
-                                                <div class="mx-auto max-w-2xl relative">
+                <section
+                        class="relative bg-gradient-to-br from-teal-100 via-blue-50 to-indigo-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 my-16 rounded-xl"
+                >
+                        <div class="absolute inset-0 bg-gradient-to-tr from-teal-200/20 to-transparent rounded-xl"></div>
+                        <div class="relative max-w-6xl mx-auto px-6 lg:px-12 py-8 md:py-12">
+                                <h1 class="mb-8 text-left text-3xl md:text-4xl lg:text-5xl font-bold text-white">
+                                        Begin your <span class="text-teal-400"
+                                                >IE STUDY JOURNEY</span> today...
+                                </h1>
+                                <div class="flex flex-col items-center gap-8 md:flex-row md:gap-12 lg:gap-16">
+                                        <div class="mb-10 w-full text-center md:mb-0 md:w-3/5 md:text-left">
+
+                                                <p class="mt-4 text-lg md:text-xl">                                                        At <b>InsideIELTS</b> we provide tailormade study programs designed to help you achieve your IELTS score as quickly, easily and efficiently as possible.
+                                                </p>
+                                                <p class="mt-6 text-left text-xl">                                                          <strong>Our unique Test Preparation Program offers : </strong>
+                                                </p>
+
+                                                <List tag="ul" class="mt-3">
+                                                        <Li icon class="mb-1">
+                                                                <Check class="mr-2 h-5 w-5 text-teal-400" />                                                             Cutting-edge language analysis technology
+                                                        </Li>
+                                                        <Li icon class="mb-1">
+                                                                <Check class="mr-2 h-5 w-5 text-teal-400" />                                                             Inside-knowledge of official IELTS assessment procedures 
+                                                        </Li>
+                                                        <Li icon>
+                                                                <Check class="mr-2 h-5 w-5 text-teal-400" />
+                                                                Real support from real IELTS examiners
+                                                        </Li>
+                                                                                            </List>
+
+                                                <p class="mt-4 text-lg md:text-xl">Target your specific areas of weakness and achieve your IELTS goals faster — with smarter, precision-focused learning designed to get results.                                              </p>
+                                                <div
+                                                        class="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row md:justify-start"
+                                                >
+                                                        <Button
+                                                                href="/IETPP"
+                                                                onclick={handleStartTest}
+                                                                color="primary"
+                                                                class="shadow-lg font-bold border border-white"
+                                                                size="lg"
+                                                        >
+                                                                START NOW
+                                                                <ArrowRight class="ml-2 h-5 w-5" />
+                                                        </Button>
+
+                                                        <div class="flex items-center">
+                                                                <svg
+                                                                        class="mr-1 h-4 w-4 text-teal-600"
+                                                                        fill="none"
+                                                                        viewBox="0 0 24 24"
+                                                                        stroke="currentColor"
+                                                                >
+                                                                        <path
+                                                                                stroke-linecap="round"
+                                                                                stroke-linejoin="round"
+                                                                                stroke-width="2"
+                                                                                d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"
+                                                                        />
+                                                                </svg>
+                                                                <P size="sm">100% private - no account needed</P>
+                                                        </div>
+                                                </div>
+                                        </div>
+
+                                        <div class="w-full md:w-2/5">
+                                                <div class="relative mx-auto max-w-sm">
                                                         <div
                                                                 class="absolute inset-0 rotate-3 transform rounded-lg bg-teal-600 dark:bg-teal-500"
                                                         ></div>
-                                                        <FlowbiteCard class="relative shadow-lg p-6 !max-w-none w-full">
+                                                        <Card class="relative shadow-lg">
                                                                 <div class="mb-6 text-center">
                                                                         <div
                                                                                 class="mb-4 inline-flex h-16 w-16 items-center justify-center rounded-full bg-teal-100 dark:bg-teal-800"
@@ -165,34 +219,38 @@
                                                                                                 stroke-linecap="round"
                                                                                                 stroke-linejoin="round"
                                                                                                 stroke-width="2"
-                                                                                                d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"
+                                                                                                d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"
                                                                                         />
                                                                                 </svg>
                                                                         </div>
-                                                                        <h4 class="text-2xl font-semibold text-gray-900 dark:text-white mb-2">IELTS Writing Test</h4>
-                                                                        <p class="text-center text-gray-600 dark:text-gray-300">Quick writing assessment</p>
+                                                                        <Heading tag="h4">IELTS Speaking Test</Heading>
+                                                                        <P class="text-center">Free assessment in minutes</P>
                                                                 </div>
-
                                                                 <List tag="ul" class="mb-6 space-y-3">
                                                                         <Li icon>
                                                                                 <Check class="mt-0.5 mr-2 h-5 w-5 text-teal-600 dark:text-teal-300" />
-                                                                                Complete one writing task
+                                                                                Answer 3 speaking questions
                                                                         </Li>
                                                                         <Li icon>
                                                                                 <Check class="mt-0.5 mr-2 h-5 w-5 text-teal-600 dark:text-teal-300" />
-                                                                                Get AI-powered band score
+                                                                                Get your band score instantly
                                                                         </Li>
                                                                         <Li icon>
                                                                                 <Check class="mt-0.5 mr-2 h-5 w-5 text-teal-600 dark:text-teal-300" />
-                                                                                Receive detailed feedback
+                                                                                Receive personalised feedback
                                                                         </Li>
                                                                 </List>
-
-                                                                <Button href="/writing/practice" onclick={handleStartTest} color="primary">
+                                                                <Button href="/record" onclick={handleStartTest} color="primary" class="w-full">
                                                                         Start Free Test
                                                                 </Button>
-                                                        </FlowbiteCard>
+                                                        </Card>
                                                 </div>
+                                        </div>
+                                </div>
+                                <h1 class="mt-10 text-right text-3xl md:text-4xl lg:text-5xl font-bold text-white">
+                                        ..to <span class="text-teal-400"
+                                                >achieve the dreams</span> of your future.
+                                </h1>
                         </div>
                 </section>
 
@@ -383,7 +441,7 @@
                                         Take our complete IELTS Writing practice test with authentic Task 1 and Task 2 questions.
                                 </p>
                                 <a 
-                                        href="/writing/practice"
+                                        href="/writing/quicktest"
                                         class="inline-block bg-teal-500 hover:bg-teal-600 text-white font-medium px-8 py-3 rounded-lg transition-colors"
                                 >
                                         Start Free Writing Test Now

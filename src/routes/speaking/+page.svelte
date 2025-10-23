@@ -103,19 +103,14 @@
         <div class="container mx-auto max-w-6xl px-6 py-8">
                 <!-- Header Section -->
                 <div class="text-center mb-8">
-                        <h1 class="text-4xl font-bold text-gray-900 dark:text-white mb-4 underline decoration-2 underline-offset-3">
-                               The IELTS Speaking Test
+                        <h1 class="text-4xl font-bold text-gray-900 dark:text-white mb-4 tracking-wide underline decoration-2 underline-offset-3">
+                               IELTS SPEAKING
                         </h1>
-                        <!-- <div class="max-w-6xl mx-auto p-6 text-xl text-white text-left font-semibold">
-                                <p class='mb-2'>
-                                        The IELTS Speaking test takes the form of a face-to-face interview with a qualified IELTS speaking examiner.</p> 
-													<p>The interview follows a preset script and is split into three sections. </p>
-                        </div> -->
-                </div>
+                                 </div>
 
                 <!-- Hero Section -->
                 <section
-                        class="relative bg-gradient-to-br from-teal-100 via-blue-50 to-indigo-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 mb-20 rounded-xl"
+                        class="relative bg-gradient-to-br from-teal-100 via-blue-50 to-indigo-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 my-16 rounded-xl"
                 >
                         <div class="absolute inset-0 bg-gradient-to-tr from-teal-200/20 to-transparent rounded-xl"></div>
                         <div class="relative max-w-6xl mx-auto px-6 lg:px-12 py-8 md:py-12">
@@ -205,7 +200,6 @@
                                                                         <Heading tag="h4">IELTS Speaking Test</Heading>
                                                                         <P class="text-center">Free assessment in minutes</P>
                                                                 </div>
-
                                                                 <List tag="ul" class="mb-6 space-y-3">
                                                                         <Li icon>
                                                                                 <Check class="mt-0.5 mr-2 h-5 w-5 text-teal-600 dark:text-teal-300" />
@@ -220,7 +214,6 @@
                                                                                 Receive personalised feedback
                                                                         </Li>
                                                                 </List>
-
                                                                 <Button href="/record" onclick={handleStartTest} color="primary" class="w-full">
                                                                         Start Free Test
                                                                 </Button>
