@@ -3,10 +3,15 @@
         import {
                 Button,
                 Card as FlowbiteCard,
+                Heading,
+                P,
                 List,
                 Li
         } from 'flowbite-svelte';
-        import { Check } from 'lucide-svelte';
+        import {
+                ArrowRight,
+                Check
+        } from 'lucide-svelte';
         import Card from '$lib/components/Card.svelte';
         import Lightbox from '$lib/components/Lightbox.svelte';
 
