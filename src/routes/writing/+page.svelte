@@ -10,7 +10,8 @@
         } from 'flowbite-svelte';
         import {
                 ArrowRight,
-                Check
+                Check,
+                Star
         } from 'lucide-svelte';
         import Card from '$lib/components/Card.svelte';
         import Lightbox from '$lib/components/Lightbox.svelte';
@@ -233,15 +234,15 @@
                                                                 </div>
                                                                 <List tag="ul" class="mb-6 space-y-3">
                                                                         <Li icon>
-                                                                                <Check class="mt-0.5 mr-2 h-5 w-5 text-blue-500" />
+                                                                                <Star class="mt-0.5 mr-2 h-5 w-5 text-blue-500 fill-blue-500" />
                                                                                 Complete 1 short writing task
                                                                         </Li>
                                                                         <Li icon>
-                                                                                <Check class="mt-0.5 mr-2 h-5 w-5 text-blue-500" />
+                                                                                <Star class="mt-0.5 mr-2 h-5 w-5 text-blue-500 fill-blue-500" />
                                                                                 Get your band score instantly
                                                                         </Li>
                                                                         <Li icon>
-                                                                                <Check class="mt-0.5 mr-2 h-5 w-5 text-blue-500" />
+                                                                                <Star class="mt-0.5 mr-2 h-5 w-5 text-blue-500 fill-blue-500" />
                                                                                 Receive personalised feedback
                                                                         </Li>
                                                                 </List>
