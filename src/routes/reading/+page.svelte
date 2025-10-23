@@ -110,14 +110,130 @@
 		<div class="text-center mb-12">
 			<h1 class="text-4xl font-bold text-gray-900 dark:text-white mb-4">
 				IELTS READING
-			</h1>
-			<div class="max-w-6xl mx-auto px-6">
-				<p class="text-xl text-gray-600 dark:text-gray-300 text-center py-4 mb-8">
-					The Reading Test consists of 3 passages of increasing difficulty with a total of 14 possible different question types.
-				</p>
-			</div>
+			</h1>	
 		</div>
 
+		<!-- Hero Section -->
+		<section
+						class="relative bg-gradient-to-br from-teal-100 via-blue-50 to-indigo-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 my-16 rounded-xl border border-gray-600"
+		>
+						<div class="absolute inset-0 bg-gradient-to-tr from-teal-200/20 to-transparent rounded-xl"></div>
+						<div class="relative max-w-6xl mx-auto px-6 lg:px-12 py-8 md:py-12">
+										<h1 class="mb-8 text-left text-3xl md:text-4xl lg:text-5xl font-bold text-white">
+														Begin your <span class="text-teal-400"
+																		>IE STUDY JOURNEY</span> today...
+										</h1>
+										<div class="flex flex-col items-center gap-8 md:flex-row md:gap-12 lg:gap-16">
+														<div class="mb-10 w-full text-center md:mb-0 md:w-3/5 md:text-left">
+
+																		<p class="mt-4 text-lg md:text-xl">                                                        At <b>InsideIELTS</b> we provide tailormade study programs designed to help you achieve your IELTS score as quickly, easily and efficiently as possible.
+																		</p>
+																		<p class="mt-6 text-left text-xl">                                                          <strong>Our unique Test Preparation Program offers : </strong>
+																		</p>
+
+																		<List tag="ul" class="mt-3">
+																						<Li icon class="mb-1">
+																										<Check class="mr-2 h-5 w-5 text-teal-400" />                                                             Cutting-edge language analysis technology
+																						</Li>
+																						<Li icon class="mb-1">
+																										<Check class="mr-2 h-5 w-5 text-teal-400" />                                                             Inside-knowledge of official IELTS assessment procedures 
+																						</Li>
+																						<Li icon>
+																										<Check class="mr-2 h-5 w-5 text-teal-400" />
+																										Real support from real IELTS examiners
+																						</Li>
+																																								</List>
+
+																		<p class="mt-4 text-lg md:text-xl">Target your specific areas of weakness and achieve your IELTS goals faster — with smarter, precision-focused learning designed to get results.                                              </p>
+																		<div
+																						class="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row md:justify-start"
+																		>
+																						<Button
+																										href="/IETPP"
+																										onclick={handleStartTest}
+																										color="primary"
+																										class="shadow-lg font-bold border border-white"
+																										size="lg"
+																						>
+																										START NOW
+																										<ArrowRight class="ml-2 h-5 w-5" />
+																						</Button>
+
+																						<div class="flex items-center">
+																										<svg
+																														class="mr-1 h-4 w-4 text-teal-600"
+																														fill="none"
+																														viewBox="0 0 24 24"
+																														stroke="currentColor"
+																										>
+																														<path
+																																		stroke-linecap="round"
+																																		stroke-linejoin="round"
+																																		stroke-width="2"
+																																		d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"
+																														/>
+																										</svg>
+																										<P size="sm">100% private - no account needed</P>
+																						</div>
+																		</div>
+														</div>
+
+														<div class="w-full md:w-2/5">
+																		<div class="relative mx-auto max-w-sm">
+																						<div
+																										class="absolute inset-0 rotate-3 transform rounded-lg bg-green-500"
+																						></div>
+																						<Card class="relative shadow-lg">
+																										<div class="mb-6 text-center">
+																														<div
+																																		class="mt-3 mb-4 inline-flex h-16 w-16 items-center justify-center rounded-full bg-green-800"
+																														>
+																																<svg
+																																						class="h-8 w-8 text-green-300"
+																																						fill="none"
+																																						viewBox="0 0 24 24"
+																																						stroke="currentColor"
+																																		>
+																																						<path
+																																										stroke-linecap="round"
+																																										stroke-linejoin="round"
+																																										stroke-width="2"
+																																										d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"
+																																						/>
+																																		</svg>
+																														</div>
+																														<Heading tag="h4">IELTS Speaking Test</Heading>
+																														<P class="text-center">Free assessment in minutes</P>
+																										</div>
+																										<List tag="ul" class="mb-6 space-y-3">
+																														<Li icon>
+																																		<Star class="mt-0.5 mr-2 h-4 w-4 text-green-300 fill-green-300" />
+																																		Answer 3 speaking questions
+																														</Li>
+																														<Li icon>
+																																		<Star class="mt-0.5 mr-2 h-4 w-4 text-green-300 fill-green-300" />
+																																		Get your band score instantly
+																														</Li>
+																														<Li icon>
+																																		<Star class="mt-0.5 mr-2 h-4 w-4 text-green-300 fill-green-300" />
+																																		Receive personalised feedback
+																														</Li>
+																										</List>
+																										<Button href="/record" onclick={handleStartTest} color="green" class="w-full">
+																														Start Free Test
+																										</Button>
+																						</Card>
+																		</div>
+														</div>
+										</div>
+										<h1 class="mt-10 text-right text-3xl md:text-4xl lg:text-5xl font-bold text-white">
+														..to <span class="text-teal-400"
+																		>achieve the dreams</span> of your future.
+										</h1>
+						</div>
+		</section>
+
+		
 		<!-- Test Overview -->
 		<div class="mb-12">
 			<Card variant="secondary">

@@ -159,7 +159,7 @@
                                 {#each navLinks as link}
                                         <a
                                                 href={link.href}
-                                                class="text-gray-600 hover:text-teal-600 dark:text-gray-300 dark:hover:text-teal-400 text-center leading-tight font-semibold"
+                                                class="text-gray-300 hover:text-teal-400 text-center leading-tight font-semibold"
                                         >
                                                 {link.textParts[0]}<br />{link.textParts[1]}
                                         </a>

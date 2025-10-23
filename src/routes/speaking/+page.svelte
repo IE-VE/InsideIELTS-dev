@@ -10,7 +10,8 @@
         } from 'flowbite-svelte';
         import {
                 ArrowRight,
-                Check
+                Check,
+                Star
         } from 'lucide-svelte';
         import Card from '$lib/components/Card.svelte';
         import Lightbox from '$lib/components/Lightbox.svelte';
@@ -176,15 +177,15 @@
                                         <div class="w-full md:w-2/5">
                                                 <div class="relative mx-auto max-w-sm">
                                                         <div
-                                                                class="absolute inset-0 rotate-3 transform rounded-lg bg-teal-600 dark:bg-teal-500"
+                                                                class="absolute inset-0 rotate-3 transform rounded-lg bg-green-500"
                                                         ></div>
                                                         <Card class="relative shadow-lg">
                                                                 <div class="mb-6 text-center">
                                                                         <div
-                                                                                class="mb-4 inline-flex h-16 w-16 items-center justify-center rounded-full bg-teal-100 dark:bg-teal-800"
+                                                                                class="mt-3 mb-4 inline-flex h-16 w-16 items-center justify-center rounded-full bg-green-800"
                                                                         >
-                                                                                <svg
-                                                                                        class="h-8 w-8 text-teal-600 dark:text-teal-300"
+                                                                            <svg
+                                                                                        class="h-8 w-8 text-green-300"
                                                                                         fill="none"
                                                                                         viewBox="0 0 24 24"
                                                                                         stroke="currentColor"
@@ -202,19 +203,19 @@
                                                                 </div>
                                                                 <List tag="ul" class="mb-6 space-y-3">
                                                                         <Li icon>
-                                                                                <Check class="mt-0.5 mr-2 h-5 w-5 text-teal-600 dark:text-teal-300" />
+                                                                                <Star class="mt-0.5 mr-2 h-4 w-4 text-green-300 fill-green-300" />
                                                                                 Answer 3 speaking questions
                                                                         </Li>
                                                                         <Li icon>
-                                                                                <Check class="mt-0.5 mr-2 h-5 w-5 text-teal-600 dark:text-teal-300" />
+                                                                                <Star class="mt-0.5 mr-2 h-4 w-4 text-green-300 fill-green-300" />
                                                                                 Get your band score instantly
                                                                         </Li>
                                                                         <Li icon>
-                                                                                <Check class="mt-0.5 mr-2 h-5 w-5 text-teal-600 dark:text-teal-300" />
+                                                                                <Star class="mt-0.5 mr-2 h-4 w-4 text-green-300 fill-green-300" />
                                                                                 Receive personalised feedback
                                                                         </Li>
                                                                 </List>
-                                                                <Button href="/record" onclick={handleStartTest} color="primary" class="w-full">
+                                                                <Button href="/record" onclick={handleStartTest} color="green" class="w-full">
                                                                         Start Free Test
                                                                 </Button>
                                                         </Card>
@@ -368,7 +369,7 @@
 
                 <!-- Call to Action -->
                 <div class="text-center">
-                        <div class="bg-gray-900 border-2 border-teal-600 border-t-12 border-t-teal-300 rounded-lg p-8 shadow-lg">
+                        <div class="bg-gray-900 border-2 border-green-600 border-t-12 border-t-green-500 rounded-lg p-8 shadow-lg">
                                 <h2 class="text-2xl font-semibold text-white mb-6 text-center">
                                         Ready to Test Your Speaking Skills?
                                 </h2>
@@ -377,7 +378,7 @@
                                 </p>
                                 <a 
                                         href="/record"
-                                        class="inline-block bg-teal-500 hover:bg-teal-600 text-white font-medium px-8 py-3 rounded-lg transition-colors"
+                                        class="inline-block bg-green-600 hover:bg-green-700 text-white font-medium px-8 py-3 rounded-lg transition-colors"
                                 >
                                         Take Free Speaking Test Now
                                 </a>

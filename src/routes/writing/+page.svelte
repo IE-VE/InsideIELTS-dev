@@ -213,7 +213,7 @@
                                                         <Card class="relative shadow-lg">
                                                                 <div class="mb-6 text-center">
                                                                         <div
-                                                                                class="mb-4 inline-flex h-16 w-16 items-center justify-center rounded-full bg-blue-800"
+                                                                                class="mt-3 mb-4 inline-flex h-16 w-16 items-center justify-center rounded-full bg-blue-800"
                                                                         >
                                                                                 <svg
                                                                                         class="h-8 w-8 text-blue-400"
@@ -234,19 +234,19 @@
                                                                 </div>
                                                                 <List tag="ul" class="mb-6 space-y-3">
                                                                         <Li icon>
-                                                                                <Star class="mt-0.5 mr-2 h-5 w-5 text-blue-500 fill-blue-500" />
+                                                                                <Star class="mt-0.5 mr-2 h-4 w-4 text-blue-500 fill-blue-600" />
                                                                                 Complete 1 short writing task
                                                                         </Li>
                                                                         <Li icon>
-                                                                                <Star class="mt-0.5 mr-2 h-5 w-5 text-blue-500 fill-blue-500" />
+                                                                                <Star class="mt-0.5 mr-2 h-4 w-4 text-blue-500 fill-blue-600" />
                                                                                 Get your band score instantly
                                                                         </Li>
                                                                         <Li icon>
-                                                                                <Star class="mt-0.5 mr-2 h-5 w-5 text-blue-500 fill-blue-500" />
+                                                                                <Star class="mt-0.5 mr-2 h-4 w-4 text-blue-500 fill-blue-600" />
                                                                                 Receive personalised feedback
                                                                         </Li>
                                                                 </List>
-                                                                <Button href="/record" onclick={handleStartTest} color="blue" class="w-full">
+                                                                <Button href="/record" onclick={handleStartTest} color="blue" class="w-full font-semibold">
                                                                         Start Free Test
                                                                 </Button>
                                                         </Card>
@@ -439,7 +439,7 @@
 
                 <!-- Call to Action -->
                 <div class="text-center">
-                        <div class="bg-gray-900 border-2 border-teal-600 border-t-12 border-t-teal-300 rounded-lg p-8 shadow-lg">
+                        <div class="bg-gray-900 border-2 border-blue-600 border-t-12 border-t-blue-600 rounded-lg p-8 shadow-lg">
                                 <h2 class="text-2xl font-semibold text-white mb-6 text-center">
                                         Ready to Start Practicing?
                                 </h2>
@@ -448,7 +448,7 @@
                                 </p>
                                 <a 
                                         href="/writing/quicktest"
-                                        class="inline-block bg-teal-500 hover:bg-teal-600 text-white font-medium px-8 py-3 rounded-lg transition-colors"
+                                        class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-medium px-8 py-3 rounded-lg transition-colors"
                                 >
                                         Start Free Writing Test Now
                                 </a>

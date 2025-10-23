@@ -121,7 +121,7 @@
 		<!-- Speaking -->
 		<a
 			href="/speaking"
-			class="bg-gray-800 rounded-lg border border-gray-700 p-6 shadow-md transition-all transform hover:scale-103 hover:border-teal-600"
+			class="bg-gray-800 rounded-lg border border-gray-700 p-6 shadow-md transition-all transform hover:scale-103 hover:border-green-600"
 		>
 			<h2 class="mb-2 text-2xl text-center font-bold text-teal-600 dark:text-teal-400">Speaking</h2>
 			<p class="text-gray-600 dark:text-gray-300">
@@ -133,7 +133,7 @@
 		<!-- Writing -->
 		<a
 			href="/writing"
-			class="bg-gray-800 rounded-lg border border-gray-700 p-6 shadow-md transition-all transform hover:scale-103 hover:border-teal-600"
+			class="bg-gray-800 rounded-lg border border-gray-700 p-6 shadow-md transition-all transform hover:scale-103 hover:border-blue-600"
 				>
 			<h2 class="mb-2 text-2xl text-center font-bold text-teal-600 dark:text-teal-400">Writing</h2>
 			<p class="text-gray-600 dark:text-gray-300">
@@ -145,7 +145,7 @@
 		<!-- Reading -->
 		<a
 			href="/reading"
-			class="bg-gray-800 rounded-lg border border-gray-700 p-6 shadow-md transition-all transform hover:scale-103 hover:border-teal-600"
+			class="bg-gray-800 rounded-lg border border-gray-700 p-6 shadow-md transition-all transform hover:scale-103 hover:border-purple-600"
 				>
 			<h2 class="mb-2 text-2xl text-center font-bold text-teal-600 dark:text-teal-400">Reading</h2>
 			<p class="text-gray-600 dark:text-gray-300">
@@ -157,7 +157,7 @@
 		<!-- Listening -->
 		<a
 			href="/listening"
-			class="bg-gray-800 rounded-lg border border-gray-700 p-6 shadow-md transition-all transform hover:scale-103 hover:border-teal-600"
+			class="bg-gray-800 rounded-lg border border-gray-700 p-6 shadow-md transition-all transform hover:scale-103 hover:border-orange-600"
 				>
 			<h2 class="mb-2 text-2xl text-center font-bold text-teal-600 dark:text-teal-400">Listening</h2>
 			<p class="text-gray-600 dark:text-gray-300">
