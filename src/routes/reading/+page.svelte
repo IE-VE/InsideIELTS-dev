@@ -125,7 +125,7 @@
 	<div class="container mx-auto max-w-6xl px-6 py-8">
 		<!-- Header Section -->
 		<div class="text-center mb-12">
-			<h1 class="text-4xl font-bold text-gray-900 dark:text-white mb-4">
+			<h1 class="text-4xl font-bold text-gray-900 dark:text-white mb-4 tracking-wide underline decoration-2 underline-offset-3">
 				IELTS READING
 			</h1>	
 		</div>
@@ -198,15 +198,15 @@
 														<div class="w-full md:w-2/5">
 																		<div class="relative mx-auto max-w-sm">
 																						<div
-																										class="absolute inset-0 rotate-3 transform rounded-lg bg-green-500"
+																										class="absolute inset-0 rotate-3 transform rounded-lg bg-purple-500"
 																						></div>
 																						<Card class="relative shadow-lg">
 																										<div class="mb-6 text-center">
 																														<div
-																																		class="mt-3 mb-4 inline-flex h-16 w-16 items-center justify-center rounded-full bg-green-800"
+																																		class="mt-3 mb-4 inline-flex h-16 w-16 items-center justify-center rounded-full bg-purple-800"
 																														>
 																																<svg
-																																						class="h-8 w-8 text-green-300"
+																																						class="h-8 w-8 text-purple-300"
 																																						fill="none"
 																																						viewBox="0 0 24 24"
 																																						stroke="currentColor"
@@ -219,24 +219,24 @@
 																																						/>
 																																		</svg>
 																														</div>
-																														<Heading tag="h4">IELTS Speaking Test</Heading>
+																														<Heading tag="h4">IELTS Reading Test</Heading>
 																														<P class="text-center">Free assessment in minutes</P>
 																										</div>
 																										<List tag="ul" class="mb-6 space-y-3">
 																														<Li icon>
-																																		<Star class="mt-0.5 mr-2 h-4 w-4 text-green-300 fill-green-300" />
-																																		Answer 3 speaking questions
+																																		<Star class="mt-0.5 mr-2 h-4 w-4 text-purple-300 fill-purple-600" />
+																																		Complete 1 Reading Test section
 																														</Li>
 																														<Li icon>
-																																		<Star class="mt-0.5 mr-2 h-4 w-4 text-green-300 fill-green-300" />
-																																		Get your band score instantly
+																																		<Star class="mt-0.5 mr-2 h-4 w-4 text-purple-300 fill-purple-600" />
+																																		Get your score instantly
 																														</Li>
 																														<Li icon>
-																																		<Star class="mt-0.5 mr-2 h-4 w-4 text-green-300 fill-green-300" />
+																																		<Star class="mt-0.5 mr-2 h-4 w-4 text-purple-300 fill-purple-600" />
 																																		Receive personalised feedback
 																														</Li>
 																										</List>
-																										<Button href="/record" onclick={handleStartTest} color="green" class="w-full">
+																										<Button href="/record" onclick={handleStartTest} color="purple" class="w-full">
 																														Start Free Test
 																										</Button>
 																						</Card>
@@ -372,7 +372,7 @@
 
 		<!-- Call to Action -->
 		<div class="text-center">
-			<div class="bg-gray-900 border-2 border-teal-600 border-t-12 border-t-teal-300 rounded-lg p-8 shadow-lg">
+			<div class="bg-gray-900 border-2 border-purple-600 border-t-12 border-t-purple-600 rounded-lg p-8 shadow-lg">
 				<h2 class="text-2xl font-semibold text-white mb-6 text-center">
 					Ready to Start Practicing?
 				</h2>
@@ -381,7 +381,7 @@
 				</p>
 				<a 
 					href="/reading/practice"
-					class="inline-block bg-teal-500 hover:bg-teal-600 text-white font-medium px-8 py-3 rounded-lg transition-colors"
+					class="inline-block bg-purple-500 hover:bg-purple-600 text-white font-medium px-8 py-3 rounded-lg transition-colors"
 				>
 					Start Practice Test Now
 				</a>
