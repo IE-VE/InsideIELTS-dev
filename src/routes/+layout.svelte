@@ -159,7 +159,7 @@
                                 {#each navLinks as link}
                                         <a
                                                 href={link.href}
-                                                class="text-gray-600 hover:text-teal-600 dark:text-gray-300 dark:hover:text-teal-400 text-center leading-tight"
+                                                class="text-gray-600 hover:text-teal-600 dark:text-gray-300 dark:hover:text-teal-400 text-center leading-tight font-semibold"
                                         >
                                                 {link.textParts[0]}<br />{link.textParts[1]}
                                         </a>
@@ -200,7 +200,7 @@
                                         </a>
                                 {/if}
                                 {#each navLinks as link}
-                                        <a href={link.href} class="block text-gray-600 dark:text-gray-300">
+                                        <a href={link.href} class="block text-gray-600 dark:text-gray-300 font-semibold">
                                                 {link.textParts[0]} {link.textParts[1]}
                                         </a>
                                 {/each}
