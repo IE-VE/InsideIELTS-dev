@@ -35,10 +35,10 @@
 
         // Updated navigation links for main menu (no "Practice" repetition)
         const navLinks = [
-                { href: '/speaking', text: 'SPEAKING FREETEST' },
-                { href: '/writing', text: 'WRITING FREETEST' },
-                { href: '/reading', text: 'READING FREETEST' },
-                { href: '/listening', text: 'LISTENING FREETEST' }
+                { href: '/speaking', text: 'SPEAKING FREETEST', textParts: ['SPEAKING', 'FREETEST'] },
+                { href: '/writing', text: 'WRITING FREETEST', textParts: ['WRITING', 'FREETEST'] },
+                { href: '/reading', text: 'READING FREETEST', textParts: ['READING', 'FREETEST'] },
+                { href: '/listening', text: 'LISTENING FREETEST', textParts: ['LISTENING', 'FREETEST'] }
         ];
 </script>
 
@@ -159,9 +159,9 @@
                                 {#each navLinks as link}
                                         <a
                                                 href={link.href}
-                                                class="text-gray-600 hover:text-teal-600 dark:text-gray-300 dark:hover:text-teal-400"
+                                                class="text-gray-600 hover:text-teal-600 dark:text-gray-300 dark:hover:text-teal-400 text-center leading-tight"
                                         >
-                                                {link.text}
+                                                {link.textParts[0]}<br />{link.textParts[1]}
                                         </a>
                                 {/each}
                         </div>
@@ -201,7 +201,7 @@
                                 {/if}
                                 {#each navLinks as link}
                                         <a href={link.href} class="block text-gray-600 dark:text-gray-300">
-                                                {link.text}
+                                                {link.textParts[0]} {link.textParts[1]}
                                         </a>
                                 {/each}
                         </div>
