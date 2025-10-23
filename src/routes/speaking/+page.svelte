@@ -104,7 +104,7 @@
                 <!-- Header Section -->
                 <div class="text-center mb-8">
                         <h1 class="text-4xl font-bold text-gray-900 dark:text-white mb-4 underline decoration-2 underline-offset-3">
-                                IELTS SPEAKING
+                               The IELTS Speaking Test
                         </h1>
                         <!-- <div class="max-w-6xl mx-auto p-6 text-xl text-white text-left font-semibold">
                                 <p class='mb-2'>
@@ -155,7 +155,7 @@
                                                                 class="shadow-lg font-bold border border-white"
                                                                 size="lg"
                                                         >
-                                                                I E T P P
+                                                                START NOW
                                                                 <ArrowRight class="ml-2 h-5 w-5" />
                                                         </Button>
 
@@ -342,6 +342,7 @@
                                                         <li>• Use a wide range of vocabulary accurately <b>(LR)</b></li>
                                                         <li>• Demonstrate varied grammatical structures <b>(GRA)</b></li>
                                                         <li>• Maintain clear pronunciation and intonation <b>(PR)</b></li>
+                                                        <li>• Demonstrate correct chunking and use of phonological features <b>(PR)</b></li>
 
                                                 </ul>
                                         </div>
@@ -362,10 +363,12 @@
                                                 <li>• Understand the <b>IELTS speaking assessment criteria</b> </li>
                                                 <li>• Practice speaking at length on various topics (and don't worry too much about being 'truthful')</li>                                              
                                                 <li>• Focus on clear communication rather than perfection</li>
-                                                <li>• Relax!</li>
+                                                <li>• Try to relax!</li>
                                         </ul>
                                         <p class="text-left text-lg mt-4"><strong>Remember :</strong> 
-                                                <br><b>Part 1</b> is not a discussion - the examiner will only use "Why/Why not?" prompts if you need to extend your answers.<br>In <b>Part 2</b> you must speak for at least 1:30 without 'drying up'.<br> In <b>Part 3</b>, the examiner will discuss questions more naturally with follow-up questions.</p>
+                                                <br><b>Part 1</b> is not a discussion - the examiner will only use "Why/Why not?" prompts if you need to extend your answers.
+                                                <br>In <b>Part 2</b> you must speak non-stop for at least 1:30 without 'drying up'.
+                                                <br> <b>Part 3</b> <u>is</u> a discussion - the examiner will develop the conversation more naturally with follow-up questions.</p>
                                 </div>
                         </Card>
                 </div>
@@ -383,7 +386,7 @@
                                         href="/record"
                                         class="inline-block bg-teal-500 hover:bg-teal-600 text-white font-medium px-8 py-3 rounded-lg transition-colors"
                                 >
-                                        Start Free Speaking Test Now
+                                        Take Free Speaking Test Now
                                 </a>
                         </div>
                 </div>

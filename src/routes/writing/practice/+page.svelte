@@ -81,6 +81,7 @@
                                                                 <li>• Number of tasks: <strong>1</strong></li>
                                                                 <li>• <strong>Length</strong>: write at least <strong>100 words</strong></li>
                                                         </ul>
+																									<p class="mt-4">Treat this exercise like a mini-Task 2 test. You should spend a minute planning and prganising your thoughts befoe writing.</p>
                                                 </div>
 
                                                 <div class="bg-blue-800/10 p-6 rounded-lg">                                                     
@@ -202,12 +203,11 @@
                                                                                         START
                                                                                 </button>
                                                                         {/if}
-                                                                </div>                                      
-                                                                                                                                                                                                                                        <!-- Writing Task -->
+                                                                </div>                                                                                          <!-- Writing Task -->
                                                         <div class="space-y-6 my-10">
-                                                                <div class="border border-cyan/20 rounded-lg p-6 bg-gray-100">
+                                                                <div class="border border-cyan/20 rounded-lg p-6 m-6 bg-gray-100">
                                                                         <p class="text-black font-semibold mb-4">Write about the following topic:</p>
-                                        <div class="border-2 border-black p-4 mb-6">                            <p class="text-xl font-semibold text-black mb-4">Globalisation is good.</p>
+                                        <div class="border-2 border-black p-4 m-6">                            <p class="text-xl font-semibold text-black mb-4">Globalisation is good.</p>
                                                                         <p class="text-lg text-black font-semibold">Say why you <u>support</u> this statement.</p>
                                         </div>
                                                                         <p class="text-lg text-black font-semibold mb-6">Give reasons for your answer and include any relevant examples from your own knowledge or experience.</p>
@@ -219,14 +219,13 @@
                                                                                 Your Answer:
                                                                         </label>
                                                                         <div class="w-full max-w-[700px] border border-gray-500 rounded-lg bg-gray-900 p-6 focus-within:ring-2 focus-within:ring-teal-500 focus-within:border-teal-500">
-                                                                                <p class="text-white text-lg">One reason that globalisation is a positive force in today's world is that</p>
+                                                                                <p class="text-white text-lg">One reason why globalisation is a positive force in today's world is that...</p>
                                                                                 <textarea
                                                                                         id="answer-textarea"
                                                                                         bind:value={answer}
                                                                                         placeholder="..."
 
-                                                                                        class="w-full h-80 p-0 border-0 focus:ring-0 focus:outline-none bg-transparent text-white text-lg resize-none"
-                                                                                ></textarea>
+                                                                                        class="w-full h-80 p-0 border-0 bg-transparent text-white text-lg resize-none"></textarea>
                                                                         </div>
                                                                         <div class="w-full max-w-[700px] mt-4 p-4 bg-blue-900/40 border border-blue-700 rounded-lg mb-4">
                                                                                 <p class="text-sm text-blue-800 dark:text-blue-200">

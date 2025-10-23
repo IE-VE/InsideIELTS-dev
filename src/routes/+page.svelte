@@ -127,43 +127,43 @@
 			<p class="text-gray-600 dark:text-gray-300">
 				Complete Speaking Test preparation materials plus <b>free Speaking evaluation</b> with feedback and band score.
 			</p>
-			<div class="mt-4 text-sm font-medium text-teal-600 dark:text-teal-400">SPEAKING FREETEST →</div>
+			<!-- <div class="mt-4 text-sm font-medium text-teal-600 dark:text-teal-400">SPEAKING FREETEST →</div> -->
 		</a>
 
 		<!-- Writing -->
 		<a
-			href="/writing/practice"
+			href="/writing"
 			class="bg-gray-800 rounded-lg border border-gray-700 p-6 shadow-md transition-all transform hover:scale-103 hover:border-teal-600"
 				>
 			<h2 class="mb-2 text-2xl text-center font-bold text-teal-600 dark:text-teal-400">Writing</h2>
 			<p class="text-gray-600 dark:text-gray-300">
 				Complete Writing Test preparation materials plus <b>free Writing evaluation exercise</b> with feedback and band score.
 			</p>
-			<div class="mt-4 text-sm font-medium text-teal-600 dark:text-teal-400">WRITING FREETEST →</div>
+			<!-- <div class="mt-4 text-sm font-medium text-teal-600 dark:text-teal-400">WRITING FREETEST →</div> -->
 		</a>
 
 		<!-- Reading -->
 		<a
-			href="/reading/practice"
+			href="/reading"
 			class="bg-gray-800 rounded-lg border border-gray-700 p-6 shadow-md transition-all transform hover:scale-103 hover:border-teal-600"
 				>
 			<h2 class="mb-2 text-2xl text-center font-bold text-teal-600 dark:text-teal-400">Reading</h2>
 			<p class="text-gray-600 dark:text-gray-300">
 				Complete Reading Test preparation materials plus <b>free Reading skills evaluation</b> with feedback and score.
 			</p>
-			<div class="mt-4 text-sm font-medium text-teal-600 dark:text-teal-400">READING FREETEST →</div>
+			<!-- <div class="mt-4 text-sm font-medium text-teal-600 dark:text-teal-400">READING FREETEST →</div> -->
 		</a>
 
 		<!-- Listening -->
 		<a
-			href="/listening/practice"
+			href="/listening"
 			class="bg-gray-800 rounded-lg border border-gray-700 p-6 shadow-md transition-all transform hover:scale-103 hover:border-teal-600"
 				>
 			<h2 class="mb-2 text-2xl text-center font-bold text-teal-600 dark:text-teal-400">Listening</h2>
 			<p class="text-gray-600 dark:text-gray-300">
 				Complete Listening Test preparation materials plus <b>free Listening skills evaluation</b> with feedback and score.
 			</p>
-			<div class="mt-4 text-sm font-medium text-teal-600 dark:text-teal-400">LISTENING FREETEST →</div>
+			<!-- <div class="mt-4 text-sm font-medium text-teal-600 dark:text-teal-400">LISTENING FREETEST →</div> -->
 		</a>
 	</div>
 </div>
