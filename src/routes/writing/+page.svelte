@@ -141,7 +141,7 @@
                 <!-- Hero Section -->
 
                 <section
-                        class="relative bg-gradient-to-br from-teal-100 via-blue-50 to-indigo-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 my-16 rounded-xl"
+                        class="relative bg-gradient-to-br from-teal-100 via-blue-50 to-indigo-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 my-16 rounded-xl border border-gray-600"
                 >
                         <div class="absolute inset-0 bg-gradient-to-tr from-teal-200/20 to-transparent rounded-xl"></div>
                         <div class="relative max-w-6xl mx-auto px-6 lg:px-12 py-8 md:py-12">
@@ -207,15 +207,15 @@
                                         <div class="w-full md:w-2/5">
                                                 <div class="relative mx-auto max-w-sm">
                                                         <div
-                                                                class="absolute inset-0 rotate-3 transform rounded-lg bg-teal-600 dark:bg-teal-500"
+                                                                class="absolute inset-0 rotate-3 transform rounded-lg bg-blue-500"
                                                         ></div>
                                                         <Card class="relative shadow-lg">
                                                                 <div class="mb-6 text-center">
                                                                         <div
-                                                                                class="mb-4 inline-flex h-16 w-16 items-center justify-center rounded-full bg-teal-100 dark:bg-teal-800"
+                                                                                class="mb-4 inline-flex h-16 w-16 items-center justify-center rounded-full bg-blue-800"
                                                                         >
                                                                                 <svg
-                                                                                        class="h-8 w-8 text-teal-600 dark:text-teal-300"
+                                                                                        class="h-8 w-8 text-blue-400"
                                                                                         fill="none"
                                                                                         viewBox="0 0 24 24"
                                                                                         stroke="currentColor"
@@ -228,24 +228,24 @@
                                                                                         />
                                                                                 </svg>
                                                                         </div>
-                                                                        <Heading tag="h4">IELTS Speaking Test</Heading>
+                                                                        <Heading tag="h4">IELTS Writing Test</Heading>
                                                                         <P class="text-center">Free assessment in minutes</P>
                                                                 </div>
                                                                 <List tag="ul" class="mb-6 space-y-3">
                                                                         <Li icon>
-                                                                                <Check class="mt-0.5 mr-2 h-5 w-5 text-teal-600 dark:text-teal-300" />
-                                                                                Answer 3 speaking questions
+                                                                                <Check class="mt-0.5 mr-2 h-5 w-5 text-blue-500" />
+                                                                                Complete 1 short writing task
                                                                         </Li>
                                                                         <Li icon>
-                                                                                <Check class="mt-0.5 mr-2 h-5 w-5 text-teal-600 dark:text-teal-300" />
+                                                                                <Check class="mt-0.5 mr-2 h-5 w-5 text-blue-500" />
                                                                                 Get your band score instantly
                                                                         </Li>
                                                                         <Li icon>
-                                                                                <Check class="mt-0.5 mr-2 h-5 w-5 text-teal-600 dark:text-teal-300" />
+                                                                                <Check class="mt-0.5 mr-2 h-5 w-5 text-blue-500" />
                                                                                 Receive personalised feedback
                                                                         </Li>
                                                                 </List>
-                                                                <Button href="/record" onclick={handleStartTest} color="primary" class="w-full">
+                                                                <Button href="/record" onclick={handleStartTest} color="blue" class="w-full">
                                                                         Start Free Test
                                                                 </Button>
                                                         </Card>
