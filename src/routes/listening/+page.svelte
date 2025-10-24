@@ -1,4 +1,17 @@
 <script lang="ts">
+	import { tracking } from '$lib/utils/analytics';
+	import {
+		Button,
+		Heading,
+		P,
+		List,
+		Li
+	} from 'flowbite-svelte';
+	import {
+		ArrowRight,
+		Check,
+		Star
+	} from 'lucide-svelte';
 	import Card from '$lib/components/Card.svelte';
 	import Lightbox from '$lib/components/Lightbox.svelte';
 	import { onMount } from 'svelte';
@@ -9,6 +22,10 @@
 	let duration = $state(0);
 	let audioElement: HTMLAudioElement;
 	let showAnswers = $state(false);
+
+	function handleStartTest() {
+		tracking.startTest();
+	}
 
 	const questionTypes = [
 		{
@@ -76,17 +93,6 @@
 		}
 	];
 
-	// const sampleQuestions = [
-	// 	'/static/listening-images/LT1 (1).png',
-	// 	'/static/listening-images/LT1 (2).png',
-	// 	'/static/listening-images/LT1 (3).png',
-	// 	'/static/listening-images/LT1 (4).png',
-	// 	'/static/listening-images/LT1 (5).png',
-	// 	'/static/listening-images/LT1 (6).png',
-	// 	'/static/listening-images/LT1 (7).png',
-	// 	'/static/listening-images/LT1 (8).png'
-	// ];
-
 	function togglePlayPause() {
 		if (!audioElement) return;
 
@@ -143,18 +149,131 @@
 	<div class="container mx-auto max-w-6xl px-6 py-8">
 		<!-- Header Section -->
 		<div class="text-center mb-12">
-			<h1 class="text-4xl font-bold text-gray-900 dark:text-white mb-4">
+			<h1 class="text-4xl font-bold text-gray-900 dark:text-white mb-4 tracking-wide underline decoration-2 underline-offset-3">
 				IELTS LISTENING
 			</h1>
-			<div class="max-w-6xl mx-auto px-6">
-				<p class="text-xl text-gray-600 dark:text-gray-300 text-center py-4 mb-8">
-					The Listening Test is the first test that you will complete on test
-					day.
-				</p>
 			</div>
 
-		</div>
+		<!-- Hero Section -->
+		<section
+						class="relative bg-gradient-to-br from-teal-100 via-blue-50 to-indigo-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 my-16 rounded-xl border border-gray-600"
+		>
+						<div class="absolute inset-0 bg-gradient-to-tr from-teal-200/20 to-transparent rounded-xl"></div>
+						<div class="relative max-w-6xl mx-auto px-6 lg:px-12 py-8 md:py-12">
+										<h1 class="mb-8 text-left text-3xl md:text-4xl lg:text-5xl font-bold text-white">
+														Begin your <span class="text-teal-400"
+																		>IE STUDY JOURNEY</span> today...
+										</h1>
+										<div class="flex flex-col items-center gap-8 md:flex-row md:gap-12 lg:gap-16">
+														<div class="mb-10 w-full text-center md:mb-0 md:w-3/5 md:text-left">
 
+																		<p class="mt-4 text-lg md:text-xl">                                                        At <b>InsideIELTS</b> we provide tailormade study programs designed to help you achieve your IELTS score as quickly, easily and efficiently as possible.
+																		</p>
+																		<p class="mt-6 text-left text-xl">                                                          <strong>Our unique Test Preparation Program offers : </strong>
+																		</p>
+
+																		<List tag="ul" class="mt-3">
+																						<Li icon class="mb-1">
+																										<Check class="mr-2 h-5 w-5 text-teal-400" />                                                             Cutting-edge language analysis technology
+																						</Li>
+																						<Li icon class="mb-1">
+																										<Check class="mr-2 h-5 w-5 text-teal-400" />                                                             Inside-knowledge of official IELTS assessment procedures 
+																						</Li>
+																						<Li icon>
+																										<Check class="mr-2 h-5 w-5 text-teal-400" />
+																										Real support from real IELTS examiners
+																						</Li>
+																																								</List>
+
+																		<p class="mt-4 text-lg md:text-xl">Target your specific areas of weakness and achieve your IELTS goals faster — with smarter, precision-focused learning designed to get results.                                              </p>
+																		<div
+																						class="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row md:justify-start"
+																		>
+																						<Button
+																										href="/IETPP"
+																										onclick={handleStartTest}
+																										color="primary"
+																										class="shadow-lg font-bold border border-white"
+																										size="lg"
+																						>
+																										START NOW
+																										<ArrowRight class="ml-2 h-5 w-5" />
+																						</Button>
+
+																						<div class="flex items-center">
+																										<svg
+																														class="mr-1 h-4 w-4 text-teal-600"
+																														fill="none"
+																														viewBox="0 0 24 24"
+																														stroke="currentColor"
+																										>
+																														<path
+																																		stroke-linecap="round"
+																																		stroke-linejoin="round"
+																																		stroke-width="2"
+																																		d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"
+																														/>
+																										</svg>
+																										<P size="sm">100% private - no account needed</P>
+																						</div>
+																		</div>
+														</div>
+
+														<div class="w-full md:w-2/5">
+																		<div class="relative mx-auto max-w-sm">
+																						<div
+																										class="absolute inset-0 rotate-3 transform rounded-lg bg-orange-500"
+																						></div>
+																						<Card class="relative shadow-lg">
+																										<div class="mb-6 text-center">
+																														<div
+																																		class="mt-3 mb-4 inline-flex h-16 w-16 items-center justify-center rounded-full bg-orange-800"
+																														>
+																																<svg
+																																						class="h-8 w-8 text-orange-300"
+																																						fill="none"
+																																						viewBox="0 0 24 24"
+																																						stroke="currentColor"
+																																		>
+																																						<path
+																																										stroke-linecap="round"
+																																										stroke-linejoin="round"
+																																										stroke-width="2"
+																																										d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"
+																																						/>
+																																		</svg>
+																														</div>
+																														<Heading tag="h4">IELTS Listening Test</Heading>
+																														<P class="text-center">Free assessment in minutes</P>
+																										</div>
+																										<List tag="ul" class="mb-6 space-y-3">
+																														<Li icon>
+																																		<Star class="mt-0.5 mr-2 h-4 w-4 text-orange-300 fill-orange-600" />
+																																		Complete 1 Listening Test section
+																														</Li>
+																														<Li icon>
+																																		<Star class="mt-0.5 mr-2 h-4 w-4 text-orange-300 fill-orange-600" />
+																																		Get your score instantly
+																														</Li>
+																														<Li icon>
+																																		<Star class="mt-0.5 mr-2 h-4 w-4 text-orange-300 fill-orange-600" />
+																																		Receive personalised feedback
+																														</Li>
+																										</List>
+																										<Button href="/record" onclick={handleStartTest} color="orange" class="w-full bg-orange-500 hover:bg-orange-600">
+																														Start Free Test
+																										</Button>
+																						</Card>
+																		</div>
+														</div>
+										</div>
+										<h1 class="mt-10 text-right text-3xl md:text-4xl lg:text-5xl font-bold text-white">
+														..to <span class="text-teal-400"
+																		>achieve the dreams</span> of your future.
+										</h1>
+						</div>
+		</section>
+		
 		<!-- Test Overview -->
 		<div class="mb-12">
 			<Card variant="secondary">
@@ -256,18 +375,18 @@
 
 			<!-- Call to Action -->
 		<div class="text-center">
-			<div class="bg-gray-900 border-2 border-teal-600 border-t-12 border-t-teal-300 rounded-lg p-8 shadow-lg">
+			<div class="bg-gray-900 border-2 border-orange-600 border-t-12 border-t-orange-600 rounded-lg p-8 shadow-lg">
 				<h2 class="text-2xl font-semibold text-white mb-6 text-center">
-					Free Evaluation Test
+					Ready to Test Your Listening Skills?
 				</h2>
 				<p class="text-gray-300 mb-6 text-xl">
-					Try our quick single section Listening sample test with authentic questions and audio.
+					Take our free 8-minute Listening assessment and get instant feedback on your performance.
 				</p>
 				<a 
 					href="/listening/practice"
-					class="inline-block bg-teal-500 hover:bg-teal-600 text-white font-medium px-8 py-3 rounded-lg transition-colors"
+					class="inline-block bg-orange-500 hover:bg-orange-600 text-white font-medium px-8 py-3 rounded-lg transition-colors"
 				>
-					Start Practice Test Now
+					Take Free Listening Test Now
 				</a>
 			</div>
 		</div>

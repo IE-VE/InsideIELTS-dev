@@ -374,7 +374,7 @@
                                         Ready to Test Your Speaking Skills?
                                 </h2>
                                 <p class="text-gray-300 mb-6 text-xl">
-                                        Take our free 3-minute speaking assessment and get instant feedback on your performance.
+                                        Take our free 3-minute Speaking assessment and get instant feedback on your performance.
                                 </p>
                                 <a 
                                         href="/record"

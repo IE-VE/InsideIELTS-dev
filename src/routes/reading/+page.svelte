@@ -125,7 +125,7 @@
 	<div class="container mx-auto max-w-6xl px-6 py-8">
 		<!-- Header Section -->
 		<div class="text-center mb-12">
-			<h1 class="text-4xl font-bold text-gray-900 dark:text-white mb-4 tracking-wide underline decoration-2 underline-offset-3">
+			<h1 class="text-4xl font-bold text-white mb-4 tracking-wide underline underline-4 decoration-2 decoration-purple-500 underline-offset-3">
 				IELTS READING
 			</h1>	
 		</div>
@@ -374,16 +374,16 @@
 		<div class="text-center">
 			<div class="bg-gray-900 border-2 border-purple-600 border-t-12 border-t-purple-600 rounded-lg p-8 shadow-lg">
 				<h2 class="text-2xl font-semibold text-white mb-6 text-center">
-					Ready to Start Practicing?
+					Ready to Test Your Reading Skills?
 				</h2>
 				<p class="text-gray-300 mb-6 text-xl">
-					Take our complete IELTS Reading practice test with authentic passages and questions.
+					Take our free 12-minute Reading assessment and get instant feedback on your performance.
 				</p>
 				<a 
 					href="/reading/practice"
 					class="inline-block bg-purple-500 hover:bg-purple-600 text-white font-medium px-8 py-3 rounded-lg transition-colors"
 				>
-					Start Practice Test Now
+					Take Free Reading Test Now
 				</a>
 			</div>
 		</div>

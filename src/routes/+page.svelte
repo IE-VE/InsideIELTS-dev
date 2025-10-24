@@ -23,9 +23,10 @@
 		Sparkles,
 		Quote,
 		GraduationCap,
-		Award
+		Award, 
+		Star
 	} from 'lucide-svelte';
-
+	
 	function handleStartTest() {
 		tracking.startTest();
 	}
@@ -266,20 +267,20 @@
 
 						<List tag="ul" class="mb-6 space-y-3">
 							<Li icon>
-								<Check class="mt-0.5 mr-2 h-5 w-5 text-teal-600 dark:text-teal-300" />
+								<Star class="mt-0.5 mr-2 h-4 w-4 text-teal-300 fill-teal-400"/>
 								Answer 3 speaking questions
 							</Li>
 							<Li icon>
-								<Check class="mt-0.5 mr-2 h-5 w-5 text-teal-600 dark:text-teal-300" />
+								<Star class="mt-0.5 mr-2 h-4 w-4 text-teal-300 fill-teal-400"/>
 								Get your band score instantly
 							</Li>
 							<Li icon>
-								<Check class="mt-0.5 mr-2 h-5 w-5 text-teal-600 dark:text-teal-300" />
+								<Star class="mt-0.5 mr-2 h-4 w-4 text-teal-300 fill-teal-400"/>
 								Receive personalised feedback
 							</Li>
 						</List>
 
-						<Button href="/record" onclick={handleStartTest} color="primary">
+						<Button href="/record" onclick={handleStartTest} color="teal" class="bg-teal-500 hover:bg-teal-400 text-white font-bold">
 							Start Free Test
 						</Button>
 					</Card>

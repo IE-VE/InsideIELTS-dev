@@ -11,7 +11,9 @@
         import {
                 ArrowRight,
                 Check,
-                Dot
+                Dot,
+                Star,
+                Circle
         } from 'lucide-svelte';
         import Card from '$lib/components/Card.svelte';
         import Lightbox from '$lib/components/Lightbox.svelte';
@@ -234,15 +236,15 @@
                                                                 </div>
                                                                 <List tag="ul" class="mb-6 space-y-3">
                                                                         <Li icon>
-                                                                                <Dot class="mt-0.5 mr-2 h-5 w-5 text-blue-500" />
+                                                                                <Circle class="mx-3 h-2.5 w-2.5 text-blue-500 fill-blue-500" />
                                                                                 Complete 1 short writing task
                                                                         </Li>
                                                                         <Li icon>
-                                                                                <Dot class="mt-0.5 mr-2 h-5 w-5 text-blue-500" />
+                                                                                <Circle class="mx-3 h-2.5 w-2.5 text-blue-500 fill-blue-500" />
                                                                                 Get your band score instantly
                                                                         </Li>
                                                                         <Li icon>
-                                                                                <Dot class="mt-0.5 mr-2 h-5 w-5 text-blue-500" />
+                                                                                <Circle class="mx-3 h-2.5 w-2.5 text-blue-500 fill-blue-500" />
                                                                                 Receive personalised feedback
                                                                         </Li>
                                                                 </List>
@@ -441,16 +443,16 @@
                 <div class="text-center">
                         <div class="bg-gray-900 border-2 border-blue-600 border-t-12 border-t-blue-600 rounded-lg p-8 shadow-lg">
                                 <h2 class="text-2xl font-semibold text-white mb-6 text-center">
-                                        Ready to Start Practicing?
+                                        Ready to Test Your Writing Skills?
                                 </h2>
                                 <p class="text-gray-300 mb-6 text-xl">
-                                        Take our complete IELTS Writing practice test with authentic Task 1 and Task 2 questions.
+                                        Take our free 10-minute Writing assessment and get instant feedback on your performance.
                                 </p>
                                 <a 
                                         href="/writing/quicktest"
                                         class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-medium px-8 py-3 rounded-lg transition-colors"
                                 >
-                                        Start Free Writing Test Now
+                                        Take Free Writing Test Now
                                 </a>
                         </div>
                 </div>
