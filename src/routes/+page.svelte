@@ -26,7 +26,7 @@
 		Award, 
 		Star
 	} from 'lucide-svelte';
-	
+
 	function handleStartTest() {
 		tracking.startTest();
 	}
@@ -338,7 +338,7 @@
 					We focus on what really matters: identifying your weaknesses, building your strengths, and giving you clear, actionable strategies for test-day success.
 				</P>
 			</div>
-			
+
 				<div class="flex justify-center md:row-span-2">
 				<figure>
 				<picture>
@@ -355,7 +355,7 @@
 <figcaption class="text-center text-sm text-gray-400 dark:text-gray-400 mb-4">Alex, Paul and Jane at IE HQ</figcaption>
 					</figure>
 			</div>
-			
+
 			<div class="md:col-start-1">
 				<blockquote class="border-l-4 border-teal-500 pl-4 italic">
 					"Our mission is simple: no guesswork, no wasted time - just clear, personalised strategies that produce real progress, fast."
@@ -499,5 +499,3 @@
 		}
 	}
 </style>
-
-
