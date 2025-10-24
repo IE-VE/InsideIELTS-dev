@@ -182,10 +182,10 @@
                                                         <Card class="relative shadow-lg">
                                                                 <div class="mb-6 text-center">
                                                                         <div
-                                                                                class="mt-3 mb-4 inline-flex h-16 w-16 items-center justify-center rounded-full bg-green-800"
+                                                                                class="mt-3 mb-4 inline-flex h-16 w-16 items-center justify-center rounded-full bg-green-700"
                                                                         >
                                                                             <svg
-                                                                                        class="h-8 w-8 text-green-300"
+                                                                                        class="h-8 w-8 text-green-400"
                                                                                         fill="none"
                                                                                         viewBox="0 0 24 24"
                                                                                         stroke="currentColor"
