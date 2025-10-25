@@ -136,7 +136,7 @@
         <div class="container mx-auto max-w-6xl px-6 py-8">
                 <!-- Header Section -->
                 <div class="text-center mb-8">
-                        <h1 class="text-4xl font-bold text-gray-900 dark:text-white mb-4 tracking-wide underline decoration-2 underline-offset-3">
+                        <h1 class="text-4xl font-bold text-gray-300 mb-4 tracking-wide underline decoration-8 decoration-green-500/60 underline-offset-3">
                                 IELTS WRITING
                         </h1>                                   
                 </div>
@@ -210,15 +210,15 @@
                                         <div class="w-full md:w-2/5">
                                                 <div class="relative mx-auto max-w-sm">
                                                         <div
-                                                                class="absolute inset-0 rotate-3 transform rounded-lg bg-blue-500"
+                                                                class="absolute inset-0 rotate-3 transform rounded-lg bg-green-500"
                                                         ></div>
                                                         <Card class="relative shadow-lg">
                                                                 <div class="mb-6 text-center">
                                                                         <div
-                                                                                class="mt-3 mb-4 inline-flex h-16 w-16 items-center justify-center rounded-full bg-blue-800"
+                                                                                class="mt-3 mb-4 inline-flex h-16 w-16 items-center justify-center rounded-full bg-green-800"
                                                                         >
                                                                                 <svg
-                                                                                        class="h-8 w-8 text-blue-400"
+                                                                                        class="h-8 w-8 text-green-400"
                                                                                         fill="none"
                                                                                         viewBox="0 0 24 24"
                                                                                         stroke="currentColor"
@@ -236,19 +236,19 @@
                                                                 </div>
                                                                 <List tag="ul" class="mb-6 space-y-3">
                                                                         <Li icon>
-                                                                                <Circle class="mx-3 h-2.5 w-2.5 text-blue-500 fill-blue-500" />
+                                                                                <Star class="mx-3 h-4 w-4 text-green-500 fill-green-300" />
                                                                                 Complete 1 short writing task
                                                                         </Li>
                                                                         <Li icon>
-                                                                                <Circle class="mx-3 h-2.5 w-2.5 text-blue-500 fill-blue-500" />
+                                                                                <Star class="mx-3 h-4 w-4 text-green-500 fill-green-300" />
                                                                                 Get your band score instantly
                                                                         </Li>
                                                                         <Li icon>
-                                                                                <Circle class="mx-3 h-2.5 w-2.5 text-blue-500 fill-blue-500" />
+                                                                                <Star class="mx-3 h-4 w-4 text-green-500 fill-green-300" />
                                                                                 Receive personalised feedback
                                                                         </Li>
                                                                 </List>
-                                                                <Button href="/record" onclick={handleStartTest} color="blue" class="w-full font-semibold">
+                                                                <Button href="/writing/quicktest" onclick={handleStartTest} color="green" class="w-full font-semibold">
                                                                         Start Free Test
                                                                 </Button>
                                                         </Card>
@@ -264,7 +264,7 @@
 
                 <!-- Test Overview -->
                 <div class="mb-12">
-                        <Card variant="secondary">
+                        <div class="bg-primary-800/10 border-2 border-green-500/60 border-t-12 border-t-green-500/60 rounded-lg p-8 shadow-lg">
                                 <h2 class="text-2xl font-semibold text-gray-900 dark:text-white mb-6 text-center">
                                         Writing Test Format
                                 </h2>
@@ -284,12 +284,12 @@
                                                 <div class="text-sm text-gray-600 dark:text-gray-300">Total Words</div>
                                         </div>
                                 </div>
-                        </Card>
+                        </div>
                 </div>
 
                 <!-- Task 1 General Training -->
                 <div class="mb-12">
-                        <Card variant="secondary">
+                           <div class="bg-primary-800/10 border-2 border-green-500/60 border-t-12 border-t-green-500/60 rounded-lg p-8 shadow-lg">
                                 <h2 class="text-2xl font-semibold text-gray-900 dark:text-white mb-6 text-center">
                                         Task 1 (General Training)
                                 </h2>
@@ -315,12 +315,12 @@
                                 </div>
                                 <p class="mt-6 mb-2 text-xl"><b>Task 1</b> is worth one-third of the available marks for the writing section, so you should aim to spend around <b>20 minutes</b> on this task.
                                 </p>
-                        </Card>
+                        </div>
                 </div>
 
                 <!-- Task 1 Academic -->
                 <div class="mb-12">
-                        <Card variant="secondary">
+                           <div class="bg-primary-800/10 border-2 border-green-500/60 border-t-12 border-t-green-500/60 rounded-lg p-8 shadow-lg">
                                 <h2 class="text-2xl font-semibold text-gray-900 dark:text-white mb-6 text-center">
                                         Task 1 (Academic)
                                 </h2>
@@ -346,12 +346,12 @@
                                 </div>
                                 <p class="mt-6 mb-2 text-xl"><b>Task 1</b> is worth one-third of the available marks for the writing section, so you should aim to spend around <b>20 minutes</b> on this task.
                                 </p>
-                        </Card>
+                        </div>
                 </div>
 
                 <!-- Task 2 -->
                 <div class="mb-12">
-                        <Card variant="secondary">
+                           <div class="bg-primary-800/10 border-2 border-green-500/60 border-t-12 border-t-green-500/60 rounded-lg p-8 shadow-lg">
                                 <h2 class="text-2xl font-semibold text-gray-900 dark:text-white mb-6 text-center">
                                         Task 2
                                 </h2>
@@ -379,12 +379,12 @@
                                 </div>
                                 <p class="mt-6 mb-2 text-xl">You should aim to spend around <b>40 minutes</b> on <b>Task 2</b>.
                                 </p>
-                        </Card>
+                        </div>
                 </div>
 
                 <!-- Assessment Criteria -->
                 <div class="mb-12">
-                        <Card variant="secondary">
+                           <div class="bg-primary-800/10 border-2 border-green-500/60 border-t-12 border-t-green-500/60 rounded-lg p-8 shadow-lg">
                                 <h2 class="text-2xl font-semibold text-gray-900 dark:text-white mb-6 text-center">
                                         Assessment Criteria
                                 </h2>
@@ -417,12 +417,12 @@
                                                 </ul>
                                         </div>
                                 </div>
-                        </Card>
+                        </div>
                 </div>
 
                 <!-- Important Notes -->
                 <div class="mb-12">
-                        <Card variant="secondary">
+                           <div class="bg-primary-800/10 border-2 border-green-500/60 border-t-12 border-t-green-500/60 rounded-lg p-8 shadow-lg">
                                 <h2 class="text-2xl font-semibold text-gray-900 dark:text-white mb-6 text-center">
                                         Important Guidelines
                                 </h2>
@@ -436,12 +436,12 @@
                                                 <li>• Practice different question types regularly</li>
                                         </ul>
                                 </div>
-                        </Card>
+                        </div>
                 </div>
 
                 <!-- Call to Action -->
                 <div class="text-center">
-                        <div class="bg-gray-900 border-2 border-blue-600 border-t-12 border-t-blue-600 rounded-lg p-8 shadow-lg">
+                           <div class="bg-gray-900 border-2 border-green-500/60 border-t-12 border-t-green-500/60 rounded-lg p-8 shadow-lg">
                                 <h2 class="text-2xl font-semibold text-white mb-6 text-center">
                                         Ready to Test Your Writing Skills?
                                 </h2>
@@ -450,7 +450,7 @@
                                 </p>
                                 <a 
                                         href="/writing/quicktest"
-                                        class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-medium px-8 py-3 rounded-lg transition-colors"
+                                        class="inline-block bg-green-600 hover:bg-green-700 text-white font-medium px-8 py-3 rounded-lg transition-colors"
                                 >
                                         Take Free Writing Test Now
                                 </a>

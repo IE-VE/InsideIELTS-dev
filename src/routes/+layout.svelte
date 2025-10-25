@@ -158,25 +158,25 @@
                         <div class="hidden items-center space-x-6 text-sm md:space-x-4 md:text-xs lg:space-x-6 lg:text-sm md:flex">
                                 <a
                                         href="/record"
-                                        class="text-gray-300 hover:text-blue-500 text-center leading-tight font-semibold"
+                                        class="text-gray-300 hover:text-blue-600/80 text-center leading-tight font-semibold"
                                 >
                                         SPEAKING<br />Free-Test
                                 </a>
                                 <a
                                         href="/writing/quicktest"
-                                        class="text-gray-300 hover:text-green-500 text-center leading-tight font-semibold"
+                                        class="text-gray-300 hover:text-green-600/80 text-center leading-tight font-semibold"
                                 >
                                         WRITING<br />Free-Test
                                 </a>
                                 <a
                                         href="/reading/quicktest"
-                                        class="text-gray-300 hover:text-purple-500 text-center leading-tight font-semibold"
+                                        class="text-gray-300 hover:text-purple-600/80 text-center leading-tight font-semibold"
                                 >
                                         READING<br />Free-Test
                                 </a>
                                 <a
                                         href="/listening/quicktest"
-                                        class="text-gray-300 hover:text-orange-500 text-center leading-tight font-semibold"
+                                        class="text-gray-300 hover:text-orange-600/80 text-center leading-tight font-semibold"
                                 >
                                         LISTENING<br />Free-Test
                                 </a>
@@ -215,16 +215,16 @@
                                                 IETPP
                                         </a>
                                 {/if}
-                                <a href="/record" class="block text-gray-600 hover:text-blue-500 dark:text-gray-300 dark:hover:text-blue-400 font-semibold">
+                                <a href="/record" class="block text-gray-600 hover:text-blue-500 dark:text-gray-300 dark:hover:text-blue-600/80 font-semibold">
                                         SPEAKING Free-Test
                                 </a>
-                                <a href="/writing/quicktest" class="block text-gray-600 hover:text-green-500 dark:text-gray-300 dark:hover:text-green-400 font-semibold">
+                                <a href="/writing/quicktest" class="block text-gray-600 hover:text-green-500 dark:text-gray-300 dark:hover:text-green-600/80 font-semibold">
                                         WRITING Free-Test
                                 </a>
-                                <a href="/reading/quicktest" class="block text-gray-600 hover:text-purple-500 dark:text-gray-300 dark:hover:text-purple-400 font-semibold">
+                                <a href="/reading/quicktest" class="block text-gray-600 hover:text-purple-500 dark:text-gray-300 dark:hover:text-purple-600/80 font-semibold">
                                         READING Free-Test
                                 </a>
-                                <a href="/listening/quicktest" class="block text-gray-600 hover:text-orange-500 dark:text-gray-300 dark:hover:text-orange-400 font-semibold">
+                                <a href="/listening/quicktest" class="block text-gray-600 hover:text-orange-500 dark:text-gray-300 dark:hover:text-orange-600/80 font-semibold">
                                         LISTENING Free-Test
                                 </a>
                         </div>

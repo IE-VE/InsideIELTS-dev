@@ -149,7 +149,7 @@
 	<div class="container mx-auto max-w-6xl px-6 py-8">
 		<!-- Header Section -->
 		<div class="text-center mb-12">
-			<h1 class="text-4xl font-bold text-gray-900 dark:text-white mb-4 tracking-wide underline decoration-2 underline-offset-3">
+			<h1 class="text-4xl font-bold text-gray-300 mb-4 tracking-wide underline decoration-8 decoration-orange-600/80 underline-offset-3">
 				IELTS LISTENING
 			</h1>
 			</div>
@@ -248,15 +248,15 @@
 																										</div>
 																										<List tag="ul" class="mb-6 space-y-3">
 																														<Li icon>
-																																		<Star class="mt-0.5 mr-2 h-4 w-4 text-orange-300 fill-orange-600" />
+																																		<Star class="mx-3 h-4 w-4 text-orange-300 fill-orange-600" />
 																																		Complete 1 Listening Test section
 																														</Li>
 																														<Li icon>
-																																		<Star class="mt-0.5 mr-2 h-4 w-4 text-orange-300 fill-orange-600" />
+																																		<Star class="mx-3 h-4 w-4 text-orange-300 fill-orange-600" />
 																																		Get your score instantly
 																														</Li>
 																														<Li icon>
-																																		<Star class="mt-0.5 mr-2 h-4 w-4 text-orange-300 fill-orange-600" />
+																																		<Star class="mx-3 h-4 w-4 text-orange-300 fill-orange-600" />
 																																		Receive personalised feedback
 																														</Li>
 																										</List>
@@ -276,7 +276,7 @@
 		
 		<!-- Test Overview -->
 		<div class="mb-12">
-			<Card variant="secondary">
+			<div class="bg-primary-800/10 border-2 border-orange-500/70 border-t-12 border-t-orange-500/70 rounded-lg p-8 shadow-lg">
 				<h2 class="text-2xl font-semibold text-gray-900 dark:text-white mb-6 text-center">
 					Format
 				</h2>
@@ -297,12 +297,12 @@
 						<div class="text-sm text-gray-600 dark:text-gray-300">Questions</div>
 					</div>
 				</div>
-			</Card>
+			</div>
 		</div>
 
 		<!-- Assessment Criteria -->
 		<div class="mb-12">
-			<Card variant="secondary">
+			<div class="bg-primary-800/10 border-2 border-orange-500/70 border-t-12 border-t-orange-500/70 rounded-lg p-8 shadow-lg">
 				<h2 class="text-2xl font-semibold text-gray-900 dark:text-white mb-6 text-center">
 					Assessment Criteria
 				</h2>
@@ -341,12 +341,12 @@
 						</ul>
 					</div>
 				</div>
-			</Card>
+			</div>
 		</div>
 
 		<!-- Question Examples Carousel -->
 		<div class="mb-12">
-			<Card variant="secondary">
+			<div class="bg-primary-800/10 border-2 border-orange-500/70 border-t-12 border-t-orange-500/70 rounded-lg p-8 shadow-lg">
 				<h2 class="text-2xl font-semibold text-gray-900 dark:text-white mb-6 text-center flex items-center justify-center">
 					<!-- <span class="mr-3 text-3xl">🎧</span> -->
 					Question Types
@@ -370,12 +370,12 @@
 				</div>
 				<p class="mt-6 mb-2 text-xl">It's very important that you accurately follow the instructions for each set of questions.
 					If the format of your answer differs from instructed, even if the correct information is included, your answer will be marked <u>WRONG</u>.</p>
-			</Card>
+			</div>
 		</div>
 
 			<!-- Call to Action -->
 		<div class="text-center">
-			<div class="bg-gray-900 border-2 border-orange-600 border-t-12 border-t-orange-600 rounded-lg p-8 shadow-lg">
+			<div class="bg-gray-900 border-2 border-orange-500/70 border-t-12 border-t-orange-500/70 rounded-lg p-8 shadow-lg">
 				<h2 class="text-2xl font-semibold text-white mb-6 text-center">
 					Ready to Test Your Listening Skills?
 				</h2>

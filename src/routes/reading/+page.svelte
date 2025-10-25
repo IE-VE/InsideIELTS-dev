@@ -224,19 +224,19 @@
 																										</div>
 																										<List tag="ul" class="mb-6 space-y-3">
 																														<Li icon>
-																																		<Star class="mt-0.5 mr-2 h-4 w-4 text-purple-300 fill-purple-600" />
+																																		<Star class="mx-3 h-4 w-4 text-purple-300 fill-purple-600" />
 																																		Complete 1 Reading Test section
 																														</Li>
 																														<Li icon>
-																																		<Star class="mt-0.5 mr-2 h-4 w-4 text-purple-300 fill-purple-600" />
+																																		<Star class="mx-3 h-4 w-4 text-purple-300 fill-purple-600" />
 																																		Get your score instantly
 																														</Li>
 																														<Li icon>
-																																		<Star class="mt-0.5 mr-2 h-4 w-4 text-purple-300 fill-purple-600" />
+																																		<Star class="mx-3 h-4 w-4 text-purple-300 fill-purple-600" />
 																																		Receive personalised feedback
 																														</Li>
 																										</List>
-																										<Button href="/record" onclick={handleStartTest} color="purple" class="w-full">
+																										<Button href="/record" onclick={handleStartTest} color="purple" class="w-full font-semibold">
 																														Start Free Test
 																										</Button>
 																						</Card>

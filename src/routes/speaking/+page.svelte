@@ -104,7 +104,7 @@
         <div class="container mx-auto max-w-6xl px-6 py-8">
                 <!-- Header Section -->
                 <div class="text-center mb-8">
-                        <h1 class="text-4xl font-bold text-gray-900 dark:text-white mb-4 tracking-wide underline decoration-2 underline-offset-3">
+                        <h1 class="text-4xl font-bold text-gray-300 mb-4 tracking-wide underline decoration-8 decoration-blue-500/80 underline-offset-3">
                                IELTS SPEAKING
                         </h1>
                                  </div>
@@ -177,15 +177,15 @@
                                         <div class="w-full md:w-2/5">
                                                 <div class="relative mx-auto max-w-sm">
                                                         <div
-                                                                class="absolute inset-0 rotate-3 transform rounded-lg bg-green-500"
+                                                                class="absolute inset-0 rotate-3 transform rounded-lg bg-blue-500"
                                                         ></div>
                                                         <Card class="relative shadow-lg">
                                                                 <div class="mb-6 text-center">
                                                                         <div
-                                                                                class="mt-3 mb-4 inline-flex h-16 w-16 items-center justify-center rounded-full bg-green-700"
+                                                                                class="mt-3 mb-4 inline-flex h-16 w-16 items-center justify-center rounded-full bg-blue-700"
                                                                         >
                                                                             <svg
-                                                                                        class="h-8 w-8 text-green-400"
+                                                                                        class="h-8 w-8 text-blue-400"
                                                                                         fill="none"
                                                                                         viewBox="0 0 24 24"
                                                                                         stroke="currentColor"
@@ -203,19 +203,19 @@
                                                                 </div>
                                                                 <List tag="ul" class="mb-6 space-y-3">
                                                                         <Li icon>
-                                                                                <Star class="mt-0.5 mr-2 h-4 w-4 text-green-300 fill-green-300" />
+                                                                                <Star class="mx-3 h-4 w-4 text-blue-300 fill-blue-500" />
                                                                                 Answer 3 speaking questions
                                                                         </Li>
                                                                         <Li icon>
-                                                                                <Star class="mt-0.5 mr-2 h-4 w-4 text-green-300 fill-green-300" />
+                                                                                <Star class="mx-3 h-4 w-4 text-blue-300 fill-blue-500" />
                                                                                 Get your band score instantly
                                                                         </Li>
                                                                         <Li icon>
-                                                                                <Star class="mt-0.5 mr-2 h-4 w-4 text-green-300 fill-green-300" />
+                                                                                <Star class="mx-3 h-4 w-4 text-blue-300 fill-blue-500" />
                                                                                 Receive personalised feedback
                                                                         </Li>
                                                                 </List>
-                                                                <Button href="/record" onclick={handleStartTest} color="green" class="w-full">
+                                                                <Button href="/record" onclick={handleStartTest} color="blue" class="w-full font-semi-bold">
                                                                         Start Free Test
                                                                 </Button>
                                                         </Card>
@@ -231,7 +231,7 @@
 
                 <!-- Test Overview -->
                 <div class="mb-12">
-                        <Card variant="secondary">
+                        <div class="bg-primary-800/10 border-2 border-blue-600/60 border-t-12 border-t-blue-600/60 rounded-lg p-8 shadow-lg">
                                 <h2 class="text-2xl font-semibold text-gray-900 dark:text-white mb-6 text-center">
                                         Speaking Test Format
                                 </h2>
@@ -251,12 +251,12 @@
                                                 <div class="text-sm text-gray-600 dark:text-gray-300">Interview Format</div>
                                         </div>
                                 </div>
-                        </Card>
+                        </div>
                 </div>
 
                 <!-- Three Parts of the Speaking Test -->
                 <div class="mb-12">
-                        <Card variant="secondary">
+                           <div class="bg-primary-800/10 border-2 border-blue-600/60 border-t-12 border-t-blue-600/60 rounded-lg p-8 shadow-lg">
                                 <h2 class="text-2xl font-semibold text-gray-900 dark:text-white mb-6 text-center">
                                         The 3 Parts of the Speaking Test
                                 </h2>
@@ -279,12 +279,12 @@
                                                 </div>
                                         {/each}
                                 </div>
-                        </Card>
+                        </div>
                 </div>
 
                 <!-- Interview Flow -->
                 <div class="mb-12">
-                        <Card variant="secondary">
+                           <div class="bg-primary-800/10 border-2 border-blue-600/60 border-t-12 border-t-blue-600/60 rounded-lg p-8 shadow-lg">
                                 <h2 class="text-2xl font-semibold text-gray-900 dark:text-white mb-6 text-center">
                                         Interview Flow
                                 </h2>
@@ -302,12 +302,12 @@
                                                 </div>
                                         {/each}
                                 </div>
-                        </Card>
+                        </div>
                 </div>
 
                 <!-- Assessment Criteria -->
                 <div class="mb-12">
-                        <Card variant="secondary">
+                           <div class="bg-primary-800/10 border-2 border-blue-600/60 border-t-12 border-t-blue-600/60 rounded-lg p-8 shadow-lg">
                                 <h2 class="text-2xl font-semibold text-gray-900 dark:text-white mb-6 text-center">
                                         Assessment Criteria
                                 </h2>
@@ -341,12 +341,12 @@
                                                 </ul>
                                         </div>
                                 </div>
-                        </Card>
+                        </div>
                 </div>
 
                 <!-- Important Notes -->
                 <div class="mb-12">
-                        <Card variant="secondary">
+                           <div class="bg-primary-800/10 border-2 border-blue-600/60 border-t-12 border-t-blue-600/60 rounded-lg p-8 shadow-lg">
                                 <h2 class="text-2xl font-semibold text-gray-900 dark:text-white mb-6 text-center">
                                         Important Guidelines
                                 </h2>
@@ -364,12 +364,12 @@
                                                 <br>In <b>Part 2</b> you must speak non-stop for at least 1:30 without 'drying up'.
                                                 <br> <b>Part 3</b> <u>is</u> a discussion - the examiner will develop the conversation more naturally with follow-up questions.</p>
                                 </div>
-                        </Card>
+                        </div>
                 </div>
 
                 <!-- Call to Action -->
                 <div class="text-center">
-                        <div class="bg-gray-900 border-2 border-green-600 border-t-12 border-t-green-500 rounded-lg p-8 shadow-lg">
+                           <div class="bg-gray-900 border-2 border-blue-600/60 border-t-12 border-t-blue-600/60 rounded-lg p-8 shadow-lg">
                                 <h2 class="text-2xl font-semibold text-white mb-6 text-center">
                                         Ready to Test Your Speaking Skills?
                                 </h2>
@@ -378,7 +378,7 @@
                                 </p>
                                 <a 
                                         href="/record"
-                                        class="inline-block bg-green-600 hover:bg-green-700 text-white font-medium px-8 py-3 rounded-lg transition-colors"
+                                        class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-medium px-8 py-3 rounded-lg transition-colors"
                                 >
                                         Take Free Speaking Test Now
                                 </a>
