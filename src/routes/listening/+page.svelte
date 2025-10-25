@@ -239,7 +239,13 @@
 																																										stroke-linecap="round"
 																																										stroke-linejoin="round"
 																																										stroke-width="2"
-																																										d="M16 16v-3a4 4 0 00-8 0v3m0 0a2 2 0 104 0m-4 0a2 2 0 114 0m4 0a2 2 0 104 0m-4 0a2 2 0 114 0m-8-3a1 1 0 011-1h6a1 1 0 011 1v5a1 1 0 01-1 1h-6a1 1 0 01-1-1v-5z"
+																																										d="M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z"
+																																										/>
+																																										<path
+																																										stroke-linecap="round"
+																																										stroke-linejoin="round"
+																																										stroke-width="2"
+																																										d="M17 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2"
 																																										/>
 																																		</svg>
 																														</div>
