@@ -124,7 +124,7 @@
                 <div class="relative flex items-center justify-between">
                         <a
                                 href="/"
-                                class="flex items-center gap-2 font-bold whitespace-nowrap text-teal-600 dark:text-teal-400"
+                                class="flex items-center gap-2 font-bold whitespace-nowrap text-teal-400"
                         >
                                 <img
                                         src="/IE_logo.png"

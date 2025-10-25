@@ -122,7 +122,7 @@
 		<!-- Speaking -->
 		<a
 			href="/speaking"
-			class="bg-gray-800 rounded-lg border border-gray-700 p-6 shadow-md transition-all transform hover:scale-103 hover:border-green-500"
+			class="bg-gray-800 rounded-lg border border-gray-700 p-6 shadow-md transition-all transform hover:scale-103 hover:border-blue-500"
 		>
 			<h2 class="mb-2 text-2xl text-center font-bold text-teal-600 dark:text-teal-400">Speaking</h2>
 			<p class="text-gray-600 dark:text-gray-300">
@@ -134,7 +134,7 @@
 		<!-- Writing -->
 		<a
 			href="/writing"
-			class="bg-gray-800 rounded-lg border border-gray-700 p-6 shadow-md transition-all transform hover:scale-103 hover:border-blue-500"
+			class="bg-gray-800 rounded-lg border border-gray-700 p-6 shadow-md transition-all transform hover:scale-103 hover:border-green-500"
 				>
 			<h2 class="mb-2 text-2xl text-center font-bold text-teal-600 dark:text-teal-400">Writing</h2>
 			<p class="text-gray-600 dark:text-gray-300">

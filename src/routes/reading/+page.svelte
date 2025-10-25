@@ -125,9 +125,9 @@
 	<div class="container mx-auto max-w-6xl px-6 py-8">
 		<!-- Header Section -->
 		<div class="text-center mb-12">
-			<h1 class="text-4xl font-bold text-white mb-4 tracking-wide underline underline-4 decoration-2 decoration-purple-500 underline-offset-3">
+			<h1 class="text-4xl font-bold text-gray-300 mb-4 tracking-wide underline decoration-8 decoration-purple-600/60 underline-offset-3">
 				IELTS READING
-			</h1>	
+			</h1>			
 		</div>
 
 		<!-- Hero Section -->
@@ -253,7 +253,7 @@
 		
 		<!-- Test Overview -->
 		<div class="mb-12">
-			<Card variant="secondary">
+			<div class="bg-primary-800/10 border-2 border-purple-600/50 border-t-12 border-t-purple-600/50 rounded-lg p-8 shadow-lg">
 				<h2 class="text-2xl font-semibold text-gray-900 dark:text-white mb-6 text-center">
 					Format
 				</h2>
@@ -273,12 +273,12 @@
 						<div class="text-sm text-gray-600 dark:text-gray-300">Questions</div>
 					</div>
 				</div>
-			</Card>
+			</div>
 		</div>
 
 		<!-- Test Sections -->
 		<div class="mb-12">
-			<Card variant="secondary">
+			<div class="bg-primary-800/10 border-2 border-purple-600/50 border-t-12 border-t-purple-600/50 rounded-lg p-8 shadow-lg">
 				<h2 class="text-2xl font-semibold text-gray-900 dark:text-white mb-6 text-center">
 					Test Structure
 				</h2>
@@ -296,12 +296,12 @@
 						</div>
 					{/each}
 				</div>
-			</Card>
+			</div>
 		</div>
 
 		<!-- Assessment Criteria -->
 		<div class="mb-12">
-			<Card variant="secondary">
+			<div class="bg-primary-800/10 border-2 border-purple-600/50 border-t-12 border-t-purple-600/50 rounded-lg p-8 shadow-lg">
 				<h2 class="text-2xl font-semibold text-gray-900 dark:text-white mb-6 text-center">
 					Assessment Criteria
 				</h2>
@@ -340,12 +340,12 @@
 						</ul>
 					</div>
 				</div>
-			</Card>
+			</div>
 		</div>
 
 		<!-- Question Types -->
 		<div class="mb-12">
-			<Card variant="secondary">
+			<div class="bg-primary-800/10 border-2 border-purple-600/50 border-t-12 border-t-purple-600/50 rounded-lg p-8 shadow-lg">
 				<h2 class="text-2xl font-semibold text-gray-900 dark:text-white mb-6 text-center">
 					Question Types
 				</h2>
@@ -367,7 +367,7 @@
 					{/each}
 				</div>
 				<p class="mt-6 mb-2 text-xl">It's very important that you carefully read the instructions for each question type and follow the word limits exactly. Always check how many words you can use in your answer.</p>
-			</Card>
+			</div>
 		</div>
 
 		<!-- Call to Action -->
