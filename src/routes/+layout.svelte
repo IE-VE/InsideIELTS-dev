@@ -156,14 +156,30 @@
 
                         <!-- Desktop Navigation -->
                         <div class="hidden items-center space-x-6 text-sm md:space-x-4 md:text-xs lg:space-x-6 lg:text-sm md:flex">
-                                {#each navLinks as link}
-                                        <a
-                                                href={link.href}
-                                                class="text-gray-300 hover:text-teal-400 text-center leading-tight font-semibold"
-                                        >
-                                                {link.textParts[0]}<br />{link.textParts[1]}
-                                        </a>
-                                {/each}
+                                <a
+                                        href="/record"
+                                        class="text-gray-300 hover:text-blue-500 text-center leading-tight font-semibold"
+                                >
+                                        SPEAKING<br />Free-Test
+                                </a>
+                                <a
+                                        href="/writing/quicktest"
+                                        class="text-gray-300 hover:text-green-500 text-center leading-tight font-semibold"
+                                >
+                                        WRITING<br />Free-Test
+                                </a>
+                                <a
+                                        href="/reading/quicktest"
+                                        class="text-gray-300 hover:text-purple-500 text-center leading-tight font-semibold"
+                                >
+                                        READING<br />Free-Test
+                                </a>
+                                <a
+                                        href="/listening/quicktest"
+                                        class="text-gray-300 hover:text-orange-500 text-center leading-tight font-semibold"
+                                >
+                                        LISTENING<br />Free-Test
+                                </a>
                         </div>
 
                         <!-- Mobile Navigation Toggle -->
@@ -199,11 +215,18 @@
                                                 IETPP
                                         </a>
                                 {/if}
-                                {#each navLinks as link}
-                                        <a href={link.href} class="block text-gray-600 dark:text-gray-300 font-semibold">
-                                                {link.textParts[0]} {link.textParts[1]}
-                                        </a>
-                                {/each}
+                                <a href="/record" class="block text-gray-600 hover:text-blue-500 dark:text-gray-300 dark:hover:text-blue-400 font-semibold">
+                                        SPEAKING Free-Test
+                                </a>
+                                <a href="/writing/quicktest" class="block text-gray-600 hover:text-green-500 dark:text-gray-300 dark:hover:text-green-400 font-semibold">
+                                        WRITING Free-Test
+                                </a>
+                                <a href="/reading/quicktest" class="block text-gray-600 hover:text-purple-500 dark:text-gray-300 dark:hover:text-purple-400 font-semibold">
+                                        READING Free-Test
+                                </a>
+                                <a href="/listening/quicktest" class="block text-gray-600 hover:text-orange-500 dark:text-gray-300 dark:hover:text-orange-400 font-semibold">
+                                        LISTENING Free-Test
+                                </a>
                         </div>
                 {/if}
         </nav>
@@ -228,11 +251,18 @@
 
                         <!-- Add navigation links in footer -->
                         <div class="mb-4 flex flex-wrap justify-center gap-x-4 gap-y-2">
-                                {#each navLinks as link}
-                                        <a href={link.href} class="hover:text-teal-600 dark:hover:text-teal-400">
-                                                {link.text}
-                                        </a>
-                                {/each}
+                                <a href="/record" class="hover:text-blue-500 dark:hover:text-blue-400">
+                                        SPEAKING Free-Test
+                                </a>
+                                <a href="/writing/quicktest" class="hover:text-green-500 dark:hover:text-green-400">
+                                        WRITING Free-Test
+                                </a>
+                                <a href="/reading/quicktest" class="hover:text-purple-500 dark:hover:text-purple-400">
+                                        READING Free-Test
+                                </a>
+                                <a href="/listening/quicktest" class="hover:text-orange-500 dark:hover:text-orange-400">
+                                        LISTENING Free-Test
+                                </a>
                         </div>
 
                         <div class="mb-4">
