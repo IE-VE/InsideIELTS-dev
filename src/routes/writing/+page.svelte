@@ -144,7 +144,7 @@
                 <!-- Hero Section -->
 
                 <section
-                        class="relative bg-gradient-to-br from-teal-100 via-blue-50 to-indigo-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 my-16 rounded-xl border border-gray-600"
+                        class="relative bg-gradient-to-br from-teal-100 via-blue-50 to-indigo-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 my-16 rounded-xl border border-green-500/60"
                 >
                         <div class="absolute inset-0 bg-gradient-to-tr from-teal-200/20 to-transparent rounded-xl"></div>
                         <div class="relative max-w-6xl mx-auto px-6 lg:px-12 py-8 md:py-12">
@@ -441,7 +441,7 @@
 
                 <!-- Call to Action -->
                 <div class="text-center">
-                           <div class="bg-gray-900 border-2 border-green-500/60 border-t-12 border-t-green-500/60 rounded-lg p-8 shadow-lg">
+                           <div class="bg-gray-900 border-2 border-green-500 border-t-12 border-t-green-500 rounded-lg p-8 shadow-lg">
                                 <h2 class="text-2xl font-semibold text-white mb-6 text-center">
                                         Ready to Test Your Writing Skills?
                                 </h2>

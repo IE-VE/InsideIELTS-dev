@@ -704,59 +704,49 @@
 </script>
 
 <svelte:head>
-        <title>IELTS Reading Practice Test - InsideIELTS</title>
+        <title>IELTS Reading Quick-Test - InsideIELTS</title>
         <meta name="description" content="Complete IELTS Reading practice test with authentic passages and detailed feedback." />
 </svelte:head>
 
 <div class="min-h-screen bg-gradient-to-br from-teal-50 to-blue-50 dark:from-gray-900 dark:to-gray-800">
         {#if showInstructions}
                 <!-- Instructions Screen -->
-                <div class="container mx-auto px-6 py-8">
-                        <div class="max-w-4xl mx-auto">
-                                <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8">
-                                        <h1 class="text-4xl font-bold text-center text-gray-900 dark:text-white mb-8">
-                                                IELTS Reading Test
+                      <div class="container mx-auto px-6 py-8">
+                        <div class="text-center mb-12">         <h1 class="text-3xl text-center font-black text-white mb-8 inline-block px-10 py-3 rounded-xl bg-gradient-to-r from-cyan-500 via-teal-500 to-cyan-600 shadow-xl shadow-cyan-500/30 border border-white">
+                                                                        IE READING Quick-Test
                                         </h1>
+                                <p class="text-xl m-6 max-w-4xl mx-auto">You will be given one Reading Passage with 13 questions. Complete the exercise in one sitting.         
+                                </p></div>
 
-                                        <div class="space-y-6 text-gray-700 dark:text-gray-300">
-                                                <div class="bg-teal-50 dark:bg-teal-900/20 p-6 rounded-lg">
+                                        <div class="max-w-4xl mx-auto">
+                                                <div class="bg-gray-800 border border-gray-600 rounded-lg shadow-lg p-8">                       
+
+                                                        <div class="space-y-6 text-gray-700 dark:text-gray-300">
+                                                                <div class="bg-teal-900/20 p-6 rounded-lg">
                                                         <h2 class="text-xl font-semibold text-teal-700 dark:text-teal-300 mb-4">Test Instructions</h2>
                                                         <ul class="space-y-2">
-                                                                <li>• Time allowed: <strong>60 minutes</strong></li>
-                                                                <li>• Number of questions: <strong>40</strong></li>
-                                                                <li>• There are 3 reading passages with a variety of question types</li>
-                                                                <li>• Answer all questions - there is no penalty for incorrect answers</li>
-                                                                <li>• You can navigate between sections during the test</li>
-                                                                <li>• Your progress will be saved automatically</li>
+                                                                <li>• Time allowed: <strong>20 minutes</strong></li>
+                                                                <li>• Number of questions: <strong>14</strong></li>     
+                                                                <li>• Answer all questions - there is no penalty for incorrect answers</li>                                                           <li>• Your progress will be saved automatically</li>
                                                         </ul>
                                                 </div>
 
-                                                <div class="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-lg">
-                                                        <center><h3 class="text-lg font-semibold text-blue-700 dark:text-blue-300 mb-3">Reading Passages</h3></center>
-                                                        <div class="grid md:grid-cols-3 gap-4">
-                                                                <div class="text-center">
-                                                                        <div class="font-semibold mb-3">Passage 1</div>
-                                                                        <div class="text-sm mb-4">Questions 1 - 14</div>
-                                                                        <div class="text-xs text-teal-200">[ 20 mins recommended ]</div>
+                                                                <div class="bg-blue-800/10 p-6 rounded-lg">                                                     
+                                                                                <h3 class="text-lg font-semibold text-orange-700 dark:text-orange-300 mb-3">Scoring Guidelines</h3>
+                                                                                <ul class="space-y-1">
+                                                                                        <li>• All questions are worth <strong>1 mark</strong></li>
+                                                                                        <li>• Correct capitalisation must be used</li>
+                                                                                            <li>• Incorrectly spelt answers are marked <strong>WRONG</strong></li>
+                                                                                            <li>• Answering guidelines <strong>MUST</strong> be followed.</li>
+                                                                                                                        </ul>
+                                                                        </div>
                                                                 </div>
-                                                                <div class="text-center">
-                                                                        <div class="font-semibold mb-3">Passage 2</div>
-                                                                        <div class="text-sm mb-4">Questions 15 - 26</div>
-                                                                        <div class="text-xs text-teal-200">[ 20 mins recommended ]</div>
-                                                                </div>
-                                                                <div class="text-center">
-                                                                        <div class="font-semibold mb-3">Passage 3</div>
-                                                                        <div class="text-sm mb-4">Questions 27 - 40</div>
-                                                                        <div class="text-xs text-teal-200">[ 20 mins recommended ]</div>
-                                                                </div>
-                                                        </div>
-                                                </div>
-                                        </div>
+                                        
 
                                         <div class="text-center mt-8">
                                                 <button
                                                         onclick={startTest}
-                                                        class="bg-teal-600 hover:bg-teal-700 text-white font-bold py-3 px-8 rounded-lg text-lg transition-colors"
+                                                        class="bg-teal-600 hover:bg-teal-700 text-white font-bold py-3 px-8 rounded-lg text-lg border border-white transition-colors"
                                                 >
                                                         Start Reading Test
                                                 </button>
@@ -765,13 +755,14 @@
                         </div>
                 </div>
         {:else if isTestCompleted}
+                
                 <!-- Results Screen -->
                 <div class="container mx-auto px-6 py-8">
                         <div class="max-w-4xl mx-auto">
                                 <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8 text-center">
                                         <h1 class="text-3xl font-bold text-gray-900 dark:text-white mb-6">Test Completed!</h1>
                                         <p class="text-lg text-gray-700 dark:text-gray-300 mb-8">
-                                                Thank you for completing the IELTS Reading practice test.
+                                                Thank you for completing the IELTS Reading Quick-Test.
                                         </p>
                                         <div class="space-y-4">
                                                 <p class="text-gray-600 dark:text-gray-400">
@@ -788,10 +779,18 @@
                         </div>
                 </div>
         {:else}
+                
                 <!-- Test Interface -->
                 <div class="mx-auto px-4">
+                        <div class="text-center py-8">          <h1 class="text-3xl text-center font-black text-white mb-8 inline-block px-10 py-3 rounded-xl bg-gradient-to-r from-cyan-500 via-teal-500 to-cyan-600 shadow-xl shadow-cyan-500/30 border border-white">
+                                IE READING Quick-Test
+                        </h1>
+                        </div>
+
+                          <!-- Main Content -->
+                        
                         <!-- Timer and Navigation Header -->
-                        <div class="rounded-lg shadow-md p-4 mb-6 bg-white dark:bg-gray-800">
+                        <div class=" max-w-4xl mx-auto rounded-lg shadow-md p-4 mb-6 bg-white dark:bg-gray-800">
                                 {#if showAnswers}
                                         <!-- Title Display when showing answers -->
                                         <div class="text-center mb-4">
@@ -809,7 +808,7 @@
                                         </div>
 
                                         <!-- Timer Control Buttons -->
-                                        <div class="flex justify-center gap-2 mb-4">
+                                        <div class="flex justify-center gap-2 mb-8">
                                                 {#if isActive}
                                                         <button
                                                                 onclick={pauseTimer}
@@ -828,23 +827,12 @@
                                         </div>
                                 {/if}
 
-                                <!-- Navigation and Highlighting Controls -->
-                                <div class="flex flex-wrap justify-center gap-2 mb-4">
-                                        {#each [1, 2, 3] as section}
-                                                <button
-                                                        onclick={() => goToSection(section)}
-                                                        class="px-4 py-2 rounded-md font-medium transition-colors {currentSection === section ? 'bg-teal-600 text-white' : 'bg-teal-50 text-gray-700 hover:bg-teal-100 dark:bg-gray-700 dark:text-gray-300 dark:hover:bg-gray-600'}"
-                                                >
-                                                        Passage {section}
-                                                </button>
-                                        {/each}
-                                </div>
                                 
                                 <!-- Highlighting Controls -->
                                 <div class="flex flex-wrap justify-center gap-2 mb-6">
                                         <button
                                                 onclick={toggleHighlighting}
-                                                class="px-4 py-2 rounded-md font-medium transition-colors {highlightingEnabled ? 'bg-yellow-500 text-white' : 'bg-gray-200 text-gray-700 hover:bg-gray-300 dark:bg-gray-600 dark:text-gray-300 dark:hover:bg-gray-500'}"
+                                                class="px-4 py-2 rounded-md font-medium transition-colors {highlightingEnabled ? 'bg-yellow-500 text-white' : 'bg-gray-600 text-gray-300 hover:bg-gray-500 border border-yellow-400'}"
                                         >
                                                 {highlightingEnabled ? '🖍️ Highlighting ON' : '🖍️ Enable Highlighting'}
                                         </button>
@@ -872,11 +860,11 @@
                                         <!-- Reading Passage 1 -->
                                         <div class="flex flex-col md:flex-row gap-6 items-start mb-6">
                                                 <!-- Reading Passage 1 -->
-                                                <div class="md:w-2/3 bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8 max-h-[70vh] overflow-y-auto">
-                                                        <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-6">Reading Passage 1</h2>
+                                                <div class="md:w-2/3 bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8 max-h-[100vh] overflow-y-auto">
+                                                        <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-6">Reading Passage</h2>
                                                         <div class="mb-6 rounded-lg bg-gray-50 p-6 dark:bg-gray-700">
                                                                 <p class="mb-4 text-gray-700 dark:text-gray-300">
-                                                                        You should spend about 20 minutes on Questions 1–14, which are based on Reading Passage 1 below.
+                                                                        You should spend about 20 minutes on Questions 1–14, which are based on the passage below.
                                                                 </p>
                                                         </div>
 
@@ -909,7 +897,7 @@
                                                         </div>
                                                 </div>
                                                 <!-- Questions for Passage 1 -->
-                                                <div class="md:w-1/3 bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8 max-h-[70vh] overflow-y-auto">
+                                                <div class="md:w-1/3 bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8 max-h-[100vh] overflow-y-auto">
                                                         <!-- Questions 1-8 Block -->
                                                         <div class="question-block space-y-6">
                                                                 <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Questions 1-8</h3>
@@ -945,10 +933,7 @@
                                                                                                         <span class="text-green-300">
                                                                                                                 Correct answer: {results.questions[question.num].correctAnswers.join(' or ')}
                                                                                                         </span>
-                                                                                                {/if}
-                                                                                        </div>
-                                                                                {/if}
-                                                                        </div>
+                                                                                                {/if}                                                                                        </div>                                                                                {/if}                                                                        </div>
                                                                 {/each}
                                                         </div>
 
@@ -1020,9 +1005,7 @@
                                                                                                         class="mr-2 {showAnswers && results ? (results.questions[passage1Questions.multipleChoice.num]?.userAnswer === option.charAt(0) ? (results.questions[passage1Questions.multipleChoice.num]?.isCorrect ? 'accent-green-500' : 'accent-red-500') : '') : ''}"
                                                                                                 />
                                                                                                 <span class="text-gray-700 dark:text-gray-300">{option}</span>
-                                                                                        </label>
-                                                                                {/each}
-                                                                        </div>
+                                                                                        </label>                                                                                {/each}                                                                        </div>
                                                                         {#if showAnswers && results?.questions[passage1Questions.multipleChoice.num]}
                                                                                 <div class="mt-2 text-base">
                                                                                         {#if results.questions[passage1Questions.multipleChoice.num].isCorrect}
@@ -1032,9 +1015,7 @@
                                                                                                 <span class="text-green-300">
                                                                                                         Correct answer: {results.questions[passage1Questions.multipleChoice.num].correctAnswers.join(' or ')}
                                                                                                 </span>
-                                                                                        {/if}
-                                                                                </div>
-                                                                        {/if}
+                                                                                        {/if}                                                                         </div>                                                                        {/if}
                                                                 </div>
                                                         </div>
 
@@ -1056,7 +1037,6 @@
                                                                                         If you are unclear about any answers - just ask!
                                                                                 </div>
                                                                         </div>
-
                                                                         <div class="mb-6 text-center">
                                                                                 <div class="text-3xl font-bold text-teal-600 dark:text-teal-400">
                                                                                         {results.score}/40
@@ -1065,7 +1045,6 @@
                                                                                         {results.percentage}% Correct
                                                                                 </div>
                                                                         </div>
-
                                                                         <!-- Band Score Estimate -->
                                                                         <div class="text-center mb-8">
                                                                                 <div class="text-lg font-semibold text-gray-900 dark:text-white">
@@ -1087,7 +1066,6 @@
                                                                                         </span>
                                                                                 </div>
                                                                         </div>
-
                                                                         <!-- Bottom buttons -->
                                                                         <div class="flex justify-between items-center gap-1">
                                                                                 <button
@@ -1099,731 +1077,21 @@
                                                                                 <button
                                                                                         onclick={() => window.location.href = '/'}
                                                                                         class="px-4 py-2 bg-gray-600 text-white rounded-lg hover:bg-gray-700 transition-colors text-sm font-medium"
-                                                                                >
-                                                                                        Close
+                                                                                >                                                                                       Close
                                                                                 </button>
                                                                         </div>
                                                                 </div>
                                                         {/if}
                                                 </div>
-                                        </div>
-
-                                {:else if currentSection === 2}
-                                        <!-- Reading Passage 2 -->
-                                        <div class="flex flex-col md:flex-row gap-6 items-start mb-6">
-                                                <div class="md:w-2/3 bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8 max-h-[70vh] overflow-y-auto">
-                                                        <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-6">Reading Passage 2</h2>
-                                                        <div class="mb-6 rounded-lg bg-gray-50 p-6 dark:bg-gray-700">
-                                                                <p class="mb-4 text-gray-700 dark:text-gray-300">
-                                                                        You should spend about 20 minutes on Questions 15–26, which are based on Reading Passage 2 below.
-                                                                </p>
-                                                        </div>
-
-                                                        <div class="passage-text prose dark:prose-invert max-w-none mb-8">
-                                                                <h3 class="text-xl font-semibold mb-4">Whale Senses</h3>
-
-                                                                <p><strong>Part 1</strong></p>
-                                                                <div class="mb-6">
-                                                                        <img src="/reading-images/whale-feelings.png" alt="Whale senses and sensory adaptations" class="w-full max-w-md mx-auto rounded-lg shadow-lg" />
-                                                                </div>
-
-                                                                <p>Some of the senses that we and other terrestrial mammals take for granted are either reduced or absent in cetaceans or fail to function well in water. For example, it appears       from their brain structure that toothed species are unable to smell. Baleen species,    on the other hand, appear to have some related brain structures but it is not known             whether these are functional. It has been speculated that, as the blowholes evolved     and migrated to the top of the head, the neural pathways serving sense of smell may have been nearly all sacrificed. Similarly, although at least some cetaceans have taste buds, the nerves serving these have degenerated or are rudimentary.</p>
-
-                                                                <p>The sense of touch has sometimes been described as weak too, but this view is probably mistakent. Trainers of captive dolphins and small whales often remark on their animals’ responsiveness to being touched or rubbed, and both captive and freeranging cetacean individuals of all species (particularly adults and calves, or members of the same subgroup) appear to make frequent contact. This contact may help to                           maintain order within a group, and stroking or touching are part of the courtship ritual in most species. The area around the blowhole is also particularly sensitive and       captive animals often object strongly to being touched there.</p>
-
-                                                                <p>The sense of vision is developed to different degrees in different species. Baleen   species studied at close quarters underwater – specifically a grey whale calf in captivity for a year, and free-ranging right whales and humpback whales studied and filmed     off Argentina and Hawaii – have obviously tracked objects with vision underwater, and                           they can apparently see moderately well both in water and in air. However, the position of the eyes so restricts the field of vision in baleen whales that they probably do     not have stereoscopic vision.</p>
-
-                                                                <p>On the other hand, the position of the eyes in most dolphins and porpoises suggests  that they have stereoscopic vision forward and downward. Eye position in freshwater     dolphins, which often swim on their side or upside down while feeding, suggests that    what vision they have is stereoscopic forward and upward. By comparison, the bottlenose dolphin has extremely keen vision in water. Judging from the way it watches     and tracks airborne flying fish, it can apparently see fairly well through the air–water        interface as well. And although preliminary experimental evidence suggests that their   in-air vision is poor, the accuracy with which dolphins leap high to take small fish out        of a trainer’s hand provides anecdotal evidence to the contrary</p>
-
-                                                                <p>Such variation can no doubt be explained with reference to the habitats in which individual species have developed. For example, vision is obviously more useful to species  inhabiting clear open waters than to those living in turbid rivers and flooded plains. The                                      South American boutu and Chinese beiji, for instance, appear to have very limited       vision, and the Indian susus are blind, their eyes reduced to slits that probably allow them to sense only the direction and intensity of light.</p>
-
-                                                                <p>Although the senses of taste and smell appear to have deteriorated, and vision in    water appears to be uncertain, such weaknesses are more than compensated for by cetaceans’ well-developed acoustic sense. Most species are highly vocal, although       they vary in the range of sounds they produce, and many forage for food using echolocation1. Large baleen whales primarily use the lower frequencies and are often limited      in their repertoire. Notable exceptions are the nearly song-like choruses of bowhead    whales in summer and the complex, haunting utterances of the humpback whales. Toothed species in general employ more of the frequency spectrum, and produce a   wider variety of sounds, than baleen species (though the sperm whale apparently produces a monotonous series of high-energy clicks and little else). Some of the more   complicated sounds are clearly communicative, although what role they may play in       the social life and ‘culture’ of cetaceans has been more the subject of wild speculation than of solid science.</p>
-
-                                                                <p><i>1. echolocation: the perception of objects by means of sound wave echoes</i></p>
-                                                        </div>
-                                                </div>
-                                                <!-- Questions for Passage 2 -->
-                                                <div class="w-full md:w-1/3 bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8 max-h-[70vh] overflow-y-auto">
-                                                        <!-- Questions 15-21 Block -->
-                                                        <div class="question-block space-y-6">
-                                                                <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Questions 15-21</h3>
-                                                                <p class="text-gray-700 dark:text-gray-300">Complete the table below.</p>
-                                                                <p class="text-gray-700 dark:text-gray-300">Choose <strong>NO MORE THAN THREE WORDS</strong> from Reading Passage 2 for each answer.</p>
-                                                                <p class="text-gray-700 dark:text-gray-300">Write your answers in boxes 15–21 on your answer sheet.</p>
-
-                                                                <div class="mb-6">
-                                                                        <div class="overflow-x-auto">
-                                                                                <table class="w-max min-w-full border-collapse border border-gray-300 dark:border-gray-600">
-                                                                                        <thead>
-                                                                                                <tr class="bg-gray-100 dark:bg-gray-700">
-                                                                                                        <th class="border border-gray-300 dark:border-gray-600 p-3 text-left whitespace-nowrap">SENSE</th>
-                                                                                                <th class="border border-gray-300 dark:border-gray-600 p-3 text-left whitespace-nowrap">SPECIES</th>
-                                                                                                <th class="border border-gray-300 dark:border-gray-600 p-3 text-left whitespace-nowrap">ABILITY</th>
-                                                                                                <th class="border border-gray-300 dark:border-gray-600 p-3 text-left whitespace-nowrap min-w-64">COMMENTS</th>
-                                                                                        </tr>
-                                                                                </thead>
-                                                                                <tbody>
-                                                                                        <tr>
-                                                                                                <td class="border border-gray-300 dark:border-gray-600 p-3">Smell</td>
-                                                                                                <td class="border border-gray-300 dark:border-gray-600 p-3">toothed</td>
-                                                                                                <td class="border border-gray-300 dark:border-gray-600 p-3">no</td>
-                                                                                                <td class="border border-gray-300 dark:border-gray-600 p-3">evidence from brain structure</td>
-                                                                                        </tr>
-                                                                                        <tr>
-                                                                                                <td class="border border-gray-300 dark:border-gray-600 p-3"></td>
-                                                                                                <td class="border border-gray-300 dark:border-gray-600 p-3">baleen</td>
-                                                                                                <td class="border border-gray-300 dark:border-gray-600 p-3">not certain</td>
-                                                                                                <td class="border border-gray-300 dark:border-gray-600 p-3">related brain structures are present</td>
-                                                                                        </tr>
-                                                                                        <tr>
-                                                                                                <td class="border border-gray-300 dark:border-gray-600 p-3">Taste</td>
-                                                                                                <td class="border border-gray-300 dark:border-gray-600 p-3">some types</td>
-                                                                                                <td class="border border-gray-300 dark:border-gray-600 p-3">poor</td>
-                                                                                                <td class="border border-gray-300 dark:border-gray-600 p-3">
-                                                                                                        <div class="flex items-center gap-2">
-                                                                                                                <span>15.</span>
-                                                                                                                <input
-                                                                                                                        type="text"
-                                                                                                                        bind:value={answers[15]}
-                                                                                                                        disabled={showAnswers}
-                                                                                                                        placeholder={showAnswers ? "" : "Your answer"}
-                                                                                                                        class="flex-1 rounded border p-1 text-xs text-black dark:text-white dark:bg-gray-700 {showAnswers && results ? (results.questions[15]?.isCorrect ? 'border-green-500 bg-green-50 dark:bg-green-900/20' : 'border-red-500 bg-red-50 dark:bg-red-900/20') : 'border-gray-300 dark:border-gray-600 bg-white'}"
-                                                                                                                />
-                                                                                                                <span>are underdeveloped</span>
-                                                                                                        </div>
-                                                                                                </td>
-                                                                                        </tr>
-                                                                                        <tr>
-                                                                                                <td class="border border-gray-300 dark:border-gray-600 p-3">Touch</td>
-                                                                                                <td class="border border-gray-300 dark:border-gray-600 p-3">all</td>
-                                                                                                <td class="border border-gray-300 dark:border-gray-600 p-3">yes</td>
-                                                                                                <td class="border border-gray-300 dark:border-gray-600 p-3">region around the blowhole very sensitive</td>
-                                                                                        </tr>
-                                                                                        <tr>
-                                                                                                <td class="border border-gray-300 dark:border-gray-600 p-3">Vision</td>
-                                                                                                <td class="border border-gray-300 dark:border-gray-600 p-3">
-                                                                                                        <div class="flex items-center gap-2">
-                                                                                                                <span>16.</span>
-                                                                                                                <input
-                                                                                                                        type="text"
-                                                                                                                        bind:value={answers[16]}
-                                                                                                                        disabled={showAnswers}
-                                                                                                                        placeholder={showAnswers ? "" : "Your answer"}
-                                                                                                                        class="flex-1 rounded border p-1 text-xs text-black dark:text-white dark:bg-gray-700 {showAnswers && results ? (results.questions[16]?.isCorrect ? 'border-green-500 bg-green-50 dark:bg-green-900/20' : 'border-red-500 bg-red-50 dark:bg-red-900/20') : 'border-gray-300 dark:border-gray-600 bg-white'}"
-                                                                                                                />
-                                                                                                        </div>
-                                                                                                </td>
-                                                                                                <td class="border border-gray-300 dark:border-gray-600 p-3">yes</td>
-                                                                                                <td class="border border-gray-300 dark:border-gray-600 p-3">probably do not have stereoscopic vision</td>
-                                                                                        </tr>
-                                                                                        <tr>
-                                                                                                <td class="border border-gray-300 dark:border-gray-600 p-3"></td>
-                                                                                                <td class="border border-gray-300 dark:border-gray-600 p-3">dolphins, porpoises</td>
-                                                                                                <td class="border border-gray-300 dark:border-gray-600 p-3">yes</td>
-                                                                                                <td class="border border-gray-300 dark:border-gray-600 p-3">
-                                                                                                        <div class="flex items-center gap-2">
-                                                                                                                <span>probably have stereoscopic vision</span>
-                                                                                                                <span>17.</span>
-                                                                                                                <input
-                                                                                                                        type="text"
-                                                                                                                        bind:value={answers[17]}
-                                                                                                                        disabled={showAnswers}
-                                                                                                                        placeholder={showAnswers ? "" : "Your answer"}
-                                                                                                                        class="w-20 rounded border p-1 text-xs text-black dark:text-white dark:bg-gray-700 {showAnswers && results ? (results.questions[17]?.isCorrect ? 'border-green-500 bg-green-50 dark:bg-green-900/20' : 'border-red-500 bg-red-50 dark:bg-red-900/20') : 'border-gray-300 dark:border-gray-600 bg-white'}"
-                                                                                                                />
-                                                                                                                <span>and</span>
-                                                                                                                <span>18.</span>
-                                                                                                                <input
-                                                                                                                        type="text"
-                                                                                                                        bind:value={answers[18]}
-                                                                                                                        disabled={showAnswers}
-                                                                                                                        placeholder={showAnswers ? "" : "Your answer"}
-                                                                                                                        class="w-20 rounded border p-1 text-xs text-black dark:text-white dark:bg-gray-700 {showAnswers && results ? (results.questions[18]?.isCorrect ? 'border-green-500 bg-green-50 dark:bg-green-900/20' : 'border-red-500 bg-red-50 dark:bg-red-900/20') : 'border-gray-300 dark:border-gray-600 bg-white'}"
-                                                                                                                />
-                                                                                                        </div>
-                                                                                                </td>
-                                                                                        </tr>
-                                                                                        <tr>
-                                                                                                <td class="border border-gray-300 dark:border-gray-600 p-3"></td>
-                                                                                                <td class="border border-gray-300 dark:border-gray-600 p-3">
-                                                                                                        <div class="flex items-center gap-2">
-                                                                                                                <span>freshwater dolphins</span>
-                                                                                                        </div>
-                                                                                                </td>
-                                                                                                <td class="border border-gray-300 dark:border-gray-600 p-3">yes</td>
-                                                                                                <td class="border border-gray-300 dark:border-gray-600 p-3">probably have stereoscopic vision forward and upward</td>
-                                                                                        </tr>
-                                                                                        <tr>
-                                                                                                <td class="border border-gray-300 dark:border-gray-600 p-3"></td>
-                                                                                                <td class="border border-gray-300 dark:border-gray-600 p-3">bottlenose dolphin</td>
-                                                                                                <td class="border border-gray-300 dark:border-gray-600 p-3">yes</td>
-                                                                                                <td class="border border-gray-300 dark:border-gray-600 p-3">
-                                                                                                        <div class="flex items-center gap-2">
-                                                                                                                <span>exceptional in</span>
-                                                                                                                <span>19.</span>
-                                                                                                                <input
-                                                                                                                        type="text"
-                                                                                                                        bind:value={answers[19]}
-                                                                                                                        disabled={showAnswers}
-                                                                                                                        placeholder={showAnswers ? "" : "Your answer"}
-                                                                                                                        class="w-20 rounded border p-1 text-xs text-black dark:text-white dark:bg-gray-700 {showAnswers && results ? (results.questions[19]?.isCorrect ? 'border-green-500 bg-green-50 dark:bg-green-900/20' : 'border-red-500 bg-red-50 dark:bg-red-900/20') : 'border-gray-300 dark:border-gray-600 bg-white'}"
-                                                                                                                />
-                                                                                                                <span>and good in air–water interface</span>
-                                                                                                        </div>
-                                                                                                </td>
-                                                                                        </tr>
-                                                                                        <tr>
-                                                                                                <td class="border border-gray-300 dark:border-gray-600 p-3"></td>
-                                                                                                <td class="border border-gray-300 dark:border-gray-600 p-3">boutu and beiji</td>
-                                                                                                <td class="border border-gray-300 dark:border-gray-600 p-3">poor</td>
-                                                                                                <td class="border border-gray-300 dark:border-gray-600 p-3">have limited vision</td>
-                                                                                        </tr>
-                                                                                        <tr>
-                                                                                                <td class="border border-gray-300 dark:border-gray-600 p-3"></td>
-                                                                                                <td class="border border-gray-300 dark:border-gray-600 p-3">Indian susus</td>
-                                                                                                <td class="border border-gray-300 dark:border-gray-600 p-3">no</td>
-                                                                                                <td class="border border-gray-300 dark:border-gray-600 p-3">probably only sense direction and intensity of light</td>
-                                                                                        </tr>
-                                                                                        <tr>
-                                                                                                <td class="border border-gray-300 dark:border-gray-600 p-3">Hearing</td>
-                                                                                                <td class="border border-gray-300 dark:border-gray-600 p-3">most large baleen</td>
-                                                                                                <td class="border border-gray-300 dark:border-gray-600 p-3">yes</td>
-                                                                                                <td class="border border-gray-300 dark:border-gray-600 p-3">
-                                                                                                        <div class="flex items-center gap-2">
-                                                                                                                <span>usually use</span>
-                                                                                                                <span>20.</span>
-                                                                                                                <input
-                                                                                                                        type="text"
-                                                                                                                        bind:value={answers[20]}
-                                                                                                                        disabled={showAnswers}
-                                                                                                                        placeholder={showAnswers ? "" : "Your answer"}
-                                                                                                                        class="w-24 rounded border p-1 text-xs text-black dark:text-white dark:bg-gray-700 {showAnswers && results ? (results.questions[20]?.isCorrect ? 'border-green-500 bg-green-50 dark:bg-green-900/20' : 'border-red-500 bg-red-50 dark:bg-red-900/20') : 'border-gray-300 dark:border-gray-600 bg-white'}"
-                                                                                                                />
-                                                                                                                <span>; repertoire limited</span>
-                                                                                                        </div>
-                                                                                                </td>
-                                                                                        </tr>
-                                                                                        <tr>
-                                                                                                <td class="border border-gray-300 dark:border-gray-600 p-3"></td>
-                                                                                                <td class="border border-gray-300 dark:border-gray-600 p-3">
-                                                                                                        <div class="flex items-center gap-2">
-                                                                                                                <span>21.</span>
-                                                                                                                <input
-                                                                                                                        type="text"
-                                                                                                                        bind:value={answers[21]}
-                                                                                                                        disabled={showAnswers}
-                                                                                                                        placeholder={showAnswers ? "" : "Your answer"}
-                                                                                                                        class="w-20 rounded border p-1 text-xs text-black dark:text-white dark:bg-gray-700 {showAnswers && results ? (results.questions[21]?.isCorrect ? 'border-green-500 bg-green-50 dark:bg-green-900/20' : 'border-red-500 bg-red-50 dark:bg-red-900/20') : 'border-gray-300 dark:border-gray-600 bg-white'}"
-                                                                                                                />
-                                                                                                                <span>whales and</span>
-                                                                                                                <input
-                                                                                                                        type="text"
-                                                                                                                        bind:value={answers['21b']}
-                                                                                                                        disabled={showAnswers}
-                                                                                                                        placeholder={showAnswers ? "" : "Your answer"}
-                                                                                                                        class="w-20 rounded border p-1 text-xs text-black dark:text-white dark:bg-gray-700 {showAnswers && results ? (results.questions['21b']?.isCorrect ? 'border-green-500 bg-green-50 dark:bg-green-900/20' : 'border-red-500 bg-red-50 dark:bg-red-900/20') : 'border-gray-300 dark:border-gray-600 bg-white'}"
-                                                                                                                />
-                                                                                                                <span>whales</span>
-                                                                                                        </div>
-                                                                                                </td>
-                                                                                                <td class="border border-gray-300 dark:border-gray-600 p-3">yes</td>
-                                                                                                <td class="border border-gray-300 dark:border-gray-600 p-3">song-like</td>
-                                                                                        </tr>
-                                                                                        <tr>
-                                                                                                <td class="border border-gray-300 dark:border-gray-600 p-3"></td>
-                                                                                                <td class="border border-gray-300 dark:border-gray-600 p-3">toothed</td>
-                                                                                                <td class="border border-gray-300 dark:border-gray-600 p-3">yes</td>
-                                                                                                <td class="border border-gray-300 dark:border-gray-600 p-3">use more of frequency spectrum; have wider repertoire</td>
-                                                                                        </tr>
-                                                                                </tbody>
-                                                                                </table>
-                                                                        </div>
-                                                                </div>
-
-                                                                {#if showAnswers}
-                                                                        {#each [15, 16, 17, 18, 19, 20, '21b'] as qNum}
-                                                                                {#if results?.questions[qNum]}
-                                                                                        <div class="mt-2 text-base">
-                                                                                                <strong>Q{qNum}:</strong>
-                                                                                                {#if results.questions[qNum].isCorrect}
-                                                                                                        <span class="text-teal-200">✓ Correct!</span>
-                                                                                                {:else}
-                                                                                                        <span class="text-red-600 dark:text-red-400">✗ Incorrect.</span>
-                                                                                                        <span class="text-green-300">
-                                                                                                                Correct answer: {results.questions[qNum].correctAnswers.join(' or ')}
-                                                                                                        </span>
-                                                                                                {/if}
-                                                                                        </div>
-                                                                                {/if}
-                                                                        {/each}
-                                                                {/if}
-
-                                                                <!-- Questions 22-26 Block -->
-                                                                <div class="question-block space-y-6">
-                                                                        <h3 class="text-xl font-semibold text-gray-900 dark:text-white mt-8">Questions 22-26</h3>
-                                                                        <p class="text-gray-700 dark:text-gray-300">Answer the questions below using <strong>NO MORE THAN THREE WORDS</strong> from the passage for each answer.</p>
-
-                                                                        {#each passage2Questions.shortAnswer as question}
-                                                                                <div class="question mb-4">
-                                                                                        <label class="mb-2 block font-medium text-gray-900 dark:text-white">
-                                                                                                {question.num}. {question.text}
-                                                                                        </label>
-                                                                                        <input
-                                                                                                type="text"
-                                                                                                bind:value={answers[question.num]}
-                                                                                                disabled={showAnswers}
-                                                                                                placeholder={showAnswers ? "" : "Your answer..."}
-                                                                                                class="w-full rounded-lg border p-0.5 text-black {showAnswers && results ? (results.questions[question.num]?.isCorrect ? 'border-green-500 bg-green-50 dark:bg-green-900/20' : 'border-red-500 bg-red-50 dark:bg-red-900/20') : 'border-gray-300 dark:border-gray-600 dark:bg-gray-700'}"
-                                                                                        />
-                                                                                        {#if showAnswers && results?.questions[question.num]}
-                                                                                                <div class="mt-2 text-base">
-                                                                                                        {#if results.questions[question.num].isCorrect}
-                                                                                                                <span class="text-teal-200">✓ Correct!</span>
-                                                                                                        {:else}
-                                                                                                                <span class="text-red-600 dark:text-red-400">✗ Incorrect.</span>
-                                                                                                                <span class="text-green-300">
-                                                                                                                        Correct answer: {results.questions[question.num].correctAnswers.join(' or ')}
-                                                                                                                </span>
-                                                                                                        {/if}
-                                                                                                </div>
-                                                                                        {/if}
-                                                                                </div>
-                                                                        {/each}
-                                                                </div>
-
-                                                        <!-- Results Display for Passage 2 -->
-                                                        {#if results && showAnswers}
-                                                                <div class="mt-6 rounded-lg bg-white dark:bg-gray-700 border border-gray-200 dark:border-gray-700 p-6">
-                                                                        <!-- Test Results title -->
-                                                                        <h3 class="mb-6 text-xl font-semibold text-gray-900 dark:text-white text-center"><u>Test Results</u></h3>
-
-                                                                        <!-- Query button and help text -->
-                                                                        <div class="text-center mb-8">
-                                                                                <button
-                                                                                        onclick={() => window.open('#', '_blank')}
-                                                                                        class="px-4 py-2 bg-teal-600 text-white rounded-lg hover:bg-teal-700 transition-colors text-sm font-medium"
-                                                                                >
-                                                                                        Query my Results
-                                                                                </button>
-                                                                                <div class="text-sm text-white dark:text-gray-400 mt-1">
-                                                                                        If you are unclear about any answers - just ask!
-                                                                                </div>
-                                                                        </div>
-
-                                                                        <div class="mb-6 text-center">
-                                                                                <div class="text-3xl font-bold text-teal-600 dark:text-teal-400">
-                                                                                        {results.score}/40
-                                                                                </div>
-                                                                                <div class="text-sm text-white dark:text-gray-300">
-                                                                                        {results.percentage}% Correct
-                                                                                </div>
-                                                                        </div>
-
-                                                                        <!-- Band Score Estimate -->
-                                                                        <div class="text-center mb-8">
-                                                                                <div class="text-lg font-semibold text-gray-900 dark:text-white">
-                                                                                        Estimated Band Score:
-                                                                                        <span class="text-teal-600 dark:text-teal-400">
-                                                                                                {#if results.score >= 37}7.5-9.0
-                                                                                                {:else if results.score >= 33}7.0
-                                                                                                {:else if results.score >= 30}6.5
-                                                                                                {:else if results.score >= 27}6.0
-                                                                                                {:else if results.score >= 23}5.5
-                                                                                                {:else if results.score >= 19}5.0
-                                                                                                {:else if results.score >= 15}4.5
-                                                                                                {:else if results.score >= 11}4.0
-                                                                                                {:else if results.score >= 8}3.5
-                                                                                                {:else if results.score >= 5}3.0
-                                                                                                {:else if results.score >= 3}2.5
-                                                                                                {:else if results.score >= 1}2.0
-                                                                                                {:else}1.0{/if}
-                                                                                        </span>
-                                                                                </div>
-                                                                        </div>
-
-                                                                        <!-- Bottom buttons -->
-                                                                        <div class="flex justify-between items-center gap-1">
-                                                                                <button
-                                                                                        onclick={() => { showMarkingModal = true; document.body.style.overflow = 'hidden'; }}
-                                                                                        class="px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition-colors text-sm font-medium"
-                                                                                >
-                                                                                        View Detailed Analysis
-                                                                                </button>
-                                                                                <button
-                                                                                        onclick={() => window.location.href = '/'}
-                                                                                        class="px-4 py-2 bg-gray-600 text-white rounded-lg hover:bg-gray-700 transition-colors text-sm font-medium"
-                                                                                >
-                                                                                        Close
-                                                                                </button>
-                                                                        </div>
-                                                                </div>
+                                        </div>                                
                                                         {/if}
                                                         </div>
                                                 </div>
-                                        </div>
-
-                                {:else if currentSection === 3}
-                                        <!-- Reading Passage 3 -->
-                                        <div class="flex flex-col md:flex-row gap-6 items-start mb-6">
-                                                <div class="md:w-2/3 bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8 max-h-[70vh] overflow-y-auto">
-                                                        <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-6">Reading Passage 3</h2>
-                                                        <div class="mb-6 rounded-lg bg-gray-50 p-6 dark:bg-gray-700">
-                                                                <p class="mb-4 text-gray-700 dark:text-gray-300">
-                                                                        You should spend about 20 minutes on Questions 27–40, which are based on Reading Passage 3 below.
-                                                                </p>
-                                                        </div>
-
-                                                        <div class="passage-text prose dark:prose-invert max-w-none mb-8">
-                                                                <h3 class="text-xl font-semibold mb-4">Visual Symbols and the Blind</h3>
-
-                                                                <p><strong>Part 1</strong></p>
-                                                                <div class="mb-6">
-                                                                        <img src="/reading-images/Fig.1.png" alt="Fig. 1 - Drawing showing a spinning wheel with motion lines" class="float-right ml-6 mb-4 w-1/3 rounded-lg shadow-lg" />
-                                                                        <p>From a number of recent studies, it has become clear that blind people can appreciate        the use of outlines and perspectives to describe the arrangement of objects and other   surfaces in space. But pictures are more than literal representations.  This fact was drawn to my attention dramatically when a blind   woman in one of my investigations decided on her own initiative to draw a wheel as it was spinning. To show this motion, she traced a   curve inside the circle (Fig. 1). I was taken aback. Lines of motion,   such as the one she used, are a very recent invention in the history of illustration. Indeed, as art scholar David Kunzle notes, Wilhelm        Busch, a trend-setting nineteenth-century cartoonist, used virtually no motion lines in his popular figures until about 1877.</p>
-                                                                </div>
-
-                                                                <p>When I asked several other blind study subjects to draw a spinning wheel, one particularly clever rendition appeared repeatedly: several subjects showed the wheel's spokes as curved lines. When asked about these curves, they all described them as metaphorical ways of suggesting motion. Majority rule would argue that this device somehow indicated motion very well. But was it a better indicator than, say, broken or wavy lines – or any other kind of line, for that matter? The answer was not clear. So
-                                                                        I decided to test whether various lines of motion were apt ways of showing movement or if they were merely idiosyncratic marks. Moreover, I wanted to discover whether there were differences in how the blind and the sighted interpreted lines of motion.</p>
-
-                                                                <p>To search out these answers, I created raised-line drawings of five different wheels,        depicting spokes with lines that curved, bent, waved, dashed and extended beyond the perimeter of the wheel. I then asked eighteen blind volunteers to feel the wheels  and assign one of the following motions to each wheel: wobbling, spinning fast, spinning steadily, jerking or braking. My control group consisted of eighteen sighted   undergraduates from the University of Toronto.</p>
-
-                                                                <p>All but one of the blind subjects assigned distinctive motions to each wheel. Most guessed that the curved spokes indicated that the wheel was spinning steadily; the wavy spokes, they thought, suggested that the wheel was wobbling; and the bent spokes were taken as a sign that the wheel was jerking. Subjects assumed that spokes extending beyond the wheel's perimeter signified that the wheel had its brakes on and dashed spokes indicated the wheel was spinning quickly.</p>
-
-                                                                <p>In addition, the favoured description for the sighted was the favoured description for the blind in every instance. What is more, the consensus among the sighted was barely higher than that among the blind. Because motion devices are unfamiliar to the blind, the task I gave them involved some problem solving. Evidently, however, the blind not only figured out meanings for each line of motion, but as a group they generally came up with the same meaning at least as frequently as did sighted subjects.</p>
-
-                                                                <p><strong>Part 2</strong></p>
-                                                                <p>We have found that the blind understand other kinds of visual metaphors as well. One blind woman drew a picture of a child inside a heart – choosing that symbol, she said, to show that love surrounded the child. With Chang Hong Liu, a doctoral student from China, I have begun exploring how well blind people understand the symbolism behind shapes such as hearts that do not directly represent their meaning.</p>
-
-                                                                <p>We gave a list of twenty pairs of words to sighted subjects and asked them to pick from each pair the term that best related to a circle and the term that best related to a square. For example, we asked: What goes with soft? A circle or a square? Which shape goes with hard?</p>
-
-                                                                <div class="mb-6">
-                                                                        <p>All our subjects deemed the circle soft and the square hard. A full 94% ascribed happy to the circle, instead of sad. But other pairs revealed less agreement: 79% matched fast to slow and weak to strong, respectively. And only 51% linked deep to circle and shallow to square. When we tested four totally blind volunteers using the same list, we found that their choices closely resembled those made by the sighted subjects. One man, who had been blind since birth, scored extremely well. He made only one match differing from the consensus, assigning 'far' to square and 'near' to circle. In fact, only a small majority of sighted subjects – 53% – had paired far and near to the opposite partners. Thus, we concluded that the blind interpret abstract shapes as sighted people do.</p>
-                                                                </div>
-                                                        </div>
-                                                </div>
-                                                <!-- Questions for Passage 3 -->
-                                                <div class="md:w-1/3 bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8 max-h-[70vh] overflow-y-auto">
-                                                        <!-- Questions 27-29 Block -->
-                                                        <div class="question-block space-y-6">
-                                                                <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Questions 27-29</h3>
-                                                                <p class="text-gray-700 dark:text-gray-300">Choose the correct letter, <strong>A</strong>, <strong>B</strong>, <strong>C</strong> or <strong>D</strong>.</p>
-                                                                <p class="text-gray-700 dark:text-gray-300">Write your answers in boxes 27–29 on your answer sheet.</p>
-
-                                                                {#each passage3Questions.multipleChoice as question}
-                                                                        <div class="question mb-6">
-                                                                                <label class="mb-3 block font-medium text-gray-900 dark:text-white">
-                                                                                        {question.num}. {question.text}
-                                                                                </label>
-                                                                                <div class="space-y-2">
-                                                                                        {#each question.options as option}
-                                                                                                <label class="flex items-start">
-                                                                                                        <input
-                                                                                                                type="radio"
-                                                                                                                name="q{question.num}"
-                                                                                                                value={option.charAt(0)}
-                                                                                                                onchange={(e) => updateAnswer(question.num, e.target.value)}
-                                                                                                                disabled={showAnswers}
-                                                                                                                class="mr-2 mt-1 {showAnswers && results ? (results.questions[question.num]?.userAnswer === option.charAt(0) ? (results.questions[question.num]?.isCorrect ? 'accent-green-500' : 'accent-red-500') : '') : ''}"
-                                                                                                        />
-                                                                                                        <span class="text-gray-700 dark:text-gray-300">{option}</span>
-                                                                                                </label>
-                                                                                        {/each}
-                                                                                </div>
-                                                                                {#if showAnswers && results?.questions[question.num]}
-                                                                                        <div class="mt-2 text-base">
-                                                                                                {#if results.questions[question.num].isCorrect}
-                                                                                                        <span class="text-teal-200">✓ Correct!</span>
-                                                                                                {:else}
-                                                                                                        <span class="text-red-600 dark:text-red-400">✗ Incorrect.</span>
-                                                                                                        <span class="text-green-300">
-                                                                                                                Correct answer: {results.questions[question.num].correctAnswers.join(' or ')}
-                                                                                                        </span>
-                                                                                                {/if}
-                                                                                        </div>
-                                                                                {/if}
-                                                                        </div>
-                                                                {/each}
-                                                        </div>
-
-                                                        <!-- Questions 30-32 Block -->
-                                                        <div class="question-block space-y-6">
-                                                                <h3 class="text-xl font-semibold text-gray-900 dark:text-white mt-8">Questions 30-32</h3>
-                                                                <p class="text-gray-700 dark:text-gray-300">Look at the following diagrams (Questions 30–32), and the list of types of movement below.</p>
-                                                                <p class="text-gray-700 dark:text-gray-300">Match each diagram to the type of movement <strong>A–E</strong> generally assigned to it in the experiment.</p>
-                                                                <p class="text-gray-700 dark:text-gray-300">Choose the correct letter <strong>A–E</strong> and write them in boxes 30–32 on your answer sheet.</p>
-
-                                                                <div class="flex justify-center mb-6">
-                                                                        <div class="md:w-3/4">
-                                                                                <img src="/reading-images/Fig.2.png" alt="Fig. 2 - Table showing word associations with circle/square and agreement percentages among subjects" class="w-full rounded-lg shadow-lg" />
-                                                                        </div>
-                                                                </div>
-
-                                                                <div class="bg-blue-50 dark:bg-blue-900/20 p-4 rounded-lg mb-6">
-                                                                        <h4 class="font-semibold mb-3">Movement Types:</h4>
-                                                                        <div class="grid grid-cols-1 gap-2 text-sm">
-                                                                                {#each passage3Questions.matchingOptions as option}
-                                                                                        <div>{option}</div>
-                                                                                {/each}
-                                                                        </div>
-                                                                </div>
-
-                                                                {#each passage3Questions.matching as question}
-                                                                        <div class="question mb-4">
-                                                                                <label class="mb-2 block font-medium text-gray-900 dark:text-white">
-                                                                                        {question.num}.
-                                                                                </label>
-                                                                                <select
-                                                                                        bind:value={answers[question.num]}
-                                                                                        disabled={showAnswers}
-                                                                                        class="w-full rounded-lg border px-2 py-0.5 text-black dark:text-white dark:bg-gray-700 {showAnswers && results ? (results.questions[question.num]?.isCorrect ? 'border-green-500 bg-green-50 dark:bg-green-900/20' : 'border-red-500 bg-red-50 dark:bg-red-900/20') : 'border-gray-300 dark:border-gray-600 bg-white'}"
-                                                                                >
-                                                                                        <option value="">{showAnswers ? "" : "Select movement type"}</option>
-                                                                                        {#each ['A', 'B', 'C', 'D', 'E'] as option}
-                                                                                                <option value={option}>{option}</option>
-                                                                                        {/each}
-                                                                                </select>
-                                                                                {#if showAnswers && results?.questions[question.num]}
-                                                                                        <div class="mt-2 text-base">
-                                                                                                {#if results.questions[question.num].isCorrect}
-                                                                                                        <span class="text-teal-200">✓ Correct!</span>
-                                                                                                {:else}
-                                                                                                        <span class="text-red-600 dark:text-red-400">✗ Incorrect.</span>
-                                                                                                        <span class="text-green-300">
-                                                                                                                Correct answer: {results.questions[question.num].correctAnswers.join(' or ')}
-                                                                                                        </span>
-                                                                                                {/if}
-                                                                                        </div>
-                                                                                {/if}
-                                                                        </div>
-                                                                {/each}
-                                                        </div>
-
-                                                        <!-- Questions 33-39 Block -->
-                                                        <div class="question-block space-y-6">
-                                                                <h3 class="text-xl font-semibold text-gray-900 dark:text-white mt-8">Questions 33-39</h3>
-                                                                <p class="text-gray-700 dark:text-gray-300">Complete the summary below using words from the box.</p>
-                                                                <p class="text-gray-700 dark:text-gray-300">Write your answers in boxes 33–39 on your answer sheet.</p>
-                                                                <p class="text-gray-700 dark:text-gray-300"><strong>NB</strong> You may use any word more than once.</p>
-
-                                                                <div class="bg-blue-50 dark:bg-blue-900/20 p-4 rounded-lg mb-6">
-                                                                        <h4 class="font-semibold mb-3">Word Box:</h4>
-                                                                        <div class="grid grid-cols-4 gap-2 text-sm">
-                                                                                <div>blind</div>
-                                                                                <div>deep</div>
-                                                                                <div>pairs</div>
-                                                                                <div>shapes</div>
-                                                                                <div>sighted</div>
-                                                                                <div>similar</div>
-                                                                                <div>soft</div>
-                                                                                <div>words</div>
-                                                                                <div>associations</div>
-                                                                                <div>hard</div>
-                                                                                <div>identical</div>
-                                                                                <div>hundred</div>
-                                                                                <div>shallow</div>
-
-                                                                        </div>
-                                                                </div>
-
-                                                                <div class="space-y-4">
-                                                                        <p class="text-gray-700 dark:text-gray-300">
-                                                                                In the experiment described in Part 2, a set of word
-                                                                                <input
-                                                                                        type="text"
-                                                                                        bind:value={answers[33]}
-                                                                                        disabled={showAnswers}
-                                                                                        placeholder={showAnswers ? "" : "33"}
-                                                                                        class="w-16 mx-1 rounded border p-0.5 text-black dark:text-white dark:bg-gray-700 {showAnswers && results ? (results.questions[33]?.isCorrect ? 'border-green-500 bg-green-50 dark:bg-green-900/20' : 'border-red-500 bg-red-50 dark:bg-red-900/20') : 'border-gray-300 dark:border-gray-600 bg-white'}"
-                                                                                />
-                                                                                was used to investigate whether blind and sighted people perceived the symbolism in abstract
-                                                                                <input
-                                                                                        type="text"
-                                                                                        bind:value={answers[34]}
-                                                                                        disabled={showAnswers}
-                                                                                        placeholder={showAnswers ? "" : "34"}
-                                                                                        class="w-16 mx-1 rounded border p-0.5 text-black dark:text-white dark:bg-gray-700 {showAnswers && results ? (results.questions[34]?.isCorrect ? 'border-green-500 bg-green-50 dark:bg-green-900/20' : 'border-red-500 bg-red-50 dark:bg-red-900/20') : 'border-gray-300 dark:border-gray-600 bg-white'}"
-                                                                                />
-                                                                                in the same way.
-                                                                        </p>
-
-                                                                        <p class="text-gray-700 dark:text-gray-300">
-                                                                                Subjects were asked which word fitted best with a circle and which with a square. From the
-                                                                                <input
-                                                                                        type="text"
-                                                                                        bind:value={answers[35]}
-                                                                                        disabled={showAnswers}
-                                                                                        placeholder={showAnswers ? "" : "35"}
-                                                                                        class="w-16 mx-1 rounded border p-0.5 text-black dark:text-white dark:bg-gray-700 {showAnswers && results ? (results.questions[35]?.isCorrect ? 'border-green-500 bg-green-50 dark:bg-green-900/20' : 'border-red-500 bg-red-50 dark:bg-red-900/20') : 'border-gray-300 dark:border-gray-600 bg-white'}"
-                                                                                />
-                                                                                volunteers, everyone thought a circle fitted 'soft' while a square fitted 'hard'. However, only 51% of the
-                                                                                <input
-                                                                                        type="text"
-                                                                                        bind:value={answers[36]}
-                                                                                        disabled={showAnswers}
-                                                                                        placeholder={showAnswers ? "" : "36"}
-                                                                                        class="w-16 mx-1 rounded border p-0.5 text-black dark:text-white dark:bg-gray-700 {showAnswers && results ? (results.questions[36]?.isCorrect ? 'border-green-500 bg-green-50 dark:bg-green-900/20' : 'border-red-500 bg-red-50 dark:bg-red-900/20') : 'border-gray-300 dark:border-gray-600 bg-white'}"
-                                                                                />
-                                                                                volunteers assigned a circle to
-                                                                                <input
-                                                                                        type="text"
-                                                                                        bind:value={answers[37]}
-                                                                                        disabled={showAnswers}
-                                                                                        placeholder={showAnswers ? "" : "37"}
-                                                                                        class="w-16 mx-1 rounded border p-0.5 text-black dark:text-white dark:bg-gray-700 {showAnswers && results ? (results.questions[37]?.isCorrect ? 'border-green-500 bg-green-50 dark:bg-green-900/20' : 'border-red-500 bg-red-50 dark:bg-red-900/20') : 'border-gray-300 dark:border-gray-600 bg-white'}"
-                                                                                />
-                                                                                . When the test was later repeated with
-                                                                                <input
-                                                                                        type="text"
-                                                                                        bind:value={answers[38]}
-                                                                                        disabled={showAnswers}
-                                                                                        placeholder={showAnswers ? "" : "38"}
-                                                                                        class="w-16 mx-1 rounded border p-0.5 text-black dark:text-white dark:bg-gray-700 {showAnswers && results ? (results.questions[38]?.isCorrect ? 'border-green-500 bg-green-50 dark:bg-green-900/20' : 'border-red-500 bg-red-50 dark:bg-red-900/20') : 'border-gray-300 dark:border-gray-600 bg-white'}"
-                                                                                />
-                                                                                volunteers, it was found that they made
-                                                                                <input
-                                                                                        type="text"
-                                                                                        bind:value={answers[39]}
-                                                                                        disabled={showAnswers}
-                                                                                        placeholder={showAnswers ? "" : "39"}
-                                                                                        class="w-16 mx-1 rounded border p-0.5 text-black dark:text-white dark:bg-gray-700 {showAnswers && results ? (results.questions[39]?.isCorrect ? 'border-green-500 bg-green-50 dark:bg-green-900/20' : 'border-red-500 bg-red-50 dark:bg-red-900/20') : 'border-gray-300 dark:border-gray-600 bg-white'}"
-                                                                                />
-                                                                                choices.
-                                                                        </p>
-                                                                </div>
-
-                                                                {#if showAnswers}
-                                                                        {#each [33, 34, 35, 36, 37, 38, 39] as qNum}
-                                                                                {#if results?.questions[qNum]}
-                                                                                        <div class="mt-2 text-base">
-                                                                                                <strong>Q{qNum}:</strong>
-                                                                                                {#if results.questions[qNum].isCorrect}
-                                                                                                        <span class="text-teal-200">✓ Correct!</span>
-                                                                                                {:else}
-                                                                                                        <span class="text-red-600 dark:text-red-400">✗ Incorrect.</span>
-                                                                                                        <span class="text-green-300">
-                                                                                                                Correct answer: {results.questions[qNum].correctAnswers.join(' or ')}
-                                                                                                        </span>
-                                                                                                {/if}
-                                                                                        </div>
-                                                                                {/if}
-                                                                        {/each}
-                                                                {/if}
-
-                                                                <!-- Question 40 Block -->
-                                                                <div class="question-block space-y-6">
-                                                                        <h3 class="text-xl font-semibold text-gray-900 dark:text-white mt-8">Question 40</h3>
-                                                                        <p class="text-gray-700 dark:text-gray-300">Choose the correct letter, <strong>A</strong>, <strong>B</strong>, <strong>C</strong> or <strong>D</strong>.</p>
-                                                                        <p class="text-gray-700 dark:text-gray-300">Write your answer in box 40 on your answer sheet.</p>
-
-                                                                        <div class="question mb-6">
-                                                                                <label class="mb-3 block font-medium text-gray-900 dark:text-white">
-                                                                                        {passage3Questions.finalMultipleChoice.num}. {passage3Questions.finalMultipleChoice.text}
-                                                                                </label>
-                                                                                <div class="space-y-2">
-                                                                                        {#each passage3Questions.finalMultipleChoice.options as option}
-                                                                                                <label class="flex items-start">
-                                                                                                        <input
-                                                                                                                type="radio"
-                                                                                                                name="q{passage3Questions.finalMultipleChoice.num}"
-                                                                                                                value={option.charAt(0)}
-                                                                                                                onchange={(e) => updateAnswer(passage3Questions.finalMultipleChoice.num, e.target.value)}
-                                                                                                                disabled={showAnswers}
-                                                                                                                class="mr-2 mt-1 {showAnswers && results ? (results.questions[passage3Questions.finalMultipleChoice.num]?.userAnswer === option.charAt(0) ? (results.questions[passage3Questions.finalMultipleChoice.num]?.isCorrect ? 'accent-green-500' : 'accent-red-500') : '') : ''}"
-                                                                                                        />
-                                                                                                        <span class="text-gray-700 dark:text-gray-300">{option}</span>
-                                                                                                </label>
-                                                                                        {/each}
-                                                                                </div>
-                                                                                {#if showAnswers && results?.questions[passage3Questions.finalMultipleChoice.num]}
-                                                                                        <div class="mt-2 text-base">
-                                                                                                {#if results.questions[passage3Questions.finalMultipleChoice.num].isCorrect}
-                                                                                                        <span class="text-teal-200">✓ Correct!</span>
-                                                                                                {:else}
-                                                                                                        <span class="text-red-600 dark:text-red-400">✗ Incorrect.</span>
-                                                                                                        <span class="text-green-300">
-                                                                                                                Correct answer: {results.questions[passage3Questions.finalMultipleChoice.num].correctAnswers.join(' or ')}
-                                                                                                        </span>
-                                                                                                {/if}
-                                                                                        </div>
-                                                                                {/if}
-                                                                        </div>
-                                                                </div>
-
-                                                        <!-- Results Display for Passage 3 -->
-                                                        {#if results && showAnswers}
-                                                                <div class="mt-6 rounded-lg bg-white dark:bg-gray-700 border border-gray-200 dark:border-gray-700 p-6">
-                                                                        <!-- Test Results title -->
-                                                                        <h3 class="mb-6 text-xl font-semibold text-gray-900 dark:text-white text-center"><u>Test Results</u></h3>
-
-                                                                        <!-- Query button and help text -->
-                                                                        <div class="text-center mb-8">
-                                                                                <button
-                                                                                        onclick={() => window.open('#', '_blank')}
-                                                                                        class="px-4 py-2 bg-teal-600 text-white rounded-lg hover:bg-teal-700 transition-colors text-sm font-medium"
-                                                                                >
-                                                                                        Query my Results
-                                                                                </button>
-                                                                                <div class="text-sm text-white dark:text-gray-400 mt-1">
-                                                                                        If you are unclear about any answers - just ask!
-                                                                                </div>
-                                                                        </div>
-
-                                                                        <div class="mb-6 text-center">
-                                                                                <div class="text-3xl font-bold text-teal-600 dark:text-teal-400">
-                                                                                        {results.score}/40
-                                                                                </div>
-                                                                                <div class="text-sm text-white dark:text-gray-300">
-                                                                                        {results.percentage}% Correct
-                                                                                </div>
-                                                                        </div>
-
-                                                                        <!-- Band Score Estimate -->
-                                                                        <div class="text-center mb-8">
-                                                                                <div class="text-lg font-semibold text-gray-900 dark:text-white">
-                                                                                        Estimated Band Score:
-                                                                                        <span class="text-teal-600 dark:text-teal-400">
-                                                                                                {#if results.score >= 37}7.5-9.0
-                                                                                                {:else if results.score >= 33}7.0
-                                                                                                {:else if results.score >= 30}6.5
-                                                                                                {:else if results.score >= 27}6.0
-                                                                                                {:else if results.score >= 23}5.5
-                                                                                                {:else if results.score >= 19}5.0
-                                                                                                {:else if results.score >= 15}4.5
-                                                                                                {:else if results.score >= 11}4.0
-                                                                                                {:else if results.score >= 8}3.5
-                                                                                                {:else if results.score >= 5}3.0
-                                                                                                {:else if results.score >= 3}2.5
-                                                                                                {:else if results.score >= 1}2.0
-                                                                                                {:else}1.0{/if}
-                                                                                        </span>
-                                                                                </div>
-                                                                        </div>
-
-                                                                        <!-- Bottom buttons -->
-                                                                        <div class="flex justify-between items-center gap-1">
-                                                                                <button
-                                                                                        onclick={() => { showMarkingModal = true; document.body.style.overflow = 'hidden'; }}
-                                                                                        class="px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition-colors text-sm font-medium"
-                                                                                >
-                                                                                        View Detailed Analysis
-                                                                                </button>
-                                                                                <button
-                                                                                        onclick={() => window.location.href = '/'}
-                                                                                        class="px-4 py-2 bg-gray-600 text-white rounded-lg hover:bg-gray-700 transition-colors text-sm font-medium"
-                                                                                >
-                                                                                        Close
-                                                                                </button>
-                                                                        </div>
-                                                                </div>
-                                                        {/if}
-                                                        </div>
-                                                </div>
-                                        </div>
+                                        
                                 {/if}
 
-                                <!-- Action Button - only show if not marked yet and on section 3 -->
-                                {#if !hasMarked && currentSection === 3}
-                                        <div class="mt-6 flex flex-col gap-4 items-center">
+                                <!-- Action Button -->
+                                                   <div class="mt-6 pb-8 flex flex-col gap-4 items-center">
                                                 <button
                                                         type="button"
                                                         onclick={() => { if (!hasMarked && !isMarking) markTest(); }}
@@ -1841,13 +1109,8 @@
                                                         {/if}
                                                 </button>
                                         </div>
-                                {/if}
-
-                                
-                        </div>
-                </div>
-        {/if}
-
+                        
+        
         <!-- Answer Key Modal -->
         {#if showAnswersModal}
                 <div
@@ -1860,15 +1123,7 @@
                                 <div class="p-6">
                                         <div class="flex justify-between items-center mb-5">
 
-                                                <!--
-                                                <button
-                                                        onclick={closeAnswersModal}
-                                                        class="text-gray-400 hover:text-gray-500 dark:hover:text-gray-300 focus:outline-none"
-                                                >
-                                                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
-                                                </button>
-                                                -->
-                                        </div>
+                                      </div>
                                         <div class="max-w-none overflow-y-auto max-h-[70vh]">
                                                 <h3 class="text-xl font-semibold mb-6 text-gray-900 dark:text-white text-center">Reading Test 1 - Answer Key</h3>
                                                 <div class="grid grid-cols-3 gap-6 text-sm text-gray-900 dark:text-white">
@@ -2059,59 +1314,6 @@
                                                 </div>
                                         </div>
 
-                                        <!-- Passage 2 -->
-                                        <div class="space-y-4">
-                                                <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-3 border-b border-gray-200 dark:border-gray-700 pb-2">Passage 2 (Questions 15-26)</h3>
-                                                <div class="space-y-2">
-                                                        {#each Object.entries(results.questions).filter(([key]) => parseInt(key) >= 15 && parseInt(key) <= 26) as [questionKey, result]}
-                                                                <div class="flex items-center justify-between p-3 rounded-lg border {result.isCorrect ? 'bg-green-50 border-green-200 dark:bg-green-900/20 dark:border-green-800' : 'bg-red-50 border-red-200 dark:bg-red-900/20 dark:border-red-800'}">
-                                                                        <div class="flex-1">
-                                                                                <div class="font-medium">
-                                                                                        Q{questionKey}: 
-                                                                                        <span class="text-gray-600 dark:text-gray-300">"{result.userAnswer || '(blank)'}"</span>
-                                                                                </div>
-                                                                                <div class="text-xs text-gray-500 dark:text-gray-400 mt-1">
-                                                                                        Correct: {result.correctAnswers.join(' / ')}
-                                                                                </div>
-                                                                        </div>
-                                                                        <div class="ml-4">
-                                                                                {#if result.isCorrect}
-                                                                                        <span class="text-green-600 text-xl">✓</span>
-                                                                                {:else}
-                                                                                        <span class="text-red-600 text-xl">✗</span>
-                                                                                {/if}
-                                                                        </div>
-                                                                </div>
-                                                        {/each}
-                                                </div>
-                                        </div>
-
-                                        <!-- Passage 3 -->
-                                        <div class="space-y-4">
-                                                <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-3 border-b border-gray-200 dark:border-gray-700 pb-2">Passage 3 (Questions 27-40)</h3>
-                                                <div class="space-y-2">
-                                                        {#each Object.entries(results.questions).filter(([key]) => parseInt(key) >= 27 && parseInt(key) <= 40) as [questionKey, result]}
-                                                                <div class="flex items-center justify-between p-3 rounded-lg border {result.isCorrect ? 'bg-green-50 border-green-200 dark:bg-green-900/20 dark:border-green-800' : 'bg-red-50 border-red-200 dark:bg-red-900/20 dark:border-red-800'}">
-                                                                        <div class="flex-1">
-                                                                                <div class="font-medium">
-                                                                                        Q{questionKey}: 
-                                                                                        <span class="text-gray-600 dark:text-gray-300">"{result.userAnswer || '(blank)'}"</span>
-                                                                                </div>
-                                                                                <div class="text-xs text-gray-500 dark:text-gray-400 mt-1">
-                                                                                        Correct: {result.correctAnswers.join(' / ')}
-                                                                                </div>
-                                                                        </div>
-                                                                        <div class="ml-4">
-                                                                                {#if result.isCorrect}
-                                                                                        <span class="text-green-600 text-xl">✓</span>
-                                                                                {:else}
-                                                                                        <span class="text-red-600 text-xl">✗</span>
-                                                                                {/if}
-                                                                        </div>
-                                                                </div>
-                                                        {/each}
-                                                </div>
-                                        </div>
                                 </div>
 
                                 <!-- Modal Footer -->

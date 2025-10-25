@@ -132,7 +132,7 @@
 
 		<!-- Hero Section -->
 		<section
-						class="relative bg-gradient-to-br from-teal-100 via-blue-50 to-indigo-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 my-16 rounded-xl border border-gray-600"
+						class="relative bg-gradient-to-br from-teal-100 via-blue-50 to-indigo-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 my-16 rounded-xl border border-purple-600/60"
 		>
 						<div class="absolute inset-0 bg-gradient-to-tr from-teal-200/20 to-transparent rounded-xl"></div>
 						<div class="relative max-w-6xl mx-auto px-6 lg:px-12 py-8 md:py-12">
@@ -236,7 +236,7 @@
 																																		Receive personalised feedback
 																														</Li>
 																										</List>
-																										<Button href="/record" onclick={handleStartTest} color="purple" class="w-full font-semibold">
+																										<Button href="/reading/quicktest" onclick={handleStartTest} color="purple" class="w-full font-semibold">
 																														Start Free Test
 																										</Button>
 																						</Card>
@@ -380,7 +380,7 @@
 					Take our free 12-minute Reading assessment and get instant feedback on your performance.
 				</p>
 				<a 
-					href="/reading/practice"
+					href="/reading/quicktest"
 					class="inline-block bg-purple-500 hover:bg-purple-600 text-white font-medium px-8 py-3 rounded-lg transition-colors"
 				>
 					Take Free Reading Test Now

@@ -155,9 +155,7 @@
                                 IE WRITING Quick-Test
                         </h1>
                         </div>
-
-                                                                         <!-- Main Content Area -->
-                                                                        
+                                                                         <!-- Main Content -->                                                                        
           <!-- Timer and Navigation Header -->             <div class="pb-8">                                              <div class="bg-gray-800 rounded-lg shadow-lg p-8">
                                                         <div class="mb-6 p-6 rounded-lg bg-gray-700">
                                                                 <h2 class="text-2xl font-bold text-white text-center mb-4 tracking-wide underline decoration-2 underline-offset-3">Task</h2>
