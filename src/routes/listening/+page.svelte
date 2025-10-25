@@ -10,7 +10,8 @@
 	import {
 		ArrowRight,
 		Check,
-		Star
+		Star,
+		Headphones
 	} from 'lucide-svelte';
 	import Card from '$lib/components/Card.svelte';
 	import Lightbox from '$lib/components/Lightbox.svelte';
@@ -229,19 +230,7 @@
 																														<div
 																																		class="mt-3 mb-4 inline-flex h-16 w-16 items-center justify-center rounded-full bg-orange-800"
 																														>
-																																<svg
-																																						class="h-8 w-8 text-orange-300"
-																																						fill="none"
-																																						viewBox="0 0 24 24"
-																																						stroke="currentColor"
-																																		>
-																																						<path
-																																										stroke-linecap="round"
-																																										stroke-linejoin="round"
-																																										stroke-width="2"
-																																										d="M9 18V5l12-3v13M9 18c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3"
-																																										/>
-																																		</svg>
+																																<Headphones class="h-8 w-8 text-orange-300" />
 																														</div>
 																														<Heading tag="h4">IELTS Listening Test</Heading>
 																														<P class="text-center">Free assessment in minutes</P>
@@ -273,7 +262,7 @@
 										</h1>
 						</div>
 		</section>
-		
+
 		<!-- Test Overview -->
 		<div class="mb-12">
 			<div class="bg-primary-800/10 border-2 border-orange-500/70 border-t-12 border-t-orange-500/70 rounded-lg p-8 shadow-lg">
