@@ -239,8 +239,8 @@
 																																										stroke-linecap="round"
 																																										stroke-linejoin="round"
 																																										stroke-width="2"
-																																										d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"
-																																						/>
+																																										d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3"
+																																										/>
 																																		</svg>
 																														</div>
 																														<Heading tag="h4">IELTS Listening Test</Heading>
