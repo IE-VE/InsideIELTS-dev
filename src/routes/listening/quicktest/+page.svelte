@@ -77,7 +77,7 @@
         // Audio functions
         function toggleAudio() {
                 if (!audioElement) return;
-                
+
                 if (isPlaying) {
                         audioElement.pause();
                 } else {
@@ -137,7 +137,7 @@
                                         } else {
                                                 const userAnswer = answers[key] || '';
                                                 const correctOptions = answerKey[key];
-                                                
+
                                                 if (!userAnswer.toString().trim()) {
                                                         blankAnswers++;
                                                         if (timeConstraintAnswers.includes(num)) {
@@ -149,7 +149,7 @@
                                                                 const similarity = calculateSimilarity(userAnswer.toString().toLowerCase(), correct.toLowerCase());
                                                                 return similarity > 0.7 && similarity < 1;
                                                         });
-                                                        
+
                                                         if (isSpellingError) {
                                                                 spellingErrors++;
                                                         }
@@ -222,7 +222,7 @@
         function checkTimeConstraints() {
                 const currentTime = Date.now();
                 const testDuration = 10 * 60 * 1000;
-                
+
                 if (testStartTime && (currentTime - testStartTime) > testDuration) {
                         Object.keys(answerKey).forEach(key => {
                                 const questionNum = parseInt(key.substring(1));
@@ -260,7 +260,7 @@
                                 correctAnswers: correctAnswers,
                                 isCorrect: isCorrect
                         };
-                        
+
                         if (isCorrect) {
                                 correct++;
                         }
@@ -311,9 +311,9 @@
 
         onMount(() => {
                 startTestTimer();
-                
+
                 const timeCheckInterval = setInterval(checkTimeConstraints, 30000);
-                
+
                 timer = setInterval(() => {
                         if (isActive && timeRemaining > 0) {
                                 timeRemaining--;
@@ -399,7 +399,7 @@
                         </div>
                 </div>
         {:else if !isTestCompleted}
-                
+
                 <!-- Test Interface -->
                 <div class="container max-w-4xl mx-auto px-4 py-8">
                         <!-- Header -->
@@ -409,12 +409,12 @@
                              </div>
 
                         <div class="mb-6">
-                         
+
 
                                 <!-- Audio Player -->
                                 <div class="bg-gray-800 rounded-lg shadow-lg p-6 mb-6">
                                         <h2 class="text-xl font-semibold mb-4 text-gray-900 dark:text-white">Audio Player</h2>
-                                        
+
                                         <audio
                                                 bind:this={audioElement}
                                                 src="/audio/Space_Traffic_Management_Listening.mp3"
@@ -427,11 +427,11 @@
 
                                         <div class="space-y-4">
                                                 <!-- Progress Bar -->
-                                                <div 
+                                                <div
                                                         class="h-2 bg-gray-300 dark:bg-gray-600 rounded-full cursor-pointer overflow-hidden"
                                                         onclick={seekAudio}
                                                 >
-                                                        <div 
+                                                        <div
                                                                 class="h-full bg-orange-700/90 transition-all duration-100"
                                                                 style="width: {duration > 0 ? (currentTime / duration) * 100 : 0}%"
                                                         ></div>
@@ -462,7 +462,7 @@
                                         <!-- Questions Section -->
                                         <div class="w-full bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8">
                                                 <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-6">Questions 1-10</h2>
-                                                
+
                                                 <div class="mb-6 rounded-lg bg-gray-50 p-6 dark:bg-gray-700">
                                                         <p class="text-gray-700 dark:text-gray-300 mb-2">
                                                                 Complete the notes below.
@@ -580,18 +580,18 @@
                                                                                                 class="inline-block w-48 px-3 py-1 mx-1 rounded border text-black dark:text-white dark:bg-gray-600 {showAnswers && results ? (results.questions.q4?.isCorrect ? 'border-green-500 bg-green-50 dark:bg-green-900/20' : 'border-red-500 bg-red-50 dark:bg-red-900/20') : 'border-gray-300 dark:border-gray-500 bg-white'}"
                                                                                         />
                                                                                         <span>.</span>
-                                                                                        {#if showAnswers && results?.questions.q4}
-                                                                                                <div class="mt-2 text-sm">
-                                                                                                        {#if results.questions.q4.isCorrect}
-                                                                                                                <span class="text-teal-600 dark:text-teal-400">✓ Correct!</span>
-                                                                                                        {:else}
-                                                                                                                <span class="text-red-600 dark:text-red-400">✗ Incorrect. </span>
-                                                                                                                <span class="text-green-600 dark:text-green-400">
-                                                                                                                        Correct: {results.questions.q4.correctAnswers.join(' / ')}
-                                                                                                                </span>
-                                                                                                        {/if}
-                                                                                                </div>
-                                                                                        {/if}
+                                                                                                {#if showAnswers && results?.questions.q4}
+                                                                                                        <div class="mt-2 text-sm">
+                                                                                                                {#if results.questions.q4.isCorrect}
+                                                                                                                        <span class="text-teal-600 dark:text-teal-400">✓ Correct!</span>
+                                                                                                                {:else}
+                                                                                                                        <span class="text-red-600 dark:text-red-400">✗ Incorrect. </span>
+                                                                                                                        <span class="text-green-600 dark:text-green-400">
+                                                                                                                                Correct: {results.questions.q4.correctAnswers.join(' / ')}
+                                                                                                                        </span>
+                                                                                                                {/if}
+                                                                                                        </div>
+                                                                                                {/if}
                                                                                 </div>
                                                                         </li>
                                                                         <li class="flex items-start">
@@ -607,18 +607,18 @@
                                                                                                 class="inline-block w-48 px-3 py-1 mx-1 rounded border text-black dark:text-white dark:bg-gray-600 {showAnswers && results ? (results.questions.q5?.isCorrect ? 'border-green-500 bg-green-50 dark:bg-green-900/20' : 'border-red-500 bg-red-50 dark:bg-red-900/20') : 'border-gray-300 dark:border-gray-500 bg-white'}"
                                                                                         />
                                                                                         <span> satellites.</span>
-                                                                                        {#if showAnswers && results?.questions.q5}
-                                                                                                <div class="mt-2 text-sm">
-                                                                                                        {#if results.questions.q5.isCorrect}
-                                                                                                                <span class="text-teal-600 dark:text-teal-400">✓ Correct!</span>
-                                                                                                        {:else}
-                                                                                                                <span class="text-red-600 dark:text-red-400">✗ Incorrect. </span>
-                                                                                                                <span class="text-green-600 dark:text-green-400">
-                                                                                                                        Correct: {results.questions.q5.correctAnswers.join(' / ')}
-                                                                                                                </span>
-                                                                                                        {/if}
-                                                                                                </div>
-                                                                                        {/if}
+                                                                                                {#if showAnswers && results?.questions.q5}
+                                                                                                        <div class="mt-2 text-sm">
+                                                                                                                {#if results.questions.q5.isCorrect}
+                                                                                                                        <span class="text-teal-600 dark:text-teal-400">✓ Correct!</span>
+                                                                                                                {:else}
+                                                                                                                        <span class="text-red-600 dark:text-red-400">✗ Incorrect. </span>
+                                                                                                                        <span class="text-green-600 dark:text-green-400">
+                                                                                                                                Correct: {results.questions.q5.correctAnswers.join(' / ')}
+                                                                                                                        </span>
+                                                                                                                {/if}
+                                                                                                        </div>
+                                                                                                {/if}
                                                                                 </div>
                                                                         </li>
                                                                         <li class="flex items-start">
@@ -638,18 +638,18 @@
                                                                                                 class="inline-block w-48 px-3 py-1 mx-1 rounded border text-black dark:text-white dark:bg-gray-600 {showAnswers && results ? (results.questions.q6?.isCorrect ? 'border-green-500 bg-green-50 dark:bg-green-900/20' : 'border-red-500 bg-red-50 dark:bg-red-900/20') : 'border-gray-300 dark:border-gray-500 bg-white'}"
                                                                                         />
                                                                                         <span> or commercial reasons.</span>
-                                                                                        {#if showAnswers && results?.questions.q6}
-                                                                                                <div class="mt-2 text-sm">
-                                                                                                        {#if results.questions.q6.isCorrect}
-                                                                                                                <span class="text-teal-600 dark:text-teal-400">✓ Correct!</span>
-                                                                                                        {:else}
-                                                                                                                <span class="text-red-600 dark:text-red-400">✗ Incorrect. </span>
-                                                                                                                <span class="text-green-600 dark:text-green-400">
-                                                                                                                        Correct: {results.questions.q6.correctAnswers.join(' / ')}
-                                                                                                                </span>
-                                                                                                        {/if}
-                                                                                                </div>
-                                                                                        {/if}
+                                                                                                {#if showAnswers && results?.questions.q6}
+                                                                                                        <div class="mt-2 text-sm">
+                                                                                                                {#if results.questions.q6.isCorrect}
+                                                                                                                        <span class="text-teal-600 dark:text-teal-400">✓ Correct!</span>
+                                                                                                                {:else}
+                                                                                                                        <span class="text-red-600 dark:text-red-400">✗ Incorrect. </span>
+                                                                                                                        <span class="text-green-600 dark:text-green-400">
+                                                                                                                                Correct: {results.questions.q6.correctAnswers.join(' / ')}
+                                                                                                                        </span>
+                                                                                                                {/if}
+                                                                                                        </div>
+                                                                                                {/if}
                                                                                 </div>
                                                                         </li>
                                                                         <li class="flex items-start">
@@ -665,18 +665,18 @@
                                                                                                 class="inline-block w-48 px-3 py-1 mx-1 rounded border text-black dark:text-white dark:bg-gray-600 {showAnswers && results ? (results.questions.q7?.isCorrect ? 'border-green-500 bg-green-50 dark:bg-green-900/20' : 'border-red-500 bg-red-50 dark:bg-red-900/20') : 'border-gray-300 dark:border-gray-500 bg-white'}"
                                                                                         />
                                                                                         <span> at a given time.</span>
-                                                                                        {#if showAnswers && results?.questions.q7}
-                                                                                                <div class="mt-2 text-sm">
-                                                                                                        {#if results.questions.q7.isCorrect}
-                                                                                                                <span class="text-teal-600 dark:text-teal-400">✓ Correct!</span>
-                                                                                                        {:else}
-                                                                                                                <span class="text-red-600 dark:text-red-400">✗ Incorrect. </span>
-                                                                                                                <span class="text-green-600 dark:text-green-400">
-                                                                                                                        Correct: {results.questions.q7.correctAnswers.join(' / ')}
-                                                                                                                </span>
-                                                                                                        {/if}
-                                                                                                </div>
-                                                                                        {/if}
+                                                                                                {#if showAnswers && results?.questions.q7}
+                                                                                                        <div class="mt-2 text-sm">
+                                                                                                                {#if results.questions.q7.isCorrect}
+                                                                                                                        <span class="text-teal-600 dark:text-teal-400">✓ Correct!</span>
+                                                                                                                {:else}
+                                                                                                                        <span class="text-red-600 dark:text-red-400">✗ Incorrect. </span>
+                                                                                                                        <span class="text-green-600 dark:text-green-400">
+                                                                                                                                Correct: {results.questions.q7.correctAnswers.join(' / ')}
+                                                                                                                        </span>
+                                                                                                                {/if}
+                                                                                                        </div>
+                                                                                                {/if}
                                                                                 </div>
                                                                         </li>
                                                                         <li class="flex items-start">
@@ -692,18 +692,18 @@
                                                                                                 class="inline-block w-48 px-3 py-1 mx-1 rounded border text-black dark:text-white dark:bg-gray-600 {showAnswers && results ? (results.questions.q8?.isCorrect ? 'border-green-500 bg-green-50 dark:bg-green-900/20' : 'border-red-500 bg-red-50 dark:bg-red-900/20') : 'border-gray-300 dark:border-gray-500 bg-white'}"
                                                                                         />
                                                                                         <span> about where the satellite will go.</span>
-                                                                                        {#if showAnswers && results?.questions.q8}
-                                                                                                <div class="mt-2 text-sm">
-                                                                                                        {#if results.questions.q8.isCorrect}
-                                                                                                                <span class="text-teal-600 dark:text-teal-400">✓ Correct!</span>
-                                                                                                        {:else}
-                                                                                                                <span class="text-red-600 dark:text-red-400">✗ Incorrect. </span>
-                                                                                                                <span class="text-green-600 dark:text-green-400">
-                                                                                                                        Correct: {results.questions.q8.correctAnswers.join(' / ')}
-                                                                                                                </span>
-                                                                                                        {/if}
-                                                                                                </div>
-                                                                                        {/if}
+                                                                                                {#if showAnswers && results?.questions.q8}
+                                                                                                        <div class="mt-2 text-sm">
+                                                                                                                {#if results.questions.q8.isCorrect}
+                                                                                                                        <span class="text-teal-600 dark:text-teal-400">✓ Correct!</span>
+                                                                                                                {:else}
+                                                                                                                        <span class="text-red-600 dark:text-red-400">✗ Incorrect. </span>
+                                                                                                                        <span class="text-green-600 dark:text-green-400">
+                                                                                                                                Correct: {results.questions.q8.correctAnswers.join(' / ')}
+                                                                                                                        </span>
+                                                                                                                {/if}
+                                                                                                        </div>
+                                                                                                {/if}
                                                                                 </div>
                                                                         </li>
                                                                 </ul>
@@ -730,18 +730,18 @@
                                                                                                 class="inline-block w-48 px-3 py-1 mx-1 rounded border text-black dark:text-white dark:bg-gray-600 {showAnswers && results ? (results.questions.q9?.isCorrect ? 'border-green-500 bg-green-50 dark:bg-green-900/20' : 'border-red-500 bg-red-50 dark:bg-red-900/20') : 'border-gray-300 dark:border-gray-500 bg-white'}"
                                                                                         />
                                                                                         <span>.</span>
-                                                                                        {#if showAnswers && results?.questions.q9}
-                                                                                                <div class="mt-2 text-sm">
-                                                                                                        {#if results.questions.q9.isCorrect}
-                                                                                                                <span class="text-teal-600 dark:text-teal-400">✓ Correct!</span>
-                                                                                                        {:else}
-                                                                                                                <span class="text-red-600 dark:text-red-400">✗ Incorrect. </span>
-                                                                                                                <span class="text-green-600 dark:text-green-400">
-                                                                                                                        Correct: {results.questions.q9.correctAnswers.join(' / ')}
-                                                                                                                </span>
-                                                                                                        {/if}
-                                                                                                </div>
-                                                                                        {/if}
+                                                                                                {#if showAnswers && results?.questions.q9}
+                                                                                                        <div class="mt-2 text-sm">
+                                                                                                                {#if results.questions.q9.isCorrect}
+                                                                                                                        <span class="text-teal-600 dark:text-teal-400">✓ Correct!</span>
+                                                                                                                {:else}
+                                                                                                                        <span class="text-red-600 dark:text-red-400">✗ Incorrect. </span>
+                                                                                                                        <span class="text-green-600 dark:text-green-400">
+                                                                                                                                Correct: {results.questions.q9.correctAnswers.join(' / ')}
+                                                                                                                        </span>
+                                                                                                                {/if}
+                                                                                                        </div>
+                                                                                                {/if}
                                                                                 </div>
                                                                         </li>
                                                                         <li class="flex items-start">
@@ -757,18 +757,18 @@
                                                                                                 class="inline-block w-48 px-3 py-1 mx-1 rounded border text-black dark:text-white dark:bg-gray-600 {showAnswers && results ? (results.questions.q10?.isCorrect ? 'border-green-500 bg-green-50 dark:bg-green-900/20' : 'border-red-500 bg-red-50 dark:bg-red-900/20') : 'border-gray-300 dark:border-gray-500 bg-white'}"
                                                                                         />
                                                                                         <span> in its users.</span>
-                                                                                        {#if showAnswers && results?.questions.q10}
-                                                                                                <div class="mt-2 text-sm">
-                                                                                                        {#if results.questions.q10.isCorrect}
-                                                                                                                <span class="text-teal-600 dark:text-teal-400">✓ Correct!</span>
-                                                                                                        {:else}
-                                                                                                                <span class="text-red-600 dark:text-red-400">✗ Incorrect. </span>
-                                                                                                                <span class="text-green-600 dark:text-green-400">
-                                                                                                                        Correct: {results.questions.q10.correctAnswers.join(' / ')}
-                                                                                                                </span>
-                                                                                                        {/if}
-                                                                                                </div>
-                                                                                        {/if}
+                                                                                                {#if showAnswers && results?.questions.q10}
+                                                                                                        <div class="mt-2 text-sm">
+                                                                                                                {#if results.questions.q10.isCorrect}
+                                                                                                                        <span class="text-teal-600 dark:text-teal-400">✓ Correct!</span>
+                                                                                                                {:else}
+                                                                                                                        <span class="text-red-600 dark:text-red-400">✗ Incorrect. </span>
+                                                                                                                        <span class="text-green-600 dark:text-green-400">
+                                                                                                                                Correct: {results.questions.q10.correctAnswers.join(' / ')}
+                                                                                                                        </span>
+                                                                                                                {/if}
+                                                                                                        </div>
+                                                                                                {/if}
                                                                                 </div>
                                                                         </li>
                                                                 </ul>
@@ -813,6 +813,22 @@
                                                                                 </div>
                                                                         {/each}
                                                                 </div>
+
+                                                                <!-- Action Buttons -->
+                                                                <div class="mt-6 flex gap-4 justify-center">
+                                                                        <button
+                                                                                onclick={resetTimer}
+                                                                                class="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition-colors"
+                                                                        >
+                                                                                Retake Test
+                                                                        </button>
+                                                                        <button
+                                                                                onclick={() => window.location.href = '/listening'}
+                                                                                class="px-6 py-3 bg-gray-600 hover:bg-gray-700 text-white font-medium rounded-lg transition-colors"
+                                                                        >
+                                                                                Back to Listening
+                                                                        </button>
+                                                                </div>
                                                         </div>
                                                 {/if}
 
@@ -850,7 +866,7 @@
                                 <p class="text-xl mb-8 text-gray-700 dark:text-gray-300">
                                         Thank you for completing the IE LISTENING Quick-Test.
                                 </p>
-                                
+
                                 {#if !hasMarked}
                                         <button
                                                 onclick={markTest}
