@@ -818,13 +818,13 @@
                                                                 <div class="mt-6 flex gap-4 justify-center">
                                                                         <button
                                                                                 onclick={resetTimer}
-                                                                                class="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition-colors"
+                                                                                class="px-6 py-3 bg-orange-700 hover:bg-orange-800 text-white font-medium rounded-lg transition-colors"
                                                                         >
                                                                                 Retake Test
                                                                         </button>
                                                                         <button
                                                                                 onclick={() => window.location.href = '/listening'}
-                                                                                class="px-6 py-3 bg-gray-600 hover:bg-gray-700 text-white font-medium rounded-lg transition-colors"
+                                                                                class="px-6 py-3 bg-gray-600 hover:bg-gray-700 text-orange font-medium rounded-lg transition-colors"
                                                                         >
                                                                                 Back to Listening
                                                                         </button>
