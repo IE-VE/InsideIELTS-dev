@@ -735,8 +735,8 @@
                                                         {#each sentenceCompletionQuestions as question}
                                                                 <div class="question mb-4">
                                                                         <label class="mb-2 block font-medium text-gray-900 dark:text-white">
-                                                                                {question.num}. {question.text}
                                                                                 {#if question.num === 9}
+                                                                                        {question.num}. {question.text}
                                                                                         <input
                                                                                                 type="text"
                                                                                                 bind:value={answers[question.num]}
@@ -745,7 +745,7 @@
                                                                                                 class="ml-2 px-3 py-1 rounded border text-black dark:text-white dark:bg-gray-700 {showAnswers && results ? (results.questions[question.num]?.isCorrect ? 'border-green-500 bg-green-50 dark:bg-green-900/20' : 'border-red-500 bg-red-50 dark:bg-red-900/20') : 'border-gray-300 dark:border-gray-600 bg-white'}"
                                                                                         />
                                                                                 {:else if question.num === 10}
-                                                                                        The
+                                                                                        {question.num}. The
                                                                                         <input
                                                                                                 type="text"
                                                                                                 bind:value={answers[question.num]}
@@ -755,7 +755,7 @@
                                                                                         />
                                                                                         from the tops of cut trees can help improve soil quality.
                                                                                 {:else if question.num === 11}
-                                                                                        Some damaged trees should be left, as their
+                                                                                        {question.num}. Some damaged trees should be left, as their
                                                                                         <input
                                                                                                 type="text"
                                                                                                 bind:value={answers[question.num]}
@@ -765,7 +765,7 @@
                                                                                         />
                                                                                         provide habitats for a range of creatures.
                                                                                 {:else if question.num === 12}
-                                                                                        Some trees that are small, such as
+                                                                                        {question.num}. Some trees that are small, such as
                                                                                         <input
                                                                                                 type="text"
                                                                                                 bind:value={answers[question.num]}
@@ -775,7 +775,7 @@
                                                                                         />
                                                                                         , are a source of food for animals and insects.
                                                                                 {:else if question.num === 13}
-                                                                                        Any trees that are
+                                                                                        {question.num}. Any trees that are
                                                                                         <input
                                                                                                 type="text"
                                                                                                 bind:value={answers[question.num]}
