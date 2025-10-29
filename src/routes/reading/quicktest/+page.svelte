@@ -515,7 +515,7 @@
                                                 <ul class="space-y-2 text-gray-700 dark:text-gray-300 text-left">
                                                         <li class="flex items-start">
                                                                 <span class="text-yellow-600 dark:text-yellow-400 mr-2">⚠</span>
-                                                                <span>Read the passage carefully before attempting the questions</span>
+                                                                <span>Skim the passage carefully before attempting any questions</span>
                                                         </li>
                                                         <li class="flex items-start">
                                                                 <span class="text-yellow-600 dark:text-yellow-400 mr-2">⚠</span>
@@ -559,7 +559,7 @@
                                                         <div class="flex gap-2">
                                                                 <button
                                                                         onclick={toggleHighlighting}
-                                                                        class="px-4 py-2 rounded-lg font-medium transition-colors {highlightingEnabled ? 'bg-yellow-500 hover:bg-yellow-600 text-white' : 'bg-gray-200 hover:bg-gray-300 dark:bg-gray-700 dark:hover:bg-gray-600 text-gray-700 dark:text-gray-300'}"
+                                                                        class="px-4 py-2 rounded-lg font-medium transition-colors {highlightingEnabled ? 'bg-yellow-500 hover:bg-yellow-600 text-white' : 'bg-gray-200 hover:bg-gray-300 dark:bg-gray-500 dark:hover:bg-gray-600 text-gray-700 dark:text-gray-300 border border-yellow-500'}"
                                                                 >
                                                                         {highlightingEnabled ? '✓ Highlighter ON' : 'Highlighter'}
                                                                 </button>
@@ -573,7 +573,7 @@
                                                                 {/if}
                                                         </div>
                                                 </div>
-                                                <div class="mb-6 rounded-lg bg-gray-50 p-6 dark:bg-gray-700">
+                                                <div class="mb-8 rounded-lg bg-gray-50 px-6 py-3 dark:bg-gray-700">
                                                         <p class="text-gray-700 dark:text-gray-300">
                                                                 You should spend about 20 minutes on Questions 1–13, which are based on the passage below.
                                                         </p>
@@ -631,7 +631,7 @@
                                                         </div>
                                                         <button
                                                                 onclick={isActive ? pauseTimer : startTimer}
-                                                                class="px-6 py-2 rounded-lg font-medium transition-colors {isActive ? 'bg-orange-600 hover:bg-orange-700' : 'bg-teal-600 hover:bg-teal-700'} text-white"
+                                                                class="px-3 py-1 rounded-lg font-medium transition-colors {isActive ? 'bg-purple-600 hover:bg-purple-700' : 'bg-teal-600 hover:bg-teal-700'} text-white"
                                                         >
                                                                 {isActive ? '⏸ PAUSE' : '▶ START'}
                                                         </button>
@@ -869,14 +869,14 @@
                         </div>
 
                         <!-- Complete Test Button -->
-                        <div class="mt-6 flex justify-center">
+                        <!-- <div class="mt-6 flex justify-center">
                                 <button
                                         onclick={completeTest}
                                         class="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-8 rounded-lg text-lg border border-white transition-colors"
                                 >
                                         Submit Answers
                                 </button>
-                        </div>
+                        </div> -->
                 </div>
         {:else}
                 <!-- Test Completed -->
