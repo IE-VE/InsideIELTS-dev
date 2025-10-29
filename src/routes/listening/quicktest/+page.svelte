@@ -824,7 +824,7 @@
                                                                         </button>
                                                                         <button
                                                                                 onclick={() => window.location.href = '/listening'}
-                                                                                class="px-6 py-3 bg-gray-600 hover:bg-gray-700 text-orange font-medium rounded-lg transition-colors"
+                                                                                class="px-6 py-3 bg-gray-600 hover:bg-gray-700 text-orange font-medium rounded-lg border-2 border-orange-600/80 transition-colors"
                                                                         >
                                                                                 Back to Listening
                                                                         </button>
