@@ -288,7 +288,7 @@
                         const range = selection.getRangeAt(0);
 
                         // Check if selection is within a passage container
-                        const passageContainer = range.commonAncestorContainer.nodeType === Node.TEXT_NODE 
+                        const passageContainer = range.commonAncestorContainer.nodeType === Node.TEXT_NODE
                                 ? range.commonAncestorContainer.parentElement?.closest('.passage-text')
                                 : range.commonAncestorContainer.closest?.('.passage-text');
 
@@ -481,11 +481,11 @@
                         </h1>
                      </div>
 
-                        <div class="max-w-4xl w-full bg-gray-800 rounded-lg shadow-2xl rounded-lg border border-gray-600 p-8">                   
+                        <div class="max-w-4xl w-full bg-gray-800 rounded-lg shadow-2xl rounded-lg border border-gray-600 p-8">
                                 <div class="space-y-6 text-gray-300">
                                         <div class="bg-teal-900/20 p-6 rounded-lg">
                                                 <h2 class="text-xl font-semibold text-teal-300 mb-4">Test Instructions</h2>
-                                                
+
                                                 <ul class="space-y-2 text-gray-300 text-left">
                                                         <li class="flex items-start">
                                                                 <span class="text-green-400 mr-2">•</span>
@@ -502,7 +502,7 @@
                                                 </ul>
                                         </div>
 
-                                        <div class="bg-blue-800/10 p-6 rounded-lg">                                                     
+                                        <div class="bg-blue-800/10 p-6 rounded-lg">
                                                 <h3 class="text-lg font-semibold text-blue-300 mb-3">Question Types</h3>
                                                 <div class="space-y-3 text-gray-700 dark:text-gray-300 text-left">
                                                         <p><strong>Questions 1-5 :</strong> Paragraph Information (matching information to paragraphs A-G)</p>
@@ -655,7 +655,7 @@
                                                                         <select
                                                                                 bind:value={answers[question.num]}
                                                                                 disabled={showAnswers}
-                                                                                class="w-full rounded-lg border px-2 py-0.5 text-black dark:text-white dark:bg-gray-700  {showAnswers && results ? (results.questions[question.num]?.isCorrect ? 'border-green-500 bg-green-50 dark:bg-green-900/20' : 'border-red-500 bg-red-50 dark:bg-red-900/20') : 'border-gray-300 dark:border-gray-600 bg-white'}"
+                                                                                class="w-full rounded-lg border px-2 py-0.5 text-black dark:text-white dark:bg-gray-700 focus:border-purple-600/60 focus:ring-1 focus:ring-purple-600/60 {showAnswers && results ? (results.questions[question.num]?.isCorrect ? 'border-green-500 bg-green-50 dark:bg-green-900/20' : 'border-red-500 bg-red-50 dark:bg-red-900/20') : 'border-gray-300 dark:border-gray-600 bg-white'}"
                                                                         >
                                                                                 <option value="">{showAnswers ? "" : "Select answer"}</option>
                                                                                 {#each ['A','B','C','D','E','F','G'] as option}
@@ -703,7 +703,7 @@
                                                                         <select
                                                                                 bind:value={answers[question.num]}
                                                                                 disabled={showAnswers}
-                                                                                class="w-full rounded-lg border px-2 py-0.5 text-black dark:text-white dark:bg-gray-700 {showAnswers && results ? (results.questions[question.num]?.isCorrect ? 'border-green-500 bg-green-50 dark:bg-green-900/20' : 'border-red-500 bg-red-50 dark:bg-red-900/20') : 'border-gray-300 dark:border-gray-600 bg-white'}"
+                                                                                class="w-full rounded-lg border px-2 py-0.5 text-black dark:text-white dark:bg-gray-700 focus:border-purple-600/60 focus:ring-1 focus:ring-purple-600/60 {showAnswers && results ? (results.questions[question.num]?.isCorrect ? 'border-green-500 bg-green-50 dark:bg-green-900/20' : 'border-red-500 bg-red-50 dark:bg-red-900/20') : 'border-gray-300 dark:border-gray-600 bg-white'}"
                                                                         >
                                                                                 <option value="">{showAnswers ? "" : "Select answer"}</option>
                                                                                 {#each ['A','B','C'] as option}
@@ -743,7 +743,7 @@
                                                                                                 bind:value={answers[question.num]}
                                                                                                 disabled={showAnswers}
                                                                                                 placeholder="..."
-                                                                                                class="ml-2 px-3 py-1 rounded border text-black dark:text-white dark:bg-gray-700 {showAnswers && results ? (results.questions[question.num]?.isCorrect ? 'border-green-500 bg-green-50 dark:bg-green-900/20' : 'border-red-500 bg-red-50 dark:bg-red-900/20') : 'border-gray-300 dark:border-gray-600 bg-white'}"
+                                                                                                class="ml-2 px-3 py-1 rounded border text-black dark:text-white dark:bg-gray-700 focus:border-purple-600/60 focus:ring-1 focus:ring-purple-600/60 {showAnswers && results ? (results.questions[question.num]?.isCorrect ? 'border-green-500 bg-green-50 dark:bg-green-900/20' : 'border-red-500 bg-red-50 dark:bg-red-900/20') : 'border-gray-300 dark:border-gray-600 bg-white'}"
                                                                                         />
                                                                                 {:else if question.num === 10}
                                                                                         {question.num}. The
@@ -752,7 +752,7 @@
                                                                                                 bind:value={answers[question.num]}
                                                                                                 disabled={showAnswers}
                                                                                                 placeholder="..."
-                                                                                                class="mx-2 px-3 py-1 rounded border text-black dark:text-white dark:bg-gray-700 {showAnswers && results ? (results.questions[question.num]?.isCorrect ? 'border-green-500 bg-green-50 dark:bg-green-900/20' : 'border-red-500 bg-red-50 dark:bg-red-900/20') : 'border-gray-300 dark:border-gray-600 bg-white'}"
+                                                                                                class="mx-2 px-3 py-1 rounded border text-black dark:text-white dark:bg-gray-700 focus:border-purple-600/60 focus:ring-1 focus:ring-purple-600/60 {showAnswers && results ? (results.questions[question.num]?.isCorrect ? 'border-green-500 bg-green-50 dark:bg-green-900/20' : 'border-red-500 bg-red-50 dark:bg-red-900/20') : 'border-gray-300 dark:border-gray-600 bg-white'}"
                                                                                         />
                                                                                         from the tops of cut trees can help improve soil quality.
                                                                                 {:else if question.num === 11}
@@ -762,7 +762,7 @@
                                                                                                 bind:value={answers[question.num]}
                                                                                                 disabled={showAnswers}
                                                                                                 placeholder="..."
-                                                                                                class="mx-2 px-3 py-1 rounded border text-black dark:text-white dark:bg-gray-700 {showAnswers && results ? (results.questions[question.num]?.isCorrect ? 'border-green-500 bg-green-50 dark:bg-green-900/20' : 'border-red-500 bg-red-50 dark:bg-red-900/20') : 'border-gray-300 dark:border-gray-600 bg-white'}"
+                                                                                                class="mx-2 px-3 py-1 rounded border text-black dark:text-white dark:bg-gray-700 focus:border-purple-600/60 focus:ring-1 focus:ring-purple-600/60 {showAnswers && results ? (results.questions[question.num]?.isCorrect ? 'border-green-500 bg-green-50 dark:bg-green-900/20' : 'border-red-500 bg-red-50 dark:bg-red-900/20') : 'border-gray-300 dark:border-gray-600 bg-white'}"
                                                                                         />
                                                                                         provide habitats for a range of creatures.
                                                                                 {:else if question.num === 12}
@@ -772,7 +772,7 @@
                                                                                                 bind:value={answers[question.num]}
                                                                                                 disabled={showAnswers}
                                                                                                 placeholder="..."
-                                                                                                class="mx-2 px-3 py-1 rounded border text-black dark:text-white dark:bg-gray-700 {showAnswers && results ? (results.questions[question.num]?.isCorrect ? 'border-green-500 bg-green-50 dark:bg-green-900/20' : 'border-red-500 bg-red-50 dark:bg-red-900/20') : 'border-gray-300 dark:border-gray-600 bg-white'}"
+                                                                                                class="mx-2 px-3 py-1 rounded border text-black dark:text-white dark:bg-gray-700 focus:border-purple-600/60 focus:ring-1 focus:ring-purple-600/60 {showAnswers && results ? (results.questions[question.num]?.isCorrect ? 'border-green-500 bg-green-50 dark:bg-green-900/20' : 'border-red-500 bg-red-50 dark:bg-red-900/20') : 'border-gray-300 dark:border-gray-600 bg-white'}"
                                                                                         />
                                                                                         , are a source of food for animals and insects.
                                                                                 {:else if question.num === 13}
@@ -782,7 +782,7 @@
                                                                                                 bind:value={answers[question.num]}
                                                                                                 disabled={showAnswers}
                                                                                                 placeholder="..."
-                                                                                                class="mx-2 px-3 py-1 rounded border text-black dark:text-white dark:bg-gray-700 {showAnswers && results ? (results.questions[question.num]?.isCorrect ? 'border-green-500 bg-green-50 dark:bg-green-900/20' : 'border-red-500 bg-red-50 dark:bg-red-900/20') : 'border-gray-300 dark:border-gray-600 bg-white'}"
+                                                                                                class="mx-2 px-3 py-1 rounded border text-black dark:text-white dark:bg-gray-700 focus:border-purple-600/60 focus:ring-1 focus:ring-purple-600/60 {showAnswers && results ? (results.questions[question.num]?.isCorrect ? 'border-green-500 bg-green-50 dark:bg-green-900/20' : 'border-red-500 bg-red-50 dark:bg-red-900/20') : 'border-gray-300 dark:border-gray-600 bg-white'}"
                                                                                         />
                                                                                         should be left to grow, as they add to the variety of species in the forest.
                                                                                 {/if}
