@@ -491,7 +491,7 @@
                                                                                                 onchange={(e) => updateAnswer('q1', e.target.value)}
                                                                                                 disabled={showAnswers}
                                                                                                 placeholder="1"
-                                                                                                class="inline-block w-48 px-3 py-1 mx-1 rounded border text-black dark:text-white dark:bg-gray-600 focus:border-orange-600 focus:ring-2 focus:ring-orange-600/50 outline-none {showAnswers && results ? (results.questions.q1?.isCorrect ? 'border-green-500 bg-green-50 dark:bg-green-900/20' : 'border-red-500 bg-red-50 dark:bg-red-900/20') : 'border-gray-300 dark:border-gray-500 bg-white'}"
+                                                                                                class="inline-block w-48 px-3 py-1 mx-1 rounded border text-black dark:text-white dark:bg-gray-600 focus:border-orange-600/60 focus:ring-1 focus:ring-orange-600/60 outline-none {showAnswers && results ? (results.questions.q1?.isCorrect ? 'border-green-500 bg-green-50 dark:bg-green-900/20' : 'border-red-500 bg-red-50 dark:bg-red-900/20') : 'border-gray-300 dark:border-gray-500 bg-white'}"
                                                                                         />
                                                                                         <span> ways of improving safety.</span>
                                                                                         {#if showAnswers && results?.questions.q1}
@@ -529,7 +529,7 @@
                                                                                                 onchange={(e) => updateAnswer('q2', e.target.value)}
                                                                                                 disabled={showAnswers}
                                                                                                 placeholder="2"
-                                                                                                class="inline-block w-48 px-3 py-1 mx-1 rounded border text-black dark:text-white dark:bg-gray-600 focus:border-orange-600 focus:ring-2 focus:ring-orange-600/50 outline-none {showAnswers && results ? (results.questions.q2?.isCorrect ? 'border-green-500 bg-green-50 dark:bg-green-900/20' : 'border-red-500 bg-red-50 dark:bg-red-900/20') : 'border-gray-300 dark:border-gray-500 bg-white'}"
+                                                                                                class="inline-block w-48 px-3 py-1 mx-1 rounded border text-black dark:text-white dark:bg-gray-600 focus:border-orange-600/60 focus:ring-1 focus:ring-orange-600/60 outline-none {showAnswers && results ? (results.questions.q2?.isCorrect ? 'border-green-500 bg-green-50 dark:bg-green-900/20' : 'border-red-500 bg-red-50 dark:bg-red-900/20') : 'border-gray-300 dark:border-gray-500 bg-white'}"
                                                                                         />
                                                                                         <span> and therefore more widespread (e.g. there are constellations made up of </span>
                                                                                         <input
@@ -538,7 +538,7 @@
                                                                                                 onchange={(e) => updateAnswer('q3', e.target.value)}
                                                                                                 disabled={showAnswers}
                                                                                                 placeholder="3"
-                                                                                                class="inline-block w-48 px-3 py-1 mx-1 rounded border text-black dark:text-white dark:bg-gray-600 focus:border-orange-600 focus:ring-2 focus:ring-orange-600/50 outline-none {showAnswers && results ? (results.questions.q3?.isCorrect ? 'border-green-500 bg-green-50 dark:bg-green-900/20' : 'border-red-500 bg-red-50 dark:bg-red-900/20') : 'border-gray-300 dark:border-gray-500 bg-white'}"
+                                                                                                class="inline-block w-48 px-3 py-1 mx-1 rounded border text-black dark:text-white dark:bg-gray-600 focus:border-orange-600/60 focus:ring-1 focus:ring-orange-600/60 outline-none {showAnswers && results ? (results.questions.q3?.isCorrect ? 'border-green-500 bg-green-50 dark:bg-green-900/20' : 'border-red-500 bg-red-50 dark:bg-red-900/20') : 'border-gray-300 dark:border-gray-500 bg-white'}"
                                                                                         />
                                                                                         <span> of satellites).</span>
                                                                                         {#if showAnswers && results?.questions.q2}
@@ -577,7 +577,7 @@
                                                                                                 onchange={(e) => updateAnswer('q4', e.target.value)}
                                                                                                 disabled={showAnswers}
                                                                                                 placeholder="4"
-                                                                                                class="inline-block w-48 px-3 py-1 mx-1 rounded border text-black dark:text-white dark:bg-gray-600 focus:border-orange-600 focus:ring-2 focus:ring-orange-600/50 outline-none {showAnswers && results ? (results.questions.q4?.isCorrect ? 'border-green-500 bg-green-50 dark:bg-green-900/20' : 'border-red-500 bg-red-50 dark:bg-red-900/20') : 'border-gray-300 dark:border-gray-500 bg-white'}"
+                                                                                                class="inline-block w-48 px-3 py-1 mx-1 rounded border text-black dark:text-white dark:bg-gray-600 focus:border-orange-600/60 focus:ring-1 focus:ring-orange-600/60 outline-none {showAnswers && results ? (results.questions.q4?.isCorrect ? 'border-green-500 bg-green-50 dark:bg-green-900/20' : 'border-red-500 bg-red-50 dark:bg-red-900/20') : 'border-gray-300 dark:border-gray-500 bg-white'}"
                                                                                         />
                                                                                         <span>.</span>
                                                                                                 {#if showAnswers && results?.questions.q4}
@@ -604,7 +604,7 @@
                                                                                                 onchange={(e) => updateAnswer('q5', e.target.value)}
                                                                                                 disabled={showAnswers}
                                                                                                 placeholder="5"
-                                                                                                class="inline-block w-48 px-3 py-1 mx-1 rounded border text-black dark:text-white dark:bg-gray-600 focus:border-orange-600 focus:ring-2 focus:ring-orange-600/50 outline-none {showAnswers && results ? (results.questions.q5?.isCorrect ? 'border-green-500 bg-green-50 dark:bg-green-900/20' : 'border-red-500 bg-red-50 dark:bg-red-900/20') : 'border-gray-300 dark:border-gray-500 bg-white'}"
+                                                                                                class="inline-block w-48 px-3 py-1 mx-1 rounded border text-black dark:text-white dark:bg-gray-600 focus:border-orange-600/60 focus:ring-1 focus:ring-orange-600/60 outline-none {showAnswers && results ? (results.questions.q5?.isCorrect ? 'border-green-500 bg-green-50 dark:bg-green-900/20' : 'border-red-500 bg-red-50 dark:bg-red-900/20') : 'border-gray-300 dark:border-gray-500 bg-white'}"
                                                                                         />
                                                                                         <span> satellites.</span>
                                                                                                 {#if showAnswers && results?.questions.q5}
@@ -635,7 +635,7 @@
                                                                                                 onchange={(e) => updateAnswer('q6', e.target.value)}
                                                                                                 disabled={showAnswers}
                                                                                                 placeholder="6"
-                                                                                                class="inline-block w-48 px-3 py-1 mx-1 rounded border text-black dark:text-white dark:bg-gray-600 focus:border-orange-600 focus:ring-2 focus:ring-orange-600/50 outline-none {showAnswers && results ? (results.questions.q6?.isCorrect ? 'border-green-500 bg-green-50 dark:bg-green-900/20' : 'border-red-500 bg-red-50 dark:bg-red-900/20') : 'border-gray-300 dark:border-gray-500 bg-white'}"
+                                                                                                class="inline-block w-48 px-3 py-1 mx-1 rounded border text-black dark:text-white dark:bg-gray-600 focus:border-orange-600/60 focus:ring-1 focus:ring-orange-600/60 outline-none {showAnswers && results ? (results.questions.q6?.isCorrect ? 'border-green-500 bg-green-50 dark:bg-green-900/20' : 'border-red-500 bg-red-50 dark:bg-red-900/20') : 'border-gray-300 dark:border-gray-500 bg-white'}"
                                                                                         />
                                                                                         <span> or commercial reasons.</span>
                                                                                                 {#if showAnswers && results?.questions.q6}
@@ -662,7 +662,7 @@
                                                                                                 onchange={(e) => updateAnswer('q7', e.target.value)}
                                                                                                 disabled={showAnswers}
                                                                                                 placeholder="7"
-                                                                                                class="inline-block w-48 px-3 py-1 mx-1 rounded border text-black dark:text-white dark:bg-gray-600 focus:border-orange-600 focus:ring-2 focus:ring-orange-600/50 outline-none {showAnswers && results ? (results.questions.q7?.isCorrect ? 'border-green-500 bg-green-50 dark:bg-green-900/20' : 'border-red-500 bg-red-50 dark:bg-red-900/20') : 'border-gray-300 dark:border-gray-500 bg-white'}"
+                                                                                                class="inline-block w-48 px-3 py-1 mx-1 rounded border text-black dark:text-white dark:bg-gray-600 focus:border-orange-600/60 focus:ring-1 focus:ring-orange-600/60 outline-none {showAnswers && results ? (results.questions.q7?.isCorrect ? 'border-green-500 bg-green-50 dark:bg-green-900/20' : 'border-red-500 bg-red-50 dark:bg-red-900/20') : 'border-gray-300 dark:border-gray-500 bg-white'}"
                                                                                         />
                                                                                         <span> at a given time.</span>
                                                                                                 {#if showAnswers && results?.questions.q7}
@@ -689,7 +689,7 @@
                                                                                                 onchange={(e) => updateAnswer('q8', e.target.value)}
                                                                                                 disabled={showAnswers}
                                                                                                 placeholder="8"
-                                                                                                class="inline-block w-48 px-3 py-1 mx-1 rounded border text-black dark:text-white dark:bg-gray-600 focus:border-orange-600 focus:ring-2 focus:ring-orange-600/50 outline-none {showAnswers && results ? (results.questions.q8?.isCorrect ? 'border-green-500 bg-green-50 dark:bg-green-900/20' : 'border-red-500 bg-red-50 dark:bg-red-900/20') : 'border-gray-300 dark:border-gray-500 bg-white'}"
+                                                                                                class="inline-block w-48 px-3 py-1 mx-1 rounded border text-black dark:text-white dark:bg-gray-600 focus:border-orange-600/60 focus:ring-1 focus:ring-orange-600/60 outline-none {showAnswers && results ? (results.questions.q8?.isCorrect ? 'border-green-500 bg-green-50 dark:bg-green-900/20' : 'border-red-500 bg-red-50 dark:bg-red-900/20') : 'border-gray-300 dark:border-gray-500 bg-white'}"
                                                                                         />
                                                                                         <span> about where the satellite will go.</span>
                                                                                                 {#if showAnswers && results?.questions.q8}
@@ -727,7 +727,7 @@
                                                                                                 onchange={(e) => updateAnswer('q9', e.target.value)}
                                                                                                 disabled={showAnswers}
                                                                                                 placeholder="9"
-                                                                                                class="inline-block w-48 px-3 py-1 mx-1 rounded border text-black dark:text-white dark:bg-gray-600 focus:border-orange-600 focus:ring-2 focus:ring-orange-600/50 outline-none {showAnswers && results ? (results.questions.q9?.isCorrect ? 'border-green-500 bg-green-50 dark:bg-green-900/20' : 'border-red-500 bg-red-50 dark:bg-red-900/20') : 'border-gray-300 dark:border-gray-500 bg-white'}"
+                                                                                                class="inline-block w-48 px-3 py-1 mx-1 rounded border text-black dark:text-white dark:bg-gray-600 focus:border-orange-600/60 focus:ring-1 focus:ring-orange-600/60 outline-none {showAnswers && results ? (results.questions.q9?.isCorrect ? 'border-green-500 bg-green-50 dark:bg-green-900/20' : 'border-red-500 bg-red-50 dark:bg-red-900/20') : 'border-gray-300 dark:border-gray-500 bg-white'}"
                                                                                         />
                                                                                         <span>.</span>
                                                                                                 {#if showAnswers && results?.questions.q9}
@@ -754,7 +754,7 @@
                                                                                                 onchange={(e) => updateAnswer('q10', e.target.value)}
                                                                                                 disabled={showAnswers}
                                                                                                 placeholder="10"
-                                                                                                class="inline-block w-48 px-3 py-1 mx-1 rounded border text-black dark:text-white dark:bg-gray-600 focus:border-orange-600 focus:ring-2 focus:ring-orange-600/50 outline-none {showAnswers && results ? (results.questions.q10?.isCorrect ? 'border-green-500 bg-green-50 dark:bg-green-900/20' : 'border-red-500 bg-red-50 dark:bg-red-900/20') : 'border-gray-300 dark:border-gray-500 bg-white'}"
+                                                                                                class="inline-block w-48 px-3 py-1 mx-1 rounded border text-black dark:text-white dark:bg-gray-600 focus:border-orange-600/60 focus:ring-1 focus:ring-orange-600/60 outline-none {showAnswers && results ? (results.questions.q10?.isCorrect ? 'border-green-500 bg-green-50 dark:bg-green-900/20' : 'border-red-500 bg-red-50 dark:bg-red-900/20') : 'border-gray-300 dark:border-gray-500 bg-white'}"
                                                                                         />
                                                                                         <span> in its users.</span>
                                                                                                 {#if showAnswers && results?.questions.q10}

@@ -655,7 +655,7 @@
                                                                         <select
                                                                                 bind:value={answers[question.num]}
                                                                                 disabled={showAnswers}
-                                                                                class="w-full rounded-lg border px-2 py-0.5 text-black dark:text-white dark:bg-gray-700 {showAnswers && results ? (results.questions[question.num]?.isCorrect ? 'border-green-500 bg-green-50 dark:bg-green-900/20' : 'border-red-500 bg-red-50 dark:bg-red-900/20') : 'border-gray-300 dark:border-gray-600 bg-white'}"
+                                                                                class="w-full rounded-lg border px-2 py-0.5 text-black dark:text-white dark:bg-gray-700  {showAnswers && results ? (results.questions[question.num]?.isCorrect ? 'border-green-500 bg-green-50 dark:bg-green-900/20' : 'border-red-500 bg-red-50 dark:bg-red-900/20') : 'border-gray-300 dark:border-gray-600 bg-white'}"
                                                                         >
                                                                                 <option value="">{showAnswers ? "" : "Select answer"}</option>
                                                                                 {#each ['A','B','C','D','E','F','G'] as option}
