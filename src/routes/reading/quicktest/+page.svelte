@@ -853,6 +853,21 @@
                                                                                 </div>
                                                                         {/each}
                                                                 </div>
+
+                                                                <div class="mt-6 flex gap-4 justify-center">
+                                                                        <button
+                                                                                onclick={resetTimer}
+                                                                                class="px-6 py-3 bg-purple-600 hover:bg-purple-700 text-white font-medium rounded-lg transition-colors"
+                                                                        >
+                                                                                Retake Test
+                                                                        </button>
+                                                                        <button
+                                                                                onclick={() => window.location.href = '/reading'}
+                                                                                class="px-6 py-3 bg-gray-600 hover:bg-gray-700 text-white font-medium rounded-lg transition-colors"
+                                                                        >
+                                                                                Return to Reading
+                                                                        </button>
+                                                                </div>
                                                         </div>
                                                 {/if}
 
