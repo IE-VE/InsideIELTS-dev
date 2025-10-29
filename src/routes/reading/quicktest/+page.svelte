@@ -554,7 +554,25 @@
                                 <div class="flex flex-col md:flex-row gap-6 items-start mb-6">
                                         <!-- Passage Content -->
                                         <div class="md:w-2/3 bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8 max-h-[100vh] overflow-y-auto">
-                                                <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-6">Reading Passage</h2>
+                                                <div class="flex justify-between items-center mb-6">
+                                                        <h2 class="text-2xl font-bold text-gray-900 dark:text-white">Reading Passage</h2>
+                                                        <div class="flex gap-2">
+                                                                <button
+                                                                        onclick={toggleHighlighting}
+                                                                        class="px-4 py-2 rounded-lg font-medium transition-colors {highlightingEnabled ? 'bg-yellow-500 hover:bg-yellow-600 text-white' : 'bg-gray-200 hover:bg-gray-300 dark:bg-gray-700 dark:hover:bg-gray-600 text-gray-700 dark:text-gray-300'}"
+                                                                >
+                                                                        {highlightingEnabled ? '✓ Highlighter ON' : 'Highlighter'}
+                                                                </button>
+                                                                {#if highlightedRanges.length > 0}
+                                                                        <button
+                                                                                onclick={clearAllHighlights}
+                                                                                class="px-4 py-2 bg-red-500 hover:bg-red-600 text-white rounded-lg font-medium transition-colors"
+                                                                        >
+                                                                                Clear Highlights
+                                                                        </button>
+                                                                {/if}
+                                                        </div>
+                                                </div>
                                                 <div class="mb-6 rounded-lg bg-gray-50 p-6 dark:bg-gray-700">
                                                         <p class="text-gray-700 dark:text-gray-300">
                                                                 You should spend about 20 minutes on Questions 1–13, which are based on the passage below.
