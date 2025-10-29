@@ -476,22 +476,23 @@
         {#if showInstructions}
                 <!-- Instructions Screen -->
                 <div class="flex flex-col items-center justify-center min-h-screen p-8">
-                        <div class="max-w-4xl w-full bg-white dark:bg-gray-800 rounded-lg shadow-2xl p-8">
-                                <h1 class="text-4xl font-bold text-center mb-8 text-gray-900 dark:text-white">
-                                        IE READING Quick-Test
-                                </h1>
-                                
+                        <div class="text-center mb-12">         <h1 class="text-3xl text-center font-black text-white mb-8 inline-block px-10 py-3 rounded-xl bg-gradient-to-r from-cyan-500 via-teal-500 to-cyan-600 shadow-xl shadow-cyan-500/30 border border-white">
+                                IE READING Quick-Test
+                        </h1>
+                     </div>
+                        
+                        <div class="max-w-4xl w-full text-center bg-gray-800 rounded-lg shadow-2xl p-8">                   
                                 <div class="space-y-6">
                                         <div class="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-lg">
                                                 <h2 class="text-2xl font-semibold mb-4 text-gray-900 dark:text-white">Test Instructions</h2>
-                                                <ul class="space-y-2 text-gray-700 dark:text-gray-300">
+                                                <ul class="space-y-2 text-gray-700 dark:text-gray-300 text-left">
                                                         <li class="flex items-start">
                                                                 <span class="text-blue-600 dark:text-blue-400 mr-2">•</span>
                                                                 <span><strong>Time allowed:</strong> 20 minutes</span>
                                                         </li>
                                                         <li class="flex items-start">
                                                                 <span class="text-blue-600 dark:text-blue-400 mr-2">•</span>
-                                                                <span><strong>Number of questions:</strong> 13 questions (Questions 14-26)</span>
+                                                                <span><strong>Number of questions:</strong> 13 question</span>
                                                         </li>
                                                         <li class="flex items-start">
                                                                 <span class="text-blue-600 dark:text-blue-400 mr-2">•</span>
@@ -502,7 +503,7 @@
 
                                         <div class="bg-gray-50 dark:bg-gray-700 p-6 rounded-lg">
                                                 <h2 class="text-xl font-semibold mb-4 text-gray-900 dark:text-white">Question Types</h2>
-                                                <div class="space-y-3 text-gray-700 dark:text-gray-300">
+                                                <div class="space-y-3 text-gray-700 dark:text-gray-300 text-left">
                                                         <p><strong>Questions 14-18:</strong> Paragraph Information (matching information to paragraphs A-G)</p>
                                                         <p><strong>Questions 19-21:</strong> Matching (match purposes with timber cuts A-C)</p>
                                                         <p><strong>Questions 22-26:</strong> Sentence Completion (ONE WORD ONLY from the passage)</p>
@@ -511,7 +512,7 @@
 
                                         <div class="bg-yellow-50 dark:bg-yellow-900/20 p-6 rounded-lg">
                                                 <h2 class="text-xl font-semibold mb-4 text-gray-900 dark:text-white">Important Notes</h2>
-                                                <ul class="space-y-2 text-gray-700 dark:text-gray-300">
+                                                <ul class="space-y-2 text-gray-700 dark:text-gray-300 text-left">
                                                         <li class="flex items-start">
                                                                 <span class="text-yellow-600 dark:text-yellow-400 mr-2">⚠</span>
                                                                 <span>Read the passage carefully before attempting the questions</span>
@@ -531,7 +532,7 @@
                                 <div class="mt-8 text-center">
                                         <button
                                                 onclick={startTest}
-                                                class="px-8 py-4 bg-teal-600 hover:bg-teal-700 text-white font-bold text-lg rounded-lg transition-colors shadow-lg"
+                                                class="px-8 py-4 bg-teal-600 hover:bg-teal-700 text-white font-bold text-lg rounded-lg transition-colors shadow-lg border border-white"
                                         >
                                                 Start Reading Test
                                         </button>
@@ -542,10 +543,14 @@
                 <!-- Test Interface -->
                 <div class="container mx-auto px-4 py-8">
                         <!-- Header -->
+                        <div class="text-center mb-12">         <h1 class="text-3xl text-center font-black text-white mb-8 inline-block px-10 py-3 rounded-xl bg-gradient-to-r from-cyan-500 via-teal-500 to-cyan-600 shadow-xl shadow-cyan-500/30 border border-white">
+                                        IE READING Quick-Test
+                                </h1>
+                             </div>
+                        
                         <div class="mb-6 flex flex-col gap-4">
                                 <div class="flex items-center justify-between">
-                                        <h1 class="text-3xl font-bold">IE READING Quick-Test</h1>
-                                        <div class="text-xl font-semibold">
+                                       <div class="text-xl font-semibold pr-4">
                                                 Time Remaining: <span class="text-teal-400">{formatTime(timeRemaining)}</span>
                                         </div>
                                 </div>
@@ -581,7 +586,7 @@
                                 <div class="flex flex-col md:flex-row gap-6 items-start mb-6">
                                         <!-- Passage Content -->
                                         <div class="md:w-2/3 bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8 max-h-[100vh] overflow-y-auto">
-                                                <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-6">Reading Passage 2</h2>
+                                                <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-6">Reading Passage</h2>
                                                 <div class="mb-6 rounded-lg bg-gray-50 p-6 dark:bg-gray-700">
                                                         <p class="mb-4 text-gray-700 dark:text-gray-300">
                                                                 You should spend about 20 minutes on Questions 14–26, which are based on the passage below.
