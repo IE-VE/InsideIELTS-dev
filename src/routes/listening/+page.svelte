@@ -249,7 +249,7 @@
 																																		Receive personalised feedback
 																														</Li>
 																										</List>
-																										<Button href="/record" onclick={handleStartTest} color="orange" class="w-full bg-orange-500 hover:bg-orange-600">
+																										<Button href="/listening/quicktest" onclick={handleStartTest} color="orange" class="w-full bg-orange-500 hover:bg-orange-600">
 																														Start Free Test
 																										</Button>
 																						</Card>

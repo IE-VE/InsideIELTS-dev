@@ -334,39 +334,39 @@
         {#if showInstructions}
                 <!-- Instructions Screen -->
                 <div class="flex flex-col items-center justify-center min-h-screen p-8">
-                        <div class="max-w-4xl w-full bg-white dark:bg-gray-800 rounded-lg shadow-2xl p-8">
-                                <h1 class="text-4xl font-bold text-center mb-8 text-gray-900 dark:text-white">
-                                        IE LISTENING Quick-Test
-                                </h1>
-                                
-                                <div class="space-y-6">
-                                        <div class="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-lg">
-                                                <h2 class="text-2xl font-semibold mb-4 text-gray-900 dark:text-white">Test Instructions</h2>
-                                                <ul class="space-y-2 text-gray-700 dark:text-gray-300">
+                         <div class="text-center mb-12">         <h1 class="text-3xl text-center font-black text-white mb-8 inline-block px-10 py-3 rounded-xl bg-gradient-to-r from-cyan-500 via-teal-500 to-cyan-600 shadow-xl shadow-cyan-500/30 border-2 border-orange-600/80">
+                                                IE LISTENING Quick-Test
+                                        </h1>
+                                     </div>
+                                 <div class="max-w-4xl w-full bg-gray-800 rounded-lg shadow-2xl border border-gray-600 p-8">
+                                <div class="space-y-6 text-gray-300">
+                                        <div class="bg-teal-900/20 p-6 rounded-lg">
+                                                <h2 class="text-2xl font-semibold mb-4 text-teal-300 mb-4">Test Instructions</h2>
+                                                <ul class="space-y-2 text-gray-700 dark:text-gray-300 text-left">
                                                         <li class="flex items-start">
-                                                                <span class="text-blue-600 dark:text-blue-400 mr-2">•</span>
-                                                                <span><strong>Time allowed:</strong> 10 minutes</span>
+                                                                <span class="text-green-400 mr-2">•</span>
+                                                                <span><strong>Time allowed:</strong> 8 minutes</span>
                                                         </li>
                                                         <li class="flex items-start">
-                                                                <span class="text-blue-600 dark:text-blue-400 mr-2">•</span>
-                                                                <span><strong>Number of questions:</strong> 10 questions (Questions 1-10)</span>
+                                                                <span class="text-green-400 mr-2">•</span>
+                                                                <span><strong>Number of questions:</strong> 10 questions</span>
                                                         </li>
                                                         <li class="flex items-start">
-                                                                <span class="text-blue-600 dark:text-blue-400 mr-2">•</span>
+                                                                <span class="text-green-400 mr-2">•</span>
                                                                 <span><strong>Topic:</strong> Space Traffic Management</span>
                                                         </li>
                                                 </ul>
                                         </div>
 
-                                        <div class="bg-gray-50 dark:bg-gray-700 p-6 rounded-lg">
-                                                <h2 class="text-xl font-semibold mb-4 text-gray-900 dark:text-white">Question Type</h2>
+                                        <div class="bg-blue-800/10 p-6 rounded-lg">
+                                                <h2 class="text-xl font-semibold mb-4 text-blue-300">Question Type</h2>
                                                 <div class="space-y-3 text-gray-700 dark:text-gray-300">
-                                                        <p><strong>Questions 1-10:</strong> Summary Completion (complete the summary using words from the audio)</p>
+                                                        <p><strong>Questions 1-10 :</strong> Summary Completion (complete the summary using words from the audio)</p>
                                                 </div>
                                         </div>
 
                                         <div class="bg-yellow-50 dark:bg-yellow-900/20 p-6 rounded-lg">
-                                                <h2 class="text-xl font-semibold mb-4 text-gray-900 dark:text-white">Important Notes</h2>
+                                                <h2 class="text-xl font-semibold mb-4 text-orange-300">Important Notes</h2>
                                                 <ul class="space-y-2 text-gray-700 dark:text-gray-300">
                                                         <li class="flex items-start">
                                                                 <span class="text-yellow-600 dark:text-yellow-400 mr-2">⚠</span>
@@ -382,7 +382,7 @@
                                                         </li>
                                                         <li class="flex items-start">
                                                                 <span class="text-yellow-600 dark:text-yellow-400 mr-2">⚠</span>
-                                                                <span>You can pause and replay the audio as needed during practice</span>
+                                                                <span>Do not stop the recording once started</span>
                                                         </li>
                                                 </ul>
                                         </div>
@@ -391,7 +391,7 @@
                                 <div class="mt-8 text-center">
                                         <button
                                                 onclick={startTest}
-                                                class="px-8 py-4 bg-teal-600 hover:bg-teal-700 text-white font-bold text-lg rounded-lg transition-colors shadow-lg"
+                                                class="px-6 py-3 bg-teal-600 hover:bg-teal-700 text-white font-bold text-lg rounded-lg transition-colors border-2 border-orange-600/80 shadow-lg"
                                         >
                                                 Start Listening Test
                                         </button>
@@ -399,24 +399,25 @@
                         </div>
                 </div>
         {:else if !isTestCompleted}
+                
                 <!-- Test Interface -->
-                <div class="container mx-auto px-4 py-8">
+                <div class="container max-w-4xl mx-auto px-4 py-8">
                         <!-- Header -->
+                        <div class="text-center mb-12">         <h1 class="text-3xl text-center font-black text-white mb-8 inline-block px-10 py-3 rounded-xl bg-gradient-to-r from-cyan-500 via-teal-500 to-cyan-600 shadow-xl shadow-cyan-500/30 border-2 border-orange-600/80">
+                                        IE LISTENING Quick-Test
+                                </h1>
+                             </div>
+
                         <div class="mb-6">
-                                <div class="flex items-center justify-between mb-4">
-                                        <h1 class="text-3xl font-bold">IE LISTENING Quick-Test</h1>
-                                        <div class="text-xl font-semibold">
-                                                Time Remaining: <span class="text-teal-400">{formatTime(timeRemaining)}</span>
-                                        </div>
-                                </div>
+                         
 
                                 <!-- Audio Player -->
-                                <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 mb-6">
+                                <div class="bg-gray-800 rounded-lg shadow-lg p-6 mb-6">
                                         <h2 class="text-xl font-semibold mb-4 text-gray-900 dark:text-white">Audio Player</h2>
                                         
                                         <audio
                                                 bind:this={audioElement}
-                                                src="/L/Space_Traffic_Management_Listening.mp3"
+                                                src="/audio/Space_Traffic_Management_Listening.mp3"
                                                 onplay={handleAudioPlay}
                                                 onpause={handleAudioPause}
                                                 ontimeupdate={handleTimeUpdate}
@@ -431,7 +432,7 @@
                                                         onclick={seekAudio}
                                                 >
                                                         <div 
-                                                                class="h-full bg-teal-600 transition-all duration-100"
+                                                                class="h-full bg-orange-700/90 transition-all duration-100"
                                                                 style="width: {duration > 0 ? (currentTime / duration) * 100 : 0}%"
                                                         ></div>
                                                 </div>
@@ -446,7 +447,7 @@
                                                 <div class="flex justify-center">
                                                         <button
                                                                 onclick={toggleAudio}
-                                                                class="px-8 py-3 bg-teal-600 hover:bg-teal-700 text-white font-semibold rounded-lg transition-colors"
+                                                                class="px-6 py-2 bg-orange-600/90 hover:bg-orange-700/90 text-white font-semibold rounded-lg transition-colors border-2 border-gray-400"
                                                         >
                                                                 {isPlaying ? '⏸ Pause' : '▶ Play'}
                                                         </button>
@@ -467,7 +468,7 @@
                                                                 Complete the notes below.
                                                         </p>
                                                         <p class="text-gray-700 dark:text-gray-300 font-semibold">
-                                                                Write NO MORE THAN TWO WORDS for each answer.
+                                                                Write ONE WORD ONLY for each answer.
                                                         </p>
                                                 </div>
 
@@ -817,11 +818,11 @@
 
                                                 <!-- Mark Test Button -->
                                                 {#if !hasMarked}
-                                                        <div class="mt-6">
+                                                        <div class="mt-6 text-center">
                                                                 <button
                                                                         onclick={markTest}
                                                                         disabled={isMarking}
-                                                                        class="w-full bg-teal-600 hover:bg-teal-700 text-white font-bold py-3 px-6 rounded-lg transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                                                                        class="bg-teal-600 hover:bg-teal-700 text-white font-bold py-3 px-6 rounded-lg transition-colors disabled:opacity-50 disabled:cursor-not-allowed border-2 border-orange-600/80 shadow-lg"
                                                                 >
                                                                         {isMarking ? 'Marking...' : 'Mark Test'}
                                                                 </button>
@@ -832,14 +833,14 @@
                         </div>
 
                         <!-- Complete Test Button -->
-                        <div class="mt-6 flex justify-center">
+                        <!-- <div class="mt-6 flex justify-center">
                                 <button
                                         onclick={completeTest}
                                         class="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-8 rounded-lg text-lg border border-white transition-colors"
                                 >
                                         Submit Answers
                                 </button>
-                        </div>
+                        </div> -->
                 </div>
         {:else}
                 <!-- Test Completed -->

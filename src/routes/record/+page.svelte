@@ -451,7 +451,7 @@
 <div class="container mx-auto max-w-4xl px-6 py-12">
         <!-- Header -->
         <div class="mb-12 text-center">
-                  <h1 class="text-3xl font-black text-white mb-8 inline-block px-10 py-3 rounded-xl bg-gradient-to-r from-cyan-500 via-teal-500 to-cyan-600 shadow-xl shadow-cyan-500/30 border border-white">
+                  <h1 class="text-3xl font-black text-white mb-8 inline-block px-10 py-3 rounded-xl bg-gradient-to-r from-cyan-500 via-teal-500 to-cyan-600 shadow-xl shadow-cyan-500/30 border-2 border-blue-600/80">
                         IE SPEAKING Quick-Test
                 </h1>
                 <P class="text-center" size="xl">

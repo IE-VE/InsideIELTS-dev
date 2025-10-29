@@ -476,27 +476,27 @@
         {#if showInstructions}
                 <!-- Instructions Screen -->
                 <div class="flex flex-col items-center justify-center min-h-screen p-8">
-                        <div class="text-center mb-12">         <h1 class="text-3xl text-center font-black text-white mb-8 inline-block px-10 py-3 rounded-xl bg-gradient-to-r from-cyan-500 via-teal-500 to-cyan-600 shadow-xl shadow-cyan-500/30 border border-white">
+                        <div class="text-center mb-12">         <h1 class="text-3xl text-center font-black text-white mb-8 inline-block px-10 py-3 rounded-xl bg-gradient-to-r from-cyan-500 via-teal-500 to-cyan-600 shadow-xl shadow-cyan-500/30 border-2 border-purple-600">
                                 IE READING Quick-Test
                         </h1>
                      </div>
 
                         <div class="max-w-4xl w-full bg-gray-800 rounded-lg shadow-2xl rounded-lg border border-gray-600 p-8">                   
-                                <div class="space-y-6 text-gray-700 dark:text-gray-300">
+                                <div class="space-y-6 text-gray-300">
                                         <div class="bg-teal-900/20 p-6 rounded-lg">
                                                 <h2 class="text-xl font-semibold text-teal-300 mb-4">Test Instructions</h2>
                                                 
-                                                <ul class="space-y-2 text-gray-700 dark:text-gray-300 text-left">
+                                                <ul class="space-y-2 text-gray-300 text-left">
                                                         <li class="flex items-start">
-                                                                <span class="text-blue-600 dark:text-green-400 mr-2">•</span>
+                                                                <span class="text-green-400 mr-2">•</span>
                                                                 <span><strong>Time allowed :</strong> 20 minutes</span>
                                                         </li>
                                                         <li class="flex items-start">
-                                                                <span class="text-blue-600 dark:text-green-400 mr-2">•</span>
+                                                                <span class="text-green-400 mr-2">•</span>
                                                                 <span><strong>Number of questions :</strong> 13 questions</span>
                                                         </li>
                                                         <li class="flex items-start">
-                                                                <span class="text-blue-600 dark:text-green-400 mr-2">•</span>
+                                                                <span class="text-green-400 mr-2">•</span>
                                                                 <span><strong>Passage :</strong> Forest Management in Pennsylvania, USA</span>
                                                         </li>
                                                 </ul>
@@ -533,7 +533,7 @@
                                 <div class="mt-8 text-center">
                                         <button
                                                 onclick={startTest}
-                                                class="px-6 py-3 bg-teal-600 hover:bg-teal-700 text-white font-bold text-lg rounded-lg transition-colors shadow-lg border border-white"
+                                                class="px-6 py-3 bg-teal-600 hover:bg-teal-700 text-white font-bold text-lg rounded-lg transition-colors shadow-lg border-2 border-purple-600"
                                         >
                                                 Start Reading Test
                                         </button>
@@ -541,10 +541,11 @@
                         </div>
                 </div>
         {:else if !isTestCompleted}
+
                 <!-- Test Interface -->
                 <div class="container mx-auto px-4 py-8">
                         <!-- Header -->
-                        <div class="text-center mb-12">         <h1 class="text-3xl text-center font-black text-white mb-8 inline-block px-10 py-3 rounded-xl bg-gradient-to-r from-cyan-500 via-teal-500 to-cyan-600 shadow-xl shadow-cyan-500/30 border border-white">
+                        <div class="text-center mb-12">         <h1 class="text-3xl text-center font-black text-white mb-8 inline-block px-10 py-3 rounded-xl bg-gradient-to-r from-cyan-500 via-teal-500 to-cyan-600 shadow-xl shadow-cyan-500/30 border-2 border-purple-600">
                                         IE READING Quick-Test
                                 </h1>
                              </div>

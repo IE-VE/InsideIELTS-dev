@@ -64,7 +64,7 @@
         {#if showInstructions}
                 <!-- Instructions Screen -->
                 <div class="container mx-auto px-6 py-8">
-        <div class="text-center mb-12">         <h1 class="text-3xl text-center font-black text-white mb-8 inline-block px-10 py-3 rounded-xl bg-gradient-to-r from-cyan-500 via-teal-500 to-cyan-600 shadow-xl shadow-cyan-500/30 border border-white">
+        <div class="text-center mb-12">         <h1 class="text-3xl text-center font-black text-white mb-8 inline-block px-10 py-3 rounded-xl bg-gradient-to-r from-cyan-500 via-teal-500 to-cyan-600 shadow-xl shadow-cyan-500/30 border-2 border-green-400/60">
                                                         IE WRITING Quick-Test
                         </h1>
                 <p class="text-xl m-6 max-w-4xl mx-auto">You will be given a short writing task that replicates Writing Test reqirements. Complete the exercise in one sitting.         
@@ -97,7 +97,7 @@
                                         <div class="text-center mt-8">
                                                 <button
                                                         onclick={startTest}
-                                                        class="bg-teal-600 hover:bg-teal-700 text-white font-bold py-3 px-6 rounded-lg text-lg border border-white transition-colors"
+                                                        class="bg-teal-600 hover:bg-teal-700 text-white font-bold py-3 px-6 rounded-lg text-lg border-2 border-green-400/60 transition-colors"
                                                 >
                                                         Start Writing Test
                                                 </button>
@@ -151,7 +151,7 @@
         {:else}
                 <!-- Test Interface -->
                 <div class="max-w-4xl mx-auto px-4">
-                        <div class="text-center py-8">          <h1 class="text-3xl text-center font-black text-white mb-8 inline-block px-10 py-3 rounded-xl bg-gradient-to-r from-cyan-500 via-teal-500 to-cyan-600 shadow-xl shadow-cyan-500/30 border border-white">
+                        <div class="text-center py-8">          <h1 class="text-3xl text-center font-black text-white mb-8 inline-block px-10 py-3 rounded-xl bg-gradient-to-r from-cyan-500 via-teal-500 to-cyan-600 shadow-xl shadow-cyan-500/30 border-2 border-green-400/60">
                                 IE WRITING Quick-Test
                         </h1>
                         </div>
