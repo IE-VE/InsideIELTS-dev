@@ -481,37 +481,38 @@
                         </h1>
                      </div>
 
-                        <div class="max-w-4xl w-full text-center bg-gray-800 rounded-lg shadow-2xl p-8">                   
-                                <div class="space-y-6">
-                                        <div class="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-lg">
-                                                <h2 class="text-2xl font-semibold mb-4 text-gray-900 dark:text-white">Test Instructions</h2>
+                        <div class="max-w-4xl w-full bg-gray-800 rounded-lg shadow-2xl rounded-lg border border-gray-600 p-8">                   
+                                <div class="space-y-6 text-gray-700 dark:text-gray-300">
+                                        <div class="bg-teal-900/20 p-6 rounded-lg">
+                                                <h2 class="text-xl font-semibold text-teal-300 mb-4">Test Instructions</h2>
+                                                
                                                 <ul class="space-y-2 text-gray-700 dark:text-gray-300 text-left">
                                                         <li class="flex items-start">
-                                                                <span class="text-blue-600 dark:text-blue-400 mr-2">•</span>
-                                                                <span><strong>Time allowed:</strong> 20 minutes</span>
+                                                                <span class="text-blue-600 dark:text-green-400 mr-2">•</span>
+                                                                <span><strong>Time allowed :</strong> 20 minutes</span>
                                                         </li>
                                                         <li class="flex items-start">
-                                                                <span class="text-blue-600 dark:text-blue-400 mr-2">•</span>
-                                                                <span><strong>Number of questions:</strong> 13 questions</span>
+                                                                <span class="text-blue-600 dark:text-green-400 mr-2">•</span>
+                                                                <span><strong>Number of questions :</strong> 13 questions</span>
                                                         </li>
                                                         <li class="flex items-start">
-                                                                <span class="text-blue-600 dark:text-blue-400 mr-2">•</span>
-                                                                <span><strong>Passage:</strong> Forest Management in Pennsylvania, USA</span>
+                                                                <span class="text-blue-600 dark:text-green-400 mr-2">•</span>
+                                                                <span><strong>Passage :</strong> Forest Management in Pennsylvania, USA</span>
                                                         </li>
                                                 </ul>
                                         </div>
 
-                                        <div class="bg-gray-50 dark:bg-gray-700 p-6 rounded-lg">
-                                                <h2 class="text-xl font-semibold mb-4 text-gray-900 dark:text-white">Question Types</h2>
+                                        <div class="bg-blue-800/10 p-6 rounded-lg">                                                     
+                                                <h3 class="text-lg font-semibold text-blue-300 mb-3">Question Types</h3>
                                                 <div class="space-y-3 text-gray-700 dark:text-gray-300 text-left">
-                                                        <p><strong>Questions 1-5:</strong> Paragraph Information (matching information to paragraphs A-G)</p>
-                                                        <p><strong>Questions 6-8:</strong> Matching (match purposes with timber cuts A-C)</p>
-                                                        <p><strong>Questions 9-13:</strong> Sentence Completion (ONE WORD ONLY from the passage)</p>
+                                                        <p><strong>Questions 1-5 :</strong> Paragraph Information (matching information to paragraphs A-G)</p>
+                                                        <p><strong>Questions 6-8 :</strong> Matching (match purposes with timber cuts A-C)</p>
+                                                        <p><strong>Questions 9-13 :</strong> Sentence Completion (ONE WORD ONLY from the passage)</p>
                                                 </div>
                                         </div>
 
                                         <div class="bg-yellow-50 dark:bg-yellow-900/20 p-6 rounded-lg">
-                                                <h2 class="text-xl font-semibold mb-4 text-gray-900 dark:text-white">Important Notes</h2>
+                                                <h2 class="text-xl font-semibold mb-4 text-orange-300">Important Notes</h2>
                                                 <ul class="space-y-2 text-gray-700 dark:text-gray-300 text-left">
                                                         <li class="flex items-start">
                                                                 <span class="text-yellow-600 dark:text-yellow-400 mr-2">⚠</span>
@@ -532,7 +533,7 @@
                                 <div class="mt-8 text-center">
                                         <button
                                                 onclick={startTest}
-                                                class="px-8 py-4 bg-teal-600 hover:bg-teal-700 text-white font-bold text-lg rounded-lg transition-colors shadow-lg border border-white"
+                                                class="px-6 py-3 bg-teal-600 hover:bg-teal-700 text-white font-bold text-lg rounded-lg transition-colors shadow-lg border border-white"
                                         >
                                                 Start Reading Test
                                         </button>
@@ -549,7 +550,7 @@
                              </div>
 
                         <!-- Main Content Area -->
-                        <div class="pb-8">
+                        <div class="pb-8 rounded-lg shadow-lg border border-gray-600">
                                 <!-- Reading Passage -->
                                 <div class="flex flex-col md:flex-row gap-6 items-start mb-6">
                                         <!-- Passage Content -->

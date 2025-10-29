@@ -75,7 +75,7 @@
 
                                         <div class="space-y-6 text-gray-700 dark:text-gray-300">
                                                 <div class="bg-teal-900/20 p-6 rounded-lg">
-                                                        <h2 class="text-xl font-semibold text-teal-700 dark:text-teal-300 mb-4">Test Instructions</h2>
+                                                        <h2 class="text-xl font-semibold text-teal-300 mb-4">Test Instructions</h2>
                                                         <ul class="space-y-2">
                                                                 <li>• Time allowed: <strong>10 minutes</strong></li>
                                                                 <li>• Number of tasks: <strong>1</strong></li>
@@ -97,7 +97,7 @@
                                         <div class="text-center mt-8">
                                                 <button
                                                         onclick={startTest}
-                                                        class="bg-teal-600 hover:bg-teal-700 text-white font-bold py-3 px-8 rounded-lg text-lg border border-white transition-colors"
+                                                        class="bg-teal-600 hover:bg-teal-700 text-white font-bold py-3 px-6 rounded-lg text-lg border border-white transition-colors"
                                                 >
                                                         Start Writing Test
                                                 </button>
@@ -110,7 +110,7 @@
                 <!-- Results Screen -->
                 <div class="container mx-auto px-6 py-8">
                         <div class="max-w-4xl mx-auto">
-                                <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8 text-center">
+                                <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8 text-center border border-gray-600">
                                         <h1 class="text-3xl font-bold text-gray-900 dark:text-white mb-6">Test Completed!</h1>
                                         <p class="text-lg text-gray-700 dark:text-gray-300 mb-8">
                                                 Thank you for completing the IELTS Writing Quick-Test.
@@ -156,7 +156,7 @@
                         </h1>
                         </div>
                                                                          <!-- Main Content -->                                                                        
-          <!-- Timer and Navigation Header -->             <div class="pb-8">                                              <div class="bg-gray-800 rounded-lg shadow-lg p-8">
+          <!-- Timer and Navigation Header -->             <div class="pb-8">                                              <div class="bg-gray-800 rounded-lg shadow-lg p-8 border border-gray-600">
                                                         <div class="mb-6 p-6 rounded-lg bg-gray-700">
                                                                 <h2 class="text-2xl font-bold text-white text-center mb-4 tracking-wide underline decoration-2 underline-offset-3">Task</h2>
                                                                 

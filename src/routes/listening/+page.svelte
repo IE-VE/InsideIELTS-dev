@@ -372,7 +372,7 @@
 					Take our free 8-minute Listening assessment and get instant feedback on your performance.
 				</p>
 				<a 
-					href="/listening/practice"
+					href="/listening/quicktest"
 					class="inline-block bg-orange-500 hover:bg-orange-600 text-white font-medium px-8 py-3 rounded-lg transition-colors"
 				>
 					Take Free Listening Test Now
