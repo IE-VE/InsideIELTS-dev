@@ -14,9 +14,9 @@
 
         // Question type categorization for analysis
         const questionTypes = {
-                'paragraph_information': [1, 2, 3, 4, 5],
-                'matching': [6, 7, 8],
-                'sentence_completion': [9, 10, 11, 12, 13]
+                'paragraph_information': [14, 15, 16, 17, 18],
+                'matching': [19, 20, 21],
+                'sentence_completion': [22, 23, 24, 25, 26]
         };
 
         // Time tracking for incomplete answers
@@ -26,19 +26,19 @@
 
         // Answer key for Forest Management passage
         const answerKey = {
-                1: ['B'],
-                2: ['A'],
-                3: ['C'],
-                4: ['E'],
-                5: ['B'],
-                6: ['B'],
-                7: ['C'],
-                8: ['C'],
-                9: ['fire'],
-                10: ['nutrients'],
-                11: ['cavities'],
-                12: ['hawthorn'],
-                13: ['rare']
+                14: ['B'],
+                15: ['A'],
+                16: ['C'],
+                17: ['E'],
+                18: ['B'],
+                19: ['B'],
+                20: ['C'],
+                21: ['C'],
+                22: ['fire'],
+                23: ['nutrients'],
+                24: ['cavities'],
+                25: ['hawthorn'],
+                26: ['rare']
         };
 
         // Results state
@@ -94,17 +94,17 @@
 
         // Question data based on the new HTML file
         const paragraphInfoQuestions = [
-                { num: 1, text: "bad outcomes for a forest when people focus only on its financial reward" },
-                { num: 2, text: "reference to the aspects of any tree that contribute to its worth" },
-                { num: 3, text: "mention of the potential use of wood to help run vehicles" },
-                { num: 4, text: "examples of insects that attack trees" },
-                { num: 5, text: "an alternative name for trees that produce low-use wood" }
+                { num: 14, text: "bad outcomes for a forest when people focus only on its financial reward" },
+                { num: 15, text: "reference to the aspects of any tree that contribute to its worth" },
+                { num: 16, text: "mention of the potential use of wood to help run vehicles" },
+                { num: 17, text: "examples of insects that attack trees" },
+                { num: 18, text: "an alternative name for trees that produce low-use wood" }
         ];
 
         const matchingQuestions = [
-                { num: 6, text: "to remove trees that are diseased" },
-                { num: 7, text: "to generate income across a number of years" },
-                { num: 8, text: "to create a forest whose trees are close in age" }
+                { num: 19, text: "to remove trees that are diseased" },
+                { num: 20, text: "to generate income across a number of years" },
+                { num: 21, text: "to create a forest whose trees are close in age" }
         ];
 
         const matchingOptions = [
@@ -114,11 +114,11 @@
         ];
 
         const sentenceCompletionQuestions = [
-                { num: 9, text: "Some dead wood is removed to avoid the possibility of" },
-                { num: 10, text: "The from the tops of cut trees can help improve soil quality." },
-                { num: 11, text: "Some damaged trees should be left, as their provide habitats for a range of creatures." },
-                { num: 12, text: "Some trees that are small, such as , are a source of food for animals and insects." },
-                { num: 13, text: "Any trees that are should be left to grow, as they add to the variety of species in the forest." }
+                { num: 22, text: "Some dead wood is removed to avoid the possibility of" },
+                { num: 23, text: "The from the tops of cut trees can help improve soil quality." },
+                { num: 24, text: "Some damaged trees should be left, as their provide habitats for a range of creatures." },
+                { num: 25, text: "Some trees that are small, such as , are a source of food for animals and insects." },
+                { num: 26, text: "Any trees that are should be left to grow, as they add to the variety of species in the forest." }
         ];
 
         function startTest() {
@@ -492,7 +492,7 @@
                                                         </li>
                                                         <li class="flex items-start">
                                                                 <span class="text-blue-600 dark:text-blue-400 mr-2">•</span>
-                                                                <span><strong>Number of questions:</strong> 13 question</span>
+                                                                <span><strong>Number of questions:</strong> 13 questions</span>
                                                         </li>
                                                         <li class="flex items-start">
                                                                 <span class="text-blue-600 dark:text-blue-400 mr-2">•</span>
@@ -504,9 +504,9 @@
                                         <div class="bg-gray-50 dark:bg-gray-700 p-6 rounded-lg">
                                                 <h2 class="text-xl font-semibold mb-4 text-gray-900 dark:text-white">Question Types</h2>
                                                 <div class="space-y-3 text-gray-700 dark:text-gray-300 text-left">
-                                                        <p><strong>Questions 1-5:</strong> Paragraph Information (matching information to paragraphs A-G)</p>
-                                                        <p><strong>Questions 6-8:</strong> Matching (match purposes with timber cuts A-C)</p>
-                                                        <p><strong>Questions 9-13:</strong> Sentence Completion (ONE WORD ONLY from the passage)</p>
+                                                        <p><strong>Questions 14-18:</strong> Paragraph Information (matching information to paragraphs A-G)</p>
+                                                        <p><strong>Questions 19-21:</strong> Matching (match purposes with timber cuts A-C)</p>
+                                                        <p><strong>Questions 22-26:</strong> Sentence Completion (ONE WORD ONLY from the passage)</p>
                                                 </div>
                                         </div>
 
@@ -589,7 +589,7 @@
                                                 <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-6">Reading Passage</h2>
                                                 <div class="mb-6 rounded-lg bg-gray-50 p-6 dark:bg-gray-700">
                                                         <p class="mb-4 text-gray-700 dark:text-gray-300">
-                                                                You should spend about 20 minutes on Questions 1–13, which are based on the passage below.
+                                                                You should spend about 20 minutes on Questions 14–26, which are based on the passage below.
                                                         </p>
                                                 </div>
 
@@ -638,12 +638,12 @@
 
                                         <!-- Questions -->
                                         <div class="md:w-1/3 bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8 max-h-[100vh] overflow-y-auto">
-                                                <!-- Questions 1-5 Block -->
+                                                <!-- Questions 14-18 Block -->
                                                 <div class="question-block space-y-6 mb-8">
-                                                        <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Questions 1-5</h3>
-                                                        <p class="text-gray-700 dark:text-gray-300">The reading passage has seven paragraphs, <strong>A-G</strong>.</p>
+                                                        <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Questions 14-18</h3>
+                                                        <p class="text-gray-700 dark:text-gray-300">Reading Passage 2 has seven paragraphs, <strong>A-G</strong>.</p>
                                                         <p class="text-gray-700 dark:text-gray-300">Which paragraph contains the following information?</p>
-                                                        <p class="text-gray-700 dark:text-gray-300 italic">Write the correct letter, A-G, in boxes 1-5 on your answer sheet.</p>
+                                                        <p class="text-gray-700 dark:text-gray-300 italic">Write the correct letter, A-G, in boxes 14-18 on your answer sheet.</p>
                                                         <p class="text-gray-700 dark:text-gray-300 italic">NB You may use any letter more than once.</p>
 
                                                         {#each paragraphInfoQuestions as question}
@@ -677,12 +677,12 @@
                                                         {/each}
                                                 </div>
 
-                                                <!-- Questions 6-8 Block -->
+                                                <!-- Questions 19-21 Block -->
                                                 <div class="question-block space-y-6 mb-8">
-                                                        <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Questions 6-8</h3>
-                                                        <p class="text-gray-700 dark:text-gray-300">Look at the following purposes (Questions 6-8) and the list of timber cuts below.</p>
+                                                        <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Questions 19-21</h3>
+                                                        <p class="text-gray-700 dark:text-gray-300">Look at the following purposes (Questions 19-21) and the list of timber cuts below.</p>
                                                         <p class="text-gray-700 dark:text-gray-300">Match each purpose with the correct timber cut, <strong>A, B or C</strong>.</p>
-                                                        <p class="text-gray-700 dark:text-gray-300">Write the correct letter, A, B or C, in boxes 6-8 on your answer sheet.</p>
+                                                        <p class="text-gray-700 dark:text-gray-300">Write the correct letter, A, B or C, in boxes 19-21 on your answer sheet.</p>
                                                         <p class="text-gray-700 dark:text-gray-300 italic">NB You may use any letter more than once.</p>
 
                                                         <div class="bg-blue-50 dark:bg-blue-900/20 p-4 rounded-lg mb-6">
@@ -725,18 +725,18 @@
                                                         {/each}
                                                 </div>
 
-                                                <!-- Questions 9-13 Block -->
+                                                <!-- Questions 22-26 Block -->
                                                 <div class="question-block space-y-6 mb-8">
-                                                        <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Questions 9-13</h3>
+                                                        <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Questions 22-26</h3>
                                                         <p class="text-gray-700 dark:text-gray-300">Complete the sentences below.</p>
                                                         <p class="text-gray-700 dark:text-gray-300">Choose <strong>ONE WORD ONLY</strong> from the passage for each answer.</p>
-                                                        <p class="text-gray-700 dark:text-gray-300">Write your answers in boxes 9-13 on your answer sheet.</p>
+                                                        <p class="text-gray-700 dark:text-gray-300">Write your answers in boxes 22-26 on your answer sheet.</p>
 
                                                         {#each sentenceCompletionQuestions as question}
                                                                 <div class="question mb-4">
                                                                         <label class="mb-2 block font-medium text-gray-900 dark:text-white">
                                                                                 {question.num}. {question.text}
-                                                                                {#if question.num === 9}
+                                                                                {#if question.num === 22}
                                                                                         <input
                                                                                                 type="text"
                                                                                                 bind:value={answers[question.num]}
@@ -744,7 +744,7 @@
                                                                                                 placeholder="..."
                                                                                                 class="ml-2 px-3 py-1 rounded border text-black dark:text-white dark:bg-gray-700 {showAnswers && results ? (results.questions[question.num]?.isCorrect ? 'border-green-500 bg-green-50 dark:bg-green-900/20' : 'border-red-500 bg-red-50 dark:bg-red-900/20') : 'border-gray-300 dark:border-gray-600 bg-white'}"
                                                                                         />
-                                                                                {:else if question.num === 10}
+                                                                                {:else if question.num === 23}
                                                                                         The
                                                                                         <input
                                                                                                 type="text"
@@ -754,7 +754,7 @@
                                                                                                 class="mx-2 px-3 py-1 rounded border text-black dark:text-white dark:bg-gray-700 {showAnswers && results ? (results.questions[question.num]?.isCorrect ? 'border-green-500 bg-green-50 dark:bg-green-900/20' : 'border-red-500 bg-red-50 dark:bg-red-900/20') : 'border-gray-300 dark:border-gray-600 bg-white'}"
                                                                                         />
                                                                                         from the tops of cut trees can help improve soil quality.
-                                                                                {:else if question.num === 11}
+                                                                                {:else if question.num === 24}
                                                                                         Some damaged trees should be left, as their
                                                                                         <input
                                                                                                 type="text"
@@ -764,7 +764,7 @@
                                                                                                 class="mx-2 px-3 py-1 rounded border text-black dark:text-white dark:bg-gray-700 {showAnswers && results ? (results.questions[question.num]?.isCorrect ? 'border-green-500 bg-green-50 dark:bg-green-900/20' : 'border-red-500 bg-red-50 dark:bg-red-900/20') : 'border-gray-300 dark:border-gray-600 bg-white'}"
                                                                                         />
                                                                                         provide habitats for a range of creatures.
-                                                                                {:else if question.num === 12}
+                                                                                {:else if question.num === 25}
                                                                                         Some trees that are small, such as
                                                                                         <input
                                                                                                 type="text"
@@ -774,7 +774,7 @@
                                                                                                 class="mx-2 px-3 py-1 rounded border text-black dark:text-white dark:bg-gray-700 {showAnswers && results ? (results.questions[question.num]?.isCorrect ? 'border-green-500 bg-green-50 dark:bg-green-900/20' : 'border-red-500 bg-red-50 dark:bg-red-900/20') : 'border-gray-300 dark:border-gray-600 bg-white'}"
                                                                                         />
                                                                                         , are a source of food for animals and insects.
-                                                                                {:else if question.num === 13}
+                                                                                {:else if question.num === 26}
                                                                                         Any trees that are
                                                                                         <input
                                                                                                 type="text"
