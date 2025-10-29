@@ -863,7 +863,7 @@
                                                                         </button>
                                                                         <button
                                                                                 onclick={() => window.location.href = '/reading'}
-                                                                                class="px-6 py-3 bg-gray-600 hover:bg-gray-700 text-white font-medium rounded-lg transition-colors"
+                                                                                class="px-6 py-3 bg-gray-600 hover:bg-gray-700 text-white font-medium rounded-lg border-2 border-purple-600/80 transition-colors"
                                                                         >
                                                                                 Return to Reading
                                                                         </button>

@@ -158,25 +158,25 @@
                         <div class="hidden items-center space-x-6 text-sm md:space-x-4 md:text-xs lg:space-x-6 lg:text-sm md:flex">
                                 <a
                                         href="/record"
-                                        class="text-gray-300 hover:text-blue-600/80 text-center leading-tight font-semibold"
+                                        class="text-gray-300 hover:text-blue-500/80 text-center leading-tight font-semibold"
                                 >
                                         SPEAKING<br />Free-Test
                                 </a>
                                 <a
                                         href="/writing/quicktest"
-                                        class="text-gray-300 hover:text-green-600/80 text-center leading-tight font-semibold"
+                                        class="text-gray-300 hover:text-green-500/80 text-center leading-tight font-semibold"
                                 >
                                         WRITING<br />Free-Test
                                 </a>
                                 <a
                                         href="/reading/quicktest"
-                                        class="text-gray-300 hover:text-purple-600/80 text-center leading-tight font-semibold"
+                                        class="text-gray-300 hover:text-purple-500/80 text-center leading-tight font-semibold"
                                 >
                                         READING<br />Free-Test
                                 </a>
                                 <a
                                         href="/listening/quicktest"
-                                        class="text-gray-300 hover:text-orange-600/80 text-center leading-tight font-semibold"
+                                        class="text-gray-300 hover:text-orange-500/80 text-center leading-tight font-semibold"
                                 >
                                         LISTENING<br />Free-Test
                                 </a>

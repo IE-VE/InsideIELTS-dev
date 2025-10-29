@@ -10,7 +10,7 @@
 		accent2: string;
 	};
 
-	type VariantType = 'default' | 'teal' | 'greyscale' | 'primary' | 'secondary' | 'notebook';
+	type VariantType = 'default' | 'teal' | 'greyscale' | 'primary' | 'secondary' | 'notebook' | 'new_1';
 
 	// Color scheme presets with classes for each variant
 	const colorVariants = {
@@ -37,6 +37,11 @@
 		notebook: {
 			card: 'border-amber-200 from-[#fff5e9] to-[#fffdf7] dark:border-amber-800 dark:from-amber-950/30 dark:to-amber-900/20',
 			accent: 'from-amber-300 to-yellow-200 dark:from-amber-500 dark:to-yellow-400'
+		},
+		
+		new_1: {
+			card: 'border-amber-200 from-[#fff5e9] to-[#fffdf7] dark:border-amber-800 dark:from-amber-950/30 dark:to-amber-900/20',
+			accent: 'from-amber-300 to-yellow-200 dark:from-amber-500 dark:to-yellow-400'
 		}
 	};
 
@@ -52,7 +57,7 @@
 </script>
 
 <div
-	class="relative rounded-xl border bg-gradient-to-br p-6 pt-8 shadow-lg dark:shadow-xl {cardClasses}"
+	class="relative rounded-lg border bg-gradient-to-br p-6 pt-8 shadow-lg dark:shadow-xl {cardClasses}"
 >
 	<!-- Top accent bar - increased height for visibility -->
 	<div class="absolute top-0 left-0 h-4 w-full rounded-t-xl bg-gradient-to-r {accentClasses}"></div>

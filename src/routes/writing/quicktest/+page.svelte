@@ -134,13 +134,13 @@
                                         <div class="space-x-4">
                                                 <button
                                                         onclick={() => window.location.reload()}
-                                                        class="bg-teal-600 hover:bg-teal-700 text-white font-bold py-2 px-6 rounded-lg"
+                                                        class="bg-green-600/80 hover:bg-green-700/80 text-white font-bold py-2 px-6 rounded-lg"
                                                 >
                                                         Retake Test
                                                 </button>
                                                 <button
                                                         onclick={() => window.location.href = '/writing'}
-                                                        class="bg-gray-600 hover:bg-gray-700 text-white font-bold py-2 px-6 rounded-lg"
+                                                        class="bg-gray-600 hover:bg-gray-700 text-white font-bold py-2 px-6 border-2 border-green-600/80 rounded-lg"
                                                 >
                                                         Back to Writing
                                                 </button>
@@ -188,14 +188,14 @@
                                                                         {#if isActive}
                                                                                 <button
                                                                                         onclick={pauseTimer}
-                                                                                        class="px-3 py-1 bg-indigo-600 hover:bg-indigo-700 text-white font-medium rounded text-sm"
+                                                                                        class="px-3 py-1 bg-green-600/80 hover:bg-green-700/80 text-white font-medium rounded text-sm"
                                                                                 >
                                                                                         PAUSE TIMER
                                                                                 </button>
                                                                         {:else}
                                                                                 <button
                                                                                         onclick={startTimer}
-                                                                                        class="px-3 py-1 bg-green-600 hover:bg-green-700 text-white font-medium rounded text-sm"
+                                                                                        class="px-10 py-1 bg-green-600/80 hover:bg-green-700/80 text-white font-medium rounded text-sm"
                                                                                 >
                                                                                         START
                                                                                 </button>
@@ -228,8 +228,7 @@
                                                                                 <p class="text-sm text-blue-800 dark:text-blue-200">
                                                                                         <strong>💡 Final Check:</strong> Use any remaining time to check for any content and spelling errors. Then submit your responses for grading.
                                                                                 </p>
-                                                                        </div>                                     </div>                                          </div>                                                </div>  
-                                                                                                        
+                                                                        </div>                                     </div>                                          </div>                                                </div>                                                                                
                         <!-- Complete Test Button -->
                         
                                         <div class="mt-6 flex justify-center">
@@ -237,7 +236,7 @@
                                                         onclick={completeTest}
                                                         class="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-8 rounded-lg text-lg border border-white transition-colors"
                                                 >
-                                                        Submit my Response
+                                                        Mark my Response
                                                 </button>
                                         </div>
                         

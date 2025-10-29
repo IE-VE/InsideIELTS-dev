@@ -3,7 +3,7 @@
 	import { tracking } from '$lib/utils/analytics';
 
 	// Defining variant type
-	type VariantType = 'default' | 'teal' | 'greyscale' | 'notebook';
+	type VariantType = 'default' | 'teal' | 'greyscale' | 'notebook' | 'new_1';
 
 	// Props
 	const {
@@ -111,9 +111,26 @@
 			price: 'text-amber-700 dark:text-amber-400',
 			button:
 				'from-amber-500 to-yellow-500 hover:from-amber-600 hover:to-yellow-600 dark:from-amber-600 dark:to-yellow-600 dark:hover:from-amber-500 dark:hover:to-yellow-500'
+	},
+
+	new_1: {
+	
+			title: 'text-amber-300',
+			icon: {
+				bg: 'bg-amber-900/50',
+				text: 'text-amber-400'
+			},
+			highlight: {
+				bg: 'bg-amber-900/40',
+				text: 'text-amber-300'
+			},
+			starIcon: 'text-amber-400',
+			price: 'text-amber-400',
+			button:
+				'from-amber-600 to-yellow-600 hover:from-amber-500 hover:to-yellow-500'
 		}
 	};
-
+	
 	// Get colors for the current variant
 	const colors = variantColors[variant as VariantType];
 
@@ -212,7 +229,7 @@
 						target your personal areas of weakness.
 					</div>
 				</li>
-				<!-- <li class="flex">
+				<li class="flex">
 					<div
 						class="mr-3 flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-teal-100 dark:bg-teal-900/50"
 					>
@@ -231,7 +248,7 @@
 					<div class="text-gray-700 dark:text-gray-300">
 						Extra study activities and links to additional IELTS practice resources
 					</div>
-				</li> -->
+				</li>
 				<li class="flex">
 					<div
 						class="mr-3 flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-teal-100 dark:bg-teal-900/50"

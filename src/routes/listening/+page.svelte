@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { tracking } from '$lib/utils/analytics';
+	import UpsellCard from '$lib/components/UpsellCard.svelte';	
 	import {
 		Button,
 		Heading,
@@ -362,6 +363,14 @@
 			</div>
 		</div>
 
+		<div class="my-12">		
+			<UpsellCard 
+					userScore={6.0} 
+					targetScore={7.0} 
+					variant="new_1"
+				/>
+		</div>
+		
 			<!-- Call to Action -->
 		<div class="text-center">
 			<div class="bg-gray-900 border-2 border-orange-500 border-t-12 border-t-orange-500 rounded-lg p-8 shadow-lg">
@@ -381,3 +390,5 @@
 		</div>
 	</div>
 </div>
+
+
