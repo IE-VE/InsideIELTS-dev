@@ -115,10 +115,10 @@
 
         const sentenceCompletionQuestions = [
                 { num: 9, text: "Some dead wood is removed to avoid the possibility of" },
-                { num: 10, text: "The from the tops of cut trees can help improve soil quality." },
-                { num: 11, text: "Some damaged trees should be left, as their provide habitats for a range of creatures." },
+                { num: 10, text: "The from the tops of cut trees can help improve soil quality. " },
+                { num: 11, text: "Some damaged trees should be left, as their provide habitats for a range of creatures. " },
                 { num: 12, text: "Some trees that are small, such as , are a source of food for animals and insects. " },
-                { num: 13, text: "Any trees that are should be left to grow, as they add to the variety of species in the forest." }
+                { num: 13, text: "Any trees that are should be left to grow, as they add to the variety of species in the forest. " }
         ];
 
         function startTest() {
@@ -548,38 +548,6 @@
                                 </h1>
                              </div>
 
-                        <div class="mb-6 flex flex-col gap-4">
-                                <div class="flex items-center justify-between">
-                                       <div class="text-xl font-semibold pr-4">
-                                                Time Remaining: <span class="text-teal-400">{formatTime(timeRemaining)}</span>
-                                        </div>
-                                </div>
-
-                                <div class="flex flex-wrap gap-2 items-center">
-                                        <button
-                                                onclick={toggleHighlighting}
-                                                class="px-4 py-2 rounded-lg font-medium transition-colors {highlightingEnabled ? 'bg-teal-600 text-white' : 'bg-gray-600 text-white hover:bg-gray-700'}"
-                                        >
-                                                {highlightingEnabled ? '✓ Highlighting ON' : 'Enable Highlighting'}
-                                        </button>
-
-                                        {#if highlightedRanges.length > 0}
-                                                <button
-                                                        onclick={clearAllHighlights}
-                                                        class="px-4 py-2 bg-red-600 hover:bg-red-700 text-white rounded-lg font-medium transition-colors"
-                                                >
-                                                        Clear All Highlights
-                                                </button>
-                                        {/if}
-
-                                        {#if highlightingEnabled}
-                                                <div class="flex items-center gap-2 px-3 py-2 bg-blue-50 dark:bg-blue-900/20 rounded-md text-sm text-blue-700 dark:text-blue-300">
-                                                        <span>💡 Select text to highlight. Click highlighted text to remove.</span>
-                                                </div>
-                                        {/if}
-                                </div>
-                        </div>
-
                         <!-- Main Content Area -->
                         <div class="pb-8">
                                 <!-- Reading Passage -->
@@ -610,7 +578,7 @@
 
                                                                 <p class="text-gray-800 dark:text-gray-200 mb-4">
                                                                         <strong class="text-gray-900 dark:text-white">C</strong><br/>
-                                                                        Wood energy markets can accept less expensive wood material of lower quality than would be suitable for traditional timber markets. Most wood used for energy in Pennsylvania is used to produce heat or electricity through combustion. Many schools and hospitals use wood boiler systems to heat and power their facilities, many homes are primarily heated with wood, and some coal plants incorporate wood into their coal streams to produce electricity. Wood can also be gasified for electrical generation and can even be made into liquid fuels like ethanol and gasoline for lorries and cars. All these products are made primarily from low-use wood. Several tree- and plant-cutting approaches, which could greatly improve the long-term quality of a forest, focus strongly or solely on the use of wood for those markets.
+                                                                        Wood energy markets can accept less expensive wood material of lower quality than would be suitable for traditional timber markets. Most wood used for energy in Pennsylvania is used to produce heat or electricity through combustion. Many schools and hospitals use wood boiler systems to heat and power their facilities, homes are primarily heated with wood, and some coal plants incorporate wood into their coal streams to produce electricity. Wood can also be gasified for electrical generation and can even be made into liquid fuels like ethanol and gasoline for lorries and cars. All these products are made primarily from low-use wood. Several tree- and plant-cutting approaches, which could greatly improve the long-term quality of a forest, focus strongly or solely on the use of wood for those markets.
                                                                 </p>
 
                                                                 <p class="text-gray-800 dark:text-gray-200 mb-4">
@@ -638,6 +606,19 @@
 
                                         <!-- Questions -->
                                         <div class="md:w-1/3 bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8 max-h-[100vh] overflow-y-auto">
+                                                <!-- Timer Section -->
+                                                <div class="mb-6 bg-gray-50 dark:bg-gray-700 rounded-lg p-4 text-center">
+                                                        <div class="text-xl font-semibold mb-3">
+                                                                Time Remaining: <span class="text-teal-400">{formatTime(timeRemaining)}</span>
+                                                        </div>
+                                                        <button
+                                                                onclick={isActive ? pauseTimer : startTimer}
+                                                                class="px-6 py-2 rounded-lg font-medium transition-colors {isActive ? 'bg-orange-600 hover:bg-orange-700' : 'bg-teal-600 hover:bg-teal-700'} text-white"
+                                                        >
+                                                                {isActive ? '⏸ PAUSE' : '▶ START'}
+                                                        </button>
+                                                </div>
+
                                                 <!-- Questions 1-5 Block -->
                                                 <div class="question-block space-y-6 mb-8">
                                                         <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Questions 1-5</h3>
