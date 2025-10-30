@@ -4,6 +4,26 @@ InsideIELTS is an AI-powered IELTS preparation platform offering free speaking t
 
 # Recent Changes
 
+## October 30, 2025
+- **Homepage Testimonial Carousel**: Replaced 2 static testimonials with stylish auto-playing carousel in Social Proof section
+  - Features: 10 testimonials with student photos from around the world (Thailand, Uzbekistan, Indonesia, Pakistan, China, Egypt, Bangladesh, Ukraine, India, Nigeria)
+  - Design: Circular student photos with cyan/teal gradient glow, large quote icon, horizontal card layout (image left, text right)
+  - Navigation: Left/Right chevron buttons, dot indicators at bottom, auto-play every 5 seconds, pause on hover
+  - Content: Real student testimonials with names, locations, and band score achievements (Band 6→7.5, Band 8.0 speaking, etc.)
+  - Animation: Smooth slide transitions (700ms duration), responsive design (stacks vertically on mobile)
+  - Images: Copied from attached_assets/Testimonials to static/testimonials folder for proper serving
+- **IETPP Signup Hero Section**: Created eye-catching Hero Section for /IETPP/signup page
+  - Content: "Master All 4 IELTS Skills with Expert Guidance" headline with teal highlight, program benefits checklist
+  - Features: 2x2 grid showcasing all 4 IELTS skills (Listening, Reading, Speaking, Writing) with icons and images
+  - Design: Gradient background (teal-blue-indigo), rotated card effect with cyan/teal gradient shadow, skill-specific color themes
+  - Components: FlowbiteCard, Check icons from Lucide, Headphones/BookOpen/Mic/PenTool skill icons
+  - Images: IETPP practice screenshots for each skill from static/IETPP/pics folder
+  - Layout: Fully responsive (left column: content/CTA, right column: 4-skill grid card)
+- **Listening Quicktest Updates**: Completed listening quicktest page with correct answer key
+  - Content: Space Traffic Management topic, 10 summary completion questions
+  - Answers: technical, cheap, thousands, identification, tracking, military, location, prediction, database, trust
+  - Features: Instructions screen, 10-minute timer (MM:SS format), audio player with controls
+
 ## October 17, 2025
 - **Writing Page Hero Section**: Added Hero Section to /writing page between Header and Test Overview
   - Content: "Get your Writing Score in just 10 minutes" headline with teal highlight, writing icon, test card

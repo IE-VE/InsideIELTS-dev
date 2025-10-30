@@ -19,9 +19,9 @@
 <div class="min-h-screen bg-white dark:bg-gray-900">
         <!-- Hero Section -->
         <section
-                class="relative max-w-5xl mx-auto mt-12 bg-gradient-to-br from-teal-100 via-blue-50 to-indigo-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 rounded-lg py-16 md:py-20"
+                class="relative max-w-5xl mx-auto rounded-lg mt-12 bg-gradient-to-br from-teal-100 via-blue-50 to-indigo-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 py-16 md:py-20"
         >
-                <div class="absolute inset-0 bg-gradient-to-tr from-cyan-200/20 to-transparent"></div>
+                <div class="absolute inset-0 bg-gradient-to-tr from-cyan-200/20 to-transparent rounded-lg"></div>
                 <div class="relative container mx-auto px-6 md:px-10">
                         <div class="flex flex-col items-center gap-12 lg:flex-row lg:gap-16">
                                 <!-- Left Column: Content -->
@@ -81,11 +81,11 @@
 
                                 <!-- Right Column: 4 Skills Visual Grid -->
                                 <div class="w-full lg:w-1/2">
-                                        <div class="mx-auto w-full max-w-2xl !max-w-none">
+                                        <div class="mx-auto w-full max-w-4xl !max-w-none">
                                                 <div class="relative">
                                                         <!-- Rotated background effect -->
                                                         <div
-                                                                class="absolute inset-x-4 inset-y-0 rotate-2 transform rounded-2xl bg-gradient-to-br from-cyan-600 to-teal-600 shadow-2xl shadow-cyan-500/40"
+                                                                class="absolute inset-x-8 inset-y-0 rotate-2 transform rounded-2xl bg-gradient-to-br from-cyan-600 to-teal-600 shadow-2xl shadow-cyan-500/40"
                                                         ></div>
 
                                                         <!-- Card container -->
@@ -196,13 +196,9 @@
                                         </p>
 
 
-                                        <p>
-                                                Personal feedback is given on all <b>Skill Check</b> exercises through the <a href="#" class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300 font-bold">IE Member's Feedback</a> page.
+                                        <p>The course is supervised by qualified IELTS instructors and personal feedback is given on all <b>Skill Check</b> exercises through the <a href="#" class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300 font-bold">IE Member's Feedback</a> page. For additional in-depth explanation of materials click on the <b>Virtual Examiner Video</b> buttons in each section.
                                         </p>
-                                        <div class="border-b-2 border-gray-800 dark:border-gray-200 pb-10 mt-6">
-                                             <p>  For additional in-depth explanation of materials click on the <b>Virtual Examiner Video</b> buttons in each section.
-                                        </p>
-                                        </div>
+                                     
                                         <div class="text-center mt-10">
                                                 <a
                                                         href="/IETPP"                                                                                       title="Welcome to the InsideIELTS Test Preparation Program"
