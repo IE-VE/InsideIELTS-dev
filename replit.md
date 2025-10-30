@@ -5,6 +5,11 @@ InsideIELTS is an AI-powered IELTS preparation platform offering free speaking t
 # Recent Changes
 
 ## October 30, 2025
+- **Homepage Expert Section**: Replaced single team photo with three individual circular photos in Expert Section
+  - Design: 3-column grid layout with circular images (Alex, Paul, Jane) from static/img folder
+  - Features: Teal border rings, hover scale effect (105%), smooth transitions, name captions below each image
+  - Images: Alex.png/webp, Paul.png/webp, Jane.png/webp with proper srcset for performance
+  - Layout: Responsive grid (3 columns on desktop, stacks on mobile), consistent with site's cyan/teal theme
 - **Homepage Testimonial Carousel**: Replaced 2 static testimonials with stylish auto-playing carousel in Social Proof section
   - Features: 10 testimonials with student photos from around the world (Thailand, Uzbekistan, Indonesia, Pakistan, China, Egypt, Bangladesh, Ukraine, India, Nigeria)
   - Design: Circular student photos with cyan/teal gradient glow, large quote icon, horizontal card layout (image left, text right)

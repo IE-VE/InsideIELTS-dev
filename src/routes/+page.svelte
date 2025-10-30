@@ -99,62 +99,62 @@
         // Testimonial data
         const testimonials = [
                 {
-                        quote: 'InsideIELTS helped me understand exactly what examiners look for. The personalized feedback after every speaking test made it clear where I needed to improve. I scored Band 7.5!',
-                        author: 'Arisa',
+                        quote: 'InsideIELTS helped me understand exactly what examiners look for. The personalised feedback after every speaking test made it clear where I needed to improve. I scored Band 7.5!',
+                        author: 'Arisa M',
                         location: 'Thailand',
                         image: '/testimonials/Arisa_(Thailand).png'
                 },
                 {
                         quote: 'I used many IELTS apps before, but InsideIELTS is different. It feels like practicing with a real examiner. My writing finally improved beyond Band 6. Thanks to clear guidance.',
-                        author: 'Bekzod',
+                        author: 'Bekzod R',
                         location: 'Uzbekistan',
                         image: '/testimonials/Bekzod_(Uzbekistan).png'
                 },
                 {
                         quote: 'The speaking test simulation was so realistic that the real exam felt easy! I liked the instant transcript analysis—it showed my weak vocabulary and pronunciation patterns clearly.',
-                        author: 'Dita',
+                        author: 'Dita S',
                         location: 'Indonesia',
                         image: '/testimonials/Dita_(Indonesia).png'
                 },
                 {
                         quote: 'InsideIELTS gave me detailed grammar analysis and structured practice. I didn\'t have to waste time guessing my mistakes. My band score jumped from 6.0 to 7.5 in six weeks.',
-                        author: 'Imran',
+                        author: 'Imran P',
                         location: 'Pakistan',
                         image: '/testimonials/Imran_(Pakistan).png'
                 },
                 {
                         quote: 'I liked how InsideIELTS focused on efficiency. The exercises were short but targeted exactly what I needed. My confidence grew, and I achieved my goal for postgraduate study.',
-                        author: 'Wei',
+                        author: 'Wei Li',
                         location: 'China',
                         image: '/testimonials/Wei_(China).png'
                 },
                 {
-                        quote: 'The AI examiner feedback was incredibly accurate. It told me precisely what I was doing wrong and how to fix it. I now recommend InsideIELTS to all my friends.',
-                        author: 'Amina',
+                        quote: 'The examiner feedback was incredibly accurate. It told me exactly what I was doing wrong and how to fix it. I recommended InsideIELTS to my ex-colleagues.',
+                        author: 'Amina M',
                         location: 'Egypt',
                         image: '/testimonials/Amina_(Egypt).png'
                 },
                 {
-                        quote: 'Clear structure, accurate feedback, and motivating tone. InsideIELTS makes IELTS prep feel easy. I went from Band 6 to 7.5 in less than two months. Definitely worth it!',
-                        author: 'Rafi',
+                        quote: 'Clear structure, accurate feedback, and motivating tone. InsideIELTS makes IELTS prep feel easy. Step by step I went from Band 6 to 7.5 in less than two months. Definitely worth it!',
+                        author: 'Rafi J',
                         location: 'Bangladesh',
                         image: '/testimonials/Rafi_(Bangladesh).png'
                 },
                 {
                         quote: 'InsideIELTS showed me how small details matter—like word stress, linking, and intonation. The step-by-step exercises helped me build natural fluency. My speaking band increased to 8.0.',
-                        author: 'Katya',
+                        author: 'Katya K',
                         location: 'Ukraine',
                         image: '/testimonials/Katya_(Ukraine).png'
                 },
                 {
-                        quote: 'The best IELTS preparation tool I\'ve tried. InsideIELTS explained exactly how examiners think. I improved both writing and speaking scores in just three weeks. Highly recommended!',
-                        author: 'Arjun',
+                        quote: 'The best IELTS preparation course I\'ve tried. InsideIELTS explained exactly how examiners think. I improved both writing and speaking scores in just three weeks. Highly recommended!',
+                        author: 'Arjun V',
                         location: 'India',
                         image: '/testimonials/Arjun_(India).png'
                 },
                 {
                         quote: 'I\'d been stuck at Band 6 for months, but InsideIELTS finally showed me what the examiner really wants. The feedback was honest and clear. I reached Band 7.5 on my next test.',
-                        author: 'Tunde',
+                        author: 'Tunde H',
                         location: 'Nigeria',
                         image: '/testimonials/Tunde_(Nigeria).png'
                 }
@@ -200,7 +200,7 @@
         </h1>
 
         <p class="mb-10 text-center text-xl">
-                Comprehensive personalised training for all IELTS skills.
+                Comprehensive personalised training for all IELTS skills
         </p>
 
         <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
@@ -213,8 +213,7 @@
                         <p class="text-gray-600 dark:text-gray-300">
                                 Complete Speaking Test preparation materials plus <b>free Speaking evaluation</b> with feedback and band score.
                         </p>
-                        <!-- <div class="mt-4 text-sm font-medium text-teal-600 dark:text-teal-400">SPEAKING FREETEST →</div> -->
-                </a>
+                            </a>
 
                 <!-- Writing -->
                 <a
@@ -225,8 +224,7 @@
                         <p class="text-gray-600 dark:text-gray-300">
                                 Complete Writing Test preparation materials plus <b>free Writing evaluation exercise</b> with feedback and band score.
                         </p>
-                        <!-- <div class="mt-4 text-sm font-medium text-teal-600 dark:text-teal-400">WRITING FREETEST →</div> -->
-                </a>
+                                </a>
 
                 <!-- Reading -->
                 <a
@@ -237,8 +235,7 @@
                         <p class="text-gray-600 dark:text-gray-300">
                                 Complete Reading Test preparation materials plus <b>free Reading skills evaluation</b> with feedback and score.
                         </p>
-                        <!-- <div class="mt-4 text-sm font-medium text-teal-600 dark:text-teal-400">READING FREETEST →</div> -->
-                </a>
+                            </a>
 
                 <!-- Listening -->
                 <a
@@ -249,8 +246,7 @@
                         <p class="text-gray-600 dark:text-gray-300">
                                 Complete Listening Test preparation materials plus <b>free Listening skills evaluation</b> with feedback and score.
                         </p>
-                        <!-- <div class="mt-4 text-sm font-medium text-teal-600 dark:text-teal-400">LISTENING FREETEST →</div> -->
-                </a>
+                                   </a>
         </div>
 </div>
 
@@ -263,7 +259,7 @@
                 <div class="flex flex-col items-center gap-8 md:flex-row md:gap-12 lg:gap-16">
                         <div class="mb-10 w-full text-center md:mb-0 md:w-3/5 md:text-left">
                                 <Heading tag="h1">
-                                        Know your IELTS Band Score in <span class="text-teal-600 dark:text-teal-400"
+                                        Know your IELTS Band Score in <span class="text-teal-400"
                                                 >under 3 minutes</span
                                         >
                                 </Heading>
@@ -376,18 +372,18 @@
 </section>
 
 <!-- Value Props -->
-<section class="relative py-16">
+<section class="relative pt-16 pb-12">
         <div
                 class="absolute inset-0 bg-gradient-to-tr from-teal-50/20 via-transparent to-blue-50/20 dark:from-teal-900/10 dark:via-transparent dark:to-blue-900/10"
         ></div>
         <div class="relative container mx-auto px-6">
-                <div class="mb-12 text-center">
+                <div class="mb-10 text-center">
                         <P class="mb-2 text-center text-sm font-semibold text-teal-600 dark:text-teal-400"
                                 >WHY WE'RE DIFFERENT</P
                         >
-                        <Heading tag="h2">Why Choose Our Free-Tests?</Heading>
+                        <Heading tag="h2">Why Choose InsideIELTS?</Heading>
                         <div class="mx-auto mt-4 h-1 w-24 rounded-full bg-teal-500/40"></div>
-                        <P class="mt-6 text-center">Expert analysis to help you succeed</P>
+                        <P class="mt-6 text-center text-lg">Expert analysis to help you succeed</P>
                 </div>
                 <div class="grid place-items-center gap-8 md:grid-cols-3">
                         {#each valueProps as prop}
@@ -405,50 +401,9 @@
                                 </Card>
                         {/each}
                 </div>
+					 <P class="mt-12 text-center text-lg italic">"Helping test takers achieve their goals since 2011, we're not just another free test-prep site: we're a team of IELTS examiners and teachers with over three decades of IELTS experience." </P>
         </div>
 </section>
-
-<!-- Expert Section -->
-
-<!-- <section class="relative flex items-center justify-center py-14">
-        <div
-                class="absolute inset-0 bg-gradient-to-b bg-gradient-to-tr from-gray-50 from-teal-100/20 via-blue-50/10 to-gray-100 to-transparent dark:from-gray-800 dark:from-teal-900/10 dark:via-transparent dark:to-gray-900 dark:to-transparent"
-        ></div>
-        <Card class="relative max-w-4xl">
-                <div class="space-y-6 md:grid md:grid-cols-2 md:gap-12 md:space-y-0 md:items-center lg:gap-16">
-                        <div class="space-y-4 md:space-y-4">
-                                <center><Heading tag="h4">Meet Your IELTS Experts</Heading></center>
-                                <P>
-                                        At <b>InsideIELTS</b> our team of experts combine over two decades of IELTS teaching and examiner experience to help you achieve your goals.
-                                        We focus on what really matters: identifying your weaknesses, building your strengths, and giving you clear, actionable strategies for test-day success.
-                                </P>
-                        </div>
-
-                                <div class="flex justify-center md:row-span-2">
-                                <figure>
-                                <picture>
-                                        <source srcset="/IE_Team1.webp" type="image/webp" />
-                                        <img
-                                                src="/IE_Team1.png"
-                                                alt="Alex, Paul & Jane - InsideIELTS Experts"
-                                                class="h-48 w-72 rounded-md border-1 border-white mt-6 mb-2"
-                                                loading="lazy"
-                                                height="281"
-                                                width="457"
-                                                />
-                                </picture>
-<figcaption class="text-center text-sm text-gray-400 dark:text-gray-400 mb-4">Alex, Paul and Jane at IE HQ</figcaption>
-                                        </figure>
-                        </div>
-
-                        <div class="md:col-start-1">
-                                <blockquote class="border-l-4 border-teal-500 pl-4 italic">
-                                        "Our mission is simple: no guesswork, no wasted time - just clear, personalised strategies that produce real progress, fast."
-                                </blockquote>
-                        </div>
-                </div>
-        </Card>
-</section> -->
 
 <!-- Social Proof - Testimonial Carousel -->
 <section class="section-divider relative overflow-hidden py-16 bg-gradient-to-b from-white to-gray-50 dark:from-gray-900 dark:to-gray-800">
@@ -471,7 +426,7 @@
                                 <!-- Testimonial Card -->
                                 <div class="relative overflow-hidden">
                                         <div 
-                                                class="flex transition-transform duration-700 ease-in-out"
+                                                class="flex transition-transform duration-1400 ease-in-out"
                                                 style="transform: translateX(-{currentSlide * 100}%)"
                                         >
                                                 {#each testimonials as testimonial, index}
@@ -489,7 +444,6 @@
                                                                                                 />
                                                                                         </div>
                                                                                 </div>
-
                                                                                 <!-- Content -->
                                                                                 <div class="flex-1 text-center md:text-left">
                                                                                         <Quote class="mb-4 h-10 w-10 text-teal-600 dark:text-teal-400 mx-auto md:mx-0" />
@@ -544,8 +498,84 @@
         </div>
 </section>
 
+<!-- Expert Section -->
+
+<section class="relative flex items-center justify-center py-14">
+				<div
+								class="absolute inset-0 bg-gradient-to-b bg-gradient-to-tr from-gray-50 from-teal-100/20 via-blue-50/10 to-gray-100 to-transparent dark:from-gray-800 dark:from-teal-900/10 dark:via-transparent dark:to-gray-900 dark:to-transparent"
+				></div>
+				<Card class="relative max-w-4xl">
+								<div class="space-y-6 md:grid md:grid-cols-2 md:gap-12 md:space-y-0 md:items-center lg:gap-16">
+												<div class="space-y-4 md:space-y-4">
+																<center><Heading tag="h4">Meet Your IELTS Experts</Heading></center>
+																<P>
+																				At <b>InsideIELTS</b> we focus on what really matters: identifying your weaknesses, building your strengths, and giving you clear, actionable strategies for test-day success.
+																</P>
+												</div>
+
+																																<div class="md:row-span-2">
+																	<div class="grid grid-cols-3 gap-4 mt-6 mb-4">
+																		<!-- Alex -->
+																		<figure class="flex flex-col items-center">
+																			<picture>
+																				<source srcset="/img/Alex.webp" type="image/webp" />
+																				<img
+																					src="/img/Alex.png"
+																					alt="Alex - IELTS Expert"
+																					class="h-32 w-32 rounded-full border-4 border-teal-500/30 object-cover shadow-lg hover:scale-105 transition-transform duration-300"
+																					loading="lazy"
+																					width="128"
+																					height="128"
+																				/>
+																			</picture>
+																			<figcaption class="mt-3 text-center text-sm font-semibold text-gray-700 dark:text-gray-300">Alex</figcaption>
+																		</figure>
+
+																		<!-- Paul -->
+																		<figure class="flex flex-col items-center">
+																			<picture>
+																				<source srcset="/img/Paul.webp" type="image/webp" />
+																				<img
+																					src="/img/Paul.png"
+																					alt="Paul - IELTS Expert"
+																					class="h-32 w-32 rounded-full border-4 border-teal-500/30 object-cover shadow-lg hover:scale-105 transition-transform duration-300"
+																					loading="lazy"
+																					width="128"
+																					height="128"
+																				/>
+																			</picture>
+																			<figcaption class="mt-3 text-center text-sm font-semibold text-gray-700 dark:text-gray-300">Paul</figcaption>
+																		</figure>
+
+																		<!-- Jane -->
+																		<figure class="flex flex-col items-center">
+																			<picture>
+																				<source srcset="/img/Jane.webp" type="image/webp" />
+																				<img
+																					src="/img/Jane.png"
+																					alt="Jane - IELTS Expert"
+																					class="h-32 w-32 rounded-full border-4 border-teal-500/30 object-cover shadow-lg hover:scale-105 transition-transform duration-300"
+																					loading="lazy"
+																					width="128"
+																					height="128"
+																				/>
+																			</picture>
+																			<figcaption class="mt-3 text-center text-sm font-semibold text-gray-700 dark:text-gray-300">Jane</figcaption>
+																		</figure>
+																	</div>
+																</div>
+
+												<div class="md:col-start-1 mb-4">
+																<blockquote class="border-l-4 border-teal-500 pl-4 italic text-white ">
+																				"Our mission is simple: no guesswork, no wasted time - just clear, personalised strategies that produce real progress, fast."
+																</blockquote>
+												</div>
+								</div>
+				</Card>
+</section>
+
 <!-- How It Works -->
-<section id="how-it-works" class="section-divider relative overflow-hidden py-16">
+<!--  <section id="how-it-works" class="section-divider relative overflow-hidden py-16">
         <div
                 class="absolute inset-0 bg-gradient-to-b from-white to-gray-50 dark:from-gray-900 dark:to-gray-800"
         ></div>
@@ -581,7 +611,7 @@
                         {/each}
                 </div>
         </div>
-</section>
+</section> -->
 
 <!-- FAQ Section for Objection Handling -->
 <section
@@ -590,7 +620,7 @@
         <div class="container">
                 <div class="mb-10 text-center">
                         <Heading tag="h2">Frequently Asked Questions</Heading>
-                        <P size="xl" class="mt-3 text-center">Everything you need to know about our free test</P>
+                        <P size="xl" class="mt-3 text-center">Everything you need to know about our free tests</P>
                 </div>
                 <div class="container max-w-5xl">
                         <Accordion>
