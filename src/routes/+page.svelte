@@ -401,7 +401,7 @@
                                 </Card>
                         {/each}
                 </div>
-					 <P class="mt-12 text-center text-lg italic">"Helping test takers achieve their goals since 2011, we're not just another free test-prep site: we're a team of IELTS examiners and teachers with over three decades of IELTS experience." </P>
+					 <P class="mt-12 text-center text-lg italic">"Helping test takers achieve their goals since 2011, we're not just another free test-prep site: we're a team of IELTS examiners and teachers with over three decades of IELTS-prep experience." </P>
         </div>
 </section>
 
@@ -520,7 +520,7 @@
 																				<img
 																					src="/img/Alex.png"
 																					alt="Alex - IELTS Expert"
-																					class="h-32 w-32 rounded-full border-4 border-teal-500/30 object-cover shadow-lg hover:scale-105 transition-transform duration-300"
+																					class="h-32 w-32 rounded-full border-4 border-teal-600/90 object-cover shadow-lg hover:scale-105 transition-transform duration-300"
 																					loading="lazy"
 																					width="128"
 																					height="128"
@@ -536,7 +536,7 @@
 																				<img
 																					src="/img/Paul.png"
 																					alt="Paul - IELTS Expert"
-																					class="h-32 w-32 rounded-full border-4 border-teal-500/30 object-cover shadow-lg hover:scale-105 transition-transform duration-300"
+																					class="h-32 w-32 rounded-full border-4 border-teal-600/90 object-cover shadow-lg hover:scale-105 transition-transform duration-300"
 																					loading="lazy"
 																					width="128"
 																					height="128"
@@ -552,7 +552,7 @@
 																				<img
 																					src="/img/Jane.png"
 																					alt="Jane - IELTS Expert"
-																					class="h-32 w-32 rounded-full border-4 border-teal-500/30 object-cover shadow-lg hover:scale-105 transition-transform duration-300"
+																					class="h-32 w-32 rounded-full border-4 border-teal-600/90 object-cover shadow-lg hover:scale-105 transition-transform duration-300"
 																					loading="lazy"
 																					width="128"
 																					height="128"
