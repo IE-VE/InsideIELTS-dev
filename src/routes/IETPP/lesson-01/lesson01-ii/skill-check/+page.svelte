@@ -1,5 +1,5 @@
 <script lang="ts">
-        import { onMount } from ' செறிவு';
+        import { onMount } from 'svelte';
 
         let lightboxOpen = false;
         let lightboxImage = '';
