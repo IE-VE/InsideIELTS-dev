@@ -85,7 +85,7 @@
                                                 <div class="relative">
                                                         <!-- Rotated background effect -->
                                                         <div
-                                                                class="absolute inset-x-8 inset-y-0 rotate-2 transform rounded-2xl bg-gradient-to-br from-cyan-600 to-teal-600 shadow-2xl shadow-cyan-500/40"
+                                                                class="absolute inset-x-2 lg:inset-x-8 inset-y-0 rotate-2 transform rounded-2xl bg-gradient-to-br from-cyan-600 to-teal-600 shadow-2xl shadow-cyan-500/40"
                                                         ></div>
 
                                                         <!-- Card container -->
