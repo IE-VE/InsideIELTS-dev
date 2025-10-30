@@ -81,7 +81,7 @@
 
                                 <!-- Right Column: 4 Skills Visual Grid -->
                                 <div class="w-full lg:w-1/2">
-                                        <div class="mx-auto w-full max-w-4xl !max-w-none">
+                                        <div class="mx-auto w-full max-w-2xl !max-w-none">
                                                 <div class="relative">
                                                         <!-- Rotated background effect -->
                                                         <div
@@ -196,13 +196,13 @@
                                         </p>
 
 
-                                        <p>The course is supervised by qualified IELTS instructors and personal feedback is given on all <b>Skill Check</b> exercises through the <a href="#" class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300 font-bold">IE Member's Feedback</a> page. For additional in-depth explanation of materials click on the <b>Virtual Examiner Video</b> buttons in each section.
+                                        <p>The course is supervised by qualified IELTS instructors with personal feedback given on all <b>Skill Check</b> exercises through the <a href="#" class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300 font-bold">IE Member's Feedback</a> page. For additional in-depth explanation of materials click on the <b>Virtual Examiner Video</b> buttons in each section.
                                         </p>
                                      
                                         <div class="text-center mt-10">
                                                 <a
                                                         href="/IETPP"                                                                                       title="Welcome to the InsideIELTS Test Preparation Program"
-                                                        class="inline-block bg-teal-600 hover:bg-teal-700 text-white font-bold py-3 px-6 rounded-lg transition-colors"
+                                                        class="inline-block bg-teal-600 hover:bg-teal-700 text-white font-bold border border-white py-3 px-6 rounded-lg transition-colors"
                                                 >
                                                         Start Now
                                                 </a>

@@ -39,19 +39,19 @@
                         id: 1,
                         title: 'How accurate is the assessment?',
                         content:
-                                'Our AI is trained on thousands of real IELTS responses and calibrated by certified IELTS examiners. While no automated system is perfect, our assessments have shown to be within 0.5 bands of human examiner scores in over 90% of cases.'
+                                'Our analysis process is regularly checked and calibrated by certified IELTS examiners. While no system is 100% perfect (even real examiners!), our assessments are within 0.5 bands of examiner scores in over 90% of cases.'
                 },
                 {
                         id: 2,
                         title: 'Is my data private and secure?',
                         content:
-                                "Absolutely. Your recordings are processed securely and are never shared with third parties. We don't require personal information to use the free test, and all data is handled according to strict privacy standards."
+                                "Absolutely. Your uploads are processed securely and are never shared with third parties. We don't require personal information to use our free-tests, and all data is handled according to strict privacy standards."
                 },
                 {
                         id: 3,
                         title: 'What if I need more help?',
                         content:
-                                'The InsideIELTS freetests are designed to give you a good idea of your starting point for improvement. For personalised guidance on your IELTS journey you can sign up to the <a href="/IETPP" class="text-teal-400 hover:text-teal-300">InsideIELTS Test Preparation Program<a/>.<br><br>No other personalised IELTS preparation service offers this much value - <strong>guaranteed</strong>.'
+                                'The InsideIELTS free-tests are designed to give you a good idea of your starting point for improvement. For personalised guidance on your IELTS journey you can sign up to the <a href="/IETPP/signup" class="text-teal-400 hover:text-teal-300">InsideIELTS Test Preparation Program<a/>.<br><br>No other personalised IELTS preparation service offers this much value - <strong>guaranteed</strong>.'
                 }
         ];
 
@@ -142,7 +142,7 @@
                 },
                 {
                         quote: 'InsideIELTS showed me how small details matter—like word stress, linking, and intonation. The step-by-step exercises helped me build natural fluency. My speaking band increased to 8.0.',
-                        author: 'Katya K',
+                        author: 'Maria K',
                         location: 'Ukraine',
                         image: '/testimonials/Katya_(Ukraine).png'
                 },
@@ -511,9 +511,7 @@
 																<P>
 																				At <b>InsideIELTS</b> we focus on what really matters: identifying your weaknesses, building your strengths, and giving you clear, actionable strategies for test-day success.
 																</P>
-												</div>
-
-																																<div class="md:row-span-2">
+												</div>																		<div class="md:row-span-2">
 																	<div class="grid grid-cols-3 gap-4 mt-6 mb-4">
 																		<!-- Alex -->
 																		<figure class="flex flex-col items-center">
@@ -528,7 +526,7 @@
 																					height="128"
 																				/>
 																			</picture>
-																			<figcaption class="mt-3 text-center text-sm font-semibold text-gray-700 dark:text-gray-300">Alex</figcaption>
+																			<figcaption class="mt-3 text-center text-sm font-semibold text-gray-400">Alex</figcaption>
 																		</figure>
 
 																		<!-- Paul -->
@@ -544,7 +542,7 @@
 																					height="128"
 																				/>
 																			</picture>
-																			<figcaption class="mt-3 text-center text-sm font-semibold text-gray-700 dark:text-gray-300">Paul</figcaption>
+																			<figcaption class="mt-3 text-center text-sm font-semibold text-gray-400">Paul</figcaption>
 																		</figure>
 
 																		<!-- Jane -->
@@ -560,16 +558,13 @@
 																					height="128"
 																				/>
 																			</picture>
-																			<figcaption class="mt-3 text-center text-sm font-semibold text-gray-700 dark:text-gray-300">Jane</figcaption>
+																			<figcaption class="mt-3 text-center text-sm font-semibold text-gray-400">Jane</figcaption>
 																		</figure>
 																	</div>
 																</div>
 
 												<div class="md:col-start-1 mb-4">
-																<blockquote class="border-l-4 border-teal-500 pl-4 italic text-white ">
-																				"Our mission is simple: no guesswork, no wasted time - just clear, personalised strategies that produce real progress, fast."
-																</blockquote>
-												</div>
+																<blockquote class="border-l-4 border-teal-500 pl-4 italic text-gray-300">							"Our mission is simple: no guesswork, no wasted time - just clear, personalised strategies that produce real progress, fast."						</blockquote>											</div>
 								</div>
 				</Card>
 </section>
