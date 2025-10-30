@@ -146,7 +146,7 @@
                                         </span>
                                 {:else}
                                         <a
-                                                href="/IETPP"
+                                                href="/IETPP/signup"
                                                 class="text-gray-600 hover:text-teal-600 dark:text-gray-300 dark:hover:text-teal-400 font-bold text-sm md:text-base lg:text-lg {!$page.url.pathname.startsWith('/IETPP') ? 'ietpp-pulse' : ''}"
                                         >
                                                 IETPP
@@ -211,7 +211,7 @@
                                                 IETPP
                                         </span>
                                 {:else}
-                                        <a href="/IETPP" class="block text-gray-600 hover:text-teal-600 dark:text-gray-300 dark:hover:text-teal-400 font-bold {!$page.url.pathname.startsWith('/IETPP') ? 'ietpp-pulse' : ''}">
+                                        <a href="/IETPP/signup" class="block text-gray-600 hover:text-teal-600 dark:text-gray-300 dark:hover:text-teal-400 font-bold {!$page.url.pathname.startsWith('/IETPP') ? 'ietpp-pulse' : ''}">
                                                 IETPP
                                         </a>
                                 {/if}
