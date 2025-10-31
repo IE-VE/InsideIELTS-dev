@@ -173,9 +173,8 @@
 
                         <div class="bg-gray-800 rounded-lg pb-12">                              
                               <!-- Testimonial-style Quote Card -->
-
-                                <div class="mx-auto">
-                                        <div class="flex flex-col items-center gap-6 md:flex-row md:gap-8 bg-gray-900 rounded-lg shadow-lg p-8 max-w-3xl">
+                                <div class="flex justify-center px-4 py-8">
+                                        <div class="flex flex-col items-center gap-6 md:flex-row md:gap-8 bg-gray-900 rounded-lg shadow-lg p-8 max-w-3xl w-full">
                                                 <!-- Image -->
                                                 <div class="flex-shrink-0">
                                                         <div class="relative">
@@ -205,7 +204,7 @@
                                                                 IE Team Leader
                                                         </P>
                                                 </div>
-                                        <!-- </div> -->
+                                        </div>
                                 </div>
                                   
                                                      
