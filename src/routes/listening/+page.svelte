@@ -370,8 +370,8 @@
 					<div class="absolute top-0 left-0 h-4 w-full rounded-t-xl bg-gradient-to-r from-amber-300 to-yellow-200 dark:from-amber-500 dark:to-yellow-400"></div>
 					
 					<!-- IE Logo behind title with transparency -->
-					<div class="absolute top-8 right-6 opacity-20 dark:opacity-15">
-						<img src="/IE_logo.png" alt="InsideIELTS" class="h-20 w-auto" />
+					<div class="absolute top-10 right-8 opacity-70 md:opacity-90">
+						<img src="/IE_logo.png" alt="InsideIELTS" class="h-8 md:h-14 w-auto" />
 					</div>
 					
 					<div class="relative">
