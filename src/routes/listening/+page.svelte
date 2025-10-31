@@ -497,14 +497,11 @@
 		
 			<!-- Call to Action -->
 		<div class="text-center">
-			<div class="bg-primary-800/10 border-2 border-orange-500/70 border-t-12 border-t-orange-600/80 rounded-lg p-8 shadow-lg">
-				<!-- Top accent bar matching notebook variant -->
-		
-				
-				<h2 class="text-2xl font-semibold text-gray-900 dark:text-white mb-6 text-center">
+			<div class="bg-gray-900 border-2 border-orange-500 border-t-12 border-t-orange-500 rounded-lg p-8 shadow-lg">
+				<h2 class="text-2xl font-semibold text-white mb-6 text-center">
 					Ready to Test Your Listening Skills?
 				</h2>
-				<p class="text-gray-700 dark:text-gray-300 mb-6 text-xl">
+				<p class="text-gray-300 mb-6 text-xl">
 					Take our free 8-minute Listening assessment and get instant feedback on your performance.
 				</p>
 				<a 
