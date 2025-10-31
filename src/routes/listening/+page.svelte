@@ -489,7 +489,7 @@
 								<p class="text-gray-700 dark:text-gray-300">InsideIELTS Test Preparation program:</p>
 								</div>
 							<button
-								class="rounded-lg bg-gradient-to-r px-8 py-4 text-xl font-bold text-white shadow-md transition-shadow duration-150 hover:shadow-lg"
+								class="rounded-lg bg-gradient-to-r from-amber-500 to-yellow-400 hover:from-amber-600 hover:to-yellow-500 px-8 py-4 text-xl font-bold text-white shadow-md transition-all duration-150 hover:shadow-lg"
 						
 							>
 								24.95
