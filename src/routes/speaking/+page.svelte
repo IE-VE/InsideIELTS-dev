@@ -369,9 +369,9 @@
 
                 <!-- CTA CARD -->
                 <div class="mb-12 max-w-3xl mx-auto">
-                        <div class="relative border-amber-200 from-[#fff5e9] to-[#fffdf7] dark:border-amber-800 dark:from-amber-950/30 dark:to-amber-900/20 bg-gradient-to-br border-2 rounded-lg p-8 pt-12 shadow-lg">
-                                <!-- Top accent bar matching notebook variant -->
-                                <div class="absolute top-0 left-0 h-4 w-full rounded-t-xl bg-gradient-to-r from-amber-300 to-yellow-200 dark:from-amber-500 dark:to-yellow-400"></div>
+                        <div class="relative border-blue-200 from-[#e9f5ff] to-[#f7fdff] dark:border-blue-800 dark:from-blue-950/30 dark:to-blue-900/20 bg-gradient-to-br border-2 rounded-lg p-8 pt-12 shadow-lg">
+                                <!-- Top accent bar matching blue theme -->
+                                <div class="absolute top-0 left-0 h-4 w-full rounded-t-xl bg-gradient-to-r from-blue-400 to-cyan-300 dark:from-blue-600 dark:to-cyan-500"></div>
 
                                 <!-- IE Logo behind title with transparency -->
                                 <div class="absolute top-10 right-8 opacity-70 md:opacity-90">
@@ -379,7 +379,7 @@
                                 </div>
 
                                 <div class="relative">
-                                        <h3 class="text-2xl font-bold text-amber-800 dark:text-amber-300">Achieve your full IELTS Speaking potential.</h3>
+                                        <h3 class="text-2xl font-bold text-blue-800 dark:text-blue-300">Achieve your full IELTS Speaking potential.</h3>
                                         <p class="mt-1 text-lg text-gray-700 dark:text-white mb-4">
                                                 Our comprehensive program is your path to IELTS success.
                                         </p>
@@ -517,7 +517,7 @@
                                                         </div>
                                                 <button
                                                         href="/IETPP/signup"
-                                                        class="rounded-lg bg-gradient-to-r from-amber-500 to-yellow-400 hover:from-amber-600 hover:to-yellow-500 px-4 py-2 text-xl font-bold text-white shadow-md transition-all duration-150 hover:shadow-lg my-4"
+                                                        class="rounded-lg bg-gradient-to-r from-blue-500 to-cyan-400 hover:from-blue-600 hover:to-cyan-500 px-4 py-2 text-xl font-bold text-white shadow-md transition-all duration-150 hover:shadow-lg my-4"
 
                                                 >
                                                         START NOW
