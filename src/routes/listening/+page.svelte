@@ -192,7 +192,7 @@
 																						class="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row md:justify-start"
 																		>
 																						<Button
-																										href="/IETPP"
+																										href="/IETPP/signup"
 																										onclick={handleStartTest}
 																										color="primary"
 																										class="shadow-lg font-bold border border-white"

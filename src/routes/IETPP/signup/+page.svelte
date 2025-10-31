@@ -19,7 +19,7 @@
 <div class="min-h-screen bg-white dark:bg-gray-900">
         <!-- Hero Section -->
         <section
-                class="relative max-w-5xl mx-auto rounded-lg mt-12 bg-gradient-to-br from-teal-100 via-blue-50 to-indigo-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 py-16 md:py-20"
+                class="relative max-w-5xl mx-auto border border-gray-400 rounded-lg mt-12 bg-gradient-to-br from-teal-100 via-blue-50 to-indigo-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 pt-16 md:pt-20"
         >
                 <div class="absolute inset-0 bg-gradient-to-tr from-cyan-200/20 to-transparent rounded-lg"></div>
                 <div class="relative container mx-auto px-6 md:px-10">
@@ -66,16 +66,22 @@
 
                                                 <div class="flex flex-col items-center justify-center gap-4 sm:flex-row lg:justify-start">
                                                         <Button
-                                                                href="/IETPP"
+                                                                href="#"
                                                                 onclick={handleStartProgram}
                                                                 color="primary"
-                                                                class="bg-teal-600 hover:bg-teal-700 text-white font-bold shadow-lg shadow-teal-500/30 border-2 border-teal-400"
+                                                                class="bg-teal-600 hover:bg-teal-700 text-white text-lg font-bold shadow-lg shadow-teal-500/30 border-2 border-teal-400 my-4"
                                                                 size="lg"
                                                         >
-                                                                Start Your IELTS Journey
+                                                                <big>$24.95 </big>&nbsp - START NOW
                                                                 <ArrowRight class="ml-2 h-5 w-5" />
                                                         </Button>
                                                 </div>
+
+                                                <p class="ml-2 mt-4"><a href="/IETPP"                                                                   class="text-gray-300 hover:text-teal-500 font-semibold">see course overview</a>
+                             /                             
+                                          <a href="#"                                                                   class="text-gray-300 hover:text-teal-500 font-semibold">see member's page</a>
+
+                                                </p>
                                         </div>
                                 </div>
 
@@ -114,12 +120,7 @@
                                                                         <div
                                                                                 class="flex flex-col items-center rounded-lg bg-gradient-to-br from-purple-50 to-blue-50 dark:from-purple-900/20 dark:to-blue-900/20 p-4 border-2 border-purple-200 dark:border-purple-700 hover:shadow-lg transition-shadow"
                                                                         >
-                                                                                <!-- <div
-                                                                                        class="mb-3 flex h-12 w-12 items-center justify-center rounded-full bg-purple-100 dark:bg-purple-800"
-                                                                                >
-                                                                                        <BookOpen class="h-6 w-6 text-purple-600 dark:text-purple-300" />
-                                                                                </div> -->
-                                                                                <img
+                                                                                                                                                              <img
                                                                                         src="/IETPP/pics/IETPP_picR.png"
                                                                                         alt="IELTS Reading"
                                                                                         class="mb-2  object-contain"
@@ -131,11 +132,6 @@
                                                                         <div
                                                                                 class="flex flex-col items-center rounded-lg bg-gradient-to-br from-teal-50 to-green-50 dark:from-teal-900/20 dark:to-green-900/20 p-4 border-2 border-blue-600/80 hover:shadow-lg transition-shadow"
                                                                         >
-                                                                                <!-- <div
-                                                                                        class="mb-3 flex h-12 w-12 items-center justify-center rounded-full bg-teal-100 dark:bg-teal-800"
-                                                                                >
-                                                                                        <Mic class="h-6 w-6 text-teal-600 dark:text-teal-300" />
-                                                                                </div> -->
                                                                                 <img
                                                                                         src="/IETPP/pics/IETPP_picS.png"
                                                                                         alt="IELTS Speaking"
@@ -148,11 +144,6 @@
                                                                         <div
                                                                                 class="flex flex-col items-center rounded-lg bg-gradient-to-br from-green-50 to-teal-50 dark:from-green-900/20 dark:to-teal-900/20 p-4 border-2 border-green-600/80 hover:shadow-lg transition-shadow"
                                                                         >
-                                                                                <!-- <div
-                                                                                        class="mb-3 flex h-12 w-12 items-center justify-center rounded-full bg-green-100 dark:bg-green-800"
-                                                                                >
-                                                                                        <PenTool class="h-6 w-6 text-green-600 dark:text-green-300" />
-                                                                                </div> -->
                                                                                 <img
                                                                                         src="/IETPP/pics/IETPP_picW2.png"
                                                                                         alt="IELTS Writing"
@@ -174,15 +165,14 @@
                                 </div>
                         </div>
                 </div>
-        </section>
+      
+        <!-- IETPP Section -->
+        <div class=" max-w-5xl container mx-auto">
+                <div class="mt-20">
 
-        <!-- Header Section -->
-        <div class=" max-w-5xl container mx-auto py-8">
-                <div class="mb-12">
+                        <div class="bg-gray-50 dark:bg-gray-800 rounded-lg pb-12">                              
 
-                        <div class="bg-gray-50 dark:bg-gray-800 rounded-lg pb-12 mb-8">                              
-
-                                <div class="text-gray-700 dark:text-gray-300 px-7 md:px-20 mb-6">
+                                <div class="text-white px-7 md:px-20 mt-12 mb-6">
                                         <h1 class="text-3xl font-bold text-gray-900 dark:text-white mb-4 text-center pt-8 pb-4">
                                                 InsideIELTS Test Preparation Program
                                         </h1>
@@ -200,15 +190,19 @@
                                         </p>
                                      
                                         <div class="text-center mt-10">
-                                                <a
-                                                        href="/IETPP"                                                                                       title="Welcome to the InsideIELTS Test Preparation Program"
-                                                        class="inline-block bg-teal-600 hover:bg-teal-700 text-white font-bold border border-white py-3 px-6 rounded-lg transition-colors"
+                                                <Button
+                                                        href="#"
+                                                        onclick={handleStartProgram}
+                                                        color="primary"
+                                                        class="bg-teal-600 hover:bg-teal-700 text-white text-lg font-bold shadow-lg shadow-teal-500/30 border-2 border-teal-400 my-4"
+                                                        size="lg"
                                                 >
-                                                        Start Now
-                                                </a>
+                                                   START NOW
+                                                               </Button>
                                         </div>
                                 </div>
                             </div>
                         </div>
                 </div>
+                  </section>
 </div>
