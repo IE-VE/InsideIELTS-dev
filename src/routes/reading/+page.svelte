@@ -387,5 +387,6 @@
 				</a>
 			</div>
 		</div>
+</old_str>
 	</div>
 </div>
