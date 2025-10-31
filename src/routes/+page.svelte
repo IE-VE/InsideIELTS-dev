@@ -401,7 +401,7 @@
                                 </Card>
                         {/each}
                 </div>
-					 <P class="mt-12 text-center text-lg italic">"Helping test takers achieve their goals since 2011, we're not just another free test-prep site: we're a team of IELTS examiners and teachers with over three decades of IELTS-prep experience." </P>
+					 <P class="mt-12 text-center text-lg italic">"Helping test takers achieve their goals since 2011, we're not just another free test-prep site: we're a team of IELTS examiners and educators with over three decades of IELTS-prep experience." </P>
         </div>
 </section>
 

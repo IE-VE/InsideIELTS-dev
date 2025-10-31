@@ -17,7 +17,7 @@
         />
 </svelte:head>
 
-<div class="min-h-screen bg-white dark:bg-gray-900">
+<div class="min-h-screen bg-gray-900">
         <!-- Hero Section -->
         <section
                 class="relative max-w-5xl mx-auto border border-gray-400 rounded-lg mt-12 bg-gradient-to-br from-teal-100 via-blue-50 to-indigo-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 pt-16 md:pt-20"
@@ -167,33 +167,28 @@
                         </div>
                 </div>
       
-        <!-- IETPP Section -->
+        <!-- IETPP -->
         <div class=" max-w-5xl container mx-auto">
-                <div class="mt-20">
+                <div class="mt-12">
 
                         <div class="bg-gray-800 rounded-lg pb-12">                              
                               <!-- Testimonial-style Quote Card -->
                                 <div class="flex justify-center px-4 py-8">
-                                        <div class="flex flex-col items-center gap-6 md:flex-row md:gap-8 bg-gray-900 rounded-lg shadow-lg p-8 max-w-3xl w-full">
+                                        <div class="flex flex-col items-center gap-6 md:flex-row md:gap-8 bg-gray-900 rounded-lg shadow-lg p-8 max-w-3xl w-full border border-gray-500">
                                                 <!-- Image -->
                                                 <div class="flex-shrink-0">
                                                         <div class="relative">
                                                                 <div class="absolute inset-0 bg-gradient-to-br from-cyan-400 to-teal-500 blur-lg opacity-30"></div>
                                                                 <img
-                                                                        src="/IE_logo.png"
-                                                                        alt="InsideIELTS Logo"
-                                                                        class="h-12 w-auto"
-                                                                        width="32"
-                                                                        height="32"
-                                                                        decoding="async"
-                                                                        fetchpriority="high"
+                                                                        src="/IE_logo.png"                                                                        alt="InsideIELTS Logo"                                                                        class="h-12 w-auto"                                                                        width="32"                                                                        height="32"                                                                        decoding="async"                                                                        fetchpriority="high"
                                                                 />
                                                         </div>
                                                 </div>
+                                                
                                                 <!-- Content -->
                                                 <div class="flex-1 text-center md:text-left">
                                                         <Quote class="mb-4 h-10 w-10 text-teal-600 dark:text-teal-400 mx-auto md:mx-0" />
-                                                        <P class="mb-6 text-lg italic leading-relaxed"> "Each test day we see candidates of <u>ALL levels</u> who <u>underperform</u> in all parts of the IELTS assessment due to lack of preparation and understanding of the test requirements."</P>
+                                                        <P class="mb-6 italic leading-relaxed"> Scoring well in the IELTS test is not JUST about English ability. Each test day we see candidates of <u class="underline-offset-3">ALL levels</u> underperforming due to lack of preparation and poor understanding of the test requirements. I hate to see it!</P>
                                                         <div class="flex items-center justify-center md:justify-start gap-2">
                                                                 <div class="h-1 w-12 rounded-full bg-teal-500"></div>
                                                                 <P class="text-base font-semibold text-gray-900 dark:text-white">
@@ -208,8 +203,8 @@
                                 </div>
                                   
                                                      
-                                <div class="text-white px-7 md:px-20 mt-12 mb-6">
-                                        <h1 class="text-3xl font-bold text-gray-900 dark:text-white mb-4 text-center pt-8 pb-4">
+                                <div class="text-white px-7 md:px-20 mt-2 mb-6">
+                                        <h1 class="text-3xl font-bold text-gray-900 dark:text-white mb-4 text-center pt-8 pb-4 underline underline-offset-4 decoration-3 decoration-teal-400">
                                                 InsideIELTS Test Preparation Program
                                         </h1>
                                        
