@@ -369,9 +369,9 @@
 
                 <!-- CTA CARD -->
                 <div class="mb-12 max-w-3xl mx-auto">
-                        <div class="relative border-blue-200 from-[#e9f5ff] to-[#f7fdff] dark:border-blue-800 dark:from-blue-950/30 dark:to-blue-900/20 bg-gradient-to-br border-2 rounded-lg p-8 pt-12 shadow-lg">
+                        <div class="relative border-blue-500 from-blue-950/70 to-blue-900/70 bg-gradient-to-br border-2 rounded-xl p-8 pt-12 shadow-lg">
                                 <!-- Top accent bar matching blue theme -->
-                                <div class="absolute top-0 left-0 h-4 w-full rounded-t-xl bg-gradient-to-r from-blue-400 to-cyan-300 dark:from-blue-600 dark:to-cyan-500"></div>
+                                <div class="absolute top-0 left-0 h-4 w-full rounded-t-xl bg-gradient-to-r from-blue-500 to-cyan-400"></div>
 
                                 <!-- IE Logo behind title with transparency -->
                                 <div class="absolute top-10 right-8 opacity-70 md:opacity-90">
@@ -379,8 +379,8 @@
                                 </div>
 
                                 <div class="relative">
-                                        <h3 class="text-2xl font-bold text-blue-800 dark:text-blue-300">Achieve your full IELTS Speaking potential.</h3>
-                                        <p class="mt-1 text-lg text-gray-700 dark:text-white mb-4">
+                                        <h3 class="text-2xl font-bold text-cyan-400">Achieve your full IELTS Speaking potential.</h3>
+                                        <p class="mt-2 text-lg text-gray-700 dark:text-white mb-4">
                                                 Our comprehensive program is your path to IELTS success.
                                         </p>
                                 </div>
