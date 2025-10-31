@@ -186,12 +186,12 @@
                                         </p>
 
 
-                                        <p>The course is supervised by qualified IELTS instructors with personal feedback given on all <b>Skill Check</b> exercises through the <a href="#" class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300 font-bold">IE Member's Feedback</a> page. For additional in-depth explanation of materials click on the <b>Virtual Examiner Video</b> buttons in each section.
+                                        <p>The course is supervised by qualified IELTS instructors with personal feedback given on all <b>Skill Check</b> exercises through the <a href="/admin" class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300 font-bold">IE Member's Feedback</a> page. For additional in-depth explanation of materials click on the <b>Virtual Examiner Video</b> buttons in each section.
                                         </p>
                                      
                                         <div class="text-center mt-10">
                                                 <Button
-                                                        href="#"
+                                                        href="/IETPP/lesson-00"
                                                         onclick={handleStartProgram}
                                                         color="primary"
                                                         class="bg-teal-600 hover:bg-teal-700 text-white text-lg font-bold shadow-lg shadow-teal-500/30 border-2 border-teal-400 my-4"
