@@ -1,7 +1,8 @@
 <script lang="ts">
         import { tracking } from '$lib/utils/analytics';
-        import { Card as FlowbiteCard, Button, List, Li } from 'flowbite-svelte';
-        import { Check, ArrowRight, Headphones, BookOpen, Mic, PenTool } from 'lucide-svelte';
+        import { Card as FlowbiteCard, Button, List, Li, P } from 'flowbite-svelte';
+        import { Check, ArrowRight, Headphones, BookOpen, Mic, PenTool, Quote } from 'lucide-svelte';
+        import Card from '$lib/components/Card.svelte';
 
         function handleStartProgram() {
                 tracking.startTest();
