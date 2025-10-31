@@ -369,6 +369,11 @@
 					<!-- Top accent bar matching notebook variant -->
 					<div class="absolute top-0 left-0 h-4 w-full rounded-t-xl bg-gradient-to-r from-amber-300 to-yellow-200 dark:from-amber-500 dark:to-yellow-400"></div>
 					
+					<!-- IE Logo in top right corner -->
+					<div class="absolute top-6 right-6">
+						<img src="/IE_logo.png" alt="InsideIELTS" class="h-12 w-auto opacity-80" />
+					</div>
+					
 					<div>
 						<h3 class="text-2xl font-bold text-amber-800 dark:text-amber-300">Achieve your full IELTS Listening Potential.</h3>
 						<p class="mt-1 text-lg text-gray-700 dark:text-white mb-4">
