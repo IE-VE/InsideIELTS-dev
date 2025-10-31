@@ -484,6 +484,37 @@
 							</li>
 						</ul>
 					</div>
+						<div class="flex items-center justify-between">
+							<div>
+								<p class="text-gray-700 dark:text-gray-300">InsideIELTS Test Preparation program:</p>
+								</div>
+							<button
+								class="rounded-lg bg-gradient-to-r px-8 py-4 text-xl font-bold text-white shadow-md transition-shadow duration-150 hover:shadow-lg"
+						
+							>
+								24.95
+							</button>
+						</div>
+					<div class="rounded-lg bg-white p-4 dark:bg-gray-800">
+						<div class="flex items-start">
+							<svg
+								class="mr-2 h-5 w-5 text-teal-600 dark:text-teal-400"
+								viewBox="0 0 24 24"
+								fill="currentColor"
+							>
+								<path
+									d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+									stroke="currentColor"
+									stroke-width="1.5"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								/>
+							</svg>
+							<p class="text-gray-700 dark:text-gray-300">
+								<strong>100% Satisfaction Guarantee:</strong> See your score improve or get your money back.
+							</p>
+						</div>
+					</div>
 				</div>
 			</div>
 			
