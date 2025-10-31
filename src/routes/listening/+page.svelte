@@ -364,18 +364,18 @@
 		</div>
 
 		<!-- CTA CARD -->
-			<div class="mb-12">
+			<div class="mb-12 max-w-3xl mx-auto">
 				<div class="relative border-amber-200 from-[#fff5e9] to-[#fffdf7] dark:border-amber-800 dark:from-amber-950/30 dark:to-amber-900/20 bg-gradient-to-br border-2 rounded-lg p-8 pt-12 shadow-lg">
 					<!-- Top accent bar matching notebook variant -->
 					<div class="absolute top-0 left-0 h-4 w-full rounded-t-xl bg-gradient-to-r from-amber-300 to-yellow-200 dark:from-amber-500 dark:to-yellow-400"></div>
 					
 					<!-- IE Logo in top right corner -->
-					<div class="absolute top-6 right-6">
-						<img src="/IE_logo.png" alt="InsideIELTS" class="h-12 w-auto opacity-80" />
+					<div class="absolute top-10 right-10">
+						<img src="/IE_logo.png" alt="InsideIELTS" class="h-14 w-auto" />
 					</div>
 					
 					<div>
-						<h3 class="text-2xl font-bold text-amber-800 dark:text-amber-300">Achieve your full IELTS Listening Potential.</h3>
+						<h3 class="text-2xl font-bold text-amber-800 dark:text-amber-300">Achieve your full IELTS Listening potential.</h3>
 						<p class="mt-1 text-lg text-gray-700 dark:text-white mb-4">
 							Our comprehensive program is your path to IELTS success.
 						</p>
