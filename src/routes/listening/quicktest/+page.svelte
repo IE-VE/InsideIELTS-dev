@@ -401,7 +401,7 @@
         {:else if !isTestCompleted}
 
                 <!-- Test Interface -->
-                <div class="container max-w-4xl mx-auto px-4 py-8">
+                <div class="container max-w-4xl mx-auto px-4 pt-8">
                         <!-- Header -->
                         <div class="text-center mb-12">         <h1 class="text-3xl text-center font-black text-white mb-8 inline-block px-10 py-3 rounded-xl bg-gradient-to-r from-cyan-500 via-teal-500 to-cyan-600 shadow-xl shadow-cyan-500/30 border-2 border-orange-600/80">
                                         IE LISTENING Quick-Test
@@ -906,7 +906,7 @@
 
 <!-- CTA CARD - Only show after test is marked -->
 {#if hasMarked}
-<div class="py-12 mb-12 max-w-3xl mx-auto">
+<div class="pb-12 mb-12 max-w-3xl mx-auto">
         <div class="relative border-amber-200 from-[#fff5e9] to-[#fffdf7] dark:border-amber-800 dark:from-amber-950/30 dark:to-amber-900/20 bg-gradient-to-br border-2 rounded-lg p-8 pt-12 shadow-lg">
                 <!-- Top accent bar matching notebook variant -->
                 <div class="absolute top-0 left-0 h-4 w-full rounded-t-xl bg-gradient-to-r from-amber-300 to-yellow-200 dark:from-amber-500 dark:to-yellow-400"></div>
