@@ -171,14 +171,16 @@
                 <div class="mt-20">
 
                         <div class="bg-gray-50 dark:bg-gray-800 rounded-lg pb-12">                              
-
+                              <p class="mb-8 text-lg font-semibold italic">
+                                       "Each test day we see candidates of <u>ALL levels</u> who <u>underperform</u> in all parts of the IELTS assessment due to lack of preparation and understanding of the test requirements." 
+                                </p>
                                 <div class="text-white px-7 md:px-20 mt-12 mb-6">
                                         <h1 class="text-3xl font-bold text-gray-900 dark:text-white mb-4 text-center pt-8 pb-4">
                                                 InsideIELTS Test Preparation Program
                                         </h1>
-
+                                       
                                         <p class="mb-8 text-lg">
-                                                The <b>IETPP</b> course is a <b>28 lesson</b> introductory program designed to give test candidates a full insight into the make-up,        skill requirements and assessment procedures of the <b>IELTS</b> test.
+                                                The <b>IETPP</b> course is a <b>28 lesson</b> introductory program designed to give test candidates a full insight into the make-up, skill requirements and assessment procedures of the <b>IELTS</b> test.
                                         </p>
 
                                         <p class="mb-6">
@@ -186,12 +188,12 @@
                                         </p>
 
 
-                                        <p>The course is supervised by qualified IELTS instructors with personal feedback given on all <b>Skill Check</b> exercises through the <a href="/admin" class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300 font-bold">IE Member's Feedback</a> page. For additional in-depth explanation of materials click on the <b>Virtual Examiner Video</b> buttons in each section.
+                                        <p>The course is supervised by qualified IELTS instructors with personal feedback given on all <b>Skill Check</b> exercises through the <a href="#" class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300 font-bold">IE Member's Feedback</a> page. For additional in-depth explanation of materials click on the <b>Virtual Examiner Video</b> buttons in each section.
                                         </p>
                                      
                                         <div class="text-center mt-10">
                                                 <Button
-                                                        href="/IETPP/lesson-00"
+                                                        href="#"
                                                         color="primary"
                                                         class="bg-teal-600 hover:bg-teal-700 text-white text-lg font-bold shadow-lg shadow-teal-500/30 border-2 border-teal-400 my-4"
                                                         size="lg"
