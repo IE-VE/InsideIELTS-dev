@@ -365,10 +365,13 @@
 
 		<!-- CTA CARD -->
 			<div class="mb-12">
-				<div class="bg-primary-800/10 border-2 border-orange-500/70 border-t-12  border-t from-amber-950/30 to-amber-900/20 rounded-lg p-8 shadow-lg">
+				<div class="relative border-amber-200 from-[#fff5e9] to-[#fffdf7] dark:border-amber-800 dark:from-amber-950/30 dark:to-amber-900/20 bg-gradient-to-br border-2 rounded-lg p-8 pt-12 shadow-lg">
+					<!-- Top accent bar matching notebook variant -->
+					<div class="absolute top-0 left-0 h-4 w-full rounded-t-xl bg-gradient-to-r from-amber-300 to-yellow-200 dark:from-amber-500 dark:to-yellow-400"></div>
+					
 					<div>
-						<h3 class="text-2xl font-bold text-amber-300">Achieve your full IELTS Potential.</h3>
-						<p class="mt-1 text-lg text-white mb-4">
+						<h3 class="text-2xl font-bold text-amber-800 dark:text-amber-300">Achieve your full IELTS Potential.</h3>
+						<p class="mt-1 text-lg text-gray-700 dark:text-white mb-4">
 							Our comprehensive program is your path to IELTS success.
 						</p>
 					</div>
