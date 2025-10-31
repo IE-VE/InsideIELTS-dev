@@ -171,19 +171,19 @@
         <div class=" max-w-5xl container mx-auto">
                 <div class="mt-20">
 
-                        <div class="bg-gray-50 dark:bg-gray-800 rounded-lg pb-12">                              
+                        <div class="bg-gray-800 rounded-lg pb-12">                              
                               <!-- Testimonial-style Quote Card -->
 
-                                <Card class="mx-auto max-w-3xl">
-                                        <div class="flex flex-col items-center gap-6 md:flex-row md:gap-8">
+                                <div class="mx-auto">
+                                        <div class="flex flex-col items-center gap-6 md:flex-row md:gap-8 bg-gray-900 rounded-lg shadow-lg p-8 max-w-3xl">
                                                 <!-- Image -->
                                                 <div class="flex-shrink-0">
                                                         <div class="relative">
-                                                                <div class="absolute inset-0 rounded-full bg-gradient-to-br from-cyan-400 to-teal-500 blur-lg opacity-30"></div>
+                                                                <div class="absolute inset-0 bg-gradient-to-br from-cyan-400 to-teal-500 blur-lg opacity-30"></div>
                                                                 <img
                                                                         src="/IE_logo.png"
                                                                         alt="InsideIELTS Logo"
-                                                                        class="h-8 w-auto"
+                                                                        class="h-12 w-auto"
                                                                         width="32"
                                                                         height="32"
                                                                         decoding="async"
@@ -205,8 +205,8 @@
                                                                 IE Team Leader
                                                         </P>
                                                 </div>
-                                        </div>
-                                </Card>
+                                        <!-- </div> -->
+                                </div>
                                   
                                                      
                                 <div class="text-white px-7 md:px-20 mt-12 mb-6">
