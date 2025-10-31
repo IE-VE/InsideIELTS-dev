@@ -20,9 +20,9 @@
 <div class="min-h-screen bg-gray-900">
         <!-- Hero Section -->
         <section
-                class="relative max-w-5xl mx-auto border border-gray-400 rounded-lg mt-12 bg-gradient-to-br from-teal-100 via-blue-50 to-indigo-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 pt-16 md:pt-20"
+                class="relative max-w-5xl mx-auto border border-gray-400 rounded-lg mt-12 bg-gradient-to-b from-teal-100 via-blue-50 to-gray-800 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 pt-16 md:pt-20"
         >
-                <div class="absolute inset-0 bg-gradient-to-tr from-cyan-200/20 to-transparent rounded-lg"></div>
+                <div class="absolute inset-0 bg-gradient-to-tr from-cyan-200/20 to-transparent rounded-t-lg"></div>
                 <div class="relative container mx-auto px-6 md:px-10">
                         <div class="flex flex-col items-center gap-12 lg:flex-row lg:gap-16">
                                 <!-- Left Column: Content -->
@@ -168,10 +168,10 @@
                 </div>
       
         <!-- IETPP -->
-        <div class=" max-w-5xl container mx-auto">
-                <div class="mt-12">
+        <div class="relative max-w-5xl container mx-auto">
+                <div class="mt-0">
 
-                        <div class="bg-gray-800 rounded-lg pb-12">                              
+                        <div class="pb-12">                              
                               <!-- Testimonial-style Quote Card -->
                                 <div class="flex justify-center px-4 py-8">
                                         <div class="flex flex-col items-center gap-6 md:flex-row md:gap-8 bg-gray-900 rounded-lg shadow-lg p-8 max-w-3xl w-full border border-gray-500">
