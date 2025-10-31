@@ -171,9 +171,18 @@
                 <div class="mt-20">
 
                         <div class="bg-gray-50 dark:bg-gray-800 rounded-lg pb-12">                              
-                              <p class="mb-8 text-lg font-semibold italic">
-                                       "Each test day we see candidates of <u>ALL levels</u> who <u>underperform</u> in all parts of the IELTS assessment due to lack of preparation and understanding of the test requirements." 
-                                </p>
+                              <!-- Testimonial-style Quote Card -->
+                              <div class="max-w-3xl mx-auto px-4 mb-8">
+                                <div class="relative rounded-lg border border-gray-200 dark:border-gray-700 bg-gradient-to-br from-white to-white dark:from-gray-800 dark:to-gray-800 p-6 pt-8 shadow-lg dark:shadow-xl">
+                                  <!-- Top accent bar -->
+                                  <div class="absolute top-0 left-0 h-4 w-full rounded-t-xl bg-gradient-to-r from-gray-200 to-slate-300 dark:from-gray-600 dark:to-slate-700"></div>
+                                  
+                                  <p class="text-lg font-semibold italic text-gray-800 dark:text-gray-200">
+                                    "Each test day we see candidates of <u>ALL levels</u> who <u>underperform</u> in all parts of the IELTS assessment due to lack of preparation and understanding of the test requirements."
+                                  </p>
+                                </div>
+                              </div>
+
                                 <div class="text-white px-7 md:px-20 mt-12 mb-6">
                                         <h1 class="text-3xl font-bold text-gray-900 dark:text-white mb-4 text-center pt-8 pb-4">
                                                 InsideIELTS Test Preparation Program
