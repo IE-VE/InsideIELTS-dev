@@ -369,12 +369,12 @@
 					<!-- Top accent bar matching notebook variant -->
 					<div class="absolute top-0 left-0 h-4 w-full rounded-t-xl bg-gradient-to-r from-amber-300 to-yellow-200 dark:from-amber-500 dark:to-yellow-400"></div>
 					
-					<!-- IE Logo in top right corner -->
-					<div class="absolute top-10 right-10">
-						<img src="/IE_logo.png" alt="InsideIELTS" class="h-14 w-auto" />
+					<!-- IE Logo behind title with transparency -->
+					<div class="absolute top-8 right-6 opacity-20 dark:opacity-15">
+						<img src="/IE_logo.png" alt="InsideIELTS" class="h-20 w-auto" />
 					</div>
 					
-					<div>
+					<div class="relative">
 						<h3 class="text-2xl font-bold text-amber-800 dark:text-amber-300">Achieve your full IELTS Listening potential.</h3>
 						<p class="mt-1 text-lg text-gray-700 dark:text-white mb-4">
 							Our comprehensive program is your path to IELTS success.
