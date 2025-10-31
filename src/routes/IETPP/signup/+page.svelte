@@ -169,7 +169,7 @@
       
         <!-- IETPP -->
         <div class="relative max-w-5xl container mx-auto">
-                <div class="mt-0">
+                <div class="mt-6">
 
                         <div class="pb-12">                              
                               <!-- Testimonial-style Quote Card -->
@@ -188,7 +188,7 @@
                                                 <!-- Content -->
                                                 <div class="flex-1 text-center md:text-left">
                                                         <Quote class="mb-4 h-10 w-10 text-teal-600 dark:text-teal-400 mx-auto md:mx-0" />
-                                                        <P class="mb-6 italic leading-relaxed"> Scoring well in the IELTS test is not JUST about English ability. Each test day we see candidates of <u class="underline-offset-3">ALL levels</u> underperforming due to lack of preparation and poor understanding of the test requirements. I hate to see it!</P>
+                                                        <P class="mb-6 italic leading-relaxed"> Scoring well in the IELTS test is not JUST about English ability. Each test day we see candidates of <u class="underline-offset-2">ALL levels</u> underperforming due to lack of preparation and poor understanding of the test requirements. I hate to see it!</P>
                                                         <div class="flex items-center justify-center md:justify-start gap-2">
                                                                 <div class="h-1 w-12 rounded-full bg-teal-500"></div>
                                                                 <P class="text-base font-semibold text-gray-900 dark:text-white">

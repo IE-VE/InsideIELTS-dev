@@ -363,6 +363,127 @@
 			</div>
 		</div>
 
+		<!-- CTA CARD -->
+			<div class="mb-12">
+				<div class="bg-primary-800/10 border-2 border-orange-500/70 border-t-12  border-t from-amber-950/30 to-amber-900/20 rounded-lg p-8 shadow-lg">
+					<div>
+						<h3 class="text-2xl font-bold text-amber-300">Achieve your full IELTS Potential.</h3>
+						<p class="mt-1 text-lg text-white mb-4">
+							Our comprehensive program is your path to IELTS success.
+						</p>
+					</div>
+		
+					<!-- Benefits -->
+					<div class="rounded-lg bg-white p-4 dark:bg-gray-800">
+						<h4 class="mb-4 font-semibold text-gray-800 dark:text-white">Package Benefits:</h4>
+						<ul class="space-y-3">
+							<li class="flex">
+								<div
+									class="mr-3 flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-teal-100 dark:bg-teal-900/50"
+								>
+									<svg
+										class="h-4 w-4 text-teal-600 dark:text-teal-400"
+										viewBox="0 0 20 20"
+										fill="currentColor"
+									>
+										<path
+											fill-rule="evenodd"
+											d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+											clip-rule="evenodd"
+										/>
+									</svg>
+								</div>
+								<div class="text-gray-700 dark:text-gray-300">
+									Diagnostic Test and Final Test with real Part-1 IELTS Questions
+								</div>
+							</li>
+							<li class="flex">
+								<div
+									class="mr-3 flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-teal-100 dark:bg-teal-900/50"
+								>
+									<svg
+										class="h-4 w-4 text-teal-600 dark:text-teal-400"
+										viewBox="0 0 20 20"
+										fill="currentColor"
+									>
+										<path
+											fill-rule="evenodd"
+											d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+											clip-rule="evenodd"
+										/>
+									</svg>
+								</div>
+								<div class="text-gray-700 dark:text-gray-300">
+									Four easy-to-follow 40-minute lessons, designed specifically to
+									target your personal areas of weakness.
+								</div>
+							</li>
+							<li class="flex">
+								<div
+									class="mr-3 flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-teal-100 dark:bg-teal-900/50"
+								>
+									<svg
+										class="h-4 w-4 text-teal-600 dark:text-teal-400"
+										viewBox="0 0 20 20"
+										fill="currentColor"
+									>
+										<path
+											fill-rule="evenodd"
+											d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+											clip-rule="evenodd"
+										/>
+									</svg>
+								</div>
+								<div class="text-gray-700 dark:text-gray-300">
+									Extra study activities and links to additional IELTS practice resources
+								</div>
+							</li>
+							<li class="flex">
+								<div
+									class="mr-3 flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-teal-100 dark:bg-teal-900/50"
+								>
+									<svg
+										class="h-4 w-4 text-teal-600 dark:text-teal-400"
+										viewBox="0 0 20 20"
+										fill="currentColor"
+									>
+										<path
+											fill-rule="evenodd"
+											d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+											clip-rule="evenodd"
+										/>
+									</svg>
+								</div>
+								<div class="text-gray-700 dark:text-gray-300">
+									Final Day Test analysis with feedback and IETPP progress summary.
+								</div>
+							</li>
+							<li class="flex">
+								<div
+									class="mr-3 flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-teal-100 dark:bg-teal-900/50"
+								>
+									<svg
+										class="h-4 w-4 text-teal-600 dark:text-teal-400"
+										viewBox="0 0 20 20"
+										fill="currentColor"
+									>
+										<path
+											fill-rule="evenodd"
+											d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+											clip-rule="evenodd"
+										/>
+									</svg>
+								</div>
+								<div class="text-gray-700 dark:text-gray-300">
+									Full E-mail and Chat access to qualified IE examiners for the duration of the 6 Day
+									IETPP!
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			
 		<div class="my-12">		
 			<UpsellCard 
 					userScore={6.0} 
