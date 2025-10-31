@@ -370,7 +370,7 @@
 					<div class="absolute top-0 left-0 h-4 w-full rounded-t-xl bg-gradient-to-r from-amber-300 to-yellow-200 dark:from-amber-500 dark:to-yellow-400"></div>
 					
 					<div>
-						<h3 class="text-2xl font-bold text-amber-800 dark:text-amber-300">Achieve your full IELTS Potential.</h3>
+						<h3 class="text-2xl font-bold text-amber-800 dark:text-amber-300">Achieve your full IELTS Listening Potential.</h3>
 						<p class="mt-1 text-lg text-gray-700 dark:text-white mb-4">
 							Our comprehensive program is your path to IELTS success.
 						</p>
@@ -397,7 +397,7 @@
 									</svg>
 								</div>
 								<div class="text-gray-700 dark:text-gray-300">
-									Diagnostic Test and Final Test with real Part-1 IELTS Questions
+									 28 comprehensive lessons with skill-focused materials
 								</div>
 							</li>
 							<li class="flex">
@@ -417,8 +417,7 @@
 									</svg>
 								</div>
 								<div class="text-gray-700 dark:text-gray-300">
-									Four easy-to-follow 40-minute lessons, designed specifically to
-									target your personal areas of weakness.
+									 Personal feedback on all Skill Check exercises
 								</div>
 							</li>
 							<li class="flex">
@@ -438,7 +437,7 @@
 									</svg>
 								</div>
 								<div class="text-gray-700 dark:text-gray-300">
-									Extra study activities and links to additional IELTS practice resources
+									Member's page community access
 								</div>
 							</li>
 							<li class="flex">
@@ -458,7 +457,7 @@
 									</svg>
 								</div>
 								<div class="text-gray-700 dark:text-gray-300">
-									Final Day Test analysis with feedback and IETPP progress summary.
+									 40+ Virtual Examiner tutorial videos
 								</div>
 							</li>
 							<li class="flex">
@@ -478,21 +477,41 @@
 									</svg>
 								</div>
 								<div class="text-gray-700 dark:text-gray-300">
-									Full E-mail and Chat access to qualified IE examiners for the duration of the 6 Day
-									IETPP!
+									 Full IELTS format assessment test
+								</div>
+							</li>
+							<li class="flex">
+								<div
+									class="mr-3 flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-teal-100 dark:bg-teal-900/50"
+								>
+									<svg
+										class="h-4 w-4 text-teal-600 dark:text-teal-400"
+										viewBox="0 0 20 20"
+										fill="currentColor"
+									>
+										<path
+											fill-rule="evenodd"
+											d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+											clip-rule="evenodd"
+										/>
+									</svg>
+								</div>
+								<div class="text-gray-700 dark:text-gray-300">
+									<u class="underline underline-offset-2">REAL </u> &nbsp support from &nbsp  <u class="underline underline-offset-2"> REAL </u>&nbsp examiners
 								</div>
 							</li>
 						</ul>
 					</div>
 						<div class="flex items-center justify-between">
 							<div>
-								<p class="text-gray-700 dark:text-gray-300">InsideIELTS Test Preparation program:</p>
+								<p class="text-lg text-white font-semibold">InsideIELTS Test Preparation program:</p>
 								</div>
 							<button
-								class="rounded-lg bg-gradient-to-r from-amber-500 to-yellow-400 hover:from-amber-600 hover:to-yellow-500 px-8 py-4 text-xl font-bold text-white shadow-md transition-all duration-150 hover:shadow-lg"
+								href="/IETPP/signup"
+								class="rounded-lg bg-gradient-to-r from-amber-500 to-yellow-400 hover:from-amber-600 hover:to-yellow-500 px-4 py-2 text-xl font-bold text-white shadow-md transition-all duration-150 hover:shadow-lg my-4"
 						
 							>
-								24.95
+								START NOW
 							</button>
 						</div>
 					<div class="rounded-lg bg-white p-4 dark:bg-gray-800">
@@ -518,14 +537,6 @@
 				</div>
 			</div>
 			
-		<div class="my-12">		
-			<UpsellCard 
-					userScore={6.0} 
-					targetScore={7.0} 
-					variant="new_1"
-				/>
-		</div>
-		
 			<!-- Call to Action -->
 		<div class="text-center">
 			<div class="bg-gray-900 border-2 border-orange-500 border-t-12 border-t-orange-500 rounded-lg p-8 shadow-lg">
