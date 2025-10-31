@@ -192,13 +192,12 @@
                                         <div class="text-center mt-10">
                                                 <Button
                                                         href="/IETPP/lesson-00"
-                                                        onclick={handleStartProgram}
                                                         color="primary"
                                                         class="bg-teal-600 hover:bg-teal-700 text-white text-lg font-bold shadow-lg shadow-teal-500/30 border-2 border-teal-400 my-4"
                                                         size="lg"
                                                 >
                                                    START NOW
-                                                               </Button>
+                                                </Button>
                                         </div>
                                 </div>
                             </div>
