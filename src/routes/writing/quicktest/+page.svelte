@@ -5,6 +5,7 @@
         let isTestCompleted = $state(false);
         let showInstructions = $state(true);
         let answer = $state('');
+        let hasMarked = $state(false);
 
         // Timer functionality
         let timer: number;
@@ -25,6 +26,7 @@
 
         function completeTest() {
                 isTestCompleted = true;
+                hasMarked = true;
                 clearInterval(timer);
         }
 
