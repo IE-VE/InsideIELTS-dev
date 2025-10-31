@@ -904,7 +904,8 @@
                 </div>
         {/if}
 
-<!-- CTA CARD -->
+<!-- CTA CARD - Only show after test is marked -->
+{#if hasMarked}
 <div class="py-12 mb-12 max-w-3xl mx-auto">
         <div class="relative border-amber-200 from-[#fff5e9] to-[#fffdf7] dark:border-amber-800 dark:from-amber-950/30 dark:to-amber-900/20 bg-gradient-to-br border-2 rounded-lg p-8 pt-12 shadow-lg">
                 <!-- Top accent bar matching notebook variant -->
@@ -1082,4 +1083,5 @@
                 </div>
         </div>
 </div>
+{/if}
 </div>
