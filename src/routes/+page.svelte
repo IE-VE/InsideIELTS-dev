@@ -521,8 +521,7 @@
                                                                                                                                                                 <ImageWithTooltip 
 																					src="/img/Alex.png"
 																					alt="Alex - IELTS Expert"
-                                                                                                                                                                        tooltipText="Nationality: British 
-                                                                                                                                                                                     Qualifications: IELTS Examiner, IELTS Trainer, IELTS Coursebook Author"
+                                                                                                                                                                        tooltipText="Nationality: British\nQualifications: IELTS Examiner, IELTS Trainer, IELTS Coursebook Author"
                                                                                                                                                                         tooltipPosition="bottom"
 																					className="h-32 w-32 rounded-full border-4 border-teal-600/90 object-cover shadow-lg hover:scale-105 transition-transform duration-300"
 																					loading="lazy"
