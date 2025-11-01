@@ -1,5 +1,6 @@
 <script lang="ts">
         import { tracking } from '$lib/utils/analytics';
+        import ImageWithTooltip from '$lib/components/ImageWithTooltip.svelte';
         import {
                 Button,
                 Listgroup,
@@ -515,12 +516,15 @@
 																	<div class="grid grid-cols-3 gap-4 mt-6 mb-4">
 																		<!-- Alex -->
 																		<figure class="flex flex-col items-center">
-																			<picture>
-																				<source srcset="/img/Alex.webp" type="image/webp" />
-																				<img
+																			<picture>                                                                                                                                                       
+                                                                                                                                                                <source srcset="/img/Alex.webp" type="image/webp" />
+                                                                                                                                                                <ImageWithTooltip 
 																					src="/img/Alex.png"
 																					alt="Alex - IELTS Expert"
-																					class="h-32 w-32 rounded-full border-4 border-teal-600/90 object-cover shadow-lg hover:scale-105 transition-transform duration-300"
+                                                                                                                                                                        tooltipText="Nationality: British 
+                                                                                                                                                                                     Qualifications: IELTS Examiner, IELTS Trainer, IELTS Coursebook Author"
+                                                                                                                                                                        tooltipPosition="bottom"
+																					className="h-32 w-32 rounded-full border-4 border-teal-600/90 object-cover shadow-lg hover:scale-105 transition-transform duration-300"
 																					loading="lazy"
 																					width="128"
 																					height="128"
