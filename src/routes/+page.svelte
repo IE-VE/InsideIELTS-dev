@@ -521,7 +521,7 @@
                                                                                                                                                                 <ImageWithTooltip 
 																					src="/img/Alex.png"
 																					alt="Alex - IELTS Expert"
-                                                                                                                                                                        tooltipText="Nationality: British<br>Qualifications: IELTS Examiner, IELTS Trainer, IELTS Coursebook Author"
+                                                                                                                                        tooltipText="Nationality:&nbspBritish<br>IELTS Examiner<br>Experience: 12yrs"
                                                                                                                                                                         tooltipPosition="bottom"
 																					className="h-32 w-32 rounded-full border-4 border-teal-600/90 object-cover shadow-lg hover:scale-105 transition-transform duration-300"
 																					loading="lazy"
@@ -536,11 +536,12 @@
 																		<figure class="flex flex-col items-center">
 																			<picture>
 																				<source srcset="/img/Paul.webp" type="image/webp" />
-																				<img
+																				<ImageWithTooltip
 																					src="/img/Paul.png"
 																					alt="Paul - IELTS Expert"
-																					class="h-32 w-32 rounded-full border-4 border-teal-600/90 object-cover shadow-lg hover:scale-105 transition-transform duration-300"
-																					loading="lazy"
+                                                                                                                                                                        tooltipText="Nationality:&nbspAustralian<br>IELTS Instructor<br>Experience: 11yrs"
+                                                                                                                                                                        tooltipPosition="bottom"
+                                                                                                                                                                        className="h-32 w-32 rounded-full border-4 border-teal-600/90 object-cover shadow-lg hover:scale-105 transition-transform duration-300"																loading="lazy"
 																					width="128"
 																					height="128"
 																				/>
@@ -552,11 +553,12 @@
 																		<figure class="flex flex-col items-center">
 																			<picture>
 																				<source srcset="/img/Jane.webp" type="image/webp" />
-																				<img
+																				<ImageWithTooltip
 																					src="/img/Jane.png"
 																					alt="Jane - IELTS Expert"
-																					class="h-32 w-32 rounded-full border-4 border-teal-600/90 object-cover shadow-lg hover:scale-105 transition-transform duration-300"
-																					loading="lazy"
+                                                                                                                                                                        tooltipText="Nationality:&nbspCanadian<br>IELTS Examiner<br>Experience: 8yrs"
+                                                                                                                                                                        tooltipPosition="bottom"
+                                                                                                                                                                        className="h-32 w-32 rounded-full border-4 border-teal-600/90 object-cover shadow-lg hover:scale-105 transition-transform duration-300"																	loading="lazy"
 																					width="128"
 																					height="128"
 																				/>

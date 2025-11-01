@@ -876,7 +876,7 @@
                                                         <button
                                                                 onclick={markTest}
                                                                 disabled={isMarking}
-                                                                class="mt-6 w-full bg-teal-600 hover:bg-teal-700 text-white font-bold py-3 px-6 rounded-lg transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                                                                class="mt-6 w-full bg-teal-600 hover:bg-teal-700 text-white font-bold border-2 border-purple-600 py-3 px-6 rounded-lg transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
                                                         >
                                                                 {isMarking ? 'Marking...' : 'Mark Test'}
                                                         </button>
