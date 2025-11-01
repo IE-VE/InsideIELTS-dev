@@ -194,7 +194,7 @@
         });
 </script>
 
-<div class="container mx-auto px-6 py-12">
+<div class="container mx-auto px-6 py-12 border-b-2 border-gray-600">
         <h1 class="mb-8 text-center text-5xl font-bold text-teal-600 dark:text-teal-400">
                 InsideIELTS
         </h1>
@@ -252,7 +252,7 @@
 
 <!-- Hero Section -->
 <section
-        class="relative bg-gradient-to-br from-teal-100 via-blue-50 to-indigo-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900"
+        class="relative bg-gradient-to-br from-teal-100 via-blue-50 to-indigo-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 border-b-2 border-gray-600"
 >
         <div class="absolute inset-0 bg-gradient-to-tr from-teal-200/20 to-transparent"></div>
         <div class="relative container mx-auto px-6 md:px-10 py-16 md:py-24">
@@ -372,7 +372,7 @@
 </section>
 
 <!-- Value Props -->
-<section class="relative pt-16 pb-12">
+<section class="relative pt-16 pb-12 border-b-2 border-gray-600">
         <div
                 class="absolute inset-0 bg-gradient-to-tr from-teal-50/20 via-transparent to-blue-50/20 dark:from-teal-900/10 dark:via-transparent dark:to-blue-900/10"
         ></div>
@@ -401,12 +401,12 @@
                                 </Card>
                         {/each}
                 </div>
-					 <P class="mt-12 text-center text-lg italic">"Helping test takers achieve their goals since 2011, we're not just another free test-prep site: we're a team of IELTS examiners and educators with over three decades of IELTS-prep experience." </P>
+					 <P class="mt-12 text-center text-lg italic max-w-4xl mx-auto">"Helping test takers achieve their goals since 2011, we're not just another free test-prep site: we're a team of IELTS examiners and educators with over three decades of IELTS-prep experience." </P>
         </div>
 </section>
 
 <!-- Social Proof - Testimonial Carousel -->
-<section class="section-divider relative overflow-hidden py-16 bg-gradient-to-b from-white to-gray-50 dark:from-gray-900 dark:to-gray-800">
+<section class="section-divider relative overflow-hidden py-16 bg-gradient-to-b from-white to-gray-50 dark:from-gray-900 dark:to-gray-800 border-b-2 border-gray-600">
         <div class="container">
                 <div class="mx-auto max-w-5xl">
                         <div class="mb-12 text-center">
@@ -500,7 +500,7 @@
 
 <!-- Expert Section -->
 
-<section class="relative flex items-center justify-center py-14">
+<section class="relative flex items-center justify-center py-14 border-b-2 border-gray-600">
 				<div
 								class="absolute inset-0 bg-gradient-to-b bg-gradient-to-tr from-gray-50 from-teal-100/20 via-blue-50/10 to-gray-100 to-transparent dark:from-gray-800 dark:from-teal-900/10 dark:via-transparent dark:to-gray-900 dark:to-transparent"
 				></div>
