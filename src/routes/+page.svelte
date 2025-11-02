@@ -623,9 +623,9 @@
                         <P size="xl" class="mt-3 text-center">Everything you need to know about our service</P>
                 </div>
                 <div class="container max-w-5xl">
-                        <Accordion>
+                        <Accordion defaultClass="divide-y divide-gray-200 dark:divide-gray-700">
                                 {#each faqItems as item}
-                                        <AccordionItem defaultOpen={item.id === 3}>
+                                        <AccordionItem open={item.id === 3}>
                                                 <span slot="header" class="text-lg font-semibold">
                                                         {item.title}
                                                 </span>
