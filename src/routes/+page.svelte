@@ -625,7 +625,7 @@
                 <div class="container max-w-5xl">
                         <Accordion>
                                 {#each faqItems as item}
-                                        <AccordionItem>
+                                        <AccordionItem defaultOpen={item.id === 3}>
                                                 <span slot="header" class="text-lg font-semibold">
                                                         {item.title}
                                                 </span>
