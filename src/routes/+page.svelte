@@ -52,7 +52,7 @@
                         id: 3,
                         title: 'What if I need more help?',
                         content:
-                                'The InsideIELTS free-tests are designed to give you a good idea of your starting point for improvement. Our unique, proven system identifies specific actionable goals for you to focus on, to allow you to work towards test success as quickly and eficiently as possible.<br><br> To continue your IELTS journey with personalised guidance you can sign up to the <a href="/IETPP/signup" class="text-teal-400 hover:text-teal-300">InsideIELTS Test Preparation Program<a/>.<br><br>No other personalised IELTS preparation service offers this much value - <strong>guaranteed</strong>.'
+                                'The InsideIELTS free-tests are designed to give you a good idea of your starting point for improvement. Our unique, proven system identifies specific actionable goals for you to focus on, to allow you to work towards test success as quickly and efficiently as possible.<br><br> To continue your IELTS journey with personalised guidance you can sign up to the <a href="/IETPP/signup" class="text-teal-400 hover:text-teal-300">InsideIELTS Test Preparation Program<a/>.<br><br>No other personalised IELTS preparation service offers this much value - <strong>guaranteed</strong>.'
                 }
         ];
 
