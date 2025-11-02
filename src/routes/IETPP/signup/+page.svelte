@@ -35,7 +35,7 @@
 
                                                 <p class="mb-8 text-lg text-gray-700 dark:text-gray-300 md:text-xl">
                                                         Complete 28-lesson program covering <strong>Listening, Reading, Writing & Speaking</strong
-                                                        >. Get personalized feedback and achieve your target band score faster.
+                                                        >. Get personalised feedback and achieve your target band score faster.
                                                 </p>
 
                                                 <List tag="ul" class="mb-8 space-y-3">
