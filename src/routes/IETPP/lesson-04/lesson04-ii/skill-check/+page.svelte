@@ -49,7 +49,7 @@
 
 			<div class="flex justify-between items-center">
 				<a
-					href="/IETPP/lesson-04/lesson04(ii)"
+					href="/IETPP/lesson-04/lesson04-ii"
 					class="text-teal-400 hover:text-teal-300 font-semibold"
 					data-sveltekit-reload
 				>
@@ -64,7 +64,7 @@
 					Contents
 				</a>
 				<a
-					href="/IETPP/lesson-04/lesson04(iii)"
+					href="/IETPP/lesson-04/lesson04-iii"
 					class="text-teal-400 hover:text-teal-300 font-semibold"
 					data-sveltekit-reload
 				>
@@ -171,7 +171,7 @@
 					</a>
 
 					<a
-						href="/IETPP/lesson-04/lesson04(iii)"
+						href="/IETPP/lesson-04/lesson04-iii"
 						class="text-teal-400 hover:text-teal-300 font-semibold"
 						data-sveltekit-reload
 					>

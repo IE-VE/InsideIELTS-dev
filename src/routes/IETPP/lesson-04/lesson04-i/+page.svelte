@@ -64,7 +64,7 @@
 					Contents
 				</a>
 				<a
-					href="/IETPP/lesson-04/lesson04(ii)"
+					href="/IETPP/lesson-04/lesson04-ii"
 					class="text-teal-600 dark:text-teal-400 hover:text-teal-500 dark:hover:text-teal-300 font-semibold"
 					data-sveltekit-reload
 				>
@@ -160,7 +160,7 @@
 
 					<div class="flex justify-center m-4">
 						<a
-							href="/IETPP/lesson-04/lesson04(i)/skill-check"
+							href="/IETPP/lesson-04/lesson04-i/skill-check"
 							class="inline-flex items-center gap-4 bg-gradient-to-r from-teal-600 to-cyan-600 hover:from-teal-700 hover:to-cyan-700 text-white font-bold py-2 px-4 rounded-lg text-lg transition-all transform hover:scale-105 border-2 border-teal-400"
 							data-sveltekit-reload
 						>
@@ -187,7 +187,7 @@
 					</a>
 
 					<a
-						href="/IETPP/lesson-04/lesson04(ii)"
+						href="/IETPP/lesson-04/lesson04(-ii"
 						class="text-teal-400 hover:text-teal-300 font-semibold"
 						data-sveltekit-reload
 					>

@@ -143,7 +143,7 @@
                 },
                 {
                         quote: 'InsideIELTS showed me how small details matter—like word stress, linking, and intonation. The step-by-step exercises helped me build natural fluency. My speaking band increased to 8.0.',
-                        author: 'Maria K',
+                        author: 'Marianna K',
                         location: 'Ukraine',
                         image: '/testimonials/Katya_(Ukraine).png'
                 },
